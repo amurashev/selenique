@@ -4,9 +4,7 @@ import { Pack } from "../pack";
 
 import styles from "./styles.module.css";
 
-interface PacksProps {}
-
-export const Packs: React.FC<PacksProps> = () => {
+export const Packs: React.FC<{}> = () => {
   return (
     <section className={styles.box}>
       <div className={styles.boxContainer}>
