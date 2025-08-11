@@ -1,0 +1,21 @@
+/* Root section */
+.box {
+  background: #cccccc;
+}
+
+/* Layout */
+.boxContainer {
+  padding: 0 clamp(16px, 4vw, 28px);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+
+
+/* Responsive */
+@media (max-width: 980px) {
+
+}
