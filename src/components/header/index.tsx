@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <header className={styles.box}>
-      <div className={styles.logoBox}>
+      {/* <div className={styles.logoBox}>
         <Link href="/">
           <Image
             src="/logo.png"
@@ -35,7 +35,7 @@ export default function Header() {
             alt="VelvetNest.Club"
           />
         </Link>
-      </div>
+      </div> */}
       <div className={styles.menuBox}>
         <ul className={styles.menu}>
           {MENU.map((item) => {

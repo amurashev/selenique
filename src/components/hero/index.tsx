@@ -8,7 +8,7 @@ interface HeroBotikaProps {
 }
 
 export const Hero: React.FC<HeroBotikaProps> = ({
-  imageSrc = "/images/botika-hero.png",
+  imageSrc = "/hero_image.jpg",
 }) => {
   return (
     <section className={styles.hero}>
@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroBotikaProps> = ({
             {/* Use an <img> so users can swap the asset easily */}
             <img
               src={imageSrc}
-              alt="Diverse models in white tees and jeans"
+              alt="Fashion image"
               className={styles.visualImage}
             />
           </div>

@@ -10,17 +10,29 @@ export default function Footer() {
       <div className={styles.menuBox}>
         <ul className={styles.menu}>
           <li className={styles.menuItem}>
-            <Link href={"https://www.behance.net/selenamurasheva"} className={styles.link}>
+            <Link
+              target="_blank"
+              href={"https://www.behance.net/selenamurasheva"}
+              className={styles.link}
+            >
               Behance
             </Link>
           </li>
           <li className={styles.menuItem}>
-            <Link href={"https://www.instagram.com/theselenique/"} className={styles.link}>
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/theselenique/"}
+              className={styles.link}
+            >
               Instagram
             </Link>
           </li>
           <li className={styles.menuItem}>
-            <Link href={"https://www.linkedin.com/in/alena-murasheva-578ba235a/"} className={styles.link}>
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/in/alena-murasheva-578ba235a/"}
+              className={styles.link}
+            >
               LinkidIn
             </Link>
           </li>

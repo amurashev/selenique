@@ -14,7 +14,7 @@
   margin: 0 auto;
   padding: 0 clamp(16px, 4vw, 28px);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 4fr;
   align-items: center;
   gap: clamp(28px, 4vw, 48px);
 }
