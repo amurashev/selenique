@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { Packs } from "@/components/sections/packs";
+import Guides from "@/components/sections/guides";
 import Header from "@/components/sections/header";
 import { FAQ } from "@/components/sections/faq";
 import Footer from "@/components/sections/footer";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Header />
       <main className={styles.main}>
         <Hero />
+        <Guides />
         <Packs />
         <FAQ />
         <Examples />

@@ -44,31 +44,31 @@ export const Section: React.FC<{
 };
 
 export const FAQ: React.FC = () => {
-  const { formatMessage, locale } = useIntl();
+  const { formatMessage } = useIntl();
   return (
     <section className={styles.box}>
       <div className={styles.boxContainer}>
         <h2 className={styles.title}>{formatMessage({ id: "faq.title" })}</h2>
         <div className={styles.sections}>
           <Section
-            imageSrc="/screen1.png"
+            imageSrc="/faq/screen1.png"
             name={formatMessage({ id: "faq.faq1.title" })}
             text={formatMessage({ id: "faq.faq1.text" })}
           />
           <Section
             isRight
-            imageSrc="/screen2.png"
+            imageSrc="/faq/screen2.png"
             name={formatMessage({ id: "faq.faq2.title" })}
             text={formatMessage({ id: "faq.faq2.text" })}
           />
           <Section
-            imageSrc="/screen3.png"
+            imageSrc="/faq/screen3.png"
             name={formatMessage({ id: "faq.faq3.title" })}
             text={formatMessage({ id: "faq.faq3.text" })}
           />
           <Section
             isRight
-            imageSrc="/screen4.png"
+            imageSrc="/faq/screen4.png"
             name={formatMessage({ id: "faq.faq4.title" })}
             text={formatMessage({ id: "faq.faq4.text" })}
           />
