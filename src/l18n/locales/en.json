@@ -1,0 +1,14 @@
+{
+  "locale": "English",
+  "hero.title": "AI Fashion Ads & WOW Resources",
+  "hero.text": "Guides, Prompts & Scenes — No Photoshop Required",
+  "faq.title": "How does this work?",
+  "faq.faq1.title": "Find a real product (photo)",
+  "faq.faq1.text": "Choose any product image — from a branded lookbook to a marketplace listing. The higher the quality of the original photo, the more realistic your final scene will be.",
+  "faq.faq2.title": "Use Krea / Midjourney to create the model",
+  "faq.faq2.text": "Upload the product image and use AI tools to find or generate a model that perfectly matches the style and proportions.",
+  "faq.faq3.title": "Build the scene in Runway",
+  "faq.faq3.text": "Place the model and product into one composition, adjust the background, lighting, and atmosphere. This is where your visual starts looking like a professional photoshoot.",
+  "faq.faq4.title": "Optionally fine-tune in Photoshop (not required)",
+  "faq.faq4.text": "If needed, make small adjustments — color, shadows, or background tweaks. But your result will already be ready to use without this step."
+}

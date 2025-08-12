@@ -10,7 +10,7 @@
 .boxContainer {
   position: relative;
   z-index: 1;
-  max-width: 1080px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 clamp(16px, 4vw, 28px);
   
@@ -20,15 +20,23 @@
   flex-direction: column;
 }
 
+.title {
+  font-size: max(24px, min(3vw, 48px));
+  text-align: center;
+  width: 100%;
+}
+
+
 .sections {
   display: grid;
   grid-template-rows: repeat(4, 1fr); /* Creates 4 rows, each taking an equal fraction of available space */
-  gap: 20px; /* Adds 20px of space between grid items (both rows and columns) */
+  gap: 16px; /* Adds 20px of space between grid items (both rows and columns) */
 }
 
 
 .section {
-  padding: 0px; /* Padding within each individual grid item */
+  padding-bottom: 16px; /* Padding within each individual grid item */
+  /* border-bottom: 2px solid #ffa94d; */
 }
 
 .sectionContainer {
@@ -48,17 +56,20 @@
 
 
 .sectionTextBox {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .sectionTextBoxRight {
   order: 2;
+  align-items: flex-end;
   text-align: right;
 }
 
 .sectionTitle {
-  font-size: max(24px, min(3vw, 48px));
+  font-size: max(24px, min(3vw, 28px));
   line-height: 1;
+  max-width: 480px;
 }
 
 .sectionText {
@@ -71,6 +82,11 @@
   justify-content: right;
 }
 
+.sectionVisualRight {
+  display: flex;
+  justify-content: left;
+}
+
 /* Right visual */
 .sectionVisual {
   position: relative;
@@ -81,7 +97,7 @@
 }
 
 .visualImage {
-  height: 300px;
+  height: 240px;
   width: auto;
   display: block;
   border-radius: 16px;

@@ -1,5 +1,9 @@
-import React from "react";
+"use client";
 
+import React from "react";
+import { useIntl } from "react-intl";
+
+import messages from './messages'
 import styles from "./styles.module.css";
 
 interface HeroBotikaProps {
@@ -10,22 +14,23 @@ interface HeroBotikaProps {
 export const Hero: React.FC<HeroBotikaProps> = ({
   imageSrc = "/hero_image.jpg",
 }) => {
+  const { formatMessage, locale } = useIntl();
+
+  console.warn("locale", locale);
+
   return (
     <section className={styles.hero}>
       <div className={styles.heroContainer}>
-        {/* Left: Copy */}
         <div className={styles.heroCopy}>
-          <h1 className={styles.heroTitle}>AI Fashion Ads & WOW Resources</h1>
+          <h1 className={styles.heroTitle}>{formatMessage(messages.title)}</h1>
 
           <p className={styles.heroSubtitle}>
-            Guides, Prompts & Scenes — No Photoshop Required
+          {formatMessage(messages.text)}
           </p>
         </div>
 
-        {/* Right: Image panel */}
         <div className={styles.heroVisual}>
           <div className={styles.visualPanel}>
-            {/* Use an <img> so users can swap the asset easily */}
             <img
               src={imageSrc}
               alt="Fashion image"
