@@ -14,7 +14,7 @@
 
 /* Layout */
 .boxContainer {
-  padding: 16px 24px;
+  /* padding: 16px 24px; */
   text-align: center;
 }
 
@@ -24,6 +24,12 @@
   color: #333333;
 }
 
+.image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
 
 /* Responsive */
 @media (max-width: 980px) {

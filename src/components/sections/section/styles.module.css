@@ -1,0 +1,41 @@
+/* Root section */
+.box {
+  position: relative;
+  isolation: isolate;
+  background: #ffffff;
+  padding: clamp(32px, 6vw, 48px) 0;
+}
+
+.boxGray {
+  background: #f5f5f5;
+}
+
+/* Layout */
+.boxContainer {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 28px);
+}
+
+.boxContainerIsShort {
+  max-width: 1020px;
+}
+
+.content {
+  margin-top: 32px;
+}
+
+.title {
+  font-size: max(24px, min(3vw, 48px));
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .boxContainer {
+    grid-template-columns: 1fr;
+  }
+}

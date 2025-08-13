@@ -1,38 +1,8 @@
-/* Root section */
-.box {
-  position: relative;
-  isolation: isolate;
-  background: #ffffff;
-  padding: clamp(32px, 6vw, 72px) 0;
-}
-
-/* Layout */
-.boxContainer {
-  position: relative;
-  z-index: 1;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 clamp(16px, 4vw, 28px);
-  
-  align-items: center;
-  gap: clamp(28px, 4vw, 48px);
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  font-size: max(24px, min(3vw, 48px));
-  text-align: center;
-  width: 100%;
-}
-
-
 .sections {
   display: grid;
   grid-template-rows: repeat(4, 1fr); /* Creates 4 rows, each taking an equal fraction of available space */
   gap: 16px; /* Adds 20px of space between grid items (both rows and columns) */
 }
-
 
 .section {
   padding-bottom: 16px; /* Padding within each individual grid item */

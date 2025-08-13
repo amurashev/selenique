@@ -1,17 +1,18 @@
-import React from "react";
+"use client";
 
-import { Pack } from "../pack";
+import React from "react";
+import { useIntl } from "react-intl";
+
+import Section from "../section";
 
 import styles from "./styles.module.css";
 
 export const Examples: React.FC = () => {
+  const { formatMessage } = useIntl();
   return (
-    <section className={styles.box}>
-      <div className={styles.boxContainer}>
-
-        <h2 className={styles.title}>Примеры работ</h2>
-      </div>
-    </section>
+    <Section title={formatMessage({ id: "examples.title" })}>
+      TBD
+    </Section>
   );
 };
 

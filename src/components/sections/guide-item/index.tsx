@@ -7,11 +7,16 @@ interface GuideItemProps {
   image: string
 }
 
-export const GuideItem: React.FC<GuideItemProps> = ({ name }) => {
+export const GuideItem: React.FC<GuideItemProps> = ({ name, image }) => {
   return (
     <section className={styles.box}>
       <div className={styles.boxContainer}>
-        <h2 className={styles.title}>{name}</h2>
+        {/* <h2 className={styles.title}>{name}</h2> */}
+        <img
+            src={image}
+            alt={name}
+            className={styles.image}
+          />
       </div>
     </section>
   );

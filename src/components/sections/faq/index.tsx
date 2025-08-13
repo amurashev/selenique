@@ -3,9 +3,11 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
+import Section from "../section";
+
 import styles from "./styles.module.css";
 
-export const Section: React.FC<{
+export const FAQItem: React.FC<{
   name: string;
   text: string;
   imageSrc?: string;
@@ -46,35 +48,32 @@ export const Section: React.FC<{
 export const FAQ: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <section className={styles.box}>
-      <div className={styles.boxContainer}>
-        <h2 className={styles.title}>{formatMessage({ id: "faq.title" })}</h2>
-        <div className={styles.sections}>
-          <Section
-            imageSrc="/faq/screen1.png"
-            name={formatMessage({ id: "faq.faq1.title" })}
-            text={formatMessage({ id: "faq.faq1.text" })}
-          />
-          <Section
-            isRight
-            imageSrc="/faq/screen2.png"
-            name={formatMessage({ id: "faq.faq2.title" })}
-            text={formatMessage({ id: "faq.faq2.text" })}
-          />
-          <Section
-            imageSrc="/faq/screen3.png"
-            name={formatMessage({ id: "faq.faq3.title" })}
-            text={formatMessage({ id: "faq.faq3.text" })}
-          />
-          <Section
-            isRight
-            imageSrc="/faq/screen4.png"
-            name={formatMessage({ id: "faq.faq4.title" })}
-            text={formatMessage({ id: "faq.faq4.text" })}
-          />
-        </div>
+    <Section title={formatMessage({ id: "faq.title" })} isGray isShort>
+      <div className={styles.sections}>
+        <FAQItem
+          imageSrc="/faq/screen1.png"
+          name={formatMessage({ id: "faq.faq1.title" })}
+          text={formatMessage({ id: "faq.faq1.text" })}
+        />
+        <FAQItem
+          isRight
+          imageSrc="/faq/screen2.png"
+          name={formatMessage({ id: "faq.faq2.title" })}
+          text={formatMessage({ id: "faq.faq2.text" })}
+        />
+        <FAQItem
+          imageSrc="/faq/screen3.png"
+          name={formatMessage({ id: "faq.faq3.title" })}
+          text={formatMessage({ id: "faq.faq3.text" })}
+        />
+        <FAQItem
+          isRight
+          imageSrc="/faq/screen4.png"
+          name={formatMessage({ id: "faq.faq4.title" })}
+          text={formatMessage({ id: "faq.faq4.text" })}
+        />
       </div>
-    </section>
+    </Section>
   );
 };
 
