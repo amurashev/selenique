@@ -23,14 +23,35 @@
   max-width: 1020px;
 }
 
+.boxContainer600 {
+  max-width: 600px;
+}
+
+.boxContainer800 {
+  max-width: 800px;
+}
+
+.boxContainer960 {
+  max-width: 960px;
+}
+
 .content {
   margin-top: 32px;
 }
 
 .title {
-  font-size: max(24px, min(3vw, 48px));
+  font-size: 36px;
   text-align: center;
   width: 100%;
+  line-height: 1.1;
+}
+
+.text {
+  font-size: 19px;
+  text-align: center;
+  color: #666;
+  width: 100%;
+  margin-top: 12px;
 }
 
 /* Responsive */

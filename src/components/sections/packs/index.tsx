@@ -5,6 +5,7 @@ import { useIntl } from "react-intl";
 
 import { Pack } from "../pack";
 import Section from "../section";
+import PACKS from "@/content/packs";
 
 import styles from "./styles.module.css";
 
@@ -14,18 +15,9 @@ export const Packs: React.FC = () => {
   return (
     <Section title={formatMessage({ id: "packs.title" })}>
       <div className={styles.packs}>
-        <Pack
-          name="Beauty aesthetics (120 images)"
-          imageSrc="/packs/pack1.jpg"
-        />
-        <Pack
-          name="Beauty aesthetics (120 images)"
-          imageSrc="/packs/pack1.jpg"
-        />
-        <Pack
-          name="Beauty aesthetics (120 images)"
-          imageSrc="/packs/pack1.jpg"
-        />
+        {PACKS.map((item) => (
+          <Pack key={item.name} name={item.name} imageSrc={item.image} />
+        ))}
       </div>
     </Section>
   );

@@ -1,0 +1,42 @@
+.sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 20px 20px;
+  background: #f7f7f7;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #03a9f4;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 19px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.item {
+  margin-bottom: 4px;
+}
+
+.icon {
+  margin-right: 4px;
+}

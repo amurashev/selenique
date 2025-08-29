@@ -1,0 +1,83 @@
+.sections {
+  /* display: grid;
+  grid-template-rows: repeat(4, 1fr);  */
+  gap: 0px; /* Adds 20px of space between grid items (both rows and columns) */
+}
+
+.section {
+  padding-bottom: 16px; /* Padding within each individual grid item */
+  /* border-bottom: 2px solid #ffa94d; */
+}
+
+.sectionContainer {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 7fr 4fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.sectionContainerRight {
+  grid-template-columns: 100px 1fr;
+}
+
+
+.sectionTextBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTextBoxRight {
+  order: 2;
+  /* align-items: flex-end; */
+  /* text-align: right; */
+}
+
+.sectionTitle {
+  font-size: 21px;
+  line-height: 1.3;
+  /* max-width: 480px; */
+}
+
+.sectionText {
+  margin-top: 8px;
+  color: #888888;
+}
+
+.sectionVisual {
+  display: flex;
+  justify-content: right;
+}
+
+.sectionVisualRight {
+  display: flex;
+  justify-content: left;
+}
+
+/* Right visual */
+.sectionVisual {
+  position: relative;
+}
+
+.sectionImage {
+  
+}
+
+.visualImage {
+  height: 100px;
+  width: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 980px) {
+  .boxContainer {
+    grid-template-columns: 1fr;
+  }
+}

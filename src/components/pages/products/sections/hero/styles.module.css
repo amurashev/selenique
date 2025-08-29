@@ -1,0 +1,51 @@
+/* Root section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* на полный экран */
+  background: url("/bg/product.png") no-repeat center center/cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* затемнение */
+}
+
+/* Layout */
+.heroContainer {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+
+.heroTitle {
+  font-size: 42px; /*clamp(36px, 6vw, 72px);*/
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.heroSubtitle {
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0 0 28px;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 980px) {
+  
+}

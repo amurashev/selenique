@@ -1,0 +1,30 @@
+.sections {
+  position: relative;
+}
+
+.item {
+  padding: 0 16px;
+}
+
+.image {
+  width: 100%;
+}
+
+.itemText {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  cursor: pointer;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  cursor: pointer;
+}

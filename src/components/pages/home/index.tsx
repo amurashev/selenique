@@ -1,25 +1,24 @@
-import { Hero } from "@/components/sections/hero";
-import { Packs } from "@/components/sections/packs";
-import Guides from "@/components/sections/guides";
-import Header from "@/components/sections/header";
-import { FAQ } from "@/components/sections/faq";
-import Footer from "@/components/sections/footer";
-import Examples from "@/components/sections/examples";
+"use client";
+
+import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function HomePage() {
+  const { formatMessage } = useIntl();
   return (
     <div className={styles.page}>
-      <Header />
       <main className={styles.main}>
-        <Hero />
-        <Guides />
-        <Packs />
-        <FAQ />
-        <Examples />
+        <div>
+          <Link
+            href={"/ru/obrabotka-foto-tovarov-dlya-marketpleysov"}
+            locale={"ru"}
+          >
+            <div>{formatMessage({ id: "home.product.title" })}</div>
+          </Link>
+        </div>
       </main>
-      <Footer />
     </div>
   );
 }
