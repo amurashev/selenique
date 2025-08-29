@@ -53,7 +53,7 @@ function ChevronLeft({ size = 32, stroke = 2, color = "currentColor" }) {
   );
 }
 
-function SampleNextArrow({ onClick }: { onClick: () => void }) {
+function SampleNextArrow({ onClick }: { onClick?: () => void }) {
   return (
     <div className={styles.rightArrow} onClick={onClick}>
       <ChevronRight />
@@ -61,12 +61,9 @@ function SampleNextArrow({ onClick }: { onClick: () => void }) {
   );
 }
 
-function SamplePrevArrow({ onClick }: { onClick: () => void }) {
+function SamplePrevArrow({ onClick }: { onClick?: () => void }) {
   return (
-    <div
-      className={styles.leftArrow}
-      onClick={onClick}
-    >
+    <div className={styles.leftArrow} onClick={onClick}>
       <ChevronLeft />
     </div>
   );
@@ -97,8 +94,8 @@ export const Portfolio: React.FC = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow: SampleNextArrow,
-    prevArrow: SamplePrevArrow,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
