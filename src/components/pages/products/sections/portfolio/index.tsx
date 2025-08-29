@@ -97,7 +97,7 @@ const IMAGES = [
 export const Portfolio: React.FC = () => {
   const { formatMessage } = useIntl();
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     lazyLoad: true,
@@ -106,14 +106,14 @@ export const Portfolio: React.FC = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-  } as any;
+  } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
     <Section title={formatMessage({ id: "portfolio.title" })} isGray>
       <div className={styles.sections}>
         <Slider {...settings}>
           {IMAGES.map((item) => (
-            <div className={styles.item}>
+            <div key={item.text} className={styles.item}>
               <img className={styles.image} src={item.src} />
               <p className={styles.itemText}>
                 {formatMessage({ id: item.text })}
