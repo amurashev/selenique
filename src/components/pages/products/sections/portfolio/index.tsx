@@ -53,26 +53,19 @@ function ChevronLeft({ size = 32, stroke = 2, color = "currentColor" }) {
   );
 }
 
-function SampleNextArrow() {
-  // const { style, onClick } = props;
+function SampleNextArrow({ onClick }: { onClick: () => void }) {
   return (
-    <div
-      className={styles.rightArrow}
-      // style={{ ...style, display: "block" }}
-      // onClick={onClick}
-    >
+    <div className={styles.rightArrow} onClick={onClick}>
       <ChevronRight />
     </div>
   );
 }
 
-function SamplePrevArrow() {
-  // const { style, onClick } = props;
+function SamplePrevArrow({ onClick }: { onClick: () => void }) {
   return (
     <div
       className={styles.leftArrow}
-      // style={{ ...style, display: "block" }}
-      // onClick={onClick}
+      onClick={onClick}
     >
       <ChevronLeft />
     </div>

@@ -23,8 +23,8 @@ export default function HomePage() {
         <WhoIsClient />
         <WhereUse />
         <Portfolio />
-        <Prices />
         <Process />
+        <Prices />
         <FAQ />
       </main>
       {/* <Footer /> */}
