@@ -97,8 +97,8 @@ export const Portfolio: React.FC = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: SampleNextArrow,
+    prevArrow: SamplePrevArrow,
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
