@@ -63,7 +63,9 @@ export const Contact: React.FC = () => {
       time,
     };
     setIsLoading(true);
-    await apiRequest<{}>("/api/email", {
+    await apiRequest<{ data: {
+      id: string
+    }}>("/api/email", {
       method: "POST",
       data,
     });

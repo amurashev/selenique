@@ -7,7 +7,7 @@ interface InputWithLabelProps {
   id: string;
   hint?: ReactNode;
   children: ReactNode;
-  [key: string]: any; // для других атрибутов, если нужно
+  [key: string]: string | string[] | ReactNode; // для других атрибутов, если нужно
 }
 
 const InputWithLabel: React.FC<InputWithLabelProps> = ({ label, hint, id, children, ...props }) => {

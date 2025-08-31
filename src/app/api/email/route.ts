@@ -24,24 +24,24 @@ export async function POST(request: NextRequest) {
 
   const resend = new Resend(KEY);
 
-  // const result = await resend.emails.send({
-  //   from: "onboarding@resend.dev",
-  //   to: "andreymurashev@gmail.com",
-  //   subject: "selenique: Заявка с сайта",
-  //   html: `<div>
-  //     <ul>
-  //       <li>Имя: ${data.name}</li>
-  //       <li>Контакт: ${data.contact}</li>
-  //       <li>Для чего: ${data.source}</li>
-  //       <li>Количество: ${data.count}</li>
-  //       <li>Срок: ${data.time}</li>
-  //     </ul>
-  //     <p>${data.details}</p>
-  //     </div>`,
-  // });
+  const result = await resend.emails.send({
+    from: "onboarding@resend.dev",
+    to: "andreymurashev@gmail.com",
+    subject: "selenique: Заявка с сайта",
+    html: `<div>
+      <ul>
+        <li>Имя: ${data.name}</li>
+        <li>Контакт: ${data.contact}</li>
+        <li>Для чего: ${data.source}</li>
+        <li>Количество: ${data.count}</li>
+        <li>Срок: ${data.time}</li>
+      </ul>
+      <p>${data.details}</p>
+      </div>`,
+  });
 
   return NextResponse.json({
     data,
-    // result
+    result
   });
 }
