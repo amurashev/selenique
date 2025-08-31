@@ -56,25 +56,25 @@ export const Process: React.FC = () => {
       <div className={styles.sections}>
         <FAQItem
           isRight
-          imageSrc="/product/process/screen1.png"
+          imageSrc="/product/process/screen1.webp"
           name={formatMessage({ id: "process.item1" })}
           num={1}
         />
         <FAQItem
           isRight
-          imageSrc="/product/process/screen2.png"
+          imageSrc="/product/process/screen2.webp"
           name={formatMessage({ id: "process.item2" })}
           num={2}
         />
         <FAQItem
           isRight
-          imageSrc="/product/process/screen3.png"
+          imageSrc="/product/process/screen3.webp"
           name={formatMessage({ id: "process.item3" })}
           num={3}
         />
         <FAQItem
           isRight
-          imageSrc="/product/process/screen4.png"
+          imageSrc="/product/process/screen4.webp"
           name={formatMessage({ id: "process.item4" })}
           num={4}
         />

@@ -9,7 +9,7 @@ import styles from "./styles.module.css";
 
 const ITEMS = [
   {
-    image: "/product/items/beauty.png",
+    image: "/product/items/beauty.webp",
     text: "who_is_client.item1",
   },
   {
@@ -21,13 +21,13 @@ const ITEMS = [
     text: "who_is_client.item3",
   },
   {
-    image: "/product/items/food.png",
+    image: "/product/items/food.webp",
     text: "who_is_client.item4",
   },
-  // {
-  //   image: "/product/items/gadgets.webp",
-  //   text: "who_is_client.item5",
-  // },
+  {
+    image: "/product/items/acessories.webp",
+    text: "who_is_client.item5",
+  },
 ];
 
 export const WhoIsClient: React.FC = () => {

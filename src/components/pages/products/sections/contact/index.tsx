@@ -83,7 +83,7 @@ export const Contact: React.FC = () => {
   return (
     <Section
       title={formatMessage({ id: "products.contact.title" })}
-      size="600"
+      size="800"
       isGray
       id="contact_form"
     >
