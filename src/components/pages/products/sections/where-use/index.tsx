@@ -6,6 +6,8 @@ import { useIntl } from "react-intl";
 import Section from "../../../../sections/section";
 
 import styles from "./styles.module.css";
+import { Button } from "@/components/ui/button";
+import { goToForm } from "../../utils";
 
 export const WhereUse: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -24,6 +26,12 @@ export const WhereUse: React.FC = () => {
             </li>
           ))}
         </ul>
+
+        <div className={styles.buttonBox}>
+          <Button onClick={goToForm}>
+            {formatMessage({ id: "products.hero.cta" })}
+          </Button>
+        </div>
       </div>
     </Section>
   );

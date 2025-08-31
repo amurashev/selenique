@@ -1,0 +1,21 @@
+/* TextareaComponent.css */
+.textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #d1d5db; /* светлая граница */
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #6b7280; /* цвет текста */
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical; /* ограничение по вертикали */
+}
+
+.textarea:focus {
+  border-color: #3b82f6; /* синий при фокусе */
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); /* легкое свечение */
+}
+
+.textarea::placeholder {
+  color: #9ca3af; /* цвет placeholder */
+}

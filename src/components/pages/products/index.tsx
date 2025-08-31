@@ -11,6 +11,7 @@ import Prices from "./sections/prices";
 import Process from "./sections/process";
 import FAQ from "./sections/faq";
 import WhereUse from "./sections/where-use";
+import Contact from "./sections/contact";
 
 export default function HomePage() {
   return (
@@ -26,8 +27,9 @@ export default function HomePage() {
         <Process />
         <Prices />
         <FAQ />
+        <Contact />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

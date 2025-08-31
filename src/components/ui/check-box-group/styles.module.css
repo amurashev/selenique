@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #2563eb; /* Синий цвет галочки */
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+}

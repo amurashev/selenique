@@ -9,12 +9,13 @@ export const metadata: Metadata = {
   description: "Делаю фотореалистичные изображения товара для Ozon, Wildberries, Яндекс.Маркет. Песок, камень, вода, мрамор. Реалистичные тени и цвет. Готово для карточек и рекламы.",
 };
 
-export default async function Home({
+export default async function ProductPage({
   params,
 }: {
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
+
   return (
     <Layout locale={lang}>
       <HomePage />;

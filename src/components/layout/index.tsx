@@ -5,7 +5,7 @@ export default function Layout({
   locale,
   children,
 }: Readonly<{
-  locale: Locale;
+  locale?: Locale;
   children: React.ReactNode;
 }>) {
   return <PageWithL18n locale={locale}>{children}</PageWithL18n>;

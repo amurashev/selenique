@@ -19,14 +19,14 @@ export const BeforeAfter: React.FC = () => {
       <div className={styles.sections}>
         <div className={styles.imageBox}>
           <img
-            src={"/product/before.webp"}
+            src={"/product/before.png"}
             alt="Image Before"
             className={styles.image}
           />
         </div>
         <div className={styles.imageBox}>
           <img
-            src={"/product/after.jpeg"}
+            src={"/product/after.png"}
             alt="Image After"
             className={styles.image}
           />

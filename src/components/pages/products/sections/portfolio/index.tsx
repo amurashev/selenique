@@ -68,21 +68,21 @@ function SamplePrevArrow({ onClick }: { onClick?: () => void }) {
     </div>
   );
 }
-
-const IMAGES = [
-  {
-    src: "/product/examples/result.jpg",
-    text: "portfolio.item1",
-  },
-  {
-    src: "/product/examples/result.jpg",
-    text: "portfolio.item1",
-  },
-  {
-    src: "/product/examples/result.jpg",
-    text: "portfolio.item1",
-  },
-];
+const IMAGES = [21, 27, 29, 31, 37, 8, 47, 52, 56, 58]
+// const IMAGES = [
+//   {
+//     src: "/product/examples/result.jpg",
+//     text: "portfolio.item1",
+//   },
+//   {
+//     src: "/product/examples/result.jpg",
+//     text: "portfolio.item1",
+//   },
+//   {
+//     src: "/product/examples/result.jpg",
+//     text: "portfolio.item1",
+//   },
+// ];
 
 export const Portfolio: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -103,11 +103,11 @@ export const Portfolio: React.FC = () => {
       <div className={styles.sections}>
         <Slider {...settings}>
           {IMAGES.map((item) => (
-            <div key={item.text} className={styles.item}>
-              <img className={styles.image} src={item.src} />
-              <p className={styles.itemText}>
-                {formatMessage({ id: item.text })}
-              </p>
+            <div key={item} className={styles.item}>
+              <img className={styles.image} src={`/product/examples/${item}.webp`} />
+              {/* <p className={styles.itemText}>
+                {formatMessage({ id: item })}
+              </p> */}
             </div>
           ))}
         </Slider>

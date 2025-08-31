@@ -4,6 +4,8 @@ import React from "react";
 import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
+import { Button } from "@/components/ui/button";
+import { goToForm } from "../../utils";
 
 interface HeroBotikaProps {
   /** Right-side image (group of models). PNG/JPG with transparent or white bg works best */
@@ -25,6 +27,10 @@ export const Hero: React.FC<HeroBotikaProps> = () => {
           <p className={styles.heroSubtitle}>
             {formatMessage({ id: "products.hero.text" })}
           </p>
+
+          <Button onClick={goToForm}>
+            {formatMessage({ id: "products.hero.cta" })}
+          </Button>
         </div>
       </div>
     </section>

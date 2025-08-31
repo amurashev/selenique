@@ -8,7 +8,10 @@ export default function Footer() {
   return (
     <footer className={styles.box}>
       <div className={styles.menuBox}>
-        <ul className={styles.menu}>
+        <div>
+          <strong>Не является публичной офертой</strong>
+        </div>
+        {/* <ul className={styles.menu}>
           <li className={styles.menuItem}>
             <Link
               target="_blank"
@@ -36,7 +39,7 @@ export default function Footer() {
               LinkidIn
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   );

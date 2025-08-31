@@ -21,3 +21,9 @@
   line-height: 1.0;
   font-weight: 700;
 }
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
