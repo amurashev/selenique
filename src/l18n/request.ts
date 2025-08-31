@@ -9,7 +9,7 @@ export type Response<T> = {
 export const apiRequest = async <T>(
   url: string,
   props: {
-    data?: Record<string, any>
+    data?: Record<string, any> // eslint-disable-line @typescript-eslint/no-explicit-any
     method?: 'GET' | 'POST' | 'PUT'
     cache?: 'force-cache'
   }
