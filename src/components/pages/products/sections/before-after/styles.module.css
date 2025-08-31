@@ -1,12 +1,9 @@
 .sections {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* две колонки */
-  gap: 10px; /* отступ между колонками */
   justify-items: center;
 }
 
 .imageBox {
-  width: 160px;
+  width: 100%;
   display: flex;
 }
 
@@ -16,17 +13,11 @@
 }
 
 /* Responsive */
-@media (min-width: 600px) {
-  .boxContainer {
-    grid-template-columns: 1fr;
-  }
-  
-  .sections {
-    gap: 20px; /* отступ между колонками */
-  }
+@media (min-width: 760px) {
+
  
 .imageBox {
-  width: 300px;
+  width: 720px;
 }
   
 }

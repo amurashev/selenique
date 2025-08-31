@@ -68,21 +68,7 @@ function SamplePrevArrow({ onClick }: { onClick?: () => void }) {
     </div>
   );
 }
-const IMAGES = [21, 27, 29, 31, 37, 8, 47, 52, 56, 58]
-// const IMAGES = [
-//   {
-//     src: "/product/examples/result.jpg",
-//     text: "portfolio.item1",
-//   },
-//   {
-//     src: "/product/examples/result.jpg",
-//     text: "portfolio.item1",
-//   },
-//   {
-//     src: "/product/examples/result.jpg",
-//     text: "portfolio.item1",
-//   },
-// ];
+const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58]
 
 export const Portfolio: React.FC = () => {
   const { formatMessage } = useIntl();
