@@ -39,14 +39,14 @@
 
   "prices.title": "Пакеты и цены",
   "prices.item1.title": "Basic",
-  "prices.item1.subtitle": "обработка фото товара <br />(1 композит)",
+  "prices.item1.subtitle": "обработка фото товара <br />(1 сцена)",
   "prices.item1.price": "2000 руб",
   "prices.item1.advantages.count": "1 товар → 1 естественная сцена.",
   "prices.item1.advantages.size": "До 3000 px.",
   "prices.item1.advantages.edit": "Лёгкая ретушь, реалистичная тень.",
 
   "prices.item2.title": "Standard",
-  "prices.item2.subtitle": "серия для маркетплейса <br />(3 композита)",
+  "prices.item2.subtitle": "серия для маркетплейса <br />(3 изображения)",
   "prices.item2.price": "5000 руб",
   "prices.item2.text": " Единый вид товара во всех кадрах. До 4000 px + 1 кроп/изобр.",
   "prices.item2.advantages.count": "1 товар → до 2 сцен.",
@@ -54,7 +54,7 @@
   "prices.item2.advantages.edit": "Лёгкая ретушь, реалистичная тень.",
 
   "prices.item3.title": "Premium",
-  "prices.item3.subtitle": "кампейн-пакет <br />(6 композитов)",
+  "prices.item3.subtitle": "кампейн-пакет <br />(6 изображений)",
   "prices.item3.price": "10000 руб",
   "prices.item3.advantages.count": "1–2 товара → до 3 сцен",
   "prices.item3.advantages.size": "До 4000 px.",

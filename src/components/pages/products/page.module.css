@@ -26,11 +26,9 @@
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  /* gap: 32px; */
-  /* grid-row-start: 2; */
+  display: block;
   width: 100%;
+  min-width: 0px;
 }
 
 
@@ -41,8 +39,8 @@
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    /* padding: 32px;
+    padding-bottom: 80px; */
   }
 
   .main {

@@ -4,6 +4,8 @@
   isolation: isolate;
   background: #ffffff;
   padding: clamp(32px, 6vw, 48px) 0;
+  width: 100%;
+  min-width: 0px;
 }
 
 .boxGray {
@@ -17,6 +19,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 clamp(16px, 4vw, 28px);
+  width: 100%;
 }
 
 .boxContainerIsShort {
@@ -37,6 +40,8 @@
 
 .content {
   margin-top: 32px;
+  width: 100%;
+  min-width: 0px;
 }
 
 .title {

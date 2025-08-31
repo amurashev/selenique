@@ -1,12 +1,12 @@
 .button {
-  background-color: #2563eb;
+  background-color: var(--primary);
   color: white;
-  padding: 10px 18px;
+  padding: 10px 24px;
   border: none;
   border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
+  font-size: 16px;
+  /* font-weight: 600; */
+  height: 48px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   display: flex;
@@ -14,11 +14,12 @@
 }
 
 .button:hover:not(:disabled) {
-  background-color: #1e4fc5;
+  background-color: var(--primary-hover);
 }
 
 .disabled {
-  background-color: #a5b4fc;
+  background-color: var(--primary);
+  opacity: 0.5;
   cursor: not-allowed;
 }
 

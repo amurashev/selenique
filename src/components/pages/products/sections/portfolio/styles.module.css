@@ -1,9 +1,12 @@
 .sections {
-  position: relative;
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
 }
 
 .item {
   padding: 0 16px;
+  width: 100%;
 }
 
 .image {

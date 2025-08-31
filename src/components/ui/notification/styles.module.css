@@ -2,12 +2,12 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #2563eb; /* синий */
+  background-color: var(--success);
   color: white;
-  padding: 12px 20px;
+  padding: 16px 24px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  font-size: 14px;
+  font-size: 16px;
   opacity: 1;
   transform: translateY(0);
   animation: slideIn 0.3s ease forwards;

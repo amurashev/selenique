@@ -1,7 +1,7 @@
 .sections {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 5 колонок */
-  gap: 20px; /* отступ между ними */
+  grid-template-columns: repeat(2, 1fr); /* 5 колонок */
+  gap: 10px; /* отступ между ними */
 }
 
 .section {
@@ -17,4 +17,15 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
+}
+
+
+/* Responsive */
+@media (min-width: 600px) {
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 колонок */
+    gap: 20px; /* отступ между ними */
+  }
+  
 }

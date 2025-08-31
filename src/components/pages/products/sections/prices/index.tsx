@@ -7,6 +7,25 @@ import Section from "../../../../sections/section";
 
 import styles from "./styles.module.css";
 
+const CheckMarkIcon = () => (
+  <svg
+    fill="#ffffff"
+    viewBox="0 0 1920 1920"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M1743.858 267.012 710.747 1300.124 176.005 765.382 0 941.387l710.747 710.871 1209.24-1209.116z"
+        fillRule="evenodd"
+      ></path>
+    </g>
+  </svg>
+);
+
 const PRICES = [
   {
     title: "prices.item1.title",
@@ -52,7 +71,7 @@ export const Prices: React.FC = () => {
             <h3 className={styles.title}>
               {formatMessage({ id: item.title })}
             </h3>
-            <h4
+            <div
               dangerouslySetInnerHTML={{
                 __html: formatMessage({ id: item.subtitle }),
               }}
@@ -63,7 +82,7 @@ export const Prices: React.FC = () => {
             <ul className={styles.list}>
               {item.advantages.map((adv) => (
                 <li key={adv} className={styles.item}>
-                  <span className={styles.icon}>✅</span>
+                  <span className={styles.icon}><CheckMarkIcon /></span>
                   <span
                     key={adv}
                     dangerouslySetInnerHTML={{
