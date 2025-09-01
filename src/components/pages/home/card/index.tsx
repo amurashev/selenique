@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const Card = ({ image, title }) => {
+const Card = ({ image, title }: { image: string; title: string }) => {
   return (
     <div className={styles.card}>
       <img src={image} alt={title} className={styles.image} />
