@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58, 21, 27, 29, 37, 8, 47, 52, 56, 58];
+const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
 
 export default function ProductsPortfolioPage() {
   return (
