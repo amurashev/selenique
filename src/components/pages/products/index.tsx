@@ -12,14 +12,17 @@ import Process from "./sections/process";
 import FAQ from "./sections/faq";
 import WhereUse from "./sections/where-use";
 import Contact from "./sections/contact";
+import WithModel from "./sections/with-model";
+
 
 export default function HomePage() {
   return (
     <div className={styles.page}>
-      {/* <Header /> */}
+      <Header />
       <Hero />
       <main className={styles.main}>
         <BeforeAfter />
+        <WithModel />
         <WhatYouGet />
         <WhoIsClient />
         <WhereUse />

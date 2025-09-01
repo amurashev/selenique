@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
-import Link from "next/link";
+import Card from "./card";
 
 export default function HomePage() {
   const { formatMessage } = useIntl();
@@ -15,7 +16,11 @@ export default function HomePage() {
             href={"/ru/obrabotka-foto-tovarov-dlya-marketpleysov"}
             locale={"ru"}
           >
-            <div>{formatMessage({ id: "home.product.title" })}</div>
+            <Card
+              image="/product/bg2.webp"
+              title={formatMessage({ id: "products.hero.title" })}
+            />
+            <div></div>
           </Link>
         </div>
       </main>

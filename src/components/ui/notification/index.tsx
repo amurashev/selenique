@@ -4,12 +4,14 @@ import styles from "./styles.module.css";
 type NotificationProps = {
   message: string;
   duration?: number; // ms
+  type?: "success" | "error" | "info";
   onClose: () => void;
 };
 
 const Notification: React.FC<NotificationProps> = ({
   message,
   duration = 3000,
+  type = "success",
   onClose,
 }) => {
   const [closing, setClosing] = useState(false);
@@ -24,7 +26,7 @@ const Notification: React.FC<NotificationProps> = ({
   }, [duration, onClose]);
 
   return (
-    <div className={`${styles.notification} ${closing ? styles.hide : ""}`}>
+    <div className={`${styles.notification}  ${styles[type]} ${closing ? styles.hide : ""}`}>
       {message}
     </div>
   );

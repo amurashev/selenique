@@ -27,7 +27,7 @@ export const FAQItem: React.FC<{
 export const FAQ: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.faq.title" })}  size="800">
+    <Section title={formatMessage({ id: "products.faq.title" })}  size="720">
       <div className={styles.sections}>
         <FAQItem
           name={formatMessage({ id: "products.faq.faq1.title" })}

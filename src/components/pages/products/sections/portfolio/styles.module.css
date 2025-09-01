@@ -31,3 +31,9 @@
   right: -25px;
   cursor: pointer;
 }
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}

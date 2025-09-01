@@ -3,7 +3,7 @@ import HomePage from "@/components/pages/home";
 
 export default function Home() {
   return (
-    <Layout locale="en">
+    <Layout locale="ru">
       <HomePage />
     </Layout>
   );

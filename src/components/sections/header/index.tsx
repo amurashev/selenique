@@ -25,18 +25,18 @@ export default function Header() {
 
   return (
     <header className={styles.box}>
-      {/* <div className={styles.logoBox}>
+      <div className={styles.logoBox}>
         <Link href="/">
           <Image
             src="/logo.png"
             width={260}
             height={83}
             quality={100}
-            alt="VelvetNest.Club"
+            alt=""
           />
         </Link>
-      </div> */}
-      <div className={styles.menuBox}>
+      </div>
+      {/* <div className={styles.menuBox}>
         <ul className={styles.menu}>
           {MENU.map((item) => {
             const isActive = pathname === item.url;
@@ -52,7 +52,7 @@ export default function Header() {
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </header>
   );
 }

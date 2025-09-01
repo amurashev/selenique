@@ -10,6 +10,7 @@ import styles from "./styles.module.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Button } from "@/components/ui/button";
 
 function ChevronRight({ size = 32, stroke = 2, color = "currentColor" }) {
   return (
@@ -68,7 +69,7 @@ function SamplePrevArrow({ onClick }: { onClick?: () => void }) {
     </div>
   );
 }
-const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58]
+const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
 
 export const Portfolio: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -88,38 +89,51 @@ export const Portfolio: React.FC = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
-    <Section title={formatMessage({ id: "portfolio.title" })} isGray>
+    <Section title={formatMessage({ id: "portfolio.title" })} isGray id="portfolio">
       <div className={styles.sections}>
         <Slider {...settings}>
           {IMAGES.map((item) => (
             <div key={item} className={styles.item}>
-              <img className={styles.image} src={`/product/examples/${item}.webp`} />
+              <img
+                className={styles.image}
+                src={`/product/examples/${item}.webp`}
+              />
               {/* <p className={styles.itemText}>
                 {formatMessage({ id: item })}
               </p> */}
             </div>
           ))}
         </Slider>
+
+        <div className={styles.buttonBox}>
+          <Button
+            onClick={() => {
+              window.location.href = "/products-portfolio";
+            }}
+          >
+            {formatMessage({ id: "portfolio.see_all" })}
+          </Button>
+        </div>
       </div>
     </Section>
   );

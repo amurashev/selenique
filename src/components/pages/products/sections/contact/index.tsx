@@ -40,6 +40,11 @@ const TIME = [
   { label: "Не срочно (3-5 дней)", value: "not_urgent" },
 ];
 
+const MODEL = [
+  { label: "Да", value: "yes" },
+  { label: "Нет", value: "no" },
+];
+
 export const Contact: React.FC = () => {
   const { formatMessage } = useIntl();
 
@@ -49,41 +54,59 @@ export const Contact: React.FC = () => {
   const [count, setCount] = useState(COUNT[0].value);
   const [details, setDetails] = useState("");
   const [time, setTime] = useState(TIME[1].value);
+  const [hasModel, setHasModel] = useState(MODEL[1].value);
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const sendForm = async () => {
-    const data = {
-      name,
-      contact,
-      source,
-      count,
-      details,
-      time,
-    };
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("contact", contact);
+    formData.append("source", source.join(","));
+    formData.append("count", count);
+    formData.append("details", details);
+    formData.append("time", time);
+    formData.append("has_model", hasModel);
+
+    const fileInput = document.getElementById("fileInput"); // Assuming you have an input with id 'fileInput'
+    const files = (fileInput as any)?.files || []; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+    if (files.length != 0) {
+      const imageFile = files[0]; // Get the first selected file
+      formData.append("file", imageFile);
+
+      if (imageFile?.size > 5 * 1024 * 1024) {
+        setError("Размер файла не должен превышать 5 МБ");
+        return;
+      }
+    }
+
     setIsLoading(true);
-    await apiRequest<{ data: {
-      id: string
-    }}>("/api/email", {
+
+    await apiRequest<{
+      data: {
+        id: string;
+      };
+    }>("/api/email", {
       method: "POST",
-      data,
+      data: formData,
     });
 
     setIsSuccess(true);
     setIsLoading(false);
 
-    setName('')
-    setContact('')
-    setDetails('')
-
-    console.warn("sendForm", data);
+    setName("");
+    setContact("");
+    setDetails("");
+    (fileInput as any).value = ""; // eslint-disable-line @typescript-eslint/no-explicit-any
   };
 
   return (
     <Section
       title={formatMessage({ id: "products.contact.title" })}
-      size="800"
+      size="720"
       isGray
       id="contact_form"
     >
@@ -101,6 +124,14 @@ export const Contact: React.FC = () => {
         </InputWithLabel>
 
         <InputWithLabel
+          label="Прикрепите фото товара"
+          id="file"
+          hint="Допустимые форматы: JPG, PNG. Размер не более 5 МБ"
+        >
+          <Input type="file" id="fileInput" accept="image/*" />
+        </InputWithLabel>
+
+        <InputWithLabel
           label="Где будете использовать картинки?"
           id="source"
           hint="Можно выбрать несколько"
@@ -109,6 +140,19 @@ export const Contact: React.FC = () => {
             options={USAGE_SOURCES}
             defaultSelected={source}
             onChange={(value) => setSource(value)}
+          />
+        </InputWithLabel>
+
+        <InputWithLabel
+          label="Нужна ли демонстрация на ИИ модели?"
+          id="has_model"
+          hint=""
+        >
+          <RadioGroup
+            name="has_model"
+            options={MODEL}
+            defaultValue={hasModel}
+            onChange={(value) => setHasModel(value)}
           />
         </InputWithLabel>
 
@@ -163,13 +207,14 @@ export const Contact: React.FC = () => {
         </InputWithLabel>
 
         <div className={styles.buttonBox}>
-        <Button
-          onClick={sendForm}
-          disabled={name === "" || contact === ""}
-          loading={isLoading}
-        >
-          Отправить
-        </Button></div>
+          <Button
+            onClick={sendForm}
+            disabled={name === "" || contact === ""}
+            loading={isLoading}
+          >
+            Отправить
+          </Button>
+        </div>
       </div>
 
       {isSuccess && (
@@ -177,6 +222,15 @@ export const Contact: React.FC = () => {
           message="Форма успешно отпралена!"
           duration={3000}
           onClose={() => setIsSuccess(false)}
+        />
+      )}
+
+      {error && (
+        <Notification
+          message={error}
+          type="error"
+          duration={3000}
+          onClose={() => setError(null)}
         />
       )}
     </Section>

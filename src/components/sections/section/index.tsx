@@ -11,7 +11,7 @@ export const Section: React.FC<{
   children: React.ReactNode;
   isGray?: boolean;
   isShort?: boolean;
-  size?: "800" | "600" | "960";
+  size?: "800" | "600" | "960" | "720"
 }> = ({ id, title, text, isGray, isShort, size, children }) => {
   return (
     <section id={id} className={`${styles.box} ${isGray ? styles.boxGray : ""}`}>
@@ -20,6 +20,7 @@ export const Section: React.FC<{
           isShort ? styles.boxContainerIsShort : ""
         }
         ${size === "600" ? styles.boxContainer600 : ""}
+        ${size === "720" ? styles.boxContainer720 : ""}
         ${size === "800" ? styles.boxContainer800 : ""}
         ${size === "960" ? styles.boxContainer960 : ""}`}
       >
