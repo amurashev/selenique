@@ -5,6 +5,7 @@ import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
 import Card from "./card";
+import { productPageRoute } from "@/constants/routes";
 
 export default function HomePage() {
   const { formatMessage } = useIntl();
@@ -13,7 +14,7 @@ export default function HomePage() {
       <main className={styles.main}>
         <div>
           <Link
-            href={"/ru/obrabotka-foto-tovarov-dlya-marketpleysov"}
+            href={productPageRoute.getUrl()}
             locale={"ru"}
           >
             <Card

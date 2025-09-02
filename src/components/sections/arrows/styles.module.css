@@ -1,0 +1,39 @@
+.sections {
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+}
+
+.item {
+  padding: 0 16px;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.itemText {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  cursor: pointer;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  cursor: pointer;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}

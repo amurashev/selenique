@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  width: 460px;
+  max-width: 460px;
   border-radius: 12px;
   overflow: hidden;
   background: #fff;

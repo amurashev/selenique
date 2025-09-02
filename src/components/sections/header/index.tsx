@@ -28,9 +28,9 @@ export default function Header() {
       <div className={styles.logoBox}>
         <Link href="/">
           <Image
-            src="/logo.png"
-            width={260}
-            height={83}
+            src="/logo3.png"
+            width={500}
+            height={100}
             quality={100}
             alt=""
           />

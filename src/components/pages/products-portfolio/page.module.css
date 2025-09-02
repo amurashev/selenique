@@ -3,11 +3,9 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 2px; /* отступ между ними */
   width: 100%;
   padding: 4px;
+  padding-bottom: 92px;
 }
 
 .item {

@@ -1,23 +1,25 @@
 .sections {
-  justify-items: center;
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
 }
 
-.imageBox {
+
+.item {
+  padding: 0 16px;
   width: 100%;
-  display: flex;
 }
 
 .image {
   width: 100%;
-  height: 100%;
 }
 
 /* Responsive */
 @media (min-width: 760px) {
 
  
-.imageBox {
+/* .imageBox {
   width: 720px;
-}
+} */
   
 }

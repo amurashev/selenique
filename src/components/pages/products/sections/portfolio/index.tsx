@@ -11,64 +11,10 @@ import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@/components/ui/button";
+import { productPortfolioPageRoute } from "@/constants/routes";
+import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 
-function ChevronRight({ size = 32, stroke = 2, color = "currentColor" }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <path
-        d="M9 6l6 6-6 6"
-        stroke={color}
-        strokeWidth={stroke}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
-function ChevronLeft({ size = 32, stroke = 2, color = "currentColor" }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <path
-        d="M15 6l-6 6 6 6"
-        stroke={color}
-        strokeWidth={stroke}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function SampleNextArrow({ onClick }: { onClick?: () => void }) {
-  return (
-    <div className={styles.rightArrow} onClick={onClick}>
-      <ChevronRight />
-    </div>
-  );
-}
-
-function SamplePrevArrow({ onClick }: { onClick?: () => void }) {
-  return (
-    <div className={styles.leftArrow} onClick={onClick}>
-      <ChevronLeft />
-    </div>
-  );
-}
 const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
 
 export const Portfolio: React.FC = () => {
@@ -109,7 +55,11 @@ export const Portfolio: React.FC = () => {
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
-    <Section title={formatMessage({ id: "portfolio.title" })} isGray id="portfolio">
+    <Section
+      title={formatMessage({ id: "portfolio.title" })}
+      isGray
+      id="portfolio"
+    >
       <div className={styles.sections}>
         <Slider {...settings}>
           {IMAGES.map((item) => (
@@ -128,7 +78,7 @@ export const Portfolio: React.FC = () => {
         <div className={styles.buttonBox}>
           <Button
             onClick={() => {
-              window.location.href = "/products-portfolio";
+              window.location.href = productPortfolioPageRoute.getUrl();
             }}
           >
             {formatMessage({ id: "portfolio.see_all" })}
