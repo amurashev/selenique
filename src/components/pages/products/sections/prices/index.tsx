@@ -33,14 +33,14 @@ const PRICES = [
     price: "prices.item1.price",
   },
   {
-    title: "prices.item2.title",
-    subtitle: "prices.item2.subtitle",
-    price: "prices.item2.price",
-  },
-  {
     title: "prices.item3.title",
     subtitle: "prices.item3.subtitle",
     price: "prices.item3.price",
+  },
+  {
+    title: "prices.item2.title",
+    subtitle: "prices.item2.subtitle",
+    price: "prices.item2.price",
   },
   {
     title: "prices.item4.title",

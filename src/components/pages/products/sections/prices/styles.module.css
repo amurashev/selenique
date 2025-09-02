@@ -18,12 +18,13 @@
 
 .cardDetails {
   flex-grow: 1;
+  margin-right: 12px;
 }
 
 .price {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
-  /* text-align: center; */
+  text-align: right;
   color: var(--primary);
   /* margin: 24px 0; */
 }
@@ -73,6 +74,10 @@
     grid-template-rows: repeat(5, 1fr);
     /* grid-template-columns: repeat(5, 1fr); */
     gap: 10px;
+  }
+
+  .price {
+    font-size: 21px;
   }
   
 }
