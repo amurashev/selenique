@@ -4,6 +4,7 @@ import { Resend } from "resend";
 // import path from "path";
 
 const KEY = process.env.RESEND_API_KEY;
+const EMAIL = process.env.RESEND_EMAIL || ''
 
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
@@ -56,7 +57,7 @@ export async function POST(request: NextRequest) {
 
   const result = await resend.emails.send({
     from: "onboarding@resend.dev",
-    to: "selenique.studio@gmail.com",
+    to: EMAIL as string,
     subject: "Selenique: Заявка с сайта",
     attachments,
     html: `<div>
