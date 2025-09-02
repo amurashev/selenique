@@ -13,12 +13,16 @@ const ITEMS = [
     text: "who_is_client.item1",
   },
   {
-    image: "/product/items/fashion.webp",
+    image: "/product/items/jewerly.webp",
     text: "who_is_client.item2",
   },
   {
     image: "/product/items/gadgets.webp",
     text: "who_is_client.item3",
+  },
+  {
+    image: "/product/items/dress.webp",
+    text: "who_is_client.item6",
   },
   {
     image: "/product/items/food.webp",
@@ -29,6 +33,17 @@ const ITEMS = [
     text: "who_is_client.item5",
   },
 ];
+
+const Card = ({ image, title }: { image: string; title: string }) => {
+  return (
+    <div className={styles.card}>
+      <img src={image} alt={title} className={styles.image} />
+      <div className={styles.textBlock}>
+        <h3 className={styles.title}>{title}</h3>
+      </div>
+    </div>
+  );
+};
 
 export const WhoIsClient: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -41,13 +56,7 @@ export const WhoIsClient: React.FC = () => {
     >
       <div className={styles.sections}>
         {ITEMS.map((item) => (
-          <div key={item.text} className={styles.section}>
-            <div className={styles.imageBox}>
-              <img src={item.image} alt={item.text} className={styles.image} />
-            </div>
-
-            <h3>{formatMessage({ id: item.text })}</h3>
-          </div>
+          <Card title={formatMessage({ id: item.text })} image={item.image} />
         ))}
       </div>
     </Section>

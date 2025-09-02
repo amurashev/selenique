@@ -9,6 +9,40 @@
   width: 100%;
 }
 
+
+.card {
+  position: relative;
+  max-width: 460px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.textBlock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+/* 
 .imageBox {
   width: 100%;
 }
@@ -17,7 +51,7 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
-}
+} */
 
 
 /* Responsive */
@@ -33,7 +67,7 @@
 @media (min-width: 900px) {
   .sections {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+    grid-template-columns: repeat(3, 1fr); /* 5 колонок */
     gap: 20px; /* отступ между ними */
   }
 }

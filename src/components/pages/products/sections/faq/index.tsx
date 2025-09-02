@@ -29,6 +29,10 @@ export const FAQ: React.FC = () => {
   return (
     <Section title={formatMessage({ id: "products.faq.title" })}  size="720">
       <div className={styles.sections}>
+      <FAQItem
+          name={formatMessage({ id: "products.faq.faq6.title" })}
+          text={formatMessage({ id: "products.faq.faq6.text" })}
+        />
         <FAQItem
           name={formatMessage({ id: "products.faq.faq1.title" })}
           text={formatMessage({ id: "products.faq.faq1.text" })}
