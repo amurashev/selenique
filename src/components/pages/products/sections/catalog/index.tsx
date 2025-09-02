@@ -9,7 +9,7 @@ import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 
 import styles from "./styles.module.css";
 
-const IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];
+const IMAGES = [1, 2, 5, 12, 7, 8, 9, 11, 6];
 
 export const Catalog: React.FC = () => {
   const { formatMessage } = useIntl();

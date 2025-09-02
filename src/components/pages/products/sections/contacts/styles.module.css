@@ -17,3 +17,7 @@
   gap: 8px;
   margin-bottom: 8px;
 }
+
+.link {
+  color: var(--primary);
+}

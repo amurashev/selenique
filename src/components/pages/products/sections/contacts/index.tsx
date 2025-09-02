@@ -69,18 +69,9 @@ const Email = () => (
     height="32px"
   >
     <rect y="85.914" fill="#F6C358" width="491.52" height="319.693" />
-    <polygon
-      fill="#FCD462"
-      points="245.76,217.258 491.52,405.604 0,405.604 "
-    />
-    <polygon
-      fill="#DC8744"
-      points="245.76,291.673 0,85.916 491.52,85.916 "
-    />
-    <polygon
-      fill="#FCD462"
-      points="245.76,274.261 0,85.916 491.52,85.916 "
-    />
+    <polygon fill="#FCD462" points="245.76,217.258 491.52,405.604 0,405.604 " />
+    <polygon fill="#DC8744" points="245.76,291.673 0,85.916 491.52,85.916 " />
+    <polygon fill="#FCD462" points="245.76,274.261 0,85.916 491.52,85.916 " />
   </svg>
 );
 
@@ -91,13 +82,21 @@ export const Contacts: React.FC = () => {
       <div className={styles.sections}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Telegram /> +7 (925) 100-66-90
+            <Telegram /> <a href="https://t.me/+79251006690" target="_blank" className={styles.link}>
+              +7 (925) 100-66-90
+            </a>
           </li>
           <li className={styles.item}>
-            <WhatsApp /> +7 (999) 100-66-90
+            <WhatsApp />{" "}
+            <a href="https://wa.me/+79251006690" target="_blank" className={styles.link}>
+              +7 (925) 100-66-90
+            </a>
           </li>
-          <li className={styles.item}>
-            <Email /> <a href="mailto:selenique.studio@gmail.com">selenique.studio@gmail.com</a>
+          <li className={styles.item} >
+            <Email />{" "}
+            <a href="mailto:selenique.studio@gmail.com" className={styles.link}>
+              selenique.studio@gmail.com
+            </a>
           </li>
         </ul>
       </div>

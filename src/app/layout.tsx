@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poiret_One, Oswald } from "next/font/google";
+import { Poiret_One } from "next/font/google";
 
 import "./globals.css";
 
@@ -9,13 +9,8 @@ const font1 = Poiret_One({
   weight: '400'
 });
 
-// const font2 = Oswald({
-//   variable: "--font-geist-sans",
-//   subsets: ["cyrillic"],
-// });
-
 export const metadata: Metadata = {
-  title: "Selenique: AI Fashion Ads & WOW Resources",
+  title: "Selenique Studio",
   description: "",
 };
 
@@ -26,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+      <meta name="yandex-verification" content="932ef8348a3151c0" />
+      </head>
       <body className={`${font1.variable}`}>
         {children}
       </body>
