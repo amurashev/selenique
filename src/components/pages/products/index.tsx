@@ -13,6 +13,8 @@ import FAQ from "./sections/faq";
 import WhereUse from "./sections/where-use";
 import Contact from "./sections/contact";
 import WithModel from "./sections/with-model";
+import Contacts from "./sections/contacts";
+import { Catalog } from "./sections/catalog";
 
 
 export default function HomePage() {
@@ -23,14 +25,16 @@ export default function HomePage() {
       <main className={styles.main}>
         <BeforeAfter />
         <WithModel />
+        <Catalog />
         <WhatYouGet />
         <WhoIsClient />
         <WhereUse />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Process />
         <Prices />
         <FAQ />
         <Contact />
+        <Contacts />
       </main>
       <Footer />
     </div>

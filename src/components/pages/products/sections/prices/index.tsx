@@ -31,43 +31,37 @@ const PRICES = [
     title: "prices.item1.title",
     subtitle: "prices.item1.subtitle",
     price: "prices.item1.price",
-    text: "prices.item1.text",
-    advantages: [
-      "prices.item1.advantages.count",
-      "prices.item1.advantages.size",
-      "prices.item1.advantages.edit",
-    ],
   },
   {
     title: "prices.item2.title",
     subtitle: "prices.item2.subtitle",
     price: "prices.item2.price",
-    advantages: [
-      "prices.item2.advantages.count",
-      "prices.item2.advantages.size",
-      "prices.item2.advantages.edit",
-    ],
   },
   {
     title: "prices.item3.title",
     subtitle: "prices.item3.subtitle",
     price: "prices.item3.price",
-    advantages: [
-      "prices.item3.advantages.count",
-      "prices.item3.advantages.size",
-      "prices.item3.advantages.edit",
-      "prices.item3.advantages.psd",
-    ],
+  },
+  {
+    title: "prices.item4.title",
+    subtitle: "prices.item4.subtitle",
+    price: "prices.item4.price",
+  },
+  {
+    title: "prices.item5.title",
+    subtitle: "prices.item5.subtitle",
+    price: "prices.item5.price",
   },
 ];
 
 export const Prices: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "prices.title" })} isGray>
+    <Section title={formatMessage({ id: "prices.title" })} isGray={false}>
       <div className={styles.sections}>
         {PRICES.map((item) => (
           <div key={item.title} className={styles.card}>
+            <div className={styles.cardDetails}>
             <h3 className={styles.title}>
               {formatMessage({ id: item.title })}
             </h3>
@@ -77,9 +71,10 @@ export const Prices: React.FC = () => {
               }}
               className={styles.subtitle}
             />
+            </div>
             <p className={styles.price}>{formatMessage({ id: item.price })}</p>
 
-            <ul className={styles.list}>
+            {/* <ul className={styles.list}>
               {item.advantages.map((adv) => (
                 <li key={adv} className={styles.item}>
                   <span className={styles.icon}><CheckMarkIcon /></span>
@@ -91,7 +86,7 @@ export const Prices: React.FC = () => {
                   />
                 </li>
               ))}
-            </ul>
+            </ul> */}
             {/* <button>Выбрать</button> */}
           </div>
         ))}

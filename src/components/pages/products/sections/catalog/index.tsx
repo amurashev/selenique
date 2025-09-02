@@ -4,26 +4,21 @@ import React from "react";
 import { useIntl } from "react-intl";
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
 import Section from "../../../../sections/section";
 import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 
 import styles from "./styles.module.css";
 
-const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
+const IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];
 
-export const BeforeAfter: React.FC = () => {
+export const Catalog: React.FC = () => {
   const { formatMessage } = useIntl();
-
   const settings = {
     dots: true,
     infinite: true,
     lazyLoad: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -31,7 +26,7 @@ export const BeforeAfter: React.FC = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -52,33 +47,21 @@ export const BeforeAfter: React.FC = () => {
     ],
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-
   return (
     <Section
-      title={formatMessage({ id: "before_after.title" })}
-      text={formatMessage({ id: "before_after.text" })}
+      title={formatMessage({ id: "catalog.title" })}
+      text={formatMessage({ id: "catalog.text" })}
       isGray
       isShort
     >
       <div className={styles.sections}>
-        {/* <div className={styles.imageBox}>
-          <img
-            src={"/product/before_after.webp"}
-            alt="Image Before"
-            className={styles.image}
-          />
-        </div> */}
-
-<Slider {...settings}>
+        <Slider {...settings}>
           {IMAGES.map((item) => (
             <div key={item} className={styles.item}>
               <img
                 className={styles.image}
-                src={`/product/examples/${item}.webp`}
+                src={`/product/catalog/${item}.webp`}
               />
-              {/* <p className={styles.itemText}>
-                {formatMessage({ id: item })}
-              </p> */}
             </div>
           ))}
         </Slider>
@@ -87,4 +70,4 @@ export const BeforeAfter: React.FC = () => {
   );
 };
 
-export default BeforeAfter;
+export default Catalog;

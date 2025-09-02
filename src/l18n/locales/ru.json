@@ -41,28 +41,27 @@
   "portfolio.see_all": "Смотреть другие работы",
 
   "prices.title": "Пакеты и цены",
-  "prices.item1.title": "Basic",
-  "prices.item1.subtitle": "обработка фото товара <br />(1 сцена)",
-  "prices.item1.price": "2000 руб",
-  "prices.item1.advantages.count": "1 товар → 1 естественная сцена.",
-  "prices.item1.advantages.size": "До 3000 px.",
-  "prices.item1.advantages.edit": "Лёгкая ретушь, реалистичная тень.",
 
-  "prices.item2.title": "Standard",
-  "prices.item2.subtitle": "серия для маркетплейса <br />(3 изображения)",
-  "prices.item2.price": "5000 руб",
+  "prices.item1.title": "Предметная съёмка на простом/градиентном фоне",
+  "prices.item1.subtitle": "быстрый и стильный контент для маркетплейсов и соцсетей.",
+  "prices.item1.price": "от 400руб / фото",
+
+  "prices.item2.title": "Каталог на белом фоне",
+  "prices.item2.subtitle": "универсальный стандарт для маркетплейсов и онлайн-витрин",
+  "prices.item2.price": "от 800руб / ракурс",
   "prices.item2.text": " Единый вид товара во всех кадрах. До 4000 px + 1 кроп/изобр.",
-  "prices.item2.advantages.count": "1 товар → до 2 сцен.",
-  "prices.item2.advantages.size": "До 4000 px.",
-  "prices.item2.advantages.edit": "Лёгкая ретушь, реалистичная тень.",
 
-  "prices.item3.title": "Premium",
-  "prices.item3.subtitle": "кампейн-пакет <br />(6 изображений)",
-  "prices.item3.price": "10000 руб",
-  "prices.item3.advantages.count": "1–2 товара → до 3 сцен",
-  "prices.item3.advantages.size": "До 4000 px.",
-  "prices.item3.advantages.psd": "PSD по запросу.",
-  "prices.item3.advantages.edit": "Лёгкая ретушь, реалистичная тень.",
+  "prices.item3.title": "Предметка на сложном фоне/с людьми",
+  "prices.item3.subtitle": "имиджевые кадры, которые продают атмосферой",
+  "prices.item3.price": "от 1000руб / фото",
+
+  "prices.item4.title": "Съёмка лукбука",
+  "prices.item4.subtitle": "модные образы для брендов, готовые к публикации в кампейнах",
+  "prices.item4.price": "от 2000руб / кадр",
+
+  "prices.item5.title": "Создание уникальной консистентной модели для каталога",
+  "prices.item5.subtitle": "виртуальная модель для серии съёмок в едином стиле",
+  "prices.item5.price": "5000руб / модель",
 
   "process.title": "Процесс",
   "process.item1": "<b>Бриф</b>: фото товара в хорошем качестве, желаемые сцены/референсы, площадка (Ozon/WB/Я.Маркет), размеры/форматы.",
@@ -82,7 +81,11 @@
   "products.faq.faq5.title": "Права и бренды?",
   "products.faq.faq5.text": "Работаю только с материалами, на которые у вас есть права. AI-контент маркирую по запросу.",
 
-  "products.contact.title": "Получить расчёт и демо",
+  "products.contact.title": "Получить расчёт",
+  "contacts.faq.title": "Контакты",
+
+  "catalog.title": "Каталожная съемка",
+  "catalog.text": "Стандартизированные фото товара на белом/нейтральном фоне под правила Ozon, Wildberries, Яндекс.Маркета. Чистая подача, ровный цвет, аккуратная ретушь. Готовые размеры и форматы — сразу в карточку.",
 
   "hero.title": "AI Fashion Ads & WOW Resources",
   "hero.text": "Руководства, подсказки и сцены — Photoshop не требуется",

@@ -9,7 +9,7 @@ import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 
 import styles from "./styles.module.css";
 
-const IMAGES = [1,2,3,4,6,10,11,12,13,14,15,16];
+const IMAGES = [1, 2, 3, 4, 6, 10, 11, 12, 13, 14, 15, 16];
 
 export const WithModel: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -47,7 +47,6 @@ export const WithModel: React.FC = () => {
     ],
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-
   return (
     <Section
       title={formatMessage({ id: "with_model.title" })}
@@ -56,16 +55,13 @@ export const WithModel: React.FC = () => {
       isShort
     >
       <div className={styles.sections}>
-      <Slider {...settings}>
+        <Slider {...settings}>
           {IMAGES.map((item) => (
             <div key={item} className={styles.item}>
               <img
                 className={styles.image}
                 src={`/product/model/${item}.webp`}
               />
-              {/* <p className={styles.itemText}>
-                {formatMessage({ id: item })}
-              </p> */}
             </div>
           ))}
         </Slider>
