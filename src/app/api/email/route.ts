@@ -56,8 +56,8 @@ export async function POST(request: NextRequest) {
 
   const result = await resend.emails.send({
     from: "onboarding@resend.dev",
-    to: "andreymurashev@gmail.com",
-    subject: "selenique: Заявка с сайта",
+    to: "selenique.studio@gmail.com",
+    subject: "Selenique: Заявка с сайта",
     attachments,
     html: `<div>
       <ul>

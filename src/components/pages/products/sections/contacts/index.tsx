@@ -91,13 +91,13 @@ export const Contacts: React.FC = () => {
       <div className={styles.sections}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Telegram /> +7 (999) 123-45-67
+            <Telegram /> +7 (925) 100-66-90
           </li>
           <li className={styles.item}>
-            <WhatsApp /> +7 (999) 123-45-67
+            <WhatsApp /> +7 (999) 100-66-90
           </li>
           <li className={styles.item}>
-            <Email /> mail@mail.com
+            <Email /> <a href="mailto:selenique.studio@gmail.com">selenique.studio@gmail.com</a>
           </li>
         </ul>
       </div>
