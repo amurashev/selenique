@@ -56,7 +56,11 @@ export const WhoIsClient: React.FC = () => {
     >
       <div className={styles.sections}>
         {ITEMS.map((item) => (
-          <Card title={formatMessage({ id: item.text })} image={item.image} />
+          <Card
+            key={item.text}
+            title={formatMessage({ id: item.text })}
+            image={item.image}
+          />
         ))}
       </div>
     </Section>
