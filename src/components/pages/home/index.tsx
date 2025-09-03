@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
 import Card from "./card";
-import { productPageRoute } from "@/constants/routes";
+import { aiConsultationPageRoute, productPageRoute } from "@/constants/routes";
 
 export default function HomePage() {
   const { formatMessage } = useIntl();
@@ -21,9 +21,20 @@ export default function HomePage() {
               image="/product/bg2.webp"
               title={formatMessage({ id: "products.hero.title" })}
             />
-            <div></div>
           </Link>
         </div>
+
+        {/* <div>
+          <Link
+            href={aiConsultationPageRoute.getUrl()}
+            locale={"ru"}
+          >
+            <Card
+              image="/product/bg2.webp"
+              title={formatMessage({ id: "products.hero.title" })}
+            />
+          </Link>
+        </div> */}
       </main>
     </div>
   );

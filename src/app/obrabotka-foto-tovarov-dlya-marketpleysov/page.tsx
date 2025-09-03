@@ -1,7 +1,6 @@
 import HomePage from "@/components/pages/products";
 import Layout from "@/components/layout";
 
-import { Locale } from "../../../i18n-config";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

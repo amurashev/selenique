@@ -29,9 +29,9 @@ const USAGE_SOURCES = [
 ];
 
 const COUNT = [
-  { label: "1-3", value: "1-3" },
-  { label: "4-6", value: "4-6" },
-  { label: "7-10", value: "7-10" },
+  { label: "1–3", value: "1-3" },
+  { label: "4–6", value: "4-6" },
+  { label: "7–10", value: "7-10" },
   { label: "Пока не знаю — подскажите", value: "?" },
 ];
 
