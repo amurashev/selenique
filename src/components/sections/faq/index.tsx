@@ -1,8 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./styles.module.css";
+
+const Arrow = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#86868b"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="6 9 12 15 18 9" />
+    </svg>
+  );
+};
 
 export const FAQItem: React.FC<{
   title: string;
@@ -10,15 +28,17 @@ export const FAQItem: React.FC<{
   imageSrc?: string;
   isRight?: boolean;
 }> = ({ title, text = "" }) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <section className={styles.section}>
-      <div className={`${styles.sectionContainer}`}>
-        <div className={`${styles.sectionTextBox}`}>
-          <h3 className={styles.sectionTitle}>{title}</h3>
-          <p className={styles.sectionText}>{text}</p>
-        </div>
-      </div>
-    </section>
+    <div className={styles.item}>
+      <button className={styles.header} onClick={() => setIsOpen(!isOpen)}>
+        <span>{title}</span>
+        <span className={`${styles.icon} ${isOpen ? styles.open : ""}`}>
+          <Arrow />
+        </span>
+      </button>
+      {isOpen && <div className={styles.body}>{text}</div>}
+    </div>
   );
 };
 

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Poiret_One } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 
 import "./globals.css";
 
-const font1 = Poiret_One({
-  variable: "--font-heading",
-  subsets: ["cyrillic"],
-  weight: "400",
-});
+// const font1 = Montserrat({
+//   variable: "--font-heading",
+//   subsets: ["cyrillic"],
+//   weight: "600",
+// });
 
 export const metadata: Metadata = {
   title: "Selenique Studio",
@@ -42,7 +42,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${font1.variable}`}>{children}</body>
+      <body className={``}>{children}</body>
     </html>
   );
 }

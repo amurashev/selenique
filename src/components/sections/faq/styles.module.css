@@ -1,34 +1,36 @@
-.sections {
-  
+.item {
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.section {
-  padding-bottom: 24px; /* Padding within each individual grid item */
-  /* border-bottom: 2px solid #ffa94d; */
-}
-
-.sectionContainer {
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  /* padding: 0 16px; */
-}
-
-
-.sectionTextBox {
+.header {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 16px 0;
+  font-size: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
 }
 
-
-.sectionTitle {
-  font-size: 22px;
-  line-height: 1;
+.header span {
+  display: inline-block;
 }
 
-.sectionText {
-  font-size: 19px;
-  margin-top: 4px;
-  color: #888888;
+.icon {
+  transition: transform 0.2s ease;
+  font-size: 16px;
 }
 
+.open {
+  transform: rotate(180deg);
+}
+
+.body {
+  padding: 0 0 16px 0;
+  line-height: 1.5;
+  color: var(--text);
+}

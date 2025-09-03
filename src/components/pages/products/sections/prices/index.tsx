@@ -57,7 +57,7 @@ const PRICES = [
 export const Prices: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.prices.title" })} isGray={false}>
+    <Section title={formatMessage({ id: "products.prices.title" })} isGray={false} size="960">
       <div className={styles.sections}>
         {PRICES.map((item) => (
           <div key={item.title} className={styles.card}>
