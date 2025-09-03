@@ -6,7 +6,7 @@ import "./globals.css";
 const font1 = Poiret_One({
   variable: "--font-heading",
   subsets: ["cyrillic"],
-  weight: '400'
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -22,11 +22,27 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
-      <meta name="yandex-verification" content="932ef8348a3151c0" />
+        <meta name="yandex-verification" content="932ef8348a3151c0" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${font1.variable}`}>
-        {children}
-      </body>
+      <body className={`${font1.variable}`}>{children}</body>
     </html>
   );
 }

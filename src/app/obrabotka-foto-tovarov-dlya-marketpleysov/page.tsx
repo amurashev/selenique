@@ -11,11 +11,9 @@ export const metadata: Metadata = {
 };
 
 export default async function ProductPage() {
-
-
   return (
     <Layout>
-      <HomePage />;
+      <HomePage />
     </Layout>
   );
 }
