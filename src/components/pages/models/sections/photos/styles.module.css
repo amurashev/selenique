@@ -1,0 +1,28 @@
+.sections {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* gap: 20px;  */
+}
+
+.item {
+  padding: 16px;
+  width: 25%;
+}
+
+.image {
+  width: 100%;
+}
+
+.name {
+  font-size: 21px;
+  margin-top: 2px;
+  display: block;
+}
+
+
+/* Responsive */
+@media (min-width: 760px) {
+
+}

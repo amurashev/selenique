@@ -12,19 +12,17 @@ export default function HomePage() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div>
-          <Link
-            href={productPageRoute.getUrl()}
-            locale={"ru"}
-          >
-            <Card
-              image="/product/bg2.webp"
-              title={formatMessage({ id: "products.hero.title" })}
-            />
-          </Link>
-        </div>
-
-        {/* <div>
+        <h2>Наши услуги</h2>
+        <div className={styles.items}>
+          <div>
+            <Link href={productPageRoute.getUrl()} locale={"ru"}>
+              <Card
+                image="/product/bg2.webp"
+                title={formatMessage({ id: "products.hero.title" })}
+              />
+            </Link>
+          </div>
+          {/* <div>
           <Link
             href={aiConsultationPageRoute.getUrl()}
             locale={"ru"}
@@ -35,6 +33,7 @@ export default function HomePage() {
             />
           </Link>
         </div> */}
+        </div>
       </main>
     </div>
   );

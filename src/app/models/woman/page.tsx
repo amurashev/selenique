@@ -4,7 +4,7 @@ import ModelsPage from "@/components/pages/models";
 export default function Models() {
   return (
     <Layout locale="ru">
-      <ModelsPage />
+      <ModelsPage type="woman" />
     </Layout>
   );
 }
