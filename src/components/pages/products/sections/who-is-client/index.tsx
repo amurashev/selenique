@@ -10,27 +10,27 @@ import styles from "./styles.module.css";
 const ITEMS = [
   {
     image: "/product/items/beauty.webp",
-    text: "who_is_client.item1",
+    text: "products.who_is_client.item1",
   },
   {
     image: "/product/items/jewerly.webp",
-    text: "who_is_client.item2",
+    text: "products.who_is_client.item2",
   },
   {
     image: "/product/items/gadgets.webp",
-    text: "who_is_client.item3",
+    text: "products.who_is_client.item3",
   },
   {
     image: "/product/items/dress.webp",
-    text: "who_is_client.item6",
+    text: "products.who_is_client.item6",
   },
   {
     image: "/product/items/food.webp",
-    text: "who_is_client.item4",
+    text: "products.who_is_client.item4",
   },
   {
     image: "/product/items/acessories.webp",
-    text: "who_is_client.item5",
+    text: "products.who_is_client.item5",
   },
 ];
 
@@ -49,8 +49,8 @@ export const WhoIsClient: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
     <Section
-      title={formatMessage({ id: "who_is_client.title" })}
-      text={formatMessage({ id: "who_is_client.text" })}
+      title={formatMessage({ id: "products.who_is_client.title" })}
+      text={formatMessage({ id: "products.who_is_client.text" })}
       isShort
       isGray
     >

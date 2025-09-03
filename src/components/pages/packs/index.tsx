@@ -2,7 +2,7 @@ import { Hero } from "@/components/sections/hero";
 import { Packs } from "@/components/sections/packs";
 import Guides from "@/components/sections/guides";
 import Header from "@/components/sections/header";
-import { FAQ } from "@/components/sections/faq";
+import { FAQ } from "@/components/sections/_faq";
 import Footer from "@/components/sections/footer";
 import Examples from "@/components/sections/examples";
 

@@ -1,0 +1,38 @@
+.sections {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* отступ между ними */
+}
+
+
+.imageBox {
+  flex-shrink: 0;
+  width: 240px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.text {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* Responsive */
+@media (min-width: 600px) {
+ 
+}

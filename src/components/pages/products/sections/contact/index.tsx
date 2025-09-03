@@ -62,7 +62,9 @@ export const Contact: React.FC = () => {
 
   const sendForm = async () => {
     const formData = new FormData();
-    formData.append("name", name);
+
+    formData.append("type", 'photo_creation'); 
+    formData.append("name", name); 
     formData.append("contact", contact);
     formData.append("source", source.join(","));
     formData.append("count", count);

@@ -49,8 +49,8 @@ export const Catalog: React.FC = () => {
 
   return (
     <Section
-      title={formatMessage({ id: "catalog.title" })}
-      text={formatMessage({ id: "catalog.text" })}
+      title={formatMessage({ id: "products.catalog.title" })}
+      text={formatMessage({ id: "products.catalog.text" })}
       isGray
       isShort
     >

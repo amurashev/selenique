@@ -10,27 +10,30 @@ import { Button } from "@/components/ui/button";
 import { goToForm } from "../../utils";
 import ItemsList from "@/components/sections/items-list";
 
-export const WhereUse: React.FC = () => {
+export const WhatYouGet: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.where_use.title" })} isShort>
+    <Section
+      title={formatMessage({ id: "consultations.what_you_get.title" })}
+      isShort
+    >
       <div className={styles.sections}>
         <ItemsList
-          items={[1, 2, 3, 4].map((item) =>
+          items={[1, 2, 3, 4, 5, 6].map((item) =>
             formatMessage({
-              id: `products.where_use.item${item}`,
+              id: `consultations.what_you_get.item${item}`,
             })
           )}
         />
 
-        <div className={styles.buttonBox}>
+        {/* <div className={styles.buttonBox}>
           <Button onClick={goToForm}>
             {formatMessage({ id: "products.hero.cta" })}
           </Button>
-        </div>
+        </div> */}
       </div>
     </Section>
   );
 };
 
-export default WhereUse;
+export default WhatYouGet;

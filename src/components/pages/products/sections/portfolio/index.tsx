@@ -56,7 +56,7 @@ export const Portfolio: React.FC = () => {
 
   return (
     <Section
-      title={formatMessage({ id: "portfolio.title" })}
+      title={formatMessage({ id: "products.portfolio.title" })}
       isGray
       id="portfolio"
     >
@@ -78,7 +78,7 @@ export const Portfolio: React.FC = () => {
               window.location.href = productPortfolioPageRoute.getUrl();
             }}
           >
-            {formatMessage({ id: "portfolio.see_all" })}
+            {formatMessage({ id: "products.portfolio.see_all" })}
           </Button>
         </div>
       </div>

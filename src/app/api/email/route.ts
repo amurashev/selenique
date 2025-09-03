@@ -14,6 +14,7 @@ export async function GET(request: NextRequest) {
 }
 
 type PostData = {
+  type: "photo_creation" | "consultation"
   name: string;
   contact: string;
   source: string;
@@ -27,6 +28,7 @@ type PostData = {
 export async function POST(request: NextRequest) {
   const formData = await request.formData();
   const data: PostData = {
+    type: formData.get("type") as PostData['type'] || "photo_creation" as const,
     name: formData.get("name") as string,
     contact: formData.get("contact") as string,
     source: formData.get("source") as string,
@@ -55,10 +57,20 @@ export async function POST(request: NextRequest) {
     });
   }
 
+  let subject = "Selenique: "
+
+  if (data.type === "photo_creation") {
+    subject = "Selenique: Заявка на обработку фотографии"
+  }
+
+  if (data.type === "consultation") {
+    subject = "Selenique: Заявка на консультацию"
+  }
+
   const result = await resend.emails.send({
     from: "onboarding@resend.dev",
     to: EMAIL as string,
-    subject: "Selenique: Заявка с сайта",
+    subject: subject,
     attachments,
     html: `<div>
       <ul>

@@ -49,8 +49,8 @@ export const WithModel: React.FC = () => {
 
   return (
     <Section
-      title={formatMessage({ id: "with_model.title" })}
-      text={formatMessage({ id: "with_model.text" })}
+      title={formatMessage({ id: "products.with_model.title" })}
+      text={formatMessage({ id: "products.with_model.text" })}
       isGray
       isShort
     >

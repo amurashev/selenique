@@ -28,36 +28,36 @@ const CheckMarkIcon = () => (
 
 const PRICES = [
   {
-    title: "prices.item1.title",
-    subtitle: "prices.item1.subtitle",
-    price: "prices.item1.price",
+    title: "products.prices.item1.title",
+    subtitle: "products.prices.item1.subtitle",
+    price: "products.prices.item1.price",
   },
   {
-    title: "prices.item3.title",
-    subtitle: "prices.item3.subtitle",
-    price: "prices.item3.price",
+    title: "products.prices.item3.title",
+    subtitle: "products.prices.item3.subtitle",
+    price: "products.prices.item3.price",
   },
   {
-    title: "prices.item2.title",
-    subtitle: "prices.item2.subtitle",
-    price: "prices.item2.price",
+    title: "products.prices.item2.title",
+    subtitle: "products.prices.item2.subtitle",
+    price: "products.prices.item2.price",
   },
   {
-    title: "prices.item4.title",
-    subtitle: "prices.item4.subtitle",
-    price: "prices.item4.price",
+    title: "products.prices.item4.title",
+    subtitle: "products.prices.item4.subtitle",
+    price: "products.prices.item4.price",
   },
   {
-    title: "prices.item5.title",
-    subtitle: "prices.item5.subtitle",
-    price: "prices.item5.price",
+    title: "products.prices.item5.title",
+    subtitle: "products.prices.item5.subtitle",
+    price: "products.prices.item5.price",
   },
 ];
 
 export const Prices: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "prices.title" })} isGray={false}>
+    <Section title={formatMessage({ id: "products.prices.title" })} isGray={false}>
       <div className={styles.sections}>
         {PRICES.map((item) => (
           <div key={item.title} className={styles.card}>

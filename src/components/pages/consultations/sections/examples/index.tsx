@@ -16,7 +16,7 @@ import styles from "./styles.module.css";
 
 const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
 
-export const BeforeAfter: React.FC = () => {
+export const Examples: React.FC = () => {
   const { formatMessage } = useIntl();
 
   const settings = {
@@ -55,8 +55,8 @@ export const BeforeAfter: React.FC = () => {
 
   return (
     <Section
-      title={formatMessage({ id: "products.before_after.title" })}
-      text={formatMessage({ id: "products.before_after.text" })}
+      title={formatMessage({ id: "consultations.examples.title" })}
+      text={formatMessage({ id: "consultations.examples.text" })}
       isGray
       isShort
     >
@@ -86,7 +86,7 @@ export const BeforeAfter: React.FC = () => {
               window.location.href = productPortfolioPageRoute.getUrl();
             }}
           >
-            {formatMessage({ id: "products.portfolio.see_all" })}
+            {formatMessage({ id: "consultations.examples.see_all" })}
           </Button>
         </div>
       </div>
@@ -94,4 +94,4 @@ export const BeforeAfter: React.FC = () => {
   );
 };
 
-export default BeforeAfter;
+export default Examples;

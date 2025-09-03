@@ -1,3 +1,8 @@
+.sections {
+  display: flex;
+  justify-content: center;
+}
+
 .buttonBox {
   display: flex;
   justify-content: center;

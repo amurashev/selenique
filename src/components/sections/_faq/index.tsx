@@ -3,16 +3,16 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../section";
 
 import styles from "./styles.module.css";
 
 export const FAQItem: React.FC<{
   name: string;
-  num: number;
+  text: string;
   imageSrc?: string;
   isRight?: boolean;
-}> = ({ name, num, imageSrc = "/screen_1.png", isRight = false }) => {
+}> = ({ name, text = "", imageSrc = "/screen_1.png", isRight = false }) => {
   return (
     <section className={styles.section}>
       <div
@@ -25,12 +25,8 @@ export const FAQItem: React.FC<{
             isRight ? styles.sectionTextBoxRight : ""
           }`}
         >
-          <p
-            className={styles.sectionTitle}
-            dangerouslySetInnerHTML={{
-              __html: `${num}. ${name}`,
-            }}
-          />
+          <h3 className={styles.sectionTitle}>{name}</h3>
+          <p className={styles.sectionText}>{text}</p>
         </div>
 
         <div
@@ -49,38 +45,36 @@ export const FAQItem: React.FC<{
   );
 };
 
-export const Process: React.FC = () => {
+export const FAQ: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.process.title" })} size="960" isGray={true}>
+    <Section title={formatMessage({ id: "faq.title" })} isGray isShort>
       <div className={styles.sections}>
         <FAQItem
-          isRight
-          imageSrc="/product/process/screen1.webp"
-          name={formatMessage({ id: "products.process.item1" })}
-          num={1}
+          imageSrc="/faq/screen1.png"
+          name={formatMessage({ id: "faq.faq1.title" })}
+          text={formatMessage({ id: "faq.faq1.text" })}
         />
         <FAQItem
           isRight
-          imageSrc="/product/process/screen2.webp"
-          name={formatMessage({ id: "products.process.item2" })}
-          num={2}
+          imageSrc="/faq/screen2.png"
+          name={formatMessage({ id: "faq.faq2.title" })}
+          text={formatMessage({ id: "faq.faq2.text" })}
+        />
+        <FAQItem
+          imageSrc="/faq/screen3.png"
+          name={formatMessage({ id: "faq.faq3.title" })}
+          text={formatMessage({ id: "faq.faq3.text" })}
         />
         <FAQItem
           isRight
-          imageSrc="/product/process/screen3.webp"
-          name={formatMessage({ id: "products.process.item3" })}
-          num={3}
-        />
-        <FAQItem
-          isRight
-          imageSrc="/product/process/screen4.webp"
-          name={formatMessage({ id: "products.process.item4" })}
-          num={4}
+          imageSrc="/faq/screen4.png"
+          name={formatMessage({ id: "faq.faq4.title" })}
+          text={formatMessage({ id: "faq.faq4.text" })}
         />
       </div>
     </Section>
   );
 };
 
-export default Process;
+export default FAQ;
