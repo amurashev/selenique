@@ -22,7 +22,8 @@ const ThankYouScreen = ({ onClose }: { onClose: () => void }) => {
       </div>
 
       <div className={styles.buttonBox}>
-      <Button onClick={onClose}>Вернуться на сайт</Button></div>
+        <Button onClick={onClose}>Вернуться на сайт</Button>
+      </div>
     </div>
   );
 };

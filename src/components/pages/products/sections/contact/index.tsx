@@ -44,6 +44,7 @@ const TIME = [
 const MODEL = [
   { label: "Да", value: "yes" },
   { label: "Нет", value: "no" },
+  { label: "Пока не знаю — подскажите", value: "?" },
 ];
 
 export const Contact: React.FC = () => {
