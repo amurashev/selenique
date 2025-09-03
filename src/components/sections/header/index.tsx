@@ -6,16 +6,20 @@ import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
 
-const MENU = [{
-  url: '/courses',
-  label: 'Courses',
-}, {
-  url: '/packs',
-  label: 'Packs',
-}, {
-  url: '/about',
-  label: 'About',
-}].map((item) => ({
+const MENU = [
+  {
+    url: "/courses",
+    label: "Courses",
+  },
+  {
+    url: "/packs",
+    label: "Packs",
+  },
+  {
+    url: "/about",
+    label: "About",
+  },
+].map((item) => ({
   url: item.url,
   label: item.label,
 }));
@@ -26,15 +30,28 @@ export default function Header() {
   return (
     <header className={styles.box}>
       <div className={styles.logoBox}>
-        <Link href="/">
-          <Image
-            src="/logo3.png"
-            width={500}
-            height={100}
-            quality={100}
-            alt=""
-          />
-        </Link>
+        <div className={styles.mobileLogo}>
+          <Link href="/">
+            <Image
+              src="/logo3.png"
+              width={300}
+              height={60}
+              quality={100}
+              alt=""
+            />
+          </Link>
+        </div>
+        <div className={styles.desktopLogo}>
+          <Link href="/">
+            <Image
+              src="/logo3.png"
+              width={500}
+              height={100}
+              quality={100}
+              alt=""
+            />
+          </Link>
+        </div>
       </div>
       {/* <div className={styles.menuBox}>
         <ul className={styles.menu}>

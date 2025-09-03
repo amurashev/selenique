@@ -25,8 +25,8 @@ export const Portfolio: React.FC = () => {
     infinite: true,
     lazyLoad: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+    // slidesToShow: 2,
+    // slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
@@ -68,9 +68,6 @@ export const Portfolio: React.FC = () => {
                 className={styles.image}
                 src={`/product/examples/${item}.webp`}
               />
-              {/* <p className={styles.itemText}>
-                {formatMessage({ id: item })}
-              </p> */}
             </div>
           ))}
         </Slider>

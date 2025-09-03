@@ -36,7 +36,23 @@
   }
 }
 
+.mobileLogo {
+  display: block;
+}
+
+.desktopLogo {
+  display: none;
+}
+
+
 @media (min-width: 600px) {
+  .mobileLogo {
+    display: none;
+  }
+  .desktopLogo {
+    display: block;
+  }
+  
   .menu {
     flex-direction: row;
   }

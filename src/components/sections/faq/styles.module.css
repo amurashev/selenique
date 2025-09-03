@@ -13,7 +13,6 @@
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  padding: 0 clamp(16px, 4vw, 28px);
   display: grid;
   grid-template-columns: 7fr 4fr;
   align-items: center;
@@ -80,4 +79,10 @@
   .boxContainer {
     grid-template-columns: 1fr;
   }
+
+
+  /* .sectionContainer {
+    padding: 0 clamp(16px, 4vw, 28px);
+  } */
+
 }

@@ -7,9 +7,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 import Section from "../../../../sections/section";
 import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
+import { Button } from "@/components/ui/button";
+import { productPortfolioPageRoute } from "@/constants/routes";
 
 import styles from "./styles.module.css";
 
@@ -52,7 +53,6 @@ export const BeforeAfter: React.FC = () => {
     ],
   } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-
   return (
     <Section
       title={formatMessage({ id: "before_after.title" })}
@@ -69,19 +69,26 @@ export const BeforeAfter: React.FC = () => {
           />
         </div> */}
 
-<Slider {...settings}>
+        <Slider {...settings}>
           {IMAGES.map((item) => (
             <div key={item} className={styles.item}>
               <img
                 className={styles.image}
                 src={`/product/examples/${item}.webp`}
               />
-              {/* <p className={styles.itemText}>
-                {formatMessage({ id: item })}
-              </p> */}
             </div>
           ))}
         </Slider>
+
+        <div className={styles.buttonBox}>
+          <Button
+            onClick={() => {
+              window.location.href = productPortfolioPageRoute.getUrl();
+            }}
+          >
+            {formatMessage({ id: "portfolio.see_all" })}
+          </Button>
+        </div>
       </div>
     </Section>
   );

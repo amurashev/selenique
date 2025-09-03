@@ -27,6 +27,13 @@
   width: 100%;
 }
 
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+
 
 /* Responsive */
 @media (min-width: 760px) {
