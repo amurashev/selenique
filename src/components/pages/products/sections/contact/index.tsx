@@ -15,6 +15,7 @@ import RadioGroup from "@/components/ui/radio";
 import Notification from "@/components/ui/notification";
 
 import styles from "./styles.module.css";
+import ThankYouScreen from "../thank-you-screen";
 
 const USAGE_SOURCES = [
   // Ozon, Wildberries, Яндекс.Маркет, Lamoda, Соцсети, Реклама (VK/Яндекс.Директ), Сайт, Другое.
@@ -63,8 +64,8 @@ export const Contact: React.FC = () => {
   const sendForm = async () => {
     const formData = new FormData();
 
-    formData.append("type", 'photo_creation'); 
-    formData.append("name", name); 
+    formData.append("type", "photo_creation");
+    formData.append("name", name);
     formData.append("contact", contact);
     formData.append("source", source.join(","));
     formData.append("count", count);
@@ -106,136 +107,142 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <Section
-      title={formatMessage({ id: "products.contact.title" })}
-      size="720"
-      isGray
-      id="contact_form"
-    >
-      <div className={styles.sections}>
-        <InputWithLabel label="Как Вас зовут" id="name">
-          <Input value={name} onChange={(e) => setName(e.target.value)} />
-        </InputWithLabel>
+    <>
+      {isSuccess && <ThankYouScreen onClose={() => setIsSuccess(false)} />}
+      <Section
+        title={formatMessage({ id: "products.contact.title" })}
+        size="720"
+        isGray
+        id="contact_form"
+      >
+        <div className={styles.sections}>
+          <InputWithLabel label="Как Вас зовут" id="name">
+            <Input value={name} onChange={(e) => setName(e.target.value)} />
+          </InputWithLabel>
 
-        <InputWithLabel
-          label="Как с Вами связаться"
-          id="contact"
-          hint="Телефон: WhatsApp/Telegram или Email"
-        >
-          <Input value={contact} onChange={(e) => setContact(e.target.value)} />
-        </InputWithLabel>
-
-        <InputWithLabel
-          label="Прикрепите фото товара"
-          id="file"
-          hint="Допустимые форматы: JPG, PNG. Размер не более 5 МБ"
-        >
-          <Input type="file" id="fileInput" accept="image/*" />
-        </InputWithLabel>
-
-        <InputWithLabel
-          label="Где будете использовать картинки?"
-          id="source"
-          hint="Можно выбрать несколько"
-        >
-          <CheckboxGroup
-            options={USAGE_SOURCES}
-            defaultSelected={source}
-            onChange={(value) => setSource(value)}
-          />
-        </InputWithLabel>
-
-        <InputWithLabel
-          label="Нужна ли демонстрация на ИИ модели?"
-          id="has_model"
-          hint=""
-        >
-          <RadioGroup
-            name="has_model"
-            options={MODEL}
-            defaultValue={hasModel}
-            onChange={(value) => setHasModel(value)}
-          />
-        </InputWithLabel>
-
-        <InputWithLabel label="Сколько картинок хотите сейчас?" id="count">
-          <RadioGroup
-            name="count"
-            options={COUNT}
-            defaultValue={count}
-            onChange={(value) => setCount(value)}
-          />
-        </InputWithLabel>
-
-        <InputWithLabel
-          label="Срок?"
-          id="time"
-          hint="* Срочный заказ: +30% к стоимости"
-        >
-          <RadioGroup
-            name="time"
-            options={TIME}
-            defaultValue={time}
-            onChange={(value) => setTime(value)}
-          />
-        </InputWithLabel>
-
-        <InputWithLabel
-          label="Детали (по желанию)"
-          id="details"
-          hint={
-            <div>
-              <strong>Любые пожелания словами</strong>
-
-              <ul className={styles.hintList}>
-                <li>
-                  Какой кадр по настроению? (Спокойный дневной,
-                  Сумерки/атмосферный, Яркий/рекламный глянец)
-                </li>
-                <li>
-                  На каком фоне/в какой сцене показать товар? (Песок, Камни,
-                  Вода, Мрамор, Дерево, Бетон, Чистый белый фон, С участием
-                  людей, Другое.)
-                </li>
-                <li>Важные нюансы</li>
-              </ul>
-            </div>
-          }
-        >
-          <Textarea
-            value={details}
-            onChange={(e) => setDetails(e.target.value)}
-          />
-        </InputWithLabel>
-
-        <div className={styles.buttonBox}>
-          <Button
-            onClick={sendForm}
-            disabled={name === "" || contact === ""}
-            loading={isLoading}
+          <InputWithLabel
+            label="Как с Вами связаться"
+            id="contact"
+            hint="Телефон: WhatsApp/Telegram или Email"
           >
-            Отправить
-          </Button>
-        </div>
-      </div>
+            <Input
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+            />
+          </InputWithLabel>
 
-      {isSuccess && (
+          <InputWithLabel
+            label="Прикрепите фото товара"
+            id="file"
+            hint="Допустимые форматы: JPG, PNG. Размер не более 5 МБ"
+          >
+            <Input type="file" id="fileInput" accept="image/*" />
+          </InputWithLabel>
+
+          <InputWithLabel
+            label="Где будете использовать картинки?"
+            id="source"
+            hint="Можно выбрать несколько"
+          >
+            <CheckboxGroup
+              options={USAGE_SOURCES}
+              defaultSelected={source}
+              onChange={(value) => setSource(value)}
+            />
+          </InputWithLabel>
+
+          <InputWithLabel
+            label="Нужна ли демонстрация на ИИ модели?"
+            id="has_model"
+            hint=""
+          >
+            <RadioGroup
+              name="has_model"
+              options={MODEL}
+              defaultValue={hasModel}
+              onChange={(value) => setHasModel(value)}
+            />
+          </InputWithLabel>
+
+          <InputWithLabel label="Сколько картинок хотите сейчас?" id="count">
+            <RadioGroup
+              name="count"
+              options={COUNT}
+              defaultValue={count}
+              onChange={(value) => setCount(value)}
+            />
+          </InputWithLabel>
+
+          <InputWithLabel
+            label="Срок?"
+            id="time"
+            hint="* Срочный заказ: +30% к стоимости"
+          >
+            <RadioGroup
+              name="time"
+              options={TIME}
+              defaultValue={time}
+              onChange={(value) => setTime(value)}
+            />
+          </InputWithLabel>
+
+          <InputWithLabel
+            label="Детали (по желанию)"
+            id="details"
+            hint={
+              <div>
+                <strong>Любые пожелания словами</strong>
+
+                <ul className={styles.hintList}>
+                  <li>
+                    Какой кадр по настроению? (Спокойный дневной,
+                    Сумерки/атмосферный, Яркий/рекламный глянец)
+                  </li>
+                  <li>
+                    На каком фоне/в какой сцене показать товар? (Песок, Камни,
+                    Вода, Мрамор, Дерево, Бетон, Чистый белый фон, С участием
+                    людей, Другое.)
+                  </li>
+                  <li>Важные нюансы</li>
+                </ul>
+              </div>
+            }
+          >
+            <Textarea
+              value={details}
+              onChange={(e) => setDetails(e.target.value)}
+            />
+          </InputWithLabel>
+
+          <div className={styles.buttonBox}>
+            <Button
+              onClick={sendForm}
+              disabled={name === "" || contact === ""}
+              loading={isLoading}
+            >
+              Отправить
+            </Button>
+          </div>
+        </div>
+
+        {/* {isSuccess && (
         <Notification
           message="Форма успешно отпралена!"
           duration={3000}
           onClose={() => setIsSuccess(false)}
         />
-      )}
+      )} */}
 
-      {error && (
-        <Notification
-          message={error}
-          type="error"
-          duration={3000}
-          onClose={() => setError(null)}
-        />
-      )}
-    </Section>
+        {error && (
+          <Notification
+            message={error}
+            type="error"
+            duration={3000}
+            onClose={() => setError(null)}
+          />
+        )}
+      </Section>
+    </>
   );
 };
 
