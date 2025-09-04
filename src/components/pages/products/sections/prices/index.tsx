@@ -171,6 +171,7 @@ export const Prices: React.FC = () => {
     <Section
       title={formatMessage({ id: "products.prices.title" })}
       isGray={true}
+      // side="left"
       // size="960"
     >
       <div className={styles.additional}>

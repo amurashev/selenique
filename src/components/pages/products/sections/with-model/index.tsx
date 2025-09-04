@@ -51,8 +51,8 @@ export const WithModel: React.FC = () => {
     <Section
       title={formatMessage({ id: "products.with_model.title" })}
       text={formatMessage({ id: "products.with_model.text" })}
-      isGray
-      isShort
+      // isGray
+      // isShort
     >
       <div className={styles.sections}>
         <Slider {...settings}>

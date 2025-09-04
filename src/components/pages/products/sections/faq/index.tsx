@@ -10,7 +10,7 @@ import FAQBase from "@/components/sections/faq";
 export const FAQ: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.faq.title" })} size="720">
+    <Section title={formatMessage({ id: "products.faq.title" })} side="left">
       <div className={styles.sections}>
         <FAQBase
           items={[6, 1, 2, 3, 4, 5].map((key) => ({

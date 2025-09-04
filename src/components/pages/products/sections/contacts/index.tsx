@@ -78,7 +78,7 @@ const Email = () => (
 export const Contacts: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.contacts.title" })} size="720">
+    <Section title={formatMessage({ id: "products.contacts.title" })} side="left">
       <div className={styles.sections}>
         <ul className={styles.list}>
           <li className={styles.item}>

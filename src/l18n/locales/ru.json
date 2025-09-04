@@ -38,7 +38,7 @@
   "products.portfolio.title": "Примеры работ",
   "products.portfolio.see_all": "Смотреть другие работы",
 
-  "products.prices.title": "Пакеты и цены",
+  "products.prices.title": "Услуги и цены",
   "products.prices.item1.title": "Предметная съёмка на простом/градиентном фоне",
   "products.prices.item1.subtitle": "Быстрый и стильный контент для маркетплейсов и соцсетей.",
   "products.prices.item1.price": "от 400 руб./фото",
@@ -81,6 +81,9 @@
   "products.faq.faq6.text": "Фотография Вашего товара, в ракурсах, которые вы хотите показать (на белом или однотонном фоне). Референс или мудборд для примера.",
 
   "products.contact.title": "Получить расчёт",
+  "products.contact.text": "Заполните короткую заявку. Пришлите фото товара и где будете использовать изображения — мы подготовим расчёт и предложим сцены.",
+
+
   "products.contacts.title": "Контакты",
 
   "products.catalog.title": "Каталожная съёмка",

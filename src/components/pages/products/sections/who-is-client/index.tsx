@@ -51,8 +51,9 @@ export const WhoIsClient: React.FC = () => {
     <Section
       title={formatMessage({ id: "products.who_is_client.title" })}
       text={formatMessage({ id: "products.who_is_client.text" })}
-      isShort
+      // isShort
       isGray
+      side="left"
     >
       <div className={styles.sections}>
         {ITEMS.map((item) => (

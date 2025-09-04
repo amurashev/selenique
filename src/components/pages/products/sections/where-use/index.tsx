@@ -13,7 +13,7 @@ import ItemsList from "@/components/sections/items-list";
 export const WhereUse: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.where_use.title" })} isShort>
+    <Section title={formatMessage({ id: "products.where_use.title" })} side="left">
       <div className={styles.sections}>
         <ItemsList
           items={[1, 2, 3, 4].map((item) =>

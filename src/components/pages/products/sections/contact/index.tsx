@@ -112,7 +112,8 @@ export const Contact: React.FC = () => {
       {isSuccess && <ThankYouScreen onClose={() => setIsSuccess(false)} />}
       <Section
         title={formatMessage({ id: "products.contact.title" })}
-        size="720"
+        text={formatMessage({ id: "products.contact.text" })}
+        side="left"
         isGray
         id="contact_form"
       >

@@ -52,7 +52,7 @@ export const Catalog: React.FC = () => {
       title={formatMessage({ id: "products.catalog.title" })}
       text={formatMessage({ id: "products.catalog.text" })}
       isGray
-      isShort
+      // isShort
     >
       <div className={styles.sections}>
         <Slider {...settings}>
