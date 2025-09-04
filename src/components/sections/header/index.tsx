@@ -5,19 +5,20 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
+import { productPageRoute, productPortfolioPageRoute } from "@/constants/routes";
 
 const MENU = [
   {
-    url: "/courses",
-    label: "Courses",
+    url: productPageRoute.getUrl(),
+    label: "Обработка фото для e-commerce",
   },
   {
-    url: "/packs",
-    label: "Packs",
-  },
-  {
-    url: "/about",
-    label: "About",
+    url: productPortfolioPageRoute.getUrl({
+      params: {
+        type: "all",
+      },
+    }),
+    label: "Портфолио",
   },
 ].map((item) => ({
   url: item.url,
@@ -53,7 +54,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      {/* <div className={styles.menuBox}>
+      <div className={styles.menuBox}>
         <ul className={styles.menu}>
           {MENU.map((item) => {
             const isActive = pathname === item.url;
@@ -69,7 +70,7 @@ export default function Header() {
             );
           })}
         </ul>
-      </div> */}
+      </div>
     </header>
   );
 }

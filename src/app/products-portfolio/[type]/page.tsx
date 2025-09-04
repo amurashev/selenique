@@ -10,7 +10,7 @@ export default async function ProductsPortfolio({
   const { type } = await params;
   return (
     <Layout locale="ru">
-      <ProductsPortfolioPage type={type} />
+      <ProductsPortfolioPage type={type || "all"} />
     </Layout>
   );
 }
