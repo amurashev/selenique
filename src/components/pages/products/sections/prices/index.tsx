@@ -174,8 +174,21 @@ export const Prices: React.FC = () => {
       // size="960"
     >
       <div className={styles.additional}>
-        <InfoBox>
+        <InfoBox variant="success">
           Тестовое фото товара - <strong>Бесплатно</strong>
+        </InfoBox>
+
+        <InfoBox variant="info">
+          <h5>Скидка за количество</h5>
+          <div className={styles.packages}>
+            {PACKAGES.map((item) => (
+              <div key={item.title} className={styles.packageItem}>
+                <div>
+                  {item.count} → <strong>{item.discount}</strong>
+                </div>
+              </div>
+            ))}
+          </div>
         </InfoBox>
       </div>
 

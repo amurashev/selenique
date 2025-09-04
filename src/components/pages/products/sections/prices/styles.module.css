@@ -77,25 +77,20 @@
 
 
 .packages {
-  display: grid;
+  /* display: grid;
   margin-top: 4px;
-  /* flex-direction: column; */
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 16px; */
 }
 
 
 .packageItem {
-  border-radius: 8px;
+  /* border-radius: 8px;
   padding: 8px;
   background: #ffffff;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.packageTitle {
-  /* font-size: 16px; */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
 
 /* .list {

@@ -58,6 +58,11 @@ h4 {
   font-size: 21px;
 }
 
+h5 {
+  font-size: 18px;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
