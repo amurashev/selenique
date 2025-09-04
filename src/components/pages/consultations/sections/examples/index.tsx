@@ -83,7 +83,9 @@ export const Examples: React.FC = () => {
         <div className={styles.buttonBox}>
           <Button
             onClick={() => {
-              window.location.href = productPortfolioPageRoute.getUrl();
+              window.location.href = productPortfolioPageRoute.getUrl({
+                params: { type: "all " },
+              });
             }}
           >
             {formatMessage({ id: "consultations.examples.see_all" })}

@@ -2,8 +2,13 @@
   position: relative;
 }
 
+
 .main {
   width: 100%;
+}
+
+.photos {
+  margin-top: 0px;
   padding: 4px;
   padding-bottom: 92px;
 }

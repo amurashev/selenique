@@ -8,22 +8,7 @@
   padding: 24px;
 }
 
-.tabs {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
 
-.tab {
-  padding: 0 8px;
-  font-size: 24;
-  color: #888888;
-}
-
-.active {
-  font-weight: 700;
-  color: #333333;
-}
 
 @media (max-width: 600px) {
 

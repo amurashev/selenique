@@ -75,7 +75,9 @@ export const Portfolio: React.FC = () => {
         <div className={styles.buttonBox}>
           <Button
             onClick={() => {
-              window.location.href = productPortfolioPageRoute.getUrl();
+              window.location.href = productPortfolioPageRoute.getUrl({
+                params: { type: "all " },
+              });
             }}
           >
             {formatMessage({ id: "products.portfolio.see_all" })}

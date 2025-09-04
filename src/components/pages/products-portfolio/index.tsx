@@ -7,39 +7,107 @@ import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
 import styles from "./page.module.css";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { productPageRoute } from "@/constants/routes";
+import {
+  productPageRoute,
+  productPortfolioPageRoute,
+} from "@/constants/routes";
 import PHOTOS from "./photos";
+import Header from "@/components/sections/header";
+import Tabs from "@/components/ui/tabs";
 
-export default function ProductsPortfolioPage() {
+export default function ProductsPortfolioPage({ type }: { type: string }) {
   const [isMounted, setIsMounted] = useState(false);
-  const photos = PHOTOS.map((item) => ({
+  const photos = PHOTOS.filter((item) =>
+    type !== "all" ? item.type === type : true
+  ).map((item) => ({
     src: `/product/portfolio/${item.id}.png`,
     width: item.width,
     height: item.height,
     alt: String(item.id),
   }));
 
-
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  console.warn("photos", photos, isMounted);
   return (
     <div className={styles.page}>
+      <Header />
       <main className={styles.main}>
-        {photos && isMounted && <RowsPhotoAlbum photos={photos} spacing={4} />}
-
-        {/* {PHOTOS.map((item) => (
-          <div key={item.id} className={styles.item}>
-            <img
-              className={styles.image}
-              src={`/product/portfolio/${item.id}.png`}
-            />
+        <Tabs
+          activeIndex={type}
+          items={[
+            {
+              index: "all",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "all",
+                },
+              }),
+              label: "Все",
+            },
+            {
+              index: "cosmetic",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "cosmetic",
+                },
+              }),
+              label: "Косметика",
+            },
+            {
+              index: "accessories",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "accessories",
+                },
+              }),
+              label: "Аксессуары",
+            },
+            {
+              index: "cloth",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "cloth",
+                },
+              }),
+              label: "Одежда",
+            },
+            {
+              index: "shoes",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "shoes",
+                },
+              }),
+              label: "Обувь",
+            },
+            {
+              index: "electronics",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "electronics",
+                },
+              }),
+              label: "Электроника",
+            },
+            {
+              index: "furniture",
+              link: productPortfolioPageRoute.getUrl({
+                params: {
+                  type: "furniture",
+                },
+              }),
+              label: "Мебель",
+            },
+          ]}
+        />
+        {photos && isMounted && (
+          <div className={styles.photos}>
+            <RowsPhotoAlbum photos={photos} spacing={4} targetRowHeight={480} />
           </div>
-        ))} */}
+        )}
       </main>
       <footer className={styles.footer}>
         <Button
