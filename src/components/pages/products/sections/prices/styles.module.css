@@ -156,4 +156,8 @@
   .sections {
    grid-template-columns: repeat(3, 1fr);
   }
+
+  .sections > :nth-child(7) {
+    grid-column: 2; /* ставим Family в центр второй строки */
+  }
 }
