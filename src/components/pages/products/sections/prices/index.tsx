@@ -130,9 +130,9 @@ const PriceItem = ({
             }}
             className={styles.subtitle}
           />
+        <div className={styles.price}>{price}</div>
         </div>
 
-        <div className={styles.price}>{price}</div>
       </div>
       <div className={styles.images}>
         {images.map((image) => (
