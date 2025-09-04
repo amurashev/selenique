@@ -14,7 +14,7 @@ import { productPortfolioPageRoute } from "@/constants/routes";
 
 import styles from "./styles.module.css";
 
-const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
+const IMAGES = [27, 59, 8, 47, 52, 56, 58, 37];
 
 export const BeforeAfter: React.FC = () => {
   const { formatMessage } = useIntl();
