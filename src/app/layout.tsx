@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { YandexMetricaProvider } from "next-yandex-metrica";
+
 // import { Montserrat } from "next/font/google";
 
 import "./globals.css";
@@ -42,7 +44,19 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={``}>{children}</body>
+      <body className={``}>
+        <YandexMetricaProvider
+          tagID={104019685}
+          initParameters={{
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+          }}
+          router="app"
+        >
+          {children}
+        </YandexMetricaProvider>
+      </body>
     </html>
   );
 }

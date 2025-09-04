@@ -2048,6 +2048,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-yandex-metrica@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/next-yandex-metrica/-/next-yandex-metrica-1.2.2.tgz#681bc6191f422f66e9c2d8ba8ea234651112d643"
+  integrity sha512-yGWOsW+Je0lSKIPnSqAz8FdWe6TcdwOz/LijLZRumRxf/BsWuac+CmkPplk0gkLGGrXXsCTbFmVRxSOY9ZpooQ==
+
 next@15.4.6:
   version "15.4.6"
   resolved "https://registry.yarnpkg.com/next/-/next-15.4.6.tgz#74c49e3ca2e0cc8dd46b39ba76c21bb9eb79cb42"

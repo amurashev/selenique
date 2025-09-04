@@ -60,7 +60,7 @@ export const FAQItem: React.FC<{
 export const Process: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.process.title" })} size="800" isGray={true}>
+    <Section title={formatMessage({ id: "products.process.title" })} size="960" isGray={true}>
       <div className={styles.sections}>
         <FAQItem
           isRight
