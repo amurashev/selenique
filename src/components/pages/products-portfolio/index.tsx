@@ -21,7 +21,7 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
   const photos = PHOTOS.filter((item) =>
     type !== "all" ? item.type === type : true
   ).map((item) => ({
-    src: `/product/portfolio/${item.id}.png`,
+    src: `/product/portfolio/${item.src}`,
     width: item.width,
     height: item.height,
     alt: String(item.id),
@@ -47,6 +47,15 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
               }),
               label: "Все",
             },
+            // {
+            //   index: "models",
+            //   link: productPortfolioPageRoute.getUrl({
+            //     params: {
+            //       type: "models",
+            //     },
+            //   }),
+            //   label: "ИИ Модели",
+            // },
             {
               index: "cosmetic",
               link: productPortfolioPageRoute.getUrl({
