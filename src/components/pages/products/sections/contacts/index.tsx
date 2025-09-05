@@ -78,21 +78,34 @@ const Email = () => (
 export const Contacts: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.contacts.title" })} side="left">
+    <Section
+      title={formatMessage({ id: "products.contacts.title" })}
+      text={formatMessage({ id: "products.contacts.text" })}
+      side="left"
+    >
       <div className={styles.sections}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Telegram /> <a href="https://t.me/+79251006690" target="_blank" className={styles.link}>
+            <Telegram />{" "}
+            <a
+              href="https://t.me/+79251006690"
+              target="_blank"
+              className={styles.link}
+            >
               +7 (925) 100-66-90
             </a>
           </li>
           <li className={styles.item}>
             <WhatsApp />{" "}
-            <a href="https://wa.me/+79251006690" target="_blank" className={styles.link}>
+            <a
+              href="https://wa.me/+79251006690"
+              target="_blank"
+              className={styles.link}
+            >
               +7 (925) 100-66-90
             </a>
           </li>
-          <li className={styles.item} >
+          <li className={styles.item}>
             <Email />{" "}
             <a href="mailto:selenique.studio@gmail.com" className={styles.link}>
               selenique.studio@gmail.com

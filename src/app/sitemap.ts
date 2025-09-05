@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { productPageRoute } from "@/constants/routes";
 
-const DOMAIN = 'https://www.selenique.space/'
+const DOMAIN = 'https://www.selenique.space'
 
 // TODO: Do not generate on demand
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
