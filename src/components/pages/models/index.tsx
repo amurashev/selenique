@@ -1,13 +1,23 @@
 "use client";
 
-import Link from "next/link";
-import { useIntl } from "react-intl";
-
 import Header from "@/components/sections/header";
 import Photos from "./sections/photos";
 
 import styles from "./page.module.css";
 import Tabs from "@/components/ui/tabs";
+
+const TABS = [
+  {
+    index: "woman",
+    link: "/models/woman",
+    label: "Женщины",
+  },
+  {
+    index: "man",
+    link: "/models/man",
+    label: "Мужчины",
+  },
+]
 
 export default function ModelsPage({ type }: { type: "woman" | "man" }) {
   return (
@@ -16,18 +26,7 @@ export default function ModelsPage({ type }: { type: "woman" | "man" }) {
       <main className={styles.main}>
         <Tabs
           activeIndex={type}
-          items={[
-            {
-              index: "woman",
-              link: "/models/woman",
-              label: "Женщины",
-            },
-            {
-              index: "man",
-              link: "/models/man",
-              label: "Мужчины",
-            },
-          ]}
+          items={TABS}
         />
         <Photos type={type} />
       </main>

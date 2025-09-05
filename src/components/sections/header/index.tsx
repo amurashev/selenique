@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
-import { productPageRoute, productPortfolioPageRoute } from "@/constants/routes";
+import { productPageRoute, productPortfolioPageRoute, modelsPageRoute } from "@/constants/routes";
 
 const MENU = [
   {
@@ -19,6 +19,14 @@ const MENU = [
       },
     }),
     label: "Портфолио",
+  },
+  {
+    url: modelsPageRoute.getUrl({
+      params: {
+        type: "woman",
+      },
+    }),
+    label: "ИИ Модели",
   },
 ].map((item) => ({
   url: item.url,

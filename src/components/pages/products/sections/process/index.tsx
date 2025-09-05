@@ -33,7 +33,7 @@ export const FAQItem: React.FC<{
             }}
           />
 
-<p
+          <p
             className={styles.sectionText}
             dangerouslySetInnerHTML={{
               __html: `${text}`,
@@ -60,7 +60,11 @@ export const FAQItem: React.FC<{
 export const Process: React.FC = () => {
   const { formatMessage } = useIntl();
   return (
-    <Section title={formatMessage({ id: "products.process.title" })} side="left" isGray={false}>
+    <Section
+      title={formatMessage({ id: "products.process.title" })}
+      side="left"
+      isGray={false}
+    >
       <div className={styles.sections}>
         <FAQItem
           isRight

@@ -30,6 +30,12 @@ export default function HomePage() {
         <WhoIsClient />
         <WhereUse />
         {/* <Portfolio /> */}
+        <hr style={{
+          backgroundColor: "#cccccc",
+          borderWidth: 0,
+          // borderColor: '#0000dd',
+          height: '1px'
+        }} />
         <Process />
         <Prices />
         <FAQ />

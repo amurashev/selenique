@@ -3,72 +3,8 @@
 import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
-
-const WOMEN = [
-  {
-    index: 1,
-    name: "Имя",
-  },
-  {
-    index: 2,
-    name: "Имя",
-  },
-  {
-    index: 3,
-    name: "Имя",
-  },
-  {
-    index: 4,
-    name: "Имя",
-  },
-  {
-    index: 5,
-    name: "Имя",
-  },
-  {
-    index: 6,
-    name: "Имя",
-  },
-  {
-    index: 7,
-    name: "Имя",
-  },
-  {
-    index: 8,
-    name: "Имя",
-  },
-];
-
-const MEN = [
-  {
-    index: 1,
-    name: "Имя",
-  },
-  {
-    index: 2,
-    name: "Имя",
-  },
-  {
-    index: 3,
-    name: "Имя",
-  },
-  {
-    index: 4,
-    name: "Имя",
-  },
-  {
-    index: 5,
-    name: "Имя",
-  },
-  {
-    index: 6,
-    name: "Имя",
-  },
-  {
-    index: 7,
-    name: "Имя",
-  },
-];
+import Link from "next/link";
+import { MEN, WOMEN } from "@/constants/models";
 
 export default function Photos({ type }: { type: "woman" | "man" }) {
   const { formatMessage } = useIntl();
@@ -78,15 +14,23 @@ export default function Photos({ type }: { type: "woman" | "man" }) {
 
   return (
     <div className={styles.sections}>
-      {finalData.map((item) => (
-        <div key={item.index} className={styles.item}>
-          <img
-            className={styles.image}
-            src={`/models/${urlType}/${item.index}.webp`}
-          />
-          <strong className={styles.name}>{item.name}</strong>
-        </div>
-      ))}
+      {finalData.map((item) => {
+        const firstImage =
+          item.photos && item.photos.length ? item.photos[0] : "1.webp";
+        return (
+          <Link
+            key={item.index}
+            className={styles.item}
+            href={`/models/${urlType}/${item.id}`}
+          >
+            <img
+              className={styles.image}
+              src={`/models/${urlType}/${item.id}/${firstImage}`}
+            />
+            <strong className={styles.name}>{item.name}</strong>
+          </Link>
+        );
+      })}
     </div>
   );
 }

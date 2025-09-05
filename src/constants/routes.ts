@@ -6,4 +6,6 @@ export const productPortfolioPageRoute = route("/products-portfolio/[type]");
 
 export const aiConsultationPageRoute = route("/konsultatsii-po-neirosetyam");
 
+export const modelsPageRoute = route("/models/[type]");
+
 
