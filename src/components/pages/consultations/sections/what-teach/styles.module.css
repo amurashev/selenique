@@ -4,31 +4,47 @@
   gap: 10px; /* отступ между ними */
 }
 
-
-.imageBox {
-  flex-shrink: 0;
-  width: 240px;
+.itemsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-.textBox {
+.card {
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  padding: 16px 16px;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
-  margin-left: 20px;
+}
+
+.title {
+  
 }
 
 .text {
-  margin-bottom: 16px;
-  /* font-size: 24px; */
-  /* font-weight: 700; */
+  font-size: 18px;
+  color: var( --text);
+  margin-top: 6px;
+  flex-grow: 1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 16px;
+  flex-shrink: 0;
 }
 
 

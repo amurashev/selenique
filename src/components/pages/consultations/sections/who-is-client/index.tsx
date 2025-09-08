@@ -10,15 +10,19 @@ import styles from "./styles.module.css";
 const ITEMS = [
   {
     text: "consultations.who_is_client.item1",
+    image: "/consultations/clients/1.jpeg",
   },
   {
     text: "consultations.who_is_client.item2",
+    image: "/consultations/clients/2.jpeg",
   },
   {
     text: "consultations.who_is_client.item3",
+    image: "/consultations/clients/4.jpg",
   },
   {
     text: "consultations.who_is_client.item4",
+    image: "/consultations/clients/3.png",
   },
 ];
 
@@ -29,24 +33,25 @@ export const WhoIsClient: React.FC = () => {
     <Section
       title={formatMessage({ id: "consultations.who_is_client.title" })}
       text={formatMessage({ id: "consultations.who_is_client.text" })}
-      isShort
+      // isShort
+      side="left"
       isGray
     >
       <div className={styles.sections}>
-        <div className={styles.imageBox}>
-          <img
-            src={"/product/items/food.webp"}
-            alt={formatMessage({ id: "consultations.who_is_client.title" })}
-            className={styles.image}
-          />
-        </div>
-        <div className={styles.textBox}>
-          {ITEMS.map((item) => (
-            <p key={item.text} className={styles.text}>
-              {formatMessage({ id: item.text })}
-            </p>
-          ))}
-        </div>
+        {ITEMS.map((item) => (
+          <div key={item.text} className={styles.item}>
+            <div className={styles.imageBox}>
+              <img
+                src={item.image}
+                alt={formatMessage({
+                  id: item.text,
+                })}
+                className={styles.image}
+              />
+            </div>
+            <h3 className={styles.text}>{formatMessage({ id: item.text })}</h3>
+          </div>
+        ))}
       </div>
     </Section>
   );

@@ -1,0 +1,29 @@
+.sections {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 720px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  /* font-size: 16px; */
+  line-height: 1.4;
+  margin: 8px 0;
+  /* color: #ffffff; */
+  background-color: #e6f3fe;
+
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price {
+  font-size: 38px;
+}

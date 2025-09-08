@@ -1,0 +1,25 @@
+.sections {
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+}
+
+
+.item {
+  padding: 0 16px;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+/* Responsive */
+@media (min-width: 760px) {
+
+ 
+/* .imageBox {
+  width: 720px;
+} */
+  
+}

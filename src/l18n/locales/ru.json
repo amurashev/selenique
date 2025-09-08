@@ -95,7 +95,7 @@
   "products.form_success.hint": "Обычно делаем первый тест-кадр за 24–48 часов.",
   
 
-  "consultations.hero.title": "Консультации по нейросетям для товаров: делаем продающие изображения быстро и по правилам",
+  "consultations.hero.title": "Консультации по нейросетям для товаров: продающие изображения быстро и по правилам",
   "consultations.hero.text": "Разберём Ваш товар, подберём идеи, составим понятные текстовые задания для нейросети и покажем, как получить нужные кадры для маркетплейсов и рекламы — без лишних затрат.",
 
   "consultations.who_is_client.title": "Кому подходит?",
@@ -125,11 +125,13 @@
   "consultations.examples.see_all": "Смотреть другие работы",
 
 
-  "consultations.what_teach.title": "Какие изображения делаем/учим делать",
-  "consultations.what_teach.item1": "<b>Каталог</b>: белый или мягкий однотонный фон, ровный свет",
-  "consultations.what_teach.item2": "<b>«Как в жизни»</b>: руки, стол, ванная, кухня, ткань, камень, вода",
-  "consultations.what_teach.item3": "<b>Премиум-стиллайф</b>: стекло, металл, камень, аккуратные блики",
-  "consultations.what_teach.item4": "<b>Спец-задачи</b>: прозрачные/глянцевые материалы — с доработкой",
+  "consultations.what_teach.title": "Какие изображения учим делать",
+  "consultations.what_teach.item1.title": "Каталог",
+  "consultations.what_teach.item1.text": "Однотонный фон, ровный свет. Классический стандарт для онлайн-витрин и маркетплейсов.",
+  "consultations.what_teach.item2.title": "Предметная съемка",
+  "consultations.what_teach.item2.text": "Атмосферные кадры, где продукт подаётся в окружении фактур, реквизита и света. ",
+  "consultations.what_teach.item3.title": "Съёмка лукбука",
+  "consultations.what_teach.item3.text": "Полноценные кадры для рекламных кампаний, социальных сетей и пресс-релизов.",
 
   "consultations.faq.title": "Популярные вопросы",
   "consultations.faq.faq1.title": "Сколько длится подготовка?",
@@ -144,6 +146,49 @@
   "consultations.faq.faq5.text": "Результат передаём вам, работаем по договору-оферте.",
 
   "consultations.form.title": "Форма заявки",
+  "consultations.prices.title": "Стоимость консультации",
+
+
+
+  "ii_model.hero.title": "Уникальная виртуальная модель для вашего каталога",
+  "ii_model.hero.text": "Один типаж на все коллекции. Единый стиль, узнаваемость и быстрые серии для Ozon, Wildberries, Яндекс.Маркета, Lamoda и рекламы.",
+
+  "ii_model.faq.title": "Популярные вопросы",
+  "ii_model.faq.faq1.title": "Это заменит реальную модель?",
+  "ii_model.faq.faq1.text": "Для каталога и карточек — да, особенно когда нужен единый типаж. Для кампейн-съёмок с живыми эмоциями иногда комбинируем.",
+  "ii_model.faq.faq2.title": "Можем ли менять прическу/макияж",
+  "ii_model.faq.faq2.text": "Да. Но стиль остаётся единым.",
+  "ii_model.faq.faq3.title": "Как быстро можно обновлять линейку?",
+  "ii_model.faq.faq3.text": "После утверждения гайда — от 24–72 ч на партию артикулов.",
+  "ii_model.faq.faq4.title": "Подходит ли для Wildberries/Ozon?",
+  "ii_model.faq.faq4.text": "Да, делаем главную на белом + допкадры и рекламные форматы.",
+  "ii_model.faq.faq5.title": "Что нужно от вас?",
+  "ii_model.faq.faq5.text": "Фото вещей/артов, желаемые позы/ракурсы, где будут картинки, сроки.",
+
+  "ii_model.what_is_that.title": "Что это и зачем",
+  "ii_model.what_is_that.text": "Консистентная модель = единый образ бренда",
+  "ii_model.what_is_that.item1.title": "Один образ — весь каталог",
+  "ii_model.what_is_that.item1.text": "та же модель в каждом дропе и цвете.",
+  "ii_model.what_is_that.item2.title": "Быстро и предсказуемо",
+  "ii_model.what_is_that.item2.text": "без кастинга, студии и логистики.",
+  "ii_model.what_is_that.item3.title": "Рост узнаваемости",
+  "ii_model.what_is_that.item3.text": "стабильный стиль → выше CTR и конверсия.",
+  "ii_model.what_is_that.item4.title": "Гибкие форматы",
+  "ii_model.what_is_that.item4.text": "1:1, 4:5, 3:4, 9:16 — готово для карточек и баннеров.",
+
+  "ii_model.what_you_get.title": "Что вы получите",
+  "ii_model.what_you_get.text": "Результат «под ключ»",
+  "ii_model.what_you_get.item1.text": "<b>Типаж модели под бренд</b>: рост, телосложение, оттенок кожи/волос, настроение.",
+  "ii_model.what_you_get.item2.text": "<b>Серии ракурсов</b>: фронт, 3/4, профиль, спина + крупные планы.",
+  "ii_model.what_you_get.item3.text": "<b>Посадки и ткани</b>: естественные складки, тени, бликующие материалы.",
+  "ii_model.what_you_get.item4.text": "<b>Единый стиль</b>: свет, фон, обработка — постоянно одни и те же.",
+  "ii_model.what_you_get.item5.text": "<b>Экспорт под площадки</b>: размеры, вес файлов, названия и alt-тексты.",
+
+
+  "ii_model.examples.title": "Как выглядит результат",
+  "ii_model.examples.text": "Так будет выглядеть ваш каталог после внедрения ИИ-модели: фронт, 3/4, профиль, спина. Стиль стабилен, бренд узнаваем, серия масштабируется без студии и кастинга.",
+
+  "ii_model.price.title": "Цена и сроки",
 
 
   "hero.title": "AI Fashion Ads & WOW Resources",

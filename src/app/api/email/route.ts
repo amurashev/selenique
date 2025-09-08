@@ -4,7 +4,7 @@ import { Resend } from "resend";
 // import path from "path";
 
 const KEY = process.env.RESEND_API_KEY;
-const EMAIL = process.env.RESEND_EMAIL || ''
+const EMAIL = process.env.RESEND_EMAIL || "";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
@@ -14,21 +14,22 @@ export async function GET(request: NextRequest) {
 }
 
 type PostData = {
-  type: "photo_creation" | "consultation"
+  type: "ii_photo_common" | "consultation" | "ii_model"
   name: string;
   contact: string;
   source: string;
   count: string;
   time: string;
   details: string;
-  hasModel: string
+  hasModel: string;
   file: File;
 };
 
 export async function POST(request: NextRequest) {
   const formData = await request.formData();
   const data: PostData = {
-    type: formData.get("type") as PostData['type'] || "photo_creation" as const,
+    type:
+      (formData.get("type") as PostData["type"]) || ("ii_photo_common" as const),
     name: formData.get("name") as string,
     contact: formData.get("contact") as string,
     source: formData.get("source") as string,
@@ -57,14 +58,47 @@ export async function POST(request: NextRequest) {
     });
   }
 
-  let subject = "Selenique: "
+  let subject = "Selenique: ";
+  let html = "";
 
-  if (data.type === "photo_creation") {
-    subject = "Selenique: Заявка на обработку фотографии"
+  if (data.type === "ii_photo_common") {
+    subject = "Selenique: Заявка на обработку фотографии";
+    html = `<div>
+      <ul>
+        <li><b>Имя:</b> ${data.name}</li>
+        <li><b>Контакт:</b> ${data.contact}</li>
+        <li><b>Для чего:</b> ${data.source}</li>
+        <li><b>ИИ Модель:</b> ${data.hasModel}</li>
+        <li><b>Количество:</b> ${data.count}</li>
+        <li><b>Срок:</b> ${data.time}</li>
+      </ul>
+      <p>${data.details}</p>
+      </div>`;
+  }
+  
+  if (data.type === "ii_model") {
+    subject = "Selenique: Заявка на обработку фотографии: ИИ Модель";
+    html = `<div>
+      <ul>
+        <li><b>Имя:</b> ${data.name}</li>
+        <li><b>Контакт:</b> ${data.contact}</li>
+        <li><b>Для чего:</b> ${data.source}</li>
+        <li><b>Количество:</b> ${data.count}</li>
+        <li><b>Срок:</b> ${data.time}</li>
+      </ul>
+      <p>${data.details}</p>
+      </div>`;
   }
 
   if (data.type === "consultation") {
-    subject = "Selenique: Заявка на консультацию"
+    subject = "Selenique: Заявка на консультацию";
+    html = `<div>
+    <ul>
+      <li><b>Имя:</b> ${data.name}</li>
+      <li><b>Контакт:</b> ${data.contact}</li>
+    </ul>
+    <p>${data.details}</p>
+    </div>`;
   }
 
   const result = await resend.emails.send({
@@ -72,17 +106,7 @@ export async function POST(request: NextRequest) {
     to: EMAIL as string,
     subject: subject,
     attachments,
-    html: `<div>
-      <ul>
-        <li>Имя: ${data.name}</li>
-        <li>Контакт: ${data.contact}</li>
-        <li>Для чего: ${data.source}</li>
-        <li>ИИ Модель: ${data.hasModel}</li>
-        <li>Количество: ${data.count}</li>
-        <li>Срок: ${data.time}</li>
-      </ul>
-      <p>${data.details}</p>
-      </div>`,
+    html,
   });
 
   return NextResponse.json({

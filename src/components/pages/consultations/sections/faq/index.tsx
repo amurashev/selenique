@@ -12,8 +12,9 @@ export const FAQ: React.FC = () => {
   return (
     <Section
       title={formatMessage({ id: "consultations.faq.title" })}
-      size="720"
-      isGray
+      side="left"
+      // size="720"
+      // isGray
     >
       <div className={styles.sections}>
         <FAQBase

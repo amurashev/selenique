@@ -15,7 +15,8 @@ export const WhatYouGet: React.FC = () => {
   return (
     <Section
       title={formatMessage({ id: "consultations.what_you_get.title" })}
-      isShort
+      // isShort
+      side="left"
     >
       <div className={styles.sections}>
         <ItemsList

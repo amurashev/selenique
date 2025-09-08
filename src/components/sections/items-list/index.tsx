@@ -13,6 +13,7 @@ export const ItemsList: React.FC<{ items: string[] }> = (props) => {
         <li key={item} className={styles.item}>
           <span className={styles.icon}>✔</span>
           <p
+            className={styles.text}
             dangerouslySetInnerHTML={{
               __html: item,
             }}

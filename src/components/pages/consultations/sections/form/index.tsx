@@ -55,7 +55,8 @@ export const Form: React.FC = () => {
   return (
     <Section
       title={formatMessage({ id: "consultations.form.title" })}
-      size="720"
+      side="left"
+      // size="720"
       isGray
       id="contact_form"
     >

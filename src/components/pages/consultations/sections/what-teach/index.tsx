@@ -9,16 +9,31 @@ import styles from "./styles.module.css";
 
 const ITEMS = [
   {
-    text: "consultations.what_teach.item1",
+    title: "consultations.what_teach.item1.title",
+    text: "consultations.what_teach.item1.text",
+    images: [
+      `/consultations/catalog/1.webp`,
+      `/consultations/catalog/2.webp`,
+      `/consultations/catalog/3.webp`,
+    ],
   },
   {
-    text: "consultations.what_teach.item2",
+    title: "consultations.what_teach.item2.title",
+    text: "consultations.what_teach.item2.text",
+    images: [
+      `/consultations/items/1.webp`,
+      `/consultations/items/2.webp`,
+      `/consultations/items/3.webp`,
+    ],
   },
   {
-    text: "consultations.what_teach.item3",
-  },
-  {
-    text: "consultations.what_teach.item4",
+    title: "consultations.what_teach.item3.title",
+    text: "consultations.what_teach.item3.text",
+    images: [
+      `/consultations/lookbook/1.webp`,
+      `/consultations/lookbook/2.webp`,
+      `/consultations/lookbook/3.webp`,
+    ],
   },
 ];
 
@@ -29,26 +44,30 @@ export const WhatTeach: React.FC = () => {
     <Section
       title={formatMessage({ id: "consultations.what_teach.title" })}
       // text={formatMessage({ id: "consultations.who_is_client.text" })}
-      isShort
-      // isGray
+      // isShort
+      isGray
     >
       <div className={styles.sections}>
-        <div className={styles.imageBox}>
-          <img
-            src={"/product/items/food.webp"}
-            alt={formatMessage({ id: "consultations.who_is_client.title" })}
-            className={styles.image}
-          />
-        </div>
-        <div className={styles.textBox}>
+        <div className={styles.itemsBox}>
           {ITEMS.map((item) => (
-            <p
-              key={item.text}
-              className={styles.text}
-              dangerouslySetInnerHTML={{
-                __html: formatMessage({ id: item.text }),
-              }}
-            />
+            <div key={item.text} className={styles.card}>
+              <h3 className={styles.title}>
+                {formatMessage({ id: item.title })}
+              </h3>
+              <p
+                className={styles.text}
+                dangerouslySetInnerHTML={{
+                  __html: formatMessage({ id: item.text }),
+                }}
+              />
+              <div className={styles.images}>
+                {item.images.map((image) => (
+                  <div key={image} className={`${styles.imageBox}`}>
+                    <img className={styles.image} src={image} />
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

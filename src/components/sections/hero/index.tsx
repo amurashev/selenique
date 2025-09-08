@@ -1,42 +1,32 @@
 "use client";
 
 import React from "react";
-import { useIntl } from "react-intl";
 
-import messages from './messages'
 import styles from "./styles.module.css";
 
 interface HeroBotikaProps {
+  title: string;
+  text: string;
   /** Right-side image (group of models). PNG/JPG with transparent or white bg works best */
   imageSrc?: string;
 }
 
-export const Hero: React.FC<HeroBotikaProps> = ({
-  imageSrc = "/hero_image.jpg",
-}) => {
-  const { formatMessage, locale } = useIntl();
-
-  console.warn("locale", locale);
-
+export const Hero: React.FC<HeroBotikaProps> = ({ text, title, imageSrc }) => {
   return (
-    <section className={styles.hero}>
+    <section
+      className={styles.hero}
+      style={{ backgroundImage: `url("${imageSrc}")` }}
+    >
+      <div className={styles.overlay} />
       <div className={styles.heroContainer}>
         <div className={styles.heroCopy}>
-          <h1 className={styles.heroTitle}>{formatMessage(messages.title)}</h1>
+          <h1 className={styles.heroTitle}>{title}</h1>
 
-          <p className={styles.heroSubtitle}>
-          {formatMessage(messages.text)}
-          </p>
-        </div>
+          <p className={styles.heroSubtitle}>{text}</p>
 
-        <div className={styles.heroVisual}>
-          <div className={styles.visualPanel}>
-            <img
-              src={imageSrc}
-              alt="Fashion image"
-              className={styles.visualImage}
-            />
-          </div>
+          {/* <Button onClick={goToForm}>
+            {formatMessage({ id: "products.hero.cta" })}
+          </Button> */}
         </div>
       </div>
     </section>

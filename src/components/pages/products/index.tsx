@@ -11,7 +11,7 @@ import Prices from "./sections/prices";
 import Process from "./sections/process";
 import FAQ from "./sections/faq";
 import WhereUse from "./sections/where-use";
-import Contact from "./sections/contact";
+import Form from "./sections/form";
 import WithModel from "./sections/with-model";
 import Contacts from "./sections/contacts";
 import { Catalog } from "./sections/catalog";
@@ -39,7 +39,7 @@ export default function HomePage() {
         <Process />
         <Prices />
         <FAQ />
-        <Contact />
+        <Form type="ii_photo_common" />
         <Contacts />
       </main>
       <Footer />

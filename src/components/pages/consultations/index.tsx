@@ -10,6 +10,7 @@ import Examples from "./sections/examples";
 import WhatTeach from "./sections/what-teach";
 import FAQ from "./sections/faq";
 import Form from "./sections/form";
+import Prices from "./sections/prices";
 
 
 export default function ConsultationsPage() {
@@ -20,9 +21,10 @@ export default function ConsultationsPage() {
       <main className={styles.main}>
         <WhoIsClient />
         <WhatYouGet />
+        <WhatTeach />
         <Risks />
         <Examples />
-        <WhatTeach />
+        <Prices />
         <FAQ />
         <Form />
       </main>
