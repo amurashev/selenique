@@ -37,7 +37,7 @@
 .price {
   font-size: 21px;
   font-weight: bold;
-  background-color: var(--success);
+  background-color: var(--success-3);
   color: #ffffff;
   margin-top: 8px;
   display: inline-block;

@@ -8,6 +8,7 @@ import WhoIsClient from "./sections/who-is-client";
 import WhatYouGet from "./sections/what-you-get";
 import Portfolio from "./sections/portfolio";
 import Prices from "./sections/prices";
+import PricesV2 from "./sections/prices2";
 import Process from "./sections/process";
 import FAQ from "./sections/faq";
 import WhereUse from "./sections/where-use";
@@ -37,7 +38,7 @@ export default function HomePage() {
           height: '1px'
         }} />
         <Process />
-        <Prices />
+        <PricesV2 />
         <FAQ />
         <Form type="ii_photo_common" />
         <Contacts />
