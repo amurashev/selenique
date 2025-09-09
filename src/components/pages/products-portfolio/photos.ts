@@ -73,7 +73,6 @@ const PHOTOS = [
   { id: 84, src: '84.png', width: 693, height: 1184, type: 'cosmetic' },
   { id: 85, src: '85.png', width: 896, height: 1152, type: 'cosmetic' },
   { id: 88, src: '88.png', width: 864, height: 1184, type: 'cosmetic' },
-  { id: 88, src: '88.png', width: 864, height: 1184, type: 'electronics' },
   { id: 89, src: '89.png', width: 896, height: 1152, type: 'electronics' },
   { id: 90, src: '90.png', width: 896, height: 1152, type: 'electronics' },
   { id: 91, src: '91.png', width: 928, height: 1120, type: 'electronics' },

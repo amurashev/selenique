@@ -15,6 +15,7 @@ import {
 import PHOTOS from "./photos";
 import Header from "@/components/sections/header";
 import Tabs from "@/components/ui/tabs";
+import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
 export default function ProductsPortfolioPage({ type }: { type: string }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -37,80 +38,15 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
       <main className={styles.main}>
         <Tabs
           activeIndex={type}
-          items={[
-            {
-              index: "all",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "all",
-                },
-              }),
-              label: "Все",
-            },
-            // {
-            //   index: "models",
-            //   link: productPortfolioPageRoute.getUrl({
-            //     params: {
-            //       type: "models",
-            //     },
-            //   }),
-            //   label: "ИИ Модели",
-            // },
-            {
-              index: "cosmetic",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "cosmetic",
-                },
-              }),
-              label: "Косметика",
-            },
-            {
-              index: "accessories",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "accessories",
-                },
-              }),
-              label: "Аксессуары",
-            },
-            {
-              index: "cloth",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "cloth",
-                },
-              }),
-              label: "Одежда",
-            },
-            {
-              index: "shoes",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "shoes",
-                },
-              }),
-              label: "Обувь",
-            },
-            {
-              index: "electronics",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "electronics",
-                },
-              }),
-              label: "Электроника",
-            },
-            {
-              index: "furniture",
-              link: productPortfolioPageRoute.getUrl({
-                params: {
-                  type: "furniture",
-                },
-              }),
-              label: "Мебель",
-            },
-          ]}
+          items={PORTFOLIO_TYPES.map((item) => ({
+            index: item.index,
+            link: productPortfolioPageRoute.getUrl({
+              params: {
+                type: item.index,
+              },
+            }),
+            label: item.label,
+          }))}
         />
         {photos && isMounted && (
           <div className={styles.photos}>

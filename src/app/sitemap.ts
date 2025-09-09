@@ -1,8 +1,14 @@
 import type { MetadataRoute } from "next";
 
-import { productPageRoute } from "@/constants/routes";
+import {
+  productPageRoute,
+  iiModelPageRoute,
+  modelsPageRoute,
+  productPortfolioPageRoute,
+} from "@/constants/routes";
+import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
-const DOMAIN = 'https://www.selenique.space'
+const DOMAIN = "https://www.selenique.space";
 
 // TODO: Do not generate on demand
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -15,14 +21,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ] as MetadataRoute.Sitemap;
 
-  [productPageRoute.getUrl()].forEach(item => {
+  [
+    productPageRoute.getUrl(),
+    iiModelPageRoute.getUrl(),
+    modelsPageRoute.getUrl({ params: { type: "woman" } }),
+    modelsPageRoute.getUrl({ params: { type: "man" } }),
+    ...PORTFOLIO_TYPES.map((item) =>
+      productPortfolioPageRoute.getUrl({ params: { type: item.index } })
+    ),
+  ].forEach((item) => {
     pages.push({
       url: `${DOMAIN}${item}`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     });
-  })
+  });
 
   return pages;
 }

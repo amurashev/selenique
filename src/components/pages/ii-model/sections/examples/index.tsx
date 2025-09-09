@@ -12,7 +12,7 @@ import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 
 import styles from "./styles.module.css";
 
-const IMAGES = [1,3,4,5,6,8];
+const IMAGES = [1, 2, 3, 4, 5, 7, 10, 12, 14, 16, 25, 26, 27,28,29,30];
 
 export const Examples: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -63,7 +63,7 @@ export const Examples: React.FC = () => {
             <div key={item} className={styles.item}>
               <img
                 className={styles.image}
-                src={`/models/woman/1/${item}.webp`}
+                src={`/models/woman/3/${item}.png`}
               />
             </div>
           ))}

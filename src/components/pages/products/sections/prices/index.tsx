@@ -8,6 +8,9 @@ import Section from "../../../../sections/section";
 import styles from "./styles.module.css";
 import InfoBox from "@/components/ui/info";
 import { title } from "process";
+import { iiModelPageRoute } from "@/constants/routes";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const CheckMarkIcon = () => (
   <svg
@@ -98,6 +101,7 @@ const PRICES = [
       `/product/price/model/4.webp`,
       `/product/price/model/3.webp`,
     ],
+    link: iiModelPageRoute.getUrl(),
   },
 ];
 
@@ -130,9 +134,8 @@ const PriceItem = ({
             }}
             className={styles.subtitle}
           />
-        <div className={styles.price}>{price}</div>
+          <div className={styles.price}>{price}</div>
         </div>
-
       </div>
       <div className={styles.images}>
         {images.map((image) => (
@@ -194,15 +197,31 @@ export const Prices: React.FC = () => {
       </div>
 
       <div className={styles.sections}>
-        {PRICES.map((item) => (
-          <PriceItem
-            key={item.title}
-            title={item.title}
-            text={item.subtitle}
-            price={item.price}
-            images={item.images}
-          />
-        ))}
+        {PRICES.map((item) => {
+          if (item.link) {
+            return (
+              <Link key={item.title} href={item.link}>
+                <PriceItem
+                  key={item.title}
+                  title={item.title}
+                  text={item.subtitle}
+                  price={item.price}
+                  images={item.images}
+                />
+              </Link>
+            );
+          }
+
+          return (
+            <PriceItem
+              key={item.title}
+              title={item.title}
+              text={item.subtitle}
+              price={item.price}
+              images={item.images}
+            />
+          );
+        })}
       </div>
 
       {/* <div className={styles.additional}>
