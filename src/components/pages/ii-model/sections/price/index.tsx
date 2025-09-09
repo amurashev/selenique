@@ -18,7 +18,7 @@ export const Price: React.FC = () => {
       // isGray
     >
       <div className={styles.sections}>
-        <PriceCard title="Разработка виртуальной модели" price="4990руб">
+        <PriceCard title="Разработка виртуальной модели" price="4990руб.">
           <>
             <p>
               Модель будет использоваться для всей линейки одежды или

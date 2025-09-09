@@ -17,8 +17,10 @@
   --success: #0fac6e;
   --success-1: #e8f5e9;
   --success-2: #6cb670;
+  --success-3: #4aa54f;
   --info-1: #e6f3fe;
   --info-2: #90caf9;
+  --info-3: #3a90d6;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --accent: oklch(0.97 0 0);

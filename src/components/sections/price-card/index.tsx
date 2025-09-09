@@ -11,13 +11,13 @@ export const PriceCard: React.FC<{
 }> = ({ children, title, price }) => {
   return (
     <div className={styles.card}>
-      <div>
+      <div className={styles.firstLine}>
         <h3 className={styles.title}>{title}</h3>
-        <div className={styles.text}>
-          {children}
-        </div>
+        <strong className={styles.price}>{price}</strong>
       </div>
-      <strong className={styles.price}>{price}</strong>
+      <div>
+        <div className={styles.text}>{children}</div>
+      </div>
     </div>
   );
 };
