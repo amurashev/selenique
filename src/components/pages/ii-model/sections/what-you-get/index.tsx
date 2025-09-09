@@ -27,10 +27,8 @@ const ITEMS = [
 ];
 
 const IMAGES = [
-  "/models/woman/2/2.webp",
-  "/models/woman/2/3.webp",
-  // "/models/woman/2/6.webp",
-  // "/models/woman/2/5.webp",
+  "/ii_models/76.png",
+  "/ii_models/72.png",
 ];
 
 export const WhatYouGet: React.FC = () => {

@@ -31,11 +31,14 @@
 }
 
 .price {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: bold;
-  /* text-align: right; */
-  color: var(--success-2);
+  background-color: var(--success);
+  color: #ffffff;
   margin-top: 8px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 4px 16px;
 }
 
 .title {
@@ -129,9 +132,9 @@
     gap: 16px;
   }
 
-  .price {
+  /* .price {
     font-size: 28px;
-  }
+  } */
 
   /* .card {
     flex-direction: row;

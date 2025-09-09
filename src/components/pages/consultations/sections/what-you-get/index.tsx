@@ -6,8 +6,7 @@ import { useIntl } from "react-intl";
 import Section from "../../../../sections/section";
 
 import styles from "./styles.module.css";
-import { Button } from "@/components/ui/button";
-import { goToForm } from "../../utils";
+
 import ItemsList from "@/components/sections/items-list";
 
 export const WhatYouGet: React.FC = () => {
