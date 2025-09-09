@@ -30,13 +30,19 @@ const PriceItem: React.FC<{
   images: string[];
   imageSrc?: string;
   isRight?: boolean;
-}> = ({ title, price,priceUnit, images, text = "" }) => {
+}> = ({ title, price, priceUnit, images, text = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.item}>
       <button className={styles.header} onClick={() => setIsOpen(!isOpen)}>
-        <span className={styles.title}>{title}</span>
-        {price === 0 ? <span className={styles.price}>бесплатно</span> : <span className={styles.price}>{price}руб./{priceUnit}</span>}
+        <h3 className={styles.title}>{title}</h3>
+        {price === 0 ? (
+          <span className={styles.price}>бесплатно</span>
+        ) : (
+          <span className={styles.price}>
+            от {price}руб./{priceUnit}
+          </span>
+        )}
 
         <span className={`${styles.icon} ${isOpen ? styles.open : ""}`}>
           <Arrow />

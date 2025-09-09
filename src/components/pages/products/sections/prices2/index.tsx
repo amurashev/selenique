@@ -11,7 +11,11 @@ import { title } from "process";
 import { iiModelPageRoute } from "@/constants/routes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { PRODUCT_PRICE_LIST, PRODUCT_PRICES_DATA } from "@/constants/prices";
+import {
+  PRODUCT_PRICE_LIST,
+  PRODUCT_PRICE_PACKAGES,
+  PRODUCT_PRICES_DATA,
+} from "@/constants/prices";
 import PriceItem from "./price-item";
 
 // const PriceItem = ({
@@ -87,6 +91,22 @@ export const PricesV2: React.FC = () => {
           //   />
           // );
         })}
+
+<div className={styles.info}>
+          <InfoBox variant="success">
+            <h5>Скидка за количество</h5>
+            <div className={styles.packages}>
+              {PRODUCT_PRICE_PACKAGES.map((item) => (
+                <div key={item.title} className={styles.packageItem}>
+                  <div>
+                    {item.count} → <strong>{item.discount}</strong>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </InfoBox>
+          <InfoBox variant="info"><strong>Работаем по 50% предоплате</strong></InfoBox>
+        </div>
       </div>
     </Section>
   );

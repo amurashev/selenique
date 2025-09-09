@@ -16,6 +16,7 @@ import Form from "./sections/form";
 import WithModel from "./sections/with-model";
 import Contacts from "./sections/contacts";
 import { Catalog } from "./sections/catalog";
+import PriceHelp from "./sections/prices-help";
 
 
 export default function HomePage() {
@@ -31,14 +32,15 @@ export default function HomePage() {
         <WhoIsClient />
         <WhereUse />
         {/* <Portfolio /> */}
-        <hr style={{
+        {/* <hr style={{
           backgroundColor: "#cccccc",
           borderWidth: 0,
           // borderColor: '#0000dd',
           height: '1px'
-        }} />
-        <Process />
+        }} /> */}
         <PricesV2 />
+        <PriceHelp />
+        <Process />
         <FAQ />
         <Form type="ii_photo_common" />
         <Contacts />

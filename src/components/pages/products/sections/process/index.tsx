@@ -63,7 +63,7 @@ export const Process: React.FC = () => {
     <Section
       title={formatMessage({ id: "products.process.title" })}
       side="left"
-      isGray={false}
+      isGray={true}
     >
       <div className={styles.sections}>
         <FAQItem

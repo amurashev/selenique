@@ -47,7 +47,7 @@
 }
 
 .content {
-  margin-top: 32px;
+  margin-top: 16px;
   width: 100%;
   min-width: 0px;
 }
@@ -79,6 +79,10 @@
 @media (min-width: 720px) {
   .boxContainer {
     grid-template-columns: 1fr;
+  }
+
+  .content {
+    margin-top: 32px;
   }
 
   .boxContainerLeft {
