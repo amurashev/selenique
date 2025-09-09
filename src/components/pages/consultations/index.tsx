@@ -25,8 +25,8 @@ export default function ConsultationsPage() {
         <Risks />
         <Examples />
         <Prices />
-        <FAQ />
         <Form />
+        <FAQ />
       </main>
       <Footer />
     </div>

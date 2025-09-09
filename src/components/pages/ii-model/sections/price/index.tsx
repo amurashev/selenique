@@ -6,6 +6,7 @@ import { useIntl } from "react-intl";
 import Section from "../../../../sections/section";
 
 import styles from "./styles.module.css";
+import PriceCard from "@/components/sections/price-card";
 
 export const Price: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -17,20 +18,19 @@ export const Price: React.FC = () => {
       // isGray
     >
       <div className={styles.sections}>
-        <div className={styles.card}>
-          <div className={styles.text}>
+        <PriceCard title="Разработка виртуальной модели" price="4990руб">
+          <>
             <p>
-              Разработка виртуальной модели, которая будет использоваться для
-              всей линейки одежды или аксессуаров. Гарантия единого стиля и
-              узнаваемости бренда. Позволяет масштабировать съёмку каталога без
-              затрат на реальных моделей и студии.
+              Модель будет использоваться для всей линейки одежды или
+              аксессуаров. Гарантия единого стиля и узнаваемости бренда.
+              Позволяет масштабировать съёмку каталога без затрат на реальных
+              моделей и студии.
             </p>
             <p>
               <b>Срок</b>: 1–2 дня.
             </p>
-          </div>
-          <strong className={styles.price}>4990руб</strong>
-        </div>
+          </>
+        </PriceCard>
       </div>
     </Section>
   );
