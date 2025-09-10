@@ -1,0 +1,26 @@
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0px 0;
+  width: 100%;
+}
+
+.mobileLogo {
+  display: block;
+}
+
+.desktopLogo {
+  display: none;
+}
+
+
+@media (min-width: 600px) {
+  .mobileLogo {
+    display: none;
+  }
+  .desktopLogo {
+    display: block;
+  }
+}

@@ -4,19 +4,12 @@
   width: 100%;
 }
 
-.logoBox {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #ddd;
-  padding: 0px 0;
-  width: 100%;
-}
-
 .menuBox {
   /* border-top: 1px solid #ddd; */
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
   /* background-color: #000000; */
 }
 
@@ -27,7 +20,6 @@
 }
 
 .menuItem {
-  font-size: 1em;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   text-align: center;
@@ -37,28 +29,20 @@
   }
 }
 
-.mobileLogo {
-  display: block;
+.services {
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
-
-.desktopLogo {
-  display: none;
-}
-
 
 @media (min-width: 600px) {
-  .mobileLogo {
-    display: none;
-  }
-  .desktopLogo {
-    display: block;
-  }
-  
   .menu {
     flex-direction: row;
   }
   .menuItem {
-    font-size: 1.25em;
     & + & {
       margin-left: 1em;
     }

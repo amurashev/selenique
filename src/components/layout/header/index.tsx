@@ -1,86 +1,120 @@
 "use client";
 
 import Link from "next/link";
+import { useIntl } from "react-intl";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
-import { productPageRoute, iiModelPageRoute, productPortfolioPageRoute, modelsPageRoute } from "@/constants/routes";
+import {
+  productPageRoute,
+  iiModelPageRoute,
+  productPortfolioPageRoute,
+  modelsPageRoute,
+} from "@/constants/routes";
+import { useEffect, useRef, useState } from "react";
+import ServiceItem from "./service-item";
+import { SERVICES } from "@/constants/services";
+import LogoBox from "./logo-box";
+import Dropdown from "./dropdown";
+import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
-const MENU = [
-  {
-    url: productPageRoute.getUrl(),
-    label: "Обработка фото для e-commerce",
+const modelsPageUrl = modelsPageRoute.getUrl({
+  params: {
+    type: "woman",
   },
-  {
-    url: iiModelPageRoute.getUrl(),
-    label: "Уникальная ИИ-модель для каталога",
-  },
-  {
-    url: productPortfolioPageRoute.getUrl({
-      params: {
-        type: "all",
-      },
-    }),
-    label: "Портфолио",
-  },
-  {
-    url: modelsPageRoute.getUrl({
-      params: {
-        type: "woman",
-      },
-    }),
-    label: "ИИ Модели",
-  },
-].map((item) => ({
-  url: item.url,
-  label: item.label,
-}));
+});
 
 export default function Header() {
   const pathname = usePathname();
+  const { formatMessage } = useIntl();
+
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
+
+  const toggleMenu = (menu: string) => {
+    setOpenMenu((prev) => (prev === menu ? null : menu));
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setOpenMenu(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  console.warn("Header", openMenu);
 
   return (
-    <header className={styles.box}>
-      <div className={styles.logoBox}>
-        <div className={styles.mobileLogo}>
-          <Link href="/">
-            <Image
-              src="/logo3.png"
-              width={300}
-              height={60}
-              quality={100}
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className={styles.desktopLogo}>
-          <Link href="/">
-            <Image
-              src="/logo3.png"
-              width={500}
-              height={100}
-              quality={100}
-              alt=""
-            />
-          </Link>
-        </div>
-      </div>
+    <header className={styles.box} ref={headerRef}>
+      <LogoBox />
       <div className={styles.menuBox}>
         <ul className={styles.menu}>
-          {MENU.map((item) => {
-            const isActive = pathname === item.url;
-            return (
-              <li
-                key={item.url}
-                className={`${styles.menuItem} ${isActive ? styles.menuItemIsActive : ""}`}
-              >
-                <Link href={item.url} className={styles.link}>
-                  {item.label}
-                </Link>
-              </li>
-            );
-          })}
+          <li
+            className={`${styles.menuItem} ${
+              false ? styles.menuItemIsActive : ""
+            }`}
+            onClick={() => toggleMenu("services")}
+          >
+            <span className={styles.link}>Наши услуги</span>
+            {openMenu === "services" && (
+              <Dropdown>
+                <div className={styles.services}>
+                  {SERVICES.map((item) => (
+                    <ServiceItem
+                      key={item.titleKey}
+                      image={item.image}
+                      url={item.url}
+                      title={formatMessage({ id: item.menuTitleKey })}
+                    />
+                  ))}
+                </div>
+              </Dropdown>
+            )}
+          </li>
+
+          <li
+            className={`${styles.menuItem} ${
+              false ? styles.menuItemIsActive : ""
+            }`}
+            onClick={() => toggleMenu("portfolio")}
+          >
+            <span className={styles.link}>Портфолио</span>
+            {openMenu === "portfolio" && (
+              <Dropdown>
+                <div className={styles.services}>
+                  {PORTFOLIO_TYPES.map((item) => (
+                    <Link
+                      key={item.index}
+                      href={productPortfolioPageRoute.getUrl({
+                        params: { type: item.index },
+                      })}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </Dropdown>
+            )}
+          </li>
+
+          <li
+            className={`${styles.menuItem} ${
+              false ? styles.menuItemIsActive : ""
+            }`}
+          >
+            <Link href={modelsPageUrl} className={styles.link}>
+              ИИ Модели
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
