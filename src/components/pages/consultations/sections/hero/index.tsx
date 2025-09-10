@@ -3,7 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import HeroCommon from "@/components/sections/hero";
+import HeroCommon from "@/components/layout/hero";
 
 export const Hero: React.FC = () => {
   const { formatMessage } = useIntl();

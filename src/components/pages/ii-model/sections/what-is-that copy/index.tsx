@@ -34,8 +34,8 @@ export const WhatIsThat: React.FC = () => {
 
   return (
     <Section
-      title={formatMessage({ id: "ii_model.what_is_that.text" })}
-      // text={formatMessage({ id: "ii_model.what_is_that.text" })}
+      title={formatMessage({ id: "ii_model.what_is_that.title" })}
+      text={formatMessage({ id: "ii_model.what_is_that.text" })}
       // isShort
       // side="left"
       isGray

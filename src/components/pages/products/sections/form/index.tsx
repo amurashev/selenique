@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

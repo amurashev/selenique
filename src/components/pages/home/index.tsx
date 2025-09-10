@@ -5,8 +5,8 @@ import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
 import Card from "./card";
-import { aiConsultationPageRoute, productPageRoute } from "@/constants/routes";
-import Header from "@/components/sections/header";
+import { iiModelPageRoute, productPageRoute } from "@/constants/routes";
+import Header from "@/components/layout/header";
 
 export default function HomePage() {
   const { formatMessage } = useIntl();
@@ -21,6 +21,14 @@ export default function HomePage() {
               <Card
                 image="/product/bg2.webp"
                 title={formatMessage({ id: "products.hero.title" })}
+              />
+            </Link>
+          </div>
+          <div>
+            <Link href={iiModelPageRoute.getUrl()} locale={"ru"}>
+              <Card
+                image="/ii_models/bg.webp"
+                title={formatMessage({ id: "ii_model.hero.title" })}
               />
             </Link>
           </div>

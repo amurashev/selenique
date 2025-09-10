@@ -3,10 +3,11 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 import PriceCard from "@/components/sections/price-card";
+import { PRODUCT_PRICES_DATA } from "@/constants/prices";
 
 export const Price: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -18,7 +19,10 @@ export const Price: React.FC = () => {
       // isGray
     >
       <div className={styles.sections}>
-        <PriceCard title="Разработка виртуальной модели" price="4990руб.">
+        <PriceCard
+          title="Разработка виртуальной модели"
+          price={PRODUCT_PRICES_DATA["ii_model"].price}
+        >
           <>
             <p>
               Модель будет использоваться для всей линейки одежды или

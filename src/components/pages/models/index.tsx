@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/sections/header";
+import Header from "@/components/layout/header";
 import Photos from "./sections/photos";
 
 import styles from "./page.module.css";

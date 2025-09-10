@@ -1,6 +1,6 @@
 import { Hero } from "@/components/pages/products/sections/hero";
-import Header from "@/components/sections/header";
-import Footer from "@/components/sections/footer";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 import styles from "./page.module.css";
 import BeforeAfter from "@/components/pages/products/sections/before-after";
@@ -31,7 +31,6 @@ export default function HomePage() {
         <WhatYouGet />
         <WhoIsClient />
         <WhereUse />
-        {/* <Portfolio /> */}
         {/* <hr style={{
           backgroundColor: "#cccccc",
           borderWidth: 0,

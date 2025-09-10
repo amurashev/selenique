@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 import InfoBox from "@/components/ui/info";

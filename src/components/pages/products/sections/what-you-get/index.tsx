@@ -3,7 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 import { Button } from "@/components/ui/button";

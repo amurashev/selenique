@@ -3,7 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 import PriceCard from "@/components/sections/price-card";
@@ -16,7 +16,7 @@ export const Prices: React.FC = () => {
       // isGray={true}
     >
       <div className={styles.sections}>
-        <PriceCard title="Часовая консультация" price="6900руб.">
+        <PriceCard title="Часовая консультация" price={6990}>
           <>
             <p>
               <b>Длительность</b>: 60 мин

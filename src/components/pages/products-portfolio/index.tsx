@@ -13,7 +13,7 @@ import {
   productPortfolioPageRoute,
 } from "@/constants/routes";
 import PHOTOS from "./photos";
-import Header from "@/components/sections/header";
+import Header from "@/components/layout/header";
 import Tabs from "@/components/ui/tabs";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 

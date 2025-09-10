@@ -5,12 +5,16 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
-import { productPageRoute, productPortfolioPageRoute, modelsPageRoute } from "@/constants/routes";
+import { productPageRoute, iiModelPageRoute, productPortfolioPageRoute, modelsPageRoute } from "@/constants/routes";
 
 const MENU = [
   {
     url: productPageRoute.getUrl(),
     label: "Обработка фото для e-commerce",
+  },
+  {
+    url: iiModelPageRoute.getUrl(),
+    label: "Уникальная ИИ-модель для каталога",
   },
   {
     url: productPortfolioPageRoute.getUrl({

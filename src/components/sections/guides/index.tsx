@@ -4,7 +4,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 
 import GuideItem from "../guide-item";
-import Section from "../section";
+import Section from "../../layout/section";
 
 import styles from "./styles.module.css";
 import GUIDES from "@/content/guides";

@@ -1,6 +1,6 @@
 import { Hero } from "./sections/hero";
-import Header from "@/components/sections/header";
-import Footer from "@/components/sections/footer";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 import styles from "./page.module.css";
 import WhoIsClient from "./sections/who-is-client";

@@ -4,7 +4,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 
 import { Pack } from "../pack";
-import Section from "../section";
+import Section from "../../layout/section";
 import PACKS from "@/content/packs";
 
 import styles from "./styles.module.css";

@@ -3,7 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 import ItemsList from "@/components/sections/items-list";
 
 import styles from "./styles.module.css";

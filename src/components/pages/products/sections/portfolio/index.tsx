@@ -4,7 +4,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 import Slider from "react-slick";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 

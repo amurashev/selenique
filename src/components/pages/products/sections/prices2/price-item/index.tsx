@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 
 import styles from "./styles.module.css";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Arrow = () => {
   return (
@@ -26,11 +28,12 @@ const PriceItem: React.FC<{
   title: string;
   price: number;
   text: string;
+  link?: string;
   priceUnit: string;
   images: string[];
   imageSrc?: string;
   isRight?: boolean;
-}> = ({ title, price, priceUnit, images, text = "" }) => {
+}> = ({ title, link, price, priceUnit, images, text = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.item}>
@@ -63,6 +66,9 @@ const PriceItem: React.FC<{
               </div>
             ))}
           </div>
+          {link && (
+            <div className={styles.linkBox}><Link href={link}>Подробнее об услуге</Link></div>
+          )}
         </div>
       )}
     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/sections/header";
+import Header from "@/components/layout/header";
 import { MEN, WOMEN } from "@/constants/models";
 
 import styles from "./page.module.css";

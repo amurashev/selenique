@@ -4,7 +4,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
-import Section from "@/components/sections/section";
+import Section from "@/components/layout/section";
 
 const Telegram = () => (
   <svg

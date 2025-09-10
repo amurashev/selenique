@@ -10,10 +10,10 @@
   background: transparent;
   border: none;
   padding: 16px 0;
-  font-size: 21px;
   font-weight: 600;
   cursor: pointer;
   text-align: left;
+  font-size: 16px;
 }
 
 /* .header span {
@@ -22,7 +22,7 @@
 
 .title {
   flex-grow: 1;
-  font-size: 21px;
+  font-size: 16px;
 }
 
 .icon {
@@ -47,7 +47,6 @@
   color: var(--text);
 }
 
-
 .imageBox {
   /* width: 50%; */
 }
@@ -68,8 +67,18 @@
   flex-shrink: 0;
 }
 
+.linkBox {
+  margin-top: 16px;
+}
+
 
 @media (min-width: 760px) {
+  .header {
+    font-size: 21px;
+  }
+  .title {
+    font-size: 21px;
+  }
   .imageBox {
     height: 180px;
     width: auto;
@@ -77,5 +86,5 @@
   .images {
     display: flex;
     flex-direction: row;
-  }
+  }  
 }

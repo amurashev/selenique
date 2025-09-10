@@ -1,9 +1,9 @@
 import { Hero } from "@/components/sections/_hero";
 import { Packs } from "@/components/sections/packs";
 import Guides from "@/components/sections/guides";
-import Header from "@/components/sections/header";
+import Header from "@/components/layout/header";
 import { FAQ } from "@/components/sections/_faq";
-import Footer from "@/components/sections/footer";
+import Footer from "@/components/layout/footer";
 import Examples from "@/components/sections/examples";
 
 import styles from "./page.module.css";

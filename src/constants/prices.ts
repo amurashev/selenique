@@ -16,6 +16,7 @@ export const PRODUCT_PRICES_DATA: Record<
   ProductService,
   {
     title: string;
+    titleShort?: string
     price: number;
     priceUnit: string;
     description: string;
@@ -100,6 +101,7 @@ export const PRODUCT_PRICES_DATA: Record<
   },
   ii_model: {
     title: "Создание уникальной консистентной модели для каталога",
+    titleShort: 'Разработка виртуальной модели',
     description:
       "Разработка виртуальной модели, которая будет использоваться для всей линейки одежды или аксессуаров. Гарантия единого стиля и узнаваемости бренда. Позволяет масштабировать съёмку каталога без затрат на реальных моделей и студии.",
     price: 4990,

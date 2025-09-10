@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 import { Button } from "@/components/ui/button";
 import { productPortfolioPageRoute } from "@/constants/routes";

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
 
-import Section from "../../../../sections/section";
+import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 import InfoBox from "@/components/ui/info";
@@ -78,21 +78,12 @@ export const PricesV2: React.FC = () => {
               priceUnit={priceData.priceUnit}
               text={priceData.description}
               images={priceData.images}
+              link={priceData.link}
             />
           );
-
-          // return (
-          //   <PriceItem
-          //     key={item.title}
-          //     title={item.title}
-          //     text={item.subtitle}
-          //     price={item.price}
-          //     images={item.images}
-          //   />
-          // );
         })}
 
-<div className={styles.info}>
+        <div className={styles.info}>
           <InfoBox variant="success">
             <h5>Скидка за количество</h5>
             <div className={styles.packages}>
@@ -105,7 +96,9 @@ export const PricesV2: React.FC = () => {
               ))}
             </div>
           </InfoBox>
-          <InfoBox variant="info"><strong>Работаем по 50% предоплате</strong></InfoBox>
+          <InfoBox variant="info">
+            <strong>Работаем по 50% предоплате</strong>
+          </InfoBox>
         </div>
       </div>
     </Section>
