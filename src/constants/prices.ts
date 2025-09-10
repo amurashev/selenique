@@ -16,11 +16,12 @@ export const PRODUCT_PRICES_DATA: Record<
   ProductService,
   {
     title: string;
-    titleShort?: string
+    titleShort?: string;
     price: number;
     priceUnit: string;
     description: string;
     images: string[];
+    mainImage?: string;
     link?: string;
   }
 > = {
@@ -28,7 +29,8 @@ export const PRODUCT_PRICES_DATA: Record<
     title: "Тестовое фото товара",
     price: 0,
     priceUnit: "",
-    description: "Пришлите 1–2 качественных фото товара и коротко опишите желаемый результат или прикрепите референсы — мы сделаем бесплатный тест-кадр в нужной эстетике (каталожный белый фон или lifestyle-сцена). Срок: 24–48 часов.",
+    description:
+      "Пришлите 1–2 качественных фото товара и коротко опишите желаемый результат или прикрепите референсы — мы сделаем бесплатный тест-кадр в нужной эстетике (каталожный белый фон или lifestyle-сцена). Срок: 24–48 часов.",
     images: [],
   },
   remove_background: {
@@ -45,6 +47,7 @@ export const PRODUCT_PRICES_DATA: Record<
       "Минималистичные фото с акцентом только на товар. Чистый фон или мягкий градиент — быстрый и стильный вариант для маркетплейсов и соцсетей. Идеально, если нужно показать продукт максимально ясно и без отвлекающих деталей.",
     price: 390,
     priceUnit: "фото",
+    mainImage: "/product/price/one_tone/3.webp",
     images: [
       `/product/price/one_tone/1.webp`,
       `/product/price/one_tone/2.webp`,
@@ -62,6 +65,7 @@ export const PRODUCT_PRICES_DATA: Record<
       `/product/price/image/2.webp`,
       `/product/price/image/3.webp`,
     ],
+    mainImage: "/product/price/image/3.webp",
   },
   subject_photo_people: {
     title: "Предметная съёмка с людьми",
@@ -69,6 +73,7 @@ export const PRODUCT_PRICES_DATA: Record<
       "Фотографии товара в реальном использовании: руки, модели, взаимодействие с продуктом. Такой контент повышает доверие покупателей и помогает представить товар «в жизни». Рекомендуется для маркетплейсов, лендингов и соцсетей.",
     price: 990,
     priceUnit: "фото",
+    mainImage: "/product/price/with_people/3.webp",
     images: [
       `/product/price/with_people/1.webp`,
       `/product/price/with_people/2.webp`,
@@ -81,6 +86,7 @@ export const PRODUCT_PRICES_DATA: Record<
       "Классический стандарт для онлайн-витрин и маркетплейсов. Однотонном фон подчёркивает товар и отвечает техническим требованиям площадок (Wildberries, Ozon и др.). Лучший выбор для карточек товаров и интернет-магазинов.",
     price: 790,
     priceUnit: "ракурс",
+    mainImage: "/product/price/catalog/2.webp",
     images: [
       `/product/price/catalog/1.webp`,
       `/product/price/catalog/2.webp`,
@@ -93,6 +99,7 @@ export const PRODUCT_PRICES_DATA: Record<
       "Стильные образы с моделями в профессиональной подаче. Полноценные кадры для рекламных кампаний, социальных сетей и пресс-релизов. Создаём визуальный стиль бренда, готовый к публикации в журналах и промо-материалах.",
     price: 1990,
     priceUnit: "фото",
+    mainImage: "/product/price/lookbook/2.webp",
     images: [
       `/product/price/lookbook/1.webp`,
       `/product/price/lookbook/2.webp`,
@@ -101,11 +108,12 @@ export const PRODUCT_PRICES_DATA: Record<
   },
   ii_model: {
     title: "Создание уникальной консистентной модели для каталога",
-    titleShort: 'Разработка виртуальной модели',
+    titleShort: "Разработка виртуальной модели",
     description:
       "Разработка виртуальной модели, которая будет использоваться для всей линейки одежды или аксессуаров. Гарантия единого стиля и узнаваемости бренда. Позволяет масштабировать съёмку каталога без затрат на реальных моделей и студии.",
     price: 4990,
     priceUnit: "модель",
+    mainImage: "fdsfdsfsd",
     images: [
       `/product/price/model/1.webp`,
       `/product/price/model/4.webp`,

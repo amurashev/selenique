@@ -25,14 +25,12 @@ const FIRST_STEP = [
   {
     index: "item",
     title: "Предмета",
-    image: `/product/price/one_tone/3.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["subject_photo_simple"].mainImage as string,
   },
   {
     index: "cloth",
     title: "Одежды",
-    image: `/product/price/catalog/2.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["catalog"].mainImage as string,
   },
 ];
 
@@ -40,20 +38,17 @@ const SECOND_STEP_ITEM = [
   {
     index: "simple",
     title: "Однотонный",
-    image: `/product/price/one_tone/3.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["subject_photo_simple"].mainImage as string,
   },
   {
     index: "image",
     title: "Атмосферный",
-    image: `/product/price/image/3.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["subject_photo_image"].mainImage as string,
   },
   {
     index: "with_people",
     title: "С людьми",
-    image: `/product/price/with_people/3.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["subject_photo_people"].mainImage as string,
   },
 ];
 
@@ -61,14 +56,12 @@ const SECOND_STEP_CLOTH = [
   {
     index: "catalog",
     title: "Каталог (однотонный фон)",
-    image: `/product/price/catalog/2.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["catalog"].mainImage as string,
   },
   {
     index: "lookbook",
     title: "Лукбук (визуальный фон)",
-    image: `/product/price/lookbook/2.webp`,
-    description: "",
+    image: PRODUCT_PRICES_DATA["lookbook"].mainImage as string,
   },
 ];
 
@@ -171,7 +164,9 @@ export const PriceHelp: React.FC = () => {
                     title={item.title}
                     image={item.image}
                     isSelected={item.index === backgroundType}
-                    onClick={() => setBackgroundType(item.index as BackgroundType)}
+                    onClick={() =>
+                      setBackgroundType(item.index as BackgroundType)
+                    }
                   />
                 ))}
               </div>

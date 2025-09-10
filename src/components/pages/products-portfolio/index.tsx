@@ -54,7 +54,7 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
           </div>
         )}
       </main>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <Button
           onClick={() => {
             window.location.href = productPageRoute.getUrl() + "#portfolio";
@@ -62,7 +62,7 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
         >
           Вернуться на основной сайт
         </Button>
-      </footer>
+      </footer> */}
     </div>
   );
 }
