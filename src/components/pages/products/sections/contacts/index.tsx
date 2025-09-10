@@ -87,23 +87,27 @@ export const Contacts: React.FC = () => {
         <ul className={styles.list}>
           <li className={styles.item}>
             <Telegram />{" "}
-            <a
-              href="https://t.me/+79251006690"
-              target="_blank"
-              className={styles.link}
-            >
-              +7 (925) 100-66-90
-            </a>
+            <noindex>
+              <a
+                href="https://t.me/+79251006690"
+                target="_blank"
+                className={styles.link}
+              >
+                +7 (925) 100-66-90
+              </a>
+            </noindex>
           </li>
           <li className={styles.item}>
             <WhatsApp />{" "}
-            <a
-              href="https://wa.me/+79251006690"
-              target="_blank"
-              className={styles.link}
-            >
-              +7 (925) 100-66-90
-            </a>
+            <noindex>
+              <a
+                href="https://wa.me/+79251006690"
+                target="_blank"
+                className={styles.link}
+              >
+                +7 (925) 100-66-90
+              </a>
+            </noindex>
           </li>
           <li className={styles.item}>
             <Email />{" "}
