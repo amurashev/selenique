@@ -78,9 +78,10 @@ h5 {
 }
 
 a {
-  color: var(--info-3);
+  color: inherit;
+  /* color: var(--info-3); */
   text-decoration: none;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 @media (prefers-color-scheme: dark) {

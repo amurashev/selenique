@@ -67,7 +67,7 @@ const PriceItem: React.FC<{
             ))}
           </div>
           {link && (
-            <div className={styles.linkBox}><Link href={link}>Подробнее об услуге</Link></div>
+            <div className={styles.linkBox}><Link href={link} className={styles.link}>Подробнее об услуге</Link></div>
           )}
         </div>
       )}

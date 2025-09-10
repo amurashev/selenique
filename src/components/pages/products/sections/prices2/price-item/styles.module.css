@@ -71,6 +71,11 @@
   margin-top: 16px;
 }
 
+.link {
+  color: var(--info-3);
+  font-weight: 700;
+}
+
 
 @media (min-width: 760px) {
   .header {

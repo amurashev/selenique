@@ -5,6 +5,10 @@
 
   "header.menu.services": "Наши услуги",
   "header.menu.portfolio": "Портфолио",
+  "header.menu.ii_models": "ИИ Модели",
+  "header.menu.other": "Прочее",
+
+  "footer.not_an_offer": "Не является публичной офертой",
 
   "products.menu.title": "Обработка фото для e-commerce",
   "products.hero.title": "Премиальная обработка фото для маркетплейсов и сайтов, съёмка каталогов на ИИ-моделях",

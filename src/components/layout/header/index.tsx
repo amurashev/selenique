@@ -108,7 +108,7 @@ export default function Header() {
             }`}
           >
             <Link href={modelsPageUrl} className={styles.link}>
-              ИИ Модели
+              {formatMessage({ id: "header.menu.ii_models" })}
             </Link>
           </li>
         </ul>

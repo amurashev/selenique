@@ -1,29 +1,124 @@
 .box {
   border-bottom: 1px solid #ddd;
-  /* display: flex; */
   width: 100%;
   background-color: #333333;
   color: #fff;
-  padding: 16px 24px;
-  text-align: center;
+  padding: 0 16px;
+  padding-top: 48px;
+  padding-bottom: 36px;
 }
 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.firstCol {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.logoBox {
+  width: 100%;
+  max-width: 200px;
+  padding-top: 4px;
+}
+
+.logoImage {
+  width: 100%;
+}
+
+.linksBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuList {
+  list-style: none;
+}
+
+.menuHeader {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: #919496;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.menuLink {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.menuItem {
+  display: block;
+
+  & + & {
+    margin-top: 2px;
+  }
+}
+
+.alertBox {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 13px;
+  color: #919496;
+  font-weight: 700;
+
+  div + div {
+    margin-top: 4px;
+  }
+}
+
+.secondCol {
+  width: 100%;
+  font-size: 16px;
+  color: #dddddd;
+  margin-top: 24px;
+
+  div + div {
+    margin-top: 8px;
+  }
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+}
 
 @media (min-width: 600px) {
-  .menu {
+  .logoBox {
+    width: 20%;
+  }
+  
+  .firstCol {
+    width: 75%;
     flex-direction: row;
+    gap: 32px;
   }
-  .menuItem {
-    font-size: 1.25em;
-    & + & {
-      margin-left: 1em;
-    }
-  }
-}
 
-.link {
-  display: block;
-  padding: 0.5em 1em;
-  height: 100%;
-  /* text-transform: uppercase; */
+  .secondCol {
+    width: 25%;
+    text-align: right;
+    margin-top: 0px;
+  }
+
+  .email {
+    justify-content: end;
+  }
+  
 }
