@@ -84,10 +84,10 @@ export const Contacts: React.FC = () => {
       side="left"
     >
       <div className={styles.sections}>
-        <ul className={styles.list}>
-          <li className={styles.item}>
-            <Telegram />{" "}
-            <noindex>
+        <noindex>
+          <ul className={styles.list}>
+            <li className={styles.item}>
+              <Telegram />{" "}
               <a
                 href="https://t.me/+79251006690"
                 target="_blank"
@@ -95,11 +95,9 @@ export const Contacts: React.FC = () => {
               >
                 +7 (925) 100-66-90
               </a>
-            </noindex>
-          </li>
-          <li className={styles.item}>
-            <WhatsApp />{" "}
-            <noindex>
+            </li>
+            <li className={styles.item}>
+              <WhatsApp />{" "}
               <a
                 href="https://wa.me/+79251006690"
                 target="_blank"
@@ -107,15 +105,18 @@ export const Contacts: React.FC = () => {
               >
                 +7 (925) 100-66-90
               </a>
-            </noindex>
-          </li>
-          <li className={styles.item}>
-            <Email />{" "}
-            <a href="mailto:selenique.studio@gmail.com" className={styles.link}>
-              selenique.studio@gmail.com
-            </a>
-          </li>
-        </ul>
+            </li>
+            <li className={styles.item}>
+              <Email />{" "}
+              <a
+                href="mailto:selenique.studio@gmail.com"
+                className={styles.link}
+              >
+                selenique.studio@gmail.com
+              </a>
+            </li>
+          </ul>
+        </noindex>
       </div>
     </Section>
   );

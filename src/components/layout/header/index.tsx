@@ -2,16 +2,10 @@
 
 import Link from "next/link";
 import { useIntl } from "react-intl";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
-import {
-  productPageRoute,
-  iiModelPageRoute,
-  productPortfolioPageRoute,
-  modelsPageRoute,
-} from "@/constants/routes";
+import { productPortfolioPageRoute, modelsPageRoute } from "@/constants/routes";
 import { useEffect, useRef, useState } from "react";
 import ServiceItem from "./service-item";
 import { SERVICES } from "@/constants/services";
@@ -51,8 +45,6 @@ export default function Header() {
     };
   }, []);
 
-  console.warn("Header", openMenu);
-
   return (
     <header className={styles.box} ref={headerRef}>
       <LogoBox />
@@ -64,7 +56,9 @@ export default function Header() {
             }`}
             onClick={() => toggleMenu("services")}
           >
-            <span className={styles.link}>Наши услуги</span>
+            <span className={styles.link}>
+              {formatMessage({ id: "header.menu.services" })}
+            </span>
             {openMenu === "services" && (
               <Dropdown>
                 <div className={styles.services}>
@@ -87,7 +81,9 @@ export default function Header() {
             }`}
             onClick={() => toggleMenu("portfolio")}
           >
-            <span className={styles.link}>Портфолио</span>
+            <span className={styles.link}>
+              {formatMessage({ id: "header.menu.portfolio" })}
+            </span>
             {openMenu === "portfolio" && (
               <Dropdown>
                 <div className={styles.services}>
