@@ -41,7 +41,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.remove_background.description",
     price: {
       ru: 100,
-      en: 1,
+      en: 2,
     },
     priceUnit: "photo",
     images: [`/product/price/cut_photo/1.webp`],
@@ -51,7 +51,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.subject_photo_simple.description",
     price: {
       ru: 400,
-      en: 5,
+      en: 8,
     },
     priceUnit: "photo",
     mainImage: "/product/price/one_tone/3.webp",
@@ -66,7 +66,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.subject_photo_image.description",
     price: {
       ru: 600,
-      en: 8,
+      en: 10,
     },
     priceUnit: "photo",
     images: [
@@ -81,7 +81,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.subject_photo_people.description",
     price: {
       ru: 750,
-      en: 12,
+      en: 15,
     },
     priceUnit: "photo",
     mainImage: "/product/price/with_people/3.webp",
@@ -96,7 +96,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.catalog.description",
     price: {
       ru: 750,
-      en: 10,
+      en: 15,
     },
     priceUnit: "angle",
     mainImage: "/product/price/catalog/2.webp",
@@ -111,7 +111,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.lookbook.description",
     price: {
       ru: 1000,
-      en: 15,
+      en: 20,
     },
     priceUnit: "photo",
     mainImage: "/product/price/lookbook/2.webp",
@@ -127,7 +127,7 @@ export const PRODUCT_PRICES_DATA: Record<
     descriptionKey: "products.prices.ii_model.description",
     price: {
       ru: 2000,
-      en: 25,
+      en: 30,
     },
     priceUnit: "model",
     images: [
