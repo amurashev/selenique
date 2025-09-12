@@ -7,7 +7,6 @@ import BeforeAfter from "@/components/pages/products/sections/before-after";
 import WhoIsClient from "./sections/who-is-client";
 import WhatYouGet from "./sections/what-you-get";
 import Portfolio from "./sections/portfolio";
-import Prices from "./sections/prices";
 import PricesV2 from "./sections/prices2";
 import Process from "./sections/process";
 import FAQ from "./sections/faq";

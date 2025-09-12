@@ -7,22 +7,22 @@ import Photos from "./sections/photos";
 
 import styles from "./page.module.css";
 import Tabs from "@/components/ui/tabs";
+import { modelsPageRoute } from "@/constants/routes";
+import Footer from "@/components/layout/footer";
 
 const TABS = [
   {
     index: "women",
-    link: "/models/women",
     labelKey: "common.models.sex.women",
   },
   {
     index: "men",
-    link: "/models/men",
     labelKey: "common.models.sex.men",
   },
 ]
 
 export default function ModelsPage({ type }: { type: "women" | "men" }) {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
   
   return (
     <div className={styles.page}>
@@ -32,11 +32,17 @@ export default function ModelsPage({ type }: { type: "women" | "men" }) {
           activeIndex={type}
           items={TABS.map(item => ({
             ...item,
+            link: modelsPageRoute.getUrl(locale, {
+              params: {
+                type: item.index,
+              }
+            }),
             label: formatMessage({ id: item.labelKey })
           }))}
         />
         <Photos type={type} />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { iiModelPageRoute } from "@/constants/routes";
+import { BaseRouteType, Route } from "@/utils/routing";
 
 export type ProductService =
   | "test_photo"
@@ -22,7 +23,7 @@ export const PRODUCT_PRICES_DATA: Record<
     priceUnit: string;
     images: string[];
     mainImage?: string;
-    link?: string;
+    route?: Route<BaseRouteType>;
   }
 > = {
   test_photo: {
@@ -134,7 +135,7 @@ export const PRODUCT_PRICES_DATA: Record<
       `/product/price/model/4.webp`,
       `/product/price/model/3.webp`,
     ],
-    link: iiModelPageRoute.getUrl(),
+    route: iiModelPageRoute,
   },
 };
 

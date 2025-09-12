@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html>
       <head>
         <meta name="yandex-verification" content="932ef8348a3151c0" />
         <link

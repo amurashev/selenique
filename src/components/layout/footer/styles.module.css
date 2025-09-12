@@ -100,6 +100,11 @@
   gap: 4px;
 }
 
+.flags {
+  display: flex;
+  gap: 10px;
+}
+
 @media (min-width: 600px) {
   .logoBox {
     width: 20%;
@@ -121,4 +126,9 @@
     justify-content: end;
   }
   
+
+  .flags {
+    justify-content: end;
+  }
+
 }

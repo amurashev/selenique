@@ -4,9 +4,9 @@ import Layout from "@/components/layout";
 import { Metadata } from "next";
 
 const title =
-  "Премиальная обработка фото для маркетплейсов и сайтов, съемка каталогов на ИИ моделях";
+  "Premium product photo editing for marketplaces & websites, catalog shoots on AI models";
 const description =
-  "Готовим изображения";
+  "We prepare images for Ebay, Amazon and Etsy on any backgrounds. Photorealistic lifestyle scenes, showcasing your product on AI models. Realistic shadows/highlights, accurate brand colors, consistent product look across the series. Final export per platform requirements.";
 
 export const metadata: Metadata = {
   title,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default async function Product() {
   return (
-    <Layout>
+    <Layout locale="en">
       <ProductPage />
     </Layout>
   );

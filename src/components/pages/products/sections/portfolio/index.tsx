@@ -72,7 +72,7 @@ export const Portfolio: React.FC = () => {
           ))}
         </Slider>
 
-        <div className={styles.buttonBox}>
+        {/* <div className={styles.buttonBox}>
           <Button
             onClick={() => {
               window.location.href = productPortfolioPageRoute.getUrl({
@@ -82,7 +82,7 @@ export const Portfolio: React.FC = () => {
           >
             {formatMessage({ id: "products.portfolio.see_all" })}
           </Button>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

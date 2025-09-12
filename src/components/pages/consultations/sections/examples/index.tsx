@@ -17,7 +17,7 @@ import styles from "./styles.module.css";
 const IMAGES = [21, 27, 29, 37, 8, 47, 52, 56, 58];
 
 export const Examples: React.FC = () => {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
 
   const settings = {
     dots: true,
@@ -83,7 +83,7 @@ export const Examples: React.FC = () => {
         <div className={styles.buttonBox}>
           <Button
             onClick={() => {
-              window.location.href = productPortfolioPageRoute.getUrl({
+              window.location.href = productPortfolioPageRoute.getUrl(locale, {
                 params: { type: "all " },
               });
             }}

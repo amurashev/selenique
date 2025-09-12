@@ -9,16 +9,16 @@ import "react-photo-album/rows.css";
 import styles from "./page.module.css";
 import { Button } from "@/components/ui/button";
 import {
-  productPageRoute,
   productPortfolioPageRoute,
 } from "@/constants/routes";
 import PHOTOS from "./photos";
 import Header from "@/components/layout/header";
 import Tabs from "@/components/ui/tabs";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
+import Footer from "@/components/layout/footer";
 
 export default function ProductsPortfolioPage({ type }: { type: string }) {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
   const [isMounted, setIsMounted] = useState(false);
   const photos = PHOTOS.filter((item) =>
     type !== "all" ? item.type === type : true
@@ -41,7 +41,7 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
           activeIndex={type}
           items={PORTFOLIO_TYPES.map((item) => ({
             index: item.index,
-            link: productPortfolioPageRoute.getUrl({
+            link: productPortfolioPageRoute.getUrl(locale, {
               params: {
                 type: item.index,
               },
@@ -55,6 +55,7 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
           </div>
         )}
       </main>
+      <Footer />
       {/* <footer className={styles.footer}>
         <Button
           onClick={() => {

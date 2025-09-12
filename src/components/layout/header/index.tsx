@@ -13,15 +13,9 @@ import LogoBox from "./logo-box";
 import Dropdown from "./dropdown";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
-const modelsPageUrl = modelsPageRoute.getUrl({
-  params: {
-    type: "women",
-  },
-});
-
 export default function Header() {
   const pathname = usePathname();
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
 
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const headerRef = useRef<HTMLDivElement>(null);
@@ -66,7 +60,7 @@ export default function Header() {
                     <ServiceItem
                       key={item.titleKey}
                       image={item.image}
-                      url={item.url}
+                      url={item.route.getUrl(locale)}
                       title={formatMessage({ id: item.menuTitleKey })}
                     />
                   ))}
@@ -90,7 +84,7 @@ export default function Header() {
                   {PORTFOLIO_TYPES.map((item) => (
                     <Link
                       key={item.index}
-                      href={productPortfolioPageRoute.getUrl({
+                      href={productPortfolioPageRoute.getUrl(locale, {
                         params: { type: item.index },
                       })}
                     >
@@ -107,7 +101,14 @@ export default function Header() {
               false ? styles.menuItemIsActive : ""
             }`}
           >
-            <Link href={modelsPageUrl} className={styles.link}>
+            <Link
+              href={modelsPageRoute.getUrl(locale, {
+                params: {
+                  type: "women",
+                },
+              })}
+              className={styles.link}
+            >
               {formatMessage({ id: "header.menu.ii_models" })}
             </Link>
           </li>

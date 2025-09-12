@@ -6,16 +6,7 @@ import { useIntl } from "react-intl";
 import styles from "./styles.module.css";
 import { SERVICES } from "@/constants/services";
 import { modelsPageRoute, productPortfolioPageRoute } from "@/constants/routes";
-
-const modelsPageUrl = modelsPageRoute.getUrl({
-  params: {
-    type: "women",
-  },
-});
-
-const productPortfolioPageRouteUrl = productPortfolioPageRoute.getUrl({
-  params: { type: "all" },
-});
+import { RUFlag, UKFlag } from "@/components/ui/flags";
 
 const EMailIcon = () => (
   <svg
@@ -35,7 +26,7 @@ const EMailIcon = () => (
 );
 
 export default function Footer() {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
   return (
     <footer className={styles.box}>
       <div className={styles.container}>
@@ -60,7 +51,7 @@ export default function Footer() {
 
                 {SERVICES.map((item) => (
                   <li key={item.titleKey} className={styles.menuItem}>
-                    <Link href={item.url} className={styles.menuLink}>
+                    <Link href={item.route.getUrl(locale)} className={styles.menuLink}>
                       {formatMessage({ id: item.menuTitleKey })}
                     </Link>
                   </li>
@@ -78,14 +69,23 @@ export default function Footer() {
                 </span>
 
                 <li className={styles.menuItem}>
-                  <Link href={modelsPageUrl} className={styles.menuLink}>
+                  <Link
+                    href={modelsPageRoute.getUrl(locale, {
+                      params: {
+                        type: "women",
+                      },
+                    })}
+                    className={styles.menuLink}
+                  >
                     {formatMessage({ id: "header.menu.portfolio" })}
                   </Link>
                 </li>
 
                 <li className={styles.menuItem}>
                   <Link
-                    href={productPortfolioPageRouteUrl}
+                    href={productPortfolioPageRoute.getUrl(locale, {
+                      params: { type: "all" },
+                    })}
                     className={styles.menuLink}
                   >
                     {formatMessage({ id: "header.menu.ii_models" })}
@@ -107,6 +107,14 @@ export default function Footer() {
             </div>
 
             <div>© 2025 {formatMessage({ id: "common.name" })}</div>
+            <div className={styles.flags}>
+        <Link href={"/"}>
+          <RUFlag />
+        </Link>
+        <Link href={"/en"}>
+          <UKFlag />
+        </Link>
+      </div>
           </div>
         </nav>
         <div className={styles.alertBox}>

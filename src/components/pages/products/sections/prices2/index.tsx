@@ -60,7 +60,7 @@ import PriceItem from "./price-item";
 // };
 
 export const PricesV2: React.FC = () => {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
   return (
     <Section
       title={formatMessage({ id: "products.prices.title" })}
@@ -78,7 +78,7 @@ export const PricesV2: React.FC = () => {
               priceUnit={priceData.priceUnit}
               text={formatMessage({ id: priceData.descriptionKey })}
               images={priceData.images}
-              link={priceData.link}
+              link={priceData.route ? priceData.route.getUrl(locale) : undefined}
             />
           );
         })}

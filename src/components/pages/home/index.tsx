@@ -10,7 +10,7 @@ import { SERVICES } from "@/constants/services";
 import Footer from "@/components/layout/footer";
 
 export default function HomePage() {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
 
   return (
     <div className={styles.page}>
@@ -19,8 +19,8 @@ export default function HomePage() {
         <h2>{formatMessage({ id: "header.menu.services" })}</h2>
         <div className={styles.items}>
           {SERVICES.map((item) => (
-            <div key={item.url}>
-              <Link href={item.url}>
+            <div key={item.titleKey}>
+              <Link href={item.route.getUrl(locale)}>
                 <Card
                   image={item.image}
                   title={formatMessage({ id: item.titleKey })}

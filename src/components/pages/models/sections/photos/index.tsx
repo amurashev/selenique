@@ -5,9 +5,10 @@ import { useIntl } from "react-intl";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { MEN, WOMEN } from "@/constants/models";
+import { modelPageRoute } from "@/constants/routes";
 
 export default function Photos({ type }: { type: "women" | "men" }) {
-  const { formatMessage } = useIntl();
+  const { locale } = useIntl();
 
   const finalData = type === "women" ? WOMEN : MEN;
   const urlType = type === "women" ? "women" : "men";
@@ -21,7 +22,12 @@ export default function Photos({ type }: { type: "women" | "men" }) {
           <Link
             key={item.index}
             className={styles.item}
-            href={`/models/${urlType}/${item.id}`}
+            href={modelPageRoute.getUrl(locale, {
+              params: {
+                id: String(item.id),
+                type: urlType,
+              },
+            })}
           >
             <img
               className={styles.image}

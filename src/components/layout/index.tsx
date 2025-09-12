@@ -8,5 +8,5 @@ export default function Layout({
   locale?: Locale;
   children: React.ReactNode;
 }>) {
-  return <PageWithL18n locale={"ru"}>{children}</PageWithL18n>;
+  return <PageWithL18n locale={locale}>{children}</PageWithL18n>;
 }

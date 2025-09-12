@@ -17,7 +17,7 @@ import styles from "./styles.module.css";
 const IMAGES = [27, 59, 8, 47, 52, 56, 58, 37];
 
 export const BeforeAfter: React.FC = () => {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
 
   const settings = {
     dots: true,
@@ -83,7 +83,7 @@ export const BeforeAfter: React.FC = () => {
         <div className={styles.buttonBox}>
           <Button
             onClick={() => {
-              window.location.href = productPortfolioPageRoute.getUrl({
+              window.location.href = productPortfolioPageRoute.getUrl(locale, {
                 params: { type: "all " },
               });
             }}
