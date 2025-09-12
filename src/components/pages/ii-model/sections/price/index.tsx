@@ -20,18 +20,19 @@ export const Price: React.FC = () => {
     >
       <div className={styles.sections}>
         <PriceCard
-          title="Разработка виртуальной модели"
+          title={formatMessage({
+            id: PRODUCT_PRICES_DATA["ii_model"].titleKey,
+          })}
           price={PRODUCT_PRICES_DATA["ii_model"].price}
         >
           <>
             <p>
-              Модель будет использоваться для всей линейки одежды или
-              аксессуаров. Гарантия единого стиля и узнаваемости бренда.
-              Позволяет масштабировать съёмку каталога без затрат на реальных
-              моделей и студии.
+              {formatMessage({
+                id: PRODUCT_PRICES_DATA["ii_model"].descriptionKey,
+              })}
             </p>
             <p>
-              <b>Срок</b>: 1–2 дня.
+              <b>{formatMessage({ id: "ii_model.price.term" })}</b>: {formatMessage({ id: "ii_model.price.term_value" })}.
             </p>
           </>
         </PriceCard>

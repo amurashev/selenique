@@ -12,6 +12,7 @@ import { iiModelPageRoute } from "@/constants/routes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PRODUCT_PRICE_LIST, PRODUCT_PRICES_DATA } from "@/constants/prices";
+import { PriceWithUnit } from "@/components/ui/price";
 
 type ItemType = "item" | "cloth";
 type BackgroundType =
@@ -24,12 +25,12 @@ type BackgroundType =
 const FIRST_STEP = [
   {
     index: "item",
-    title: "Предмета",
+    titleKey: "products.price_help.first_step.item",
     image: PRODUCT_PRICES_DATA["subject_photo_simple"].mainImage as string,
   },
   {
     index: "cloth",
-    title: "Одежды",
+    titleKey: "products.price_help.first_step.cloth",
     image: PRODUCT_PRICES_DATA["catalog"].mainImage as string,
   },
 ];
@@ -37,17 +38,17 @@ const FIRST_STEP = [
 const SECOND_STEP_ITEM = [
   {
     index: "simple",
-    title: "Однотонный",
+    titleKey: "products.price_help.second_step.simple",
     image: PRODUCT_PRICES_DATA["subject_photo_simple"].mainImage as string,
   },
   {
     index: "image",
-    title: "Атмосферный",
+    titleKey: "products.price_help.second_step.image",
     image: PRODUCT_PRICES_DATA["subject_photo_image"].mainImage as string,
   },
   {
     index: "with_people",
-    title: "С людьми",
+    titleKey: "products.price_help.second_step.with_people",
     image: PRODUCT_PRICES_DATA["subject_photo_people"].mainImage as string,
   },
 ];
@@ -55,12 +56,12 @@ const SECOND_STEP_ITEM = [
 const SECOND_STEP_CLOTH = [
   {
     index: "catalog",
-    title: "Каталог (однотонный фон)",
+    titleKey: "products.price_help.second_step.catalog",
     image: PRODUCT_PRICES_DATA["catalog"].mainImage as string,
   },
   {
     index: "lookbook",
-    title: "Лукбук (визуальный фон)",
+    titleKey: "products.price_help.second_step.lookbook",
     image: PRODUCT_PRICES_DATA["lookbook"].mainImage as string,
   },
 ];
@@ -117,13 +118,15 @@ export const PriceHelp: React.FC = () => {
       <div className={styles.sections}>
         <div className={styles.steps}>
           <div className={styles.step1}>
-            <h3>Вам нужно фото:</h3>
+            <h3>
+              {formatMessage({ id: "products.price_help.you_need_photo" })}:
+            </h3>
 
             <div className={styles.images}>
               {FIRST_STEP.map((item) => (
                 <Item
-                  key={item.title}
-                  title={item.title}
+                  key={item.titleKey}
+                  title={formatMessage({ id: item.titleKey })}
                   image={item.image}
                   isSelected={item.index === itemType}
                   onClick={() => {
@@ -140,13 +143,18 @@ export const PriceHelp: React.FC = () => {
           <div className={styles.arrow}>&rarr;</div>
 
           <div className={styles.step2}>
-            <h3>Фон для фото:</h3>
+            <h3>
+              {formatMessage({
+                id: "products.price_help.select_photo_background",
+              })}
+              :
+            </h3>
             {itemType === "item" && (
               <div className={styles.images}>
                 {SECOND_STEP_ITEM.map((item) => (
                   <Item
-                    key={item.title}
-                    title={item.title}
+                    key={item.titleKey}
+                    title={formatMessage({ id: item.titleKey })}
                     image={item.image}
                     isSelected={item.index === backgroundType}
                     onClick={() =>
@@ -160,8 +168,8 @@ export const PriceHelp: React.FC = () => {
               <div className={styles.images}>
                 {SECOND_STEP_CLOTH.map((item) => (
                   <Item
-                    key={item.title}
-                    title={item.title}
+                    key={item.titleKey}
+                    title={formatMessage({ id: item.titleKey })}
                     image={item.image}
                     isSelected={item.index === backgroundType}
                     onClick={() =>
@@ -175,12 +183,17 @@ export const PriceHelp: React.FC = () => {
         </div>
         {priceData && (
           <div className={styles.service}>
-            <h3>Выбранная услуга:</h3>
+            <h3>
+              {formatMessage({ id: "products.price_help.selected_service" })}:
+            </h3>
             <div className={styles.priceDetail}>
-              {priceData.title}:&nbsp;
+              {formatMessage({ id: priceData.titleKey })}:&nbsp;
               <span className={styles.price}>
-                от {priceData.price}руб./
-                {priceData.priceUnit}
+                <PriceWithUnit
+                  value={priceData.price}
+                  isFrom
+                  unit={priceData.priceUnit}
+                />
               </span>
             </div>
           </div>

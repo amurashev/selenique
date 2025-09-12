@@ -4,7 +4,7 @@ import ModelInfoPage from "@/components/pages/model-info";
 export default async function ModelInfo({
   params,
 }: {
-  params: Promise<{ id: string; type: "man" | "woman" }>;
+  params: Promise<{ id: string; type: "men" | "women" }>;
 }) {
   const { id, type } = await params;
   return (

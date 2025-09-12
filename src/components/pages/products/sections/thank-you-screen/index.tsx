@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
@@ -22,7 +22,9 @@ const ThankYouScreen = ({ onClose }: { onClose: () => void }) => {
       </div>
 
       <div className={styles.buttonBox}>
-        <Button onClick={onClose}>Вернуться на сайт</Button>
+        <Button onClick={onClose}>
+          {formatMessage({ id: "products.form_success.cta" })}
+        </Button>
       </div>
     </div>
   );

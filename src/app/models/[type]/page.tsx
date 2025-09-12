@@ -4,7 +4,7 @@ import ModelsPage from "@/components/pages/models";
 export default async function Models({
   params,
 }: {
-  params: Promise<{ type: "man" | "woman" }>;
+  params: Promise<{ type: "men" | "women" }>;
 }) {
   const { type } = await params;
   return (

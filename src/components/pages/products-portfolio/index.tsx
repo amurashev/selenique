@@ -18,6 +18,7 @@ import Tabs from "@/components/ui/tabs";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
 export default function ProductsPortfolioPage({ type }: { type: string }) {
+  const { formatMessage } = useIntl();
   const [isMounted, setIsMounted] = useState(false);
   const photos = PHOTOS.filter((item) =>
     type !== "all" ? item.type === type : true
@@ -45,7 +46,7 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
                 type: item.index,
               },
             }),
-            label: item.label,
+            label: formatMessage({ id: item.labelKey }),
           }))}
         />
         {photos && isMounted && (

@@ -63,7 +63,7 @@ export const Examples: React.FC = () => {
             <div key={item} className={styles.item}>
               <img
                 className={styles.image}
-                src={`/models/woman/3/${item}.png`}
+                src={`/models/women/3/${item}.png`}
               />
             </div>
           ))}

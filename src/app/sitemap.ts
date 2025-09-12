@@ -24,8 +24,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   [
     productPageRoute.getUrl(),
     iiModelPageRoute.getUrl(),
-    modelsPageRoute.getUrl({ params: { type: "woman" } }),
-    modelsPageRoute.getUrl({ params: { type: "man" } }),
+    modelsPageRoute.getUrl({ params: { type: "women" } }),
+    modelsPageRoute.getUrl({ params: { type: "men" } }),
     ...PORTFOLIO_TYPES.map((item) =>
       productPortfolioPageRoute.getUrl({ params: { type: item.index } })
     ),

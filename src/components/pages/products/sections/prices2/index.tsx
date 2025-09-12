@@ -72,11 +72,11 @@ export const PricesV2: React.FC = () => {
           const priceData = PRODUCT_PRICES_DATA[item];
           return (
             <PriceItem
-              key={priceData.title}
-              title={priceData.title}
+              key={priceData.titleKey}
+              title={formatMessage({ id: priceData.titleKey })}
               price={priceData.price}
               priceUnit={priceData.priceUnit}
-              text={priceData.description}
+              text={formatMessage({ id: priceData.descriptionKey })}
               images={priceData.images}
               link={priceData.link}
             />
@@ -85,19 +85,23 @@ export const PricesV2: React.FC = () => {
 
         <div className={styles.info}>
           <InfoBox variant="success">
-            <h5>Скидка за количество</h5>
+            <h5>{formatMessage({ id: "products.prices.discount" })}</h5>
             <div className={styles.packages}>
               {PRODUCT_PRICE_PACKAGES.map((item) => (
                 <div key={item.title} className={styles.packageItem}>
                   <div>
-                    {item.count} → <strong>{item.discount}</strong>
+                    {item.count}{" "}
+                    {formatMessage({ id: "common.prices.types.photo" })}{" "}→{" "}
+                    <strong>{item.discount}%</strong>
                   </div>
                 </div>
               ))}
             </div>
           </InfoBox>
           <InfoBox variant="info">
-            <strong>Работаем по 50% предоплате</strong>
+            <strong>
+              {formatMessage({ id: "products.prices.prepayment" })}
+            </strong>
           </InfoBox>
         </div>
       </div>

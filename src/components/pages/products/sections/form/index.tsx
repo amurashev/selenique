@@ -10,41 +10,53 @@ import { Textarea } from "@/components/ui/textarea";
 import { InputWithLabel } from "@/components/ui/input-with-label";
 import { Button } from "@/components/ui/button";
 import { apiRequest } from "@/l18n/request";
-import CheckboxGroup from "@/components/ui/check-box-group";
+import CheckboxGroup, { OptionType } from "@/components/ui/check-box-group";
 import RadioGroup from "@/components/ui/radio";
 import Notification from "@/components/ui/notification";
 
 import styles from "./styles.module.css";
 import ThankYouScreen from "../thank-you-screen";
 
-const USAGE_SOURCES = [
+const USAGE_SOURCES: OptionType[] = [
   // Ozon, Wildberries, Яндекс.Маркет, Lamoda, Соцсети, Реклама (VK/Яндекс.Директ), Сайт, Другое.
-  { label: "Ozon", value: "ozon" },
-  { label: "Wildberries", value: "wildberries" },
-  { label: "Яндекс.Маркет", value: "yandex.market" },
-  { label: "Lamoda", value: "lamoda" },
-  { label: "Соцсети", value: "social_networks" },
-  { label: "Печатная реклама", value: "adv" },
-  { label: "Сайт", value: "site" },
-  { label: "Другое", value: "other" },
+  { labelKey: "products.request_form.source.item.ozon", value: "ozon" },
+  {
+    labelKey: "products.request_form.source.item.wildberries",
+    value: "wildberries",
+  },
+  {
+    labelKey: "products.request_form.source.item.yandex",
+    value: "yandex.market",
+  },
+  { labelKey: "products.request_form.source.item.lamoda", value: "lamoda" },
+  {
+    labelKey: "products.request_form.source.item.social_networks",
+    value: "social_networks",
+  },
+  { labelKey: "products.request_form.source.item.adv", value: "adv" },
+  { labelKey: "products.request_form.source.item.site", value: "site" },
+  { labelKey: "products.request_form.source.item.other", value: "other" },
 ];
 
-const COUNT = [
+const COUNT: OptionType[] = [
   { label: "1–3", value: "1-3" },
   { label: "4–6", value: "4-6" },
   { label: "7–10", value: "7-10" },
-  { label: "Пока не знаю — подскажите", value: "?" },
+  { labelKey: "products.request_form.count.items.idk", value: "?" },
 ];
 
-const TIME = [
-  { label: "Нужно срочно (1-2 дня)*", value: "urgent" },
-  { label: "Не срочно (3-5 дней)", value: "not_urgent" },
+const TIME: OptionType[] = [
+  { labelKey: "products.request_form.time.items.urgent", value: "urgent" },
+  {
+    labelKey: "products.request_form.time.items.not_urgent",
+    value: "not_urgent",
+  },
 ];
 
-const MODEL = [
-  { label: "Да", value: "yes" },
-  { label: "Нет", value: "no" },
-  { label: "Пока не знаю — подскажите", value: "?" },
+const MODEL: OptionType[] = [
+  { labelKey: "products.request_form.has_model.items.yes", value: "yes" },
+  { labelKey: "products.request_form.has_model.items.no", value: "no" },
+  { labelKey: "products.request_form.has_model.items.idk", value: "?" },
 ];
 
 export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
@@ -113,21 +125,24 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
     <>
       {isSuccess && <ThankYouScreen onClose={() => setIsSuccess(false)} />}
       <Section
-        title={formatMessage({ id: "products.contact.title" })}
-        text={formatMessage({ id: "products.contact.text" })}
+        title={formatMessage({ id: "products.request_form.title" })}
+        text={formatMessage({ id: "products.request_form.text" })}
         side="left"
         isGray
         id="contact_form"
       >
         <div className={styles.sections}>
-          <InputWithLabel label="Как Вас зовут" id="name">
+          <InputWithLabel
+            label={formatMessage({ id: "products.request_form.name.label" })}
+            id="name"
+          >
             <Input value={name} onChange={(e) => setName(e.target.value)} />
           </InputWithLabel>
 
           <InputWithLabel
-            label="Как с Вами связаться"
+            label={formatMessage({ id: "products.request_form.contact.label" })}
             id="contact"
-            hint="Телефон: WhatsApp/Telegram или Email"
+            hint={formatMessage({ id: "products.request_form.contact.hint" })}
           >
             <Input
               value={contact}
@@ -136,17 +151,17 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
           </InputWithLabel>
 
           <InputWithLabel
-            label="Прикрепите фото товара"
+            label={formatMessage({ id: "products.request_form.file.label" })}
             id="file"
-            hint="Допустимые форматы: JPG, PNG. Размер не более 5 МБ"
+            hint={formatMessage({ id: "products.request_form.file.hint" })}
           >
             <Input type="file" id="fileInput" accept="image/*" />
           </InputWithLabel>
 
           <InputWithLabel
-            label="Где будете использовать картинки?"
+            label={formatMessage({ id: "products.request_form.source.label" })}
             id="source"
-            hint="Можно выбрать несколько"
+            hint={formatMessage({ id: "products.request_form.source.hint" })}
           >
             <CheckboxGroup
               options={USAGE_SOURCES}
@@ -157,7 +172,9 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
 
           {type === "ii_photo_common" && (
             <InputWithLabel
-              label="Нужна ли демонстрация на ИИ модели?"
+              label={formatMessage({
+                id: "products.request_form.has_model.label",
+              })}
               id="has_model"
               hint=""
             >
@@ -170,7 +187,10 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
             </InputWithLabel>
           )}
 
-          <InputWithLabel label="Сколько картинок хотите сейчас?" id="count">
+          <InputWithLabel
+            label={formatMessage({ id: "products.request_form.count.label" })}
+            id="count"
+          >
             <RadioGroup
               name="count"
               options={COUNT}
@@ -180,9 +200,9 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
           </InputWithLabel>
 
           <InputWithLabel
-            label="Срок?"
+            label={formatMessage({ id: "products.request_form.time.label" })}
             id="time"
-            hint="* Срочный заказ: +30% к стоимости"
+            hint={formatMessage({ id: "products.request_form.time.hint" })}
           >
             <RadioGroup
               name="time"
@@ -193,23 +213,30 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
           </InputWithLabel>
 
           <InputWithLabel
-            label="Детали (по желанию)"
+            label={formatMessage({ id: "products.request_form.details.label" })}
             id="details"
             hint={
               <div>
-                <strong>Любые пожелания словами</strong>
+                <strong>
+                  {formatMessage({ id: "products.request_form.details.hint1" })}
+                </strong>
 
                 <ul className={styles.hintList}>
                   <li>
-                    Какой кадр по настроению? (Спокойный дневной,
-                    Сумерки/атмосферный, Яркий/рекламный глянец)
+                    {formatMessage({
+                      id: "products.request_form.details.hint2",
+                    })}
                   </li>
                   <li>
-                    На каком фоне/в какой сцене показать товар? (Песок, Камни,
-                    Вода, Мрамор, Дерево, Бетон, Чистый белый фон, С участием
-                    людей, Другое.)
+                    {formatMessage({
+                      id: "products.request_form.details.hint3",
+                    })}
                   </li>
-                  <li>Важные нюансы</li>
+                  <li>
+                    {formatMessage({
+                      id: "products.request_form.details.hint4",
+                    })}
+                  </li>
                 </ul>
               </div>
             }
@@ -226,7 +253,7 @@ export const Form: React.FC<{ type: "ii_photo_common" | "ii_model" }> = ({
               disabled={name === "" || contact === ""}
               loading={isLoading}
             >
-              Отправить
+              {formatMessage({ id: "products.request_form.send" })}
             </Button>
           </div>
         </div>

@@ -24,9 +24,9 @@ const ITEMS = [
 ];
 
 const IMAGES = [
-  "/models/woman/2/2.webp",
-  // "/models/woman/2/3.webp",
-  "/models/woman/2/6.webp",
+  "/models/women/2/2.webp",
+  // "/models/women/2/3.webp",
+  "/models/women/2/6.webp",
 ];
 
 export const WhatIsThat: React.FC = () => {

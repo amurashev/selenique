@@ -8,10 +8,10 @@ export default function Photos({
   type,
 }: {
   id: string;
-  type: "woman" | "man";
+  type: "women" | "men";
 }) {
-  const finalData = type === "woman" ? WOMEN : MEN;
-  const urlType = type === "woman" ? "woman" : "man";
+  const finalData = type === "women" ? WOMEN : MEN;
+  const urlType = type === "women" ? "women" : "men";
 
   const modelData = finalData.find((item) => Number(item.id) === Number(id));
   const images =

@@ -1,5 +1,7 @@
 "use client";
 
+import { useIntl } from "react-intl";
+
 import Header from "@/components/layout/header";
 import Photos from "./sections/photos";
 
@@ -8,25 +10,30 @@ import Tabs from "@/components/ui/tabs";
 
 const TABS = [
   {
-    index: "woman",
-    link: "/models/woman",
-    label: "Женщины",
+    index: "women",
+    link: "/models/women",
+    labelKey: "common.models.sex.women",
   },
   {
-    index: "man",
-    link: "/models/man",
-    label: "Мужчины",
+    index: "men",
+    link: "/models/men",
+    labelKey: "common.models.sex.men",
   },
 ]
 
-export default function ModelsPage({ type }: { type: "woman" | "man" }) {
+export default function ModelsPage({ type }: { type: "women" | "men" }) {
+  const { formatMessage } = useIntl();
+  
   return (
     <div className={styles.page}>
       <Header />
       <main className={styles.main}>
         <Tabs
           activeIndex={type}
-          items={TABS}
+          items={TABS.map(item => ({
+            ...item,
+            label: formatMessage({ id: item.labelKey })
+          }))}
         />
         <Photos type={type} />
       </main>

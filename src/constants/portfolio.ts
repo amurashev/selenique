@@ -1,30 +1,30 @@
 export const PORTFOLIO_TYPES = [
   {
     index: "all",
-    label: "Все",
+    labelKey: "portfolio.types.all",
   },
   {
     index: "cosmetic",
-    label: "Косметика",
+    labelKey: "portfolio.types.cosmetic",
   },
   {
     index: "accessories",
-    label: "Аксессуары",
+    labelKey: "portfolio.types.accessories",
   },
   {
     index: "cloth",
-    label: "Одежда",
+    labelKey: "portfolio.types.cloth",
   },
   {
     index: "shoes",
-    label: "Обувь",
+    labelKey: "portfolio.types.shoes",
   },
   {
     index: "electronics",
-    label: "Электроника",
+    labelKey: "portfolio.types.electronics",
   },
   {
     index: "furniture",
-    label: "Мебель",
+    labelKey: "portfolio.types.furniture",
   },
 ]

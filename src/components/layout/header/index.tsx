@@ -15,7 +15,7 @@ import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
 const modelsPageUrl = modelsPageRoute.getUrl({
   params: {
-    type: "woman",
+    type: "women",
   },
 });
 
@@ -94,7 +94,7 @@ export default function Header() {
                         params: { type: item.index },
                       })}
                     >
-                      {item.label}
+                      {formatMessage({ id: item.labelKey })}
                     </Link>
                   ))}
                 </div>

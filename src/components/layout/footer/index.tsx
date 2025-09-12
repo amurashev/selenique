@@ -9,7 +9,7 @@ import { modelsPageRoute, productPortfolioPageRoute } from "@/constants/routes";
 
 const modelsPageUrl = modelsPageRoute.getUrl({
   params: {
-    type: "woman",
+    type: "women",
   },
 });
 
@@ -44,7 +44,7 @@ export default function Footer() {
             <div className={styles.logoBox}>
               <img
                 src="/logo4.png"
-                alt="Селеник Studio"
+                alt={formatMessage({ id: "common.name" })}
                 className={styles.logoImage}
               />
             </div>
@@ -106,7 +106,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <div>© 2025 Селеник Studio</div>
+            <div>© 2025 {formatMessage({ id: "common.name" })}</div>
           </div>
         </nav>
         <div className={styles.alertBox}>

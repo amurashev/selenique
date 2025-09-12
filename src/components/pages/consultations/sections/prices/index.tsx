@@ -10,13 +10,14 @@ import PriceCard from "@/components/sections/price-card";
 
 export const Prices: React.FC = () => {
   const { formatMessage } = useIntl();
+  // TODO: l18n
   return (
     <Section
       title={formatMessage({ id: "consultations.prices.title" })}
       // isGray={true}
     >
       <div className={styles.sections}>
-        <PriceCard title="Часовая консультация" price={6990}>
+        <PriceCard title="Часовая консультация" price={{ ru: 6990, en: 100 }}>
           <>
             <p>
               <b>Длительность</b>: 60 мин

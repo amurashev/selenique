@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+import { useIntl } from "react-intl";
+import Link from "next/link";
+
+import { PriceWithUnit } from "@/components/ui/price";
 
 import styles from "./styles.module.css";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const Arrow = () => {
   return (
@@ -26,7 +28,7 @@ const Arrow = () => {
 
 const PriceItem: React.FC<{
   title: string;
-  price: number;
+  price: Record<string, number>;
   text: string;
   link?: string;
   priceUnit: string;
@@ -34,16 +36,19 @@ const PriceItem: React.FC<{
   imageSrc?: string;
   isRight?: boolean;
 }> = ({ title, link, price, priceUnit, images, text = "" }) => {
+  const { formatMessage } = useIntl();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.item}>
       <button className={styles.header} onClick={() => setIsOpen(!isOpen)}>
         <h3 className={styles.title}>{title}</h3>
-        {price === 0 ? (
-          <span className={styles.price}>бесплатно</span>
+        {price["en"] === 0 ? (
+          <span className={styles.price}>
+            {formatMessage({ id: "common.prices.free" })}
+          </span>
         ) : (
           <span className={styles.price}>
-            от {price}руб./{priceUnit}
+            <PriceWithUnit value={price} unit={priceUnit} isFrom />
           </span>
         )}
 
@@ -67,7 +72,11 @@ const PriceItem: React.FC<{
             ))}
           </div>
           {link && (
-            <div className={styles.linkBox}><Link href={link} className={styles.link}>Подробнее об услуге</Link></div>
+            <div className={styles.linkBox}>
+              <Link href={link} className={styles.link}>
+                {formatMessage({ id: "products.prices.see_more" })}
+              </Link>
+            </div>
           )}
         </div>
       )}

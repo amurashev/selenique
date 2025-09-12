@@ -6,11 +6,11 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import { MEN, WOMEN } from "@/constants/models";
 
-export default function Photos({ type }: { type: "woman" | "man" }) {
+export default function Photos({ type }: { type: "women" | "men" }) {
   const { formatMessage } = useIntl();
 
-  const finalData = type === "woman" ? WOMEN : MEN;
-  const urlType = type === "woman" ? "woman" : "man";
+  const finalData = type === "women" ? WOMEN : MEN;
+  const urlType = type === "women" ? "women" : "men";
 
   return (
     <div className={styles.sections}>
@@ -27,7 +27,7 @@ export default function Photos({ type }: { type: "woman" | "man" }) {
               className={styles.image}
               src={`/models/${urlType}/${item.id}/${firstImage}`}
             />
-            <strong className={styles.name}>{item.name}</strong>
+            {/* <strong className={styles.name}>{item.name}</strong> */}
           </Link>
         );
       })}

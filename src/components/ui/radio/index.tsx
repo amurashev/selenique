@@ -1,20 +1,28 @@
 import React, { useState } from "react";
+import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
 
-type Option = {
-  label: string;
+type OptionType = {
+  label?: string;
+  labelKey?: string;
   value: string;
 };
 
 type RadioGroupProps = {
-  options: Option[];
+  options: OptionType[];
   name: string;
   onChange?: (value: string) => void;
   defaultValue?: string;
 };
 
-const RadioGroup: React.FC<RadioGroupProps> = ({ options, name, onChange, defaultValue }) => {
+const RadioGroup: React.FC<RadioGroupProps> = ({
+  options,
+  name,
+  onChange,
+  defaultValue,
+}) => {
+  const { formatMessage } = useIntl();
   const [selected, setSelected] = useState<string>(defaultValue || "");
 
   const handleChange = (value: string) => {
@@ -34,7 +42,11 @@ const RadioGroup: React.FC<RadioGroupProps> = ({ options, name, onChange, defaul
             onChange={() => handleChange(option.value)}
             className={styles.radio}
           />
-          <span className={styles.label}>{option.label}</span>
+          <span className={styles.label}>
+            {option.labelKey
+              ? formatMessage({ id: option.labelKey })
+              : option.label}
+          </span>
         </label>
       ))}
     </div>

@@ -11,10 +11,10 @@ export default function ModelInfoPage({
   type,
 }: {
   id: string;
-  type: "woman" | "man";
+  type: "women" | "men";
 }) {
-  const finalData = type === "woman" ? WOMEN : MEN;
-  const urlType = type === "woman" ? "woman" : "man";
+  const finalData = type === "women" ? WOMEN : MEN;
+  const urlType = type === "women" ? "women" : "men";
 
   const modelData = finalData.find(item => Number(item.id) === Number(id))
 
@@ -24,7 +24,7 @@ export default function ModelInfoPage({
       <main className={styles.main}>
         <div>
 
-        <h2 className={styles.header}>{modelData?.name}</h2>
+        {/* <h2 className={styles.header}>{modelData?.name}</h2> */}
         </div>
        
         <Photos id={id} type={type} />
