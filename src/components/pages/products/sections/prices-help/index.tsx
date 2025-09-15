@@ -11,7 +11,7 @@ import { title } from "process";
 import { iiModelPageRoute } from "@/constants/routes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { PRODUCT_PRICE_LIST, PRODUCT_PRICES_DATA } from "@/constants/prices";
+import { PRODUCT_PRICE_LIST, PRODUCT_PRICES_DATA } from "@/constants/prices/product";
 import { PriceWithUnit } from "@/components/ui/price";
 
 type ItemType = "item" | "cloth";

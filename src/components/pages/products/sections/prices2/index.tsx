@@ -15,7 +15,7 @@ import {
   PRODUCT_PRICE_LIST,
   PRODUCT_PRICE_PACKAGES,
   PRODUCT_PRICES_DATA,
-} from "@/constants/prices";
+} from "@/constants/prices/product";
 import PriceItem from "./price-item";
 
 // const PriceItem = ({

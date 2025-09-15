@@ -215,8 +215,6 @@
   "consultations.form.title": "Форма заявки",
   "consultations.prices.title": "Стоимость консультации",
 
-
-
   "ii_model.menu.title": "Уникальная ИИ-модель для каталога",
   "ii_model.hero.title": "Уникальная виртуальная модель для вашего каталога",
   "ii_model.hero.text": "Один типаж на все коллекции. Единый стиль, узнаваемость и быстрые серии для Ozon, Wildberries, Яндекс.Маркета, Lamoda и рекламы.",
@@ -259,6 +257,7 @@
   "ii_model.price.title": "Цена и сроки",
   "ii_model.price.term": "Срок",
   "ii_model.price.term_value": " 1–2 дня",
+  
 
 
   "portfolio.types.all": "Все",
@@ -269,6 +268,66 @@
   "portfolio.types.electronics": "Электроника",
   "portfolio.types.furniture": "Мебель",
 
+
+
+
+
+  "ii_photoshoot.hero.title": "ИИ‑фотосессия для людей — портреты мечты без студии",
+  "ii_photoshoot.hero.text": "Портреты и мини‑видео для аватаров, резюме, VK, дейтинга и подарков — полностью онлайн, по всей России. Вы присылаете фото, мы создаём реалистичные сцены и образы без «пластика».",
+
+  "ii_photoshoot.what_is_that.title": "Что это вообще за «ИИ‑фотосессия»?",
+  "ii_photoshoot.what_is_that.text": "Простыми словами: вы даёте нам свои фотографии и пожелания по стилю, а мы создаём правдоподобные портреты и мини‑видео в нужной эстетике. Сохраняем ваше естественное сходство, корректируем свет и кожу аккуратно — без «пластика».",
+  "ii_photoshoot.what_is_that.item1.title": "аватаров и шапок профиля",
+  "ii_photoshoot.what_is_that.item2.title": "фото для резюме/LinkedIn",
+  "ii_photoshoot.what_is_that.item3.title": "дейтинг‑анкеты (Tinder и др.)",
+  "ii_photoshoot.what_is_that.item4.title": "Instagram‑ленты и сторис",
+  "ii_photoshoot.what_is_that.item5.title": "love‑story и подарочных постеров",
+  "ii_photoshoot.what_is_that.item6.title": "семейных открыток и памятных кадров",
+
+  "ii_photoshoot.faq.title": "Популярные вопросы",
+  "ii_photoshoot.faq.faq1.title": "Как подготовить фото?",
+  "ii_photoshoot.faq.faq1.text": "Снимите 5–10 селфи при рассеянном дневном свете, без фильтров, с разными ракурсами и эмоциями.",
+  "ii_photoshoot.faq.faq2.title": "Это будет похоже на меня?",
+  "ii_photoshoot.faq.faq2.text": "Да. Мы бережно сохраняем черты и характер, работаем со светом и цветом, а не «перерисовываем» вас.",
+  "ii_photoshoot.faq.faq3.title": "Можно немного «помолодеть» или поменять прическу?",
+  "ii_photoshoot.faq.faq3.text": "Лёгкая стилизация и коррекции допустимы. Радикально менять внешность не делаем.",
+  "ii_photoshoot.faq.faq4.title": "Что если не зайдёт стиль?",
+  "ii_photoshoot.faq.faq4.text": "Делаем пробный кадр и мини‑мудборд до объёма, чтобы свериться заранее.",
+
+  "ii_photoshoot.what_you_get.title": "Чем это выгоднее классической съёмки",
+  "ii_photoshoot.what_you_get.item1.text": "<b>Скорость</b>. Дни вместо недель. Черновой кадр быстро, правки оперативно.",
+  "ii_photoshoot.what_you_get.item2.text": "<b>Бюджет</b>. Без аренды студии, визажа и стилиста — экономим деньги и нервы.",
+  "ii_photoshoot.what_you_get.item3.text": "<b>Много образов — без переодеваний</b>. Деловой, повседневный, праздничный, «тревел» — в одном проекте.",
+  "ii_photoshoot.what_you_get.item4.text": "<b>Любые локации</b>. От уютной квартиры до океана — без перелётов.",
+  "ii_photoshoot.what_you_get.item5.text": "<b>Комфорт</b>. Никакого стресса съёмочного дня — всё онлайн.",
+  "ii_photoshoot.what_you_get.item6.text": "<b>Гибкость.</b> Легко поменять сезон, фон, прическу, детали.",
+
+  "ii_photoshoot.how_we_work.title": "Как мы работаем",
+  "ii_photoshoot.how_we_work.text": "Обычно первый превью‑сет: 24–72 ч. Полный пакет зависит от объёма.",
+  "ii_photoshoot.how_we_work.item1.text": "<b>Бриф и референсы</b>. Вы заполняете короткую форму и кидаете примеры.",
+  "ii_photoshoot.how_we_work.item2.text": "<b>Мудборд и сет‑дизайн</b>. Фиксируем эстетику, свет, ракурсы и композицию.",
+  "ii_photoshoot.how_we_work.item3.text": "<b>Генерация</b>. Собираем сцены и/или ИИ‑моделей. Даём предварительный превью‑сет.",
+  "ii_photoshoot.how_we_work.item4.text": "<b>Ретушь и апскей</b>л. Чистим артефакты, сохраняем детали, выравниваем стиль.",
+
+  "ii_photoshoot.examples.title": "Как выглядит результат",
+
+  "ii_photoshoot.price.title": "Цены",
+  "ii_photoshoot.price.items.term": "Срок",
+
+  "ii_photoshoot.price.item1.title": "Быстро и по делу",
+  "ii_photoshoot.price.item1.adv1": "4 фото",
+  "ii_photoshoot.price.item1.adv2": "1 стиль / 1 сцена",
+  "ii_photoshoot.price.item1.adv3": "до 48 часов (в рабочие дни)",
+
+  "ii_photoshoot.price.item2.title": "Познакомиться со стилем",
+  "ii_photoshoot.price.item2.adv1": "6 фото",
+  "ii_photoshoot.price.item2.adv2": "1 стиль / 2 сцены",
+  "ii_photoshoot.price.item2.adv3": "2–4 дня",
+
+  "ii_photoshoot.price.item3.title": "Личный бренд и история",
+  "ii_photoshoot.price.item3.adv1": "20 фото",
+  "ii_photoshoot.price.item3.adv2": "3–4 сцены",
+  "ii_photoshoot.price.item3.adv3": "4–7 дней",
 
   "hero.title": "AI Fashion Ads & WOW Resources",
   "hero.text": "Руководства, подсказки и сцены — Photoshop не требуется",

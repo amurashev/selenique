@@ -7,7 +7,7 @@ import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
 import PriceCard from "@/components/sections/price-card";
-import { PRODUCT_PRICES_DATA } from "@/constants/prices";
+import { PRODUCT_PRICES_DATA } from "@/constants/prices/product";
 
 export const Price: React.FC = () => {
   const { formatMessage } = useIntl();

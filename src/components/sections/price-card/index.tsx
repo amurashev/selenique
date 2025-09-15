@@ -4,11 +4,12 @@ import React from "react";
 
 import styles from "./styles.module.css";
 import { PriceWithUnit } from "@/components/ui/price";
+import { PriceType } from "@/components/types";
 
 export const PriceCard: React.FC<{
   title: string;
   children: React.ReactNode;
-  price: Record<string, number>;
+  price: PriceType;
 }> = ({ children, title, price }) => {
   return (
     <div className={styles.card}>

@@ -1,7 +1,8 @@
+import { PriceType } from "@/components/types";
 import React from "react";
 import { useIntl } from "react-intl";
 
-const Price = ({ value, unit }: { value: string; unit: string }) => {
+export const BasePrice = ({ value, unit }: { value: string; unit: string }) => {
   return (
     <>
       от {value}руб./{unit}
@@ -14,7 +15,7 @@ export const PriceWithUnit = ({
   unit = "",
   isFrom = false,
 }: {
-  value: Record<string, number>;
+  value: PriceType
   unit?: string;
   isFrom?: boolean;
 }) => {
@@ -49,5 +50,3 @@ export const PriceWithUnit = ({
     </>
   );
 };
-
-export default Price;
