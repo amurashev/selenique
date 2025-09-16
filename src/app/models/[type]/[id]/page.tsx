@@ -1,5 +1,12 @@
+import { Metadata } from "next";
+
 import Layout from "@/components/layout";
 import ModelInfoPage from "@/components/pages/model-info";
+
+export const metadata: Metadata = {
+  title: "Каталог ИИ моделей",
+  description: "Уникальная виртуальная модель для вашего каталога",
+};
 
 export default async function ModelInfo({
   params,
