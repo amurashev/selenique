@@ -40,15 +40,7 @@ export const Price: React.FC = () => {
               id: PHOTOSHOT_PRICES_DATA[item].titleKey,
             })}
             price={PHOTOSHOT_PRICES_DATA[item].price}
-          >
-            <>
-              {/* <p>
-     {formatMessage({
-       id: PRODUCT_PRICES_DATA["ii_model"].descriptionKey,
-     })}
-   </p> */}
-            </>
-          </PriceCard>
+          />
         ))}
       </div>
     </Section>
