@@ -1,0 +1,18 @@
+.page {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 106px);
+  min-height: 1px;
+  padding: 24px;
+}
+
+@media (min-width: 760px) {
+
+}

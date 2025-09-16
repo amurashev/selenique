@@ -95,10 +95,10 @@ export const PRODUCT_PRICES_DATA: Record<
     titleKey: "products.prices.catalog.name",
     descriptionKey: "products.prices.catalog.description",
     price: {
-      ru: 750,
+      ru: 800,
       en: 15,
     },
-    priceUnit: "angle",
+    priceUnit: "photo",
     mainImage: "/product/price/catalog/2.webp",
     images: [
       `/product/price/catalog/1.webp`,
@@ -110,8 +110,8 @@ export const PRODUCT_PRICES_DATA: Record<
     titleKey: "products.prices.lookbook.name",
     descriptionKey: "products.prices.lookbook.description",
     price: {
-      ru: 1000,
-      en: 20,
+      ru: 800,
+      en: 15,
     },
     priceUnit: "photo",
     mainImage: "/product/price/lookbook/2.webp",
@@ -151,8 +151,7 @@ export const PRODUCT_PRICE_LIST: ProductService[] = [
 ];
 
 export const PRODUCT_PRICE_PACKAGES = [
-  { title: "Мини", count: 5, discount: 10 },
-  { title: "Стандарт", count: 10, discount: 15 },
-  { title: "Профи", count: 20, discount: 20 },
-  { title: "Макси", count: 50, discount: 30 },
+  { title: "Мини", count: 3, discount: 10 },
+  { title: "Мини", count: 5, discount: 15 },
+  { title: "Стандарт", count: 10, discount: 20 },
 ];
