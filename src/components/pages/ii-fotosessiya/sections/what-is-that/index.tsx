@@ -5,38 +5,56 @@ import { useIntl } from "react-intl";
 
 import Section from "../../../../layout/section";
 import ItemsList from "@/components/sections/items-list";
+import Slider from "react-slick";
+
+
+import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./styles.module.css";
 
-const ITEMS = [
-  {
-    text: "ii_photoshoot.what_is_that.item1.title",
-  },
-  {
-    text: "ii_photoshoot.what_is_that.item2.title",
-  },
-  {
-    text: "ii_photoshoot.what_is_that.item3.title",
-  },
-  {
-    text: "ii_photoshoot.what_is_that.item4.title",
-  },
-  {
-    text: "ii_photoshoot.what_is_that.item5.title",
-  },
-  {
-    text: "ii_photoshoot.what_is_that.item6.title",
-  },
-];
 
-const IMAGES = [
-  "/models/women/2/2.webp",
-  // "/models/women/2/3.webp",
-  "/models/women/2/6.webp",
-];
+const IMAGES = ["bg1.webp", "bg3.webp","bg2.webp",   "bg5.webp", "bg4.webp"];
 
 export const WhatIsThat: React.FC = () => {
   const { formatMessage } = useIntl();
+
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    lazyLoad: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
     <Section
@@ -45,19 +63,16 @@ export const WhatIsThat: React.FC = () => {
       isGray
     >
       <div className={styles.sections}>
-        <div className={styles.images}>
-          {IMAGES.map((image) => (
-            <div key={image} className={styles.imageBox}>
-              <img src={image} className={styles.image} />
+      <Slider {...settings}>
+          {IMAGES.map((item) => (
+            <div key={item} className={styles.item}>
+              <img
+                className={styles.image}
+                src={`/photoshoot/examples/${item}`}
+              />
             </div>
           ))}
-        </div>
-
-        <div className={styles.items}>
-          <ItemsList
-            items={ITEMS.map((item) => formatMessage({ id: item.text }))}
-          />
-        </div>
+        </Slider>
       </div>
     </Section>
   );

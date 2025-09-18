@@ -16,48 +16,7 @@ import {
   PRODUCT_PRICE_PACKAGES,
   PRODUCT_PRICES_DATA,
 } from "@/constants/prices/product";
-import PriceItem from "./price-item";
-
-// const PriceItem = ({
-//   title,
-//   text,
-//   price,
-//   images,
-// }: {
-//   title: string;
-//   text: string;
-//   price: string;
-//   images: string[];
-// }) => {
-//   return (
-//     <div className={styles.card}>
-//       <div className={styles.leftSide}>
-//         <div className={styles.cardDetails}>
-//           <h3 className={styles.title}>{title}</h3>
-//           <div
-//             dangerouslySetInnerHTML={{
-//               __html: text,
-//             }}
-//             className={styles.subtitle}
-//           />
-//           <div className={styles.price}>{price}</div>
-//         </div>
-//       </div>
-//       <div className={styles.images}>
-//         {images.map((image) => (
-//           <div
-//             key={image}
-//             className={`${styles.imageBox} ${
-//               images.length === 1 ? styles.imageBox1 : ""
-//             }`}
-//           >
-//             <img className={styles.image} src={image} />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
+import PriceItem from "../../../../sections/price-item";
 
 export const PricesV2: React.FC = () => {
   const { formatMessage, locale } = useIntl();

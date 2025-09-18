@@ -16,6 +16,10 @@ export const productPortfolioPageRoute = route({
   ru: "/products-portfolio/[type]",
   en: "/en/products-portfolio/[type]",
 });
+export const iiPhotoShootPageRoute = route({
+  ru: "/neirofotosessiya",
+  en: "/en/ai_photoshoot",
+});
 // export const aiConsultationPageRoute = route({
 //   ru: "/konsultatsii-po-neirosetyam",
 //   en: "/konsultatsii-po-neirosetyam",

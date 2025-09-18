@@ -12,7 +12,7 @@ import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 
 import styles from "./styles.module.css";
 
-const IMAGES = [1, 2, 3, 4, 5, 7, 10, 12, 14, 16, 25, 26, 27,28,29,30];
+const IMAGES = ["1_2.webp", "1_4.webp", "2_4.webp", "3_1.webp", "3_3.webp", "4_1.webp", "4_2.webp", "5_4.webp"];
 
 export const Examples: React.FC = () => {
   const { formatMessage } = useIntl();
@@ -36,7 +36,7 @@ export const Examples: React.FC = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -63,7 +63,7 @@ export const Examples: React.FC = () => {
             <div key={item} className={styles.item}>
               <img
                 className={styles.image}
-                src={`/models/women/3/${item}.png`}
+                src={`/photoshoot/portfolio/${item}`}
               />
             </div>
           ))}

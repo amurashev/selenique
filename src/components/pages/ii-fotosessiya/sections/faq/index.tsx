@@ -13,7 +13,7 @@ export const FAQ: React.FC = () => {
     <Section title={formatMessage({ id: "ii_photoshoot.faq.title" })} side="left">
       <div className={styles.sections}>
         <FAQBase
-          items={[1, 2, 3, 4].map((key) => ({
+          items={[1, 2, 3, 4, 5, 6].map((key) => ({
             title: formatMessage({ id: `ii_photoshoot.faq.faq${key}.title` }),
             text: formatMessage({ id: `ii_photoshoot.faq.faq${key}.text` }),
           }))}

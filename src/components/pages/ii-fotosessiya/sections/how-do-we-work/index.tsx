@@ -4,29 +4,14 @@ import React from "react";
 import { useIntl } from "react-intl";
 
 import Section from "../../../../layout/section";
-import ItemsList from "@/components/sections/items-list";
 
 import styles from "./styles.module.css";
 
-const ITEMS = [
-  {
-    text: "ii_photoshoot.how_we_work.item1.text",
-  },
-  {
-    text: "ii_photoshoot.how_we_work.item2.text",
-  },
-  {
-    text: "ii_photoshoot.how_we_work.item3.text",
-  },
-  {
-    text: "ii_photoshoot.how_we_work.item4.text",
-  },
-];
-
 const IMAGES = [
-  "/models/women/2/2.webp",
-  // "/models/women/2/3.webp",
-  "/models/women/2/6.webp",
+  "/photoshoot/clients/6.webp",
+  "/photoshoot/clients/1.webp",
+  "/photoshoot/clients/3.webp",
+  "/photoshoot/clients/7.webp",
 ];
 
 export const HowDoWeWork: React.FC = () => {
@@ -37,21 +22,15 @@ export const HowDoWeWork: React.FC = () => {
       title={formatMessage({ id: "ii_photoshoot.how_we_work.title" })}
       text={formatMessage({ id: "ii_photoshoot.how_we_work.text" })}
       isGray
-      side="left"
+      // side="left"
     >
       <div className={styles.sections}>
-        {/* <div className={styles.images}>
+        <div className={styles.images}>
           {IMAGES.map((image) => (
             <div key={image} className={styles.imageBox}>
               <img src={image} className={styles.image} />
             </div>
           ))}
-        </div> */}
-
-        <div className={styles.items}>
-          <ItemsList
-            items={ITEMS.map((item) => formatMessage({ id: item.text }))}
-          />
         </div>
       </div>
     </Section>

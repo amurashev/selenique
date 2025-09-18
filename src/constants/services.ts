@@ -1,4 +1,4 @@
-import { iiModelPageRoute, productPageRoute } from "./routes";
+import { iiModelPageRoute, iiPhotoShootPageRoute, productPageRoute } from "./routes";
 
 export const SERVICES = [
   {
@@ -12,5 +12,11 @@ export const SERVICES = [
     menuTitleKey: "ii_model.menu.title",
     image: "/ii_models/bg_small.webp",
     route: iiModelPageRoute,
+  },
+  {
+    titleKey: "ii_photoshoot.hero.title",
+    menuTitleKey: "ii_photoshoot.menu.title",
+    image: "/photoshoot/bg_small.webp",
+    route: iiPhotoShootPageRoute,
   },
 ];

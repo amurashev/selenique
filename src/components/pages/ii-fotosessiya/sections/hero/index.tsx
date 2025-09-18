@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
     <HeroCommon
       title={formatMessage({ id: "ii_photoshoot.hero.title" })}
       text={formatMessage({ id: "ii_photoshoot.hero.text" })}
-      imageSrc="/product/bg2.webp"
+      imageSrc="/photoshoot/bg.webp"
     />
   );
 };

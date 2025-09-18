@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import {
   productPageRoute,
   iiModelPageRoute,
+  iiPhotoShootPageRoute,
   modelsPageRoute,
   productPortfolioPageRoute,
   homePage,
@@ -26,6 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     homePage.getUrl("ru"),
     productPageRoute.getUrl("ru"),
     iiModelPageRoute.getUrl("ru"),
+    iiPhotoShootPageRoute.getUrl("ru"),
     modelsPageRoute.getUrl("ru", { params: { type: "women" } }),
     modelsPageRoute.getUrl("ru", { params: { type: "men" } }),
     ...PORTFOLIO_TYPES.map((item) =>
@@ -35,6 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     homePage.getUrl("en"),
     productPageRoute.getUrl("en"),
     iiModelPageRoute.getUrl("en"),
+    iiPhotoShootPageRoute.getUrl("en"),
     modelsPageRoute.getUrl("en", { params: { type: "women" } }),
     modelsPageRoute.getUrl("en", { params: { type: "men" } }),
     ...PORTFOLIO_TYPES.map((item) =>

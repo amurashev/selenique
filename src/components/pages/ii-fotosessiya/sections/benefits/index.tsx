@@ -10,22 +10,33 @@ import styles from "./styles.module.css";
 
 const ITEMS = [
   {
-    text: "ii_photoshoot.what_you_get.item2.text",
+    text: "ii_photoshoot.benefits.item1.text",
   },
   {
-    text: "ii_photoshoot.what_you_get.item3.text",
+    text: "ii_photoshoot.benefits.item2.text",
   },
   {
-    text: "ii_photoshoot.what_you_get.item4.text",
+    text: "ii_photoshoot.benefits.item3.text",
+  },
+  {
+    text: "ii_photoshoot.benefits.item4.text",
+  },
+  {
+    text: "ii_photoshoot.benefits.item5.text",
   },
 ];
 
-export const WhatYouGet: React.FC = () => {
+const IMAGES = [
+  "/ii_models/76.png",
+  "/ii_models/72.png",
+];
+
+export const Benefits: React.FC = () => {
   const { formatMessage } = useIntl();
 
   return (
     <Section
-      title={formatMessage({ id: "ii_photoshoot.what_you_get.title" })}
+      title={formatMessage({ id: "ii_photoshoot.benefits.title" })}
       // text={formatMessage({ id: "ii_model.what_you_get.text" })}
       // isShort
       side="left"
@@ -50,4 +61,4 @@ export const WhatYouGet: React.FC = () => {
   );
 };
 
-export default WhatYouGet;
+export default Benefits;

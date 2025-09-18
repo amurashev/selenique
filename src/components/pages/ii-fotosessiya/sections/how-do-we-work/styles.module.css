@@ -8,14 +8,14 @@
 
 
 .images {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: end;
-  flex-wrap: wrap;
+  /* justify-content: end; */
+  /* flex-wrap: wrap; */
 }
 
 .imageBox {
-  width: 39%;
+  width: 25%;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -28,7 +28,7 @@
   border-radius: 20px;
 }
 
-.items {
+/* .items {
   width: 100%;
   height: 100%;
   padding-left: 16px;
@@ -36,19 +36,18 @@
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-}
+} */
 
 
 
 
 
-.textBox {
+/* .textBox {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  /* margin-left: 20px; */
-}
+} */
 
 .text {
   margin-top: 4px;

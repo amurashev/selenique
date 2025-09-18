@@ -272,10 +272,12 @@
 
 
 
-  "ii_photoshoot.hero.title": "ИИ‑фотосессия для людей — портреты мечты без студии",
+  "ii_photoshoot.hero.title": "Нейрофотосессия — портреты мечты без студии",
   "ii_photoshoot.hero.text": "Портреты и мини‑видео для аватаров, резюме, VK, дейтинга и подарков — полностью онлайн, по всей России. Вы присылаете фото, мы создаём реалистичные сцены и образы без «пластика».",
+  
+  "ii_photoshoot.menu.title": "Нейрофотосессия в стиле Fashion",
 
-  "ii_photoshoot.what_is_that.title": "Что это вообще за «ИИ‑фотосессия»?",
+  "ii_photoshoot.what_is_that.title": "Что это вообще за «Нейрофотосессия»?",
   "ii_photoshoot.what_is_that.text": "Простыми словами: вы даёте нам свои фотографии и пожелания по стилю, а мы создаём правдоподобные портреты и мини‑видео в нужной эстетике. Сохраняем ваше естественное сходство, корректируем свет и кожу аккуратно — без «пластика».",
   "ii_photoshoot.what_is_that.item1.title": "аватаров и шапок профиля",
   "ii_photoshoot.what_is_that.item2.title": "фото для резюме/LinkedIn",
@@ -291,41 +293,48 @@
   "ii_photoshoot.faq.faq2.text": "Да. Мы бережно сохраняем черты и характер, работаем со светом и цветом, а не «перерисовываем» вас.",
   "ii_photoshoot.faq.faq3.title": "Можно немного «помолодеть» или поменять прическу?",
   "ii_photoshoot.faq.faq3.text": "Лёгкая стилизация и коррекции допустимы. Радикально менять внешность не делаем.",
-  "ii_photoshoot.faq.faq4.title": "Что если не зайдёт стиль?",
-  "ii_photoshoot.faq.faq4.text": "Делаем пробный кадр и мини‑мудборд до объёма, чтобы свериться заранее.",
+  "ii_photoshoot.faq.faq4.title": "Референсы или «на ваше усмотрение»?",
+  "ii_photoshoot.faq.faq4.text": "Оба варианта работают: пришлите 2–4 рефа или дайте творческую свободу — я подберу стиль под вашу внешность.",
+  "ii_photoshoot.faq.faq5.title": "Что если не зайдёт стиль?",
+  "ii_photoshoot.faq.faq5.text": "Делаем пробный кадр и мини‑мудборд до объёма, чтобы свериться заранее.",
+  "ii_photoshoot.faq.faq6.title": "Могу ли не показывать лицо?",
+  "ii_photoshoot.faq.faq6.text": "Да: полупрофиль, кадры без лица, крупные детали — по вашему комфорту.",
 
-  "ii_photoshoot.what_you_get.title": "Чем это выгоднее классической съёмки",
-  "ii_photoshoot.what_you_get.item1.text": "<b>Скорость</b>. Дни вместо недель. Черновой кадр быстро, правки оперативно.",
-  "ii_photoshoot.what_you_get.item2.text": "<b>Бюджет</b>. Без аренды студии, визажа и стилиста — экономим деньги и нервы.",
-  "ii_photoshoot.what_you_get.item3.text": "<b>Много образов — без переодеваний</b>. Деловой, повседневный, праздничный, «тревел» — в одном проекте.",
-  "ii_photoshoot.what_you_get.item4.text": "<b>Любые локации</b>. От уютной квартиры до океана — без перелётов.",
-  "ii_photoshoot.what_you_get.item5.text": "<b>Комфорт</b>. Никакого стресса съёмочного дня — всё онлайн.",
-  "ii_photoshoot.what_you_get.item6.text": "<b>Гибкость.</b> Легко поменять сезон, фон, прическу, детали.",
+  "ii_photoshoot.benefits.title": "Чем это выгоднее классической съёмки",
+  "ii_photoshoot.benefits.item1.text": "<b>Скорость</b>. Дни вместо недель. Черновой кадр быстро, правки оперативно.",
+  "ii_photoshoot.benefits.item2.text": "<b>Бюджет</b>. Без аренды студии, визажа и стилиста — экономим деньги и нервы.",
+  "ii_photoshoot.benefits.item3.text": "<b>Много образов — без переодеваний</b>. Деловой, повседневный, праздничный, «тревел» — в одном проекте.",
+  "ii_photoshoot.benefits.item4.text": "<b>Любые локации</b>. От уютной квартиры до океана — без перелётов.",
+  "ii_photoshoot.benefits.item5.text": "<b>Комфорт</b>. Никакого стресса съёмочного дня — всё онлайн.",
+  "ii_photoshoot.benefits.item6.text": "<b>Гибкость.</b> Легко поменять сезон, фон, прическу, детали.",
 
-  "ii_photoshoot.how_we_work.title": "Как мы работаем",
-  "ii_photoshoot.how_we_work.text": "Обычно первый превью‑сет: 24–72 ч. Полный пакет зависит от объёма.",
-  "ii_photoshoot.how_we_work.item1.text": "<b>Бриф и референсы</b>. Вы заполняете короткую форму и кидаете примеры.",
-  "ii_photoshoot.how_we_work.item2.text": "<b>Мудборд и сет‑дизайн</b>. Фиксируем эстетику, свет, ракурсы и композицию.",
-  "ii_photoshoot.how_we_work.item3.text": "<b>Генерация</b>. Собираем сцены и/или ИИ‑моделей. Даём предварительный превью‑сет.",
-  "ii_photoshoot.how_we_work.item4.text": "<b>Ретушь и апскей</b>л. Чистим артефакты, сохраняем детали, выравниваем стиль.",
+  "ii_photoshoot.what_you_get.title": "Что вы получаете?",
+  "ii_photoshoot.what_you_get.item2.text": "<b>Вау-эффект без «пластика»</b>: естественная кожа, аккуратные блики, живая фактура",
+  "ii_photoshoot.what_you_get.item3.text": "<b>Сцены на выбор</b>: «чистая студия», городской прогулочный вайб, уютный интерьер, природа (ИИ-локации).",
+  "ii_photoshoot.what_you_get.item4.text": "<b>Готовые форматы для соцсетей</b> (4:5, 1:1, 9:16), удобно для Instagram/Reels/Stories",
+
+
+  "ii_photoshoot.how_we_work.title": "Что нужно от меня?",
+  "ii_photoshoot.how_we_work.text": "Вы присылаете 3–6 ваших фото по чек-листу (дневной свет, без фильтров) и далее выбираете подход (По референсам / На моё усмотрение)",
 
   "ii_photoshoot.examples.title": "Как выглядит результат",
 
-  "ii_photoshoot.price.title": "Цены",
+  "ii_photoshoot.price.title": "Цены и услуги",
   "ii_photoshoot.price.items.term": "Срок",
+  "ii_photoshoot.price.items.count": "Количество",
 
   "ii_photoshoot.price.item1.title": "Быстро и по делу",
-  "ii_photoshoot.price.item1.adv1": "4 фото",
+  "ii_photoshoot.price.item1.adv1": "Количество: фото",
   "ii_photoshoot.price.item1.adv2": "1 стиль / 1 сцена",
   "ii_photoshoot.price.item1.adv3": "до 48 часов (в рабочие дни)",
 
-  "ii_photoshoot.price.item2.title": "Познакомиться со стилем",
-  "ii_photoshoot.price.item2.adv1": "6 фото",
-  "ii_photoshoot.price.item2.adv2": "1 стиль / 2 сцены",
-  "ii_photoshoot.price.item2.adv3": "2–4 дня",
+  "ii_photoshoot.price.item2.title": "Нейрофотосессия в стиле Fashion",
+  "ii_photoshoot.price.item2.text": "Нейрофотосессия в стиле Fashion",
+  "ii_photoshoot.price.item2.count": "5 фото",
+  "ii_photoshoot.price.item2.term": "2-3 дня",
 
   "ii_photoshoot.price.item3.title": "Личный бренд и история",
-  "ii_photoshoot.price.item3.adv1": "20 фото",
+  "ii_photoshoot.price.item3.count": "20 фото",
   "ii_photoshoot.price.item3.adv2": "3–4 сцены",
   "ii_photoshoot.price.item3.adv3": "4–7 дней",
 

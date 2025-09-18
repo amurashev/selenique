@@ -89,11 +89,11 @@ export const Contacts: React.FC = () => {
             <li className={styles.item}>
               <Telegram />{" "}
               <a
-                href="https://t.me/+79251006690"
+                href="https://t.me/alenaamoore"
                 target="_blank"
                 className={styles.link}
               >
-                +7 (925) 100-66-90
+                @alenaamoore
               </a>
             </li>
             <li className={styles.item}>
