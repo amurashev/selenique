@@ -11,11 +11,11 @@
   width: 100%;
   display: flex;
   /* justify-content: end; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .imageBox {
-  width: 25%;
+  width: 50%;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -28,33 +28,9 @@
   border-radius: 20px;
 }
 
-/* .items {
-  width: 100%;
-  height: 100%;
-  padding-left: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-} */
-
-
-
-
-
-/* .textBox {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-} */
-
-.text {
-  margin-top: 4px;
-}
-
-
 /* Responsive */
-@media (min-width: 600px) {
- 
+@media (min-width: 720px) {
+  .imageBox {
+    width: 25%;
+  }
 }
