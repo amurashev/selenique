@@ -1,12 +1,11 @@
 import Layout from "@/components/layout";
 
-import { Locale } from "../../../../i18n-config";
-import PromptbookPage from "@/components/pages/promptbook";
+import PromptbookListPage from "@/components/pages/promptbook-list";
 
 export default async function PromptbookPageEntry() {
   return (
     <Layout locale="en">
-      <PromptbookPage />;
+      <PromptbookListPage />
     </Layout>
   );
 }

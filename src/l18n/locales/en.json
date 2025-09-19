@@ -5,6 +5,7 @@
   "common.prices.types.model": "model",
   "common.prices.types.photo": "photo",
   "common.prices.types.angle": "angle",
+  "common.price": "Price",
   "common.models.sex.women": "Women",
   "common.models.sex.men": "Men",
   "home.product.title": "Product photo editing for marketplaces",
