@@ -16,8 +16,8 @@ export async function generateMetadata({
 
   const data = PROMTBOOKS[slug || "null"];
 
-  let title = data.name;
-  let description = "";
+  const title = data.name;
+  const description = "";
 
   return {
     title,
