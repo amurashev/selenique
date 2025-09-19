@@ -43,6 +43,14 @@ export default function Header() {
     };
   }, []);
 
+  const modelsPageUrl = modelsPageRoute.getUrl(locale, {
+    params: {
+      type: "women",
+    },
+  })
+
+  const promptBookListPageUrl = promptBookListPageRoute.getUrl(locale)
+
   return (
     <header className={styles.box} ref={headerRef}>
       <LogoBox />
@@ -102,15 +110,11 @@ export default function Header() {
 
           <li
             className={`${styles.menuItem} ${
-              false ? styles.menuItemIsActive : ""
+              pathname === modelsPageUrl? styles.menuItemIsActive : ""
             }`}
           >
             <Link
-              href={modelsPageRoute.getUrl(locale, {
-                params: {
-                  type: "women",
-                },
-              })}
+              href={modelsPageUrl}
               className={styles.link}
             >
               {formatMessage({ id: "header.menu.ii_models" })}
@@ -120,11 +124,11 @@ export default function Header() {
           {locale === "en" && (
             <li
               className={`${styles.menuItem} ${
-                false ? styles.menuItemIsActive : ""
+                pathname === promptBookListPageUrl ? styles.menuItemIsActive : ""
               }`}
             >
               <Link
-                href={promptBookListPageRoute.getUrl(locale)}
+                href={promptBookListPageUrl}
                 className={styles.link}
               >
                 {formatMessage({ id: "header.menu.promptbooks" })}

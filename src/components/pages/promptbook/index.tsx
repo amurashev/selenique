@@ -14,6 +14,7 @@ import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 import { PriceWithUnit } from "@/components/ui/price";
 import Link from "next/link";
 import { promptBookListPageRoute } from "@/constants/routes";
+import Header from "@/components/layout/header";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -55,6 +56,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
 
   return (
     <div className={styles.page}>
+      <Header />
       <main className={styles.main}>
         <h1>{name}</h1>
         <div className={styles.section}>
