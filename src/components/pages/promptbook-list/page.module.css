@@ -20,7 +20,7 @@
   margin-top: 24px;
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 
@@ -58,6 +58,8 @@
   font-size: 18px;
 } */
 
-@media (min-width: 760px) {
-
+@media (min-width: 600px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
