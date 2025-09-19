@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
+import { PROMTBOOKS } from "@/constants/promptbooks";
+import { promptBookPageRoute } from "@/constants/routes";
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
@@ -11,7 +13,28 @@ export default function PromptbookListPage() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        Promptbook List page
+        <h1>Our Prompt Books</h1>
+        <div className={styles.list}>
+          {Object.keys(PROMTBOOKS).map((slug) => {
+            const { name, image} = PROMTBOOKS[slug];
+            return (
+              <Link
+                key={slug}
+                href={promptBookPageRoute.getUrl(locale, {
+                  params: {
+                    slug,
+                  },
+                })}
+                className={styles.card}
+              >
+                <img src={image} alt={name} className={styles.image} />
+                {/* <div className={styles.textBlock}>
+                  <h3 className={styles.title}>{name}</h3>
+                </div> */}
+              </Link>
+            );
+          })}
+        </div>
       </main>
     </div>
   );

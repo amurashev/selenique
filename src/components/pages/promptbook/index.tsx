@@ -88,12 +88,16 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
               </div>
             </div>
             <div className={styles.links}>
-              <Link className={styles.link} href={links.cm} target="_blank">
-                Buy on Creative Market
-              </Link>
-              <Link className={styles.link} href={links.cm}>
-                Buy on Patreon
-              </Link>
+              {links.cm && (
+                <Link className={styles.link} href={links.cm} target="_blank">
+                  Buy on Creative Market
+                </Link>
+              )}
+              {links.patreon && (
+                <Link className={styles.link} href={links.patreon} target="_blank">
+                  Buy on Patreon
+                </Link>
+              )}
             </div>
           </div>
         </div>

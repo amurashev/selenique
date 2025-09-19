@@ -33,3 +33,13 @@ export const modelPageRoute = route({
   ru: "/models/[type]/[id]",
   en: "/en/models/[type/[id]",
 });
+
+export const promptBookListPageRoute = route({
+  ru: "/prompt-books",
+  en: "/en/prompt-books",
+});
+
+export const promptBookPageRoute = route({
+  ru: "/prompt-books/[slug]",
+  en: "/en/prompt-books/[slug]",
+});

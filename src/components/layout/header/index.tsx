@@ -5,7 +5,11 @@ import { useIntl } from "react-intl";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.css";
-import { productPortfolioPageRoute, modelsPageRoute } from "@/constants/routes";
+import {
+  productPortfolioPageRoute,
+  modelsPageRoute,
+  promptBookListPageRoute,
+} from "@/constants/routes";
 import { useEffect, useRef, useState } from "react";
 import ServiceItem from "./service-item";
 import { SERVICES } from "@/constants/services";
@@ -112,6 +116,21 @@ export default function Header() {
               {formatMessage({ id: "header.menu.ii_models" })}
             </Link>
           </li>
+
+          {locale === "en" && (
+            <li
+              className={`${styles.menuItem} ${
+                false ? styles.menuItemIsActive : ""
+              }`}
+            >
+              <Link
+                href={promptBookListPageRoute.getUrl(locale)}
+                className={styles.link}
+              >
+                {formatMessage({ id: "header.menu.promptbooks" })}
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
     </header>
