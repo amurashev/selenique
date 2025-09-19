@@ -7,7 +7,7 @@ export type PromptBookRaw  = {
   price: PriceType
   text: string
   links: Record<"cm" | "patreon", string>
-  image: string
+  images: string[]
 }
 
 export type PromptBook  = PromptBookRaw & {

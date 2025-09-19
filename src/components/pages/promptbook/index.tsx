@@ -18,7 +18,7 @@ import Header from "@/components/layout/header";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { name, text, price, links } = data;
+  const { name, text, price, links, images } = data;
 
   const settings = {
     dots: true,
@@ -61,11 +61,11 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
         <h1>{name}</h1>
         <div className={styles.section}>
           <Slider {...settings}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
+            {images.map((item) => (
               <div key={item} className={styles.item}>
                 <img
                   className={styles.image}
-                  src={`/promptbooks/1/${item}.jpg`}
+                  src={item}
                 />
               </div>
             ))}

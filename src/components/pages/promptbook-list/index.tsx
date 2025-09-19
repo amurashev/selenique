@@ -18,7 +18,7 @@ export default function PromptbookListPage() {
         <h1>Our Prompt Books</h1>
         <div className={styles.list}>
           {Object.keys(PROMTBOOKS).map((slug) => {
-            const { name, image} = PROMTBOOKS[slug];
+            const { name, images} = PROMTBOOKS[slug];
             return (
               <Link
                 key={slug}
@@ -29,7 +29,7 @@ export default function PromptbookListPage() {
                 })}
                 className={styles.card}
               >
-                <img src={image} alt={name} className={styles.image} />
+                <img src={images[0]} alt={name} className={styles.image} />
                 {/* <div className={styles.textBlock}>
                   <h3 className={styles.title}>{name}</h3>
                 </div> */}
