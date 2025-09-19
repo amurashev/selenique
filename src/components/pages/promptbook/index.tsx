@@ -13,6 +13,7 @@ import { PromptBook } from "@/components/types";
 import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
 import { PriceWithUnit } from "@/components/ui/price";
 import Link from "next/link";
+import { promptBookListPageRoute } from "@/constants/routes";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -81,24 +82,37 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           </div>
 
           <div className={styles.rightSide}>
-            <div className={styles.priceSection}>
-              <div>{formatMessage({ id: "common.price" })}</div>
-              <div className={styles.price}>
-                <PriceWithUnit value={price} />
+            <div className={styles.rightSideBox}>
+              <div className={styles.priceSection}>
+                <div>{formatMessage({ id: "common.price" })}</div>
+                <div className={styles.price}>
+                  <PriceWithUnit value={price} />
+                </div>
+              </div>
+              <div className={styles.links}>
+                {links.cm && (
+                  <Link className={styles.link} href={links.cm} target="_blank">
+                    Buy on Creative Market
+                  </Link>
+                )}
+                {links.patreon && (
+                  <Link
+                    className={styles.link}
+                    href={links.patreon}
+                    target="_blank"
+                  >
+                    Buy on Patreon
+                  </Link>
+                )}
               </div>
             </div>
-            <div className={styles.links}>
-              {links.cm && (
-                <Link className={styles.link} href={links.cm} target="_blank">
-                  Buy on Creative Market
-                </Link>
-              )}
-              {links.patreon && (
-                <Link className={styles.link} href={links.patreon} target="_blank">
-                  Buy on Patreon
-                </Link>
-              )}
-            </div>
+
+            <Link
+              className={styles.linkSecondary}
+              href={promptBookListPageRoute.getUrl(locale)}
+            >
+              See all Prompt Books
+            </Link>
           </div>
         </div>
       </main>

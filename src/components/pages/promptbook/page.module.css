@@ -71,12 +71,17 @@
 .rightSide {
   width: 100%;
   flex-shrink: 0;
+  padding: 16px 16px;
+}
+
+.rightSideBox {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #f1f1f3;
   border-radius: 8px;
   padding: 16px 16px;
+  margin-bottom: 24px;
 }
 
 .priceSection {
@@ -113,6 +118,21 @@
 
   &:hover {
     background-color: #3a9bff;
+  }
+}
+
+.linkSecondary {
+  border: 1px solid #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: #0974e2;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  &:hover {
+    border-color: #3a9bff;
   }
 }
 
