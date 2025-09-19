@@ -1,6 +1,8 @@
+export const PORTFOLIO_COMMON_TYPE = 'all'
+
 export const PORTFOLIO_TYPES = [
   {
-    index: "all",
+    index: PORTFOLIO_COMMON_TYPE,
     labelKey: "portfolio.types.all",
   },
   {
@@ -24,7 +26,11 @@ export const PORTFOLIO_TYPES = [
     labelKey: "portfolio.types.electronics",
   },
   {
-    index: "furniture",
-    labelKey: "portfolio.types.furniture",
+    index: "jewelry",
+    labelKey: "portfolio.types.jewelry",
   },
+  // {
+  //   index: "furniture",
+  //   labelKey: "portfolio.types.furniture",
+  // },
 ]

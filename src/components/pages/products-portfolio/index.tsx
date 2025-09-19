@@ -7,27 +7,32 @@ import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
 import styles from "./page.module.css";
-import { Button } from "@/components/ui/button";
-import {
-  productPortfolioPageRoute,
-} from "@/constants/routes";
-import PHOTOS from "./photos";
+import { productPortfolioPageRoute } from "@/constants/routes";
+
 import Header from "@/components/layout/header";
 import Tabs from "@/components/ui/tabs";
-import { PORTFOLIO_TYPES } from "@/constants/portfolio";
+import { PORTFOLIO_COMMON_TYPE, PORTFOLIO_TYPES } from "@/constants/portfolio";
 import Footer from "@/components/layout/footer";
+import PHOTOS from "../../../../source/portfolio.json";
 
 export default function ProductsPortfolioPage({ type }: { type: string }) {
   const { formatMessage, locale } = useIntl();
   const [isMounted, setIsMounted] = useState(false);
-  const photos = PHOTOS.filter((item) =>
-    type !== "all" ? item.type === type : true
-  ).map((item) => ({
-    src: `/product/portfolio/${item.src}`,
-    width: item.width,
-    height: item.height,
-    alt: String(item.id),
-  }));
+  const photos = PHOTOS.map((item) => {
+    const sourceFile = item.SourceFile.slice(8);
+    const category = sourceFile.split("/")[3];
+    const fileName = sourceFile.split("/")[4];
+    return {
+      src: sourceFile,
+      category,
+      width: item.ImageWidth,
+      height: item.ImageHeight,
+      alt: fileName,
+      title: fileName,
+    };
+  }).filter((item) =>
+    type !== PORTFOLIO_COMMON_TYPE ? item.category === type : true
+  );
 
   useEffect(() => {
     setIsMounted(true);
