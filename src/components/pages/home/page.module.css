@@ -7,9 +7,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: calc(100% - 106px);
-  min-height: 1px;
+  min-height: calc(100% - 156px);
+  /* min-height: 1px; */
   padding: 24px;
 }
 
@@ -19,11 +20,12 @@
   place-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1024px;
   margin-top: 16px;
   gap: 24px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 840px) {
   .items {
     flex-direction: row;
   }
