@@ -20,6 +20,11 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
   const { name, text, price, links, images } = data;
 
+  const basePrice = {
+    ru: price.ru +  Math.ceil(price.ru / 4),
+    en: price.en +  Math.ceil(price.en / 4)
+  }
+
   const settings = {
     dots: true,
     infinite: true,
@@ -89,6 +94,9 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                 <div>{formatMessage({ id: "common.price" })}</div>
                 <div className={styles.price}>
                   <PriceWithUnit value={price} />
+                </div>
+                <div className={styles.basePrice}>
+                  <PriceWithUnit value={basePrice} />
                 </div>
               </div>
               <div className={styles.links}>
