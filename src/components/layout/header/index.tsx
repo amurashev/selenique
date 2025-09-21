@@ -16,6 +16,7 @@ import { SERVICES } from "@/constants/services";
 import LogoBox from "./logo-box";
 import Dropdown from "./dropdown";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
+import { COURSES } from "@/constants/courses";
 
 export default function Header() {
   const pathname = usePathname();
@@ -47,9 +48,9 @@ export default function Header() {
     params: {
       type: "women",
     },
-  })
+  });
 
-  const promptBookListPageUrl = promptBookListPageRoute.getUrl(locale)
+  const promptBookListPageUrl = promptBookListPageRoute.getUrl(locale);
 
   return (
     <header className={styles.box} ref={headerRef}>
@@ -81,6 +82,31 @@ export default function Header() {
             )}
           </li>
 
+          {/* <li
+            className={`${styles.menuItem} ${
+              false ? styles.menuItemIsActive : ""
+            }`}
+            onClick={() => toggleMenu("courses")}
+          >
+            <span className={styles.link}>
+              {formatMessage({ id: "header.menu.courses" })}
+            </span>
+            {openMenu === "courses" && (
+              <Dropdown>
+                <div className={styles.services}>
+                  {COURSES.map((item) => (
+                    <ServiceItem
+                      key={item.titleKey}
+                      image={item.image}
+                      url={item.route.getUrl(locale)}
+                      title={formatMessage({ id: item.menuTitleKey })}
+                    />
+                  ))}
+                </div>
+              </Dropdown>
+            )}
+          </li> */}
+
           <li
             className={`${styles.menuItem} ${
               false ? styles.menuItemIsActive : ""
@@ -110,13 +136,10 @@ export default function Header() {
 
           <li
             className={`${styles.menuItem} ${
-              pathname === modelsPageUrl? styles.menuItemIsActive : ""
+              pathname === modelsPageUrl ? styles.menuItemIsActive : ""
             }`}
           >
-            <Link
-              href={modelsPageUrl}
-              className={styles.link}
-            >
+            <Link href={modelsPageUrl} className={styles.link}>
               {formatMessage({ id: "header.menu.ii_models" })}
             </Link>
           </li>
@@ -124,13 +147,12 @@ export default function Header() {
           {locale === "en" && (
             <li
               className={`${styles.menuItem} ${
-                pathname === promptBookListPageUrl ? styles.menuItemIsActive : ""
+                pathname === promptBookListPageUrl
+                  ? styles.menuItemIsActive
+                  : ""
               }`}
             >
-              <Link
-                href={promptBookListPageUrl}
-                className={styles.link}
-              >
+              <Link href={promptBookListPageUrl} className={styles.link}>
                 {formatMessage({ id: "header.menu.promptbooks" })}
               </Link>
             </li>

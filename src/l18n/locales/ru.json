@@ -19,6 +19,7 @@
   "header.menu.ii_models": "ИИ Модели",
   "header.menu.promptbooks": "Промптбуки",
   "header.menu.other": "Прочее",
+  "header.menu.courses": "Обучение",
 
   "footer.not_an_offer": "Не является публичной офертой",
 
@@ -340,6 +341,11 @@
   "ii_photoshoot.price.item3.count": "20 фото",
   "ii_photoshoot.price.item3.adv2": "3–4 сцены",
   "ii_photoshoot.price.item3.adv3": "4–7 дней",
+
+
+  "intensive_neurovideo.hero.title": "Интенсив по нейровидео «С нуля до первого ролика (в связке MidJourney + Kling)",
+  "intensive_neurovideo.hero.text": "Полный цикл: от нуля до собственного ролика",
+  "intensive_neurovideo.menu.title": "Интенсив по нейровидео",
 
   "hero.title": "AI Fashion Ads & WOW Resources",
   "hero.text": "Руководства, подсказки и сцены — Photoshop не требуется",

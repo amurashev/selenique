@@ -1,0 +1,13 @@
+.sections {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.packages {
+  display: flex;
+  gap: 16px;
+}
+
+.info {
+  margin-top: 24px;
+}
