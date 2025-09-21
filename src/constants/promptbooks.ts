@@ -58,7 +58,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       en: 15,
     },
     text: `
-    <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 16 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
+    <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted men-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
     <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
     <h3>What’s Inside</h3>
     <ul>
