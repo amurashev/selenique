@@ -37,7 +37,14 @@ export const FAQItem: React.FC<{
           <Arrow />
         </span>
       </button>
-      {isOpen && <div className={styles.body}>{text}</div>}
+      {isOpen && (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: text,
+          }}
+          className={styles.body}
+        />
+      )}
     </div>
   );
 };

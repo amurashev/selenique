@@ -4,7 +4,7 @@ import Footer from "@/components/layout/footer";
 import styles from "./page.module.css";
 
 import { Hero } from "./sections/hero";
-import WhatIsThat from "./sections/what-is-that";
+import Lesson from "./sections/lesson";
 import FAQ from "./sections/faq";
 import Benefits from "./sections/benefits";
 import HowDoWeWork from "./sections/how-do-we-work";
@@ -19,13 +19,18 @@ export default function IntensiveNeiroVideo() {
       <Header />
       <Hero />
       <main className={styles.main}>
+        <Lesson index={1} />
+        <Lesson index={2} />
+        <Lesson index={3} />
+        <Lesson index={4} />
+        <WhatYouGet />
         {/* <WhatIsThat />
         <Benefits />
         <HowDoWeWork />
         <WhatYouGet />
         <Price /> */}
         <FAQ />
-        <Examples />
+        {/* <Examples /> */}
         <Contacts />
       </main>
       <Footer />

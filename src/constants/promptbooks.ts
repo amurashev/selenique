@@ -70,6 +70,42 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "50-ideal-skin-midjourney-prompts-vol-1": {
+    name: "50 Ideal Skin Midjourney Prompts Vol .1",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/4/1.jpg",
+      "/promptbooks/4/2.jpg",
+      "/promptbooks/4/3.jpg",
+      "/promptbooks/4/4.jpg",
+      "/promptbooks/4/5.jpg",
+      "/promptbooks/4/6.jpg",
+      "/promptbooks/4/7.jpg",
+      "/promptbooks/4/8.jpg",
+      "/promptbooks/4/9.jpg",
+      "/promptbooks/4/10.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 19,
+    },
+    text: `
+    <p>Want beauty shots that look like a magazine cover without spending hours tweaking prompts? This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics. You’ll get crisp close-ups (eyes, lips, skin texture), creative makeup (glitter tears, graphic liner, pearly highlights), juicy color accents, wet/dewy looks, and soft beige neutrals for premium skincare vibes.</p>
+    <p>Each prompt is written for fast results and easy edits: swap colors, change angle or aspect ratio, add/remove props — the structure holds. Perfect for beauty brands, MUAs, e-commerce catalogs, stock contributors, content creators.</p>
+    <h3>What’s Inside</h3>
+    <ul>
+    <li>50 ready-to-paste prompts (portrait & macro beauty)</li>
+    <li>Variations for dewy/glossy/wet skin, freckles, clean skin, studio & daylight</li>
+    <li>Lipstick macro, shimmering lids, glitter accents, colored liners</li>
+    <li>Angles & framings for reels covers, ads, hero images</li>
+    <li>Notes on parameters (v6/v7, aspect ratios, stylize) + tips for Omni-Reference consistency</li>
+    </ul>
+    `,
+  },
+
   "16-high-fashion-editorial-prompts-vol-1": {
     name: "16 High-Fashion Editorial Prompts Vol.1",
     links: {

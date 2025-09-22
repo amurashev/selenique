@@ -25,10 +25,10 @@ export const WhatYouGet: React.FC = () => {
 
   return (
     <Section
-      title={formatMessage({ id: "ii_photoshoot.what_you_get.title" })}
+      title={formatMessage({ id: "intensive_neurovideo.after.title" })}
       // text={formatMessage({ id: "ii_model.what_you_get.text" })}
       // isShort
-      side="left"
+      // side="left"
       // isGray
     >
       <div className={styles.sections}>
@@ -37,6 +37,8 @@ export const WhatYouGet: React.FC = () => {
             items={ITEMS.map((item) => formatMessage({ id: item.text }))}
           />
         </div>
+
+        <p>{formatMessage({ id: 'intensive_neurovideo.after.post'})}</p>
 
         {/* <div className={styles.images}>
           {IMAGES.map((image) => (
