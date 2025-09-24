@@ -3,6 +3,14 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
+
+
+/* Responsive */
+@media (min-width: 760px) {
+  .sections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+  

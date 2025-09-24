@@ -13,7 +13,7 @@ export const NearStart: React.FC = () => {
   return (
     <div className={styles.box}>
       {formatMessage({ id: "intensive_neurovideo.near_start" })}:{" "}
-      <b>6 Октября</b>
+      <b>6&nbsp;Октября</b>
     </div>
   );
 };

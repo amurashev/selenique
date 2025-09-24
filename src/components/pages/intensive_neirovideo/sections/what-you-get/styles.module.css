@@ -6,13 +6,13 @@
 
 .top {
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
 }
 
 .imageBox {
-  width: 39%;
+  width: 100%;
   display: flex;
   justify-content: center;
   /* align-items: end; */
@@ -22,16 +22,16 @@
 
 .image {
   display: block;
-  width: 200px;
+  max-width: 200px;
+  width: 50%;
   height: auto;
   border-radius: 20px;
 }
 
 
 .items {
-  width: 61%;
-  /* height: 100%; */
-  padding-left: 16px;
+  width: 100%;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +50,20 @@
 
 
 /* Responsive */
-@media (min-width: 600px) {
- 
+@media (min-width: 760px) {
+  .top {
+    flex-direction: row-reverse;
+  }
+
+  .imageBox {
+    width: 39%;
+    flex-shrink: 0;
+  }
+
+  .items {
+    width: 61%;
+    margin-top: 0px;
+    padding-right: 24px;
+  }
 }
+  
