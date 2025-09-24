@@ -1,0 +1,8 @@
+.box {
+  background-color: var(--primary-hover);
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 32px 0;
+  font-weight: 700;
+}

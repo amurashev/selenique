@@ -4,14 +4,14 @@ import Footer from "@/components/layout/footer";
 import styles from "./page.module.css";
 
 import { Hero } from "./sections/hero";
-import Lesson from "./sections/lesson";
+import Lessons from "./sections/lesson";
 import FAQ from "./sections/faq";
-import Benefits from "./sections/benefits";
-import HowDoWeWork from "./sections/how-do-we-work";
-import Examples from "./sections/examples";
+import Description from "./sections/description";
+// import Examples from "./sections/examples";
 import Price from "./sections/price";
 import WhatYouGet from "./sections/what-you-get";
 import Contacts from "../products/sections/contacts";
+import NearStart from "./sections/near-start";
 
 export default function IntensiveNeiroVideo() {
   return (
@@ -19,19 +19,13 @@ export default function IntensiveNeiroVideo() {
       <Header />
       <Hero />
       <main className={styles.main}>
-        <Lesson index={1} />
-        <Lesson index={2} />
-        <Lesson index={3} />
-        <Lesson index={4} />
+        <Description />
+        <Lessons />
         <WhatYouGet />
-        {/* <WhatIsThat />
-        <Benefits />
-        <HowDoWeWork />
-        <WhatYouGet />
-        <Price /> */}
+        <NearStart />
+        <Price />
         <FAQ />
-        {/* <Examples /> */}
-        <Contacts />
+        <Contacts isGray />
       </main>
       <Footer />
     </div>

@@ -1,0 +1,20 @@
+.page {
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  /* min-height: 1px; */
+  padding: 24px;
+
+
+  h5 {
+    margin-top: 16px;
+  }
+
+  p {
+    margin: 8px 0;
+  }
+}

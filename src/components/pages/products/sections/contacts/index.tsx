@@ -5,6 +5,7 @@ import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
 import Section from "@/components/layout/section";
+import { EMAIL, TELEGRAM_LINK, TELEGRAM_NAME } from "@/constants/contacts";
 
 const Telegram = () => (
   <svg
@@ -75,25 +76,22 @@ const Email = () => (
   </svg>
 );
 
-export const Contacts: React.FC = () => {
+export const Contacts: React.FC<{ isGray?: boolean }> = ({ isGray = false}) => {
   const { formatMessage } = useIntl();
   return (
     <Section
       title={formatMessage({ id: "products.contacts.title" })}
       text={formatMessage({ id: "products.contacts.text" })}
       side="left"
+      isGray={isGray}
     >
       <div className={styles.sections}>
         <noindex>
           <ul className={styles.list}>
             <li className={styles.item}>
               <Telegram />{" "}
-              <a
-                href="https://t.me/alenaamoore"
-                target="_blank"
-                className={styles.link}
-              >
-                @alenaamoore
+              <a href={TELEGRAM_LINK} target="_blank" className={styles.link}>
+                {TELEGRAM_NAME}
               </a>
             </li>
             <li className={styles.item}>
@@ -108,11 +106,8 @@ export const Contacts: React.FC = () => {
             </li>
             <li className={styles.item}>
               <Email />{" "}
-              <a
-                href="mailto:selenique.studio@gmail.com"
-                className={styles.link}
-              >
-                selenique.studio@gmail.com
+              <a href={`mailto:${EMAIL}`} className={styles.link}>
+                {EMAIL}
               </a>
             </li>
           </ul>

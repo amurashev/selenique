@@ -1,13 +1,8 @@
 .sections {
-  max-width: 760px;
+  max-width: 1040px;
   margin: 0 auto;
-}
 
-.packages {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-}
-
-.info {
-  margin-top: 24px;
 }

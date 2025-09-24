@@ -20,6 +20,9 @@
   "header.menu.promptbooks": "Промптбуки",
   "header.menu.other": "Прочее",
   "header.menu.courses": "Обучение",
+  "header.menu.policy": "Политика конфиденциальности",
+  "header.menu.oferta_teaching": "Договор оферты на оказания услуг по обучению",
+  "header.menu.oferta_service": "Договор оферты на оказания информационных услуг",
 
   "footer.not_an_offer": "Не является публичной офертой",
 
@@ -347,6 +350,18 @@
   "intensive_neurovideo.hero.text": "Полный цикл: от нуля до собственного ролика",
   "intensive_neurovideo.menu.title": "Интенсив по нейровидео",
 
+  "intensive_neurovideo.intro.title": "",
+  "intensive_neurovideo.intro.text1": "Хочешь научиться создавать видео с помощью нейросетей, но не знаешь, с чего начать?",
+  "intensive_neurovideo.intro.text2": ".",
+  "intensive_neurovideo.intro.text3": "Этот интенсив — твой быстрый вход в мир AI-видео! Интенсив проходит онлайн, занятия 2 раза в неделю. Вы получите доступ к видеоурокам в закрытом чате в телеграм, практическим заданиям и дополнительным материалам. По выполненным заданиям дам обратную связь, разберу ошибки и отвечу на вопросы.",
+
+  "intensive_neurovideo.intro.items.title": "За 4 занятия ты пройдёшь путь от первого промпта до готового ролика:",
+  "intensive_neurovideo.intro.item1": "разберёшься, как работает MidJourney и научишься делать картинки в любых стилях",
+  "intensive_neurovideo.intro.item2": "освоишь Omni Reference и создашь собственного консистентного персонажа,",
+  "intensive_neurovideo.intro.item3": "поймёшь, как оживлять изображения в Kling и превращать их в короткие сцены,",
+  "intensive_neurovideo.intro.item4": "соберёшь свой первый ролик в CapCut/VN, добавишь музыку и текст.",
+
+  "intensive_neurovideo.lessons.title": "Программа интенсива",
   "intensive_neurovideo.lessons.practice": "Практика",
   "intensive_neurovideo.lessons.after": "После этого занятия",
 
@@ -383,15 +398,45 @@
   "intensive_neurovideo.lessons.lesson4.item2": "Добавим музыку, текст и простые переходы.",
   "intensive_neurovideo.lessons.lesson4.item3": "Сделаем экспорт для соцсетей и портфолио.",
 
-  "intensive_neurovideo.after.title": "Что вы получите после интенсива",
+  "intensive_neurovideo.after.title": "Что Вы получите после интенсива",
   "intensive_neurovideo.after.item1": "Полное понимание, как создавать изображения и видео в двух топовых нейросетях Midjourney + Kling.",
   "intensive_neurovideo.after.item2": "Навык работы с персонажами и сценами.",
   "intensive_neurovideo.after.item3": "Умение оживлять изображения и собирать готовое видео.",
   "intensive_neurovideo.after.item4": "Готовый видеопроект, который можно выложить или показать клиенту.",
-  "intensive_neurovideo.after.post": "Главное: после этого интенсива вы сможете самостоятельно тренироваться, развивать свой уровень и уже начинать брать первые заказы на нейрофото и нейровидео.",
+  "intensive_neurovideo.after.post": "<b>Главное</b>: после этого интенсива вы сможете самостоятельно тренироваться, развивать свой уровень и уже начинать брать первые заказы на нейрофото и нейровидео.",
 
   "intensive_neurovideo.about.title": "Как это проходит обучение?",
   "intensive_neurovideo.about.text": "Интенсив проходит онлайн, занятия 2 раза в неделю. Вы получите доступ к видеоурокам в закрытом чате в телеграм, практическим заданиям и дополнительным материалам. По выполненным заданиям дам обратную связь, разберу ошибки и отвечу на вопросы.",
+
+  "intensive_neurovideo.near_start": "Ближайший старт",
+
+
+  "intensive_neurovideo.prices.title": "Тарифы",
+  "intensive_neurovideo.prices.result": "Результат",
+  "intensive_neurovideo.prices.contact": "Записаться",
+  "intensive_neurovideo.prices.item1.title": "Самостоятельный",
+  "intensive_neurovideo.prices.item1.text": "Идеально, если хочешь просто получить знания и идти в своём темпе.",
+  "intensive_neurovideo.prices.item1.adv1": "Доступ ко всем материалам интенсива (записи занятий).",
+  "intensive_neurovideo.prices.item1.adv2": "Шпаргалки по промптам и настройкам.",
+  "intensive_neurovideo.prices.item1.adv3": "Бонус: список проверенных сервисов и способов оплаты подписок в РФ.",
+  "intensive_neurovideo.prices.item1.result": "проходишь курс самостоятельно, без обратной связи.",
+
+  "intensive_neurovideo.prices.item2.title": "С куратором",
+  "intensive_neurovideo.prices.item2.text": "Оптимальный вариант: учишься, выполняешь задания и получаешь поддержку.",
+  "intensive_neurovideo.prices.item2.adv1": "Всё из пакета «<b>Самостоятельный</b>».",
+  "intensive_neurovideo.prices.item2.adv2": "Домашние задания после каждого занятия.",
+  "intensive_neurovideo.prices.item2.adv3": "Проверка работ куратором и комментарии.",
+  "intensive_neurovideo.prices.item2.adv4": "Ответы на вопросы в чате на протяжении курса.",
+  "intensive_neurovideo.prices.item2.result": "учишься под контролем, закрепляешь знания и гарантированно доходишь до финального ролика.",
+
+  "intensive_neurovideo.prices.item3.title": "Персональный (VIP)",
+  "intensive_neurovideo.prices.item3.text": "Для тех, кто хочет максимум внимания и быстрый результат.",
+  "intensive_neurovideo.prices.item3.adv1": "Всё из пакета «<b>С куратором</b>».",
+  "intensive_neurovideo.prices.item3.adv2": "Индивидуальные онлайн-созвоны (1 на 1) с наставником.",
+  "intensive_neurovideo.prices.item3.adv3": "Персональная помощь с настройкой MidJourney и Kling.",
+  "intensive_neurovideo.prices.item3.adv4": "Разбор твоих проектов и идей.",
+  "intensive_neurovideo.prices.item3.adv5": "Совместная работа над финальным видео.",
+  "intensive_neurovideo.prices.item3.result": "личное сопровождение, помощь на каждом шаге, готовое портфолио-видео под твои цели.",
 
   "intensive_neurovideo.faq.title": "Популярные вопросы",
   "intensive_neurovideo.faq.faq1.title": "Нужно ли уметь работать с нейросетями до курса?",

@@ -6,55 +6,70 @@ import { useIntl } from "react-intl";
 import Section from "../../../../layout/section";
 
 import styles from "./styles.module.css";
-import PriceCard from "@/components/sections/price-card";
-import {
-  PHOTOSHOT_PRICE_LIST,
-  PHOTOSHOT_PRICES_DATA,
-} from "@/constants/prices/photosession";
-import { PriceWithUnit } from "@/components/ui/price";
-import { PriceType } from "@/components/types";
-import InfoBox from "@/components/ui/info";
 
-// const PriceCard = ({ title, price }: { title: string; price: PriceType }) => {
-//   return (
-//     <div>
-//       <h3>{title}</h3>
-//       <PriceWithUnit value={price} />
-//     </div>
-//   );
-// };
+import { COURSES_DATA } from "@/constants/courses";
+import PackageCard from "./package-card";
 
 export const Price: React.FC = () => {
   const { formatMessage } = useIntl();
 
   return (
     <Section
-      title={formatMessage({ id: "ii_photoshoot.price.title" })}
+      title={formatMessage({ id: "intensive_neurovideo.prices.title" })}
       // text={formatMessage({ id: "ii_model.price.text" })}
       isGray
     >
       <div className={styles.sections}>
-        <PriceCard
-          title={formatMessage({ id: PHOTOSHOT_PRICES_DATA["basic"].titleKey })}
-          price={PHOTOSHOT_PRICES_DATA["basic"].price}
-        >
-          <>
-            <p>
-              <b>{formatMessage({ id: "ii_photoshoot.price.items.count" })}</b>
-              {": "}
-              {formatMessage({ id: PHOTOSHOT_PRICES_DATA["basic"].count })}
-            </p>
-            <p>
-              <b>{formatMessage({ id: "ii_photoshoot.price.items.term" })}</b>
-              {": "}
-              {formatMessage({ id: PHOTOSHOT_PRICES_DATA["basic"].term })}
-            </p>
-          </>
-        </PriceCard>
-
-        <InfoBox variant="info">
-          <strong>{formatMessage({ id: "products.prices.prepayment" })}</strong>
-        </InfoBox>
+        <PackageCard
+          type="basic"
+          title={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["basic"]
+              .titleKey,
+          })}
+          text={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["basic"].textKey,
+          })}
+          price={COURSES_DATA["intensive_neurovideo"]["prices"]["basic"].price}
+          advantages={
+            COURSES_DATA["intensive_neurovideo"]["prices"]["basic"].advantages
+          }
+          result={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["basic"]
+              .resultKey,
+          })}
+        />
+        <PackageCard
+          type="pro"
+          title={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["pro"].titleKey,
+          })}
+          text={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["pro"].textKey,
+          })}
+          price={COURSES_DATA["intensive_neurovideo"]["prices"]["pro"].price}
+          advantages={
+            COURSES_DATA["intensive_neurovideo"]["prices"]["pro"].advantages
+          }
+          result={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["pro"].resultKey,
+          })}
+        />
+        <PackageCard
+          type="vip"
+          title={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["vip"].titleKey,
+          })}
+          text={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["vip"].textKey,
+          })}
+          price={COURSES_DATA["intensive_neurovideo"]["prices"]["vip"].price}
+          advantages={
+            COURSES_DATA["intensive_neurovideo"]["prices"]["vip"].advantages
+          }
+          result={formatMessage({
+            id: COURSES_DATA["intensive_neurovideo"]["prices"]["vip"].resultKey,
+          })}
+        />
       </div>
     </Section>
   );

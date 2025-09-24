@@ -16,7 +16,7 @@ import { SERVICES } from "@/constants/services";
 import LogoBox from "./logo-box";
 import Dropdown from "./dropdown";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
-import { COURSES } from "@/constants/courses";
+import { COURSES, COURSES_DATA } from "@/constants/courses";
 
 export default function Header() {
   const pathname = usePathname();
@@ -94,14 +94,18 @@ export default function Header() {
             {openMenu === "courses" && (
               <Dropdown>
                 <div className={styles.services}>
-                  {COURSES.map((item) => (
-                    <ServiceItem
-                      key={item.titleKey}
-                      image={item.image}
-                      url={item.route.getUrl(locale)}
-                      title={formatMessage({ id: item.menuTitleKey })}
-                    />
-                  ))}
+                  {COURSES.map((item) => {
+                    const courseData =
+                      COURSES_DATA[item as keyof typeof COURSES_DATA];
+                    return (
+                      <ServiceItem
+                        key={courseData.titleKey}
+                        image={courseData.image}
+                        url={courseData.route.getUrl(locale)}
+                        title={formatMessage({ id: courseData.menuTitleKey })}
+                      />
+                    );
+                  })}
                 </div>
               </Dropdown>
             )}

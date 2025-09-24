@@ -151,7 +151,7 @@ export const PRODUCT_PRICE_LIST: ProductService[] = [
 ];
 
 export const PRODUCT_PRICE_PACKAGES = [
-  { title: "Мини", count: 3, discount: 10 },
-  { title: "Мини", count: 5, discount: 15 },
-  { title: "Стандарт", count: 10, discount: 20 },
+  { count: 3, discount: 10 },
+  { count: 5, discount: 15 },
+  { count: 10, discount: 20 },
 ];

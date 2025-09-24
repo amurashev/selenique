@@ -47,7 +47,7 @@ export const PricesV2: React.FC = () => {
             <h5>{formatMessage({ id: "products.prices.discount" })}</h5>
             <div className={styles.packages}>
               {PRODUCT_PRICE_PACKAGES.map((item) => (
-                <div key={item.title} className={styles.packageItem}>
+                <div key={item.count} className={styles.packageItem}>
                   <div>
                     {item.count}{" "}
                     {formatMessage({ id: "common.prices.types.photo" })}{" "}→{" "}

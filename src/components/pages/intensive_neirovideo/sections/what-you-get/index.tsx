@@ -10,13 +10,16 @@ import styles from "./styles.module.css";
 
 const ITEMS = [
   {
-    text: "ii_photoshoot.what_you_get.item2.text",
+    text: "intensive_neurovideo.after.item1",
   },
   {
-    text: "ii_photoshoot.what_you_get.item3.text",
+    text: "intensive_neurovideo.after.item2",
   },
   {
-    text: "ii_photoshoot.what_you_get.item4.text",
+    text: "intensive_neurovideo.after.item3",
+  },
+  {
+    text: "intensive_neurovideo.after.item4",
   },
 ];
 
@@ -32,13 +35,25 @@ export const WhatYouGet: React.FC = () => {
       // isGray
     >
       <div className={styles.sections}>
-        <div className={styles.items}>
-          <ItemsList
-            items={ITEMS.map((item) => formatMessage({ id: item.text }))}
-          />
+        <div className={styles.top}>
+          <div className={styles.imageBox}>
+            <img src={"/intensive_ai/image1.jpg"} className={styles.image} />
+            <img src={"/intensive_ai/image2.jpg"} className={styles.image} />
+          </div>
+
+          <div className={styles.items}>
+            <ItemsList
+              items={ITEMS.map((item) => formatMessage({ id: item.text }))}
+            />
+          </div>
         </div>
 
-        <p>{formatMessage({ id: 'intensive_neurovideo.after.post'})}</p>
+        <p
+          className={styles.post}
+          dangerouslySetInnerHTML={{
+            __html: formatMessage({ id: "intensive_neurovideo.after.post" }),
+          }}
+        />
 
         {/* <div className={styles.images}>
           {IMAGES.map((image) => (

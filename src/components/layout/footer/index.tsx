@@ -51,7 +51,10 @@ export default function Footer() {
 
                 {SERVICES.map((item) => (
                   <li key={item.titleKey} className={styles.menuItem}>
-                    <Link href={item.route.getUrl(locale)} className={styles.menuLink}>
+                    <Link
+                      href={item.route.getUrl(locale)}
+                      className={styles.menuLink}
+                    >
                       {formatMessage({ id: item.menuTitleKey })}
                     </Link>
                   </li>
@@ -108,17 +111,38 @@ export default function Footer() {
 
             <div>© 2025 {formatMessage({ id: "common.name" })}</div>
             <div className={styles.flags}>
-        <Link href={"/"}>
-          <RUFlag />
-        </Link>
-        <Link href={"/en"}>
-          <UKFlag />
-        </Link>
-      </div>
+              <Link href={"/"}>
+                <RUFlag />
+              </Link>
+              <Link href={"/en"}>
+                <UKFlag />
+              </Link>
+            </div>
           </div>
         </nav>
         <div className={styles.alertBox}>
-          <div>{formatMessage({ id: "footer.not_an_offer" })}</div>
+          {locale === "ru" && (
+            <div>
+              <Link href={"/policy"} className={styles.menuLink}>
+                {formatMessage({ id: "header.menu.policy" })}
+              </Link>
+            </div>
+          )}{" "}
+          {locale === "ru" && (
+            <div>
+              <Link href={"/oferta_teaching"} className={styles.menuLink}>
+                {formatMessage({ id: "header.menu.oferta_teaching" })}
+              </Link>
+            </div>
+          )}
+            {locale === "ru" && (
+            <div>
+              <Link href={"/oferta_service"} className={styles.menuLink}>
+                {formatMessage({ id: "header.menu.oferta_service" })}
+              </Link>
+            </div>
+          )}
+          {/* <div>{formatMessage({ id: "footer.not_an_offer" })}</div> */}
         </div>
         {/* <ul className={styles.menu}>
           <li className={styles.menuItem}>

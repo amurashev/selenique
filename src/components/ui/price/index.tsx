@@ -25,7 +25,7 @@ export const PriceWithUnit = ({
   let currency = "";
 
   if (locale === "en") currency = "$";
-  if (locale === "ru") currency = "руб.";
+  if (locale === "ru") currency = " руб.";
 
   const price = value[locale];
 

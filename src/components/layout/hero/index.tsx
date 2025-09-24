@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 interface HeroBotikaProps {
   title: string;
-  text: string;
+  text?: string;
   /** Right-side image (group of models). PNG/JPG with transparent or white bg works best */
   imageSrc?: string;
 }
@@ -21,8 +21,7 @@ export const Hero: React.FC<HeroBotikaProps> = ({ text, title, imageSrc }) => {
       <div className={styles.heroContainer}>
         <div className={styles.heroCopy}>
           <h1 className={styles.heroTitle}>{title}</h1>
-
-          <p className={styles.heroSubtitle}>{text}</p>
+          {text && <p className={styles.heroSubtitle}>{text}</p>}
 
           {/* <Button onClick={goToForm}>
             {formatMessage({ id: "products.hero.cta" })}

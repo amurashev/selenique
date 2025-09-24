@@ -31,4 +31,5 @@
 .price {
   font-size: 32px;
   color: var(--success-3);
+  flex-shrink: 0;
 }

@@ -1,18 +1,41 @@
 .item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 15px;
+}
+
+
+.itemNormal {
+  composes: item;
+  margin-bottom: 8px;
+  font-size: 18px;
+  gap: 6px;
+}
+
+.itemLarge {
+  composes: item;
+  margin-bottom: 16px;
   font-size: 21px;
+  gap: 12px;
 }
 
 .icon {
   color: var(--success-2);
-  font-size: 28px;
   line-height: 1.0;
   font-weight: 700;
 }
 
-.text {
-  
+.iconSmall {
+  composes: icon;
+  font-size: 18px;
 }
+
+.iconMedium {
+  composes: icon;
+  font-size: 22px;
+}
+
+.iconLarge {
+  composes: icon;
+  font-size: 28px;
+}
+

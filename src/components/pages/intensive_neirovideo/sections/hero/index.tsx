@@ -11,8 +11,8 @@ export const Hero: React.FC = () => {
   return (
     <HeroCommon
       title={formatMessage({ id: "intensive_neurovideo.hero.title" })}
-      text={formatMessage({ id: "intensive_neurovideo.hero.text" })}
-      imageSrc="/photoshoot/bg.webp"
+      // text={formatMessage({ id: "intensive_neurovideo.hero.text" })}
+      imageSrc="/intensive_ai/bg.webp"
     />
   );
 };
