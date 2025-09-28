@@ -9,26 +9,30 @@ import styles from "./styles.module.css";
 
 const LESSONS = {
   1: {
-    items: [1, 2, 3, 4],
+    items: [1, 2, 3, 4, 5],
+    after: [1, 2, 3, 4],
     images: ["/intensive_ai/image_l1_2.jpg"],
   },
   2: {
-    items: [1, 2, 3],
+    items: [1, 2, 3, 4, 5],
+    after: [1, 2, 3, 4],
     images: ["/intensive_ai/image_l2_1.jpg"]
   },
   3: {
-    items: [1, 2, 3],
+    items: [1, 2, 3, 4, 5],
+    after: [1, 2, 3, 4, 5],
     images: ["/intensive_ai/image_l3_1.jpg"]
   },
   4: {
     items: [1, 2, 3],
+    after: [1],
     images: ["/intensive_ai/image_l4_1.jpg"]
   },
 };
 
 const Lesson: React.FC<{ index: number }> = ({ index }) => {
   const { formatMessage } = useIntl();
-  const { items, images = [] } = LESSONS[index as keyof typeof LESSONS]
+  const { items, after = [], images = [] } = LESSONS[index as keyof typeof LESSONS]
 
   return (
     <div className={styles.itemBox}>
@@ -53,24 +57,29 @@ const Lesson: React.FC<{ index: number }> = ({ index }) => {
             })
           )}
         />
-
-        <p>
-          <strong>
-            {"🧑‍💻 "}{formatMessage({ id: `intensive_neurovideo.lessons.practice` })}:{" "}
-          </strong>
+{/* 
+<div className={styles.after}>
+          <h4>
+            {"🧑‍💻 "}{formatMessage({ id: `intensive_neurovideo.lessons.practice` })}
+          </h4>
           {formatMessage({
             id: `intensive_neurovideo.lessons.lesson${index}.practice`,
           })}
-        </p>
+        </div> */}
 
-        <p>
-          <strong>
-          {"✨ "}{formatMessage({ id: `intensive_neurovideo.lessons.after` })}:{" "}
-          </strong>
-          {formatMessage({
-            id: `intensive_neurovideo.lessons.lesson${index}.after`,
-          })}
-        </p>
+        <div className={styles.after}>
+          <h4>
+          {"✨ "}{formatMessage({ id: `intensive_neurovideo.lessons.after` })}
+          </h4>
+          <ItemsList
+          type="normal"
+          items={after.map((item) =>
+            formatMessage({
+              id: `intensive_neurovideo.lessons.lesson${index}.after${item}`,
+            })
+          )}
+        />
+        </div>
       </div>
 
       <div className={styles.imageBox}>

@@ -82,34 +82,36 @@ export default function Header() {
             )}
           </li>
 
-          {/* <li
-            className={`${styles.menuItem} ${
-              false ? styles.menuItemIsActive : ""
-            }`}
-            onClick={() => toggleMenu("courses")}
-          >
-            <span className={styles.link}>
-              {formatMessage({ id: "header.menu.courses" })}
-            </span>
-            {openMenu === "courses" && (
-              <Dropdown>
-                <div className={styles.services}>
-                  {COURSES.map((item) => {
-                    const courseData =
-                      COURSES_DATA[item as keyof typeof COURSES_DATA];
-                    return (
-                      <ServiceItem
-                        key={courseData.titleKey}
-                        image={courseData.image}
-                        url={courseData.route.getUrl(locale)}
-                        title={formatMessage({ id: courseData.menuTitleKey })}
-                      />
-                    );
-                  })}
-                </div>
-              </Dropdown>
-            )}
-          </li> */}
+          {locale === "ru" && (
+            <li
+              className={`${styles.menuItem} ${
+                false ? styles.menuItemIsActive : ""
+              }`}
+              onClick={() => toggleMenu("courses")}
+            >
+              <span className={styles.link}>
+                {formatMessage({ id: "header.menu.courses" })}
+              </span>
+              {openMenu === "courses" && (
+                <Dropdown>
+                  <div className={styles.services}>
+                    {COURSES.map((item) => {
+                      const courseData =
+                        COURSES_DATA[item as keyof typeof COURSES_DATA];
+                      return (
+                        <ServiceItem
+                          key={courseData.titleKey}
+                          image={courseData.image}
+                          url={courseData.route.getUrl(locale)}
+                          title={formatMessage({ id: courseData.menuTitleKey })}
+                        />
+                      );
+                    })}
+                  </div>
+                </Dropdown>
+              )}
+            </li>
+          )}
 
           <li
             className={`${styles.menuItem} ${

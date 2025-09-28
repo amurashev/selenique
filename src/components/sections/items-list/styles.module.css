@@ -9,6 +9,10 @@
   margin-bottom: 8px;
   font-size: 18px;
   gap: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .itemLarge {
@@ -16,6 +20,10 @@
   margin-bottom: 16px;
   font-size: 21px;
   gap: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .icon {

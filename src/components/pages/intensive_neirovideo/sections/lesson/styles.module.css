@@ -48,6 +48,14 @@
   margin-bottom: 8px;
 }
 
+.after {
+  margin-top: 8px;
+
+  h4 {
+    margin-bottom: 4px;
+  }
+}
+
 /* Responsive */
 @media (min-width: 760px) {
   .sections {

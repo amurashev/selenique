@@ -7,6 +7,7 @@ import {
   modelsPageRoute,
   productPortfolioPageRoute,
   homePage,
+  intensiveNeurovideoPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 
@@ -33,6 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...PORTFOLIO_TYPES.map((item) =>
       productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
     ),
+    intensiveNeurovideoPageRoute.getUrl("ru"),
 
     homePage.getUrl("en"),
     productPageRoute.getUrl("en"),
