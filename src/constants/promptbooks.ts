@@ -21,7 +21,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 13,
+      en: 12,
     },
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
@@ -90,7 +90,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 17,
+      en: 15,
     },
     text: `
     <p>Want beauty shots that look like a magazine cover without spending hours tweaking prompts? This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics. You’ll get crisp close-ups (eyes, lips, skin texture), creative makeup (glitter tears, graphic liner, pearly highlights), juicy color accents, wet/dewy looks, and soft beige neutrals for premium skincare vibes.</p>
