@@ -365,7 +365,7 @@
   "intensive_neurovideo.lessons.practice": "Практика",
   "intensive_neurovideo.lessons.after": "После этого занятия",
 
-  "intensive_neurovideo.lessons.lesson1.title": "Занятие 1. Быстрый старт в MidJourney + ChatGPT",
+  "intensive_neurovideo.lessons.lesson1.title": "Занятие 1. Погружаемся в мир нейросетей и MidJourney",
   "intensive_neurovideo.lessons.lesson1.text": "Научитесь писать промпты, даже если никогда этого не делали.",
   "intensive_neurovideo.lessons.lesson1.practice": "Cоздадим первые картинки и подготовим их для видео.",
   "intensive_neurovideo.lessons.lesson1.after1": "Понимание, как работает MidJourney и зачем он вам нужен.",
@@ -378,7 +378,7 @@
   "intensive_neurovideo.lessons.lesson1.item4": "<b>Все настройки MidJourney</b> — пройдёмся по базовым и продвинутым параметрам: форматы, качество, стилизация, соотношение сторон.",
   "intensive_neurovideo.lessons.lesson1.item5": "<b>Первая генерация</b> — создаём ваши первые изображения и радуемся первым результатам.",
 
-  "intensive_neurovideo.lessons.lesson2.title": "Занятие 2. Консистентный персонаж + раскадровка",
+  "intensive_neurovideo.lessons.lesson2.title": "Занятие 2. Профессиональный уровень Midjourney: стиль, референсы и консистентность",
   "intensive_neurovideo.lessons.lesson2.text": "Сделаем так, чтобы герои выглядели одинаково в разных сценах.",
   "intensive_neurovideo.lessons.lesson2.practice": "Cоздадим персонажа и серию сцен с ним, готовых для анимации.",
   "intensive_neurovideo.lessons.lesson2.after1": "Освоите продвинутые фишки MidJourney и будете управлять генерацией, а не полагаться на случай.",
@@ -391,7 +391,7 @@
   "intensive_neurovideo.lessons.lesson2.item4": "<b>ChatGPT для промптов</b> — покажу, как правильно ставить задачи ИИ, чтобы он помогал вам писать промпты быстрее и точнее.",
   "intensive_neurovideo.lessons.lesson2.item5": "<b>Фотосессия в одном стиле</b> — соберём серию кадров, которые выглядят как цельная фотосъёмка для журнала или бренда.",
 
-  "intensive_neurovideo.lessons.lesson3.title": "Занятие 3. Анимация в Kling",
+  "intensive_neurovideo.lessons.lesson3.title": "Занятие 3. От картинок к видео: раскадровка и ключевые кадры",
   "intensive_neurovideo.lessons.lesson3.text": "Оживим картинки, превратим их в короткие видеосцены.",
   "intensive_neurovideo.lessons.lesson3.practice": "Создадим 2–3 ролика с движением камеры, объектов и эффектами",
   "intensive_neurovideo.lessons.lesson3.after1": "Поймёте, как придумать видеосценарий и разложить его на ключевые кадры.",
