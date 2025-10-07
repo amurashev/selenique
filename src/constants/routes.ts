@@ -20,10 +20,10 @@ export const iiPhotoShootPageRoute = route({
   ru: "/neirofotosessiya",
   en: "/en/ai_photoshoot",
 });
-// export const aiConsultationPageRoute = route({
-//   ru: "/konsultatsii-po-neirosetyam",
-//   en: "/konsultatsii-po-neirosetyam",
-// });
+export const aiConsultationPageRoute = route({
+  ru: "/konsultatsii-po-neirosetyam",
+  en: "/en/ai_consulting",
+});
 export const modelsPageRoute = route({
   ru: "/models/[type]",
   en: "/en/models/[type]",

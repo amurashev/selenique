@@ -61,19 +61,26 @@ export const Form: React.FC = () => {
       id="contact_form"
     >
       <div className={styles.sections}>
-        <InputWithLabel label="Как Вас зовут" id="name">
+        <InputWithLabel
+          label={formatMessage({ id: "products.request_form.name.label" })}
+          id="name"
+        >
           <Input value={name} onChange={(e) => setName(e.target.value)} />
         </InputWithLabel>
 
         <InputWithLabel
-          label="Как с Вами связаться"
+          label={formatMessage({ id: "products.request_form.contact.label" })}
           id="contact"
-          hint="Телефон: WhatsApp/Telegram или Email"
+          hint={formatMessage({ id: "products.request_form.contact.hint" })}
         >
           <Input value={contact} onChange={(e) => setContact(e.target.value)} />
         </InputWithLabel>
 
-        <InputWithLabel label="Комментарий" id="details" hint="">
+        <InputWithLabel
+          label={formatMessage({ id: "products.request_form.details.label" })}
+          id="details"
+          hint=""
+        >
           <Textarea
             value={details}
             onChange={(e) => setDetails(e.target.value)}
@@ -86,14 +93,14 @@ export const Form: React.FC = () => {
             disabled={name === "" || contact === ""}
             loading={isLoading}
           >
-            Отправить
+            {formatMessage({ id: "products.request_form.send" })}
           </Button>
         </div>
       </div>
 
       {isSuccess && (
         <Notification
-          message="Форма успешно отпралена!"
+          message={formatMessage({ id: "products.form_success.title" })}
           duration={3000}
           onClose={() => setIsSuccess(false)}
         />

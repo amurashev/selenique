@@ -15,18 +15,33 @@
 }
 
 .items {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   place-items: center;
   justify-content: center;
   width: 100%;
   max-width: 1024px;
-  margin-top: 16px;
+  margin-top: 24px;
   gap: 24px;
 }
 
+.item {
+  width: 100%;
+}
+
 @media (min-width: 840px) {
-  .items {
-    flex-direction: row;
+
+  .main {
+    padding: 32px;
   }
+
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item {
+    /* width: 40%; */
+  }
+  
 }

@@ -10,27 +10,22 @@ import PriceCard from "@/components/sections/price-card";
 
 export const Prices: React.FC = () => {
   const { formatMessage } = useIntl();
-  // TODO: l18n
+
   return (
     <Section
       title={formatMessage({ id: "consultations.prices.title" })}
-      // isGray={true}
     >
       <div className={styles.sections}>
-        <PriceCard title="Часовая консультация" price={{ ru: 6990, en: 100 }}>
+        <PriceCard
+          title={formatMessage({ id: "consultations.price.title" })}
+          price={{ ru: 6990, en: 100 }}
+        >
           <>
             <p>
-              <b>Длительность</b>: 60 мин
+              <b>{formatMessage({ id: "consultations.price.duration" })}</b>:{" "}
+              {formatMessage({ id: "consultations.price.duration_value" })}
             </p>
-            <p>
-              За час разбираем вашу нишу и текущие карточки, показываем слабые
-              места, формулируем два готовых текста-задания для нейросети под
-              ваш товар и площадку, делаем 5–10 пробных кадров (ракурсы, фон,
-              свет) и отдаём понятный список улучшений с приоритетами. На выходе
-              — что можно сделать уже сегодня своими силами, какие кадры
-              отправлять в тест и как привести каталог к единому виду; при
-              необходимости подскажу, что лучше отдать на доработку.
-            </p>
+            <p>{formatMessage({ id: "consultations.price.description" })}</p>
           </>
         </PriceCard>
       </div>

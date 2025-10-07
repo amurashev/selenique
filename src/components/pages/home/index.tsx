@@ -19,7 +19,7 @@ export default function HomePage() {
         <h2>{formatMessage({ id: "header.menu.services" })}</h2>
         <div className={styles.items}>
           {SERVICES.map((item) => (
-            <div key={item.titleKey}>
+            <div key={item.titleKey} className={styles.item}>
               <Link href={item.route.getUrl(locale)}>
                 <Card
                   image={item.image}
