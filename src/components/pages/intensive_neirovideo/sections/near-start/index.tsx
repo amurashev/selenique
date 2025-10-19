@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
 
-const NEAR_START_DATE = "2025-10-20";
+const NEAR_START_DATE = "2025-10-27";
 
 export const NearStart: React.FC = () => {
   const { formatMessage } = useIntl();
