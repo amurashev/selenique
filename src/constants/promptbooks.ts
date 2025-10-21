@@ -41,6 +41,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
       patreon: "", // "https://www.patreon.com/posts/139108809",
+      etsy: "https://www.etsy.com/listing/4386890966/50-high-fashion-editorial-prompts-v2",
     },
     images: [
       "/promptbooks/5/1.jpg",
@@ -112,6 +113,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
       patreon: "",
+      etsy: "https://www.etsy.com/listing/4386090496/50-ideal-skin-midjourney-prompts-v1",
     },
     images: [
       "/promptbooks/4/1.jpg",
@@ -127,7 +129,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 15,
+      en: 12,
     },
     text: `
     <p>Want beauty shots that look like a magazine cover without spending hours tweaking prompts? This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics. You’ll get crisp close-ups (eyes, lips, skin texture), creative makeup (glitter tears, graphic liner, pearly highlights), juicy color accents, wet/dewy looks, and soft beige neutrals for premium skincare vibes.</p>
@@ -148,6 +150,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
       patreon: "",
+      etsy: "https://www.etsy.com/listing/4390631317/50-ai-jewelry-photo-prompts-digital",
     },
     images: [
       "/promptbooks/6/1.jpg",

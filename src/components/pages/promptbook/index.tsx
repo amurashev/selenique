@@ -21,9 +21,9 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { name, text, price, links, images } = data;
 
   const basePrice = {
-    ru: price.ru +  Math.ceil(price.ru / 4),
-    en: price.en +  Math.ceil(price.en / 4)
-  }
+    ru: price.ru + Math.ceil(price.ru / 4),
+    en: price.en + Math.ceil(price.en / 4),
+  };
 
   const settings = {
     dots: true,
@@ -68,10 +68,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           <Slider {...settings}>
             {images.map((item) => (
               <div key={item} className={styles.item}>
-                <img
-                  className={styles.image}
-                  src={item}
-                />
+                <img className={styles.image} src={item} />
               </div>
             ))}
           </Slider>
@@ -112,6 +109,15 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                     target="_blank"
                   >
                     Buy on Patreon
+                  </Link>
+                )}
+                {links.etsy && (
+                  <Link
+                    className={styles.link}
+                    href={links.etsy}
+                    target="_blank"
+                  >
+                    Buy on Etsy
                   </Link>
                 )}
               </div>
