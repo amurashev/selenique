@@ -143,6 +143,41 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "50-jewelry-product-photo-ai-prompts": {
+    name: "50 Jewelry Product Photo AI Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/6/1.jpg",
+      "/promptbooks/6/2.jpg",
+      "/promptbooks/6/3.jpg",
+      "/promptbooks/6/4.jpg",
+      "/promptbooks/6/5.jpg",
+      "/promptbooks/6/6.jpg",
+      "/promptbooks/6/7.jpg",
+      "/promptbooks/6/8.jpg",
+      "/promptbooks/6/9.jpg",
+      "/promptbooks/6/10.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 9,
+    },
+    text: `
+    <p>💎 This AI Jewelry Product Photo Prompt Book is a ready-to-use creative tool for generating luxurious and eye-catching jewelry visuals. Inside you will find 50 universal prompts designed for product photography of rings, earrings, bracelets, and necklaces. Each prompt comes with clear structure and reference pictures, making it easy to adapt for your own projects.</p>
+    <p>These prompts are compatible with different AI platforms such as MidJourney, Krea, Higgsfield, Nano Banana, and others. By using the same prompt across multiple tools, you’ll see how each AI interprets the idea in its own unique style, giving you endless inspiration and variety.</p>
+    <h3>Whether you’re a jewelry brand owner, content creator, designer, or marketer, this prompt book helps you:</h3>
+    <ul>
+    <li>Generate professional-quality jewelry visuals without expensive photo shoots</li>
+    <li>Create stunning content for ads, social media, e-commerce, and brand catalogs</li>
+    <li>Experiment with colors, backgrounds, moods, and lighting to produce endless variations</li>
+    <li>Save time and reduce costs while keeping your visuals consistent and high-end</li>
+    </ul>
+    `,
+  },
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
