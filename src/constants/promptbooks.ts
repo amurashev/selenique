@@ -6,6 +6,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
       patreon: "https://www.patreon.com/posts/139108809",
+      etsy: "https://www.etsy.com/listing/4390735413/50-high-fashion-editorial-prompts-ai",
     },
     images: [
       "/promptbooks/1/1.jpg",
@@ -78,6 +79,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
       patreon: "",
+      etsy: "https://www.etsy.com/listing/4390717860/50-ai-prompts-for-mens-fashion-photos-o",
     },
     images: [
       "/promptbooks/3/1.jpg",
