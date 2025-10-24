@@ -243,7 +243,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 9,
+      en: 8,
     },
     text: `
     <p>✨ Create your dream Christmas photoshoot without leaving home! This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.</p>
@@ -258,6 +258,49 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     </ul>
     `,
   },
+
+  "40-christmas-kids-photo-prompts-ai": {
+    name: "40 Christmas Kids Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4392409070/40-christmas-kids-photo-prompts-ai",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/9/1.jpg",
+      "/promptbooks/9/2.jpg",
+      "/promptbooks/9/3.jpg",
+      "/promptbooks/9/4.jpg",
+      "/promptbooks/9/5.jpg",
+      "/promptbooks/9/6.jpg",
+      "/promptbooks/9/7.jpg",
+      "/promptbooks/9/8.jpg",
+      "/promptbooks/9/9.jpg",
+      "/promptbooks/9/10.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 8,
+    },
+    text: `
+    <p>🎁 Turn your child’s Christmas photos into magical portraits — no studio, no photographer needed! This AI prompt pack includes 40 Christmas Kids Photo Prompts designed to create cozy, festive, and heart-warming images in just minutes.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 40 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>🎄 Perfect for:</h3>
+    <ul>
+    <li>Holiday cards & family gifts</li>
+    <li>Instagram or Pinterest content</li>
+    <li>Parents, photographers & AI creators</li>
+    </ul>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Save time and money on photoshoots</li>
+    <li>Create timeless, professional-looking portraits at home</li>
+    <li>Capture your child’s joy and the true spirit of Christmas ✨</li>
+    </ul>
+    `,
+  },
+
 
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
