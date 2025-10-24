@@ -173,12 +173,52 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     text: `
     <p>💎 This AI Jewelry Product Photo Prompt Book is a ready-to-use creative tool for generating luxurious and eye-catching jewelry visuals. Inside you will find 50 universal prompts designed for product photography of rings, earrings, bracelets, and necklaces. Each prompt comes with clear structure and reference pictures, making it easy to adapt for your own projects.</p>
     <p>These prompts are compatible with different AI platforms such as MidJourney, Krea, Higgsfield, Nano Banana, and others. By using the same prompt across multiple tools, you’ll see how each AI interprets the idea in its own unique style, giving you endless inspiration and variety.</p>
-    <h3>Whether you’re a jewelry brand owner, content creator, designer, or marketer, this prompt book helps you:</h3>
+    <p>Whether you’re a jewelry brand owner, content creator, designer, or marketer, this prompt book helps you:</p>
     <ul>
     <li>Generate professional-quality jewelry visuals without expensive photo shoots</li>
     <li>Create stunning content for ads, social media, e-commerce, and brand catalogs</li>
     <li>Experiment with colors, backgrounds, moods, and lighting to produce endless variations</li>
     <li>Save time and reduce costs while keeping your visuals consistent and high-end</li>
+    </ul>
+    `,
+  },
+
+  "24-ai-maternity-photoshoot-prompts": {
+    name: "24 AI Maternity Photoshoot Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
+      etsy: "https://www.etsy.com/listing/4391491290/24-ai-maternity-photoshoot-prompts-fine",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/7/1.jpg",
+      "/promptbooks/7/2.jpg",
+      "/promptbooks/7/3.jpg",
+      "/promptbooks/7/4.jpg",
+      "/promptbooks/7/5.jpg",
+      "/promptbooks/7/6.jpg",
+      "/promptbooks/7/7.jpg",
+      "/promptbooks/7/8.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 8,
+    },
+    text: `
+    <p>Turn your photo into a beautiful maternity portrait — without studio, makeup, or stress 💫</p>
+    <p>This AI Maternity Photoshoot Prompt Collection helps you create breathtaking images of a pregnant woman in just a few clicks. Simply upload your face photo, paste the prompt, and generate elegant fine-art or fashion-style portraits.</p>
+    <h3>✨ Perfect for:</h3>
+    <ul>
+    <li>future moms who dream of a maternity shoot</li>
+    <li>photographers and AI creators designing maternity visuals</li>
+    <li>content creators, designers, and brands</li>
+    </ul>
+    <h3>🌷 What you get:</h3>
+    <ul>
+    <li>24 universal prompts compatible with most AI tools</li>
+    <li>works for both text-to-image and image-to-image generation</li>
+    <li>fine art, fashion, editorial, romantic, and conceptual scenes</li>
+    <li>professional light, fabric flow, and composition already built in</li>
     </ul>
     `,
   },
