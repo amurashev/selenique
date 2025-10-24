@@ -65,8 +65,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // promptBook EN
     promptBookListPageRoute.getUrl("en"),
-    Object.keys(PROMTBOOKS).map((slug) =>
-      promptBookPageRoute.getUrl("en", { params: { type: slug } })
+    ...Object.keys(PROMTBOOKS).map((slug) =>
+      promptBookPageRoute.getUrl("en", { params: { slug } })
     ),
   ].forEach((item) => {
     pages.push({
