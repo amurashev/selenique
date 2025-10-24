@@ -7,10 +7,13 @@ import {
   iiPhotoShootPageRoute,
   modelsPageRoute,
   productPortfolioPageRoute,
+  promptBookListPageRoute,
+  promptBookPageRoute,
   homePage,
   intensiveNeurovideoPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
+import { PROMTBOOKS } from "@/constants/promptbooks";
 
 const DOMAIN = "https://www.selenique.space";
 
@@ -58,6 +61,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Portfolio EN
      ...PORTFOLIO_TYPES.map((item) =>
       productPortfolioPageRoute.getUrl("en", { params: { type: item.index } })
+    ),
+
+    // promptBook EN
+    promptBookListPageRoute.getUrl("en"),
+    Object.keys(PROMTBOOKS).map((slug) =>
+      promptBookPageRoute.getUrl("en", { params: { type: slug } })
     ),
   ].forEach((item) => {
     pages.push({
