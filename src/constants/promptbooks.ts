@@ -223,6 +223,42 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+
+  "30-christmas-woman-photo-prompts": {
+    name: "30 Christmas Woman Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4392413223/30-christmas-woman-photo-prompts-ai",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/8/1.jpg",
+      "/promptbooks/8/2.jpg",
+      "/promptbooks/8/3.jpg",
+      "/promptbooks/8/4.jpg",
+      "/promptbooks/8/5.jpg",
+      "/promptbooks/8/6.jpg",
+      "/promptbooks/8/7.jpg",
+      "/promptbooks/8/8.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 9,
+    },
+    text: `
+    <p>✨ Create your dream Christmas photoshoot without leaving home! This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>No need to book a photographer or spend hours editing</li>
+    <li>Create magical portraits in just minutes</li>
+    <li>Works for classic, glamorous, and cozy Christmas themes</li>
+    <li>Perfect for content creators, families, and AI art lovers</li>
+    </ul>
+    `,
+  },
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
