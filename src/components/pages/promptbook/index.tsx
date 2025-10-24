@@ -16,14 +16,30 @@ import Link from "next/link";
 import { promptBookListPageRoute } from "@/constants/routes";
 import Header from "@/components/layout/header";
 
+const discount = 40;
+
+const DISCOUNT_END_DAY = "2025-10-31";
+
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
   const { name, text, price, links, images } = data;
 
   const basePrice = {
-    ru: price.ru + Math.ceil(price.ru / 4),
-    en: price.en + Math.ceil(price.en / 4),
+    ru: price.ru + Math.ceil((price.ru * discount) / 50),
+    en: price.en + Math.ceil((price.en * discount) / 50),
   };
+
+  const targetDate = new Date(DISCOUNT_END_DAY);
+
+  // Текущая дата (без времени, чтобы не было дробных дней)
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // Разница в миллисекундах
+  const diff = Number(targetDate) - Number(today);
+
+  // Переводим миллисекунды в дни
+  const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
   const settings = {
     dots: true,
@@ -88,13 +104,16 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           <div className={styles.rightSide}>
             <div className={styles.rightSideBox}>
               <div className={styles.priceSection}>
-                <div>{formatMessage({ id: "common.price" })}</div>
+                {/* <div>{formatMessage({ id: "common.price" })}</div> */}
                 <div className={styles.price}>
                   <PriceWithUnit value={price} />
                 </div>
                 <div className={styles.basePrice}>
                   <PriceWithUnit value={basePrice} />
                 </div>
+              </div>
+              <div className={styles.discountInfo}>
+                {discount}% off • Sale ends in {daysLeft} days
               </div>
               <div className={styles.links}>
                 {links.cm && (
