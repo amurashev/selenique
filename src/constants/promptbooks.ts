@@ -301,6 +301,41 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "30-business-woman-photo-prompts-ai": {
+    name: "30 Business Woman Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4393131014/30-business-woman-photo-prompts-ai",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/10/1.jpg",
+      "/promptbooks/10/3.jpg",
+      "/promptbooks/10/4.jpg",
+      "/promptbooks/10/5.jpg",
+      "/promptbooks/10/6.jpg",
+      "/promptbooks/10/7.jpg",
+      "/promptbooks/10/8.jpg",
+      "/promptbooks/10/9.jpg",
+      "/promptbooks/10/10.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 8,
+    },
+    text: `
+    <p>💼 Elevate your professional image with AI. This Business Woman Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Look confident and professional without expensive photoshoots</li>
+    <li>Create brand-ready portraits in minutes</li>
+    <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
+    </ul>
+    `,
+  },
+
 
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
