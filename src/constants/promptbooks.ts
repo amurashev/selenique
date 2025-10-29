@@ -337,6 +337,47 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
 
+  "60-fantasy-photo-prompts-ai-portrait": {
+    name: "60 Fantasy Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291921616-60-Fantasy-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4395085911/60-fantasy-photo-prompts-ai-portrait",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/11/2.jpg",
+      "/promptbooks/11/3.jpg",
+      "/promptbooks/11/4.jpg",
+      "/promptbooks/11/5.jpg",
+      "/promptbooks/11/6.jpg",
+      "/promptbooks/11/7.jpg",
+      "/promptbooks/11/8.jpg",
+      "/promptbooks/11/9.jpg",
+      "/promptbooks/11/10.jpg",
+      "/promptbooks/11/11.jpg",
+      "/promptbooks/11/12.jpg",
+      "/promptbooks/11/13.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 15,
+    },
+    text: `
+    <p>Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes. Perfect for Midjourney, Krea, Nano Banana, Leonardo AI, Higgsfield and other platforms that support character reference.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 60 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>No need to book a photographer</li>
+    <li>No need to buy costumes or props</li>
+    <li>Save time and money on editing</li>
+    <li>Turn imagination into art</li>
+    <li>Create magical portraits anytime, anywhere</li>
+    </ul>
+    `,
+  },
+
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
