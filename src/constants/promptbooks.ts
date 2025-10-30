@@ -22,7 +22,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 9,
+      en: 20.5,
     },
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
@@ -60,7 +60,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 9,
+      en: 20.5,
     },
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
@@ -95,7 +95,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 9,
+      en: 20.5,
     },
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted men-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
@@ -131,7 +131,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 12,
+      en: 20.5,
     },
     text: `
     <p>Want beauty shots that look like a magazine cover without spending hours tweaking prompts? This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics. You’ll get crisp close-ups (eyes, lips, skin texture), creative makeup (glitter tears, graphic liner, pearly highlights), juicy color accents, wet/dewy looks, and soft beige neutrals for premium skincare vibes.</p>
@@ -168,7 +168,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 9,
+      en: 20.5,
     },
     text: `
     <p>💎 This AI Jewelry Product Photo Prompt Book is a ready-to-use creative tool for generating luxurious and eye-catching jewelry visuals. Inside you will find 50 universal prompts designed for product photography of rings, earrings, bracelets, and necklaces. Each prompt comes with clear structure and reference pictures, making it easy to adapt for your own projects.</p>
@@ -202,7 +202,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 8,
+      en: 10.3,
     },
     text: `
     <p>Turn your photo into a beautiful maternity portrait — without studio, makeup, or stress 💫</p>
@@ -243,7 +243,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 8,
+      en: 13.2,
     },
     text: `
     <p>✨ Create your dream Christmas photoshoot without leaving home! This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.</p>
@@ -280,7 +280,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 8,
+      en: 16.2,
     },
     text: `
     <p>🎁 Turn your child’s Christmas photos into magical portraits — no studio, no photographer needed! This AI prompt pack includes 40 Christmas Kids Photo Prompts designed to create cozy, festive, and heart-warming images in just minutes.</p>
@@ -321,7 +321,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 8,
+      en: 13.2,
     },
     text: `
     <p>💼 Elevate your professional image with AI. This Business Woman Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
@@ -360,7 +360,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 15,
+      en: 25,
     },
     text: `
     <p>Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes. Perfect for Midjourney, Krea, Nano Banana, Leonardo AI, Higgsfield and other platforms that support character reference.</p>

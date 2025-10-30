@@ -18,15 +18,15 @@ import Header from "@/components/layout/header";
 
 const discount = 40;
 
-const DISCOUNT_END_DAY = "2025-10-31";
+const DISCOUNT_END_DAY = "2025-11-05";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
   const { name, text, price, links, images } = data;
 
-  const basePrice = {
+  const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
-    en: price.en + Math.ceil((price.en * discount) / 50),
+    en: Math.ceil(price.en - Math.ceil((price.en * discount / 100))),
   };
 
   const targetDate = new Date(DISCOUNT_END_DAY);
@@ -106,10 +106,10 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
               <div className={styles.priceSection}>
                 {/* <div>{formatMessage({ id: "common.price" })}</div> */}
                 <div className={styles.price}>
-                  <PriceWithUnit value={price} />
+                  <PriceWithUnit value={discountedPrice} />
                 </div>
                 <div className={styles.basePrice}>
-                  <PriceWithUnit value={basePrice} />
+                  <PriceWithUnit value={price} />
                 </div>
               </div>
               <div className={styles.discountInfo}>
