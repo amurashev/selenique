@@ -379,10 +379,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
 
   "fantasy": {
-    name: "60 Fantasy Photo Prompts",
+    name: "25 Wizard School Photo Prompts",
     links: {
-      cm: "https",
-      etsy: "https",
+      cm: "",
+      etsy: "https://www.etsy.com/listing/4396222150/25-wizard-school-photo-prompts-ai",
       patreon: "",
     },
     images: [
@@ -399,18 +399,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     ],
     price: {
       ru: 1000,
-      en: 25,
+      en: 13.2,
     },
     text: `
-    <p>Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes. Perfect for Midjourney, Krea, Nano Banana, Leonardo AI, Higgsfield and other platforms that support character reference.</p>
+    <p>🪄 Step into a world of magic! This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells. Create cinematic portraits filled with magic, mystery, and adventure — no studio or costume needed.</p>
     <h3>🎄 What’s included:</h3>
-    <p>PDF file with 60 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <p>PDF file with 25 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
-    <li>No need to book a photographer</li>
-    <li>No need to buy costumes or props</li>
-    <li>Save time and money on editing</li>
-    <li>Turn imagination into art</li>
+    <li>Transform your selfies into enchanting portraits</li>
+    <li>Save time and money on fantasy photoshoots</li>
+    <li>Perfect for fans, creators, and dreamers of all ages</li>
+    <li>Ideal for gifts, posters, or magical social media content</li>
     <li>Create magical portraits anytime, anywhere</li>
     </ul>
     `,
