@@ -378,6 +378,82 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
 
+  "fantasy": {
+    name: "60 Fantasy Photo Prompts",
+    links: {
+      cm: "https",
+      etsy: "https",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/12/1.jpg",
+      "/promptbooks/12/3.jpg",
+      "/promptbooks/12/4.jpg",
+      "/promptbooks/12/5.jpg",
+      "/promptbooks/12/6.jpg",
+      "/promptbooks/12/7.jpg",
+      "/promptbooks/12/8.jpg",
+      "/promptbooks/12/9.jpg",
+      "/promptbooks/12/10.jpg",
+      "/promptbooks/12/11.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 25,
+    },
+    text: `
+    <p>Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes. Perfect for Midjourney, Krea, Nano Banana, Leonardo AI, Higgsfield and other platforms that support character reference.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 60 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>No need to book a photographer</li>
+    <li>No need to buy costumes or props</li>
+    <li>Save time and money on editing</li>
+    <li>Turn imagination into art</li>
+    <li>Create magical portraits anytime, anywhere</li>
+    </ul>
+    `,
+  },
+
+  "30-ai-business-man-photo-prompts": {
+    name: "30 AI Business Man Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291924401-30-AI-Business-Man-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4395925243/30-ai-business-man-photo-prompts-brand",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/13/1.jpg",
+      "/promptbooks/13/3.jpg",
+      "/promptbooks/13/4.jpg",
+      "/promptbooks/13/5.jpg",
+      "/promptbooks/13/6.jpg",
+      "/promptbooks/13/7.jpg",
+      "/promptbooks/13/8.jpg",
+      "/promptbooks/13/9.jpg",
+      "/promptbooks/13/10.jpg",
+      "/promptbooks/13/11.jpg",
+      "/promptbooks/13/12.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 13.2,
+    },
+    text: `
+    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Look confident and professional without expensive photoshoots</li>
+    <li>Create brand-ready portraits in minutes</li>
+    <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
+    </ul>
+    `,
+  },
+
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
