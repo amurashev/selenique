@@ -378,7 +378,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
 
-  "fantasy": {
+  "25-wizard-school-photo-prompts-ai": {
     name: "25 Wizard School Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291924923-25-Wizard-School-Photo-Prompts",
