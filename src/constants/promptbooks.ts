@@ -490,6 +490,41 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
 
+  "15-ai-women-headshot-prompts-professional": {
+    name: "15 Women Headshot Professional Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
+      etsy: "https://www.etsy.com/listing/4398815563/ai-women-headshot-prompts-professional",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/15/1.jpg",
+      "/promptbooks/15/3.jpg",
+      "/promptbooks/15/4.jpg",
+      "/promptbooks/15/5.jpg",
+      "/promptbooks/15/6.jpg",
+      "/promptbooks/15/7.jpg",
+      "/promptbooks/15/8.jpg",
+      "/promptbooks/15/20.jpg",
+      "/promptbooks/15/21.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 9,
+    },
+    text: `
+    <p>💼 Create confident, professional portraits with AI — perfect for LinkedIn, websites, and personal branding.This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 15 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Look polished and professional without booking a photographer</li>
+    <li>Create portraits in minutes that elevate your brand</li>
+    <li>Ideal for entrepreneurs, coaches, and creatives</li>
+    </ul>
+    `,
+  },
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
