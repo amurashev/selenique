@@ -454,6 +454,42 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
 
+  "ai-photo-prompts-30-woman-work-lifestyle": {
+    name: "30 Woman Work & Lifestyle Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4398101656/ai-photo-prompts-30-woman-work-lifestyle",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/14/1.jpg",
+      "/promptbooks/14/3.jpg",
+      "/promptbooks/14/4.jpg",
+      "/promptbooks/14/17.jpg",
+      "/promptbooks/14/18.jpg",
+      "/promptbooks/14/19.jpg",
+      "/promptbooks/14/20.jpg",
+      "/promptbooks/14/21.jpg",
+      "/promptbooks/14/22.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 13.2,
+    },
+    text: `
+    <p>💻 Create confident, elegant, and lifestyle-inspired portraits with AI. This prompt pack includes 30 Woman Work & Lifestyle Photo Prompts designed for personal branding, business visuals, and social media content. Perfect for entrepreneurs, coaches, and creatives who want high-quality, natural portraits without expensive photoshoots.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Save time and money on professional photography</li>
+    <li>Look confident, stylish, and authentic</li>
+    <li>Ideal for websites, brand visuals, or online portfolios</li>
+    </ul>
+    `,
+  },
+
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
