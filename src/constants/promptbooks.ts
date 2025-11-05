@@ -525,6 +525,78 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "50-old-money-ai-photo-prompts-vol1": {
+    name: "50 Old Money AI Photo Prompts Vol.1",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
+      etsy: "https://www.etsy.com/listing/4399220145/50-old-money-ai-photo-prompts-vol1",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/16/1.jpg",
+      "/promptbooks/16/3.jpg",
+      "/promptbooks/16/4.jpg",
+      "/promptbooks/16/5.jpg",
+      "/promptbooks/16/6.jpg",
+      "/promptbooks/16/7.jpg",
+      "/promptbooks/16/8.jpg",
+      "/promptbooks/16/9.jpg",
+      "/promptbooks/16/10.jpg",
+      "/promptbooks/16/11.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 20.5,
+    },
+    text: `
+    <p>Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.1) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 50 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>✨ Perfect for:</h3>
+    <ul>
+    <li>Those who dream of an elegant photoshoot in Old Money style — without hiring a photographer or buying outfits</li>
+    <li>Designers, stylists, and photographers seeking luxury moodboards and campaign ideas</li>
+    <li>Clothing brands wanting to present their collections in a cohesive, high-end visual style</li>
+    </ul>
+    `,
+  },
+
+  "50-old-money-ai-photo-prompts-vol2": {
+    name: "50 Old Money AI Photo Prompts Vol.2",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
+      etsy: "https://www.etsy.com/listing/4399232905/50-old-money-ai-photo-prompts-vol2",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/17/1.jpg",
+      "/promptbooks/17/3.jpg",
+      "/promptbooks/17/4.jpg",
+      "/promptbooks/17/5.jpg",
+      "/promptbooks/17/6.jpg",
+      "/promptbooks/17/7.jpg",
+      "/promptbooks/17/8.jpg",
+      "/promptbooks/17/9.jpg",
+      "/promptbooks/17/10.jpg",
+      "/promptbooks/17/11.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 20.5,
+    },
+    text: `
+    <p>Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.2) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF file with 50 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>✨ Perfect for:</h3>
+    <ul>
+    <li>Those who dream of an elegant photoshoot in Old Money style — without hiring a photographer or buying outfits</li>
+    <li>Designers, stylists, and photographers seeking luxury moodboards and campaign ideas</li>
+    <li>Clothing brands wanting to present their collections in a cohesive, high-end visual style</li>
+    </ul>
+    `,
+  },
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
