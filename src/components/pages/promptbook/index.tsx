@@ -18,7 +18,7 @@ import Header from "@/components/layout/header";
 
 const discount = 40;
 
-const DISCOUNT_END_DAY = "2025-11-05";
+const DISCOUNT_END_DAY = "2025-11-16";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
