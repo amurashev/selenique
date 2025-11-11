@@ -148,6 +148,11 @@
   }
 }
 
+.naMessage {
+  font-size: 22px;
+  color: #aaaaaa;
+}
+
 @media (min-width: 760px) {
   .main {
     h1 {

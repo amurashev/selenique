@@ -22,7 +22,7 @@ const DISCOUNT_END_DAY = "2025-11-16";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { name, text, price, links, images } = data;
+  const { name, text, price, links, images, isDisabled } = data;
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -102,7 +102,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           </div>
 
           <div className={styles.rightSide}>
-            <div className={styles.rightSideBox}>
+            {!isDisabled ? (<div className={styles.rightSideBox}>
               <div className={styles.priceSection}>
                 {/* <div>{formatMessage({ id: "common.price" })}</div> */}
                 <div className={styles.price}>
@@ -140,7 +140,11 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                   </Link>
                 )}
               </div>
-            </div>
+            </div>) : (
+              <div className={styles.rightSideBox}>
+               <div className={styles.naMessage}> Not available for now</div>
+              </div>
+            )}
 
             <Link
               className={styles.linkSecondary}

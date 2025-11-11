@@ -417,11 +417,12 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
   "30-ai-business-man-photo-prompts": {
+    isDisabled: true,
     name: "30 AI Business Man Photo Prompts",
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291924401-30-AI-Business-Man-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4395925243/30-ai-business-man-photo-prompts-brand",
-      patreon: "",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291924401-30-AI-Business-Man-Photo-Prompts",
+      // etsy: "https://www.etsy.com/listing/4395925243/30-ai-business-man-photo-prompts-brand",
+      // patreon: "",
     },
     images: [
       "/promptbooks/13/1.jpg",
@@ -594,6 +595,38 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     <li>Designers, stylists, and photographers seeking luxury moodboards and campaign ideas</li>
     <li>Clothing brands wanting to present their collections in a cohesive, high-end visual style</li>
     </ul>
+    `,
+  },
+
+  "22-business-man-headshot-prompts-ai": {
+    name: "22 Business Man Headshot Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
+      etsy: "https://www.etsy.com/listing/4402125175/22-business-man-headshot-prompts-ai",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/18/1.jpg",
+      "/promptbooks/18/3.jpg",
+      "/promptbooks/18/4.jpg",
+      "/promptbooks/18/5.jpg",
+      "/promptbooks/18/6.jpg",
+      "/promptbooks/18/7.jpg",
+      "/promptbooks/18/8.jpg",
+      "/promptbooks/18/9.jpg",
+      "/promptbooks/18/10.jpg",
+      "/promptbooks/18/11.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 9,
+    },
+    text: `
+    <p>💼 Create powerful and confident business portraits with AI. This AI prompt pack includes 22 professional men’s headshot prompts — perfect for LinkedIn, websites, personal branding, and corporate visuals..</p>
+    <h3>🎄 What’s included:</h3>
+    <p>PDF with 22 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
+    <h3>✨ Why you’ll love it:</h3>
+    <p>Look confident and professional without expensive photoshoots Create high-quality portraits in minutes Ideal for entrepreneurs, executives, and business professionals</p>
     `,
   },
 
