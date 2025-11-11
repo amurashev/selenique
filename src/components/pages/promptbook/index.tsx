@@ -16,7 +16,7 @@ import Link from "next/link";
 import { promptBookListPageRoute } from "@/constants/routes";
 import Header from "@/components/layout/header";
 
-const discount = 40;
+const discount = 30;
 
 const DISCOUNT_END_DAY = "2025-11-16";
 

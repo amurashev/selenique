@@ -1,0 +1,78 @@
+.page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  width: 480px;
+  font-family: "Inter", sans-serif;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #6c7280;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #66bf68;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.progressMarks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #66bf68;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+
+.percent {
+  /* font-weight: 700; */
+}
+
+.mark {
+  font-weight: 700;
+}
+
+.progressBar {
+  background-color: #e0e9f0;
+  border-radius: 8px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.progressFill {
+  background-color: #66bf68;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
