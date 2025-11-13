@@ -325,7 +325,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>💼 Elevate your professional image with AI. This Business Woman Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
@@ -364,7 +364,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes. Perfect for Midjourney, Krea, Nano Banana, Leonardo AI, Higgsfield and other platforms that support character reference.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 60 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
@@ -403,7 +403,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>🪄 Step into a world of magic! This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells. Create cinematic portraits filled with magic, mystery, and adventure — no studio or costume needed.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 25 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
@@ -443,7 +443,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
@@ -479,7 +479,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>💻 Create confident, elegant, and lifestyle-inspired portraits with AI. This prompt pack includes 30 Woman Work & Lifestyle Photo Prompts designed for personal branding, business visuals, and social media content. Perfect for entrepreneurs, coaches, and creatives who want high-quality, natural portraits without expensive photoshoots.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
@@ -515,7 +515,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>💼 Create confident, professional portraits with AI — perfect for LinkedIn, websites, and personal branding.This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 15 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
@@ -551,7 +551,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.1) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 50 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>✨ Perfect for:</h3>
     <ul>
@@ -587,7 +587,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.2) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF file with 50 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>✨ Perfect for:</h3>
     <ul>
@@ -623,12 +623,148 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     text: `
     <p>💼 Create powerful and confident business portraits with AI. This AI prompt pack includes 22 professional men’s headshot prompts — perfect for LinkedIn, websites, personal branding, and corporate visuals..</p>
-    <h3>🎄 What’s included:</h3>
+    <h3>📸 What’s included:</h3>
     <p>PDF with 22 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
     <h3>✨ Why you’ll love it:</h3>
     <p>Look confident and professional without expensive photoshoots Create high-quality portraits in minutes Ideal for entrepreneurs, executives, and business professionals</p>
     `,
   },
+
+  "40-muslim-women-business-photo-prompts": {
+    name: "40 Muslim Women Business Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291948535-Muslim-Women-Business-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4404024867/40-muslim-women-business-photo-prompts",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/19/1.jpg",
+      "/promptbooks/19/3.jpg",
+      "/promptbooks/19/4.jpg",
+      "/promptbooks/19/5.jpg",
+      "/promptbooks/19/6.jpg",
+      "/promptbooks/19/7.jpg",
+      "/promptbooks/19/8.jpg",
+      "/promptbooks/19/9.jpg",
+      "/promptbooks/19/21.jpg",
+      "/promptbooks/19/22.jpg",
+      "/promptbooks/19/23.jpg",
+      "/promptbooks/19/24.jpg",
+      "/promptbooks/19/25.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 20.5,
+    },
+    text: `
+    <p>🌿 Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings. Perfect for personal branding, education, and corporate visuals with authenticity and respect.</p>
+    <h3>📸 What’s included:</h3>
+    <p>PDF with 40 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
+    <h3>✨ Why you’ll love it:</h3>
+    <ul>
+    <li>Create beautiful and respectful business portraits in minutes</li>
+    <li>Ideal for websites, social media, and brand visuals</li>
+    <li>Save time and money on professional photography</li>
+    </ul>
+    `,
+  },
+
+  "8-red-carpet-men-photo-prompts-ai": {
+    name: "8 Red Carpet Men Photo Prompts",
+    links: {
+      cm: "",
+      etsy: "https://www.etsy.com/listing/4403405005/8-red-carpet-men-photo-prompts-ai-male",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/20/1.jpg",
+      "/promptbooks/20/2.jpg",
+      "/promptbooks/20/3.jpg",
+      "/promptbooks/20/4.jpg",
+      "/promptbooks/20/5.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 6,
+    },
+    text: `
+    <p>🎥 Step into the spotlight with elegance and confidence.</p>
+    <p>This AI prompt pack includes 8 red carpet photo prompts for men, inspired by celebrity galas, movie premieres, and award nights. Perfect for creating stylish portraits in tuxedos and tailored suits — no photographer or studio needed.</p>
+    <h3>📸 What’s included:</h3>
+    <p>PDF with 8 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
+    <h3>✨ Why you’ll love it:</h3>
+    <ul>
+    <li>Get professional, cinematic portraits in minutes</li>
+    <li>Save time and money on fashion photoshoots</li>
+    <li>Ideal for content creators, fashion brands, and AI artists</li>
+    </ul>
+    `,
+  },
+
+  "8-red-carpet-women-photo-prompts": {
+    name: "8 Red Carpet Women Photo Prompts",
+    links: {
+      cm: "",
+      etsy: "https://www.etsy.com/listing/4403398257/8-red-carpet-women-fashion-photo-prompts",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/21/1.jpg",
+      "/promptbooks/21/2.jpg",
+      "/promptbooks/21/3.jpg",
+      "/promptbooks/21/4.jpg",
+      "/promptbooks/21/5.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 6,
+    },
+    text: `
+    <p>💃 Step onto the red carpet in style!</p>
+    <p>This AI prompt pack includes 8 high-fashion women photo prompts inspired by glamorous award shows, flashing cameras, and couture looks. Create cinematic portraits that feel straight from Cannes, Vogue, or the Met Gala — no studio or stylist needed.</p>
+    <h3>📸 What’s included:</h3>
+    <p>PDF with 8 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
+    <h3>✨ Why you’ll love it:</h3>
+    <ul>
+    <li>Transform your photo into a red carpet masterpiece</li>
+    <li>Save time and money on luxury fashion shoots</li>
+    <li>Perfect for fashion brands, creators, and social media content</li>
+    </ul>
+    `,
+  },
+
+  "8-red-carpet-couple-ai-photo-prompts": {
+    name: "8 Red Carpet Couple AI Photo Prompts",
+    links: {
+      cm: "",
+      etsy: "https://www.etsy.com/listing/4403489169/red-carpet-couple-ai-photo-prompts-gala",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/22/1.jpg",
+      "/promptbooks/22/2.jpg",
+      "/promptbooks/22/3.jpg",
+      "/promptbooks/22/4.jpg",
+      "/promptbooks/22/5.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 6,
+    },
+    text: `
+    <p>💫 Step into the spotlight together!</p>
+    <p>This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.</p>
+    <h3>📸 What’s included:</h3>
+    <p>PDF with 8 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
+    <h3>✨ Why you’ll love it:</h3>
+    <ul>
+    <li>Transform your photos into red carpet moments</li>
+    <li>Save time and money on luxury shoots</li>
+    <li>Perfect for couples, creators, and fashion brands</li>
+    </ul>
+    `,
+  },
+
 
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",

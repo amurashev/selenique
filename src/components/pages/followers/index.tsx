@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 export default function PolicyPage() {
   const first = 3100;
-  const current = 3300;
+  const current = 3600;
   const target = 5000;
 
   const left = target - current;
