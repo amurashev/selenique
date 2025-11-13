@@ -416,16 +416,16 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-  "30-ai-business-man-photo-prompts": {
-    isDisabled: true,
-    name: "30 AI Business Man Photo Prompts",
+  "40-ai-business-man-photo-prompts": {
+    // isDisabled: true,
+    name: "40 AI Business Man Photo Prompts",
     links: {
-      // cm: "https://creativemarket.com/AlenaMurasheva/291924401-30-AI-Business-Man-Photo-Prompts",
-      // etsy: "https://www.etsy.com/listing/4395925243/30-ai-business-man-photo-prompts-brand",
+      cm: "https://creativemarket.com/AlenaMurasheva/291924401-40-AI-Business-Man-Photo-Prompts",
+      etsy: "https://www.etsy.com/listing/4395925243/40-ai-business-man-photo-prompts-brand",
       // patreon: "",
     },
     images: [
-      "/promptbooks/13/1.jpg",
+      "/promptbooks/13/2.jpg",
       "/promptbooks/13/3.jpg",
       "/promptbooks/13/4.jpg",
       "/promptbooks/13/5.jpg",
@@ -436,15 +436,17 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "/promptbooks/13/10.jpg",
       "/promptbooks/13/11.jpg",
       "/promptbooks/13/12.jpg",
+      "/promptbooks/13/13.jpg",
+      "/promptbooks/13/14.jpg",
     ],
     price: {
       ru: 1000,
       en: 13.2,
     },
     text: `
-    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
+    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 40 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
     <h3>📸 What’s included:</h3>
-    <p>PDF file with 30 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <p>PDF file with 40 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Gemini, and other tools supporting Character Reference Works with your own face photo or model image.</p>
     <h3>💫 Why you’ll love it:</h3>
     <ul>
     <li>Look confident and professional without expensive photoshoots</li>
