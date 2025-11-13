@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: ["https://www.selenique.space/product/bg2.webp"],
     title: title,
     description,
-    url: "https://www.selenique.space/creating-photo-for-e-commerce",
+    url: "https://www.selenique.space/en/creating-photo-for-e-commerce",
     type: "website",
   },
 };

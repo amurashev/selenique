@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
@@ -26,7 +26,7 @@ export async function generateMetadata({
       images: [`https://www.selenique.space${data.images[0]}`],
       title: title,
       description,
-      url: `https://www.selenique.space/prompt-books/${slug}`,
+      url: `https://www.selenique.space/en/prompt-books/${slug}`,
       type: "website",
     },
   };
@@ -42,7 +42,7 @@ export default async function PromptbookPageEntry({
   const data = PROMTBOOKS[slug || "null"];
 
   if (!data) {
-    return notFound();
+    return redirect('/en/prompt-books');
   }
 
   return (
