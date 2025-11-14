@@ -768,6 +768,43 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
 
+  "35-cosmetic-product-photo-prompts": {
+    name: "35 Cosmetic Product Photo Prompts",
+    links: {
+      cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
+      etsy: "https://www.etsy.com/listing/4404726085/cosmetic-product-photo-prompts-35",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/23/2.jpg",
+      "/promptbooks/23/4.jpg",
+      "/promptbooks/23/5.jpg",
+      "/promptbooks/23/6.jpg",
+      "/promptbooks/23/7.jpg",
+      "/promptbooks/23/8.jpg",
+      "/promptbooks/23/9.jpg",
+      "/promptbooks/23/10.jpg",
+      "/promptbooks/23/11.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 14.5,
+    },
+    text: `
+    <p>✨ Create elegant cosmetic product visuals in minutes. This digital PDF includes 35 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers. </p>
+    <p>Prompts are written in clear, adaptable wording with placeholder so you can quickly replace the product. You can change color, background, mood and lighting. Works across multiple AIs and keeps a consistent premium aesthetic.</p>
+    <h3>📘 What’s inside:</h3>
+    <ul>
+    <li>35 editable prompts (English)</li>
+    <li>Reference images for composition and light (provided as examples, not HD photos)</li>
+    <li>Universal structure tested in Midjourney, Krea, Gimini, Seedream, Nano Banana, etc.</li>
+    </ul>
+    <h3>💄 Perfect for</h3>
+    <p>Designers, cosmetic brand owners, online shops, content creators and marketers who need polished beauty visuals for e-commerce, portfolios, ads and social media.</p>
+    `,
+  },
+
+
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
