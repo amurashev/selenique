@@ -5,8 +5,8 @@ import { useIntl } from "react-intl";
 import styles from "./page.module.css";
 
 export default function PolicyPage() {
-  const first = 3100;
-  const current = 3695;
+  const first = 3000;
+  const current = 5000;
   const target = 5000;
 
   const left = target - current;

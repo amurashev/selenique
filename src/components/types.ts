@@ -11,6 +11,7 @@ export type PromptBookRaw = {
     patreon?: string;
     cm?: string;
     etsy?: string;
+    gumroad?: string
   };
   images: string[];
 };

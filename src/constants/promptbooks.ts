@@ -306,6 +306,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4393131014/30-business-woman-photo-prompts-ai",
+      gumroad: "https://seleniquestudio.gumroad.com/l/30-ai-business-woman-photo-prompts",
       patreon: "",
     },
     images: [

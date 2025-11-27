@@ -26,7 +26,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
-    en: Math.ceil(price.en - Math.ceil((price.en * discount / 100))),
+    en: Math.ceil(price.en - Math.ceil((price.en * discount) / 100)),
   };
 
   const targetDate = new Date(DISCOUNT_END_DAY);
@@ -102,47 +102,62 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           </div>
 
           <div className={styles.rightSide}>
-            {!isDisabled ? (<div className={styles.rightSideBox}>
-              <div className={styles.priceSection}>
-                {/* <div>{formatMessage({ id: "common.price" })}</div> */}
-                <div className={styles.price}>
-                  <PriceWithUnit value={discountedPrice} />
-                </div>
-                <div className={styles.basePrice}>
-                  <PriceWithUnit value={price} />
-                </div>
-              </div>
-              <div className={styles.discountInfo}>
-                {discount}% off • Sale ends in {daysLeft} days
-              </div>
-              <div className={styles.links}>
-                {links.cm && (
-                  <Link className={styles.link} href={links.cm} target="_blank">
-                    Buy on Creative Market
-                  </Link>
-                )}
-                {links.patreon && (
-                  <Link
-                    className={styles.link}
-                    href={links.patreon}
-                    target="_blank"
-                  >
-                    Buy on Patreon
-                  </Link>
-                )}
-                {links.etsy && (
-                  <Link
-                    className={styles.link}
-                    href={links.etsy}
-                    target="_blank"
-                  >
-                    Buy on Etsy
-                  </Link>
-                )}
-              </div>
-            </div>) : (
+            {!isDisabled ? (
               <div className={styles.rightSideBox}>
-               <div className={styles.naMessage}> Not available for now</div>
+                <div className={styles.priceSection}>
+                  {/* <div>{formatMessage({ id: "common.price" })}</div> */}
+                  <div className={styles.price}>
+                    <PriceWithUnit value={discountedPrice} />
+                  </div>
+                  <div className={styles.basePrice}>
+                    <PriceWithUnit value={price} />
+                  </div>
+                </div>
+                <div className={styles.discountInfo}>
+                  {discount}% off • Sale ends in {daysLeft} days
+                </div>
+                <div className={styles.links}>
+                  {links.cm && (
+                    <Link
+                      className={styles.link}
+                      href={links.cm}
+                      target="_blank"
+                    >
+                      Buy on Creative Market
+                    </Link>
+                  )}
+                  {links.patreon && (
+                    <Link
+                      className={styles.link}
+                      href={links.patreon}
+                      target="_blank"
+                    >
+                      Buy on Patreon
+                    </Link>
+                  )}
+                  {links.gumroad && (
+                    <Link
+                      className={styles.link}
+                      href={links.gumroad}
+                      target="_blank"
+                    >
+                      Buy on GumRoad
+                    </Link>
+                  )}
+                  {links.etsy && (
+                    <Link
+                      className={styles.link}
+                      href={links.etsy}
+                      target="_blank"
+                    >
+                      Buy on Etsy
+                    </Link>
+                  )}
+                </div>
+              </div>
+            ) : (
+              <div className={styles.rightSideBox}>
+                <div className={styles.naMessage}> Not available for now</div>
               </div>
             )}
 
