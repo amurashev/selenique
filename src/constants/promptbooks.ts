@@ -116,6 +116,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
       patreon: "",
       etsy: "https://www.etsy.com/listing/4386090496/50-ideal-skin-midjourney-prompts-v1",
+      gumroad: "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
     },
     images: [
       "/promptbooks/4/1.jpg",
@@ -418,11 +419,12 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 
   "40-ai-business-man-photo-prompts": {
-    // isDisabled: true,
+    isDisabled: true,
     name: "40 AI Business Man Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291924401-40-AI-Business-Man-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4395925243/40-ai-business-man-photo-prompts-brand",
+      gumroad: "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
       // patreon: "",
     },
     images: [
@@ -499,6 +501,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
       etsy: "https://www.etsy.com/listing/4398815563/ai-women-headshot-prompts-professional",
+      gumroad: "https://seleniquestudio.gumroad.com/l/15-ai-women-headshot-prompts",
       patreon: "",
     },
     images: [
@@ -606,6 +609,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
       etsy: "https://www.etsy.com/listing/4402125175/22-business-man-headshot-prompts-ai",
+      gumroad: "https://seleniquestudio.gumroad.com/l/22-business-man-headshot-prompts",
       patreon: "",
     },
     images: [
