@@ -43,6 +43,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
       patreon: "", // "https://www.patreon.com/posts/139108809",
       etsy: "https://www.etsy.com/listing/4386890966/50-high-fashion-editorial-prompts-v2",
+      gumroad: "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts",
     },
     images: [
       "/promptbooks/5/1.jpg",
@@ -189,6 +190,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
       etsy: "https://www.etsy.com/listing/4391491290/24-ai-maternity-photoshoot-prompts-fine",
+      gumroad: "https://seleniquestudio.gumroad.com/l/24-ai-maternity-photoshoot-prompts",
       patreon: "",
     },
     images: [
@@ -230,6 +232,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4392413223/30-christmas-woman-photo-prompts-ai",
+      gumroad: "https://seleniquestudio.gumroad.com/l/30-christmas-woman-photo-prompts",
       patreon: "",
     },
     images: [
@@ -265,6 +268,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4392409070/40-christmas-kids-photo-prompts-ai",
+      gumroad: "https://seleniquestudio.gumroad.com/l/40-christmas-kids-ai-photo-prompts",
       patreon: "",
     },
     images: [
@@ -681,6 +685,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403405005/8-red-carpet-men-photo-prompts-ai-male",
+      gumroad: "https://seleniquestudio.gumroad.com/l/8-red-carpet-men-photo-prompts",
       patreon: "",
     },
     images: [
@@ -713,6 +718,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403398257/8-red-carpet-women-fashion-photo-prompts",
+      gumroad: "https://seleniquestudio.gumroad.com/l/8-red-carpet-women-ai-photo-prompts",
       patreon: "",
     },
     images: [
@@ -745,6 +751,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403489169/red-carpet-couple-ai-photo-prompts-gala",
+      gumroad: "https://seleniquestudio.gumroad.com/l/8-red-carpet-couple-ai-photo-prompts",
       patreon: "",
     },
     images: [
@@ -778,6 +785,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
       etsy: "https://www.etsy.com/listing/4404726085/cosmetic-product-photo-prompts-35",
+      gumroad: "https://seleniquestudio.gumroad.com/l/35-cosmetic-product-photo-prompts",
       patreon: "",
     },
     images: [
