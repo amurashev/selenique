@@ -817,6 +817,48 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "32-business-man-photo-prompts": {
+    name: "35 Cosmetic Product Photo Prompts",
+    links: {
+      // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
+      etsy: "https://www.etsy.com/listing/4407678906/32-ai-business-man-photo-prompts-brand",
+      gumroad: "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
+      patreon: "",
+    },
+    images: [
+      "/promptbooks/24/2.jpg",
+      "/promptbooks/24/3.jpg",
+      "/promptbooks/24/4.jpg",
+      "/promptbooks/24/5.jpg",
+      "/promptbooks/24/6.jpg",
+      "/promptbooks/24/7.jpg",
+      "/promptbooks/24/8.jpg",
+      "/promptbooks/24/9.jpg",
+      "/promptbooks/24/10.jpg",
+      "/promptbooks/24/11.jpg",
+      "/promptbooks/24/12.jpg",
+      "/promptbooks/24/13.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 9.9,
+    },
+    text: `
+    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content. </p>
+    <h3>📸 What’s inside:</h3>
+    <ul>
+    <li>PDF file with beautifully designed prompt pages</li>
+    <li>Each page includes the full text prompt and its visual reference</li>
+    </ul>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Look confident and professional without expensive photoshoots</li>
+    <li>Create brand-ready portraits in minutes</li>
+    <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
+    </ul>
+    `,
+  },
+
 
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
@@ -850,3 +892,33 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   //   `,
   // },
 };
+
+
+export const promptbooksOrdered: string[] = [
+  "22-business-man-headshot-prompts-ai",
+  "30-business-woman-photo-prompts-ai",
+  "ai-photo-prompts-30-woman-work-lifestyle",
+  "32-business-man-photo-prompts",
+  "15-ai-women-headshot-prompts-professional",
+  "40-muslim-women-business-photo-prompts",
+  "24-ai-maternity-photoshoot-prompts",
+
+  "8-red-carpet-men-photo-prompts-ai",
+  "8-red-carpet-women-photo-prompts",
+  "8-red-carpet-couple-ai-photo-prompts",
+
+  "50-ideal-skin-midjourney-prompts-vol-1",
+  "50-jewelry-product-photo-ai-prompts",
+  "35-cosmetic-product-photo-prompts",
+
+  "30-christmas-woman-photo-prompts",
+  "40-christmas-kids-photo-prompts-ai",
+
+  "50-high-fashion-editorial-prompts-vol-1",
+  "50-high-fashion-editorial-prompts-vol-2",
+  "50-men-fashion-editorial-prompts-vol-1",
+  "60-fantasy-photo-prompts-ai-portrait",
+  "25-wizard-school-photo-prompts-ai",
+  "50-old-money-ai-photo-prompts-vol1",
+  "50-old-money-ai-photo-prompts-vol2",
+]

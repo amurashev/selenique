@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
 import { promptBookPageRoute } from "@/constants/routes";
 import Header from "@/components/layout/header";
 
@@ -17,7 +17,7 @@ export default function PromptbookListPage() {
       <main className={styles.main}>
         <h1>Our Prompt Books</h1>
         <div className={styles.list}>
-          {Object.keys(PROMTBOOKS).map((slug) => {
+          {promptbooksOrdered.map((slug) => {
             const { name, images} = PROMTBOOKS[slug];
             return (
               <Link

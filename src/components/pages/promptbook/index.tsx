@@ -104,8 +104,8 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           <div className={styles.rightSide}>
             {!isDisabled ? (
               <div className={styles.rightSideBox}>
-                <div className={styles.priceSection}>
-                  {/* <div>{formatMessage({ id: "common.price" })}</div> */}
+                {/* <div className={styles.priceSection}>
+                  <div>{formatMessage({ id: "common.price" })}</div>
                   <div className={styles.price}>
                     <PriceWithUnit value={discountedPrice} />
                   </div>
@@ -115,7 +115,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                 </div>
                 <div className={styles.discountInfo}>
                   {discount}% off • Sale ends in {daysLeft} days
-                </div>
+                </div> */}
                 <div className={styles.links}>
                   {links.cm && (
                     <Link
