@@ -347,10 +347,46 @@
   "FileName": "aeee1b20-1c6d-4878-b8ed-4a313b00cf19.png"
 },
 {
+  "SourceFile": "./public/product/portfolio/jewelry/303.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "303.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/302.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "302.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/300.JPG",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "300.JPG"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/301.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "301.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/jewelry/9b198653-ea13-4134-8524-2e66317522eb.png",
   "ImageWidth": 864,
   "ImageHeight": 1184,
   "FileName": "9b198653-ea13-4134-8524-2e66317522eb.png"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/311.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "311.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/305.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "305.jpg"
 },
 {
   "SourceFile": "./public/product/portfolio/jewelry/12.png",
@@ -371,6 +407,30 @@
   "FileName": "13.png"
 },
 {
+  "SourceFile": "./public/product/portfolio/jewelry/304.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "304.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/310.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "310.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/306.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "306.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/312.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "312.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/jewelry/11.png",
   "ImageWidth": 864,
   "ImageHeight": 1184,
@@ -381,6 +441,12 @@
   "ImageWidth": 846,
   "ImageHeight": 1184,
   "FileName": "456d03d5-f91a-4f85-ad95-6baa01464211.png"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/307.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "307.jpg"
 },
 {
   "SourceFile": "./public/product/portfolio/jewelry/10.jpg",
@@ -411,6 +477,18 @@
   "ImageWidth": 864,
   "ImageHeight": 1184,
   "FileName": "c965714b-35f6-4fa1-905d-ba50b7bceb48.png"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/309.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "309.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/jewelry/308.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "308.jpg"
 },
 {
   "SourceFile": "./public/product/portfolio/jewelry/c82f8130-86aa-41f2-9c74-06d4e8e44b8d.png",
@@ -557,10 +635,22 @@
   "FileName": "162.jpg"
 },
 {
-  "SourceFile": "./public/product/portfolio/cloth/76.png",
-  "ImageWidth": 780,
-  "ImageHeight": 1092,
-  "FileName": "76.png"
+  "SourceFile": "./public/product/portfolio/cloth/214.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "214.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/201.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "201.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/215.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "215.jpg"
 },
 {
   "SourceFile": "./public/product/portfolio/cloth/163.jpg",
@@ -581,16 +671,34 @@
   "FileName": "161.jpg"
 },
 {
+  "SourceFile": "./public/product/portfolio/cloth/203.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "203.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/217.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "217.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/216.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "216.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/202.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1050,
+  "FileName": "202.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/cloth/49.png",
   "ImageWidth": 864,
   "ImageHeight": 1184,
   "FileName": "49.png"
-},
-{
-  "SourceFile": "./public/product/portfolio/cloth/75.png",
-  "ImageWidth": 781,
-  "ImageHeight": 1095,
-  "FileName": "75.png"
 },
 {
   "SourceFile": "./public/product/portfolio/cloth/61.png",
@@ -617,6 +725,30 @@
   "FileName": "71.png"
 },
 {
+  "SourceFile": "./public/product/portfolio/cloth/206.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1050,
+  "FileName": "206.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/212.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "212.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/213.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "213.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/207.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "207.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/cloth/70.png",
   "ImageWidth": 864,
   "ImageHeight": 1184,
@@ -641,16 +773,34 @@
   "FileName": "66.png"
 },
 {
+  "SourceFile": "./public/product/portfolio/cloth/211.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "211.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/205.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "205.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/204.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1050,
+  "FileName": "204.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/210.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1050,
+  "FileName": "210.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/cloth/67.png",
   "ImageWidth": 896,
   "ImageHeight": 1152,
   "FileName": "67.png"
-},
-{
-  "SourceFile": "./public/product/portfolio/cloth/73.png",
-  "ImageWidth": 832,
-  "ImageHeight": 1164,
-  "FileName": "73.png"
 },
 {
   "SourceFile": "./public/product/portfolio/cloth/115.jpeg",
@@ -767,6 +917,42 @@
   "FileName": "42.png"
 },
 {
+  "SourceFile": "./public/product/portfolio/cloth/209.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "209.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/235.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "235.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/221.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "221.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/220.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "220.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/234.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "234.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/208.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1169,
+  "FileName": "208.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/cloth/57.png",
   "ImageWidth": 864,
   "ImageHeight": 1184,
@@ -783,6 +969,18 @@
   "ImageWidth": 864,
   "ImageHeight": 1184,
   "FileName": "69.png"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/222.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "222.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/223.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "223.jpg"
 },
 {
   "SourceFile": "./public/product/portfolio/cloth/68.png",
@@ -821,6 +1019,18 @@
   "FileName": "44.png"
 },
 {
+  "SourceFile": "./public/product/portfolio/cloth/233.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "233.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/232.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "232.jpg"
+},
+{
   "SourceFile": "./public/product/portfolio/cloth/150.jpg",
   "ImageWidth": 896,
   "ImageHeight": 1152,
@@ -831,6 +1041,30 @@
   "ImageWidth": 896,
   "ImageHeight": 1152,
   "FileName": "152.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/230.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "230.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/224.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "224.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/218.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "218.jpg"
+},
+{
+  "SourceFile": "./public/product/portfolio/cloth/231.jpg",
+  "ImageWidth": 784,
+  "ImageHeight": 1168,
+  "FileName": "231.jpg"
 },
 {
   "SourceFile": "./public/product/portfolio/cloth/153.jpg",
