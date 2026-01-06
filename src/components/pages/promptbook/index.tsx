@@ -117,7 +117,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                   {discount}% off • Sale ends in {daysLeft} days
                 </div> */}
                 <div className={styles.links}>
-                  {links.cm && (
+                  {/* {links.cm && (
                     <Link
                       className={styles.link}
                       href={links.cm}
@@ -125,7 +125,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                     >
                       Buy on Creative Market
                     </Link>
-                  )}
+                  )} */}
                   {links.patreon && (
                     <Link
                       className={styles.link}
