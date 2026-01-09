@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useIntl } from "react-intl";
 
 import styles from "./page.module.css";
 import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
-import { promptBookPageRoute } from "@/constants/routes";
+
 import Header from "@/components/layout/header";
+import PromptbookItem from "@/components/sections/promptbook-item";
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
@@ -18,22 +18,12 @@ export default function PromptbookListPage() {
         <h1>Our Prompt Books</h1>
         <div className={styles.list}>
           {promptbooksOrdered.map((slug) => {
-            const { name, images} = PROMTBOOKS[slug];
+            const item = {
+              ...PROMTBOOKS[slug],
+              slug
+            };
             return (
-              <Link
-                key={slug}
-                href={promptBookPageRoute.getUrl(locale, {
-                  params: {
-                    slug,
-                  },
-                })}
-                className={styles.card}
-              >
-                <img src={images[0]} alt={name} className={styles.image} />
-                {/* <div className={styles.textBlock}>
-                  <h3 className={styles.title}>{name}</h3>
-                </div> */}
-              </Link>
+              <PromptbookItem key={slug} item={item} />
             );
           })}
         </div>

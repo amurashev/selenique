@@ -8,6 +8,11 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       patreon: "https://www.patreon.com/posts/139108809",
       etsy: "https://www.etsy.com/listing/4390735413/50-high-fashion-editorial-prompts-ai",
     },
+    related: [
+      "50-high-fashion-editorial-prompts-vol-1",
+      "50-high-fashion-editorial-prompts-vol-2",
+      "50-men-fashion-editorial-prompts-vol-1",
+    ],
     images: [
       "/promptbooks/1/1.jpg",
       "/promptbooks/1/2.jpg",
@@ -43,8 +48,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
       patreon: "", // "https://www.patreon.com/posts/139108809",
       etsy: "https://www.etsy.com/listing/4386890966/50-high-fashion-editorial-prompts-v2",
-      gumroad: "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts",
     },
+    related: [
+      "50-high-fashion-editorial-prompts-vol-1",
+      "50-high-fashion-editorial-prompts-vol-2",
+      "50-men-fashion-editorial-prompts-vol-1",
+    ],
     images: [
       "/promptbooks/5/1.jpg",
       "/promptbooks/5/2.jpg",
@@ -82,6 +93,11 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       patreon: "",
       etsy: "https://www.etsy.com/listing/4390717860/50-ai-prompts-for-mens-fashion-photos-o",
     },
+    related: [
+      "50-high-fashion-editorial-prompts-vol-1",
+      "50-high-fashion-editorial-prompts-vol-2",
+      "50-men-fashion-editorial-prompts-vol-1",
+    ],
     images: [
       "/promptbooks/3/1.jpg",
       "/promptbooks/3/2.jpg",
@@ -117,8 +133,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
       patreon: "",
       etsy: "https://www.etsy.com/listing/4386090496/50-ideal-skin-midjourney-prompts-v1",
-      gumroad: "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
     },
+    related: [
+      "50-high-fashion-editorial-prompts-vol-1",
+      "50-high-fashion-editorial-prompts-vol-2",
+    ],
     images: [
       "/promptbooks/4/1.jpg",
       "/promptbooks/4/2.jpg",
@@ -156,6 +177,12 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       patreon: "",
       etsy: "https://www.etsy.com/listing/4390631317/50-ai-jewelry-photo-prompts-digital",
     },
+    related: [
+      "50-ideal-skin-midjourney-prompts-vol-1",
+      "50-jewelry-product-photo-ai-prompts",
+      "35-cosmetic-product-photo-prompts",
+      "75-cosmetic-product-photo-prompts",
+    ],
     images: [
       "/promptbooks/6/1.jpg",
       "/promptbooks/6/2.jpg",
@@ -190,9 +217,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
       etsy: "https://www.etsy.com/listing/4391491290/24-ai-maternity-photoshoot-prompts-fine",
-      gumroad: "https://seleniquestudio.gumroad.com/l/24-ai-maternity-photoshoot-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/24-ai-maternity-photoshoot-prompts",
       patreon: "",
     },
+    related: [
+      "50-high-fashion-editorial-prompts-vol-1",
+      "50-high-fashion-editorial-prompts-vol-2",
+      "50-men-fashion-editorial-prompts-vol-1",
+    ],
     images: [
       "/promptbooks/7/1.jpg",
       "/promptbooks/7/2.jpg",
@@ -226,15 +259,19 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   "30-christmas-woman-photo-prompts": {
     name: "30 Christmas Woman Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4392413223/30-christmas-woman-photo-prompts-ai",
-      gumroad: "https://seleniquestudio.gumroad.com/l/30-christmas-woman-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/30-christmas-woman-photo-prompts",
       patreon: "",
     },
+    related: [
+      "30-christmas-woman-photo-prompts",
+      "40-christmas-kids-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/8/1.jpg",
       "/promptbooks/8/2.jpg",
@@ -268,9 +305,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4392409070/40-christmas-kids-photo-prompts-ai",
-      gumroad: "https://seleniquestudio.gumroad.com/l/40-christmas-kids-ai-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/40-christmas-kids-ai-photo-prompts",
       patreon: "",
     },
+    related: [
+      "30-christmas-woman-photo-prompts",
+      "40-christmas-kids-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/9/1.jpg",
       "/promptbooks/9/2.jpg",
@@ -311,9 +353,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4393131014/30-business-woman-photo-prompts-ai",
-      gumroad: "https://seleniquestudio.gumroad.com/l/30-ai-business-woman-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/30-ai-business-woman-photo-prompts",
       patreon: "",
     },
+    related: [
+      "15-ai-women-headshot-prompts-professional",
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "22-business-man-headshot-prompts-ai",
+      "30-business-woman-photo-prompts-ai",
+      "32-business-man-photo-prompts",
+      "40-muslim-women-business-photo-prompts",
+    ],
     images: [
       "/promptbooks/10/1.jpg",
       "/promptbooks/10/3.jpg",
@@ -342,7 +393,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   "60-fantasy-photo-prompts-ai-portrait": {
     name: "60 Fantasy Photo Prompts",
     links: {
@@ -350,6 +400,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4395085911/60-fantasy-photo-prompts-ai-portrait",
       patreon: "",
     },
+    related: [
+      "60-fantasy-photo-prompts-ai-portrait",
+      "25-wizard-school-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/11/2.jpg",
       "/promptbooks/11/3.jpg",
@@ -383,7 +437,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   "25-wizard-school-photo-prompts-ai": {
     name: "25 Wizard School Photo Prompts",
     links: {
@@ -391,6 +444,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4396222150/25-wizard-school-photo-prompts-ai",
       patreon: "",
     },
+    related: [
+      "60-fantasy-photo-prompts-ai-portrait",
+      "25-wizard-school-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/12/1.jpg",
       "/promptbooks/12/3.jpg",
@@ -422,47 +479,55 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-  "40-ai-business-man-photo-prompts": {
-    isDisabled: true,
-    name: "40 AI Business Man Photo Prompts",
-    links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291924401-40-AI-Business-Man-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4395925243/40-ai-business-man-photo-prompts-brand",
-      gumroad: "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
-      // patreon: "",
-    },
-    images: [
-      "/promptbooks/13/2.jpg",
-      "/promptbooks/13/3.jpg",
-      "/promptbooks/13/4.jpg",
-      "/promptbooks/13/5.jpg",
-      "/promptbooks/13/6.jpg",
-      "/promptbooks/13/7.jpg",
-      "/promptbooks/13/8.jpg",
-      "/promptbooks/13/9.jpg",
-      "/promptbooks/13/10.jpg",
-      "/promptbooks/13/11.jpg",
-      "/promptbooks/13/12.jpg",
-      "/promptbooks/13/13.jpg",
-      "/promptbooks/13/14.jpg",
-    ],
-    price: {
-      ru: 1000,
-      en: 13.2,
-    },
-    text: `
-    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 40 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
-    <h3>📸 What’s included:</h3>
-    <p>PDF file with 40 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Gemini, and other tools supporting Character Reference Works with your own face photo or model image.</p>
-    <h3>💫 Why you’ll love it:</h3>
-    <ul>
-    <li>Look confident and professional without expensive photoshoots</li>
-    <li>Create brand-ready portraits in minutes</li>
-    <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
-    </ul>
-    `,
-  },
-
+  // "40-ai-business-man-photo-prompts": {
+  //   isDisabled: true,
+  //   name: "40 AI Business Man Photo Prompts",
+  //   links: {
+  //     cm: "https://creativemarket.com/AlenaMurasheva/291924401-40-AI-Business-Man-Photo-Prompts",
+  //     etsy: "https://www.etsy.com/listing/4395925243/40-ai-business-man-photo-prompts-brand",
+  //     gumroad:
+  //       "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
+  //     // patreon: "",
+  //   },
+  //   related: [
+  //     "22-business-man-headshot-prompts-ai",
+  //     "30-business-woman-photo-prompts-ai",
+  //     "ai-photo-prompts-30-woman-work-lifestyle",
+  //     "32-business-man-photo-prompts",
+  //     "15-ai-women-headshot-prompts-professional",
+  //     "40-muslim-women-business-photo-prompts",
+  //   ],
+  //   images: [
+  //     "/promptbooks/13/2.jpg",
+  //     "/promptbooks/13/3.jpg",
+  //     "/promptbooks/13/4.jpg",
+  //     "/promptbooks/13/5.jpg",
+  //     "/promptbooks/13/6.jpg",
+  //     "/promptbooks/13/7.jpg",
+  //     "/promptbooks/13/8.jpg",
+  //     "/promptbooks/13/9.jpg",
+  //     "/promptbooks/13/10.jpg",
+  //     "/promptbooks/13/11.jpg",
+  //     "/promptbooks/13/12.jpg",
+  //     "/promptbooks/13/13.jpg",
+  //     "/promptbooks/13/14.jpg",
+  //   ],
+  //   price: {
+  //     ru: 1000,
+  //     en: 13.2,
+  //   },
+  //   text: `
+  //   <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 40 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
+  //   <h3>📸 What’s included:</h3>
+  //   <p>PDF file with 40 ready-to-use AI prompts + reference pictures. Compatible with Krea, Nano Banana, Higgsfield, Gemini, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+  //   <h3>💫 Why you’ll love it:</h3>
+  //   <ul>
+  //   <li>Look confident and professional without expensive photoshoots</li>
+  //   <li>Create brand-ready portraits in minutes</li>
+  //   <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
+  //   </ul>
+  //   `,
+  // },
 
   "ai-photo-prompts-30-woman-work-lifestyle": {
     name: "30 Woman Work & Lifestyle Photo Prompts",
@@ -471,6 +536,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4398101656/ai-photo-prompts-30-woman-work-lifestyle",
       patreon: "",
     },
+    related: [
+      "30-business-woman-photo-prompts-ai",
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "22-business-man-headshot-prompts-ai",
+      "32-business-man-photo-prompts",
+      "15-ai-women-headshot-prompts-professional",
+      "40-muslim-women-business-photo-prompts",
+    ],
     images: [
       "/promptbooks/14/1.jpg",
       "/promptbooks/14/3.jpg",
@@ -499,15 +572,23 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   "15-ai-women-headshot-prompts-professional": {
     name: "15 Women Headshot Professional Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
       etsy: "https://www.etsy.com/listing/4398815563/ai-women-headshot-prompts-professional",
-      gumroad: "https://seleniquestudio.gumroad.com/l/15-ai-women-headshot-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/15-ai-women-headshot-prompts",
       patreon: "",
     },
+    related: [
+      "30-business-woman-photo-prompts-ai",
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "22-business-man-headshot-prompts-ai",
+      "32-business-man-photo-prompts",
+      "15-ai-women-headshot-prompts-professional",
+      "40-muslim-women-business-photo-prompts",
+    ],
     images: [
       "/promptbooks/15/1.jpg",
       "/promptbooks/15/3.jpg",
@@ -543,6 +624,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4399220145/50-old-money-ai-photo-prompts-vol1",
       patreon: "",
     },
+    related: [
+      "50-old-money-ai-photo-prompts-vol1",
+      "50-old-money-ai-photo-prompts-vol2",
+    ],
     images: [
       "/promptbooks/16/1.jpg",
       "/promptbooks/16/3.jpg",
@@ -579,6 +664,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4399232905/50-old-money-ai-photo-prompts-vol2",
       patreon: "",
     },
+    related: [
+      "50-old-money-ai-photo-prompts-vol1",
+      "50-old-money-ai-photo-prompts-vol2",
+    ],
     images: [
       "/promptbooks/17/1.jpg",
       "/promptbooks/17/3.jpg",
@@ -613,9 +702,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
       etsy: "https://www.etsy.com/listing/4402125175/22-business-man-headshot-prompts-ai",
-      gumroad: "https://seleniquestudio.gumroad.com/l/22-business-man-headshot-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/22-business-man-headshot-prompts",
       patreon: "",
     },
+    related: [
+      "32-business-man-photo-prompts",
+      "22-business-man-headshot-prompts-ai",
+      "30-business-woman-photo-prompts-ai",
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "15-ai-women-headshot-prompts-professional",
+      "40-muslim-women-business-photo-prompts",
+    ],
     images: [
       "/promptbooks/18/1.jpg",
       "/promptbooks/18/3.jpg",
@@ -648,6 +746,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4404024867/40-muslim-women-business-photo-prompts",
       patreon: "",
     },
+    related: [
+      "15-ai-women-headshot-prompts-professional",
+      "30-business-woman-photo-prompts-ai",
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "22-business-man-headshot-prompts-ai",
+      "32-business-man-photo-prompts",
+      "40-muslim-women-business-photo-prompts",
+    ],
     images: [
       "/promptbooks/19/1.jpg",
       "/promptbooks/19/3.jpg",
@@ -685,9 +791,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403405005/8-red-carpet-men-photo-prompts-ai-male",
-      gumroad: "https://seleniquestudio.gumroad.com/l/8-red-carpet-men-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/8-red-carpet-men-photo-prompts",
       patreon: "",
     },
+    related: [
+      "8-red-carpet-couple-ai-photo-prompts",
+      "8-red-carpet-women-photo-prompts",
+      "8-red-carpet-men-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/20/1.jpg",
       "/promptbooks/20/2.jpg",
@@ -718,9 +830,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403398257/8-red-carpet-women-fashion-photo-prompts",
-      gumroad: "https://seleniquestudio.gumroad.com/l/8-red-carpet-women-ai-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/8-red-carpet-women-ai-photo-prompts",
       patreon: "",
     },
+    related: [
+      "8-red-carpet-couple-ai-photo-prompts",
+      "8-red-carpet-women-photo-prompts",
+      "8-red-carpet-men-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/21/1.jpg",
       "/promptbooks/21/2.jpg",
@@ -751,9 +869,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403489169/red-carpet-couple-ai-photo-prompts-gala",
-      gumroad: "https://seleniquestudio.gumroad.com/l/8-red-carpet-couple-ai-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/8-red-carpet-couple-ai-photo-prompts",
       patreon: "",
     },
+    related: [
+      "8-red-carpet-couple-ai-photo-prompts",
+      "8-red-carpet-women-photo-prompts",
+      "8-red-carpet-men-photo-prompts-ai",
+    ],
     images: [
       "/promptbooks/22/1.jpg",
       "/promptbooks/22/2.jpg",
@@ -779,15 +903,21 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   "35-cosmetic-product-photo-prompts": {
     name: "35 Cosmetic Product Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
       etsy: "https://www.etsy.com/listing/4404726085/cosmetic-product-photo-prompts-35",
-      gumroad: "https://seleniquestudio.gumroad.com/l/35-cosmetic-product-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/35-cosmetic-product-photo-prompts",
       patreon: "",
     },
+    related: [
+      "50-ideal-skin-midjourney-prompts-vol-1",
+      "50-jewelry-product-photo-ai-prompts",
+      "35-cosmetic-product-photo-prompts",
+      "75-cosmetic-product-photo-prompts",
+    ],
     images: [
       "/promptbooks/23/2.jpg",
       "/promptbooks/23/4.jpg",
@@ -817,14 +947,72 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "75-cosmetic-product-photo-prompts": {
+    name: "75 Cosmetic Product Photo Prompts",
+    links: {
+      // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
+      etsy: "https://www.etsy.com/listing/4404895789/75-cosmetic-product-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/75-cosmetic-product-photo-prompts",
+      patreon: "",
+    },
+    related: [
+      "50-ideal-skin-midjourney-prompts-vol-1",
+      "50-jewelry-product-photo-ai-prompts",
+      "35-cosmetic-product-photo-prompts",
+      "75-cosmetic-product-photo-prompts",
+    ],
+    images: [
+      "/promptbooks/25/1.jpg",
+      "/promptbooks/25/3.jpg",
+      "/promptbooks/25/4.jpg",
+      "/promptbooks/25/5.jpg",
+      "/promptbooks/25/6.jpg",
+      "/promptbooks/25/7.jpg",
+      "/promptbooks/25/8.jpg",
+      "/promptbooks/25/9.jpg",
+      "/promptbooks/25/10.jpg",
+      "/promptbooks/25/11.jpg",
+      "/promptbooks/25/12.jpg",
+      "/promptbooks/25/13.jpg",
+      "/promptbooks/25/14.jpg",
+      "/promptbooks/25/15.jpg",
+    ],
+    price: {
+      ru: 1000,
+      en: 14.5,
+    },
+    text: `
+    <p>✨ Create elegant cosmetic product visuals in minutes. This digital PDF includes 75 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers. </p>
+    <p>Prompts are written in clear, adaptable wording with placeholder so you can quickly replace the product. You can change color, background, mood and lighting. Works across multiple AIs and keeps a consistent premium aesthetic.</p>
+    <h3>📘 What’s inside:</h3>
+    <ul>
+    <li>35 editable prompts (English)</li>
+    <li>Reference images for composition and light (provided as examples, not HD photos)</li>
+    <li>Universal structure tested in Midjourney, Krea, Gimini, Seedream, Nano Banana, etc.</li>
+    </ul>
+    <h3>💄 Perfect for</h3>
+    <p>Designers, cosmetic brand owners, online shops, content creators and marketers who need polished beauty visuals for e-commerce, portfolios, ads and social media.</p>
+    `,
+  },
+
   "32-business-man-photo-prompts": {
-    name: "35 Cosmetic Product Photo Prompts",
+    name: "32 AI Business Man Photo Prompts",
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
       etsy: "https://www.etsy.com/listing/4407678906/32-ai-business-man-photo-prompts-brand",
-      gumroad: "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
       patreon: "",
     },
+    related: [
+      "22-business-man-headshot-prompts-ai",
+      "30-business-woman-photo-prompts-ai",
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "32-business-man-photo-prompts",
+      "15-ai-women-headshot-prompts-professional",
+      "40-muslim-women-business-photo-prompts",
+    ],
     images: [
       "/promptbooks/24/2.jpg",
       "/promptbooks/24/3.jpg",
@@ -859,7 +1047,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   // "16-high-fashion-editorial-prompts-vol-1": {
   //   name: "16 High-Fashion Editorial Prompts Vol.1",
   //   links: {
@@ -893,7 +1080,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   // },
 };
 
-
 export const promptbooksOrdered: string[] = [
   "22-business-man-headshot-prompts-ai",
   "30-business-woman-photo-prompts-ai",
@@ -910,6 +1096,7 @@ export const promptbooksOrdered: string[] = [
   "50-ideal-skin-midjourney-prompts-vol-1",
   "50-jewelry-product-photo-ai-prompts",
   "35-cosmetic-product-photo-prompts",
+  "75-cosmetic-product-photo-prompts",
 
   "30-christmas-woman-photo-prompts",
   "40-christmas-kids-photo-prompts-ai",
@@ -921,4 +1108,4 @@ export const promptbooksOrdered: string[] = [
   "25-wizard-school-photo-prompts-ai",
   "50-old-money-ai-photo-prompts-vol1",
   "50-old-money-ai-photo-prompts-vol2",
-]
+];

@@ -6,6 +6,7 @@ import Layout from "@/components/layout";
 import PromptbookPage from "@/components/pages/promptbook";
 
 import { PROMTBOOKS } from "@/constants/promptbooks";
+import { PromptBook } from "@/components/types";
 
 export async function generateMetadata({
   params,
@@ -42,8 +43,20 @@ export default async function PromptbookPageEntry({
   const data = PROMTBOOKS[slug || "null"];
 
   if (!data) {
-    return redirect('/en/prompt-books');
+    return redirect("/en/prompt-books");
   }
+
+  const relatedIds = data.related || [];
+
+  const related = relatedIds
+    .map((id) => {
+      return {
+        ...PROMTBOOKS[id],
+        slug: id,
+      };
+    })
+    .filter((item) => item.slug !== slug)
+    .slice(0, 3) as PromptBook[];
 
   return (
     <Layout locale="en">
@@ -52,6 +65,7 @@ export default async function PromptbookPageEntry({
           ...data,
           slug,
         }}
+        related={related}
       />
     </Layout>
   );

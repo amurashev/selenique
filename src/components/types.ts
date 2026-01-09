@@ -7,6 +7,7 @@ export type PromptBookRaw = {
   name: string;
   price: PriceType;
   text: string;
+  related?: string[];
   links: {
     patreon?: string;
     cm?: string;

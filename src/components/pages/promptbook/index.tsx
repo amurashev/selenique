@@ -15,12 +15,53 @@ import { PriceWithUnit } from "@/components/ui/price";
 import Link from "next/link";
 import { promptBookListPageRoute } from "@/constants/routes";
 import Header from "@/components/layout/header";
+import PromptbookItem from "@/components/sections/promptbook-item";
 
 const discount = 30;
 
 const DISCOUNT_END_DAY = "2025-12-16";
 
-export default function PromptbookPage({ data }: { data: PromptBook }) {
+const settings = {
+  dots: true,
+  infinite: true,
+  lazyLoad: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+export default function PromptbookPage({
+  data,
+  related,
+}: {
+  data: PromptBook;
+  related: PromptBook[];
+}) {
   const { formatMessage, locale } = useIntl();
   const { name, text, price, links, images, isDisabled } = data;
 
@@ -40,40 +81,6 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
 
   // Переводим миллисекунды в дни
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    lazyLoad: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
     <div className={styles.page}>
@@ -169,6 +176,17 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
             </Link>
           </div>
         </div>
+
+        {related.length !== 0 && (
+          <div className={styles.related}>
+            <h2>You may also like</h2>
+            <div className={styles.list}>
+              {related.map((item) => (
+                <PromptbookItem key={item.slug} item={item} />
+              ))}
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
