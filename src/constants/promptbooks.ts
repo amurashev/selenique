@@ -178,6 +178,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
       patreon: "",
       etsy: "https://www.etsy.com/listing/4390631317/50-ai-jewelry-photo-prompts-digital",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/50-ai-jewelry-photography-prompts",
     },
     related: [
       "50-ideal-skin-midjourney-prompts-vol-1",
@@ -536,7 +538,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4398101656/ai-photo-prompts-30-woman-work-lifestyle",
-      gumroad: "https://seleniquestudio.gumroad.com/l/30-woman-work-lifestyle-prompts",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/30-woman-work-lifestyle-prompts",
       patreon: "",
     },
     related: [
@@ -625,6 +628,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
       etsy: "https://www.etsy.com/listing/4399220145/50-old-money-ai-photo-prompts-vol1",
+      gumroad: "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol1",
       patreon: "",
     },
     related: [
@@ -665,6 +669,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
       etsy: "https://www.etsy.com/listing/4399232905/50-old-money-ai-photo-prompts-vol2",
+      gumroad: "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol2",
       patreon: "",
     },
     related: [
