@@ -966,7 +966,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "50-jewelry-product-photo-ai-prompts",
     ],
     images: [
-      "/promptbooks/25/1.jpg",
+      "/promptbooks/25/2.jpg",
       "/promptbooks/25/3.jpg",
       "/promptbooks/25/4.jpg",
       "/promptbooks/25/5.jpg",
