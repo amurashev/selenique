@@ -137,8 +137,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
         "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
     },
     related: [
-      "50-high-fashion-editorial-prompts-vol-1",
-      "50-high-fashion-editorial-prompts-vol-2",
+      "50-ideal-skin-midjourney-prompts-vol-1",
+      "50-jewelry-product-photo-ai-prompts",
+      "35-cosmetic-product-photo-prompts",
+      "75-cosmetic-product-photo-prompts",
     ],
     images: [
       "/promptbooks/4/1.jpg",
@@ -534,6 +536,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4398101656/ai-photo-prompts-30-woman-work-lifestyle",
+      gumroad: "https://seleniquestudio.gumroad.com/l/30-woman-work-lifestyle-prompts",
       patreon: "",
     },
     related: [
@@ -913,10 +916,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       patreon: "",
     },
     related: [
-      "50-ideal-skin-midjourney-prompts-vol-1",
-      "50-jewelry-product-photo-ai-prompts",
       "35-cosmetic-product-photo-prompts",
       "75-cosmetic-product-photo-prompts",
+      "50-ideal-skin-midjourney-prompts-vol-1",
+      "50-jewelry-product-photo-ai-prompts",
     ],
     images: [
       "/promptbooks/23/2.jpg",
@@ -957,10 +960,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       patreon: "",
     },
     related: [
-      "50-ideal-skin-midjourney-prompts-vol-1",
-      "50-jewelry-product-photo-ai-prompts",
       "35-cosmetic-product-photo-prompts",
       "75-cosmetic-product-photo-prompts",
+      "50-ideal-skin-midjourney-prompts-vol-1",
+      "50-jewelry-product-photo-ai-prompts",
     ],
     images: [
       "/promptbooks/25/1.jpg",
