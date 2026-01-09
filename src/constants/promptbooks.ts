@@ -92,6 +92,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
       patreon: "",
       etsy: "https://www.etsy.com/listing/4390717860/50-ai-prompts-for-mens-fashion-photos-o",
+      gumroad: "https://seleniquestudio.gumroad.com/l/50-men-fashion-editorial-prompts-vol-1",
     },
     related: [
       "50-high-fashion-editorial-prompts-vol-1",
