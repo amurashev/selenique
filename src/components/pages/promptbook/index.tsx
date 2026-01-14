@@ -110,7 +110,8 @@ export default function PromptbookPage({
 
           <div className={styles.rightSide}>
             {!isDisabled ? (
-              <div className={styles.rightSideBox}>
+              <>
+                {/* <div className={styles.rightSideBox}> */}
                 {/* <div className={styles.priceSection}>
                   <div>{formatMessage({ id: "common.price" })}</div>
                   <div className={styles.price}>
@@ -151,6 +152,13 @@ export default function PromptbookPage({
                       Own It Today!
                     </Link>
                   )}
+
+                  <Link
+                    className={styles.linkSecondary}
+                    href={promptBookListPageRoute.getUrl(locale)}
+                  >
+                    See all Prompt Books
+                  </Link>
                   {/* {links.etsy && (
                     <Link
                       className={styles.link}
@@ -161,19 +169,13 @@ export default function PromptbookPage({
                     </Link>
                   )} */}
                 </div>
-              </div>
+                {/* </div> */}
+              </>
             ) : (
               <div className={styles.rightSideBox}>
                 <div className={styles.naMessage}> Not available for now</div>
               </div>
             )}
-
-            <Link
-              className={styles.linkSecondary}
-              href={promptBookListPageRoute.getUrl(locale)}
-            >
-              See all Prompt Books
-            </Link>
           </div>
         </div>
 
