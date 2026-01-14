@@ -8,18 +8,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
-import { PromptBook } from "@/components/types";
+import { Guide } from "@/components/types";
 
 import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
-import { PriceWithUnit } from "@/components/ui/price";
 import Link from "next/link";
-import { promptBookListPageRoute } from "@/constants/routes";
+import { guidesListPageRoute } from "@/constants/routes";
 import Header from "@/components/layout/header";
-import PromptbookItem from "@/components/sections/promptbook-item";
-
-const discount = 30;
-
-const DISCOUNT_END_DAY = "2025-12-16";
 
 const settings = {
   dots: true,
@@ -55,32 +49,9 @@ const settings = {
   ],
 } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-export default function PromptbookPage({
-  data,
-  related,
-}: {
-  data: PromptBook;
-  related: PromptBook[];
-}) {
+export default function GuidePage({ data }: { data: Guide }) {
   const { formatMessage, locale } = useIntl();
-  const { name, text, price, links, images, isDisabled } = data;
-
-  const discountedPrice = {
-    ru: price.ru + Math.ceil((price.ru * discount) / 50),
-    en: Math.ceil(price.en - Math.ceil((price.en * discount) / 100)),
-  };
-
-  const targetDate = new Date(DISCOUNT_END_DAY);
-
-  // Текущая дата (без времени, чтобы не было дробных дней)
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  // Разница в миллисекундах
-  const diff = Number(targetDate) - Number(today);
-
-  // Переводим миллисекунды в дни
-  const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  const { name, text, price, links, images } = data;
 
   return (
     <div className={styles.page}>
@@ -99,7 +70,7 @@ export default function PromptbookPage({
 
         <div className={styles.line}>
           <div className={styles.textBox}>
-            <h2>About</h2>
+            <h2>About 888</h2>
             <p
               className={styles.text}
               dangerouslySetInnerHTML={{
@@ -109,20 +80,8 @@ export default function PromptbookPage({
           </div>
 
           <div className={styles.rightSide}>
-            {!isDisabled ? (
+            {true ? (
               <div className={styles.rightSideBox}>
-                {/* <div className={styles.priceSection}>
-                  <div>{formatMessage({ id: "common.price" })}</div>
-                  <div className={styles.price}>
-                    <PriceWithUnit value={discountedPrice} />
-                  </div>
-                  <div className={styles.basePrice}>
-                    <PriceWithUnit value={price} />
-                  </div>
-                </div>
-                <div className={styles.discountInfo}>
-                  {discount}% off • Sale ends in {daysLeft} days
-                </div> */}
                 <div className={styles.links}>
                   {/* {links.cm && (
                     <Link
@@ -131,15 +90,6 @@ export default function PromptbookPage({
                       target="_blank"
                     >
                       Buy on Creative Market
-                    </Link>
-                  )} */}
-                  {/* {links.patreon && (
-                    <Link
-                      className={styles.link}
-                      href={links.patreon}
-                      target="_blank"
-                    >
-                      Buy on Patreon
                     </Link>
                   )} */}
                   {links.gumroad && (
@@ -151,7 +101,7 @@ export default function PromptbookPage({
                       Buy on GumRoad
                     </Link>
                   )}
-                  {/* {links.etsy && (
+                  {links.etsy && (
                     <Link
                       className={styles.link}
                       href={links.etsy}
@@ -159,34 +109,23 @@ export default function PromptbookPage({
                     >
                       Buy on Etsy
                     </Link>
-                  )} */}
+                  )}
                 </div>
               </div>
             ) : (
               <div className={styles.rightSideBox}>
-                <div className={styles.naMessage}> Not available for now</div>
+                <div className={styles.naMessage}>Not available for now</div>
               </div>
             )}
 
             <Link
               className={styles.linkSecondary}
-              href={promptBookListPageRoute.getUrl(locale)}
+              href={guidesListPageRoute.getUrl(locale)}
             >
-              See all Prompt Books
+              {formatMessage({ id: "home.guides.see_all" })}
             </Link>
           </div>
         </div>
-
-        {related.length !== 0 && (
-          <div className={styles.related}>
-            <h2>You may also like</h2>
-            <div className={styles.list}>
-              {related.map((item) => (
-                <PromptbookItem key={item.slug} item={item} />
-              ))}
-            </div>
-          </div>
-        )}
       </main>
     </div>
   );

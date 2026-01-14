@@ -283,6 +283,13 @@
   "portfolio.types.electronics": "Electronics",
   "portfolio.types.furniture": "Furniture",
   "portfolio.types.jewelry": "Jewelry",
+
+  "home.prompt_books.title": "Our Prompt Books",
+  "home.prompt_books.see_all": "See all Prompt Books",
+
+  "home.guides.title": "Our Guides",
+  "home.guides.see_all": "See all Guides",
+  
   "hero.title": "AI Fashion Ads & WOW Resources",
   "hero.text": "Guides, prompts & scenes — no Photoshop required",
   "packs.title": "Image packs",

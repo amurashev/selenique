@@ -20,3 +20,19 @@ export type PromptBookRaw = {
 export type PromptBook = PromptBookRaw & {
   slug: string;
 };
+
+export type GuideRaw = {
+  name: string;
+  price: PriceType;
+  text: string;
+  links: {
+    cm?: string;
+    etsy?: string;
+    gumroad?: string
+  };
+  images: string[];
+};
+
+export type Guide = GuideRaw & {
+  slug: string;
+};

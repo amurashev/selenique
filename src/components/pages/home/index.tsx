@@ -8,6 +8,12 @@ import Card from "./card";
 import Header from "@/components/layout/header";
 import { SERVICES } from "@/constants/services";
 import Footer from "@/components/layout/footer";
+import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
+import { GUIDES, guidesOrdered } from "@/constants/guides";
+import { promptBookListPageRoute, guidesListPageRoute } from "@/constants/routes";
+
+import PromptbookItem from "@/components/sections/promptbook-item";
+import GuideItem from "@/components/sections/guide-item";
 
 export default function HomePage() {
   const { formatMessage, locale } = useIntl();
@@ -16,19 +22,69 @@ export default function HomePage() {
     <div className={styles.page}>
       <Header />
       <main className={styles.main}>
-        <h2>{formatMessage({ id: "header.menu.services" })}</h2>
-        <div className={styles.items}>
-          {SERVICES.map((item) => (
-            <div key={item.titleKey} className={styles.item}>
-              <Link href={item.route.getUrl(locale)}>
-                <Card
-                  image={item.image}
-                  title={formatMessage({ id: item.titleKey })}
-                />
+        {locale === "ru" && (
+          <>
+            <h2>{formatMessage({ id: "header.menu.services" })}</h2>
+            <div className={styles.items}>
+              {SERVICES.map((item) => (
+                <div key={item.titleKey} className={styles.item}>
+                  <Link href={item.route.getUrl(locale)}>
+                    <Card
+                      image={item.image}
+                      title={formatMessage({ id: item.titleKey })}
+                    />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {locale !== "ru" && (
+          <>
+            <h1>{formatMessage({ id: "home.prompt_books.title" })}</h1>
+            <div className={styles.list}>
+              {promptbooksOrdered.slice(0, 6).map((slug) => {
+                const item = {
+                  ...PROMTBOOKS[slug],
+                  slug,
+                };
+                return <PromptbookItem key={slug} item={item} />;
+              })}
+            </div>
+
+            <div className={styles.buttonBox}>
+              <Link
+                className={styles.linkSecondary}
+                href={promptBookListPageRoute.getUrl(locale)}
+              >
+                {formatMessage({ id: "home.prompt_books.see_all" })}
               </Link>
             </div>
-          ))}
-        </div>
+
+            {/* <div className={styles.section}>
+              <h1>{formatMessage({ id: "home.guides.title" })}</h1>
+              <div className={styles.list}>
+                {guidesOrdered.slice(0, 6).map((slug) => {
+                  const item = {
+                    ...GUIDES[slug],
+                    slug,
+                  };
+                  return <GuideItem key={slug} item={item} />;
+                })}
+              </div>
+
+              <div className={styles.buttonBox}>
+                <Link
+                  className={styles.linkSecondary}
+                  href={guidesListPageRoute.getUrl(locale)}
+                >
+                  {formatMessage({ id: "home.guides.see_all" })}
+                </Link>
+              </div>
+            </div> */}
+          </>
+        )}
       </main>
       <Footer />
     </div>

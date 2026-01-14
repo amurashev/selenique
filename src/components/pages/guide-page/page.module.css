@@ -1,0 +1,205 @@
+.page {
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+  padding-bottom: 32px;
+  padding-top: 36px;
+
+  h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-top: 8px;
+
+    li + li {
+      margin-top: 4px;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
+  h3 {
+    margin-top: 12px;
+  }
+}
+
+.section {
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+  margin-top: 24px;
+}
+
+.item {
+  padding: 0 16px;
+  width: 100%;
+}
+
+
+.image {
+  width: 100%;
+}
+
+
+.line {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 48px;
+}
+
+.textBox {
+  flex-grow: 1;
+  margin-top: 24px;
+}
+
+.related {
+  margin-top: 48px;
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+
+.list {
+  margin-top: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+.rightSide {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 16px 16px;
+}
+
+.rightSideBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f3;
+  border-radius: 8px;
+  padding: 16px 16px;
+  margin-bottom: 24px;
+}
+
+.priceSection {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: bold;
+  color: #0f743b;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.basePrice {
+  font-size: 36px;
+  color: #aaaaaa;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+
+.discountInfo {
+  font-size: 16px;
+  text-align: right;
+  color: #0f743b;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* margin-top: 16px; */
+}
+
+.link {
+  background-color: #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  &:hover {
+    background-color: #3a9bff;
+  }
+}
+
+.linkSecondary {
+  border: 1px solid #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: #0974e2;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  &:hover {
+    border-color: #3a9bff;
+  }
+}
+
+.naMessage {
+  font-size: 22px;
+  color: #aaaaaa;
+}
+
+@media (min-width: 760px) {
+  .main {
+    h1 {
+      font-size: 38px;
+    }
+  }
+  .line {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .rightSide {
+    width: 300px;
+    margin-left: 24px;
+  }
+
+  .textBox {
+    margin-top: 0;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

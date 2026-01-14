@@ -44,6 +44,16 @@ export const promptBookPageRoute = route({
   en: "/en/prompt-books/[slug]",
 });
 
+
+export const guidesListPageRoute = route({
+  ru: "/guides",
+  en: "/en/guides",
+});
+export const guidePageRoute = route({
+  ru: "/guides/[slug]",
+  en: "/en/guides/[slug]",
+});
+
 export const intensiveNeurovideoPageRoute = route({
   ru: "/courses/intensive_neirovideo_s_nulya",
   en: "/",

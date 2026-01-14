@@ -3,7 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import GuideItem from "../guide-item";
+import GuideItem from "../_guide-item";
 import Section from "../../layout/section";
 
 import styles from "./styles.module.css";
