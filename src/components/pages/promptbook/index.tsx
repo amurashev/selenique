@@ -111,7 +111,7 @@ export default function PromptbookPage({
           <div className={styles.rightSide}>
             {!isDisabled ? (
               <>
-                {/* <div className={styles.rightSideBox}> */}
+                <div className={styles.rightSideBox}>
                 {/* <div className={styles.priceSection}>
                   <div>{formatMessage({ id: "common.price" })}</div>
                   <div className={styles.price}>
@@ -169,7 +169,7 @@ export default function PromptbookPage({
                     </Link>
                   )} */}
                 </div>
-                {/* </div> */}
+                </div>
               </>
             ) : (
               <div className={styles.rightSideBox}>
