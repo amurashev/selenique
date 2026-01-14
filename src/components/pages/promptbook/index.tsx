@@ -148,7 +148,7 @@ export default function PromptbookPage({
                       href={links.gumroad}
                       target="_blank"
                     >
-                      Buy on GumRoad
+                      Own It Today!
                     </Link>
                   )}
                   {/* {links.etsy && (
