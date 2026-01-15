@@ -285,7 +285,12 @@
   "portfolio.types.jewelry": "Jewelry",
 
   "home.prompt_books.title": "Our Prompt Books",
+  "home.prompt_books.popular": "Popular Prompt Books",
   "home.prompt_books.see_all": "See all Prompt Books",
+
+
+  "common.buy_now": "Own it today",
+  "prompt_books.title": "Our Prompt Books",
 
   "home.guides.title": "Our Guides",
   "home.guides.see_all": "See all Guides",

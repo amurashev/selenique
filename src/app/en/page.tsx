@@ -1,4 +1,4 @@
-import HomePage from "@/components/pages/home";
+import HomePage from "@/components/pages/home2";
 import Layout from "@/components/layout";
 
 import { Locale } from "../../../i18n-config";

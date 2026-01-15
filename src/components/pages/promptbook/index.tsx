@@ -3,6 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 import Slider from "react-slick";
+import Link from "next/link";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,50 +11,13 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./page.module.css";
 import { PromptBook } from "@/components/types";
 
-import { SampleNextArrow, SamplePrevArrow } from "@/components/sections/arrows";
-import { PriceWithUnit } from "@/components/ui/price";
-import Link from "next/link";
-import { promptBookListPageRoute } from "@/constants/routes";
-import Header from "@/components/layout/header";
 import PromptbookItem from "@/components/sections/promptbook-item";
+import { promptBookListPageRoute } from "@/constants/routes";
 
-const discount = 30;
-
-const DISCOUNT_END_DAY = "2025-12-16";
-
-const settings = {
-  dots: true,
-  infinite: true,
-  lazyLoad: true,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
+import ImagesBox from "./images-box";
+import RightSide from "./right-side";
+import Related from "./related";
+import { ChevronLeft } from "@/components/sections/arrows";
 
 export default function PromptbookPage({
   data,
@@ -63,132 +27,53 @@ export default function PromptbookPage({
   related: PromptBook[];
 }) {
   const { formatMessage, locale } = useIntl();
-  const { name, text, price, links, images, isDisabled } = data;
-
-  const discountedPrice = {
-    ru: price.ru + Math.ceil((price.ru * discount) / 50),
-    en: Math.ceil(price.en - Math.ceil((price.en * discount) / 100)),
-  };
-
-  const targetDate = new Date(DISCOUNT_END_DAY);
-
-  // Текущая дата (без времени, чтобы не было дробных дней)
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  // Разница в миллисекундах
-  const diff = Number(targetDate) - Number(today);
-
-  // Переводим миллисекунды в дни
-  const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  const { id, name, text, images, isDisabled } = data;
 
   return (
     <div className={styles.page}>
-      <Header />
       <main className={styles.main}>
-        <h1>{name}</h1>
-        <div className={styles.section}>
-          <Slider {...settings}>
-            {images.map((item) => (
-              <div key={item} className={styles.item}>
-                <img className={styles.image} src={item} />
-              </div>
-            ))}
-          </Slider>
+        <div className={styles.backBox}>
+          <Link href={promptBookListPageRoute.getUrl(locale)}>
+            <ChevronLeft size={28} />
+          </Link>
         </div>
+        <div className={styles.imagesBox}>
+          <ImagesBox id={id} images={images} />
+        </div>
+        <h1 className={styles.title}>{name}</h1>
 
         <div className={styles.line}>
           <div className={styles.textBox}>
-            <h2>About</h2>
-            <p
+            {/* <h2>About</h2> */}
+            <div
               className={styles.text}
               dangerouslySetInnerHTML={{
                 __html: text,
               }}
             />
+
+            <Link
+              className={styles.seeAllButton}
+              href={promptBookListPageRoute.getUrl(locale)}
+            >
+              See all Prompt Books
+            </Link>
           </div>
 
           <div className={styles.rightSide}>
             {!isDisabled ? (
-              <>
-                <div className={styles.rightSideBox}>
-                {/* <div className={styles.priceSection}>
-                  <div>{formatMessage({ id: "common.price" })}</div>
-                  <div className={styles.price}>
-                    <PriceWithUnit value={discountedPrice} />
-                  </div>
-                  <div className={styles.basePrice}>
-                    <PriceWithUnit value={price} />
-                  </div>
-                </div>
-                <div className={styles.discountInfo}>
-                  {discount}% off • Sale ends in {daysLeft} days
-                </div> */}
-                <div className={styles.links}>
-                  {/* {links.cm && (
-                    <Link
-                      className={styles.link}
-                      href={links.cm}
-                      target="_blank"
-                    >
-                      Buy on Creative Market
-                    </Link>
-                  )} */}
-                  {/* {links.patreon && (
-                    <Link
-                      className={styles.link}
-                      href={links.patreon}
-                      target="_blank"
-                    >
-                      Buy on Patreon
-                    </Link>
-                  )} */}
-                  {links.gumroad && (
-                    <Link
-                      className={styles.link}
-                      href={links.gumroad}
-                      target="_blank"
-                    >
-                      Own It Today!
-                    </Link>
-                  )}
-
-                  <Link
-                    className={styles.linkSecondary}
-                    href={promptBookListPageRoute.getUrl(locale)}
-                  >
-                    See all Prompt Books
-                  </Link>
-                  {/* {links.etsy && (
-                    <Link
-                      className={styles.link}
-                      href={links.etsy}
-                      target="_blank"
-                    >
-                      Buy on Etsy
-                    </Link>
-                  )} */}
-                </div>
-                </div>
-              </>
+              <RightSide data={data} />
             ) : (
               <div className={styles.rightSideBox}>
-                <div className={styles.naMessage}> Not available for now</div>
+                <div className={styles.naMessage}>Not available for now</div>
               </div>
             )}
           </div>
         </div>
 
-        {related.length !== 0 && (
-          <div className={styles.related}>
-            <h2>You may also like</h2>
-            <div className={styles.list}>
-              {related.map((item) => (
-                <PromptbookItem key={item.slug} item={item} />
-              ))}
-            </div>
-          </div>
-        )}
+        {/* {related.length !== 0 && (
+          <Related related={related} />
+        )} */}
       </main>
     </div>
   );

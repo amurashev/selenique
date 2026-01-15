@@ -1,0 +1,82 @@
+
+.rightSideBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f3;
+  /* border-radius: 8px; */
+  padding: 16px 16px;
+  /* margin-bottom: 24px; */
+}
+
+.priceSection {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: bold;
+  color: #0f743b;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.basePrice {
+  font-size: 36px;
+  color: #aaaaaa;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+
+.discountInfo {
+  font-size: 16px;
+  text-align: right;
+  color: #0f743b;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* margin-top: 16px; */
+}
+
+.link {
+  background-color: #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  &:hover {
+    background-color: #3a9bff;
+  }
+}
+
+.seeAllButton {
+  border: 1px solid #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: #0974e2;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: none;
+
+  &:hover {
+    border-color: #3a9bff;
+  }
+}
+
+
+@media (min-width: 760px) { 
+  .seeAllButton {
+    display: block;
+  }
+}

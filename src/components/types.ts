@@ -3,9 +3,11 @@ export type PossibleLocales = "en" | "ru";
 export type PriceType = Record<string, number>;
 
 export type PromptBookRaw = {
+  id: number
   isDisabled?: boolean
   name: string;
   price: PriceType;
+  summary?: string;
   text: string;
   related?: string[];
   links: {
@@ -14,7 +16,7 @@ export type PromptBookRaw = {
     etsy?: string;
     gumroad?: string
   };
-  images: string[];
+  images: number[];
 };
 
 export type PromptBook = PromptBookRaw & {

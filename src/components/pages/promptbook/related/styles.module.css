@@ -1,0 +1,27 @@
+.related {
+  margin-top: 48px;
+  padding: 0 16px;
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.list {
+  margin-top: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 600px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

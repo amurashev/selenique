@@ -14,7 +14,7 @@ const PromptbookItem: React.FC<{
   const { formatMessage, locale } = useIntl();
   const [isOpen, setIsOpen] = useState(false);
 
-  const { slug, name, images } = item;
+  const { id, slug, name, summary, images } = item;
   return (
     <Link
       key={slug}
@@ -25,10 +25,16 @@ const PromptbookItem: React.FC<{
       })}
       className={styles.card}
     >
-      <img src={images[0]} alt={name} className={styles.image} />
-      {/* <div className={styles.textBlock}>
-      <h3 className={styles.title}>{name}</h3>
-    </div> */}
+      <div className={styles.box}>
+        <img src={`/promptbooks/${id}/vert.jpg`} alt={name} className={styles.image} />
+        <div className={styles.textBlock}>
+          <div className={styles.title}>{name}</div>
+          <div className={styles.text}>{summary}</div>
+        </div>
+      </div>
+      <div className={styles.button}>
+        {formatMessage({ id: "common.buy_now" })}
+      </div>
     </Link>
   );
 };
