@@ -33,7 +33,7 @@
   width: 54px;
   height: auto;
   object-fit: cover;
-  border-radius: 9999;
+  border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
 }

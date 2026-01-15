@@ -37,6 +37,13 @@
   margin-top: 16px;
 }
 
+.advantages {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 12px  !important;
+}
+
 .textBox {
   flex-grow: 1;
   margin-top: 8px;

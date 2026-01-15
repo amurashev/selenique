@@ -7,6 +7,7 @@ export type PromptBookRaw = {
   gumroadId?: string
   isDisabled?: boolean
   name: string;
+  number: number
   price: PriceType;
   summary?: string;
   text: string;

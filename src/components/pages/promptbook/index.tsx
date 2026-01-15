@@ -28,7 +28,7 @@ export default function PromptbookPage({
   related: PromptBook[];
 }) {
   const { formatMessage, locale } = useIntl();
-  const { id, name, text, images, isDisabled } = data;
+  const { id, name, text, number, images, isDisabled } = data;
 
   return (
     <div className={styles.page}>
@@ -46,6 +46,17 @@ export default function PromptbookPage({
         <div className={styles.line}>
           <div className={styles.textBox}>
             {/* <h2>About</h2> */}
+            <ul className={styles.advantages}>
+              <li>
+                <strong>File type:</strong> 1 PDF
+              </li>
+              <li>
+                <strong>Best for:</strong> Gemini, Nano banana
+              </li>
+              <li>
+                <strong>Number of prompts in pack:</strong> {number}
+              </li>
+            </ul>
             <div
               className={styles.text}
               dangerouslySetInnerHTML={{
