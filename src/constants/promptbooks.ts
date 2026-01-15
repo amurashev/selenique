@@ -19,7 +19,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 18,
     },
-    summary: "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
+    summary:
+      "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
     <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
@@ -35,12 +36,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-high-fashion-editorial-prompts-vol-2": {
     id: 5,
+    gumroadId: "ettrel",
     name: "50 High-Fashion Editorial Prompts Vol.2",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
       etsy: "https://www.etsy.com/listing/4386890966/50-high-fashion-editorial-prompts-v2",
       gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts",
+        "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol2",
     },
     related: [
       "50-high-fashion-editorial-prompts-vol-1",
@@ -52,7 +54,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 18,
     },
-    summary: "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts.",
+    summary:
+      "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts.",
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
     <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
@@ -67,10 +70,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
   "50-men-fashion-editorial-prompts-vol-1": {
     id: 3,
+    gumroadId: "lenks",
     name: "50 Men-Fashion Editorial Prompts Vol.1",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
-      patreon: "",
       etsy: "https://www.etsy.com/listing/4390717860/50-ai-prompts-for-mens-fashion-photos-o",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-men-fashion-editorial-prompts-vol-1",
@@ -86,7 +89,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       en: 18,
     },
 
-    summary: "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
+    summary:
+      "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted men-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
     <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
@@ -102,10 +106,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-ideal-skin-midjourney-prompts-vol-1": {
     id: 4,
+    gumroadId: "axsggm",
     name: "50 Ideal Skin Midjourney Prompts Vol .1",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
-      patreon: "",
       etsy: "https://www.etsy.com/listing/4386090496/50-ideal-skin-midjourney-prompts-v1",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
@@ -121,7 +125,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 20.5,
     },
-    summary: "This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics.",
+    summary:
+      "This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics.",
     text: `
     <p>Want beauty shots that look like a magazine cover without spending hours tweaking prompts? This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics. You’ll get crisp close-ups (eyes, lips, skin texture), creative makeup (glitter tears, graphic liner, pearly highlights), juicy color accents, wet/dewy looks, and soft beige neutrals for premium skincare vibes.</p>
     <p>Each prompt is written for fast results and easy edits: swap colors, change angle or aspect ratio, add/remove props — the structure holds. Perfect for beauty brands, MUAs, e-commerce catalogs, stock contributors, content creators.</p>
@@ -138,10 +143,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-jewelry-product-photo-ai-prompts": {
     id: 6,
+    gumroadId: "chkhjfd",
     name: "50 Jewelry Product Photo AI Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
-      patreon: "",
       etsy: "https://www.etsy.com/listing/4390631317/50-ai-jewelry-photo-prompts-digital",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-ai-jewelry-photography-prompts",
@@ -157,7 +162,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 20.5,
     },
-    summary: "This digital prompt book includes 50 universal prompts for generating luxurious visuals of rings, earrings, bracelets, and necklaces. Perfect for jewelry brands, designers, marketers, and creatives who want professional-quality images without expensive photo shoots.",
+    summary:
+      "This digital prompt book includes 50 universal prompts for generating luxurious visuals of rings, earrings, bracelets, and necklaces. Perfect for jewelry brands, designers, marketers, and creatives who want professional-quality images without expensive photo shoots.",
     text: `
     <p>💎 This AI Jewelry Product Photo Prompt Book is a ready-to-use creative tool for generating luxurious and eye-catching jewelry visuals. Inside you will find 50 universal prompts designed for product photography of rings, earrings, bracelets, and necklaces. Each prompt comes with clear structure and reference pictures, making it easy to adapt for your own projects.</p>
     <p>These prompts are compatible with different AI platforms such as MidJourney, Krea, Higgsfield, Nano Banana, and others. By using the same prompt across multiple tools, you’ll see how each AI interprets the idea in its own unique style, giving you endless inspiration and variety.</p>
@@ -173,13 +179,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "24-ai-maternity-photoshoot-prompts": {
     id: 7,
+    gumroadId: "rertdk",
     name: "24 AI Maternity Photoshoot Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
       etsy: "https://www.etsy.com/listing/4391491290/24-ai-maternity-photoshoot-prompts-fine",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/24-ai-maternity-photoshoot-prompts",
-      patreon: "",
     },
     related: [
       "50-high-fashion-editorial-prompts-vol-1",
@@ -191,7 +197,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 13.2,
     },
-    summary: "This AI Maternity Photoshoot Prompt Collection helps you create breathtaking images of a pregnant woman in just a few clicks.",
+    summary:
+      "This AI Maternity Photoshoot Prompt Collection helps you create breathtaking images of a pregnant woman in just a few clicks.",
     text: `
     <p>Turn your photo into a beautiful maternity portrait — without studio, makeup, or stress 💫</p>
     <p>This AI Maternity Photoshoot Prompt Collection helps you create breathtaking images of a pregnant woman in just a few clicks. Simply upload your face photo, paste the prompt, and generate elegant fine-art or fashion-style portraits.</p>
@@ -213,13 +220,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-christmas-woman-photo-prompts": {
     id: 8,
+    gumroadId: "woarfp",
     name: "30 Christmas Woman Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4392413223/30-christmas-woman-photo-prompts-ai",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/30-christmas-woman-photo-prompts",
-      patreon: "",
     },
     related: [
       "30-christmas-woman-photo-prompts",
@@ -230,7 +237,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 13.2,
     },
-    summary: "This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.",
+    summary:
+      "This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.",
     text: `
     <p>✨ Create your dream Christmas photoshoot without leaving home! This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.</p>
     <h3>🎄 What’s included:</h3>
@@ -247,13 +255,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "40-christmas-kids-photo-prompts-ai": {
     id: 9,
+    gumroadId: "uomxe",
     name: "40 Christmas Kids Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4392409070/40-christmas-kids-photo-prompts-ai",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/40-christmas-kids-ai-photo-prompts",
-      patreon: "",
     },
     related: [
       "30-christmas-woman-photo-prompts",
@@ -264,7 +272,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 16.2,
     },
-    summary: "This AI prompt pack includes 40 Christmas Kids Photo Prompts designed to create cozy, festive, and heart-warming images in just minutes.",
+    summary:
+      "This AI prompt pack includes 40 Christmas Kids Photo Prompts designed to create cozy, festive, and heart-warming images in just minutes.",
     text: `
     <p>🎁 Turn your child’s Christmas photos into magical portraits — no studio, no photographer needed! This AI prompt pack includes 40 Christmas Kids Photo Prompts designed to create cozy, festive, and heart-warming images in just minutes.</p>
     <h3>🎄 What’s included:</h3>
@@ -286,13 +295,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-business-woman-photo-prompts-ai": {
     id: 10,
+    gumroadId: "ejoktb",
     name: "30 Business Woman Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4393131014/30-business-woman-photo-prompts-ai",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/30-ai-business-woman-photo-prompts",
-      patreon: "",
     },
     related: [
       "15-ai-women-headshot-prompts-professional",
@@ -307,7 +316,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 13.2,
     },
-    summary: "Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
+    summary:
+      "Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
     text: `
     <p>💼 Elevate your professional image with AI. This Business Woman Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.</p>
     <h3>📸 What’s included:</h3>
@@ -323,12 +333,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "60-fantasy-photo-prompts-ai-portrait": {
     id: 11,
-    isDisabled: true,
+    gumroadId: "npbsxg",
     name: "60 Fantasy Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291921616-60-Fantasy-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4395085911/60-fantasy-photo-prompts-ai-portrait",
-      patreon: "",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/60-fantasy-portrait-ai-prompts-character",
     },
     related: [
       "60-fantasy-photo-prompts-ai-portrait",
@@ -339,6 +350,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 25,
     },
+    summary:
+      "Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes.",
     text: `
     <p>Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes. Perfect for Midjourney, Krea, Nano Banana, Leonardo AI, Higgsfield and other platforms that support character reference.</p>
     <h3>📸 What’s included:</h3>
@@ -356,12 +369,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "25-wizard-school-photo-prompts-ai": {
     id: 12,
-    isDisabled: true,
+    gumroadId: "inrccd",
     name: "25 Wizard School Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291924923-25-Wizard-School-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4396222150/25-wizard-school-photo-prompts-ai",
-      patreon: "",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/25-wizard-school-ai-photo-prompts",
     },
     related: [
       "60-fantasy-photo-prompts-ai-portrait",
@@ -389,13 +403,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "ai-photo-prompts-30-woman-work-lifestyle": {
     id: 14,
+    gumroadId: "fiymsd",
     name: "30 Woman Work & Lifestyle Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4398101656/ai-photo-prompts-30-woman-work-lifestyle",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/30-woman-work-lifestyle-prompts",
-      patreon: "",
     },
     related: [
       "30-business-woman-photo-prompts-ai",
@@ -410,7 +424,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 13.2,
     },
-    summary: "This prompt pack includes 30 Woman Work & Lifestyle Photo Prompts designed for personal branding, business visuals, and social media content. Perfect for entrepreneurs, coaches, and creatives who want high-quality, natural portraits without expensive photoshoots.",
+    summary:
+      "This prompt pack includes 30 Woman Work & Lifestyle Photo Prompts designed for personal branding, business visuals, and social media content. Perfect for entrepreneurs, coaches, and creatives who want high-quality, natural portraits without expensive photoshoots.",
     text: `
     <p>💻 Create confident, elegant, and lifestyle-inspired portraits with AI. This prompt pack includes 30 Woman Work & Lifestyle Photo Prompts designed for personal branding, business visuals, and social media content. Perfect for entrepreneurs, coaches, and creatives who want high-quality, natural portraits without expensive photoshoots.</p>
     <h3>📸 What’s included:</h3>
@@ -426,13 +441,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "15-ai-women-headshot-prompts-professional": {
     id: 15,
+    gumroadId: "kjrgzn",
     name: "15 Women Headshot Professional Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
       etsy: "https://www.etsy.com/listing/4398815563/ai-women-headshot-prompts-professional",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/15-ai-women-headshot-prompts",
-      patreon: "",
     },
     related: [
       "30-business-woman-photo-prompts-ai",
@@ -447,7 +462,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 9,
     },
-    summary: "This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.",
+    summary:
+      "This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.",
     text: `
     <p>💼 Create confident, professional portraits with AI — perfect for LinkedIn, websites, and personal branding.This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.</p>
     <h3>📸 What’s included:</h3>
@@ -463,13 +479,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol1": {
     id: 16,
+    gumroadId: "ighjrv",
     name: "50 Old Money AI Photo Prompts Vol.1",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
       etsy: "https://www.etsy.com/listing/4399220145/50-old-money-ai-photo-prompts-vol1",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol1",
-      patreon: "",
     },
     related: [
       "50-old-money-ai-photo-prompts-vol1",
@@ -480,7 +496,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 20.5,
     },
-    summary: "Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.1) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.",
+    summary:
+      "Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.1) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.",
     text: `
     <p>Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.1) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.</p>
     <h3>📸 What’s included:</h3>
@@ -496,13 +513,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol2": {
     id: 17,
+    gumroadId: "nbgtgn",
     name: "50 Old Money AI Photo Prompts Vol.2",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
       etsy: "https://www.etsy.com/listing/4399232905/50-old-money-ai-photo-prompts-vol2",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol2",
-      patreon: "",
     },
     related: [
       "50-old-money-ai-photo-prompts-vol1",
@@ -513,7 +530,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 20.5,
     },
-    summary: "Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.2) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.",
+    summary:
+      "Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.2) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.",
     text: `
     <p>Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.2) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.</p>
     <h3>📸 What’s included:</h3>
@@ -529,13 +547,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "22-business-man-headshot-prompts-ai": {
     id: 18,
+    gumroadId: "hlvbhd",
     name: "22 Business Man Headshot Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
       etsy: "https://www.etsy.com/listing/4402125175/22-business-man-headshot-prompts-ai",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/22-business-man-headshot-prompts",
-      patreon: "",
     },
     related: [
       "32-business-man-photo-prompts",
@@ -550,7 +568,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 9,
     },
-    summary: "Prompt pack includes 22 professional men’s headshot prompts — perfect for LinkedIn, websites, personal branding, and corporate visuals.",
+    summary:
+      "Prompt pack includes 22 professional men’s headshot prompts — perfect for LinkedIn, websites, personal branding, and corporate visuals.",
     text: `
     <p>💼 Create powerful and confident business portraits with AI. This AI prompt pack includes 22 professional men’s headshot prompts — perfect for LinkedIn, websites, personal branding, and corporate visuals..</p>
     <h3>📸 What’s included:</h3>
@@ -562,12 +581,12 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "40-muslim-women-business-photo-prompts": {
     id: 19,
-    isDisabled: true,
+    gumroadId: "dtsmas",
     name: "40 Muslim Women Business Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291948535-Muslim-Women-Business-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4404024867/40-muslim-women-business-photo-prompts",
-      patreon: "",
+      gumroad: "https://seleniquestudio.gumroad.com/l/40-ai-muslim-women-business-photo",
     },
     related: [
       "15-ai-women-headshot-prompts-professional",
@@ -597,13 +616,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-men-photo-prompts-ai": {
     id: 20,
+    gumroadId: "giarye",
     name: "8 Red Carpet Men Photo Prompts",
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403405005/8-red-carpet-men-photo-prompts-ai-male",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/8-red-carpet-men-photo-prompts",
-      patreon: "",
     },
     related: [
       "8-red-carpet-couple-ai-photo-prompts",
@@ -615,7 +634,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 6,
     },
-    summary: "This AI prompt pack includes 8 red carpet photo prompts for men, inspired by celebrity galas, movie premieres, and award nights. Perfect for creating stylish portraits in tuxedos and tailored suits — no photographer or studio needed.",
+    summary:
+      "This AI prompt pack includes 8 red carpet photo prompts for men, inspired by celebrity galas, movie premieres, and award nights. Perfect for creating stylish portraits in tuxedos and tailored suits — no photographer or studio needed.",
     text: `
     <p>🎥 Step into the spotlight with elegance and confidence.</p>
     <p>This AI prompt pack includes 8 red carpet photo prompts for men, inspired by celebrity galas, movie premieres, and award nights. Perfect for creating stylish portraits in tuxedos and tailored suits — no photographer or studio needed.</p>
@@ -632,13 +652,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-women-photo-prompts": {
     id: 21,
+    gumroadId: "rbmxu",
     name: "8 Red Carpet Women Photo Prompts",
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403398257/8-red-carpet-women-fashion-photo-prompts",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/8-red-carpet-women-ai-photo-prompts",
-      patreon: "",
     },
     related: [
       "8-red-carpet-couple-ai-photo-prompts",
@@ -650,7 +670,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 6,
     },
-    summary: "This AI prompt pack includes 8 high-fashion women photo prompts inspired by glamorous award shows, flashing cameras, and couture looks. Create cinematic portraits that feel straight from Cannes, Vogue, or the Met Gala — no studio or stylist needed.",
+    summary:
+      "This AI prompt pack includes 8 high-fashion women photo prompts inspired by glamorous award shows, flashing cameras, and couture looks. Create cinematic portraits that feel straight from Cannes, Vogue, or the Met Gala — no studio or stylist needed.",
     text: `
     <p>💃 Step onto the red carpet in style!</p>
     <p>This AI prompt pack includes 8 high-fashion women photo prompts inspired by glamorous award shows, flashing cameras, and couture looks. Create cinematic portraits that feel straight from Cannes, Vogue, or the Met Gala — no studio or stylist needed.</p>
@@ -667,13 +688,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-couple-ai-photo-prompts": {
     id: 22,
+    gumroadId: "mgkyn",
     name: "8 Red Carpet Couple AI Photo Prompts",
     links: {
       cm: "",
       etsy: "https://www.etsy.com/listing/4403489169/red-carpet-couple-ai-photo-prompts-gala",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/8-red-carpet-couple-ai-photo-prompts",
-      patreon: "",
     },
     related: [
       "8-red-carpet-couple-ai-photo-prompts",
@@ -685,7 +706,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 6,
     },
-    summary: "This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.",
+    summary:
+      "This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.",
     text: `
     <p>💫 Step into the spotlight together!</p>
     <p>This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.</p>
@@ -702,13 +724,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "35-cosmetic-product-photo-prompts": {
     id: 23,
+    gumroadId: "gwmam",
     name: "35 Cosmetic Product Photo Prompts",
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
       etsy: "https://www.etsy.com/listing/4404726085/cosmetic-product-photo-prompts-35",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/35-cosmetic-product-photo-prompts",
-      patreon: "",
     },
     related: [
       "35-cosmetic-product-photo-prompts",
@@ -721,7 +743,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 14.5,
     },
-    summary: "This digital PDF includes 35 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers.",
+    summary:
+      "This digital PDF includes 35 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers.",
     text: `
     <p>✨ Create elegant cosmetic product visuals in minutes. This digital PDF includes 35 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers. </p>
     <p>Prompts are written in clear, adaptable wording with placeholder so you can quickly replace the product. You can change color, background, mood and lighting. Works across multiple AIs and keeps a consistent premium aesthetic.</p>
@@ -738,13 +761,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "75-cosmetic-product-photo-prompts": {
     id: 25,
+    gumroadId: "ztbknr",
     name: "75 Cosmetic Product Photo Prompts",
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
       etsy: "https://www.etsy.com/listing/4404895789/75-cosmetic-product-photo-prompts",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/75-cosmetic-product-photo-prompts",
-      patreon: "",
     },
     related: [
       "35-cosmetic-product-photo-prompts",
@@ -757,7 +780,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 14.5,
     },
-    summary: "This digital PDF includes 75 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers.",
+    summary:
+      "This digital PDF includes 75 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers.",
     text: `
     <p>✨ Create elegant cosmetic product visuals in minutes. This digital PDF includes 75 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers. </p>
     <p>Prompts are written in clear, adaptable wording with placeholder so you can quickly replace the product. You can change color, background, mood and lighting. Works across multiple AIs and keeps a consistent premium aesthetic.</p>
@@ -774,13 +798,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "32-business-man-photo-prompts": {
     id: 24,
+    gumroadId: "toebl",
     name: "32 AI Business Man Photo Prompts",
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
       etsy: "https://www.etsy.com/listing/4407678906/32-ai-business-man-photo-prompts-brand",
       gumroad:
         "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
-      patreon: "",
     },
     related: [
       "22-business-man-headshot-prompts-ai",
@@ -795,7 +819,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 9.9,
     },
-    summary: "This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
+    summary:
+      "This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
     text: `
     <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content. </p>
     <h3>📸 What’s inside:</h3>

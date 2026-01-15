@@ -4,6 +4,7 @@ export type PriceType = Record<string, number>;
 
 export type PromptBookRaw = {
   id: number
+  gumroadId?: string
   isDisabled?: boolean
   name: string;
   price: PriceType;
