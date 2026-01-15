@@ -386,6 +386,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 13.2,
     },
+    summary: "This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells.",
     text: `
     <p>🪄 Step into a world of magic! This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells. Create cinematic portraits filled with magic, mystery, and adventure — no studio or costume needed.</p>
     <h3>📸 What’s included:</h3>
@@ -601,6 +602,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 20.5,
     },
+    summary: "Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings.",
     text: `
     <p>🌿 Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings. Perfect for personal branding, education, and corporate visuals with authenticity and respect.</p>
     <h3>📸 What’s included:</h3>
