@@ -7,15 +7,23 @@ import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
 import styles from "./page.module.css";
-import { productPortfolioPageRoute } from "@/constants/routes";
+import { homePage, productPortfolioPageRoute } from "@/constants/routes";
 
 import Header from "@/components/layout/header";
 import Tabs from "@/components/ui/tabs";
 import { PORTFOLIO_COMMON_TYPE, PORTFOLIO_TYPES } from "@/constants/portfolio";
 import Footer from "@/components/layout/footer";
 import PHOTOS from "../../../../source/portfolio.json";
+import Link from "next/link";
+import { ChevronLeft } from "@/components/sections/arrows";
 
-export default function ProductsPortfolioPage({ type }: { type: string }) {
+export default function ProductsPortfolioPage({
+  type,
+  deviceType,
+}: {
+  type: string;
+  deviceType: "mobile" | "desktop";
+}) {
   const { formatMessage, locale } = useIntl();
   const [isMounted, setIsMounted] = useState(false);
   const photos = PHOTOS.map((item) => {
@@ -34,13 +42,21 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
     type !== PORTFOLIO_COMMON_TYPE ? item.category === type : true
   );
 
+  const isMobile = deviceType === "mobile";
+  const rowHeight = isMobile ? 160 : 480
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
   return (
     <div className={styles.page}>
-      <Header />
+      {/* <Header /> */}
+      <div className={styles.backBox}>
+      <Link href={homePage.getUrl(locale)}>
+        <ChevronLeft size={28} />
+      </Link>
+    </div>
       <main className={styles.main}>
         <Tabs
           activeIndex={type}
@@ -56,11 +72,11 @@ export default function ProductsPortfolioPage({ type }: { type: string }) {
         />
         {photos && isMounted && (
           <div className={styles.photos}>
-            <RowsPhotoAlbum photos={photos} spacing={4} targetRowHeight={480} />
+            <RowsPhotoAlbum photos={photos} spacing={4} targetRowHeight={rowHeight} />
           </div>
         )}
       </main>
-      <Footer />
+      {/* <Footer /> */}
       {/* <footer className={styles.footer}>
         <Button
           onClick={() => {

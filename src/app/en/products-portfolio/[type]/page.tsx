@@ -5,6 +5,7 @@ import Layout from "@/components/layout";
 import ProductsPortfolioPage from "@/components/pages/products-portfolio";
 import { getDictionary } from "@/l18n/dictionaries";
 import { PORTFOLIO_COMMON_TYPE } from "@/constants/portfolio";
+import getDeviceType from "@/utils/device";
 
 export async function generateMetadata({
   params,
@@ -36,9 +37,10 @@ export default async function ProductsPortfolio({
   params: Promise<{ type: string }>;
 }) {
   const { type } = await params;
+  const deviceType = await getDeviceType()
   return (
     <Layout locale="en">
-      <ProductsPortfolioPage type={type || "all"} />
+      <ProductsPortfolioPage type={type || "all"} deviceType={deviceType} />
     </Layout>
   );
 }

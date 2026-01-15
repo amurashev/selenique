@@ -1,7 +1,15 @@
 .page {
   position: relative;
+  /* background-color: var(--foreground); */
 }
 
+.backBox {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border-bottom: 1px solid #e3e3e3;
+}
 
 .main {
   width: 100%;

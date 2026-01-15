@@ -37,7 +37,7 @@ export default function RightSide({ data }: { data: PromptBook }) {
   // Переводим миллисекунды в дни
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
-  const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`
+  const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
 
   return (
     <div className={styles.rightSideBox}>
@@ -60,13 +60,12 @@ export default function RightSide({ data }: { data: PromptBook }) {
           </Link>
         )}
 
-
-<Link
-              className={styles.seeAllButton}
-              href={promptBookListPageRoute.getUrl(locale)}
-            >
-              See all Prompt Books
-            </Link>
+        <Link
+          className={styles.seeAllButton}
+          href={promptBookListPageRoute.getUrl(locale)}
+        >
+          See all Prompt Books
+        </Link>
 
         {/* {links.cm && (
                     <Link
