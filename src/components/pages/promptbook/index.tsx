@@ -18,6 +18,7 @@ import ImagesBox from "./images-box";
 import RightSide from "./right-side";
 import Related from "./related";
 import { ChevronLeft } from "@/components/sections/arrows";
+import Reviews from "./reviews";
 
 export default function PromptbookPage({
   data,
@@ -71,6 +72,7 @@ export default function PromptbookPage({
           </div>
         </div>
 
+        <Reviews />
         {/* {related.length !== 0 && (
           <Related related={related} />
         )} */}

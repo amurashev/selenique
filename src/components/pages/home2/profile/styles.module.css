@@ -12,6 +12,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 9999;
+  overflow: hidden;
   flex-shrink: 0;
 }
 

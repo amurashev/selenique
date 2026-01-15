@@ -95,6 +95,7 @@ a {
   
   .slick-dots li {
     height: 24px;
+    width: 4px;
   }
   
   .slick-dots li button:before {

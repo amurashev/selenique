@@ -1,0 +1,45 @@
+.box {
+  padding: 16px 16px;
+  margin-top: 12px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.stars {
+  margin-top: 4px;
+}
+
+.item {
+  display: flex;
+  gap: 8px;
+}
+
+.line {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.image {
+  display: block;
+  width: 54px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 9999;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.text {
+  color: var(--text);
+  font-size: 16px;
+  margin-top: 4px;
+}
