@@ -1,4 +1,4 @@
-// eslint-disable-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function shuffle(array: any[]) {
   let currentIndex = array.length;
 
