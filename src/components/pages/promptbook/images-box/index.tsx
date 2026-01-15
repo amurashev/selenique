@@ -18,7 +18,7 @@ export default function ImagesBox({
   images: number[];
 }) {
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="mobileView">
       {images.map((item) => (
         <div key={item} className={styles.item}>
           <img

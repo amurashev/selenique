@@ -85,6 +85,30 @@ a {
   /* font-weight: 700; */
 }
 
+
+.mobileView {
+  .slick-dots {
+    bottom: 4px;
+    z-index: 99999;
+    background-color: hsl(0deg 0% 0% / 30%);
+  }
+  
+  .slick-dots li {
+    height: 24px;
+  }
+  
+  .slick-dots li button:before {
+    color: #eee;
+    opacity: 0.7;
+    line-height: 18px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #fff;
+    opacity: 1;
+  }  
+}
+
 @media (prefers-color-scheme: dark) {
   /* html {
     color-scheme: dark;
