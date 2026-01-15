@@ -18,7 +18,7 @@ const DISCOUNT_END_DAY = "2025-12-16";
 
 export default function RightSide({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { id, name, text, price, links, images, isDisabled } = data;
+  const { id, gumroadId, name, text, price, links, images, isDisabled } = data;
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -37,6 +37,8 @@ export default function RightSide({ data }: { data: PromptBook }) {
   // Переводим миллисекунды в дни
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
+  const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`
+
   return (
     <div className={styles.rightSideBox}>
       {/* <div className={styles.priceSection}>
@@ -53,7 +55,7 @@ export default function RightSide({ data }: { data: PromptBook }) {
                 </div> */}
       <div className={styles.links}>
         {links.gumroad && (
-          <Link className={styles.link} href={links.gumroad} target="_blank">
+          <Link className={styles.link} href={purchaseLink} target="_blank">
             {formatMessage({ id: "common.buy_now" })}
           </Link>
         )}
