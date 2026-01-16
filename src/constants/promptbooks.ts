@@ -3,12 +3,13 @@ import { PromptBookRaw } from "@/components/types";
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
     id: 1,
-    isDisabled: true,
+    gumroadId: 'lyuhe',
     name: "50 High-Fashion Editorial Prompts Vol.1",
     number: 50,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
       etsy: "https://www.etsy.com/listing/4390735413/50-high-fashion-editorial-prompts-ai",
+      gumroad: 'https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol1',
     },
     related: [
       "50-high-fashion-editorial-prompts-vol-1",
