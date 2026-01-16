@@ -3,13 +3,14 @@ import { PromptBookRaw } from "@/components/types";
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
     id: 1,
-    gumroadId: 'lyuhe',
+    gumroadId: "lyuhe",
     name: "50 High-Fashion Editorial Prompts Vol.1",
     number: 50,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
       etsy: "https://www.etsy.com/listing/4390735413/50-high-fashion-editorial-prompts-ai",
-      gumroad: 'https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol1',
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol1",
     },
     tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -353,7 +354,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 13.2,
     },
-    summary: "This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells.",
+    summary:
+      "This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells.",
     text: `
     <p>🪄 Step into a world of magic! This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells. Create cinematic portraits filled with magic, mystery, and adventure — no studio or costume needed.</p>
     <h3>📸 What’s included:</h3>
@@ -533,7 +535,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291948535-Muslim-Women-Business-Photo-Prompts",
       etsy: "https://www.etsy.com/listing/4404024867/40-muslim-women-business-photo-prompts",
-      gumroad: "https://seleniquestudio.gumroad.com/l/40-ai-muslim-women-business-photo",
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/40-ai-muslim-women-business-photo",
     },
     tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 21, 22, 23, 24, 25],
@@ -541,7 +544,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 20.5,
     },
-    summary: "Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings.",
+    summary:
+      "Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings.",
     text: `
     <p>🌿 Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings. Perfect for personal branding, education, and corporate visuals with authenticity and respect.</p>
     <h3>📸 What’s included:</h3>
@@ -754,6 +758,40 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     </ul>
     `,
   },
+
+  "8-advertising-photo-prompts-vol-1": {
+    id: 26,
+    gumroadId: "jjtfyv",
+    name: "8 AI Advertising Photo Prompts",
+    number: 8,
+    links: {
+      gumroad:
+        "https://seleniquestudio.gumroad.com/l/8-advertising-photo-prompts",
+    },
+    tags: [],
+    images: [1, 2, 3, 4, 5],
+    price: {
+      ru: 1000,
+      en: 9.9,
+    },
+    summary:
+      "This AI prompt pack includes 8 commercial photo prompts inspired by fashion, tech, beauty, and lifestyle advertising. Perfect for creating eye-catching visuals that look like luxury brand campaigns.",
+    text: `
+    <p>💼 This AI prompt pack includes 8 commercial photo prompts inspired by fashion, tech, beauty, and lifestyle advertising. Perfect for creating eye-catching visuals that look like luxury brand campaigns.</p>
+    <h3>📸 What’s inside:</h3>
+    <ul>
+    <li>PDF with 8 AI prompts + reference pictures</li>
+    <li>Compatible with Krea, Nano Banana, Higgsfield, Gemini</li>
+    <li>Works on platforms that support Character Reference</li>
+    </ul>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Instantly create ad-quality portraits</li>
+    <li>Perfect for content creators and brand designers</li>
+    <li>No photoshoot or editing needed — just pure creativity</li>
+    </ul>
+    `,
+  },
 };
 
 export const promptbooksOrdered: string[] = [
@@ -776,6 +814,8 @@ export const promptbooksOrdered: string[] = [
 
   "30-christmas-woman-photo-prompts",
   "40-christmas-kids-photo-prompts-ai",
+
+  "8-advertising-photo-prompts-vol-1",
 
   "50-high-fashion-editorial-prompts-vol-1",
   "50-high-fashion-editorial-prompts-vol-2",
