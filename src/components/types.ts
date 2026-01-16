@@ -3,20 +3,33 @@ export type PossibleLocales = "en" | "ru";
 export type PriceType = Record<string, number>;
 
 export type PromptBookRaw = {
-  id: number
-  gumroadId?: string
-  isDisabled?: boolean
+  id: number;
+  gumroadId?: string;
+  isDisabled?: boolean;
   name: string;
-  number: number
+  number: number;
   price: PriceType;
   summary?: string;
   text: string;
-  related?: string[];
+  tags: (
+    | "fashion"
+    | "business"
+    | "red_carpet"
+    | "cosmetic"
+    | "fantasy"
+    | "men"
+    | "women"
+    | "kids"
+    | "beauty"
+    | "jewelry"
+    | "christmas"
+  )[];
+  // related?: string[];
   links: {
     patreon?: string;
     cm?: string;
     etsy?: string;
-    gumroad?: string
+    gumroad?: string;
   };
   images: number[];
 };
@@ -32,7 +45,7 @@ export type GuideRaw = {
   links: {
     cm?: string;
     etsy?: string;
-    gumroad?: string
+    gumroad?: string;
   };
   images: string[];
 };

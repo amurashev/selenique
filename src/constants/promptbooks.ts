@@ -11,11 +11,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4390735413/50-high-fashion-editorial-prompts-ai",
       gumroad: 'https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol1',
     },
-    related: [
-      "50-high-fashion-editorial-prompts-vol-1",
-      "50-high-fashion-editorial-prompts-vol-2",
-      "50-men-fashion-editorial-prompts-vol-1",
-    ],
+    tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -47,11 +43,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol2",
     },
-    related: [
-      "50-high-fashion-editorial-prompts-vol-1",
-      "50-high-fashion-editorial-prompts-vol-2",
-      "50-men-fashion-editorial-prompts-vol-1",
-    ],
+    tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     price: {
       ru: 1000,
@@ -82,11 +74,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-men-fashion-editorial-prompts-vol-1",
     },
-    related: [
-      "50-high-fashion-editorial-prompts-vol-1",
-      "50-high-fashion-editorial-prompts-vol-2",
-      "50-men-fashion-editorial-prompts-vol-1",
-    ],
+    tags: ["fashion", "men"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -119,12 +107,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
     },
-    related: [
-      "50-ideal-skin-midjourney-prompts-vol-1",
-      "50-jewelry-product-photo-ai-prompts",
-      "35-cosmetic-product-photo-prompts",
-      "75-cosmetic-product-photo-prompts",
-    ],
+    tags: ["women", "beauty"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -157,12 +140,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-ai-jewelry-photography-prompts",
     },
-    related: [
-      "50-ideal-skin-midjourney-prompts-vol-1",
-      "50-jewelry-product-photo-ai-prompts",
-      "35-cosmetic-product-photo-prompts",
-      "75-cosmetic-product-photo-prompts",
-    ],
+    tags: ["jewelry", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -194,11 +172,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/24-ai-maternity-photoshoot-prompts",
     },
-    related: [
-      "50-high-fashion-editorial-prompts-vol-1",
-      "50-high-fashion-editorial-prompts-vol-2",
-      "50-men-fashion-editorial-prompts-vol-1",
-    ],
+    tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8],
     price: {
       ru: 1000,
@@ -236,10 +210,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/30-christmas-woman-photo-prompts",
     },
-    related: [
-      "30-christmas-woman-photo-prompts",
-      "40-christmas-kids-photo-prompts-ai",
-    ],
+    tags: ["christmas", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8],
     price: {
       ru: 1000,
@@ -272,10 +243,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/40-christmas-kids-ai-photo-prompts",
     },
-    related: [
-      "30-christmas-woman-photo-prompts",
-      "40-christmas-kids-photo-prompts-ai",
-    ],
+    tags: ["christmas", "kids"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -313,14 +281,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/30-ai-business-woman-photo-prompts",
     },
-    related: [
-      "15-ai-women-headshot-prompts-professional",
-      "ai-photo-prompts-30-woman-work-lifestyle",
-      "22-business-man-headshot-prompts-ai",
-      "30-business-woman-photo-prompts-ai",
-      "32-business-man-photo-prompts",
-      "40-muslim-women-business-photo-prompts",
-    ],
+    tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -352,10 +313,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/60-fantasy-portrait-ai-prompts-character",
     },
-    related: [
-      "60-fantasy-photo-prompts-ai-portrait",
-      "25-wizard-school-photo-prompts-ai",
-    ],
+    tags: ["fantasy"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,
@@ -389,10 +347,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/25-wizard-school-ai-photo-prompts",
     },
-    related: [
-      "60-fantasy-photo-prompts-ai-portrait",
-      "25-wizard-school-photo-prompts-ai",
-    ],
+    tags: ["fantasy"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -425,14 +380,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/30-woman-work-lifestyle-prompts",
     },
-    related: [
-      "30-business-woman-photo-prompts-ai",
-      "ai-photo-prompts-30-woman-work-lifestyle",
-      "22-business-man-headshot-prompts-ai",
-      "32-business-man-photo-prompts",
-      "15-ai-women-headshot-prompts-professional",
-      "40-muslim-women-business-photo-prompts",
-    ],
+    tags: ["business", "women"],
     images: [1, 3, 4, 17, 18, 19, 20, 21, 22],
     price: {
       ru: 1000,
@@ -464,14 +412,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/15-ai-women-headshot-prompts",
     },
-    related: [
-      "30-business-woman-photo-prompts-ai",
-      "ai-photo-prompts-30-woman-work-lifestyle",
-      "22-business-man-headshot-prompts-ai",
-      "32-business-man-photo-prompts",
-      "15-ai-women-headshot-prompts-professional",
-      "40-muslim-women-business-photo-prompts",
-    ],
+    tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
     price: {
       ru: 1000,
@@ -503,10 +444,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol1",
     },
-    related: [
-      "50-old-money-ai-photo-prompts-vol1",
-      "50-old-money-ai-photo-prompts-vol2",
-    ],
+    tags: ["fashion", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -538,10 +476,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol2",
     },
-    related: [
-      "50-old-money-ai-photo-prompts-vol1",
-      "50-old-money-ai-photo-prompts-vol2",
-    ],
+    tags: ["fashion", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -573,14 +508,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/22-business-man-headshot-prompts",
     },
-    related: [
-      "32-business-man-photo-prompts",
-      "22-business-man-headshot-prompts-ai",
-      "30-business-woman-photo-prompts-ai",
-      "ai-photo-prompts-30-woman-work-lifestyle",
-      "15-ai-women-headshot-prompts-professional",
-      "40-muslim-women-business-photo-prompts",
-    ],
+    tags: ["business", "men"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -607,14 +535,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       etsy: "https://www.etsy.com/listing/4404024867/40-muslim-women-business-photo-prompts",
       gumroad: "https://seleniquestudio.gumroad.com/l/40-ai-muslim-women-business-photo",
     },
-    related: [
-      "15-ai-women-headshot-prompts-professional",
-      "30-business-woman-photo-prompts-ai",
-      "ai-photo-prompts-30-woman-work-lifestyle",
-      "22-business-man-headshot-prompts-ai",
-      "32-business-man-photo-prompts",
-      "40-muslim-women-business-photo-prompts",
-    ],
+    tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 21, 22, 23, 24, 25],
     price: {
       ru: 1000,
@@ -645,11 +566,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/8-red-carpet-men-photo-prompts",
     },
-    related: [
-      "8-red-carpet-couple-ai-photo-prompts",
-      "8-red-carpet-women-photo-prompts",
-      "8-red-carpet-men-photo-prompts-ai",
-    ],
+    tags: ["red_carpet", "men"],
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -682,11 +599,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/8-red-carpet-women-ai-photo-prompts",
     },
-    related: [
-      "8-red-carpet-couple-ai-photo-prompts",
-      "8-red-carpet-women-photo-prompts",
-      "8-red-carpet-men-photo-prompts-ai",
-    ],
+    tags: ["red_carpet", "women"],
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -719,11 +632,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/8-red-carpet-couple-ai-photo-prompts",
     },
-    related: [
-      "8-red-carpet-couple-ai-photo-prompts",
-      "8-red-carpet-women-photo-prompts",
-      "8-red-carpet-men-photo-prompts-ai",
-    ],
+    tags: ["red_carpet"],
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -756,12 +665,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/35-cosmetic-product-photo-prompts",
     },
-    related: [
-      "35-cosmetic-product-photo-prompts",
-      "75-cosmetic-product-photo-prompts",
-      "50-ideal-skin-midjourney-prompts-vol-1",
-      "50-jewelry-product-photo-ai-prompts",
-    ],
+    tags: ["cosmetic"],
     images: [2, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -794,12 +698,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/75-cosmetic-product-photo-prompts",
     },
-    related: [
-      "35-cosmetic-product-photo-prompts",
-      "75-cosmetic-product-photo-prompts",
-      "50-ideal-skin-midjourney-prompts-vol-1",
-      "50-jewelry-product-photo-ai-prompts",
-    ],
+    tags: ["cosmetic"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     price: {
       ru: 1000,
@@ -832,14 +731,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       gumroad:
         "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
     },
-    related: [
-      "22-business-man-headshot-prompts-ai",
-      "30-business-woman-photo-prompts-ai",
-      "ai-photo-prompts-30-woman-work-lifestyle",
-      "32-business-man-photo-prompts",
-      "15-ai-women-headshot-prompts-professional",
-      "40-muslim-women-business-photo-prompts",
-    ],
+    tags: ["business", "men"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,

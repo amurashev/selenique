@@ -20,13 +20,7 @@ import Related from "./related";
 import { ChevronLeft } from "@/components/sections/arrows";
 import Reviews from "./reviews";
 
-export default function PromptbookPage({
-  data,
-  related,
-}: {
-  data: PromptBook;
-  related: PromptBook[];
-}) {
+export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
   const { id, name, text, number, images, isDisabled } = data;
 

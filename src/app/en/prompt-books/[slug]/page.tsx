@@ -46,18 +46,6 @@ export default async function PromptbookPageEntry({
     return redirect("/en/prompt-books");
   }
 
-  const relatedIds = data.related || [];
-
-  const related = relatedIds
-    .map((id) => {
-      return {
-        ...PROMTBOOKS[id],
-        slug: id,
-      };
-    })
-    .filter((item) => item.slug !== slug)
-    .slice(0, 3) as PromptBook[];
-
   return (
     <Layout locale="en">
       <PromptbookPage
@@ -65,7 +53,6 @@ export default async function PromptbookPageEntry({
           ...data,
           slug,
         }}
-        related={related}
       />
     </Layout>
   );
