@@ -24,7 +24,9 @@ export async function generateMetadata({
     title,
     description,
     openGraph: {
-      images: [`https://www.selenique.space${data.images[0]}`],
+      images: [
+        `https://www.selenique.space/promptbooks/${data.id}/${data.images[0]}.jpg`,
+      ],
       title: title,
       description,
       url: `https://www.selenique.space/en/prompt-books/${slug}`,
