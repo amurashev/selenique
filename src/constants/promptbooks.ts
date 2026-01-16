@@ -795,33 +795,33 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 };
 
 export const promptbooksOrdered: string[] = [
-  "22-business-man-headshot-prompts-ai",
   "30-business-woman-photo-prompts-ai",
+  "22-business-man-headshot-prompts-ai",
+  "8-red-carpet-women-photo-prompts",
+  "50-high-fashion-editorial-prompts-vol-2",
+
+  "50-men-fashion-editorial-prompts-vol-1",
+  "15-ai-women-headshot-prompts-professional",
+  "8-red-carpet-men-photo-prompts-ai",
+  "35-cosmetic-product-photo-prompts",
+  "50-old-money-ai-photo-prompts-vol1",
+
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",
-  "15-ai-women-headshot-prompts-professional",
-  "40-muslim-women-business-photo-prompts",
   "24-ai-maternity-photoshoot-prompts",
-
-  "8-red-carpet-men-photo-prompts-ai",
-  "8-red-carpet-women-photo-prompts",
-  "8-red-carpet-couple-ai-photo-prompts",
 
   "50-ideal-skin-midjourney-prompts-vol-1",
   "50-jewelry-product-photo-ai-prompts",
-  "35-cosmetic-product-photo-prompts",
   "75-cosmetic-product-photo-prompts",
+
+  "8-advertising-photo-prompts-vol-1",
+  "40-muslim-women-business-photo-prompts",
+
+  "50-high-fashion-editorial-prompts-vol-1",
+  "60-fantasy-photo-prompts-ai-portrait",
+  "25-wizard-school-photo-prompts-ai",
+  "50-old-money-ai-photo-prompts-vol2",
 
   "30-christmas-woman-photo-prompts",
   "40-christmas-kids-photo-prompts-ai",
-
-  "8-advertising-photo-prompts-vol-1",
-
-  "50-high-fashion-editorial-prompts-vol-1",
-  "50-high-fashion-editorial-prompts-vol-2",
-  "50-men-fashion-editorial-prompts-vol-1",
-  "60-fantasy-photo-prompts-ai-portrait",
-  "25-wizard-school-photo-prompts-ai",
-  "50-old-money-ai-photo-prompts-vol1",
-  "50-old-money-ai-photo-prompts-vol2",
 ];
