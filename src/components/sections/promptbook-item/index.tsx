@@ -14,7 +14,7 @@ const PromptbookItem: React.FC<{
   const { formatMessage, locale } = useIntl();
   const [isOpen, setIsOpen] = useState(false);
 
-  const { id, slug, name, summary, images } = item;
+  const { id, slug, name, summary } = item;
   return (
     <Link
       key={slug}

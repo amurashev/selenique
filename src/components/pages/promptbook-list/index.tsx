@@ -15,11 +15,11 @@ export default function PromptbookListPage() {
 
   return (
     <div className={styles.page}>
-    <div className={styles.backBox}>
-      <Link href={homePage.getUrl(locale)}>
-        <ChevronLeft size={28} color="#ffffff" />
-      </Link>
-    </div>
+      <div className={styles.backBox}>
+        <Link href={homePage.getUrl(locale)}>
+          <ChevronLeft size={28} color="#ffffff" />
+        </Link>
+      </div>
       <main className={styles.main}>
         <h1>{formatMessage({ id: "prompt_books.title" })}</h1>
         <div className={styles.list}>

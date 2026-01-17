@@ -26,27 +26,29 @@ import Profile from "./profile";
 import shuffle from "@/utils/arrays";
 import { RowsPhotoAlbum } from "react-photo-album";
 
-const randomPhotos = PHOTOS.filter(item => {
+const randomPhotos = PHOTOS.filter((item) => {
   const sourceFile = item.SourceFile.slice(8);
   const category = sourceFile.split("/")[3];
-  return category === 'top'
-})
+  return category === "top";
+});
 
 shuffle(randomPhotos);
 
-const photos = randomPhotos.map((item) => {
-  const sourceFile = item.SourceFile.slice(8);
-  const category = sourceFile.split("/")[3];
-  const fileName = sourceFile.split("/")[4];
-  return {
-    src: sourceFile,
-    category,
-    width: item.ImageWidth,
-    height: item.ImageHeight,
-    alt: fileName,
-    title: fileName,
-  };
-}).slice(0, 8);
+const photos = randomPhotos
+  .map((item) => {
+    const sourceFile = item.SourceFile.slice(8);
+    const category = sourceFile.split("/")[3];
+    const fileName = sourceFile.split("/")[4];
+    return {
+      src: sourceFile,
+      category,
+      width: item.ImageWidth,
+      height: item.ImageHeight,
+      alt: fileName,
+      title: fileName,
+    };
+  })
+  .slice(0, 8);
 
 export default function HomePage({
   deviceType,
@@ -63,15 +65,6 @@ export default function HomePage({
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
-  console.warn(
-    "randomPhotos",
-    randomPhotos,
-    photos,
-    isMounted,
-    isMobile,
-    rowHeight
-  );
 
   return (
     <div className={styles.page}>
@@ -100,6 +93,28 @@ export default function HomePage({
             </div>
           </div>
 
+          {/* <div className={styles.section}>
+            <h1>{formatMessage({ id: "home.guides.title" })}</h1>
+            <div className={styles.list}>
+              {guidesOrdered.slice(0, 6).map((slug) => {
+                const item = {
+                  ...GUIDES[slug],
+                  slug,
+                };
+                return <GuideItem key={slug} item={item} />;
+              })}
+            </div>
+
+            <div className={styles.buttonBox}>
+              <Link
+                className={styles.seeAll}
+                href={guidesListPageRoute.getUrl(locale)}
+              >
+                {formatMessage({ id: "home.guides.see_all" })}
+              </Link>
+            </div>
+          </div> */}
+
           <div className={styles.section}>
             <h3>{formatMessage({ id: "home.portfolio.title" })}</h3>
 
@@ -126,28 +141,6 @@ export default function HomePage({
               </Link>
             </div>
           </div>
-
-          {/* <div className={styles.section}>
-              <h1>{formatMessage({ id: "home.guides.title" })}</h1>
-              <div className={styles.list}>
-                {guidesOrdered.slice(0, 6).map((slug) => {
-                  const item = {
-                    ...GUIDES[slug],
-                    slug,
-                  };
-                  return <GuideItem key={slug} item={item} />;
-                })}
-              </div>
-
-              <div className={styles.buttonBox}>
-                <Link
-                  className={styles.linkSecondary}
-                  href={guidesListPageRoute.getUrl(locale)}
-                >
-                  {formatMessage({ id: "home.guides.see_all" })}
-                </Link>
-              </div>
-            </div> */}
         </div>
       </main>
     </div>

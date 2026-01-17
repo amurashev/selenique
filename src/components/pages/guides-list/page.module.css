@@ -1,18 +1,27 @@
 .page {
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: var(--foreground);
+}
+
+.backBox {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border-bottom: 1px solid #555555;
 }
 
 .main {
-  max-width: 1080px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 16px;
   padding-bottom: 32px;
   padding-top: 36px;
-  text-align: center;
 
   h1 {
-    font-size: 38px;
+    color: white;
+    text-align: center;
+    font-size: 28px;
   }
 }
 
@@ -23,30 +32,8 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
-/* 
-.textBlock {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
-  color: #fff;
-}
-
-.title {
-  margin: 0;
-  font-size: 18px;
-} */
-
 @media (min-width: 600px) {
   .list {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 900px) {
-  .list {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

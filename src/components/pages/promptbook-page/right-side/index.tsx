@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./styles.module.css";
-import { PromptBook } from "@/components/types";
+import { Guide, PromptBook } from "@/components/types";
 
 import { PriceWithUnit } from "@/components/ui/price";
 import Link from "next/link";
@@ -16,7 +16,7 @@ import { promptBookListPageRoute } from "@/constants/routes";
 const discount = 30;
 const DISCOUNT_END_DAY = "2025-12-16";
 
-export default function RightSide({ data }: { data: PromptBook }) {
+export default function RightSide({ data, backUrl }: { data: PromptBook | Guide, backUrl: string }) {
   const { formatMessage, locale } = useIntl();
   const { id, gumroadId, name, text, price, links, images, isDisabled } = data;
 
@@ -62,7 +62,7 @@ export default function RightSide({ data }: { data: PromptBook }) {
 
         <Link
           className={styles.seeAllButton}
-          href={promptBookListPageRoute.getUrl(locale)}
+          href={backUrl}
         >
           See all Prompt Books
         </Link>

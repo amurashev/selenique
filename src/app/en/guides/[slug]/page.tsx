@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
 
-import GuidePage from "@/components/pages/guide-page";
+import GuidePage from "@/components/pages/promptbook-page";
 
 import { GUIDES } from "@/constants/guides";
 
@@ -23,7 +23,9 @@ export async function generateMetadata({
     title,
     description,
     openGraph: {
-      images: [`https://www.selenique.space${data.images[0]}`],
+      images: [
+        `https://www.selenique.space/guides/${data.id}/${data.images[0]}.jpg`,
+      ],
       title: title,
       description,
       url: `https://www.selenique.space/en/guides/${slug}`,
@@ -48,6 +50,7 @@ export default async function PromptbookPageEntry({
   return (
     <Layout locale="en">
       <GuidePage
+        type="guide"
         data={{
           ...data,
           slug,

@@ -39,15 +39,19 @@ export type PromptBook = PromptBookRaw & {
 };
 
 export type GuideRaw = {
+  id: number;
+  isDisabled: boolean
+  gumroadId?: string;
   name: string;
   price: PriceType;
+  summary: string
   text: string;
   links: {
     cm?: string;
     etsy?: string;
     gumroad?: string;
   };
-  images: string[];
+  images: number[];
 };
 
 export type Guide = GuideRaw & {

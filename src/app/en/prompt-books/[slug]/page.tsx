@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
 
-import PromptbookPage from "@/components/pages/promptbook";
+import PromptbookPage from "@/components/pages/promptbook-page";
 
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { PromptBook } from "@/components/types";
@@ -51,6 +51,7 @@ export default async function PromptbookPageEntry({
   return (
     <Layout locale="en">
       <PromptbookPage
+        type="promptbook"
         data={{
           ...data,
           slug,

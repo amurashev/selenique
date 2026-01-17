@@ -1,32 +1,21 @@
 import { GuideRaw } from "@/components/types";
 
-export const guidesOrdered: string[] = [
-  "guide_1"
-]
+export const guidesOrdered: string[] = ["guide_1"];
 
 export const GUIDES: Record<string, GuideRaw> = {
-  "guide_1": {
+  guide_1: {
+    id: 1,
+    gumroadId: "text",
     name: "Guide",
     links: {
-      cm: "link",
-      etsy: "link",
+      gumroad: "link",
     },
-    images: [
-      "/promptbooks/1/1.jpg",
-      "/promptbooks/1/2.jpg",
-      "/promptbooks/1/3.jpg",
-      "/promptbooks/1/4.jpg",
-      "/promptbooks/1/5.jpg",
-      "/promptbooks/1/6.jpg",
-      "/promptbooks/1/7.jpg",
-      "/promptbooks/1/8.jpg",
-      "/promptbooks/1/9.jpg",
-      "/promptbooks/1/10.jpg",
-    ],
+    images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
       en: 18,
     },
+    summary: "summary",
     text: `
     <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
     <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
@@ -39,5 +28,4 @@ export const GUIDES: Record<string, GuideRaw> = {
     </ul>
     `,
   },
-}
-
+};

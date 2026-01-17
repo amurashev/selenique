@@ -9,10 +9,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
-import { PromptBook } from "@/components/types";
+import { Guide, PromptBook } from "@/components/types";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
-import { promptBookListPageRoute } from "@/constants/routes";
+import {
+  promptBookListPageRoute,
+  guidesListPageRoute,
+} from "@/constants/routes";
 
 import ImagesBox from "./images-box";
 import RightSide from "./right-side";
@@ -20,20 +23,31 @@ import Related from "./related";
 import { ChevronLeft } from "@/components/sections/arrows";
 import Reviews from "./reviews";
 
-export default function PromptbookPage({ data }: { data: PromptBook }) {
+export default function PromptbookPage({
+  data,
+  type,
+}: {
+  data: PromptBook | Guide;
+  type: "promptbook" | "guide";
+}) {
   const { formatMessage, locale } = useIntl();
-  const { id, name, text, number, images, isDisabled } = data;
+  const { id, name, text, images, isDisabled } = data;
+
+  const backUrl =
+    type === "promptbook"
+      ? promptBookListPageRoute.getUrl(locale)
+      : guidesListPageRoute.getUrl(locale);
 
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.backBox}>
-          <Link href={promptBookListPageRoute.getUrl(locale)}>
+          <Link href={backUrl}>
             <ChevronLeft size={28} />
           </Link>
         </div>
         <div className={styles.imagesBox}>
-          <ImagesBox id={id} images={images} />
+          <ImagesBox id={id} images={images} type={type} />
         </div>
         <h1 className={styles.title}>{name}</h1>
 
@@ -44,12 +58,17 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
               <li>
                 <strong>File type:</strong> 1 PDF
               </li>
-              <li>
-                <strong>Best for:</strong> Gemini, Nano banana
-              </li>
-              <li>
-                <strong>Number of prompts in pack:</strong> {number}
-              </li>
+              {type === "promptbook" && (
+                <li>
+                  <strong>Best for:</strong> Gemini, Nano banana
+                </li>
+              )}
+              {(data as PromptBook).number && (
+                <li>
+                  <strong>Number of prompts in pack:</strong>
+                  {(data as PromptBook).number}
+                </li>
+              )}
             </ul>
             <div
               className={styles.text}
@@ -58,17 +77,14 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
               }}
             />
 
-            <Link
-              className={styles.seeAllButton}
-              href={promptBookListPageRoute.getUrl(locale)}
-            >
+            <Link className={styles.seeAllButton} href={backUrl}>
               See all Prompt Books
             </Link>
           </div>
 
           <div className={styles.rightSide}>
             {!isDisabled ? (
-              <RightSide data={data} />
+              <RightSide data={data} backUrl={backUrl} />
             ) : (
               <div className={styles.rightSideBox}>
                 <div className={styles.naMessage}>Not available for now</div>
