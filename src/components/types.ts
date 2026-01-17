@@ -40,7 +40,7 @@ export type PromptBook = PromptBookRaw & {
 
 export type GuideRaw = {
   id: number;
-  isDisabled: boolean
+  isDisabled?: boolean
   gumroadId?: string;
   name: string;
   price: PriceType;
