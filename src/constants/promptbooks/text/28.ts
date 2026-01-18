@@ -7,20 +7,22 @@ export default `<div>
    <h3>📦 WHAT YOU GET INSIDE</h3>
    <p>You get instant access to my Private Notion Dashboard containing 170+ Copy-Paste Prompts.</p>
    <p>Works with Nano Banana Pro/Gemini, Seedream, FLUX, and other major AI tools.</p>
-   <p>📸 170+ Prompts Organized by Category:</p>
-   <p>25 Selfie Prompts: Mirror selfies, candid snaps, "woke up like this" vibes.</p>
-   <p>25 Indoor Prompts: Cozy home shots, atmospheric cafés, restaurants.</p>
-   <p>25 Outdoor Prompts: City streets, nature walks, golden hour lighting.</p>
-   <p>25 Sport &amp; Fitness: Gym workouts, yoga, running, activewear.</p>
-   <p>30 Vacation &amp; Travel: Beach days, pool side, resort life.</p>
-   <p>15 In-Car Content: The classic "passenger princess" or driving shots.</p>
-   <p>25 Details &amp; Extras: Food, coffee, textures, close-ups (essential for realism).</p>
+   <p><b>📸 170+ Prompts Organized by Category:</b></p>
+   <ul>
+   <li><b>25 Selfie Prompts</b>: Mirror selfies, candid snaps, "woke up like this" vibes.</li>
+   <li><b>25 Indoor Prompts</b>: Cozy home shots, atmospheric cafés, restaurants.</li>
+   <li><b>25 Outdoor Prompts</b>: City streets, nature walks, golden hour lighting.</li>
+   <li><b>25 Sport &amp; Fitness</b>: Gym workouts, yoga, running, activewear.</li>
+   <li><b>30 Vacation &amp; Travel</b>: Beach days, pool side, resort life.</li>
+   <li><b>15 In-Car Content</b>: The classic "passenger princess" or driving shots.</li>
+   <li><b>25 Details &amp; Extras</b>: Food, coffee, textures, close-ups (essential for realism).</li>
+   </ul>
    <h3>🎁 INCLUDED BONUSES (Free Today)</h3>
-   <p>✅ Bonus #1: 90-Day "Viral Growth" Blueprint 🚀</p>
+   <p><b>✅ Bonus #1: 90-Day "Viral Growth" Blueprint 🚀</b></p>
    <p>A complete content calendar. I tell you exactly what to post for 3 months to grow your account from zero.</p>
-   <p>✅ Bonus #2: The Phone Case Strategy 📱</p>
+   <p><b>✅ Bonus #2: The Phone Case Strategy 📱</b></p>
    <p>My secret "authenticity hack." Learn why this one detail makes people trust your account instantly.</p>
-   <p>✅ Bonus #3: Realism Secrets Guide</p>
+   <p><b>✅ Bonus #3: Realism Secrets Guide</b></p>
    <p>Learn the exact keywords for skin texture, imperfections, and lighting that eliminate the "AI look."</p>
    <h3>✨ WHY REALISM MATTERS</h3>
    <p>Generic AI Prompts → Obviously fake → People scroll past.</p>
