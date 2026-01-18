@@ -18,7 +18,7 @@
 
 .image {
   display: block;
-  width: 88px;
+  width: 110px;
   height: auto;
   object-fit: cover;
 }
@@ -39,7 +39,7 @@
   margin-top: 4px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
   overflow: hidden; 
 }
 
