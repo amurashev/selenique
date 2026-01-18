@@ -10,9 +10,6 @@ export const GUIDES: Record<string, GuideRaw> = {
       slug: "slug",
     },
     name: "Guide",
-    links: {
-      gumroad: "link",
-    },
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
