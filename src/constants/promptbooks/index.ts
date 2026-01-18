@@ -1,5 +1,7 @@
 import { PromptBookRaw } from "@/components/types";
 
+import t28 from "./text/28";
+
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
     id: 1,
@@ -567,8 +569,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     name: "8 Red Carpet Men Photo Prompts",
     number: 8,
-    links: {
-    },
+    links: {},
     tags: ["red_carpet", "men"],
     images: [1, 2, 3, 4, 5],
     price: {
@@ -792,7 +793,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-
   "50-high-fashion-editorial-prompts-vol-3": {
     id: 27,
     gumroad: {
@@ -823,14 +823,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-  "ai-influencer-prompts-170": {
+  "realistic-ai-influencer-prompts-170": {
     id: 28,
-    isDisabled: true,
     gumroad: {
       id: "null",
-      slug: "ai-influencer-prompts-170",
+      slug: "realistic-ai-influencer-prompts-170",
     },
-    name: "50 High-Fashion Editorial Prompts Vol.2",
+    name: "The Ultra-Realistic AI Influencer Kit (170+ Prompts)",
     number: 170,
     links: {},
     tags: ["fashion", "women"],
@@ -839,26 +838,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 18,
     },
-    summary:
-      "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts.",
-    text: `
-    <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
-    <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
-    <h3>What’s Inside</h3>
-    <ul>
-    <li>📖 PDF Prompt Book with 50 universal, ready-to-use prompts</li>
-    <li>🎨 Reference Images showcasing real output examples for inspiration</li>
-    <li>✨ High-Fashion Focus: editorial looks, couture gowns, statement suits, surreal accessories, and cinematic backgrounds</li>
-    <li>🔀 Adaptable Variations: change the model’s look, outfit color, background, or atmosphere to instantly create unique results</li>
-    </ul>
-    `,
+    summary: "🔥 CREATE ULTRA-REALISTIC AI MODELS THAT PEOPLE THINK ARE REAL",
+    text: t28,
   },
-  
 };
 
 export const promptbooksOrdered: string[] = [
   "30-business-woman-photo-prompts-ai",
   "22-business-man-headshot-prompts-ai",
+  "realistic-ai-influencer-prompts-170",
   "8-red-carpet-women-photo-prompts",
   "50-high-fashion-editorial-prompts-vol-2",
 

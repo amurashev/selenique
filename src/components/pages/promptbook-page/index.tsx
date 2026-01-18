@@ -65,7 +65,7 @@ export default function PromptbookPage({
               )}
               {(data as PromptBook).number && (
                 <li>
-                  <strong>Number of prompts in pack:</strong>
+                  <strong>Number of prompts in pack: </strong>
                   {(data as PromptBook).number}
                 </li>
               )}
