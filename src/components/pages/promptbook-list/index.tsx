@@ -6,7 +6,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
 
-import PromptbookItem from "@/components/sections/promptbook-item";
+import PromptbookItem from "@/components/sections/promptbook-item2";
 import { homePage } from "@/constants/routes";
 import { ChevronLeft } from "@/components/sections/arrows";
 

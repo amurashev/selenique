@@ -19,7 +19,7 @@ import {
   productPortfolioPageRoute,
 } from "@/constants/routes";
 
-import PromptbookItem from "@/components/sections/promptbook-item";
+import PromptbookItem from "@/components/sections/promptbook-item2";
 import GuideItem from "@/components/sections/guide-item";
 import PHOTOS from "../../../../source/portfolio.json";
 import Profile from "./profile";

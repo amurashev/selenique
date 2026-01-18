@@ -28,14 +28,10 @@ const PromptbookItem: React.FC<{
     >
       <div className={styles.box}>
         <img src={`/promptbooks/${id}/vert.jpg`} alt={name} className={styles.image} />
-        <div className={styles.textBlock}>
-          <div className={styles.title}>{name}</div>
-          <div className={styles.text}>{summary}</div>
-        </div>
       </div>
-      <div className={styles.button}>
+      {/* <div className={styles.button}>
         {formatMessage({ id: "common.buy_now" })}
-      </div>
+      </div> */}
     </Link>
   );
 };
