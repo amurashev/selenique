@@ -38,7 +38,7 @@ export default function RightSide({ data, backUrl }: { data: PromptBook | Guide,
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
   // const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
-  const purchaseLink =  `${links}?wanted=true`
+  const purchaseLink =  `${links.gumroad}?wanted=true`
 
   return (
     <div className={styles.rightSideBox}>
