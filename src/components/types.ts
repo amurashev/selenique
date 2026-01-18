@@ -4,7 +4,10 @@ export type PriceType = Record<string, number>;
 
 export type PromptBookRaw = {
   id: number;
-  gumroadId?: string;
+  gumroad: {
+    id: string
+    slug: string
+  }
   isDisabled?: boolean;
   name: string;
   number: number;
@@ -26,10 +29,7 @@ export type PromptBookRaw = {
   )[];
   // related?: string[];
   links: {
-    patreon?: string;
     cm?: string;
-    etsy?: string;
-    gumroad?: string;
   };
   images: number[];
 };
@@ -40,8 +40,11 @@ export type PromptBook = PromptBookRaw & {
 
 export type GuideRaw = {
   id: number;
+  gumroad: {
+    id: string
+    slug: string
+  }
   isDisabled?: boolean
-  gumroadId?: string;
   name: string;
   price: PriceType;
   summary: string

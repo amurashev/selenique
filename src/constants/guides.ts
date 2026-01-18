@@ -5,7 +5,10 @@ export const guidesOrdered: string[] = ["guide_1"];
 export const GUIDES: Record<string, GuideRaw> = {
   guide_1: {
     id: 1,
-    gumroadId: "text",
+    gumroad: {
+      id: "id",
+      slug: "slug",
+    },
     name: "Guide",
     links: {
       gumroad: "link",

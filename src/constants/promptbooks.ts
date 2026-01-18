@@ -3,14 +3,14 @@ import { PromptBookRaw } from "@/components/types";
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
     id: 1,
-    gumroadId: "lyuhe",
+    gumroad: {
+      id: "lyuhe",
+      slug: "50-ai-fashion-editorial-prompts-vol1",
+    },
     name: "50 High-Fashion Editorial Prompts Vol.1",
     number: 50,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
-      etsy: "https://www.etsy.com/listing/4390735413/50-high-fashion-editorial-prompts-ai",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol1",
     },
     tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -35,14 +35,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-high-fashion-editorial-prompts-vol-2": {
     id: 5,
-    gumroadId: "ettrel",
+    gumroad: {
+      id: "ettrel",
+      slug: "50-ai-fashion-editorial-prompts-vol2",
+    },
     name: "50 High-Fashion Editorial Prompts Vol.2",
     number: 50,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
-      etsy: "https://www.etsy.com/listing/4386890966/50-high-fashion-editorial-prompts-v2",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-ai-fashion-editorial-prompts-vol2",
     },
     tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
@@ -66,14 +66,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
   "50-men-fashion-editorial-prompts-vol-1": {
     id: 3,
-    gumroadId: "lenks",
+    gumroad: {
+      id: "lenks",
+      slug: "50-men-fashion-editorial-prompts-vol-1",
+    },
     name: "50 Men-Fashion Editorial Prompts Vol.1",
     number: 50,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
-      etsy: "https://www.etsy.com/listing/4390717860/50-ai-prompts-for-mens-fashion-photos-o",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-men-fashion-editorial-prompts-vol-1",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
     },
     tags: ["fashion", "men"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -99,14 +99,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-ideal-skin-midjourney-prompts-vol-1": {
     id: 4,
-    gumroadId: "axsggm",
+    gumroad: {
+      id: "axsggm",
+      slug: "50-ideal-skin-midjourney-prompts-beauty",
+    },
     name: "50 Ideal Skin Midjourney Prompts Vol .1",
     number: 50,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
-      etsy: "https://www.etsy.com/listing/4386090496/50-ideal-skin-midjourney-prompts-v1",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-ideal-skin-midjourney-prompts-beauty",
     },
     tags: ["women", "beauty"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -132,14 +132,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-jewelry-product-photo-ai-prompts": {
     id: 6,
-    gumroadId: "chkhjfd",
+    gumroad: {
+      id: "chkhjfd",
+      slug: "50-ai-jewelry-photography-prompts",
+    },
     name: "50 Jewelry Product Photo AI Prompts",
     number: 50,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
-      etsy: "https://www.etsy.com/listing/4390631317/50-ai-jewelry-photo-prompts-digital",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-ai-jewelry-photography-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
     },
     tags: ["jewelry", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -164,14 +164,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "24-ai-maternity-photoshoot-prompts": {
     id: 7,
-    gumroadId: "rertdk",
+    gumroad: {
+      id: "rertdk",
+      slug: "24-ai-maternity-photoshoot-prompts",
+    },
     name: "24 AI Maternity Photoshoot Prompts",
     number: 24,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
-      etsy: "https://www.etsy.com/listing/4391491290/24-ai-maternity-photoshoot-prompts-fine",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/24-ai-maternity-photoshoot-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
     },
     tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8],
@@ -202,14 +202,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-christmas-woman-photo-prompts": {
     id: 8,
-    gumroadId: "woarfp",
+    gumroad: {
+      id: "woarfp",
+      slug: "30-christmas-woman-photo-prompts",
+    },
     name: "30 Christmas Woman Photo Prompts",
     number: 30,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4392413223/30-christmas-woman-photo-prompts-ai",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/30-christmas-woman-photo-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
     },
     tags: ["christmas", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8],
@@ -235,14 +235,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "40-christmas-kids-photo-prompts-ai": {
     id: 9,
-    gumroadId: "uomxe",
+    gumroad: {
+      id: "uomxe",
+      slug: "40-christmas-kids-ai-photo-prompts",
+    },
     name: "40 Christmas Kids Photo Prompts",
     number: 40,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4392409070/40-christmas-kids-photo-prompts-ai",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/40-christmas-kids-ai-photo-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
     },
     tags: ["christmas", "kids"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -273,14 +273,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-business-woman-photo-prompts-ai": {
     id: 10,
-    gumroadId: "ejoktb",
+    gumroad: {
+      id: "ejoktb",
+      slug: "30-ai-business-woman-photo-prompts",
+    },
     name: "30 Business Woman Photo Prompts",
     number: 30,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4393131014/30-business-woman-photo-prompts-ai",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/30-ai-business-woman-photo-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
     },
     tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -305,14 +305,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "60-fantasy-photo-prompts-ai-portrait": {
     id: 11,
-    gumroadId: "npbsxg",
+    gumroad: {
+      id: "npbsxg",
+      slug: "60-fantasy-portrait-ai-prompts-character",
+    },
     name: "60 Fantasy Photo Prompts",
     number: 60,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291921616-60-Fantasy-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4395085911/60-fantasy-photo-prompts-ai-portrait",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/60-fantasy-portrait-ai-prompts-character",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291921616-60-Fantasy-Photo-Prompts",
     },
     tags: ["fantasy"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
@@ -339,14 +339,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "25-wizard-school-photo-prompts-ai": {
     id: 12,
-    gumroadId: "inrccd",
+    gumroad: {
+      id: "inrccd",
+      slug: "25-wizard-school-ai-photo-prompts",
+    },
     name: "25 Wizard School Photo Prompts",
     number: 25,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291924923-25-Wizard-School-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4396222150/25-wizard-school-photo-prompts-ai",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/25-wizard-school-ai-photo-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291924923-25-Wizard-School-Photo-Prompts",
     },
     tags: ["fantasy"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -373,14 +373,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "ai-photo-prompts-30-woman-work-lifestyle": {
     id: 14,
-    gumroadId: "fiymsd",
+    gumroad: {
+      id: "fiymsd",
+      slug: "30-woman-work-lifestyle-prompts",
+    },
     name: "30 Woman Work & Lifestyle Photo Prompts",
     number: 30,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4398101656/ai-photo-prompts-30-woman-work-lifestyle",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/30-woman-work-lifestyle-prompts",
     },
     tags: ["business", "women"],
     images: [1, 3, 4, 17, 18, 19, 20, 21, 22],
@@ -405,14 +405,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "15-ai-women-headshot-prompts-professional": {
     id: 15,
-    gumroadId: "kjrgzn",
+    gumroad: {
+      id: "kjrgzn",
+      slug: "15-ai-women-headshot-prompts",
+    },
     name: "15 Women Headshot Professional Prompts",
     number: 15,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
-      etsy: "https://www.etsy.com/listing/4398815563/ai-women-headshot-prompts-professional",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/15-ai-women-headshot-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
     },
     tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
@@ -437,14 +437,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol1": {
     id: 16,
-    gumroadId: "ighjrv",
+    gumroad: {
+      id: "ighjrv",
+      slug: "50-old-money-ai-photo-prompts-vol1",
+    },
     name: "50 Old Money AI Photo Prompts Vol.1",
     number: 50,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
-      etsy: "https://www.etsy.com/listing/4399220145/50-old-money-ai-photo-prompts-vol1",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol1",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
     },
     tags: ["fashion", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -469,14 +469,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol2": {
     id: 17,
-    gumroadId: "nbgtgn",
+    gumroad: {
+      id: "nbgtgn",
+      slug: "50-old-money-ai-photo-prompts-vol2",
+    },
     name: "50 Old Money AI Photo Prompts Vol.2",
     number: 50,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
-      etsy: "https://www.etsy.com/listing/4399232905/50-old-money-ai-photo-prompts-vol2",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/50-old-money-ai-photo-prompts-vol2",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
     },
     tags: ["fashion", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -501,14 +501,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "22-business-man-headshot-prompts-ai": {
     id: 18,
-    gumroadId: "hlvbhd",
+    gumroad: {
+      id: "hlvbhd",
+      slug: "22-business-man-headshot-prompts",
+    },
     name: "22 Business Man Headshot Prompts",
     number: 22,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
-      etsy: "https://www.etsy.com/listing/4402125175/22-business-man-headshot-prompts-ai",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/22-business-man-headshot-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
     },
     tags: ["business", "men"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -529,14 +529,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "40-muslim-women-business-photo-prompts": {
     id: 19,
-    gumroadId: "dtsmas",
+    gumroad: {
+      id: "dtsmas",
+      slug: "40-ai-muslim-women-business-photo",
+    },
     name: "40 Muslim Women Business Photo Prompts",
     number: 40,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291948535-Muslim-Women-Business-Photo-Prompts",
-      etsy: "https://www.etsy.com/listing/4404024867/40-muslim-women-business-photo-prompts",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/40-ai-muslim-women-business-photo",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291948535-Muslim-Women-Business-Photo-Prompts",
     },
     tags: ["business", "women"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 21, 22, 23, 24, 25],
@@ -561,14 +561,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-men-photo-prompts-ai": {
     id: 20,
-    gumroadId: "giarye",
+    gumroad: {
+      id: "giarye",
+      slug: "8-red-carpet-men-photo-prompts",
+    },
     name: "8 Red Carpet Men Photo Prompts",
     number: 8,
     links: {
-      cm: "",
-      etsy: "https://www.etsy.com/listing/4403405005/8-red-carpet-men-photo-prompts-ai-male",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/8-red-carpet-men-photo-prompts",
     },
     tags: ["red_carpet", "men"],
     images: [1, 2, 3, 4, 5],
@@ -594,14 +593,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-women-photo-prompts": {
     id: 21,
-    gumroadId: "rbmxu",
+    gumroad: {
+      id: "rbmxu",
+      slug: "8-red-carpet-women-ai-photo-prompts",
+    },
     name: "8 Red Carpet Women Photo Prompts",
     number: 8,
     links: {
       cm: "",
-      etsy: "https://www.etsy.com/listing/4403398257/8-red-carpet-women-fashion-photo-prompts",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/8-red-carpet-women-ai-photo-prompts",
     },
     tags: ["red_carpet", "women"],
     images: [1, 2, 3, 4, 5],
@@ -627,14 +626,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-couple-ai-photo-prompts": {
     id: 22,
-    gumroadId: "mgkyn",
+    gumroad: {
+      id: "mgkyn",
+      slug: "8-red-carpet-couple-ai-photo-prompts",
+    },
     name: "8 Red Carpet Couple AI Photo Prompts",
     number: 8,
     links: {
       cm: "",
-      etsy: "https://www.etsy.com/listing/4403489169/red-carpet-couple-ai-photo-prompts-gala",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/8-red-carpet-couple-ai-photo-prompts",
     },
     tags: ["red_carpet"],
     images: [1, 2, 3, 4, 5],
@@ -660,14 +659,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "35-cosmetic-product-photo-prompts": {
     id: 23,
-    gumroadId: "gwmam",
+    gumroad: {
+      id: "gwmam",
+      slug: "35-cosmetic-product-photo-prompts",
+    },
     name: "35 Cosmetic Product Photo Prompts",
     number: 35,
     links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
-      etsy: "https://www.etsy.com/listing/4404726085/cosmetic-product-photo-prompts-35",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/35-cosmetic-product-photo-prompts",
+      // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",]
     },
     tags: ["cosmetic"],
     images: [2, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -693,14 +692,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "75-cosmetic-product-photo-prompts": {
     id: 25,
-    gumroadId: "ztbknr",
+    gumroad: {
+      id: "ztbknr",
+      slug: "75-cosmetic-product-photo-prompts",
+    },
     name: "75 Cosmetic Product Photo Prompts",
     number: 75,
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
-      etsy: "https://www.etsy.com/listing/4404895789/75-cosmetic-product-photo-prompts",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/75-cosmetic-product-photo-prompts",
     },
     tags: ["cosmetic"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
@@ -726,14 +725,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "32-business-man-photo-prompts": {
     id: 24,
-    gumroadId: "toebl",
+    gumroad: {
+      id: "toebl",
+      slug: "32-business-man-photo-prompts",
+    },
     name: "32 AI Business Man Photo Prompts",
     number: 32,
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
-      etsy: "https://www.etsy.com/listing/4407678906/32-ai-business-man-photo-prompts-brand",
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/32-business-man-photo-prompts",
     },
     tags: ["business", "men"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
@@ -761,13 +760,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-advertising-photo-prompts-vol-1": {
     id: 26,
-    gumroadId: "jjtfyv",
+    gumroad: {
+      id: "jjtfyv",
+      slug: "8-advertising-photo-prompts",
+    },
     name: "8 AI Advertising Photo Prompts",
     number: 8,
-    links: {
-      gumroad:
-        "https://seleniquestudio.gumroad.com/l/8-advertising-photo-prompts",
-    },
+    links: {},
     tags: [],
     images: [1, 2, 3, 4, 5],
     price: {

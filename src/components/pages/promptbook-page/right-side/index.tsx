@@ -16,9 +16,15 @@ import { promptBookListPageRoute } from "@/constants/routes";
 const discount = 30;
 const DISCOUNT_END_DAY = "2025-12-16";
 
-export default function RightSide({ data, backUrl }: { data: PromptBook | Guide, backUrl: string }) {
+export default function RightSide({
+  data,
+  backUrl,
+}: {
+  data: PromptBook | Guide;
+  backUrl: string;
+}) {
   const { formatMessage, locale } = useIntl();
-  const { id, gumroadId, name, text, price, links, images, isDisabled } = data;
+  const { id, gumroad, name, text, price, links, images, isDisabled } = data;
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -38,7 +44,7 @@ export default function RightSide({ data, backUrl }: { data: PromptBook | Guide,
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
   // const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
-  const purchaseLink =  `${links.gumroad}?wanted=true`
+  const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
 
   return (
     <div className={styles.rightSideBox}>
@@ -55,16 +61,13 @@ export default function RightSide({ data, backUrl }: { data: PromptBook | Guide,
                   {discount}% off • Sale ends in {daysLeft} days
                 </div> */}
       <div className={styles.links}>
-        {links.gumroad && (
+        {gumroad.slug && (
           <Link className={styles.link} href={purchaseLink} target="_blank">
             {formatMessage({ id: "common.buy_now" })}
           </Link>
         )}
 
-        <Link
-          className={styles.seeAllButton}
-          href={backUrl}
-        >
+        <Link className={styles.seeAllButton} href={backUrl}>
           See all Prompt Books
         </Link>
 
