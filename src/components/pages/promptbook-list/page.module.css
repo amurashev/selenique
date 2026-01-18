@@ -24,23 +24,3 @@
     font-size: 28px;
   }
 }
-
-.list {
-  margin-top: 24px;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
-}
-
-@media (min-width: 600px) {
-  .list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1080px) {
-  .list {
-    /* grid-template-columns: repeat(4, 1fr); */
-  }
-}

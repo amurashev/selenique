@@ -12,15 +12,16 @@
 .box {
   display: flex;
   gap: 12px;
+  overflow: hidden;
   /* margin-bottom: 12px; */
 }
-
 
 .image {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
+  color: white;
 }
 
 .textBlock {

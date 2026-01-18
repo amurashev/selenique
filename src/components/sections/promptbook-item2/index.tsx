@@ -27,7 +27,7 @@ const PromptbookItem: React.FC<{
       className={styles.card}
     >
       <div className={styles.box}>
-        <img src={`/promptbooks/${id}/vert.jpg`} alt={name} className={styles.image} />
+        <img src={`/promptbooks/${id}/vert.jpg`} title={name} alt={name} className={styles.image} />
       </div>
       {/* <div className={styles.button}>
         {formatMessage({ id: "common.buy_now" })}

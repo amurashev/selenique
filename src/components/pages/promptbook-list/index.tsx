@@ -4,11 +4,11 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 
 import styles from "./page.module.css";
-import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
+import { promptbooksOrdered } from "@/constants/promptbooks";
 
-import PromptbookItem from "@/components/sections/promptbook-item2";
 import { homePage } from "@/constants/routes";
 import { ChevronLeft } from "@/components/sections/arrows";
+import PromptbookList from "@/components/sections/promptbook-list";
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
@@ -22,15 +22,7 @@ export default function PromptbookListPage() {
       </div>
       <main className={styles.main}>
         <h1>{formatMessage({ id: "prompt_books.title" })}</h1>
-        <div className={styles.list}>
-          {promptbooksOrdered.map((slug) => {
-            const item = {
-              ...PROMTBOOKS[slug],
-              slug,
-            };
-            return <PromptbookItem key={slug} item={item} />;
-          })}
-        </div>
+        <PromptbookList list={promptbooksOrdered} />
         <div className={styles.buttonBox}>
           <Link className={styles.seeAll} href={homePage.getUrl(locale)}>
             {formatMessage({ id: "home.prompt_books.see_all" })}

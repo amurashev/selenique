@@ -8,9 +8,6 @@ import styles from "./page.module.css";
 
 import "react-photo-album/rows.css";
 
-import Header from "@/components/layout/header";
-import { SERVICES } from "@/constants/services";
-import Footer from "@/components/layout/footer";
 import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
 import { GUIDES, guidesOrdered } from "@/constants/guides";
 import {
@@ -19,12 +16,12 @@ import {
   productPortfolioPageRoute,
 } from "@/constants/routes";
 
-import PromptbookItem from "@/components/sections/promptbook-item2";
 import GuideItem from "@/components/sections/guide-item";
 import PHOTOS from "../../../../source/portfolio.json";
 import Profile from "./profile";
 import shuffle from "@/utils/arrays";
 import { RowsPhotoAlbum } from "react-photo-album";
+import PromptbookList from "@/components/sections/promptbook-list";
 
 const randomPhotos = PHOTOS.filter((item) => {
   const sourceFile = item.SourceFile.slice(8);
@@ -61,6 +58,7 @@ export default function HomePage({
 
   const isMobile = deviceType === "mobile";
   const rowHeight = isMobile ? 160 : 240;
+  const booksCount = isMobile ? 4 : 6;
 
   useEffect(() => {
     setIsMounted(true);
@@ -73,15 +71,7 @@ export default function HomePage({
           <Profile />
           <div className={styles.section}>
             <h3>{formatMessage({ id: "home.prompt_books.popular" })}</h3>
-            <div className={styles.list}>
-              {promptbooksOrdered.slice(0, 4).map((slug) => {
-                const item = {
-                  ...PROMTBOOKS[slug],
-                  slug,
-                };
-                return <PromptbookItem key={slug} item={item} />;
-              })}
-            </div>
+            <PromptbookList list={promptbooksOrdered.slice(0, booksCount)} />
 
             <div className={styles.buttonBox}>
               <Link
