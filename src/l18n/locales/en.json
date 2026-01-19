@@ -284,8 +284,8 @@
   "portfolio.types.furniture": "Furniture",
   "portfolio.types.jewelry": "Jewelry",
 
-  "home.prompt_books.title": "Our Prompt Books",
-  "home.prompt_books.popular": "Popular Prompt Books",
+  "home.prompt_books.popular.title": "Popular Prompt Books",
+  "home.prompt_books.popular.text": "Our most popular prompt books feature proven AI prompts for creating realistic visuals and high-quality content. Trusted by creators for consistent results and efficient workflows.",
   "home.prompt_books.see_all": "See all Prompt Books",
 
   "home.portfolio.title": "Our works",

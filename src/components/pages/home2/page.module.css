@@ -63,6 +63,20 @@
   align-items: center;
   margin-top: 48px;
   width: 100%;
+
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.4;
+    color: #dddddd;
+  }
 }
 
 .photos {
@@ -81,5 +95,16 @@
   }
   .item {
     /* width: 40%; */
+  }
+
+  .section {
+    h3 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 18px;
+      margin-top: 12px;
+    }
   }
 }

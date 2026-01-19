@@ -70,7 +70,8 @@ export default function HomePage({
         <div className={styles.inner}>
           <Profile />
           <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.prompt_books.popular" })}</h3>
+            <h3>{formatMessage({ id: "home.prompt_books.popular.title" })}</h3>
+            <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
             <PromptbookList list={promptbooksOrdered.slice(0, booksCount)} />
 
             <div className={styles.buttonBox}>

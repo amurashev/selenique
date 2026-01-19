@@ -20,15 +20,29 @@
 
   h1 {
     color: white;
-    /* text-align: center; */
-    font-size: 28px;
+    text-align: center;
+    font-size: 18px;
   }
 
   p {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 16px;
     line-height: 1.4;
     color: #dddddd;
+  }
+}
+
+
+@media (min-width: 840px) {
+  .main {
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 18px;
+      margin-top: 12px;
+    }
   }
 }
