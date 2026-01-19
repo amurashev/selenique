@@ -20,7 +20,15 @@
 
   h1 {
     color: white;
-    text-align: center;
+    /* text-align: center; */
     font-size: 28px;
+  }
+
+  p {
+    color: white;
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 1.4;
+    color: #dddddd;
   }
 }
