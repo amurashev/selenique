@@ -31,12 +31,15 @@ export default function PromptbookPage({
   type: "promptbook" | "guide";
 }) {
   const { formatMessage, locale } = useIntl();
-  const { id, name, text, images, isDisabled } = data;
+  const { id, gumroad, name, text, images, isDisabled } = data;
 
   const backUrl =
     type === "promptbook"
       ? promptBookListPageRoute.getUrl(locale)
       : guidesListPageRoute.getUrl(locale);
+
+  // const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
+  const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
 
   return (
     <div className={styles.page}>
@@ -84,7 +87,7 @@ export default function PromptbookPage({
 
           <div className={styles.rightSide}>
             {!isDisabled ? (
-              <RightSide data={data} backUrl={backUrl} />
+              <RightSide data={data} backUrl={backUrl} purchaseLink={purchaseLink} />
             ) : (
               <div className={styles.rightSideBox}>
                 <div className={styles.naMessage}>Not available for now</div>
@@ -97,6 +100,13 @@ export default function PromptbookPage({
         {/* {related.length !== 0 && (
           <Related related={related} />
         )} */}
+
+{gumroad.slug && (
+  <div className={styles.mobileButton} >
+          <Link className={styles.link} href={purchaseLink} target="_blank">
+            {formatMessage({ id: "common.buy_now" })}
+          </Link></div>
+        )}
       </main>
     </div>
   );

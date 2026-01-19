@@ -1,7 +1,6 @@
 
 .rightSideBox {
-  display: flex;
-  flex-direction: column;
+  display: none;
   background-color: #ffffff;
   border: 1px solid #f1f1f3;
   padding: 16px 16px;
@@ -81,5 +80,7 @@
 
   .rightSideBox {
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
   }
 }
