@@ -862,10 +862,10 @@ export const promptbooksOrdered: string[] = [
   "business-men-prompts-bundle",
 
   "30-business-woman-photo-prompts-ai",
-  "50-high-fashion-editorial-prompts-vol-2",
-  "22-business-man-headshot-prompts-ai",
   "realistic-ai-influencer-prompts-170",
+  "22-business-man-headshot-prompts-ai",
   "8-red-carpet-women-photo-prompts",
+  "50-high-fashion-editorial-prompts-vol-2",
 
   "50-men-fashion-editorial-prompts-vol-1",
   "15-ai-women-headshot-prompts-professional",
