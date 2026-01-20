@@ -2,6 +2,7 @@ import { PromptBookRaw } from "@/components/types";
 
 import t28 from "./text/28";
 import t27 from "./text/27";
+import t29 from "./text/29";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -812,9 +813,29 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     summary: "🔥 CREATE ULTRA-REALISTIC AI MODELS THAT PEOPLE THINK ARE REAL",
     text: t28,
   },
+
+  "fashion-editorial-prompts-bundle": {
+    id: 29,
+    gumroad: {
+      id: "null",
+      slug: "fashion-editorial-prompts-bundle",
+    },
+    name: "Fashion Editorial Prompts Bundle",
+    number: 150,
+    links: {},
+    tags: ["fashion", "women"],
+    images: [0, 1, 2, 3],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary: "A curated bundle of 150 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together three prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
+    text: t29,
+  },
 };
 
 export const promptbooksOrdered: string[] = [
+  "fashion-editorial-prompts-bundle",
   "30-business-woman-photo-prompts-ai",
   "22-business-man-headshot-prompts-ai",
   "realistic-ai-influencer-prompts-170",
