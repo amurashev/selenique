@@ -33,7 +33,7 @@ export default function PromptbookPage({
 }) {
   const { formatMessage, locale } = useIntl();
   const { id, gumroad, name, text, images, isDisabled } = data;
-  const packsNumber = (data as PromptBook).packs || 1
+  const packsNumber = (data as PromptBook).packs || 1;
 
   const backUrl =
     type === "promptbook"
@@ -83,13 +83,17 @@ export default function PromptbookPage({
             />
 
             <Link className={styles.seeAllButton} href={backUrl}>
-              See all Prompt Books
+              {formatMessage({ id: "prompt_books.see_all" })}
             </Link>
           </div>
 
           <div className={styles.rightSide}>
             {!isDisabled ? (
-              <RightSide data={data} backUrl={backUrl} purchaseLink={purchaseLink} />
+              <RightSide
+                data={data}
+                backUrl={backUrl}
+                purchaseLink={purchaseLink}
+              />
             ) : (
               <div className={styles.rightSideBox}>
                 <div className={styles.naMessage}>Not available for now</div>
@@ -103,11 +107,12 @@ export default function PromptbookPage({
           <Related related={related} />
         )} */}
 
-{gumroad.slug && (
-  <div className={styles.mobileButton} >
-          <Link className={styles.link} href={purchaseLink} target="_blank">
-            {formatMessage({ id: "common.buy_now" })}
-          </Link></div>
+        {gumroad.slug && (
+          <div className={styles.mobileButton}>
+            <Link className={styles.link} href={purchaseLink} target="_blank">
+              {formatMessage({ id: "common.buy_now" })}
+            </Link>
+          </div>
         )}
       </main>
     </div>
