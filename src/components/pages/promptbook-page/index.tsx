@@ -23,6 +23,7 @@ import Related from "./related";
 import { ChevronLeft } from "@/components/sections/arrows";
 import Reviews from "./reviews";
 import ShortHeader from "@/components/sections/short-header";
+import Bundle from "./bundle";
 
 export default function PromptbookPage({
   data,
@@ -33,7 +34,8 @@ export default function PromptbookPage({
 }) {
   const { formatMessage, locale } = useIntl();
   const { id, gumroad, name, text, images, isDisabled } = data;
-  const packsNumber = (data as PromptBook).packs || 1;
+  const pack = (data as PromptBook).pack || [];
+  const packsNumber = pack.length || 1;
 
   const backUrl =
     type === "promptbook"
@@ -75,6 +77,11 @@ export default function PromptbookPage({
                 </li>
               )}
             </ul>
+
+            {packsNumber > 1 && (data as PromptBook).pack && (
+              <Bundle data={data as PromptBook} />
+            )}
+
             <div
               className={styles.text}
               dangerouslySetInnerHTML={{
