@@ -22,6 +22,7 @@ import RightSide from "./right-side";
 import Related from "./related";
 import { ChevronLeft } from "@/components/sections/arrows";
 import Reviews from "./reviews";
+import ShortHeader from "@/components/sections/short-header";
 
 export default function PromptbookPage({
   data,

@@ -1,0 +1,28 @@
+.backBox {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border-bottom: 1px solid #555555;
+  color: white;
+  background-color: var(--foreground);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+}
+
+.null {
+  width: 72px;
+  flex-shrink: 0;
+}

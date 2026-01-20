@@ -823,7 +823,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "Fashion Editorial Prompts Bundle",
     number: 150,
     links: {},
-    tags: ["fashion", "women"],
+    tags: ["fashion", "women", "bundle"],
     images: [0, 1, 2, 3],
     price: {
       ru: 1000,

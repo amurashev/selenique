@@ -43,7 +43,7 @@ export default function ProductsPortfolioPage({
   );
 
   const isMobile = deviceType === "mobile";
-  const rowHeight = isMobile ? 160 : 480
+  const rowHeight = isMobile ? 160 : 480;
 
   useEffect(() => {
     setIsMounted(true);
@@ -53,10 +53,10 @@ export default function ProductsPortfolioPage({
     <div className={styles.page}>
       {/* <Header /> */}
       <div className={styles.backBox}>
-      <Link href={homePage.getUrl(locale)}>
-        <ChevronLeft size={28} />
-      </Link>
-    </div>
+        <Link href={homePage.getUrl(locale)}>
+          <ChevronLeft size={28} />
+        </Link>
+      </div>
       <main className={styles.main}>
         <Tabs
           activeIndex={type}
@@ -72,7 +72,11 @@ export default function ProductsPortfolioPage({
         />
         {photos && isMounted && (
           <div className={styles.photos}>
-            <RowsPhotoAlbum photos={photos} spacing={4} targetRowHeight={rowHeight} />
+            <RowsPhotoAlbum
+              photos={photos}
+              spacing={4}
+              targetRowHeight={rowHeight}
+            />
           </div>
         )}
       </main>
