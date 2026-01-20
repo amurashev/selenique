@@ -5,6 +5,7 @@ import t28 from "./text/28";
 import t29 from "./text/29";
 import t30 from "./text/30";
 import t31 from "./text/31";
+import t32 from "./text/32";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -876,13 +877,34 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "A professional AI prompt bundle combining business lifestyle scenes and clean men’s headshots in one practical collection. This bundle includes 54 ready-to-use prompts designed for creating confident, polished, and trustworthy male visuals.",
     text: t31,
   },
+  "red-carpet-prompts-bundle": {
+    id: 32,
+    gumroad: {
+      id: "null",
+      slug: "red-carpet-prompts-bundle",
+    },
+    name: "Red Carpet Prompts — Complete Bundle",
+    number: 24,
+    pack: [22, 21, 20],
+    links: {},
+    tags: ["red_carpet", "bundle"],
+    images: [0, 1, 2, 3],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "A premium bundle of AI prompts inspired by red carpet events, award ceremonies, and high-profile fashion moments. This collection brings together prompts for women, men, and couples to create glamorous, cinematic, and event-ready visuals with a true celebrity feel.",
+    text: t32,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
   "women-fashion-editorial-prompts-bundle",
   "business-men-prompts-bundle",
   "business-women-prompts-bundle",
-]
+  "red-carpet-prompts-bundle",
+];
 
 export const promptbooksOrdered: string[] = [
   "realistic-ai-influencer-prompts-170",
