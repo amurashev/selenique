@@ -1,8 +1,9 @@
 import { PromptBookRaw } from "@/components/types";
 
-import t28 from "./text/28";
 import t27 from "./text/27";
+import t28 from "./text/28";
 import t29 from "./text/29";
+import t30 from "./text/30";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -814,14 +815,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     text: t28,
   },
 
-  "fashion-editorial-prompts-bundle": {
+  "women-fashion-editorial-prompts-bundle": {
     id: 29,
     gumroad: {
       id: "null",
-      slug: "fashion-editorial-prompts-bundle",
+      slug: "women-fashion-editorial-prompts-bundle",
     },
-    name: "Fashion Editorial Prompts Bundle",
+    name: "Women Fashion Editorial Prompts Bundle",
     number: 150,
+    packs: 3,
     links: {},
     tags: ["fashion", "women", "bundle"],
     images: [0, 1, 2, 3],
@@ -829,13 +831,36 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 18,
     },
-    summary: "A curated bundle of 150 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together three prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
+    summary:
+      "A curated bundle of 150 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together three prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
     text: t29,
+  },
+  "business-men-prompts-bundle": {
+    id: 30,
+    gumroad: {
+      id: "null",
+      slug: "business-men-prompts-bundle",
+    },
+    name: "Business Men + Men Headshots Prompts — Complete Bundle",
+    number: 54,
+    packs: 2,
+    links: {},
+    tags: ["business", "men", "bundle"],
+    images: [0, 1, 2, 3, 4, 5, 6, 7],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "A professional AI prompt bundle combining business lifestyle scenes and clean men’s headshots in one practical collection. This bundle includes 54 ready-to-use prompts designed for creating confident, polished, and trustworthy male visuals.",
+    text: t30,
   },
 };
 
 export const promptbooksOrdered: string[] = [
-  "fashion-editorial-prompts-bundle",
+  "women-fashion-editorial-prompts-bundle",
+  "business-men-prompts-bundle",
+
   "30-business-woman-photo-prompts-ai",
   "22-business-man-headshot-prompts-ai",
   "realistic-ai-influencer-prompts-170",

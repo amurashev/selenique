@@ -33,6 +33,7 @@ export default function PromptbookPage({
 }) {
   const { formatMessage, locale } = useIntl();
   const { id, gumroad, name, text, images, isDisabled } = data;
+  const packsNumber = (data as PromptBook).packs || 1
 
   const backUrl =
     type === "promptbook"
@@ -60,7 +61,7 @@ export default function PromptbookPage({
             {/* <h2>About</h2> */}
             <ul className={styles.advantages}>
               <li>
-                <strong>File type:</strong> 1 PDF
+                <strong>File type:</strong> {packsNumber} PDF
               </li>
               {type === "promptbook" && (
                 <li>
