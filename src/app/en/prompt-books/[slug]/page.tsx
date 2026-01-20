@@ -51,7 +51,6 @@ export default async function PromptbookPageEntry({
   return (
     <Layout locale="en">
       <PromptbookPage
-        type="promptbook"
         data={{
           ...data,
           slug,

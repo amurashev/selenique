@@ -25,20 +25,14 @@ import Reviews from "./reviews";
 import ShortHeader from "@/components/sections/short-header";
 import Bundle from "./bundle";
 
-export default function PromptbookPage({
-  data,
-  type,
-}: {
-  data: PromptBook | Guide;
-  type: "promptbook" | "guide";
-}) {
+export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { id, gumroad, name, text, images, isDisabled } = data;
+  const { id, gumroad, name, type, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
 
   const backUrl =
-    type === "promptbook"
+    type !== "guide"
       ? promptBookListPageRoute.getUrl(locale)
       : guidesListPageRoute.getUrl(locale);
 
@@ -54,7 +48,7 @@ export default function PromptbookPage({
           </Link>
         </div>
         <div className={styles.imagesBox}>
-          <ImagesBox id={id} images={images} type={type} />
+          <ImagesBox id={id} images={images} />
         </div>
         <h1 className={styles.title}>{name}</h1>
 
@@ -62,10 +56,17 @@ export default function PromptbookPage({
           <div className={styles.textBox}>
             {/* <h2>About</h2> */}
             <ul className={styles.advantages}>
-              <li>
-                <strong>File type:</strong> {packsNumber} PDF
-              </li>
-              {type === "promptbook" && (
+              {type === "guide" && (
+                <li>
+                  <strong>File type:</strong> Link to Notion Document
+                </li>
+              )}
+              {type !== "guide" && (
+                <li>
+                  <strong>File type:</strong> {packsNumber} PDF
+                </li>
+              )}
+              {type !== "guide" && (
                 <li>
                   <strong>Best for:</strong> Gemini, Nano banana
                 </li>

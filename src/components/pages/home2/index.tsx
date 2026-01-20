@@ -8,8 +8,12 @@ import styles from "./page.module.css";
 
 import "react-photo-album/rows.css";
 
-import { PROMTBOOKS, promptbooksOrdered, promptbooksBundlesOrdered } from "@/constants/promptbooks";
-import { GUIDES, guidesOrdered } from "@/constants/guides";
+import {
+  PROMTBOOKS,
+  promptbooksOrdered,
+  guidesOrdered,
+  promptbooksBundlesOrdered,
+} from "@/constants/promptbooks";
 import {
   promptBookListPageRoute,
   guidesListPageRoute,
@@ -69,9 +73,27 @@ export default function HomePage({
       <main className={styles.main}>
         <div className={styles.inner}>
           <Profile />
+
           <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.prompt_bundles.popular.title" })}</h3>
-            <PromptbookList list={promptbooksBundlesOrdered.slice(0, booksCount)} />
+            <h3>{formatMessage({ id: "home.guides.title" })}</h3>
+            <PromptbookList list={guidesOrdered.slice(0, booksCount)} />
+            <div className={styles.buttonBox}>
+              <Link
+                className={styles.seeAll}
+                href={guidesListPageRoute.getUrl(locale)}
+              >
+                {formatMessage({ id: "home.guides.see_all" })}
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.section}>
+            <h3>
+              {formatMessage({ id: "home.prompt_bundles.popular.title" })}
+            </h3>
+            <PromptbookList
+              list={promptbooksBundlesOrdered.slice(0, booksCount)}
+            />
           </div>
           <div className={styles.section}>
             <h3>{formatMessage({ id: "home.prompt_books.popular.title" })}</h3>
@@ -87,28 +109,6 @@ export default function HomePage({
               </Link>
             </div>
           </div>
-
-          {/* <div className={styles.section}>
-            <h1>{formatMessage({ id: "home.guides.title" })}</h1>
-            <div className={styles.list}>
-              {guidesOrdered.slice(0, 6).map((slug) => {
-                const item = {
-                  ...GUIDES[slug],
-                  slug,
-                };
-                return <GuideItem key={slug} item={item} />;
-              })}
-            </div>
-
-            <div className={styles.buttonBox}>
-              <Link
-                className={styles.seeAll}
-                href={guidesListPageRoute.getUrl(locale)}
-              >
-                {formatMessage({ id: "home.guides.see_all" })}
-              </Link>
-            </div>
-          </div> */}
 
           <div className={styles.section}>
             <h3>{formatMessage({ id: "home.portfolio.title" })}</h3>

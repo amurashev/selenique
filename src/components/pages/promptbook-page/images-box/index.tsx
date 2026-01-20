@@ -13,13 +13,11 @@ import styles from "./styles.module.css";
 export default function ImagesBox({
   id,
   images,
-  type,
 }: {
   id: number;
   images: number[];
-  type: "promptbook" | "guide";
 }) {
-  const imageKey = type === "promptbook" ? "promptbooks" : "guides"
+  const imageKey = "promptbooks"
   return (
     <Slider {...settings} className="mobileView">
       {images.map((item) => (

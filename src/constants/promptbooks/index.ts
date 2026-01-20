@@ -6,6 +6,7 @@ import t29 from "./text/29";
 import t30 from "./text/30";
 import t31 from "./text/31";
 import t32 from "./text/32";
+import t33 from "./text/33";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -897,6 +898,25 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "A premium bundle of AI prompts inspired by red carpet events, award ceremonies, and high-profile fashion moments. This collection brings together prompts for women, men, and couples to create glamorous, cinematic, and event-ready visuals with a true celebrity feel.",
     text: t32,
   },
+  "virtual-influence-guide": {
+    id: 33,
+    gumroad: {
+      id: "null",
+      slug: "virtual-influence-guide",
+    },
+    name: "Iconista lab: Virtual Influence: The 48-Hour Playbook",
+    type: "guide",
+    links: {},
+    tags: [],
+    images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
+    text: t33,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -905,6 +925,9 @@ export const promptbooksBundlesOrdered: string[] = [
   "business-women-prompts-bundle",
   "red-carpet-prompts-bundle",
 ];
+
+
+export const guidesOrdered: string[] = ["virtual-influence-guide"];
 
 export const promptbooksOrdered: string[] = [
   "realistic-ai-influencer-prompts-170",

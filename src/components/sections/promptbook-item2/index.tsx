@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 
 import { PromptBook } from "@/components/types";
-import { promptBookPageRoute } from "@/constants/routes";
+import { promptBookPageRoute, guidePageRoute } from "@/constants/routes";
 
 import styles from "./styles.module.css";
 
@@ -14,16 +14,22 @@ const PromptbookItem: React.FC<{
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { id, slug, name, summary } = item;
+  const { id, slug, name, type, summary } = item;
+
+  const url = type === "guide" ? guidePageRoute.getUrl(locale, {
+    params: {
+      slug,
+    },
+  }) : promptBookPageRoute.getUrl(locale, {
+    params: {
+      slug,
+    },
+  })
 
   return (
     <Link
       key={slug}
-      href={promptBookPageRoute.getUrl(locale, {
-        params: {
-          slug,
-        },
-      })}
+      href={url}
       className={styles.card}
     >
       <div className={styles.box}>

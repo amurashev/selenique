@@ -5,7 +5,7 @@ import Layout from "@/components/layout";
 
 import GuidePage from "@/components/pages/promptbook-page";
 
-import { GUIDES } from "@/constants/guides";
+import { PROMTBOOKS } from "@/constants/promptbooks";
 
 export async function generateMetadata({
   params,
@@ -14,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const slug = (await params).slug;
 
-  const data = GUIDES[slug || "null"];
+  const data = PROMTBOOKS[slug || "null"];
 
   const title = data.name;
   const description = "";
@@ -41,7 +41,7 @@ export default async function PromptbookPageEntry({
 }) {
   const { slug } = await params;
 
-  const data = GUIDES[slug || "null"];
+  const data = PROMTBOOKS[slug || "null"];
 
   if (!data) {
     return redirect("/en/guides");
@@ -50,7 +50,6 @@ export default async function PromptbookPageEntry({
   return (
     <Layout locale="en">
       <GuidePage
-        type="guide"
         data={{
           ...data,
           slug,

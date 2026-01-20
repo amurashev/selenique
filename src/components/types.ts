@@ -22,8 +22,9 @@ export type DigitalItem = {
 };
 
 export type PromptBookRaw = DigitalItem & {
-  number: number;
+  number?: number;
   pack?: number[]
+  type?: "guide",
   tags: (
     | "fashion"
     | "business"

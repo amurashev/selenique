@@ -9,11 +9,9 @@ import Header from "@/components/layout/header";
 import { SERVICES } from "@/constants/services";
 import Footer from "@/components/layout/footer";
 import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
-import { GUIDES, guidesOrdered } from "@/constants/guides";
-import { promptBookListPageRoute, guidesListPageRoute } from "@/constants/routes";
+import { promptBookListPageRoute } from "@/constants/routes";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
-import GuideItem from "@/components/sections/guide-item";
 
 export default function HomePage() {
   const { formatMessage, locale } = useIntl();
@@ -61,28 +59,6 @@ export default function HomePage() {
                 {formatMessage({ id: "home.prompt_books.see_all" })}
               </Link>
             </div>
-
-            {/* <div className={styles.section}>
-              <h1>{formatMessage({ id: "home.guides.title" })}</h1>
-              <div className={styles.list}>
-                {guidesOrdered.slice(0, 6).map((slug) => {
-                  const item = {
-                    ...GUIDES[slug],
-                    slug,
-                  };
-                  return <GuideItem key={slug} item={item} />;
-                })}
-              </div>
-
-              <div className={styles.buttonBox}>
-                <Link
-                  className={styles.linkSecondary}
-                  href={guidesListPageRoute.getUrl(locale)}
-                >
-                  {formatMessage({ id: "home.guides.see_all" })}
-                </Link>
-              </div>
-            </div> */}
           </>
         )}
       </main>
