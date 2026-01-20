@@ -4,7 +4,7 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 
 import styles from "./page.module.css";
-import { promptbooksOrdered } from "@/constants/promptbooks";
+import { promptbooksOrdered, promptbooksBundlesOrdered } from "@/constants/promptbooks";
 
 import { homePage } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
@@ -22,7 +22,7 @@ export default function PromptbookListPage() {
       <main className={styles.main}>
         <h1>{formatMessage({ id: "prompt_books.title" })}</h1>
         <p>{formatMessage({ id: "prompt_books.text" })}</p>
-        <PromptbookList list={promptbooksOrdered} />
+        <PromptbookList list={[...promptbooksBundlesOrdered, ...promptbooksOrdered]} />
         <div className={styles.buttonBox}>
           <Link className={styles.seeAll} href={homePage.getUrl(locale)}>
             {formatMessage({ id: "home.prompt_books.see_all" })}

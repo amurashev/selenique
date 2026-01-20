@@ -878,16 +878,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
 };
 
-export const promptbooksOrdered: string[] = [
+export const promptbooksBundlesOrdered: string[] = [
   "women-fashion-editorial-prompts-bundle",
   "business-men-prompts-bundle",
   "business-women-prompts-bundle",
+]
 
-  "30-business-woman-photo-prompts-ai",
+export const promptbooksOrdered: string[] = [
   "realistic-ai-influencer-prompts-170",
   "22-business-man-headshot-prompts-ai",
-  "8-red-carpet-women-photo-prompts",
   "50-high-fashion-editorial-prompts-vol-2",
+  "30-business-woman-photo-prompts-ai",
+  "8-red-carpet-women-photo-prompts",
 
   "50-men-fashion-editorial-prompts-vol-1",
   "15-ai-women-headshot-prompts-professional",
