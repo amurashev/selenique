@@ -4,6 +4,7 @@ import { YandexMetricaProvider } from "next-yandex-metrica";
 // import { Montserrat } from "next/font/google";
 
 import "./globals.css";
+import Link from "next/link";
 
 // const font1 = Montserrat({
 //   variable: "--font-heading",
@@ -46,6 +47,20 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={``}>
+        {/* <ul>
+          <li>
+            <Link href="/">home</Link>
+          </li>
+          <li>
+            <Link href="/ru">RU</Link>
+          </li>
+          <li>
+            <Link href="/en">EN</Link>
+          </li>
+          <li>
+            <Link href="/es">ES</Link>
+          </li>
+        </ul> */}
         <YandexMetricaProvider
           tagID={104019685}
           initParameters={{

@@ -16,6 +16,7 @@ import Footer from "@/components/layout/footer";
 import PHOTOS from "../../../../source/portfolio.json";
 import Link from "next/link";
 import { ChevronLeft } from "@/components/sections/arrows";
+import ShortHeader from "@/components/sections/short-header";
 
 export default function ProductsPortfolioPage({
   type,
@@ -51,12 +52,11 @@ export default function ProductsPortfolioPage({
 
   return (
     <div className={styles.page}>
-      {/* <Header /> */}
-      <div className={styles.backBox}>
-        <Link href={homePage.getUrl(locale)}>
-          <ChevronLeft size={28} />
-        </Link>
-      </div>
+      <ShortHeader
+        route={homePage}
+        title={formatMessage({ id: "portfolio.short_title" })}
+      />
+
       <main className={styles.main}>
         <Tabs
           activeIndex={type}

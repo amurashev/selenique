@@ -1,14 +1,5 @@
 {
   "locale": "English",
-  "common.name": "Selenique Studio",
-  "common.prices.free": "free",
-  "common.prices.types.model": "model",
-  "common.prices.types.photo": "photo",
-  "common.prices.types.angle": "angle",
-  "common.price": "Price",
-  "common.models.sex.women": "Women",
-  "common.models.sex.men": "Men",
-  "home.product.title": "Product photo editing for marketplaces",
   "header.menu.services": "Services",
   "header.menu.portfolio": "Portfolio",
   "header.menu.ii_models": "AI Models",
@@ -275,6 +266,8 @@
   "ii_photoshoot.price.item3.count": "20 photos",
   "ii_photoshoot.price.item3.adv2": "3–4 scenes",
   "ii_photoshoot.price.item3.adv3": "4–7 days",
+
+  "portfolio.short_title": "Our works",
   "portfolio.types.all": "All",
   "portfolio.types.cosmetic": "Cosmetics",
   "portfolio.types.accessories": "Accessories",
@@ -284,32 +277,36 @@
   "portfolio.types.furniture": "Furniture",
   "portfolio.types.jewelry": "Jewelry",
 
+  "common.buy_now": "Own it today",
+  "common.back": "Back",
+  "common.name": "Selenique Studio",
+  "common.prices.free": "free",
+  "common.prices.types.model": "model",
+  "common.prices.types.photo": "photo",
+  "common.prices.types.angle": "angle",
+  "common.price": "Price",
+  "common.models.sex.women": "Women",
+  "common.models.sex.men": "Men",
 
   "home.prompt_bundles.popular.title": "Popular Prompt Bundles",
-
   "home.prompt_books.popular.title": "Popular Prompt Books",
   "home.prompt_books.popular.text": "Our most popular prompt books feature proven AI prompts for creating realistic visuals and high-quality content. Trusted by creators for consistent results and efficient workflows.",
   "home.prompt_books.see_all": "See all Prompt Books",
-
   "home.portfolio.title": "Our works",
   "home.portfolio.see_all": "See full Portfolio",
+  "home.guides.title": "Our Guides",
+  "home.guides.see_all": "See all Guides",
 
-  "common.buy_now": "Own it today",
-  "common.back": "Back",
   "prompt_books.title": "AI Prompt Packs for Realistic Images, Visuals & Content Creation",
   "prompt_books.title_short": "AI Prompt Packs",
   "prompt_books.text": "This page offers ready-to-use AI prompt packs designed to help you create realistic images, visuals, and content faster and with consistent quality. These prompts are carefully structured and tested to save time, improve results, and streamline your creative workflow — whether you work with images for stock, social media, or digital products.",
   "prompt_books.see_all": "See all Prompt Books",
-
-
 
   "guides.title": "AI Guides & Creative Resources for Digital Creators",
   "guides.title_short": "Materials",
   "guides.text": "Practical AI guides and creative resources for designers, creators, and digital professionals. Learn faster, work smarter, and build consistent results with AI tools.",
   "guides.see_all": "See all Materials",
 
-  "home.guides.title": "Our Guides",
-  "home.guides.see_all": "See all Guides",
   
   "hero.title": "AI Fashion Ads & WOW Resources",
   "hero.text": "Guides, prompts & scenes — no Photoshop required",

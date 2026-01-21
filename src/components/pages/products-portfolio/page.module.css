@@ -1,6 +1,6 @@
 .page {
   position: relative;
-  /* background-color: var(--foreground); */
+  background-color: var(--foreground);
 }
 
 .backBox {

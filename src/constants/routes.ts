@@ -1,60 +1,37 @@
 import { route } from "@/utils/routing";
 
-export const homePage = route({
-  ru: "/",
-  en: "/en",
-});
+export const homePage = route("/");
+export const productPortfolioPageRoute = route("/products-portfolio/[type]");
+export const modelsPageRoute = route("/models/[type]");
+export const modelPageRoute = route("/models/[type]/[id]");
+export const promptBookListPageRoute = route("/prompt-books");
+export const promptBookPageRoute = route("/prompt-books/[slug]");
+
+export const guidesListPageRoute = route("/guides");
+export const guidePageRoute = route("/guides/[slug]");
+
 export const productPageRoute = route({
+  default: "/services/creating-photo-for-e-commerce",
   ru: "/obrabotka-foto-tovarov-dlya-marketpleysov",
   en: "/en/creating-photo-for-e-commerce",
 });
 export const iiModelPageRoute = route({
-  ru: "/virtualnaya-ii-model-dlya-kataloga",
+  default: "/services/virtual-model-for-the-catalog",
+  // ru: "/virtualnaya-ii-model-dlya-kataloga",
   en: "/en/virtual-model-for-the-catalog",
 });
-export const productPortfolioPageRoute = route({
-  ru: "/products-portfolio/[type]",
-  en: "/en/products-portfolio/[type]",
-});
 export const iiPhotoShootPageRoute = route({
-  ru: "/neirofotosessiya",
+  default: "/services/ai_photoshoot",
+  // ru: "/neirofotosessiya",
   en: "/en/ai_photoshoot",
 });
 export const aiConsultationPageRoute = route({
-  ru: "/konsultatsii-po-neirosetyam",
+  default: "/services/ai_consulting",
+  // ru: "/konsultatsii-po-neirosetyam",
   en: "/en/ai_consulting",
 });
-export const modelsPageRoute = route({
-  ru: "/models/[type]",
-  en: "/en/models/[type]",
-});
-
-export const modelPageRoute = route({
-  ru: "/models/[type]/[id]",
-  en: "/en/models/[type/[id]",
-});
-
-export const promptBookListPageRoute = route({
-  ru: "/prompt-books",
-  en: "/en/prompt-books",
-});
-
-export const promptBookPageRoute = route({
-  ru: "/prompt-books/[slug]",
-  en: "/en/prompt-books/[slug]",
-});
-
-
-export const guidesListPageRoute = route({
-  ru: "/guides",
-  en: "/en/guides",
-});
-export const guidePageRoute = route({
-  ru: "/guides/[slug]",
-  en: "/en/guides/[slug]",
-});
-
 export const intensiveNeurovideoPageRoute = route({
+  default: '/',
   ru: "/courses/intensive_neirovideo_s_nulya",
   en: "/",
 });

@@ -80,9 +80,17 @@ export const route = <RouteType extends BaseRouteType>(
       let finalPathName = "";
 
       if (isObject(pathname)) {
-        finalPathName = (pathname as Record<string, string>)[locale];
+        if (locale === "en") {
+          finalPathName = (pathname as Record<string, string>).default
+        } else {
+          finalPathName = `/${locale}${(pathname as Record<string, string>).default}`
+        }
       } else {
-        finalPathName = pathname as string;
+        if (locale === "en") {
+          finalPathName = pathname as string;
+        } else {
+          finalPathName = `/${locale}${pathname as string}`
+        }
       }
 
       return getUrl(finalPathName, routeParams) || defaultUrl || "";

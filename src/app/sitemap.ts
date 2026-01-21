@@ -30,37 +30,37 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   [
     // Home
-    homePage.getUrl("ru"),
     homePage.getUrl("en"),
+    homePage.getUrl("ru"),
 
     // Neurovideo
-    intensiveNeurovideoPageRoute.getUrl("ru"),
+    // intensiveNeurovideoPageRoute.getUrl("ru"),
 
     // Services RU
-    productPageRoute.getUrl("ru"),
-    aiConsultationPageRoute.getUrl("ru"),
-    iiModelPageRoute.getUrl("ru"),
-    iiPhotoShootPageRoute.getUrl("ru"),
+    // productPageRoute.getUrl("ru"),
+    // aiConsultationPageRoute.getUrl("ru"),
+    // iiModelPageRoute.getUrl("ru"),
+    // iiPhotoShootPageRoute.getUrl("ru"),
     // Services EN
-    productPageRoute.getUrl("en"),
-    aiConsultationPageRoute.getUrl("en"),
-    iiModelPageRoute.getUrl("en"),
-    iiPhotoShootPageRoute.getUrl("en"),
+    // productPageRoute.getUrl("en"),
+    // aiConsultationPageRoute.getUrl("en"),
+    // iiModelPageRoute.getUrl("en"),
+    // iiPhotoShootPageRoute.getUrl("en"),
 
     // Models RU
-    modelsPageRoute.getUrl("ru", { params: { type: "women" } }),
-    modelsPageRoute.getUrl("ru", { params: { type: "men" } }),
+    // modelsPageRoute.getUrl("ru", { params: { type: "women" } }),
+    // modelsPageRoute.getUrl("ru", { params: { type: "men" } }),
     // Models EN
-    modelsPageRoute.getUrl("en", { params: { type: "women" } }),
-    modelsPageRoute.getUrl("en", { params: { type: "men" } }),
+    // modelsPageRoute.getUrl("en", { params: { type: "women" } }),
+    // modelsPageRoute.getUrl("en", { params: { type: "men" } }),
 
-    // Portfolio RU
-    ...PORTFOLIO_TYPES.map((item) =>
-      productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
-    ),
     // Portfolio EN
      ...PORTFOLIO_TYPES.map((item) =>
       productPortfolioPageRoute.getUrl("en", { params: { type: item.index } })
+    ),
+    // Portfolio RU
+    ...PORTFOLIO_TYPES.map((item) =>
+      productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
     ),
 
     // promptBook EN
