@@ -17,12 +17,14 @@ export async function generateMetadata({
 
   const data = PROMTBOOKS[slug || "null"];
 
-  const title = data.name;
-  const description = "";
+  const title = `${data.name} | Gemini Prompts`;
+  const description = data.summary;
+  const keywords = "prompts, ai prompts, prompt pack, prompt collection, nano banana prompts, gemini prompts, dall-e prompts, midjourney prompts, stable diffusion prompts, flux prompts, chatgpt prompts, kling ai prompts, image prompts, design prompts, marketing prompts, business prompts, photography prompts"
 
   return {
     title,
     description,
+    keywords,
     openGraph: {
       images: [
         `https://www.selenique.space/promptbooks/${data.id}/${data.images[0]}.jpg`,
