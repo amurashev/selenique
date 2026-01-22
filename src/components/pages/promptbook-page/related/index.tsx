@@ -20,7 +20,7 @@ export default function Related({
 
   return (
     <div className={styles.related}>
-      <h2>You may also like</h2>
+      <h2>{formatMessage({ id: "prompt_books.you_may_like" })}</h2>
       <div className={styles.list}>
         {related.map((item) => (
           <PromptbookItem key={item.slug} item={item} />

@@ -21,7 +21,7 @@ export default function Bundle({ data }: { data: PromptBook }) {
 
   return (
     <div>
-      <h3>This bundle contains:</h3>
+      <h3>{formatMessage({ id: "prompt_books.bundle_contains" })}:</h3>
       <div className={styles.list}>
         {tempSlugArray.map((slug) => {
           const item = {

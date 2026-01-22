@@ -12,13 +12,15 @@ export default function ShortHeader({ route, title }: { route: Route<BaseRouteTy
   const { formatMessage, locale } = useIntl();
 
   return (
-      <div className={styles.backBox}>
+      <div className={styles.box}>
+        <div className={styles.backBox}>
         <Link href={route.getUrl(locale)}  className={styles.link}>
           <ChevronLeft size={28} color="#ffffff" />
           <span>{formatMessage({ id: "common.back" })}</span>
         </Link>
         <div className={styles.title}>{title}</div>
         <div className={styles.null}>&nbsp;</div>
+      </div>
       </div>
   );
 }

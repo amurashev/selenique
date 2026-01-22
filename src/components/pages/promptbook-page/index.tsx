@@ -11,7 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./page.module.css";
 import { Guide, PromptBook } from "@/components/types";
 
-import PromptbookItem from "@/components/sections/promptbook-item";
 import {
   promptBookListPageRoute,
   guidesListPageRoute,
@@ -54,25 +53,35 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
 
         <div className={styles.line}>
           <div className={styles.textBox}>
-            {/* <h2>About</h2> */}
             <ul className={styles.advantages}>
               {fileType && fileType === "link" ? (
                 <li>
-                  <strong>File type:</strong> Link to Notion Document
+                  <strong>
+                    {formatMessage({ id: "prompt_books.file_type" })}:
+                  </strong>{" "}
+                  {formatMessage({ id: "prompt_books.link_to_notion" })}
                 </li>
               ) : (
                 <li>
-                  <strong>File type:</strong> {packsNumber} PDF
+                  <strong>
+                    {formatMessage({ id: "prompt_books.file_type" })}:
+                  </strong>{" "}
+                  {packsNumber} PDF
                 </li>
               )}
               {type !== "guide" && (
                 <li>
-                  <strong>Best for:</strong> Gemini, Nano banana
+                  <strong>
+                    {formatMessage({ id: "prompt_books.best_for" })}:
+                  </strong>{" "}
+                  Gemini, Nano banana
                 </li>
               )}
               {(data as PromptBook).number && (
                 <li>
-                  <strong>Number of prompts in pack: </strong>
+                  <strong>
+                    {formatMessage({ id: "prompt_books.number" })}:{" "}
+                  </strong>
                   {(data as PromptBook).number}
                 </li>
               )}

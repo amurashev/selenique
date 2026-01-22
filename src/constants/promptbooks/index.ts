@@ -927,6 +927,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       slug: "120-product-podiums-photo-prompts",
     },
     name: "120 Product Podiums Photo Prompts",
+    number: 120,
     tags: ["product"],
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],

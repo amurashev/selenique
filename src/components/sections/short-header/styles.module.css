@@ -1,3 +1,7 @@
+.box {
+  height: 50px;
+}
+
 .backBox {
   height: 50px;
   display: flex;
@@ -6,6 +10,10 @@
   border-bottom: 1px solid #555555;
   color: white;
   background-color: var(--foreground);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .link {
