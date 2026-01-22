@@ -8,6 +8,7 @@ import t31 from "./text/31";
 import t32 from "./text/32";
 import t33 from "./text/33";
 import t34 from "./text/34";
+import t35 from "./text/35";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -936,8 +937,28 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       en: 18,
     },
     summary:
-      "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
+      "A curated set of 120 professional photo prompts for creating clean, stylish product podium scenes.",
     text: t34,
+  },
+
+  "32-monochromatic-studio-portrait-prompt-pack": {
+    id: 35,
+    gumroad: {
+      id: "null",
+      slug: "32-monochromatic-studio-portrait-prompt-pack",
+    },
+    name: "32 Monochromatic Studio Portrait Prompt Pack",
+    number: 32,
+    tags: ["studio"],
+    fileType: "link",
+    images: [1, 3, 4, 5, 6, 7],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Monochromatic Studio Portrait Prompt Pack is a curated collection of 32 carefully crafted photo prompts designed for realistic, modern studio portraits in a single color palette.",
+    text: t35,
   },
 };
 
@@ -963,6 +984,7 @@ export const promptbooksOrdered: string[] = [
   "8-red-carpet-men-photo-prompts-ai",
   "35-cosmetic-product-photo-prompts",
   "50-old-money-ai-photo-prompts-vol1",
+  "32-monochromatic-studio-portrait-prompt-pack",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",

@@ -40,6 +40,7 @@ export type PromptBookRaw = DigitalItem & {
     | "christmas"
     | "bundle"
     | "product"
+    | "studio"
   )[];
 };
 
