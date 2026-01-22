@@ -1,0 +1,10 @@
+.advantages {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 12px  !important;
+
+  li + li {
+    margin-top: 8px;
+  }
+}

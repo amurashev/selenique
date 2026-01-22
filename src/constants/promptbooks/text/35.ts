@@ -15,7 +15,7 @@ export default `
       Build&nbsp;<strong>cohesive portrait series</strong>&nbsp;effortlessly
   </li>
   <li>
-      <p>Achieve a&nbsp;<strong>clean, commercial, editorial look</strong>
+      Achieve a&nbsp;<strong>clean, commercial, editorial look</strong>
   </li>
   <li>
       Save time by avoiding endless prompt tweaking

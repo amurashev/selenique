@@ -9,7 +9,7 @@ export const settings = {
   infinite: true,
   lazyLoad: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,

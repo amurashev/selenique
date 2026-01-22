@@ -23,6 +23,8 @@ import { ChevronLeft } from "@/components/sections/arrows";
 import Reviews from "./reviews";
 import ShortHeader from "@/components/sections/short-header";
 import Bundle from "./bundle";
+import Advantages from "./advantages";
+import Categories from "./categories";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -53,39 +55,8 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
 
         <div className={styles.line}>
           <div className={styles.textBox}>
-            <ul className={styles.advantages}>
-              {fileType && fileType === "link" ? (
-                <li>
-                  <strong>
-                    {formatMessage({ id: "prompt_books.file_type" })}:
-                  </strong>{" "}
-                  {formatMessage({ id: "prompt_books.link_to_notion" })}
-                </li>
-              ) : (
-                <li>
-                  <strong>
-                    {formatMessage({ id: "prompt_books.file_type" })}:
-                  </strong>{" "}
-                  {packsNumber} PDF
-                </li>
-              )}
-              {type !== "guide" && (
-                <li>
-                  <strong>
-                    {formatMessage({ id: "prompt_books.best_for" })}:
-                  </strong>{" "}
-                  Gemini, Nano banana
-                </li>
-              )}
-              {(data as PromptBook).number && (
-                <li>
-                  <strong>
-                    {formatMessage({ id: "prompt_books.number" })}:{" "}
-                  </strong>
-                  {(data as PromptBook).number}
-                </li>
-              )}
-            </ul>
+            <Advantages data={data} />
+
 
             {packsNumber > 1 && (data as PromptBook).pack && (
               <Bundle data={data as PromptBook} />
@@ -97,6 +68,8 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
                 __html: text,
               }}
             />
+
+            <Categories data={data} />
 
             <Link className={styles.seeAllButton} href={backUrl}>
               {formatMessage({ id: "prompt_books.see_all" })}

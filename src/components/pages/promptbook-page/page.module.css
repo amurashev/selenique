@@ -37,17 +37,14 @@
   margin-top: 0px;
 }
 
-.advantages {
-  list-style: none;
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-bottom: 12px  !important;
-}
-
 .textBox {
   flex-grow: 1;
   margin-top: 8px;
   padding: 0 12px;
+}
+
+.text {
+  margin-top: 16px;
 
   h2 {
     font-size: 24px;
@@ -148,7 +145,7 @@
   .rightSide {
     width: 300px;
     margin-left: 24px;
-    padding: 16px 16px;
+    /* padding: 16px 16px; */
   }
   .textBox {
     margin-top: 0;

@@ -10,10 +10,12 @@ import {
   promptBookListPageRoute,
   promptBookPageRoute,
   homePage,
+  promptsCategoryPageRoute,
   intensiveNeurovideoPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/constants/promptbooks";
+import { PROMPT_CATEGORIES } from "@/constants/prompts";
 
 const DOMAIN = "https://www.selenique.space";
 
@@ -63,8 +65,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
     ),
 
-    // promptBook EN
+    // Prompts EN
     promptBookListPageRoute.getUrl("en"),
+    ...PROMPT_CATEGORIES.map((tag) =>
+      promptsCategoryPageRoute.getUrl("en", { params: { slug: tag } })
+    ),
+
     ...Object.keys(PROMTBOOKS).map((slug) =>
       promptBookPageRoute.getUrl("en", { params: { slug } })
     ),

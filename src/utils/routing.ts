@@ -1,4 +1,5 @@
 import { PossibleLocales } from "@/components/types";
+import { i18n } from "../../i18n-config";
 
 export type BaseRouteType = {
   query?: Record<string, string>;
@@ -78,18 +79,19 @@ export const route = <RouteType extends BaseRouteType>(
     // getPathName: () => pathname || "",
     getUrl: (locale, routeParams) => {
       let finalPathName = "";
+      const correctLocale = locale || i18n.defaultLocale;
 
       if (isObject(pathname)) {
-        if (locale === "en") {
+        if (correctLocale === "en") {
           finalPathName = (pathname as Record<string, string>).default
         } else {
-          finalPathName = `/${locale}${(pathname as Record<string, string>).default}`
+          finalPathName = `/${correctLocale}${(pathname as Record<string, string>).default}`
         }
       } else {
-        if (locale === "en") {
+        if (correctLocale === "en") {
           finalPathName = pathname as string;
         } else {
-          finalPathName = `/${locale}${pathname as string}`
+          finalPathName = `/${correctLocale}${pathname as string}`
         }
       }
 

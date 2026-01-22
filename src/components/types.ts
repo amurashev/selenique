@@ -2,6 +2,21 @@ export type PossibleLocales = "en" | "ru";
 
 export type PriceType = Record<string, number>;
 
+export type PromptCategories = | "fashion"
+  | "business"
+  | "red_carpet"
+  | "cosmetic"
+  | "fantasy"
+  | "men"
+  | "women"
+  | "kids"
+  | "beauty"
+  | "jewelry"
+  | "christmas"
+  | "bundle"
+  | "product"
+  | "studio"
+  | "headshot"
 
 export type DigitalItem = {
   id: number;
@@ -26,22 +41,7 @@ export type PromptBookRaw = DigitalItem & {
   number?: number;
   pack?: number[]
   type?: "guide",
-  tags: (
-    | "fashion"
-    | "business"
-    | "red_carpet"
-    | "cosmetic"
-    | "fantasy"
-    | "men"
-    | "women"
-    | "kids"
-    | "beauty"
-    | "jewelry"
-    | "christmas"
-    | "bundle"
-    | "product"
-    | "studio"
-  )[];
+  tags: PromptCategories[];
 };
 
 export type PromptBook = PromptBookRaw & {

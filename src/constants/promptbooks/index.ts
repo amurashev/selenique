@@ -520,7 +520,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
     },
-    tags: ["business", "men"],
+    tags: ["business", "men", "headshot"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
