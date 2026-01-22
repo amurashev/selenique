@@ -15,6 +15,7 @@
   background-color: var(--foreground);
   /* min-height: 1px; */
   padding: 32px 18px;
+  padding-bottom: 70px;
 }
 
 .inner {
@@ -67,7 +68,7 @@
   h3 {
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   p {

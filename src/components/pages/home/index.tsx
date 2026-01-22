@@ -74,14 +74,16 @@ export default function HomePage({
           <Profile />
 
           <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.guides.title" })}</h3>
-            <PromptbookList list={guidesOrdered.slice(0, booksCount)} />
+            <h3>{formatMessage({ id: "home.prompt_books.popular.title" })}</h3>
+            <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
+            <PromptbookList list={promptbooksOrdered.slice(0, booksCount)} />
+
             <div className={styles.buttonBox}>
               <Link
                 className={styles.seeAll}
-                href={guidesListPageRoute.getUrl(locale)}
+                href={promptBookListPageRoute.getUrl(locale)}
               >
-                {formatMessage({ id: "home.guides.see_all" })}
+                {formatMessage({ id: "home.prompt_books.see_all" })}
               </Link>
             </div>
           </div>
@@ -94,17 +96,16 @@ export default function HomePage({
               list={promptbooksBundlesOrdered.slice(0, booksCount)}
             />
           </div>
-          <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.prompt_books.popular.title" })}</h3>
-            <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
-            <PromptbookList list={promptbooksOrdered.slice(0, booksCount)} />
 
+          <div className={styles.section}>
+            <h3>{formatMessage({ id: "home.guides.title" })}</h3>
+            <PromptbookList list={guidesOrdered.slice(0, booksCount)} />
             <div className={styles.buttonBox}>
               <Link
                 className={styles.seeAll}
-                href={promptBookListPageRoute.getUrl(locale)}
+                href={guidesListPageRoute.getUrl(locale)}
               >
-                {formatMessage({ id: "home.prompt_books.see_all" })}
+                {formatMessage({ id: "home.guides.see_all" })}
               </Link>
             </div>
           </div>
