@@ -1,7 +1,18 @@
-import PageEntry, {
-  generateMetadata,
-} from "../../[lang]/prompt-books/[slug]/page";
+import { promptBookPageRoute } from "@/constants/routes";
+import { redirect } from "next/navigation";
+import { i18n, Locale } from "../../../../i18n-config";
 
-export { generateMetadata };
-// eslint-disable-next-line @typescript-eslint/no-explicit-any, react/display-name
-export default async (params: any) => <PageEntry {...params} />;
+export default async function PromptbookPageEntry({
+  params,
+}: {
+  params: Promise<{ slug: string; lang: Locale }>;
+}) {
+  const { slug, lang } = await params;
+  const finalLang = lang || i18n.defaultLocale;
+
+  return redirect(promptBookPageRoute.getUrl(finalLang, {
+    params: {
+      slug,
+    }
+  }));
+}

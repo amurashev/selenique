@@ -306,6 +306,8 @@
   "prompt_books.best_for": "Best for",
   "prompt_books.link_to_notion": "Link to Notion Document",
   "prompt_books.reviews": "All reviews from this shop",
+  "prompt_books.bundle_contains": "This bundle contains",
+  "prompt_books.you_may_like": "You may also like",
 
   "guides.title": "AI Guides & Creative Resources for Digital Creators",
   "guides.title_short": "Materials",
