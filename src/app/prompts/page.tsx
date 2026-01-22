@@ -1,5 +1,5 @@
-import PageEntry, { generateMetadata } from "../../prompts/[slug]/page";
+import PageEntry, { metadata } from "../[lang]/prompts/page";
 
-export { generateMetadata };
+export { metadata };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, react/display-name
 export default async (params: any) => <PageEntry {...params} />;

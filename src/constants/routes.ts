@@ -4,8 +4,8 @@ export const homePage = route("/");
 export const productPortfolioPageRoute = route("/products-portfolio/[type]");
 export const modelsPageRoute = route("/models/[type]");
 export const modelPageRoute = route("/models/[type]/[id]");
-export const promptBookListPageRoute = route("/prompt-books");
-export const promptBookPageRoute = route("/prompt-books/[slug]");
+export const promptBookListPageRoute = route("/prompts");
+export const promptBookPageRoute = route("/prompts/[slug]");
 
 export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");
