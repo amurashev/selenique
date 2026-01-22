@@ -14,6 +14,7 @@ export type DigitalItem = {
   price: PriceType;
   summary?: string;
   text: string;
+  fileType?: "link"
   // related?: string[];
   links?: {
     cm?: string;
@@ -38,6 +39,7 @@ export type PromptBookRaw = DigitalItem & {
     | "jewelry"
     | "christmas"
     | "bundle"
+    | "product"
   )[];
 };
 

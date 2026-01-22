@@ -27,7 +27,7 @@ import Bundle from "./bundle";
 
 export default function PromptbookPage({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { id, gumroad, name, type, text, images, isDisabled } = data;
+  const { id, gumroad, name, fileType, type, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
 
@@ -56,12 +56,11 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           <div className={styles.textBox}>
             {/* <h2>About</h2> */}
             <ul className={styles.advantages}>
-              {type === "guide" && (
+              {fileType && fileType === "link" ? (
                 <li>
                   <strong>File type:</strong> Link to Notion Document
                 </li>
-              )}
-              {type !== "guide" && (
+              ) : (
                 <li>
                   <strong>File type:</strong> {packsNumber} PDF
                 </li>

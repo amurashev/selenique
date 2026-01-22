@@ -7,6 +7,7 @@ import t30 from "./text/30";
 import t31 from "./text/31";
 import t32 from "./text/32";
 import t33 from "./text/33";
+import t34 from "./text/34";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -809,6 +810,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 170,
     links: {},
     tags: ["fashion", "women"],
+    fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
     price: {
       ru: 1000,
@@ -906,6 +908,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     name: "Iconista lab: Virtual Influence: The 48-Hour Playbook",
     type: "guide",
+    fileType: "link",
     links: {},
     tags: [],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -916,6 +919,24 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     summary:
       "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
     text: t33,
+  },
+  "120-product-podiums-photo-prompts": {
+    id: 34,
+    gumroad: {
+      id: "null",
+      slug: "120-product-podiums-photo-prompts",
+    },
+    name: "120 Product Podiums Photo Prompts",
+    tags: ["product"],
+    fileType: "link",
+    images: [1, 3, 4, 5, 6, 7, 8],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
+    text: t34,
   },
 };
 
@@ -949,6 +970,7 @@ export const promptbooksOrdered: string[] = [
   "50-ideal-skin-midjourney-prompts-vol-1",
   "50-jewelry-product-photo-ai-prompts",
   "75-cosmetic-product-photo-prompts",
+  "120-product-podiums-photo-prompts",
 
   "8-advertising-photo-prompts-vol-1",
   "40-muslim-women-business-photo-prompts",
