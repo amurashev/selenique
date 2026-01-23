@@ -1,5 +1,6 @@
 import { PromptBookRaw } from "@/components/types";
 
+import t3 from "./text/3";
 import t27 from "./text/27";
 import t28 from "./text/28";
 import t29 from "./text/29";
@@ -91,20 +92,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       ru: 1000,
       en: 18,
     },
-
     summary:
       "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
-    text: `
-    <p>Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted men-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.</p>
-    <p>Whether you’re working in MidJourney, Krea, Higgsfield, Leonardo, Dreamina, Nano Banana, or other AI tools, these prompts are fully adaptable — delivering stunning results across platforms while allowing endless customization.</p>
-    <h3>What’s Inside</h3>
-    <ul>
-    <li>📖 PDF Prompt Book with 50 universal, ready-to-use prompts</li>
-    <li>🎨 Reference Images showcasing real output examples for inspiration</li>
-    <li>✨ High-Fashion Focus: editorial looks, couture gowns, statement suits, surreal accessories, and cinematic backgrounds</li>
-    <li>🔀 Adaptable Variations: change the model’s look, outfit color, background, or atmosphere to instantly create unique results</li>
-    </ul>
-    `,
+    text: t3,
   },
 
   "50-ideal-skin-midjourney-prompts-vol-1": {
@@ -118,7 +108,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
     },
-    tags: ["women", "beauty"],
+    tags: ["beauty"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -151,7 +141,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
     },
-    tags: ["jewelry", "women"],
+    tags: ["jewelry", "product"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -183,7 +173,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
     },
-    tags: ["fashion", "women"],
+    tags: ["fashion", "women", "maternity"],
     images: [1, 2, 3, 4, 5, 6, 7, 8],
     price: {
       ru: 1000,
@@ -392,7 +382,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
     },
-    tags: ["business", "women"],
+    tags: ["business", "women", "lifestyle"],
     images: [1, 3, 4, 17, 18, 19, 20, 21, 22],
     price: {
       ru: 1000,
@@ -424,7 +414,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
     },
-    tags: ["business", "women"],
+    tags: ["business", "women", "headshot"],
     images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
     price: {
       ru: 1000,
@@ -456,7 +446,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
     },
-    tags: ["fashion", "women"],
+    tags: ["fashion", "women", "lifestyle"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -488,7 +478,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
     },
-    tags: ["fashion", "women"],
+    tags: ["fashion", "women", "lifestyle"],
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -641,10 +631,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     name: "8 Red Carpet Couple AI Photo Prompts",
     number: 8,
-    links: {
-      cm: "",
-    },
-    tags: ["red_carpet"],
+    tags: ["red_carpet", "men", "women"],
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -677,7 +664,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",]
     },
-    tags: ["cosmetic"],
+    tags: ["cosmetic", "product"],
     images: [2, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -710,7 +697,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
     },
-    tags: ["cosmetic"],
+    tags: ["cosmetic", "product"],
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     price: {
       ru: 1000,
@@ -776,7 +763,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "8 AI Advertising Photo Prompts",
     number: 8,
     links: {},
-    tags: [],
+    tags: ["fantasy"],
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -810,7 +797,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "The Ultra-Realistic AI Influencer Kit (170+ Prompts)",
     number: 170,
     links: {},
-    tags: ["fashion", "women"],
+    tags: ["lifestyle", "women"],
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
     price: {
@@ -968,7 +955,6 @@ export const promptbooksBundlesOrdered: string[] = [
   "business-women-prompts-bundle",
   "red-carpet-prompts-bundle",
 ];
-
 
 export const guidesOrdered: string[] = ["virtual-influence-guide"];
 

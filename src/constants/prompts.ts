@@ -1,6 +1,6 @@
 import { PromptCategories } from "@/components/types";
 
-export const PROMPT_CATEGORIES: PromptCategories[] = ["business"]
+export const PROMPT_CATEGORIES: PromptCategories[] = ["business", "fashion"]
 
 export const getPromptsListTitle = () => `prompt_books.title`
 export const getPromptsListDescription = () => `prompt_books.description`
