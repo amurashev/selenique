@@ -10,6 +10,7 @@ import t32 from "./text/32";
 import t33 from "./text/33";
 import t34 from "./text/34";
 import t35 from "./text/35";
+import t36 from "./text/36";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -947,6 +948,26 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "Monochromatic Studio Portrait Prompt Pack is a curated collection of 32 carefully crafted photo prompts designed for realistic, modern studio portraits in a single color palette.",
     text: t35,
   },
+
+  "120-white-frame-interior-mockup-prompts": {
+    id: 36,
+    gumroad: {
+      id: "null",
+      slug: "120-white-frame-interior-mockup-prompts",
+    },
+    name: "120 White Frame Interior Mockup Prompts",
+    number: 120,
+    tags: ["product"],
+    fileType: "link",
+    images: [1, 3, 4, 5, 6, 7, 8],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "A curated collection of 120 professional interior photo prompts designed for clean, modern wall art and poster mockups with blank white frames.",
+    text: t36,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -980,6 +1001,7 @@ export const promptbooksOrdered: string[] = [
   "50-jewelry-product-photo-ai-prompts",
   "75-cosmetic-product-photo-prompts",
   "120-product-podiums-photo-prompts",
+  "120-white-frame-interior-mockup-prompts",
 
   "8-advertising-photo-prompts-vol-1",
   "40-muslim-women-business-photo-prompts",
