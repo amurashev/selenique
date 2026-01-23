@@ -1,7 +1,5 @@
 .page {
   height: 100vh;
-  /* background-color: rgb(24, 24, 24); */
-  color: white;
 }
 
 .main {
@@ -66,17 +64,13 @@
   width: 100%;
 
   h3 {
-    color: white;
     text-align: center;
-    font-size: 20px;
+    color: var(--header-inversive);
   }
 
   p {
-    color: white;
-    font-size: 14px;
     margin-top: 8px;
-    line-height: 1.4;
-    color: #dddddd;
+    color: var(--text-inversive);
   }
 }
 
@@ -104,7 +98,6 @@
     }
   
     p {
-      font-size: 18px;
       margin-top: 12px;
     }
   }

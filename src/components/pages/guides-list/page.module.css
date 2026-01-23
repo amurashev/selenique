@@ -11,17 +11,16 @@
   padding-top: 36px;
 
   h1 {
-    color: white;
     text-align: center;
     font-size: 18px;
+    color: var(--header-inversive);
   }
 
   p {
-    color: white;
     font-size: 14px;
     margin-top: 16px;
     line-height: 1.4;
-    color: #dddddd;
+    color: var(--text-inversive);
   }
 }
 

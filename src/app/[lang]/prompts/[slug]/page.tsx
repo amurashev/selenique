@@ -1,27 +1,36 @@
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
-
 import PromptbookPage from "@/components/pages/promptbook-page";
 
+import { promptBookListPageRoute, promptBookPageRoute } from "@/constants/routes";
 import { PROMTBOOKS } from "@/constants/promptbooks";
-import { PromptBook } from "@/components/types";
+
 import { i18n, Locale } from "../../../../../i18n-config";
+import { getDictionary } from "@/l18n/dictionaries";
+import { getPromptsListKeywords } from "@/constants/prompts";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string; lang: Locale }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, lang } = await params;
+
+  const messages = await getDictionary(lang) as Record<string, string>
 
   const data = PROMTBOOKS[slug || "null"];
 
   const title = `${data.name} | Gemini Prompts`;
   const description = data.summary;
-  const keywords =
-    "prompts, ai prompts, prompt pack, prompt collection, nano banana prompts, gemini prompts, dall-e prompts, midjourney prompts, stable diffusion prompts, flux prompts, chatgpt prompts, kling ai prompts, image prompts, design prompts, marketing prompts, business prompts, photography prompts";
+  const keywords = messages[getPromptsListKeywords()]
+
+  const url = promptBookPageRoute.getUrl(lang, {
+    params: {
+      slug
+    }
+  })
 
   return {
     title,
@@ -33,7 +42,7 @@ export async function generateMetadata({
       ],
       title: title,
       description,
-      url: `https://www.selenique.space/prompt-books/${slug}`,
+      url: `https://www.selenique.space${url}`,
       type: "website",
     },
   };
@@ -50,7 +59,7 @@ export default async function PromptbookPageEntry({
   const data = PROMTBOOKS[slug || "null"];
 
   if (!data) {
-    return redirect("/prompt-books");
+    return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
 
   return (

@@ -2,6 +2,10 @@ import { PromptCategories } from "@/components/types";
 
 export const PROMPT_CATEGORIES: PromptCategories[] = ["business"]
 
+export const getPromptsListTitle = () => `prompt_books.title`
+export const getPromptsListDescription = () => `prompt_books.description`
+export const getPromptsListKeywords = () => `prompt_books.keywords`
+
 export const getPromptCategoryShortLabel = (category: PromptCategories) => `prompts.categories.${category}.short_label`
 export const getPromptCategoryTitle = (category: PromptCategories) => `prompts.categories.${category}.title`
 export const getPromptCategoryDescription = (category: PromptCategories) => `prompts.categories.${category}.description`
