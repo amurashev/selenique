@@ -25,6 +25,7 @@ import Profile from "./profile";
 import shuffle from "@/utils/arrays";
 import { RowsPhotoAlbum } from "react-photo-album";
 import PromptbookList from "@/components/sections/promptbook-list";
+import Footer from "@/components/layout/footer";
 
 const randomPhotos = PHOTOS.filter((item) => {
   const sourceFile = item.SourceFile.slice(8);
@@ -138,6 +139,7 @@ export default function HomePage({
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

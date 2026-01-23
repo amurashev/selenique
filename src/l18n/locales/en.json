@@ -3,7 +3,7 @@
   "header.menu.services": "Services",
   "header.menu.portfolio": "Portfolio",
   "header.menu.ii_models": "AI Models",
-  "header.menu.promptbooks": "Prompt Books",
+  "header.menu.promptbooks": "Prompts",
   "header.menu.other": "Other",
   "footer.not_an_offer": "Not a public offer",
   "products.menu.title": "Photo editing for e‑commerce",
@@ -372,6 +372,11 @@
   "guides.title_short": "Materials",
   "guides.text": "Practical AI guides and creative resources for designers, creators, and digital professionals. Learn faster, work smarter, and build consistent results with AI tools.",
   "guides.see_all": "See all Materials",
+
+  "footer.navigation": "Navigation",
+  "footer.prompts": "Prompts",
+  "footer.guides": "Guides",
+  "footer.prompt_categories": "Prompt Categories",
   
   "hero.title": "AI Fashion Ads & WOW Resources",
   "hero.text": "Guides, prompts & scenes — no Photoshop required",

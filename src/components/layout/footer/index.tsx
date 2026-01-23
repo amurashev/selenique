@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
-import { SERVICES } from "@/constants/services";
-import { modelsPageRoute, productPortfolioPageRoute } from "@/constants/routes";
+import { getPromptCategoryShortLabel, PROMPT_CATEGORIES } from "@/constants/prompts";
+import { promptBookListPageRoute, guidesListPageRoute, productPortfolioPageRoute, promptsCategoryPageRoute } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
 
 const EMailIcon = () => (
@@ -33,54 +33,40 @@ export default function Footer() {
         <nav className={styles.nav}>
           <div className={styles.firstCol}>
             <div className={styles.logoBox}>
-              <img
+              {/* <img
                 src="/logo4.png"
                 alt={formatMessage({ id: "common.name" })}
                 className={styles.logoImage}
-              />
-            </div>
+              /> */}
 
-            <div className={styles.dsds}>
-              <ul
-                aria-label={formatMessage({ id: "header.menu.services" })}
-                className={styles.menuList}
-              >
-                <span className={styles.menuHeader}>
-                  {formatMessage({ id: "header.menu.services" })}
-                </span>
 
-                {SERVICES.map((item) => (
-                  <li key={item.titleKey} className={styles.menuItem}>
-                    <Link
-                      href={item.route.getUrl(locale)}
-                      className={styles.menuLink}
-                    >
-                      {formatMessage({ id: item.menuTitleKey })}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.title}>Selenique.Studio</div>
             </div>
 
             <div className={styles.linksBox}>
               <ul
-                aria-label={formatMessage({ id: "header.menu.other" })}
+                aria-label={formatMessage({ id: "footer.navigation" })}
                 className={styles.menuList}
               >
                 <span className={styles.menuHeader}>
-                  {formatMessage({ id: "header.menu.other" })}
+                  {formatMessage({ id: "footer.navigation" })}
                 </span>
 
                 <li className={styles.menuItem}>
                   <Link
-                    href={modelsPageRoute.getUrl(locale, {
-                      params: {
-                        type: "women",
-                      },
-                    })}
+                    href={promptBookListPageRoute.getUrl(locale)}
                     className={styles.menuLink}
                   >
-                    {formatMessage({ id: "header.menu.portfolio" })}
+                    {formatMessage({ id: "footer.prompts" })}
+                  </Link>
+                </li>
+
+                <li className={styles.menuItem}>
+                  <Link
+                    href={guidesListPageRoute.getUrl(locale)}
+                    className={styles.menuLink}
+                  >
+                    {formatMessage({ id: "footer.guides" })}
                   </Link>
                 </li>
 
@@ -91,9 +77,35 @@ export default function Footer() {
                     })}
                     className={styles.menuLink}
                   >
-                    {formatMessage({ id: "header.menu.ii_models" })}
+                    {formatMessage({ id: "header.menu.portfolio" })}
                   </Link>
                 </li>
+              </ul>
+            </div>
+
+            <div className={styles.linksBox}>
+              <ul
+                aria-label={formatMessage({ id: "footer.prompt_categories" })}
+                className={styles.menuList}
+              >
+                <span className={styles.menuHeader}>
+                  {formatMessage({ id: "footer.prompt_categories" })}
+                </span>
+
+                {PROMPT_CATEGORIES.map(item => (
+                  <li key={item} className={styles.menuItem}>
+                    <Link
+                      href={promptsCategoryPageRoute.getUrl(locale, {
+                        params: {
+                          slug: item,
+                        },
+                      })}
+                      className={styles.menuLink}
+                    >
+                      {formatMessage({ id: getPromptCategoryShortLabel(item) })}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -109,19 +121,19 @@ export default function Footer() {
               </a>
             </div>
 
-            <div>© 2025 {formatMessage({ id: "common.name" })}</div>
-            <div className={styles.flags}>
+            <div>© 2026 {formatMessage({ id: "common.name" })}</div>
+            {/* <div className={styles.flags}>
               <Link href={"/"}>
                 <RUFlag />
               </Link>
               <Link href={"/en"}>
                 <UKFlag />
               </Link>
-            </div>
+            </div> */}
           </div>
         </nav>
         <div className={styles.alertBox}>
-          {locale === "ru" && (
+          {/* {locale === "ru" && (
             <div>
               <Link href={"/policy"} className={styles.menuLink}>
                 {formatMessage({ id: "header.menu.policy" })}
@@ -135,13 +147,13 @@ export default function Footer() {
               </Link>
             </div>
           )}
-            {locale === "ru" && (
+          {locale === "ru" && (
             <div>
               <Link href={"/oferta_service"} className={styles.menuLink}>
                 {formatMessage({ id: "header.menu.oferta_service" })}
               </Link>
             </div>
-          )}
+          )} */}
           {/* <div>{formatMessage({ id: "footer.not_an_offer" })}</div> */}
         </div>
         {/* <ul className={styles.menu}>

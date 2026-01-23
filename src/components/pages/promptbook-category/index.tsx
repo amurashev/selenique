@@ -7,6 +7,7 @@ import styles from "./page.module.css";
 import { promptBookListPageRoute } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
 import ShortHeader from "@/components/sections/short-header";
+import Footer from "@/components/layout/footer";
 import { getPromptCategoryShortLabel, getPromptCategoryH1, getPromptCategoryShortDescription, getPromptCategoryText } from "@/constants/prompts";
 import { PromptCategories } from "@/components/types";
 
@@ -35,6 +36,7 @@ export default function PromptsCategoryPage({ slug, prompts }: { slug: PromptCat
             }}
           />
         </main>
+        <Footer />
       </div>
     </>
   );

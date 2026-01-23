@@ -12,6 +12,7 @@ import {
 import { homePage } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
 import ShortHeader from "@/components/sections/short-header";
+import Footer from "@/components/layout/footer";
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
@@ -35,6 +36,7 @@ export default function PromptbookListPage() {
             </Link>
           </div> */}
         </main>
+        <Footer />
       </div>
     </>
   );
