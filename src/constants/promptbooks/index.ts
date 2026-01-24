@@ -980,15 +980,17 @@ export const promptbooksBundlesOrdered: string[] = [
 export const guidesOrdered: string[] = ["virtual-influence-guide"];
 
 export const promptbooksOrdered: string[] = [
-  "realistic-ai-influencer-prompts-170",
   "22-business-man-headshot-prompts-ai",
-  "50-high-fashion-editorial-prompts-vol-2",
   "30-business-woman-photo-prompts-ai",
+  "8-red-carpet-couple-ai-photo-prompts",
+  "15-ai-women-headshot-prompts-professional",
+  "24-ai-maternity-photoshoot-prompts",
+  "50-high-fashion-editorial-prompts-vol-2",
+
+  "realistic-ai-influencer-prompts-170",
 
   "50-men-fashion-editorial-prompts-vol-1",
-  "15-ai-women-headshot-prompts-professional",
   "8-red-carpet-men-photo-prompts-ai",
-  "8-red-carpet-couple-ai-photo-prompts",
   "8-red-carpet-women-photo-prompts",
   "35-cosmetic-product-photo-prompts",
   "50-old-money-ai-photo-prompts-vol1",
@@ -996,7 +998,6 @@ export const promptbooksOrdered: string[] = [
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",
-  "24-ai-maternity-photoshoot-prompts",
 
   "50-ideal-skin-midjourney-prompts-vol-1",
   "50-jewelry-product-photo-ai-prompts",
