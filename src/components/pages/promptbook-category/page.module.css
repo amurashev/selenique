@@ -23,8 +23,15 @@
     margin-top: 32px;
   }
 
-  p {
+  h1 + p, h2 + p, ul + p {
     margin-top: 8px;
+  }
+
+  p + p {
+    margin-top: 4px;
+  }
+
+  p {
     color: var(--text-inversive);
   }
 
@@ -46,7 +53,7 @@
 
 @media (min-width: 840px) {
   .main {  
-    p {
+    h2 + p {
       margin-top: 12px;
     }
   }
