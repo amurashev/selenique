@@ -984,11 +984,12 @@ export const promptbooksOrdered: string[] = [
   "22-business-man-headshot-prompts-ai",
   "50-high-fashion-editorial-prompts-vol-2",
   "30-business-woman-photo-prompts-ai",
-  "8-red-carpet-women-photo-prompts",
 
   "50-men-fashion-editorial-prompts-vol-1",
   "15-ai-women-headshot-prompts-professional",
   "8-red-carpet-men-photo-prompts-ai",
+  "8-red-carpet-couple-ai-photo-prompts",
+  "8-red-carpet-women-photo-prompts",
   "35-cosmetic-product-photo-prompts",
   "50-old-money-ai-photo-prompts-vol1",
   "32-monochromatic-studio-portrait-prompt-pack",
