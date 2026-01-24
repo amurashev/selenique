@@ -56,30 +56,50 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // modelsPageRoute.getUrl("en", { params: { type: "women" } }),
     // modelsPageRoute.getUrl("en", { params: { type: "men" } }),
 
-    // Portfolio EN
-     ...PORTFOLIO_TYPES.map((item) =>
-      productPortfolioPageRoute.getUrl("en", { params: { type: item.index } })
-    ),
-    // Portfolio RU
-    ...PORTFOLIO_TYPES.map((item) =>
-      productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
-    ),
-
-    // Prompts EN
+    // Prompts Categories
     promptBookListPageRoute.getUrl("en"),
     ...PROMPT_CATEGORIES.map((tag) =>
       promptsCategoryPageRoute.getUrl("en", { params: { slug: tag } })
     ),
 
+  ].forEach((item) => {
+    pages.push({
+      url: `${DOMAIN}${item}`,
+      // lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1,
+    });
+  });
+
+  [
+    // Prompts
     ...Object.keys(PROMTBOOKS).map((slug) =>
       promptBookPageRoute.getUrl("en", { params: { slug } })
     ),
   ].forEach((item) => {
     pages.push({
       url: `${DOMAIN}${item}`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+      // lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  });
+
+  [
+    // Portfolio EN
+    ...PORTFOLIO_TYPES.map((item) =>
+      productPortfolioPageRoute.getUrl("en", { params: { type: item.index } })
+    ),
+    // Portfolio RU
+    ...PORTFOLIO_TYPES.map((item) =>
+      productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
+    ),
+  ].forEach((item) => {
+    pages.push({
+      url: `${DOMAIN}${item}`,
+      // lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
     });
   });
 
