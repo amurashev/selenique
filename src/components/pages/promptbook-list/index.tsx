@@ -28,7 +28,7 @@ export default function PromptbookListPage() {
           <h1>{formatMessage({ id: "prompt_books.title" })}</h1>
           <p>{formatMessage({ id: "prompt_books.text" })}</p>
           <PromptbookList
-            list={[...promptbooksBundlesOrdered, ...promptbooksOrdered]}
+            list={[...promptbooksOrdered]}
           />
           {/* <div className={styles.buttonBox}>
             <Link className={styles.seeAll} href={homePage.getUrl(locale)}>
