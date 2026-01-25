@@ -1,7 +1,7 @@
 export default `
 <p>This prompt pack is a ready-made red studio setup designed for bold, cinematic, high-impact portraits.</p>
 <p>Inside you’ll find&nbsp;<strong>16 carefully crafted photo prompts</strong>&nbsp;built around a deep red draped backdrop that adds drama, depth, and a strong editorial mood to any shoot. Think magazine covers, personal branding, fashion portraits, speakers, creatives, and confident professionals.</p>
-<p>Each prompt focuses on:</p>
+<h3>Each prompt focuses on:</h3>
 <ul>
     <li>
         expressive, natural poses
@@ -17,7 +17,7 @@ export default `
     </li>
 </ul>
 <p>These prompts are ideal if you want portraits that feel&nbsp;<strong>confident, intentional, and visually expensive</strong>&nbsp;— without overcomplicating the setup.</p>
-<p><strong>Perfect for:</strong></p>
+<h3>Perfect for:</h3>
 <ul>
     <li>
         personal brand photos
@@ -35,7 +35,7 @@ export default `
         social media, websites, press kits
     </li>
 </ul>
-<p><strong>Why this pack works:</strong></p>
+<h3>Why this pack works:</h3>
 <ul>
     <li>
         no guessing — just copy, paste, and generate
