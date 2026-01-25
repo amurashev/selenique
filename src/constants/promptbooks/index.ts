@@ -11,6 +11,7 @@ import t33 from "./text/33";
 import t34 from "./text/34";
 import t35 from "./text/35";
 import t36 from "./text/36";
+import t37 from "./text/37";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -968,6 +969,26 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "A curated collection of 120 professional interior photo prompts designed for clean, modern wall art and poster mockups with blank white frames.",
     text: t36,
   },
+
+  "16-red-backdrop-studio-photo-prompts": {
+    id: 37,
+    gumroad: {
+      id: "null",
+      slug: "16-red-backdrop-studio-photo-prompts",
+    },
+    name: "16 Red Backdrop Studio — Photo Prompt Pack",
+    number: 16,
+    tags: ["studio"],
+    fileType: "link",
+    images: [1, 3, 4, 5],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Inside you’ll find 16 carefully crafted photo prompts built around a deep red draped backdrop that adds drama, depth, and a strong editorial mood to any shoot.",
+    text: t37,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -995,6 +1016,7 @@ export const promptbooksOrdered: string[] = [
   "35-cosmetic-product-photo-prompts",
   "50-old-money-ai-photo-prompts-vol1",
   "32-monochromatic-studio-portrait-prompt-pack",
+  "16-red-backdrop-studio-photo-prompts",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",
