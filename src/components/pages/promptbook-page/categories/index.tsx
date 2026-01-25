@@ -9,7 +9,7 @@ import { PromptBook } from "@/components/types";
 
 import styles from "./styles.module.css";
 import { promptsCategoryPageRoute } from "@/constants/routes";
-import { getPromptCategoryShortLabel, PROMPT_CATEGORIES } from "@/constants/prompts";
+import { getPromptCategoryTag, PROMPT_CATEGORIES } from "@/constants/prompts";
 
 export default function Categories({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -24,7 +24,7 @@ export default function Categories({ data }: { data: PromptBook }) {
           params: {
             slug: item,
           }
-        })} key={item} className={styles.item}>{formatMessage({ id: getPromptCategoryShortLabel(item) })}</Link>
+        })} key={item} className={styles.item}>{formatMessage({ id: getPromptCategoryTag(item) })}</Link>
       ))}
     </div>
 

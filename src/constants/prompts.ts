@@ -10,6 +10,7 @@ export const getPromptsListDescription = () => `prompt_books.description`
 export const getPromptsListKeywords = () => `prompt_books.keywords`
 
 export const getPromptCategoryShortLabel = (category: PromptCategories) => `prompts.categories.${category}.short_label`
+export const getPromptCategoryTag = (category: PromptCategories) => `prompts.categories.${category}.tag`
 export const getPromptCategoryTitle = (category: PromptCategories) => `prompts.categories.${category}.title`
 export const getPromptCategoryDescription = (category: PromptCategories) => `prompts.categories.${category}.description`
 export const getPromptCategoryKeywords = (category: PromptCategories) => `prompts.categories.${category}.keywords`

@@ -14,3 +14,10 @@
   margin-right: 8px;
   margin-bottom: 8px;
 }
+
+/* @media (min-width: 760px) {
+  .item {
+    font-size: 15px;
+    padding: 4px 8px;
+  }
+} */
