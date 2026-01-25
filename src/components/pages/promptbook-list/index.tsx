@@ -13,6 +13,7 @@ import { homePage } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
 import ShortHeader from "@/components/sections/short-header";
 import Footer from "@/components/layout/footer";
+import Categories from "./categories";
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
@@ -27,6 +28,7 @@ export default function PromptbookListPage() {
         <main className={styles.main}>
           <h1>{formatMessage({ id: "prompt_books.title" })}</h1>
           <p>{formatMessage({ id: "prompt_books.text" })}</p>
+          <Categories />
           <PromptbookList
             list={[...promptbooksOrdered]}
           />
