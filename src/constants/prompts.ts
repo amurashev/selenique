@@ -2,7 +2,7 @@ import { PromptCategories } from "@/components/types";
 
 export const PROMPT_CATEGORIES: PromptCategories[] = [
   "business", "fashion", "product", "lifestyle", "fantasy", "red_carpet",
-  "beauty", "jewelry", "headshot", "men", "women",
+  "beauty", "jewelry", "headshot", "men", "women", "studio",
 ]
 
 export const getPromptsListTitle = () => `prompt_books.title`
