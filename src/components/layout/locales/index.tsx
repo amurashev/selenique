@@ -9,14 +9,7 @@ import Link from "next/link";
 const Locales = () => {
   const { formatMessage, locale } = useIntl();
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false)
-  const modalRef = useRef<HTMLDivElement>(null);
-
-
-
-  return (
-   111s
-  );
+  return null;
 };
 
 export default Locales;

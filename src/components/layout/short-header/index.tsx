@@ -12,6 +12,8 @@ import { ChevronLeft } from "@/components/sections/arrows";
 import { BaseRouteType, Route } from "@/utils/routing";
 // import Locales from "../../layout/locales";
 
+
+// Flags: https://www.flaticon.com/packs/international-flags-6?word=flag
 export default function ShortHeader({ route, title, hasBack = true }: {
   route?: Route<BaseRouteType>,
   title: string,
