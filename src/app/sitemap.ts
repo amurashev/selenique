@@ -8,13 +8,15 @@ import {
   modelsPageRoute,
   productPortfolioPageRoute,
   promptBookListPageRoute,
+  guidesListPageRoute,
+  guidePageRoute,
   promptBookPageRoute,
   homePage,
   promptsCategoryPageRoute,
   intensiveNeurovideoPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import { promptbooksOrdered, guidesOrdered, promptbooksBundlesOrdered } from "@/constants/promptbooks";
 import { PROMPT_CATEGORIES } from "@/constants/prompts";
 
 import { i18n, Locale } from "../../i18n-config";
@@ -61,6 +63,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       // Prompts Categories
       promptBookListPageRoute.getUrl(locale),
+      guidesListPageRoute.getUrl(locale),
       ...PROMPT_CATEGORIES.map((tag) =>
         promptsCategoryPageRoute.getUrl(locale, { params: { slug: tag } })
       ),
@@ -75,8 +78,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     [
       // Prompts
-      ...Object.keys(PROMTBOOKS).map((slug) =>
+      ...promptbooksOrdered.map((slug) =>
         promptBookPageRoute.getUrl(locale, { params: { slug } })
+      ),
+      ...promptbooksBundlesOrdered.map((slug) =>
+        promptBookPageRoute.getUrl(locale, { params: { slug } })
+      ),
+      // Guides
+      ...guidesOrdered.map((slug) =>
+        guidePageRoute.getUrl(locale, { params: { slug } })
       ),
     ].forEach((item) => {
       pages.push({
