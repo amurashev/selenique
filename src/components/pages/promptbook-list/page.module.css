@@ -13,6 +13,8 @@
   h1 {
     color: var(--header-inversive);
     text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
   }
 
   p {

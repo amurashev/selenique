@@ -17,6 +17,8 @@ import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { PROMPT_CATEGORIES } from "@/constants/prompts";
 
+import { i18n, Locale } from "../../i18n-config";
+
 const DOMAIN = "https://www.selenique.space";
 
 // TODO: Do not generate on demand
@@ -30,78 +32,76 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // },
   ] as MetadataRoute.Sitemap;
 
-  [
-    // Home
-    homePage.getUrl("en"),
-    homePage.getUrl("ru"),
 
-    // Neurovideo
-    // intensiveNeurovideoPageRoute.getUrl("ru"),
+  i18n.locales.forEach(locale => {
+    [
+      // Home
+      homePage.getUrl(locale),
 
-    // Services RU
-    // productPageRoute.getUrl("ru"),
-    // aiConsultationPageRoute.getUrl("ru"),
-    // iiModelPageRoute.getUrl("ru"),
-    // iiPhotoShootPageRoute.getUrl("ru"),
-    // Services EN
-    // productPageRoute.getUrl("en"),
-    // aiConsultationPageRoute.getUrl("en"),
-    // iiModelPageRoute.getUrl("en"),
-    // iiPhotoShootPageRoute.getUrl("en"),
+      // Neurovideo
+      // intensiveNeurovideoPageRoute.getUrl("ru"),
 
-    // Models RU
-    // modelsPageRoute.getUrl("ru", { params: { type: "women" } }),
-    // modelsPageRoute.getUrl("ru", { params: { type: "men" } }),
-    // Models EN
-    // modelsPageRoute.getUrl("en", { params: { type: "women" } }),
-    // modelsPageRoute.getUrl("en", { params: { type: "men" } }),
+      // Services RU
+      // productPageRoute.getUrl("ru"),
+      // aiConsultationPageRoute.getUrl("ru"),
+      // iiModelPageRoute.getUrl("ru"),
+      // iiPhotoShootPageRoute.getUrl("ru"),
+      // Services EN
+      // productPageRoute.getUrl("en"),
+      // aiConsultationPageRoute.getUrl("en"),
+      // iiModelPageRoute.getUrl("en"),
+      // iiPhotoShootPageRoute.getUrl("en"),
 
-    // Prompts Categories
-    promptBookListPageRoute.getUrl("en"),
-    ...PROMPT_CATEGORIES.map((tag) =>
-      promptsCategoryPageRoute.getUrl("en", { params: { slug: tag } })
-    ),
+      // Models RU
+      // modelsPageRoute.getUrl("ru", { params: { type: "women" } }),
+      // modelsPageRoute.getUrl("ru", { params: { type: "men" } }),
+      // Models EN
+      // modelsPageRoute.getUrl("en", { params: { type: "women" } }),
+      // modelsPageRoute.getUrl("en", { params: { type: "men" } }),
 
-  ].forEach((item) => {
-    pages.push({
-      url: `${DOMAIN}${item}`,
-      // lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+      // Prompts Categories
+      promptBookListPageRoute.getUrl(locale),
+      ...PROMPT_CATEGORIES.map((tag) =>
+        promptsCategoryPageRoute.getUrl(locale, { params: { slug: tag } })
+      ),
+    ].forEach((item) => {
+      pages.push({
+        url: `${DOMAIN}${item}`,
+        // lastModified: new Date(),
+        changeFrequency: "daily",
+        priority: 1,
+      });
     });
-  });
 
-  [
-    // Prompts
-    ...Object.keys(PROMTBOOKS).map((slug) =>
-      promptBookPageRoute.getUrl("en", { params: { slug } })
-    ),
-  ].forEach((item) => {
-    pages.push({
-      url: `${DOMAIN}${item}`,
-      // lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
+    [
+      // Prompts
+      ...Object.keys(PROMTBOOKS).map((slug) =>
+        promptBookPageRoute.getUrl(locale, { params: { slug } })
+      ),
+    ].forEach((item) => {
+      pages.push({
+        url: `${DOMAIN}${item}`,
+        // lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.6,
+      });
     });
-  });
 
-  [
-    // Portfolio EN
-    ...PORTFOLIO_TYPES.map((item) =>
-      productPortfolioPageRoute.getUrl("en", { params: { type: item.index } })
-    ),
-    // Portfolio RU
-    ...PORTFOLIO_TYPES.map((item) =>
-      productPortfolioPageRoute.getUrl("ru", { params: { type: item.index } })
-    ),
-  ].forEach((item) => {
-    pages.push({
-      url: `${DOMAIN}${item}`,
-      // lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.3,
+    [
+      // Portfolio
+      ...PORTFOLIO_TYPES.map((item) =>
+        productPortfolioPageRoute.getUrl(locale, { params: { type: item.index } })
+      ),
+    ].forEach((item) => {
+      pages.push({
+        url: `${DOMAIN}${item}`,
+        // lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.3,
+      });
     });
-  });
+
+  })
 
   return pages;
 }

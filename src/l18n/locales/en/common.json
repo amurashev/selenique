@@ -1,0 +1,23 @@
+{
+  "common.buy_now": "Own it today",
+  "common.back": "Back",
+  "common.name": "Selenique Studio",
+  "common.prices.free": "free",
+  "common.prices.types.model": "model",
+  "common.prices.types.photo": "photo",
+  "common.prices.types.angle": "angle",
+  "common.price": "Price",
+  "common.models.sex.women": "Women",
+  "common.models.sex.men": "Men",
+  "locale": "English",
+  "header.menu.services": "Services",
+  "header.menu.portfolio": "Portfolio",
+  "header.menu.ii_models": "AI Models",
+  "header.menu.promptbooks": "Prompts",
+  "header.menu.other": "Other",
+  "footer.not_an_offer": "Not a public offer",
+  "footer.navigation": "Navigation",
+  "footer.prompts": "Prompts",
+  "footer.guides": "Guides",
+  "footer.prompt_categories": "Prompt Categories"
+}

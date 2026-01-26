@@ -1,17 +1,21 @@
 import React from "react";
+import { useIntl } from "react-intl";
+
 import styles from "./styles.module.css";
 
 const Profile = () => {
+  const { formatMessage, locale } = useIntl();
+
   return (
     <div className={styles.card}>
       <div className={styles.textBlock}>
         <h3 className={styles.title}>Selenique.Studio</h3>
         <p className={styles.description}>
-          💡 Creative studio <br />
-          💻 AI Visual Content for Brands <br />
-          🤝 Open for Collab <br />
-          💃 Fashion — is our profession <br />
-          ✨ Driven to inspire <br />
+          💡 {formatMessage({ id: "home.profile.item1" })} <br />
+          💻 {formatMessage({ id: "home.profile.item2" })}  <br />
+          🤝 {formatMessage({ id: "home.profile.item3" })}  <br />
+          💃 {formatMessage({ id: "home.profile.item4" })}  <br />
+          ✨ {formatMessage({ id: "home.profile.item5" })}  <br />
         </p>
       </div>
       <img

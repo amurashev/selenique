@@ -91,7 +91,11 @@ export const route = <RouteType extends BaseRouteType>(
         if (correctLocale === "en") {
           finalPathName = pathname as string;
         } else {
-          finalPathName = `/${correctLocale}${pathname as string}`
+          if (pathname === "/") {
+            finalPathName = `/${correctLocale}`
+          } else {
+            finalPathName = `/${correctLocale}${pathname as string}`
+          }
         }
       }
 
