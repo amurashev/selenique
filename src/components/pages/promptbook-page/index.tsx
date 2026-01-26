@@ -43,11 +43,12 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div className={styles.backBox}>
+        {/* <div className={styles.backBox}>
           <Link href={backUrl}>
             <ChevronLeft size={28} />
           </Link>
-        </div>
+        </div> */}
+        <ShortHeader route={promptBookListPageRoute} title={name} color="white" />
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
         </div>

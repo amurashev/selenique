@@ -14,10 +14,10 @@ import { BaseRouteType, Route } from "@/utils/routing";
 
 
 // Flags: https://www.flaticon.com/packs/international-flags-6?word=flag
-export default function ShortHeader({ route, title, hasBack = true }: {
+export default function ShortHeader({ route, title, color = "black"} : {
   route?: Route<BaseRouteType>,
   title: string,
-  hasBack?: boolean
+  color?: "white" | "black"
 }) {
   const { formatMessage, locale } = useIntl();
   const pathname = usePathname();
@@ -62,12 +62,12 @@ export default function ShortHeader({ route, title, hasBack = true }: {
 
 
   return (
-    <div className={styles.box}>
+    <div className={`${styles.box} ${color === "white" ? styles.boxWhite : ""}`}>
       <div className={styles.backBox}>
-        {!hasBack && (<div className={styles.nullLink}>&nbsp;</div>)}
-        {hasBack && route && (
+        {!route && (<div className={styles.nullLink}>&nbsp;</div>)}
+        {route && (
           <Link href={route.getUrl(locale)} className={styles.link}>
-            <ChevronLeft size={28} color="#ffffff" />
+            <ChevronLeft size={28} color={color === "white" ? "#444444" : "#ffffff"} />
             <span>{formatMessage({ id: "common.back" })}</span>
           </Link>
         )}

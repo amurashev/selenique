@@ -71,11 +71,9 @@ export default function HomePage({
 
   return (
     <div className={styles.page}>
-         <ShortHeader
-          hasBack={false}
-          // route={guidesListPageRoute}
-          title={"Selenique.Studio"}
-        />
+      <ShortHeader
+        title={"Selenique.Studio"}
+      />
       <main className={styles.main}>
         <div className={styles.inner}>
           <Profile />

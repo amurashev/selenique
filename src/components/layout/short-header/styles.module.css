@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   padding: 12px 12px;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid var(--border-dark);
   color: white;
   background-color: var(--foreground);
   position: fixed;
@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .nullLink {
@@ -54,7 +54,7 @@
 
 .flagBox {
   padding: 4px 0px;
-  color: white;
+  /* color: white; */
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@
   display: flex;
   justify-content: center;
   gap: 18px;
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid var(--border-dark);
   padding: 8px 20px;
 }
 
@@ -93,4 +93,18 @@
   object-fit: cover;
   overflow: hidden;
   flex-shrink: 0;
+}
+
+
+.boxWhite {
+  .backBox {
+    background-color: white;
+    color: var(--foreground);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .modal {
+    background-color: white;
+    border-color: var(--border-light);
+  }
 }
