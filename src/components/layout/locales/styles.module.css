@@ -1,0 +1,54 @@
+.card {
+  width: 100%;
+  /* border-bottom: 1px solid #444444; */
+  /* display: flex;
+  gap: 8px; */
+  /* justify-content: end; */
+  position: relative;
+}
+
+.box {
+  padding: 4px 0px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 38px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modal {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  border-bottom: 1px solid #444444;
+  padding: 8px 20px;
+}
+
+.imageSuggested {
+  display: block;
+  width: 48px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+@media (min-width: 600px) {
+
+}

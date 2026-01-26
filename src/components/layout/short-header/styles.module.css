@@ -1,0 +1,92 @@
+.box {
+  height: 50px;
+  width: 100%;
+}
+
+.backBox {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  border-bottom: 1px solid #555555;
+  color: white;
+  background-color: var(--foreground);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nullLink {
+  width: 100px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  flex-shrink: 0;
+  font-size: 16px;
+  width: 100px;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.null {
+  /* width: 72px; */
+  flex-shrink: 0;
+  width: 100px;
+  display: flex;
+  justify-content: end;
+}
+
+
+.flagBox {
+  padding: 4px 0px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.flagImage {
+  display: block;
+  width: 28px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modal {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  border-bottom: 1px solid #444444;
+  padding: 8px 20px;
+}
+
+.imageSuggested {
+  display: block;
+  width: 48px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  flex-shrink: 0;
+}

@@ -16,7 +16,7 @@ import Footer from "@/components/layout/footer";
 import PHOTOS from "../../../../source/portfolio.json";
 import Link from "next/link";
 import { ChevronLeft } from "@/components/sections/arrows";
-import ShortHeader from "@/components/sections/short-header";
+import ShortHeader from "@/components/layout/short-header";
 
 export default function ProductsPortfolioPage({
   type,

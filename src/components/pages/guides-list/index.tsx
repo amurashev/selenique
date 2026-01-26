@@ -8,7 +8,7 @@ import { guidesOrdered } from "@/constants/promptbooks";
 
 import { homePage } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
-import ShortHeader from "@/components/sections/short-header";
+import ShortHeader from "@/components/layout/short-header";
 
 export default function GuidesListPage() {
   const { formatMessage, locale } = useIntl();

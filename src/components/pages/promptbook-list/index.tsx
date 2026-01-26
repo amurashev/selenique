@@ -11,7 +11,7 @@ import {
 
 import { homePage } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
-import ShortHeader from "@/components/sections/short-header";
+import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
 import Categories from "./categories";
 
