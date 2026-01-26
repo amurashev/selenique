@@ -56,12 +56,12 @@
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .flagImage {
   display: block;
-  width: 28px;
+  width: 24px;
   height: auto;
   object-fit: cover;
   overflow: hidden;
