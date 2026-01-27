@@ -13,6 +13,7 @@ import t35 from "./text/35";
 import t36 from "./text/36";
 import t37 from "./text/37";
 import t38 from "./text/38";
+import t39 from "./text/39";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -1009,6 +1010,25 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "Inside are 16 carefully designed photo prompts focused on women-centered Valentine aesthetics — red tones, glossy hearts, elegant poses, and a mix of playful flirtation with classic editorial polish. These prompts help you create images that feel festive, confident, and visually irresistible.",
     text: t38,
   },
+  "faceless-aesthetic-100-ai-photo-prompts": {
+    id: 39,
+    gumroad: {
+      id: "null",
+      slug: "faceless-aesthetic-100-ai-photo-prompts",
+    },
+    name: "Faceless Aesthetic — 100 AI Photo Prompts",
+    number: 100,
+    tags: ["lifestyle"],
+    fileType: "link",
+    images: [1, 3, 4, 5, 6, 7, 8],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "A curated collection of 100 high-quality AI photo prompts designed for creating elegant, faceless lifestyle imagery in a muted color palette.",
+    text: t39,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -1038,6 +1058,7 @@ export const promptbooksOrdered: string[] = [
   "32-monochromatic-studio-portrait-prompt-pack",
   "16-red-backdrop-studio-photo-prompts",
   "16-valentines-day-women-photo-prompts",
+  "faceless-aesthetic-100-ai-photo-prompts",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",

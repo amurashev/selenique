@@ -19,6 +19,7 @@ export type PromptCategories = | "fashion"
   | "headshot"
   | "maternity"
   | "lifestyle"
+  | "faceless"
 
 export type DigitalItem = {
   id: number;
