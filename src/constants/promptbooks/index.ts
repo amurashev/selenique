@@ -12,6 +12,7 @@ import t34 from "./text/34";
 import t35 from "./text/35";
 import t36 from "./text/36";
 import t37 from "./text/37";
+import t38 from "./text/38";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -989,6 +990,25 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "Inside you’ll find 16 carefully crafted photo prompts built around a deep red draped backdrop that adds drama, depth, and a strong editorial mood to any shoot.",
     text: t37,
   },
+  "16-valentines-day-women-photo-prompts": {
+    id: 38,
+    gumroad: {
+      id: "null",
+      slug: "16-valentines-day-women-photo-prompts",
+    },
+    name: "16 Red Backdrop Studio — Photo Prompt Pack",
+    number: 16,
+    tags: ["women", "fashion"],
+    fileType: "link",
+    images: [1, 3, 4, 5],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Inside are 16 carefully designed photo prompts focused on women-centered Valentine aesthetics — red tones, glossy hearts, elegant poses, and a mix of playful flirtation with classic editorial polish. These prompts help you create images that feel festive, confident, and visually irresistible.",
+    text: t38,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -1017,6 +1037,7 @@ export const promptbooksOrdered: string[] = [
   "50-old-money-ai-photo-prompts-vol1",
   "32-monochromatic-studio-portrait-prompt-pack",
   "16-red-backdrop-studio-photo-prompts",
+  "16-valentines-day-women-photo-prompts",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",
