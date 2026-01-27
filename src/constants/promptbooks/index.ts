@@ -996,7 +996,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "null",
       slug: "16-valentines-day-women-photo-prompts",
     },
-    name: "16 Red Backdrop Studio — Photo Prompt Pack",
+    name: "16 Valentine’s Day Women — Photo Prompt Pack",
     number: 16,
     tags: ["women", "fashion"],
     fileType: "link",
