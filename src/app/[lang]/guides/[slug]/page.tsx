@@ -25,11 +25,11 @@ export async function generateMetadata({
     description,
     openGraph: {
       images: [
-        `https://www.selenique.space/guides/${data.id}/${data.images[0]}.jpg`,
+        `https://www.selenique.space/promptbooks/${data.id}/${data.images[0]}.jpg`,
       ],
       title: title,
       description,
-      url: `https://www.selenique.space/en/guides/${slug}`,
+      url: `https://www.selenique.space/guides/${slug}`,
       type: "website",
     },
   };
