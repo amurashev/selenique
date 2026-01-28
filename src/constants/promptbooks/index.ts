@@ -288,7 +288,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
     },
     tags: ["business", "women"],
-    images: [1, 3, 4, 5, 6, 7, 8, 9, 10],
+    images: [1, 3, 4, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
       en: 13.2,
