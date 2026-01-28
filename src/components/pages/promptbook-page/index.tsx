@@ -102,9 +102,9 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
             <Link className={styles.link} href={purchaseLink} target="_blank">
               {formatMessage({ id: "common.buy_now" })}
             </Link>
-            <div className={styles.hint}>
-            {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-          </div>
+            {/* <div className={styles.hint}>
+              {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+            </div> */}
           </div>
         )}
       </main>
