@@ -72,9 +72,14 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
 
             <Categories data={data} />
 
+
             <Link className={styles.seeAllButton} href={backUrl}>
               {formatMessage({ id: "prompt_books.see_all" })}
             </Link>
+
+            <div className={styles.hint}>
+              {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+            </div>
           </div>
 
           <div className={styles.rightSide}>
@@ -102,9 +107,6 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
             <Link className={styles.link} href={purchaseLink} target="_blank">
               {formatMessage({ id: "common.buy_now" })}
             </Link>
-            {/* <div className={styles.hint}>
-              {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-            </div> */}
           </div>
         )}
       </main>
