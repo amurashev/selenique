@@ -513,6 +513,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "22 Business Man Headshot Prompts",
     number: 22,
     links: {
+      boosty: "https://boosty.to/selenique/posts/b8a6673e-ff54-4121-99ec-99bd57c92031",
       // cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
     },
     tags: ["business", "men", "headshot"],

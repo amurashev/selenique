@@ -1,5 +1,6 @@
 {
   "common.buy_now": "Own it today",
+  "common.buy_now_russia": "Purchase (By Russian bank card)",
   "common.back": "Back",
   "common.name": "Selenique Studio",
   "common.prices.free": "free",
@@ -154,5 +155,6 @@
   "prompt_books.link_to_notion": "Link to Notion Document",
   "prompt_books.reviews": "All reviews from this shop",
   "prompt_books.bundle_contains": "This bundle contains",
+  "prompt_books.payment_russia_hint": "If you are unable to pay for your purchase using available payment methods (for example, you are from Russia or Belarus), please contact us via Telegram or email.",
   "prompt_books.you_may_like": "You may also like"
 }

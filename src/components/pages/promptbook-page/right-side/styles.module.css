@@ -72,6 +72,12 @@
   }
 }
 
+.hint {
+  font-size: 13px;
+  color: var(--text);
+  text-align: center;
+}
+
 
 @media (min-width: 760px) { 
   .seeAllButton {

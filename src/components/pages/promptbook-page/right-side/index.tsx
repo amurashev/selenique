@@ -26,7 +26,7 @@ export default function RightSide({
   purchaseLink: string;
 }) {
   const { formatMessage, locale } = useIntl();
-  const { gumroad, price } = data;
+  const { gumroad, price, links } = data;
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -65,6 +65,20 @@ export default function RightSide({
             {formatMessage({ id: "common.buy_now" })}
           </Link>
         )}
+
+        {links?.boosty && (
+          <Link
+            className={styles.link}
+            href={links.boosty}
+            target="_blank"
+          >
+            {formatMessage({ id: "common.buy_now_russia" })}
+          </Link>
+        )}
+
+        <div className={styles.hint}>
+          {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+        </div>
 
         <Link className={styles.seeAllButton} href={backUrl}>
           {formatMessage({ id: "prompt_books.see_all" })}

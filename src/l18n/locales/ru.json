@@ -1,5 +1,6 @@
 {
   "common.buy_now": "Купить сейчас",
+  "common.buy_now_russia": "Купить (Российской картой)",
   "common.back": "Назад",
   "common.name": "Selenique Studio",
   "common.prices.free": "бесплатно",
@@ -59,6 +60,8 @@
   "prompt_books.link_to_notion": "Ссылка на документ Notion",
   "prompt_books.reviews": "Все отзывы для этого магазина",
   "prompt_books.bundle_contains": "Этот пакет содержит",
+
+  "prompt_books.payment_russia_hint": "Если у вас нет возможности оплатить покупку через доступные способы оплаты (например, вы из России или Беларуси) - напишите нам в телеграм (@alenaamoore) или на почту (selenique.studio@gmail.com)",
   "prompt_books.you_may_like": "Вам также может понравиться",
   "prompts.categories.business.title": "Бизнес-промпты для ИИ — профессиональные промпты для маркетинга, брендинга и контента",
   "prompts.categories.business.description": "Готовые бизнес-промпты для инструментов ИИ. Создавайте маркетинговый контент, визуалы для бренда, идеи продуктов и бизнес-активы быстрее с помощью профессиональных пакетов промптов.",

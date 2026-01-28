@@ -37,6 +37,7 @@ export type DigitalItem = {
   // related?: string[];
   links?: {
     cm?: string;
+    boosty?: string
   };
   images: number[];
 };

@@ -113,6 +113,13 @@
   }
 }
 
+.hint {
+  font-size: 13px;
+  color: var(--text);
+  text-align: center;
+  margin-top: 8px;
+}
+
 @media (min-width: 760px) {
   .title {
     padding: 0 24px;
