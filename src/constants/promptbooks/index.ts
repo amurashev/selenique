@@ -14,6 +14,7 @@ import t36 from "./text/36";
 import t37 from "./text/37";
 import t38 from "./text/38";
 import t39 from "./text/39";
+import t40 from "./text/40";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -1029,6 +1030,25 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "A curated collection of 100 high-quality AI photo prompts designed for creating elegant, faceless lifestyle imagery in a muted color palette.",
     text: t39,
   },
+  "25-creative-portraits-photo-prompts": {
+    id: 40,
+    gumroad: {
+      id: "null",
+      slug: "25-creative-portraits-photo-prompts",
+    },
+    name: "25 Creative Portraits — Photo Prompts",
+    number: 25,
+    tags: ["portrait"],
+    fileType: "link",
+    images: [1, 3, 4, 5, 6],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "25 Creative Portraits — Photo Prompts is a curated collection for creators who see portrait photography as a form of visual expression, not just a face on a background.",
+    text: t40,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -1059,6 +1079,7 @@ export const promptbooksOrdered: string[] = [
   "16-red-backdrop-studio-photo-prompts",
   "16-valentines-day-women-photo-prompts",
   "faceless-aesthetic-100-ai-photo-prompts",
+  "25-creative-portraits-photo-prompts",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "32-business-man-photo-prompts",
