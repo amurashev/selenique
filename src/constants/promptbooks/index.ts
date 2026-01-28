@@ -285,6 +285,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "30 Business Woman Photo Prompts",
     number: 30,
     links: {
+      boosty: "https://boosty.to/selenique/posts/796a8676-c1e8-4ee7-9c6f-0f4ad6c29a48?share=success_publish_link",
       // cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
     },
     tags: ["business", "women"],
@@ -802,7 +803,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     name: "The Ultra-Realistic AI Influencer Kit (170+ Prompts)",
     number: 170,
-    links: {},
+    links: {
+      boosty: "https://boosty.to/selenique/posts/e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5?share=success_publish_link",
+    },
     tags: ["lifestyle", "women"],
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
