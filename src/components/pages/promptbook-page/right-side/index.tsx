@@ -26,7 +26,7 @@ export default function RightSide({
   purchaseLink: string;
 }) {
   const { formatMessage, locale } = useIntl();
-  const { gumroad, price, links } = data;
+  const { gumroad, price, links, boostyId } = data;
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -66,10 +66,10 @@ export default function RightSide({
           </Link>
         )}
 
-        {links?.boosty && (
+        {boostyId && (
           <Link
             className={styles.link}
-            href={links.boosty}
+            href={`https://boosty.to/selenique/posts/${boostyId}`}
             target="_blank"
           >
             {formatMessage({ id: "common.buy_now_russia" })}

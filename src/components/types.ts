@@ -28,6 +28,7 @@ export type DigitalItem = {
     id: string
     slug: string
   }
+  boostyId?: string
   isDisabled?: boolean;
   name: string;
   price: PriceType;
@@ -37,7 +38,6 @@ export type DigitalItem = {
   // related?: string[];
   links?: {
     cm?: string;
-    boosty?: string
   };
   images: number[];
 };

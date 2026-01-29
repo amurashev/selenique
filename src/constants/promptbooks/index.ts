@@ -45,6 +45,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "ettrel",
       slug: "50-ai-fashion-editorial-prompts-vol2",
     },
+    boostyId: "40f7cb76-5db0-419a-b3f5-55a640de03f9",
     name: "50 High-Fashion Editorial Prompts Vol.2",
     number: 50,
     links: {
@@ -108,6 +109,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "axsggm",
       slug: "50-ideal-skin-midjourney-prompts-beauty",
     },
+    boostyId: "6801a414-dcef-46b9-9af5-4700e229ac12",
     name: "50 Ideal Skin Midjourney Prompts Vol .1",
     number: 50,
     links: {
@@ -173,6 +175,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "rertdk",
       slug: "24-ai-maternity-photoshoot-prompts",
     },
+    boostyId: "4f29f408-09e8-4e27-b308-84fcee7c2de2",
     name: "24 AI Maternity Photoshoot Prompts",
     number: 24,
     links: {
@@ -282,10 +285,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "ejoktb",
       slug: "30-ai-business-woman-photo-prompts",
     },
+    boostyId: "796a8676-c1e8-4ee7-9c6f-0f4ad6c29a48",
     name: "30 Business Woman Photo Prompts",
     number: 30,
     links: {
-      boosty: "https://boosty.to/selenique/posts/796a8676-c1e8-4ee7-9c6f-0f4ad6c29a48?share=success_publish_link",
       // cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
     },
     tags: ["business", "women"],
@@ -415,6 +418,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "kjrgzn",
       slug: "15-ai-women-headshot-prompts",
     },
+    boostyId: "7fe0af5d-fcba-4346-8e65-39963eb91e60",
     name: "15 Women Headshot Professional Prompts",
     number: 15,
     links: {
@@ -511,10 +515,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "hlvbhd",
       slug: "22-business-man-headshot-prompts",
     },
+    boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
     name: "22 Business Man Headshot Prompts",
     number: 22,
     links: {
-      boosty: "https://boosty.to/selenique/posts/b8a6673e-ff54-4121-99ec-99bd57c92031",
       // cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
     },
     tags: ["business", "men", "headshot"],
@@ -666,6 +670,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "gwmam",
       slug: "35-cosmetic-product-photo-prompts",
     },
+    boostyId: "19a1dd70-bd6b-4624-a662-706574bf40a5",
     name: "35 Cosmetic Product Photo Prompts",
     number: 35,
     links: {
@@ -801,11 +806,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       id: "null",
       slug: "realistic-ai-influencer-prompts-170",
     },
+    boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
     name: "The Ultra-Realistic AI Influencer Kit (170+ Prompts)",
     number: 170,
-    links: {
-      boosty: "https://boosty.to/selenique/posts/e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5?share=success_publish_link",
-    },
+    links: {},
     tags: ["lifestyle", "women"],
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
