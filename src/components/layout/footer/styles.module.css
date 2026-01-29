@@ -21,6 +21,7 @@
 
 .firstCol {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
   gap: 20px;
@@ -113,11 +114,11 @@
 
 @media (min-width: 600px) {
   .logoBox {
-    width: 33%;
+    width: calc(50% - 16px);
   }
 
   .linksBox {
-    width: 33%;
+    width: calc(50% - 16px);
   }
   
   .firstCol {
@@ -137,10 +138,21 @@
     text-align: center;
     justify-content: center;
   }
-  
-
   .flags {
     /* justify-content: end; */
   }
+}
 
+@media (min-width: 900px) {
+  .logoBox {
+    width: 25%;
+  }
+
+  .linksBox {
+    width: 25%;
+  }
+
+  .firstCol {
+    flex-wrap: nowrap;
+  }
 }

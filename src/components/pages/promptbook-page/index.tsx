@@ -60,7 +60,6 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           <div className={styles.textBox}>
             <Advantages data={data} />
 
-
             {packsNumber > 1 && (data as PromptBook).pack && (
               <Bundle data={data as PromptBook} />
             )}
@@ -73,7 +72,6 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
             />
 
             <Categories data={data} />
-
 
             <Link className={styles.seeAllButton} href={backUrl}>
               {formatMessage({ id: "prompt_books.see_all" })}

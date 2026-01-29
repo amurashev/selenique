@@ -13,11 +13,16 @@ import {
   promptBookPageRoute,
   homePage,
   promptsCategoryPageRoute,
+  promptsModelPageRoute,
   intensiveNeurovideoPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
-import { promptbooksOrdered, guidesOrdered, promptbooksBundlesOrdered } from "@/constants/promptbooks";
-import { PROMPT_CATEGORIES } from "@/constants/prompts";
+import {
+  promptbooksOrdered,
+  guidesOrdered,
+  promptbooksBundlesOrdered,
+} from "@/constants/promptbooks";
+import { PROMPT_CATEGORIES, PROMPT_MODELS } from "@/constants/prompts";
 
 import { i18n, Locale } from "../../i18n-config";
 
@@ -66,6 +71,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       guidesListPageRoute.getUrl(locale),
       ...PROMPT_CATEGORIES.map((tag) =>
         promptsCategoryPageRoute.getUrl(locale, { params: { slug: tag } })
+      ),
+      ...PROMPT_MODELS.map((tag) =>
+        promptsModelPageRoute.getUrl(locale, { params: { slug: tag } })
       ),
     ].forEach((item) => {
       pages.push({

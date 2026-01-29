@@ -22,6 +22,11 @@ export type PromptCategories = | "fashion"
   | "faceless"
   | "portrait"
 
+export type PromptModels = | "gemini"
+  | "nano_banana"
+  | "midjourney"
+  | "chat_gpt"
+
 export type DigitalItem = {
   id: number;
   gumroad: {

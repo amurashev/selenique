@@ -7,6 +7,7 @@ export const modelPageRoute = route("/models/[type]/[id]");
 export const promptBookListPageRoute = route("/prompts");
 export const promptBookPageRoute = route("/prompts/[slug]");
 export const promptsCategoryPageRoute = route("/prompts/category/[slug]");
+export const promptsModelPageRoute = route("/prompts/model/[slug]");
 
 export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");

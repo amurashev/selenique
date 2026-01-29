@@ -4,8 +4,20 @@ import Link from "next/link";
 import { useIntl } from "react-intl";
 
 import styles from "./styles.module.css";
-import { getPromptCategoryShortLabel, PROMPT_CATEGORIES } from "@/constants/prompts";
-import { promptBookListPageRoute, guidesListPageRoute, productPortfolioPageRoute, promptsCategoryPageRoute } from "@/constants/routes";
+import {
+  getPromptCategoryShortLabel,
+  getPromptModelShortLabel,
+  getPromptModelTag,
+  PROMPT_CATEGORIES,
+  PROMPT_MODELS,
+} from "@/constants/prompts";
+import {
+  promptBookListPageRoute,
+  guidesListPageRoute,
+  productPortfolioPageRoute,
+  promptsCategoryPageRoute,
+  promptsModelPageRoute,
+} from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
 
 const EMailIcon = () => (
@@ -103,6 +115,32 @@ export default function Footer() {
                       className={styles.menuLink}
                     >
                       {formatMessage({ id: getPromptCategoryShortLabel(item) })}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.linksBox}>
+              <ul
+                aria-label={formatMessage({ id: "footer.prompt_models" })}
+                className={styles.menuList}
+              >
+                <span className={styles.menuHeader}>
+                  {formatMessage({ id: "footer.prompt_models" })}
+                </span>
+
+                {PROMPT_MODELS.map(item => (
+                  <li key={item} className={styles.menuItem}>
+                    <Link
+                      href={promptsModelPageRoute.getUrl(locale, {
+                        params: {
+                          slug: item,
+                        },
+                      })}
+                      className={styles.menuLink}
+                    >
+                      {formatMessage({ id: getPromptModelTag(item) })}
                     </Link>
                   </li>
                 ))}

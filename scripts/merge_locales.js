@@ -7,6 +7,7 @@ const files = [
   "guides.json",
   "portfolio.json",
   "prompt_categories.json",
+  "prompt_models.json",
   "prompt_pack.json",
 ]
 const result = jsonMerger.mergeFiles(files.map(file => `./src/l18n/locales/source/${file}`));

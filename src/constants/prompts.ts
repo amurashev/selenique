@@ -1,8 +1,12 @@
-import { PromptCategories } from "@/components/types";
+import { PromptCategories, PromptModels } from "@/components/types";
 
 export const PROMPT_CATEGORIES: PromptCategories[] = [
   "business", "fashion", "product", "lifestyle", "fantasy", "red_carpet",
   "beauty", "jewelry", "headshot", "men", "women", "studio",
+]
+
+export const PROMPT_MODELS: PromptModels[] = [
+  "gemini", "nano_banana", "midjourney", "chat_gpt",
 ]
 
 export const getPromptsListTitle = () => `prompt_books.title`
@@ -17,3 +21,12 @@ export const getPromptCategoryKeywords = (category: PromptCategories) => `prompt
 export const getPromptCategoryH1 = (category: PromptCategories) => `prompts.categories.${category}.h1`
 export const getPromptCategoryText = (category: PromptCategories) => `prompts.categories.${category}.text`
 export const getPromptCategoryShortDescription = (category: PromptCategories) => `prompts.categories.${category}.short_description`
+
+export const getPromptModelShortLabel = (category: PromptModels) => `prompts.models.${category}.short_label`
+export const getPromptModelTag = (category: PromptModels) => `prompts.models.${category}.tag`
+export const getPromptModelTitle = (category: PromptModels) => `prompts.models.${category}.title`
+export const getPromptModelDescription = (category: PromptModels) => `prompts.models.${category}.description`
+export const getPromptModelKeywords = (category: PromptModels) => `prompts.models.${category}.keywords`
+export const getPromptModelH1 = (category: PromptModels) => `prompts.models.${category}.h1`
+export const getPromptModelText = (category: PromptModels) => `prompts.models.${category}.text`
+export const getPromptModelShortDescription = (category: PromptModels) => `prompts.models.${category}.short_description`
