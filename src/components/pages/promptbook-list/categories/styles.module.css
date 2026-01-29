@@ -1,8 +1,13 @@
-.list {
+.box {
   margin-top: 24px;
   margin-bottom: 24px;
+  color: white;
+}
+
+.list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 8px;
 }
 
 .item {

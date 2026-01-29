@@ -56,6 +56,7 @@
   "prompt_books.see_all": "Ver todos os Pacotes de Prompts",
   "prompt_books.number": "Número de prompts no pacote",
   "prompt_books.file_type": "Tipo de arquivo",
+  "prompt_books.filter_by_category": "Filtrar por categoria",
   "prompt_books.best_for": "Mais indicado para",
   "prompt_books.link_to_notion": "Link para Documento no Notion",
   "prompt_books.reviews": "Todas as avaliações desta loja",

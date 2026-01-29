@@ -1097,7 +1097,6 @@ export const promptbooksOrdered: string[] = [
   "120-product-podiums-photo-prompts",
   "120-white-frame-interior-mockup-prompts",
 
-  "8-advertising-photo-prompts-vol-1",
   "40-muslim-women-business-photo-prompts",
 
   "50-high-fashion-editorial-prompts-vol-1",
