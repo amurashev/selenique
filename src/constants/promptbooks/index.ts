@@ -1075,25 +1075,24 @@ export const promptbooksOrdered: string[] = [
   "15-ai-women-headshot-prompts-professional",
   "24-ai-maternity-photoshoot-prompts",
   "50-high-fashion-editorial-prompts-vol-2",
+  "50-ideal-skin-midjourney-prompts-vol-1",
+  "35-cosmetic-product-photo-prompts",
+  "32-business-man-photo-prompts",
+  "50-jewelry-product-photo-ai-prompts",
 
   "realistic-ai-influencer-prompts-170",
 
   "50-men-fashion-editorial-prompts-vol-1",
   "8-red-carpet-men-photo-prompts-ai",
   "8-red-carpet-women-photo-prompts",
-  "35-cosmetic-product-photo-prompts",
-  "50-old-money-ai-photo-prompts-vol1",
   "32-monochromatic-studio-portrait-prompt-pack",
   "16-red-backdrop-studio-photo-prompts",
   "16-valentines-day-women-photo-prompts",
   "faceless-aesthetic-100-ai-photo-prompts",
   "25-creative-portraits-photo-prompts",
+  "8-advertising-photo-prompts-vol-1",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
-  "32-business-man-photo-prompts",
-
-  "50-ideal-skin-midjourney-prompts-vol-1",
-  "50-jewelry-product-photo-ai-prompts",
   "75-cosmetic-product-photo-prompts",
   "120-product-podiums-photo-prompts",
   "120-white-frame-interior-mockup-prompts",
@@ -1105,8 +1104,9 @@ export const promptbooksOrdered: string[] = [
   "50-high-fashion-editorial-prompts-vol-3",
   "60-fantasy-photo-prompts-ai-portrait",
   "25-wizard-school-photo-prompts-ai",
-  "50-old-money-ai-photo-prompts-vol2",
 
+  "50-old-money-ai-photo-prompts-vol1",
+  "50-old-money-ai-photo-prompts-vol2",
   "30-christmas-woman-photo-prompts",
   "40-christmas-kids-photo-prompts-ai",
 ];
