@@ -45,6 +45,8 @@ export default function RightSide({
   // Переводим миллисекунды в дни
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
+  const showRussiaHints = ['en', "ru"].includes(locale)
+
   return (
     <div className={styles.rightSideBox}>
       {/* <div className={styles.priceSection}>
@@ -66,7 +68,7 @@ export default function RightSide({
           </Link>
         )}
 
-        {boostyId && (
+        {boostyId && showRussiaHints && (
           <Link
             className={styles.link}
             href={`https://boosty.to/selenique/posts/${boostyId}`}
@@ -76,9 +78,11 @@ export default function RightSide({
           </Link>
         )}
 
-        <div className={styles.hint}>
-          {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-        </div>
+        {showRussiaHints && (
+          <div className={styles.hint}>
+            {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+          </div>
+        )}
 
         <Link className={styles.seeAllButton} href={backUrl}>
           {formatMessage({ id: "prompt_books.see_all" })}

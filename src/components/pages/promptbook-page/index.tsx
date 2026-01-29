@@ -40,6 +40,8 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
   // const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
   const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
 
+  const showRussiaHints = ['en', "ru"].includes(locale)
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -77,9 +79,11 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
               {formatMessage({ id: "prompt_books.see_all" })}
             </Link>
 
-            <div className={styles.hint}>
-              {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-            </div>
+            {showRussiaHints && (
+              <div className={styles.hint}>
+                {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+              </div>
+            )}
           </div>
 
           <div className={styles.rightSide}>
