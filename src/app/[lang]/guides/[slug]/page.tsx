@@ -51,7 +51,7 @@ export default async function PromptbookPageEntry({
 
   const relatedIds = Object
     .keys(PROMTBOOKS)
-    .filter(itemSlug => PROMTBOOKS[itemSlug].type === "guide" && slug !== itemSlug)
+    .filter(itemSlug => PROMTBOOKS[itemSlug].type === data.type && slug !== itemSlug)
 
   const related = relatedIds.map(itemSlug => ({
     ...PROMTBOOKS[itemSlug],

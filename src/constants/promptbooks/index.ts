@@ -832,7 +832,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 150,
     pack: [1, 5, 27],
     links: {},
-    tags: ["fashion", "women", "bundle"],
+    tags: ["fashion", "women"],
+    type: "bundle",
     images: [0, 1, 2, 3],
     price: {
       ru: 1000,
@@ -852,7 +853,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 54,
     pack: [24, 18],
     links: {},
-    tags: ["business", "men", "bundle"],
+    tags: ["business", "men"],
+    type: "bundle",
     images: [0, 1, 2, 3, 4, 5, 6, 7],
     price: {
       ru: 1000,
@@ -872,7 +874,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 75,
     pack: [10, 15, 14],
     links: {},
-    tags: ["business", "women", "bundle"],
+    tags: ["business", "women"],
+    type: "bundle",
     images: [0, 1, 2, 3, 4, 5, 6],
     price: {
       ru: 1000,
@@ -892,7 +895,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 24,
     pack: [22, 21, 20],
     links: {},
-    tags: ["red_carpet", "bundle"],
+    tags: ["red_carpet"],
+    type: "bundle",
     images: [0, 1, 2, 3],
     price: {
       ru: 1000,

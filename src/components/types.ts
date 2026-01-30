@@ -13,7 +13,6 @@ export type PromptCategories = | "fashion"
   | "beauty"
   | "jewelry"
   | "christmas"
-  | "bundle"
   | "product"
   | "studio"
   | "headshot"
@@ -50,7 +49,7 @@ export type DigitalItem = {
 export type PromptBookRaw = DigitalItem & {
   number?: number;
   pack?: number[]
-  type?: "guide",
+  type?: "guide" | "bundle" | "pack"
   tags: PromptCategories[];
 };
 

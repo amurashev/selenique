@@ -23,7 +23,7 @@ export default function GuidesListPage() {
       <main className={styles.main}>
         <h1>{formatMessage({ id: "guides.title" })}</h1>
         <p>{formatMessage({ id: "guides.text" })}</p>
-        <PromptbookList list={[...guidesOrdered]} />
+        <PromptbookList list={guidesOrdered} />
         <div className={styles.buttonBox}>
           <Link className={styles.seeAll} href={homePage.getUrl(locale)}>
             {formatMessage({ id: "home.guides.see_all" })}
