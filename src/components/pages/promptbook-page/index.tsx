@@ -26,7 +26,7 @@ import Bundle from "./bundle";
 import Advantages from "./advantages";
 import Categories from "./categories";
 
-export default function PromptbookPage({ data }: { data: PromptBook }) {
+export default function PromptbookPage({ data, related = [] }: { data: PromptBook, related?: PromptBook[] }) {
   const { formatMessage, locale } = useIntl();
   const { id, gumroad, name, fileType, type, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
@@ -42,6 +42,8 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
   const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
 
   const showRussiaHints = ['en', "ru"].includes(locale)
+
+  console.warn('PromptbookPage', related)
 
   return (
     <div className={styles.page}>
@@ -103,11 +105,13 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
           </div>
         </div>
 
-        <Reviews />
-        {/* {related.length !== 0 && (
+        {related.length !== 0 && (
           <Related related={related} />
-        )} */}
+        )}
 
+
+        <Reviews />
+      
         {gumroad.slug && (
           <div className={styles.mobileButton}>
             <Link className={styles.link} href={purchaseLink} target="_blank">

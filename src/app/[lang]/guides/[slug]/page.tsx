@@ -49,6 +49,15 @@ export default async function PromptbookPageEntry({
     return redirect("/guides");
   }
 
+  const relatedIds = Object
+    .keys(PROMTBOOKS)
+    .filter(itemSlug => PROMTBOOKS[itemSlug].type === "guide" && slug !== itemSlug)
+
+  const related = relatedIds.map(itemSlug => ({
+    ...PROMTBOOKS[itemSlug],
+    slug: itemSlug
+  }))
+
   return (
     <Layout locale={finalLang}>
       <GuidePage
@@ -56,6 +65,7 @@ export default async function PromptbookPageEntry({
           ...data,
           slug,
         }}
+        related={related}
       />
     </Layout>
   );

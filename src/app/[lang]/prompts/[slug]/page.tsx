@@ -62,6 +62,25 @@ export default async function PromptbookPageEntry({
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
 
+  let relatedIds: string[] = []
+
+  if (data.tags.length && data.tags[0]) {
+    // TODO: improve related search
+    relatedIds = Object
+      .keys(PROMTBOOKS)
+      .filter(
+        itemSlug => PROMTBOOKS[itemSlug].type === data.type
+        && slug !== itemSlug
+        && PROMTBOOKS[itemSlug].tags.includes(data.tags[0])
+      ).slice(0,2)
+  }
+
+  const related = relatedIds.map(itemSlug => ({
+    ...PROMTBOOKS[itemSlug],
+    slug: itemSlug
+  }))
+
+
   return (
     <Layout locale={finalLang}>
       <PromptbookPage
@@ -69,6 +88,7 @@ export default async function PromptbookPageEntry({
           ...data,
           slug,
         }}
+        related={related}
       />
     </Layout>
   );

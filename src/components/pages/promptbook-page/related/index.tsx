@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./styles.module.css";
 import { PromptBook } from "@/components/types";
 
-import PromptbookItem from "@/components/sections/promptbook-item";
+import PromptbookItem from "@/components/sections/promptbook-item2";
 
 export default function Related({
   related,
@@ -23,7 +23,7 @@ export default function Related({
       <h2>{formatMessage({ id: "prompt_books.you_may_like" })}</h2>
       <div className={styles.list}>
         {related.map((item) => (
-          <PromptbookItem key={item.slug} item={item} />
+          <PromptbookItem key={item.id} item={item} />
         ))}
       </div>
     </div>

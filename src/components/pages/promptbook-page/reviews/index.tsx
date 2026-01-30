@@ -30,9 +30,9 @@ export default function Reviews() {
 
   return (
     <div className={styles.box}>
-      <h3 className={styles.title}>
+      <h2 className={styles.title}>
         {formatMessage({ id: "prompt_books.reviews" })} ({count})
-      </h3>
+      </h2>
       <div className={styles.list}>
         {Object.keys(REVIEWS).map((id) => {
           const { author, authorId, text, date, mark } = REVIEWS[id];
