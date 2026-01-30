@@ -933,7 +933,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       slug: "virtual-influence-guide-ru",
     },
     boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
-    name: "Iconista Lab: Виртуальный инфлюенсер — 48-часовой пошаговый гайд",
+    name: "Iconista Lab: Пошаговый гайд по созданию ИИ инфлюенсера",
     type: "guide",
     fileType: "link",
     links: {},
