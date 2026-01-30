@@ -104,6 +104,28 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     text: t3,
   },
 
+  "50-men-fashion-editorial-prompts-vol-2": {
+    id: 42,
+    gumroad: {
+      id: "dzvfr",
+      slug: "50-men-fashion-editorial-prompts-vol-2",
+    },
+    name: "50 Men-Fashion Editorial Prompts Vol.2",
+    number: 50,
+    links: {
+      // cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
+    },
+    tags: ["fashion", "men"],
+    images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
+    text: t3,
+  },
+
   "50-ideal-skin-midjourney-prompts-vol-1": {
     id: 4,
     gumroad: {
@@ -1109,6 +1131,7 @@ export const promptbooksOrdered: string[] = [
   "realistic-ai-influencer-prompts-170",
 
   "50-men-fashion-editorial-prompts-vol-1",
+  "50-men-fashion-editorial-prompts-vol-2",
   "8-red-carpet-men-photo-prompts-ai",
   "8-red-carpet-women-photo-prompts",
   "32-monochromatic-studio-portrait-prompt-pack",
