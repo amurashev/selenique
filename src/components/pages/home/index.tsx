@@ -94,15 +94,6 @@ export default function HomePage({
           </div>
 
           <div className={styles.section}>
-            <h3>
-              {formatMessage({ id: "home.prompt_bundles.popular.title" })}
-            </h3>
-            <PromptbookList
-              list={promptbooksBundlesOrdered.slice(0, booksCount)}
-            />
-          </div>
-
-          <div className={styles.section}>
             <h3>{formatMessage({ id: "home.guides.title" })}</h3>
             <PromptbookList list={guidesOrdered.slice(0, booksCount)} />
             <div className={styles.buttonBox}>
@@ -113,6 +104,15 @@ export default function HomePage({
                 {formatMessage({ id: "home.guides.see_all" })}
               </Link>
             </div>
+          </div>
+
+          <div className={styles.section}>
+            <h3>
+              {formatMessage({ id: "home.prompt_bundles.popular.title" })}
+            </h3>
+            <PromptbookList
+              list={promptbooksBundlesOrdered.slice(0, booksCount)}
+            />
           </div>
 
           <div className={styles.section}>
