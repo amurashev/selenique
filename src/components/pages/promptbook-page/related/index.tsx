@@ -17,6 +17,7 @@ export const settings = {
   infinite: false,
   lazyLoad: true,
   speed: 500,
+  centerMode: false,
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: null,

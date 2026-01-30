@@ -104,27 +104,35 @@ a {
   /* font-weight: 700; */
 }
 
+.slick-track {
+  margin-left: 0 !important;
+}
 
 .mobileView {
+  .slick-slide {
+    padding-bottom: 20px;
+  }
   .slick-dots {
-    bottom: 4px;
+    bottom: -8px;
+    /* bottom: 4px; */
     z-index: 8888;
-    background-color: hsl(0deg 0% 0% / 30%);
+    /* background-color: hsl(0deg 0% 0% / 30%); */
   }
   
   .slick-dots li {
     height: 24px;
-    width: 4px;
+    width: 5px;
   }
   
   .slick-dots li button:before {
-    color: #eee;
+    color: #888;
     opacity: 0.7;
     line-height: 18px;
+    font-size: 7px;
   }
   
   .slick-dots li.slick-active button:before {
-    color: #fff;
+    color: #444;
     opacity: 1;
   }  
 }
