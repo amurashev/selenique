@@ -116,7 +116,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
     },
     tags: ["fashion", "men"],
-    images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    images: [1, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,
       en: 18,
