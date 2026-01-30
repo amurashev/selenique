@@ -922,6 +922,27 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
     text: t33,
   },
+  "virtual-influence-guide-ru": {
+    id: 41,
+    gumroad: {
+      id: "null",
+      slug: "virtual-influence-guide-ru",
+    },
+    boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
+    name: "Iconista Lab: Виртуальный инфлюенсер — 48-часовой пошаговый гайд",
+    type: "guide",
+    fileType: "link",
+    links: {},
+    tags: [],
+    images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
+    text: t41,
+  },
   "120-product-podiums-photo-prompts": {
     id: 34,
     gumroad: {
@@ -1057,27 +1078,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     summary:
       "25 Creative Portraits — Photo Prompts is a curated collection for creators who see portrait photography as a form of visual expression, not just a face on a background.",
     text: t40,
-  },
-  "virtual-influence-guide-ru": {
-    id: 41,
-    gumroad: {
-      id: "null",
-      slug: "virtual-influence-guide-ru",
-    },
-    boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
-    name: "Iconista Lab: Виртуальный инфлюенсер — 48-часовой пошаговый гайд",
-    type: "guide",
-    fileType: "link",
-    links: {},
-    tags: [],
-    images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
-    summary:
-      "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
-    text: t41,
   },
 };
 

@@ -32,10 +32,11 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
 
-  const backUrl =
-    type !== "guide"
-      ? promptBookListPageRoute.getUrl(locale)
-      : guidesListPageRoute.getUrl(locale);
+  const backRoute = type !== "guide"
+    ? promptBookListPageRoute
+    : guidesListPageRoute
+
+  const backUrl = backRoute.getUrl(locale)
 
   // const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
   const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
@@ -50,7 +51,7 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
             <ChevronLeft size={28} />
           </Link>
         </div> */}
-        <ShortHeader route={promptBookListPageRoute} title={name} color="white" />
+        <ShortHeader route={backRoute} title={name} color="white" />
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
         </div>
@@ -74,7 +75,10 @@ export default function PromptbookPage({ data }: { data: PromptBook }) {
             <Categories data={data} />
 
             <Link className={styles.seeAllButton} href={backUrl}>
-              {formatMessage({ id: "prompt_books.see_all" })}
+              {type !== "guide"
+                ? formatMessage({ id: "prompt_books.see_all" })
+                : formatMessage({ id: "guides.see_all" })
+              }
             </Link>
 
             {showRussiaHints && (

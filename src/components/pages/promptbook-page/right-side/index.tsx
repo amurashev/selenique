@@ -21,12 +21,12 @@ export default function RightSide({
   backUrl,
   purchaseLink,
 }: {
-  data: PromptBook | Guide;
+  data: PromptBook;
   backUrl: string;
   purchaseLink: string;
 }) {
   const { formatMessage, locale } = useIntl();
-  const { gumroad, price, links, boostyId } = data;
+  const { gumroad, price, links, boostyId, type } = data;
 
   const discountedPrice = {
     ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -85,7 +85,10 @@ export default function RightSide({
         )}
 
         <Link className={styles.seeAllButton} href={backUrl}>
-          {formatMessage({ id: "prompt_books.see_all" })}
+          {type !== "guide"
+            ? formatMessage({ id: "prompt_books.see_all" })
+            : formatMessage({ id: "guides.see_all" })
+          }
         </Link>
 
         {/* {links.cm && (
