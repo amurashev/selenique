@@ -15,6 +15,7 @@ import t37 from "./text/37";
 import t38 from "./text/38";
 import t39 from "./text/39";
 import t40 from "./text/40";
+import t41 from "./text/41";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -1057,6 +1058,27 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "25 Creative Portraits — Photo Prompts is a curated collection for creators who see portrait photography as a form of visual expression, not just a face on a background.",
     text: t40,
   },
+  "virtual-influence-guide-ru": {
+    id: 41,
+    gumroad: {
+      id: "null",
+      slug: "virtual-influence-guide-ru",
+    },
+    boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
+    name: "Iconista Lab: Виртуальный инфлюенсер — 48-часовой пошаговый гайд",
+    type: "guide",
+    fileType: "link",
+    links: {},
+    tags: [],
+    images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
+    text: t41,
+  },
 };
 
 export const promptbooksBundlesOrdered: string[] = [
@@ -1066,7 +1088,7 @@ export const promptbooksBundlesOrdered: string[] = [
   "red-carpet-prompts-bundle",
 ];
 
-export const guidesOrdered: string[] = ["virtual-influence-guide"];
+export const guidesOrdered: string[] = ["virtual-influence-guide", "virtual-influence-guide-ru"];
 
 export const promptbooksOrdered: string[] = [
   "22-business-man-headshot-prompts-ai",

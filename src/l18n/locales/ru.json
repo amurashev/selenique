@@ -59,7 +59,7 @@
   "prompt_books.file_type": "Тип файла",
   "prompt_books.filter_by_category": "Фильтр по категории",
   "prompt_books.best_for": "Лучше всего подходит для",
-  "prompt_books.link_to_notion": "Ссылка на документ Notion",
+  "prompt_books.link_to_notion": "Ссылка на Notion документ",
   "prompt_books.reviews": "Все отзывы для этого магазина",
   "prompt_books.bundle_contains": "Этот пакет содержит",
 
