@@ -59,7 +59,7 @@ export default function Related({
       <Slider {...settings} className={styles.slider}>
         {/* <div className={styles.list}> */}
           {related.map((item) => (
-            <div className={styles.item}>
+            <div key={item.id} className={styles.item}>
               <PromptbookItem key={item.id} item={item} />
             </div>
           ))}
