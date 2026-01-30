@@ -66,20 +66,33 @@ export default async function PromptbookPageEntry({
 
   if (data.tags.length && data.tags[0]) {
     // TODO: improve related search
-    relatedIds = Object
+    const marks = Object
       .keys(PROMTBOOKS)
       .filter(
         itemSlug => PROMTBOOKS[itemSlug].type === data.type
         && slug !== itemSlug
-        && PROMTBOOKS[itemSlug].tags.includes(data.tags[0])
-      ).slice(0,2)
+      ).map(itemSlug => {
+        const { tags } = PROMTBOOKS[itemSlug]
+        let mark = 0
+
+        tags.forEach(tag => {
+          if (data.tags.includes(tag)) mark++
+        })
+
+        return {
+          itemSlug,
+          mark,
+        }
+      })
+
+      marks.sort((a,b) => b.mark - a.mark)
+      relatedIds = marks.slice(0,3).map(item => item.itemSlug)
   }
 
   const related = relatedIds.map(itemSlug => ({
     ...PROMTBOOKS[itemSlug],
     slug: itemSlug
   }))
-
 
   return (
     <Layout locale={finalLang}>

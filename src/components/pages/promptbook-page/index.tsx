@@ -43,8 +43,6 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
   const showRussiaHints = ['en', "ru"].includes(locale)
 
-  console.warn('PromptbookPage', related)
-
   return (
     <div className={styles.page}>
       <main className={styles.main}>
