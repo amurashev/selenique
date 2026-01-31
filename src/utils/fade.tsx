@@ -8,7 +8,12 @@ export function FadeInSection({ children }: {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setVisible(true),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
       { threshold: 0.2 }
     );
 
