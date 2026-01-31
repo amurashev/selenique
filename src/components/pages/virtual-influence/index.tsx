@@ -18,6 +18,7 @@ import { settings } from "./settings";
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { guidesListPageRoute } from "@/constants/routes";
 import { PriceWithUnit } from "@/components/ui/price";
+import { FadeInSection } from "@/utils/fade";
 
 
 const CheckMark = () => {
@@ -80,6 +81,7 @@ export default function VirtualInfluencePage() {
           <div className={styles.iconBox}><Chevron /></div>
         </div>
 
+        <FadeInSection>
           <div className={styles.section1}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section1.title" })}</h2>
@@ -104,6 +106,9 @@ export default function VirtualInfluencePage() {
             </Slider>
           </div>
 
+          </FadeInSection>
+
+          <FadeInSection>
           <div className={styles.section2}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section2.title" })}</h2>
@@ -116,8 +121,9 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
-
+          <FadeInSection>
           <div className={styles.section1}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section3.title" })}</h2>
@@ -139,7 +145,9 @@ export default function VirtualInfluencePage() {
                 ))}
             </Slider> */}
           </div>
+          </FadeInSection>
 
+          <FadeInSection>
           <div className={styles.section2}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section4.title" })}</h2>
@@ -172,8 +180,10 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
 
+          <FadeInSection>
           <div className={styles.section1}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section5.title" })}</h2>
@@ -184,8 +194,9 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
-
+          <FadeInSection>
           <div className={styles.section2}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section6.title" })}</h2>
@@ -196,8 +207,9 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
-
+          <FadeInSection>
           <div className={styles.section1}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section7.title" })}</h2>
@@ -208,8 +220,9 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
-
+          <FadeInSection>
           <div className={styles.section2}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section8.title" })}</h2>
@@ -240,9 +253,10 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
 
-
+          <FadeInSection>
           <div className={styles.section1}>
             <div className={styles.section1Inner}>
               <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section9.title" })}</h2>
@@ -278,9 +292,10 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
           </div>
+          </FadeInSection>
 
 
-
+          <FadeInSection>
           <div className={styles.section2}>
             <Slider {...settings} className={styles.slider}>
               {[6,7,8].map(item => (
@@ -293,9 +308,10 @@ export default function VirtualInfluencePage() {
                 ))}
             </Slider>
           </div>
+          </FadeInSection>
 
 
-
+          <FadeInSection>
           <div className={styles.section1}>
           <div className={styles.section1Inner}>
             <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section10.title" })}</h2>
@@ -307,6 +323,7 @@ export default function VirtualInfluencePage() {
             />
             </div>
           </div>
+          </FadeInSection>
       </main>
       <Footer />
     </div>
