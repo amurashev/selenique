@@ -53,7 +53,7 @@ export const FAQBase: React.FC<{
   items: { title: string; text: string }[];
 }> = ({ items }) => {
   return (
-    <div>
+    <div className={styles.list}>
       {items.map((item) => (
         <FAQItem key={item.title} title={item.title} text={item.text} />
       ))}

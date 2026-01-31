@@ -9,6 +9,7 @@ const files = [
   "prompt_categories.json",
   "prompt_models.json",
   "prompt_pack.json",
+  "virtual-influence.json",
 ]
 const result = jsonMerger.mergeFiles(files.map(file => `./src/l18n/locales/source/${file}`));
 

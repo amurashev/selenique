@@ -108,16 +108,18 @@ a {
   margin-left: 0 !important;
 }
 
+.slick-slider {
+  margin-bottom: 20px;
+}
+.slick-dots {
+  bottom: -8px;
+  /* bottom: 4px; */
+  z-index: 8888;
+  /* background-color: hsl(0deg 0% 0% / 30%); */
+}
+
 .mobileView {
-  .slick-slide {
-    padding-bottom: 20px;
-  }
-  .slick-dots {
-    bottom: -8px;
-    /* bottom: 4px; */
-    z-index: 8888;
-    /* background-color: hsl(0deg 0% 0% / 30%); */
-  }
+  
   
   .slick-dots li {
     height: 24px;

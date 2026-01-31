@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Layout from "@/components/layout";
 
 import GuidePage from "@/components/pages/promptbook-page";
+import VirtualInfluencePage from "@/components/pages/virtual-influence";
 import { i18n, Locale } from "../../../../../i18n-config";
 
 import { PROMTBOOKS } from "@/constants/promptbooks";
@@ -13,9 +14,13 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string, lang: Locale  }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, lang } = await params;
 
-  const data = PROMTBOOKS[slug || "null"];
+  // TODO: fix 
+  const fixedSlug = lang === "ru" ? "virtual-influence-guide-ru" : "virtual-influence-guide"
+  const fixedId = lang === "ru" ? 41 : 33
+
+  const data = PROMTBOOKS[fixedSlug || "null"];
 
   const title = data.name;
   const description = data.summary;
@@ -25,7 +30,7 @@ export async function generateMetadata({
     description,
     openGraph: {
       images: [
-        `https://www.selenique.space/promptbooks/${data.id}/${data.images[0]}.jpg`,
+        `https://www.selenique.space/promptbooks/${fixedId}/${data.images[0]}.jpg`,
       ],
       title: title,
       description,
@@ -49,23 +54,23 @@ export default async function PromptbookPageEntry({
     return redirect("/guides");
   }
 
-  const relatedIds = Object
-    .keys(PROMTBOOKS)
-    .filter(itemSlug => PROMTBOOKS[itemSlug].type === data.type && slug !== itemSlug)
+  // const relatedIds = Object
+  //   .keys(PROMTBOOKS)
+  //   .filter(itemSlug => PROMTBOOKS[itemSlug].type === data.type && slug !== itemSlug)
 
-  const related = relatedIds.map(itemSlug => ({
-    ...PROMTBOOKS[itemSlug],
-    slug: itemSlug
-  }))
+  // const related = relatedIds.map(itemSlug => ({
+  //   ...PROMTBOOKS[itemSlug],
+  //   slug: itemSlug
+  // }))
 
   return (
     <Layout locale={finalLang}>
-      <GuidePage
-        data={{
-          ...data,
-          slug,
-        }}
-        related={related}
+      <VirtualInfluencePage
+        // data={{
+        //   ...data,
+        //   slug,
+        // }}
+        // related={[]}
       />
     </Layout>
   );

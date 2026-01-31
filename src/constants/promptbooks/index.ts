@@ -946,7 +946,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     summary:
       "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
-    text: t33,
+    text: "",
   },
   "virtual-influence-guide-ru": {
     id: 41,
@@ -967,7 +967,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     summary:
       "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
-    text: t41,
+    text: "",
   },
   "120-product-podiums-photo-prompts": {
     id: 34,
@@ -1114,7 +1114,10 @@ export const promptbooksBundlesOrdered: string[] = [
   "red-carpet-prompts-bundle",
 ];
 
-export const guidesOrdered: string[] = ["virtual-influence-guide", "virtual-influence-guide-ru"];
+export const guidesOrdered: string[] = [
+  "virtual-influence-guide",
+  // "virtual-influence-guide-ru"
+];
 
 export const promptbooksOrdered: string[] = [
   "22-business-man-headshot-prompts-ai",
