@@ -27,7 +27,7 @@ const PromptbookItem: React.FC<{
   })
 
   // TODO" localise
-  const fixedId = locale === "ru" && id === 33 ? 41 : 33
+  const fixedId = locale === "ru" && id === 33 ? 41 : id
 
   return (
     <Link
