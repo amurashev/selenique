@@ -8,14 +8,14 @@
   "virtual-influence.section1.item5": "You just need the right system.",
 
   "virtual-influence.section2.title": "WHAT YOU GET?",
-  "virtual-influence.section2.item1": "Complete Character Creation System — The Face-Lock method that keeps your AI model 100% consistent across every post",
-  "virtual-influence.section2.item2": "40+ Copy-Paste Prompts — Mirror selfies, lifestyle shots, OOTD, detail photos—every content type ready to use",
-  "virtual-influence.section2.item3": "ChatGPT Automation Blueprint — Write an entire month of captions in 90 minutes",
-  "virtual-influence.section2.item4": "3-Month Instagram Growth Plan — Exact posting schedule and engagement tactics to hit 1,000 followers in 30-90 days",
-  "virtual-influence.section2.item5": "Monetization Roadmap — Start earning with affiliate marketing from Day 1. Scale to brand deals as you grow.",
-  "virtual-influence.section2.item6": "НWeek-by-Week Action Plan — Complete roadmap from concept to 10K followers",
+  "virtual-influence.section2.item1": "<strong>Complete Character Creation System</strong> — The Face-Lock method that keeps your AI model 100% consistent across every post",
+  "virtual-influence.section2.item2": "<strong>40+ Copy-Paste Prompts</strong> — Mirror selfies, lifestyle shots, OOTD, detail photos—every content type ready to use",
+  "virtual-influence.section2.item3": "<strong>ChatGPT Automation Blueprint</strong> — Write an entire month of captions in 90 minutes",
+  "virtual-influence.section2.item4": "<strong>3-Month Instagram Growth Plan</strong> — Exact posting schedule and engagement tactics to hit 1,000 followers in 30-90 days",
+  "virtual-influence.section2.item5": "<strong>Monetization Roadmap</strong> — Start earning with affiliate marketing from Day 1. Scale to brand deals as you grow.",
+  "virtual-influence.section2.item6": "<strong>НWeek-by-Week Action Plan</strong> — Complete roadmap from concept to 10K followers",
 
-  "virtual-influence.section3.title": "PERFECT FOR",
+  "virtual-influence.section3.title": "PERFECT FOR:",
   "virtual-influence.section3.item1": "Creative people who hate being on camera",
   "virtual-influence.section3.item2": "Aspiring influencers who want privacy",
   "virtual-influence.section3.item3": "Content creators testing new strategies",
@@ -35,7 +35,7 @@
   "virtual-influence.section4.list3_item1": "Reach 10K followers",
   "virtual-influence.section4.list3_item2": "Brand partnerships ($1K-3K/month)",
 
-  "virtual-influence.section5.title": "WHAT'S INSIDE",
+  "virtual-influence.section5.title": "WHAT'S INSIDE?",
   "virtual-influence.section5.item1": "PART 1: Why Virtual Influencers Work",
   "virtual-influence.section5.item2": "PART 2: Character Creation Mastery (9-angle Face-Lock system)",
   "virtual-influence.section5.item3": "PART 3: Content Strategy (40+ prompts, mobile realism techniques)",
@@ -43,7 +43,7 @@
   "virtual-influence.section5.item5": "PART 5: Monetization Basics (affiliate marketing, brand deals, subscriptions)",
   "virtual-influence.section5.item6": "BONUS: Quick reference library, action checklists, troubleshooting guide",
 
-  "virtual-influence.section6.title": "WHY THIS WORKS",
+  "virtual-influence.section6.title": "WHY THIS WORKS?",
   "virtual-influence.section6.item1": "Generic AI guides → Vague theory",
   "virtual-influence.section6.item2": "This system → Copy-paste prompts you use today",
   "virtual-influence.section6.item3": "Other courses → Hours of video fluff",
@@ -62,7 +62,7 @@
 
   "virtual-influence.section8.title": "WHAT HAPPENS NEXT?",
   "virtual-influence.section8.var1_title": "Option 1",
-  "virtual-influence.section8.var1_item1": "Click \"I want this\"",
+  "virtual-influence.section8.var1_item1": "Click <strong>\"Buy now\"</strong>",
   "virtual-influence.section8.var1_item2": "Guide sent instantly",
   "virtual-influence.section8.var1_item3": "This weekend — Create your character",
   "virtual-influence.section8.var1_item4": "30 days — First 500-1K followers",
@@ -76,7 +76,7 @@
   "virtual-influence.section9.title": "GET INSTANT ACCESS AND START TODAY",
   "virtual-influence.section9.text1": "P.S. This is not a get-rich-quick scheme. It’s a real system that requires work. But if you’re ready to invest a weekend and a few hours a week — the results will come. Proven.",
 
-  "virtual-influence.section10.title": "Quick answers to common questions",
+  "virtual-influence.section10.title": "FAQ",
   "virtual-influence.section10.question1": "Is it legal?",
   "virtual-influence.section10.answer1": "100% legal. Virtual influencers are mainstream (LIL MIQUELA, IMMA, SHUDU)",
   "virtual-influence.section10.question2": "Is it expensive?",
@@ -86,6 +86,8 @@
   "virtual-influence.section10.question4": "Can I actually make money?",
   "virtual-influence.section10.answer4": "Yes. Brands pay virtual influencers the same way they pay real ones",
   "virtual-influence.section10.question5": "What if I can’t handle it?",
-  "virtual-influence.section10.answer5": "You’ll learn AI, content strategy, and marketing — skills worth thousands"
+  "virtual-influence.section10.answer5": "You’ll learn AI, content strategy, and marketing — skills worth thousands",
+
+  "virtual-influence.price.title": "Today's Price"
 }
   

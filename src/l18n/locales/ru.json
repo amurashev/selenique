@@ -207,14 +207,14 @@
   "virtual-influence.section1.item5": "Тебе нужна только проверенная система.",
 
   "virtual-influence.section2.title": "Что ты получаешь?",
-  "virtual-influence.section2.item1": "Полная система создания персонажа — метод Face-Lock для 100% стабильности внешности твоего ИИ-персонажа в каждом посте",
-  "virtual-influence.section2.item2": "40+ готовых промптов — селфи в зеркале, лайфстайл-кадры, OOTD, детальные фото — каждый тип контента готов к использованию",
-  "virtual-influence.section2.item3": "Автоматизация через ChatGPT — создавай подписи на целый месяц за 90 минут",
-  "virtual-influence.section2.item4": "3-месячный план роста — точное расписание публикаций и тактики вовлечения для достижения 1000 подписчиков за 30-90 дней",
-  "virtual-influence.section2.item5": "Дорожная карта монетизации — начинай зарабатывать с партнёрского маркетинга с первого дня. Масштабируйся до сотрудничества с брендами",
-  "virtual-influence.section2.item6": "Недельный план действий — полная карта от идеи до 10 000 подписчиков",
+  "virtual-influence.section2.item1": "<strong>Полная система создания персонажа</strong> — метод Face-Lock для 100% стабильности внешности твоего ИИ-персонажа в каждом посте",
+  "virtual-influence.section2.item2": "<strong>40+ готовых промптов</strong> — селфи в зеркале, лайфстайл-кадры, OOTD, детальные фото — каждый тип контента готов к использованию",
+  "virtual-influence.section2.item3": "<strong>Автоматизация через ChatGPT</strong> — создавай подписи на целый месяц за 90 минут",
+  "virtual-influence.section2.item4": "<strong>3-месячный план роста</strong> — точное расписание публикаций и тактики вовлечения для достижения 1000 подписчиков за 30-90 дней",
+  "virtual-influence.section2.item5": "<strong>Дорожная карта монетизации </strong>— начинай зарабатывать с партнёрского маркетинга с первого дня. Масштабируйся до сотрудничества с брендами",
+  "virtual-influence.section2.item6": "<strong>Недельный план действий</strong> — полная карта от идеи до 10 000 подписчиков",
 
-  "virtual-influence.section3.title": "Идельно для тебя, если",
+  "virtual-influence.section3.title": "Идельно для тебя, если:",
   "virtual-influence.section3.item1": "Ты креативный человек, но стесняешься камеры",
   "virtual-influence.section3.item2": "Хочешь стать инфлюенсером, но ценишь приватность",
   "virtual-influence.section3.item3": "Ты контент-криейтор, который тестирует новые стратегии",
@@ -234,7 +234,7 @@
   "virtual-influence.section4.list3_item1": "Достигни 10 тыс. подписчиков",
   "virtual-influence.section4.list3_item2": "Сотрудничество с брендами (60-180+ тыс. руб./мес.)",
 
-  "virtual-influence.section5.title": "Что внутри гайда",
+  "virtual-influence.section5.title": "Что внутри гайда?",
   "virtual-influence.section5.item1": "ЧАСТЬ 1: Почему виртуальные инфлюенсеры работают",
   "virtual-influence.section5.item2": "ЧАСТЬ 2: Мастерство создания персонажа (система Face-Lock из 9 ракурсов)",
   "virtual-influence.section5.item3": "ЧАСТЬ 3: Контент-стратегия (40+ промптов, техники реализма)",
@@ -242,7 +242,7 @@
   "virtual-influence.section5.item5": "ЧАСТЬ 5: Основы монетизации (партнёрский маркетинг, бренд-сделки, подписки)",
   "virtual-influence.section5.item6": "БОНУС: Библиотека быстрых ссылок, чек-листы действий, гайд по устранению проблем",
 
-  "virtual-influence.section6.title": "ПОЧЕМУ ЭТО РАБОТАЕТ",
+  "virtual-influence.section6.title": "ПОЧЕМУ ЭТО РАБОТАЕТ?",
   "virtual-influence.section6.item1": "Обычные гайды по ИИ → Размытая теория, которую непонятно как применить",
   "virtual-influence.section6.item2": "Эта система → Готовые промпты, которые ты используешь сегодня же",
   "virtual-influence.section6.item3": "Типичные видеокурсы → Часы \"воды\" и ненужной информации",
@@ -285,5 +285,7 @@
   "virtual-influence.section10.question4": "Могу ли я реально заработать?",
   "virtual-influence.section10.answer4": "Да. Бренды платят виртуальным инвлюенсерам так же, как и реальным",
   "virtual-influence.section10.question5": "А если я не справлюсь?",
-  "virtual-influence.section10.answer5": "Ты изучишь ИИ, контент-стратегию, маркетинг - это нывыки стоимостью в тысячи"
+  "virtual-influence.section10.answer5": "Ты изучишь ИИ, контент-стратегию, маркетинг - это нывыки стоимостью в тысячи",
+  
+  "virtual-influence.price.title": "Цена"
 }

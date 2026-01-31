@@ -941,8 +941,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: [],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
     price: {
-      ru: 1000,
-      en: 18,
+      ru: 4990,
+      en: 67,
     },
     summary:
       "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
@@ -962,8 +962,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: [],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
     price: {
-      ru: 1000,
-      en: 18,
+      ru: 4990,
+      en: 67,
     },
     summary:
       "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",

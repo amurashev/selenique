@@ -37,6 +37,7 @@
   justify-content: center;
   height: calc(100lvh - 50px);
   padding: 0 12px;
+  position: relative;
 }
 
 .h1Box {
@@ -51,9 +52,6 @@
   display: block;
   margin-bottom: 8px;
 }
-
-
-
 .h1 {
   width: 100%;
   text-transform: uppercase;
@@ -63,6 +61,17 @@
 
   composes: gradientColor;
 }
+.iconBox {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 
@@ -76,7 +85,8 @@
 }
 
 .section1Inner {
-  max-width: 540px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .s1Title {
@@ -126,14 +136,38 @@
 }
 
 
-
-
-
+.priceInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 21px;
+}
+.priceValue {
+  font-size: 38px;
+  font-weight: 700;
+}
+.basePrice {
+  font-size: 32px;
+  color: #aaaaaa;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
 .links {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 0 auto;
   margin-top: 24px;
+  max-width: 320px;
 }
 .link {
   background-color: #0974e2;
