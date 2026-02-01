@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { YandexMetricaProvider } from "next-yandex-metrica";
 
-// import { Montserrat } from "next/font/google";
+// import { } from "next/font/google";
 
 import "./globals.css";
 import Link from "next/link";

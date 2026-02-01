@@ -30,51 +30,6 @@
   padding-bottom: 70px; */
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100lvh - 50px);
-  padding: 0 12px;
-  position: relative;
-}
-
-.h1Box {
-  max-width: 720px;
-}
-
-.h1Sub {
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  margin-bottom: 8px;
-}
-.h1 {
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 44px;
-  line-height: 1.1;
-
-  composes: gradientColor;
-}
-.iconBox {
-  position: absolute;
-  bottom: 16px;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-
 .section1 {
   /* padding: 6vw 7vw; */
   /* padding-top: 6vw; */
@@ -152,11 +107,11 @@
   font-size: 21px;
 }
 .priceValue {
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 700;
 }
 .basePrice {
-  font-size: 32px;
+  font-size: 28px;
   color: #aaaaaa;
   margin-left: 6px;
   text-decoration: line-through;
@@ -220,10 +175,7 @@
 }
 
 @media (min-width: 840px) {
-  .h1 {
-    font-size: 64px;
-  }
-  .h1Sub {
-    font-size: 32px;
+  .section1 {
+    padding: 68px 24px;
   }
 }

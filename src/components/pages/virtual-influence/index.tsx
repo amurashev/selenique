@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useIntl } from "react-intl";
-import { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
@@ -20,19 +19,13 @@ import { guidesListPageRoute } from "@/constants/routes";
 import { PriceWithUnit } from "@/components/ui/price";
 import { FadeInSection } from "@/utils/fade";
 
+import Hero from "./hero";
+
 
 const CheckMark = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="#03a9f4"  width="18px" height="18px" viewBox="0 0 36 36" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet">
       <path d="M34.459 1.375a2.999 2.999 0 0 0-4.149.884L13.5 28.17l-8.198-7.58a2.999 2.999 0 1 0-4.073 4.405l10.764 9.952s.309.266.452.359a2.999 2.999 0 0 0 4.15-.884L35.343 5.524a2.999 2.999 0 0 0-.884-4.149z" />
-    </svg>
-  )
-}
-
-const Chevron = () => {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" fill="none">
-      <path d="M6 9L12 15L18 9" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -73,13 +66,7 @@ export default function VirtualInfluencePage() {
         route={guidesListPageRoute}
       />
       <main className={styles.main}>
-        <div className={styles.hero}>
-          <div className={styles.h1Box}>
-            <span className={styles.h1Sub}>Iconista Lab</span>
-            <h1 className={styles.h1}>{formatMessage({ id: "virtual-influence.title" })}</h1>
-          </div>
-          <div className={styles.iconBox}><Chevron /></div>
-        </div>
+        <Hero />
 
         <FadeInSection>
           <div className={styles.section1}>
@@ -95,7 +82,7 @@ export default function VirtualInfluencePage() {
             </div>
 
             <Slider {...settings} className={styles.slider}>
-              {[1,2,3,4].map(item => (
+              {["101", "102", "103", "104", "105"].map(item => (
                   <div key={item} className={styles.item}>
                     <img
                       className={styles.image}
@@ -133,17 +120,6 @@ export default function VirtualInfluencePage() {
                 ))}
               </div>
             </div>
-
-            {/* <Slider {...settings} className={styles.slider}>
-              {[1,2,3,4].map(item => (
-                  <div key={item} className={styles.item}>
-                    <img
-                      className={styles.image}
-                      src={`/images/influencer/${item}.jpeg`}
-                    />
-                </div>
-                ))}
-            </Slider> */}
           </div>
           </FadeInSection>
 
@@ -193,6 +169,16 @@ export default function VirtualInfluencePage() {
                 ))}
               </div>
             </div>
+             <Slider {...settings} className={styles.slider}>
+              {["201", "202", "203", "204", "205"].map(item => (
+                  <div key={item} className={styles.item}>
+                    <img
+                      className={styles.image}
+                      src={`/images/influencer/${item}.jpeg`}
+                    />
+                </div>
+                ))}
+            </Slider>
           </div>
           </FadeInSection>
 
@@ -271,7 +257,6 @@ export default function VirtualInfluencePage() {
                     <PriceWithUnit value={oldPrice} />
                   </div>
                 </div>
-               
               </div>
               
               <div className={styles.links}>
@@ -287,6 +272,7 @@ export default function VirtualInfluencePage() {
                   {formatMessage({ id: "common.buy_now_russia" })}
                 </Link>
               </div>
+
               <div className={styles.s1List}>
                 <span className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section9.text1` })}</span>
               </div>
@@ -298,7 +284,7 @@ export default function VirtualInfluencePage() {
           <FadeInSection>
           <div className={styles.section2}>
             <Slider {...settings} className={styles.slider}>
-              {[6,7,8].map(item => (
+              {["301", "302", "303", "304", "305"].map(item => (
                   <div key={item} className={styles.item}>
                     <img
                       className={styles.image}
