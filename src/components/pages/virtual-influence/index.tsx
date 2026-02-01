@@ -81,12 +81,12 @@ export default function VirtualInfluencePage() {
               </div>
             </div>
 
-            <Slider {...settings} className={styles.slider}>
+            <Slider {...settings} className={`${styles.slider} mobileViewBlack`}>
               {["101", "102", "103", "104", "105"].map(item => (
                   <div key={item} className={styles.item}>
                     <img
                       className={styles.image}
-                      src={`/images/influencer/${item}.jpeg`}
+                      src={`/images/influencer/${item}.jpg`}
                     />
                 </div>
                 ))}
@@ -169,12 +169,12 @@ export default function VirtualInfluencePage() {
                 ))}
               </div>
             </div>
-             <Slider {...settings} className={styles.slider}>
+             <Slider {...settings}  className={`${styles.slider} mobileViewBlack`}>
               {["201", "202", "203", "204", "205"].map(item => (
                   <div key={item} className={styles.item}>
                     <img
                       className={styles.image}
-                      src={`/images/influencer/${item}.jpeg`}
+                      src={`/images/influencer/${item}.jpg`}
                     />
                 </div>
                 ))}
@@ -283,12 +283,12 @@ export default function VirtualInfluencePage() {
 
           <FadeInSection>
           <div className={styles.section2}>
-            <Slider {...settings} className={styles.slider}>
+            <Slider {...settings}  className={`${styles.slider} mobileViewBlack`}>
               {["301", "302", "303", "304", "305"].map(item => (
                   <div key={item} className={styles.item}>
                     <img
                       className={styles.image}
-                      src={`/images/influencer/${item}.jpeg`}
+                      src={`/images/influencer/${item}.jpg`}
                     />
                 </div>
                 ))}
