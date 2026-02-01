@@ -127,7 +127,7 @@ export default function VirtualInfluencePage() {
           </div>
 
           <div className={styles.extraMarginTop}>
-          <ImagesSlider images={["201", "202", "203", "204", "205"]} />
+          <ImagesSlider images={["201", "202", "203", "204", "205", "206"]} />
           </div>
         </SectionGray>
             
@@ -205,7 +205,7 @@ export default function VirtualInfluencePage() {
 
 
         <SectionColor title="">
-          <ImagesSlider images={["301", "302", "303", "304", "305"]} />
+          <ImagesSlider images={["301", "302", "303", "304", "305", "306"]} />
         </SectionColor>
 
 
