@@ -69,7 +69,7 @@
 .compareList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   margin-top: 16px;
 }
 
@@ -97,32 +97,26 @@
 
 
 .optionsList {
+  composes: compareList;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
 }
 
 .whyWorksList {
+  composes: compareList;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
 }
 
 .getList {
+  composes: compareList;
   display: grid;
-  gap: 8px;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 16px;
 }
-
-
 .roadMap {
+  composes: compareList;
   display: grid;
-  gap: 8px;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 16px;
 }
 
 .roadMapSubList {
