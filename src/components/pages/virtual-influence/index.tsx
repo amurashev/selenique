@@ -127,7 +127,7 @@ export default function VirtualInfluencePage() {
           </div>
 
           <div className={styles.extraMarginTop}>
-          <ImagesSlider images={["201", "202", "203", "204", "205", "206"]} />
+          <ImagesSlider images={["201", "202", "204", "205", "206"]} />
           </div>
         </SectionGray>
             
