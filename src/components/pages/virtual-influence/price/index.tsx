@@ -12,8 +12,8 @@ export default function Price(
 ) {
   const { formatMessage, locale } = useIntl();
 
-  const price = { en: 67, ru: 4990 }
-  const oldPrice = { en: 79, ru: 6990 }
+  const price = { en: 67, ru: 3990 }
+  const oldPrice = { en: 79, ru: 4990 }
   const discount = 20;
 
   // Текущая дата (без времени, чтобы не было дробных дней)
