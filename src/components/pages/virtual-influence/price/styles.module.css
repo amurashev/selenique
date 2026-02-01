@@ -1,77 +1,64 @@
-.gradientColor {
-  /* background-image: radial-gradient(circle at 50% 40vh, #ffd27b 0, #df3a93 60vh, #5c1663 100vh); */
-
-  background: #FD5758;
-  background: linear-gradient(90deg,rgba(253, 87, 88, 1) 0%, rgba(139, 79, 255, 1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--foreground);
+.priceInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
 }
-
-.hero {
+.price {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: calc(100lvh - 50px);
-  padding: 0 12px;
-  position: relative;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 21px;
 }
-
-.h1Box {
-  max-width: 720px;
-}
-
-.h1Sub {
-  font-size: 22px;
+.priceValue {
+  font-size: 42px;
   font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  margin-bottom: 8px;
+  color: #ffffff;
 }
-.h1 {
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 44px;
-  line-height: 1.1;
-
-  composes: gradientColor;
+.basePrice {
+  font-size: 28px;
+  color: #aaaaaa;
+  margin-left: 6px;
+  text-decoration: line-through;
 }
-.iconBox {
-  position: absolute;
-  bottom: 16px;
-  left: 0;
-  right: 0;
+.discountInfo {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 4px;
+  color: #cccccc;
+}
+.links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 320px;
+}
+.link {
+  background-color: #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  &:hover {
+    background-color: #3a9bff;
+  }
 }
 
-@keyframes _1jyak14m {
-  0% {
-    /* opacity: .5; */
-    transform: translateY(-6px);
-  }
-  100% {
-    /* opacity: 1; */
-    transform: translateY(6px);
-  }
-}
-
-.icon {
-  animation: _1jyak14m 1s ease-in-out infinite alternate;
+.summary {
+  margin-top: 16px;
+  font-size: 18px;
 }
 
 
 @media (min-width: 840px) {
-  .h1 {
-    font-size: 64px;
-  }
-  .h1Sub {
-    font-size: 32px;
-  }
+ 
 }

@@ -1,18 +1,6 @@
-.gradientColor {
-  /* background-image: radial-gradient(circle at 50% 40vh, #ffd27b 0, #df3a93 60vh, #5c1663 100vh); */
-
-  background: #FD5758;
-  background: linear-gradient(90deg,rgba(253, 87, 88, 1) 0%, rgba(139, 79, 255, 1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--foreground);
-}
-
 .page {
   height: 100vh;
   background-color: var(--foreground);
-  color: #ffffff;
 }
 
 .main {
@@ -24,41 +12,16 @@
   width: 100%;
   /* min-height: calc(100% - 156px); */
   background-color: var(--foreground);
-  color: #ffffff;
-  /* min-height: 1px; */
-  /* padding: 18px 16px;
-  padding-bottom: 70px; */
-}
-
-.section1 {
-  /* padding: 6vw 7vw; */
-  /* padding-top: 6vw; */
-  padding: 42px 24px;
-  width: 100%;
-  /* display: grid; */
-  background-color: #222;
-}
-
-.section1Inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.s1Title {
-  font-size: 28px;
-  text-transform: uppercase;
-
-  composes: gradientColor;
-}
-
-.s1List {
-  margin-top: 16px;
   font-size: 18px;
+}
+
+.itemsList {
+  margin-top: 16px;
   /* font-weight: 600; */
   line-height: 1.2;
 }
 
-.s1Item {
+.itemsListItem {
   display: block;
 
   & + & {
@@ -67,14 +30,25 @@
 }
 
 
+.itemsListItemEmp {
+  composes: itemsListItem;
 
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+
+.extraMarginTop {
+  margin-top: 24px;
+}
 
 
 
 .subSection {
   margin-top: 24px;
 }
-.s2SubTitle {
+.subTitle {
   font-size: 20px;
   margin-top: 8px;
 }
@@ -91,91 +65,98 @@
 }
 
 
-.priceInner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8px;
-}
-.price {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
-  font-size: 21px;
-}
-.priceValue {
-  font-size: 42px;
-  font-weight: 700;
-}
-.basePrice {
-  font-size: 28px;
-  color: #aaaaaa;
-  margin-left: 6px;
-  text-decoration: line-through;
-}
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin: 0 auto;
-  margin-top: 24px;
-  max-width: 320px;
-}
-.link {
-  background-color: #0974e2;
-  font-weight: 700;
-  font-size: 15px;
-  display: block;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  padding: 12px 16px;
 
-  &:hover {
-    background-color: #3a9bff;
+.compareList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.compareItem {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 12px 12px;
+  font-size: 15px;
+}
+.compareTitle {
+  font-size: 18px;
+}
+.compareText {
+  margin-top: 4px;
+}
+.compareSubList {
+  padding-left: 12px;
+  margin-top: 4px;
+
+  li + li {
+    margin-top: 2px;
   }
 }
 
 
 
-.slider {
-  margin: 0 -4px;
-  margin-top: 24px;
-  width: 100%;
-}
-.item {
-  width: 100%;
-  padding: 0 8px;
-}
-.image {
-  width: 100%;
-  display: block;
-  height: auto;
-  object-fit: cover;
-  /* border-radius: 8px; */
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
 }
 
-
-
-
-
-.section2 {
-  composes: section1;
-
-  background: #FD5758;
-  background: linear-gradient(90deg,rgba(253, 87, 88, 1) 0%, rgba(139, 79, 255, 1) 100%);
+.whyWorksList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
 }
 
-.s2Title {
-  font-size: 28px;
-  text-transform: uppercase;
+.getList {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 16px;
+}
+
+
+.roadMap {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 16px;
+}
+
+.roadMapSubList {
+  composes: compareSubList;
+  list-style: none;
+  padding-left: 0px;
 }
 
 @media (min-width: 840px) {
-  .section1 {
-    padding: 68px 24px;
+  .compareItem {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .compareTitle {
+    font-size: 20px;
+  }
+
+  .getList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .roadMap {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .optionsList { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whyWorksList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

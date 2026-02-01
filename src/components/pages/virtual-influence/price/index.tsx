@@ -1,27 +1,61 @@
 "use client";
 
+import Link from "next/link";
 import { useIntl } from "react-intl";
+
+import { PriceWithUnit } from "@/components/ui/price";
 
 import styles from "./styles.module.css";
 
-const Chevron = () => {
-  return (
-    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" fill="none">
-      <path d="M6 9L12 15L18 9" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  )
-}
-
-export default function Hero() {
+export default function Price(
+  { purchaseLink, boostyLink }: { purchaseLink: string, boostyLink: string }
+) {
   const { formatMessage, locale } = useIntl();
 
+  const price = { en: 67, ru: 4990 }
+  const oldPrice = { en: 79, ru: 6990 }
+  const discount = 20;
+
+  // Текущая дата (без времени, чтобы не было дробных дней)
+  // const today = new Date();
+  // today.setHours(0, 0, 0, 0);
+
+  // Разница в миллисекундах
+  // const diff = Number(targetDate) - Number(today);
+
+  // Переводим миллисекунды в дни
+  const daysLeft = 2// Math.ceil(diff / (1000 * 60 * 60 * 24));
+
   return (
-    <div className={styles.hero}>
-      <div className={styles.h1Box}>
-        <span className={styles.h1Sub}>Iconista Lab</span>
-        <h1 className={styles.h1}>{formatMessage({ id: "virtual-influence.title" })}</h1>
+    <div>
+      <div className={styles.price}>
+        <div>{formatMessage({ id: "virtual-influence.price.title" })}:</div>
+        <div className={styles.priceInner}>
+          <div className={styles.priceValue}>
+            <PriceWithUnit value={price} />
+          </div>
+          <div className={styles.basePrice}>
+            <PriceWithUnit value={oldPrice} />
+          </div>
+        </div>
+        {/* <div className={styles.discountInfo}>
+          {discount}% off • Sale ends in {daysLeft} days
+        </div> */}
       </div>
-      <div className={styles.iconBox}><Chevron /></div>
+
+      <div className={styles.links}>
+        <Link className={styles.link} href={purchaseLink} target="_blank">
+          {formatMessage({ id: "common.buy_now" })}
+        </Link>
+
+        <Link className={styles.link} href={boostyLink} target="_blank">
+          {formatMessage({ id: "common.buy_now_russia" })}
+        </Link>
+      </div>
+
+      <p className={styles.summary}>
+        {formatMessage({ id: `virtual-influence.section9.text1` })}
+      </p>
     </div>
   );
 }

@@ -1,11 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { useIntl } from "react-intl";
-import Slider from "react-slick";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
 
@@ -13,14 +8,13 @@ import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
 import FAQBase from "@/components/sections/faq";
 
-import { settings } from "./settings";
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { guidesListPageRoute } from "@/constants/routes";
-import { PriceWithUnit } from "@/components/ui/price";
-import { FadeInSection } from "@/utils/fade";
 
 import Hero from "./hero";
-
+import Price from "./price";
+import { SectionColor, SectionGray } from "./sections";
+import ImagesSlider from "./images-slider";
 
 const CheckMark = () => {
   return (
@@ -44,16 +38,6 @@ export default function VirtualInfluencePage() {
     }
   }
 
-  const price = {
-    en: 67,
-    ru: 4990,
-  }
-
-  const oldPrice = {
-    en: 79,
-    ru: 6990,
-  }
-
   const fixedKey = locale === "ru" ? "ru" : "en"
   const guideData = PROMTBOOKS[guidesData[fixedKey].slug]
   const purchaseLink = `https://seleniquestudio.gumroad.com/l/${guideData.gumroad.slug}?wanted=true`;
@@ -68,248 +52,171 @@ export default function VirtualInfluencePage() {
       <main className={styles.main}>
         <Hero />
 
-        <FadeInSection>
-          <div className={styles.section1}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section1.title" })}</h2>
-              <div className={styles.s1List}>
-                {[1,2,3,4,5].map(item => (
-                  <span key={item} className={styles.s1Item} dangerouslySetInnerHTML={{
-                    __html: formatMessage({ id: `virtual-influence.section1.item${item}` }),
-                  }} />
-                ))}
-              </div>
-            </div>
+        <SectionGray title={formatMessage({ id: "virtual-influence.section1.title" })}>
+          <div className={styles.itemsList}>
+            {[1,2,3,4,5].map(item => (
+              <span key={item} className={styles.itemsListItem} dangerouslySetInnerHTML={{
+                __html: formatMessage({ id: `virtual-influence.section1.item${item}` }),
+              }} />
+            ))}
+          </div>
+          <div className={styles.extraMarginTop}>
+          <ImagesSlider images={["101", "102", "103", "104", "105"]} />
+          </div>
+        </SectionGray>
 
-            <Slider {...settings} className={`${styles.slider} mobileViewBlack`}>
-              {["101", "102", "103", "104", "105"].map(item => (
-                  <div key={item} className={styles.item}>
-                    <img
-                      className={styles.image}
-                      src={`/images/influencer/${item}.jpg`}
-                    />
-                </div>
-                ))}
-            </Slider>
+        <SectionColor title={formatMessage({ id: "virtual-influence.section2.title" })}>
+          <div className={styles.getList}>
+            {[1,2,3,4,5,6].map(item => (
+              <div key={item} className={styles.compareItem}>
+                <h4 className={styles.compareTitle}>📦 {formatMessage({ id: `virtual-influence.section2.item${item}.title` })}:</h4>
+                <p className={styles.compareText} dangerouslySetInnerHTML={{
+                    __html: formatMessage({ id: `virtual-influence.section2.item${item}.text` }),
+                  }} />
+              </div>
+            ))}
+          </div>
+        </SectionColor>
+
+        <SectionGray title={formatMessage({ id: "virtual-influence.section3.title" })}>
+          <div className={styles.itemsList}>
+            {[1,2,3,4].map(item => (
+              <span key={item} className={styles.itemsListItem}>
+                <CheckMark /> {formatMessage({ id: `virtual-influence.section3.item${item}` })}
+              </span>
+            ))}
+          </div>
+        </SectionGray>
+
+        <SectionColor title={formatMessage({ id: "virtual-influence.section4.title" })}>
+          <div className={styles.roadMap}>
+          <div className={styles.compareItem}>
+            <h4 className={styles.compareTitle}>{formatMessage({ id: "virtual-influence.section4.list1_title" })}:</h4>
+            <ul className={styles.roadMapSubList}>
+              {["1️⃣", "2️⃣", "3️⃣"].map((item, key) => (
+              <li key={item}>{item} {formatMessage({ id: `virtual-influence.section4.list1_item${key + 1}` })}</li>
+              ))}
+            </ul>
           </div>
 
-          </FadeInSection>
+          <div className={styles.compareItem}>
+            <h4 className={styles.compareTitle}>{formatMessage({ id: "virtual-influence.section4.list2_title" })}:</h4>
+            <ul className={styles.roadMapSubList}>
+              {["1️⃣", "2️⃣"].map((item, key) => (
+              <li key={item}>{item} {formatMessage({ id: `virtual-influence.section4.list2_item${key + 1}` })}</li>
+              ))}
+            </ul>
+          </div>
 
-          <FadeInSection>
-          <div className={styles.section2}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section2.title" })}</h2>
-              <div className={styles.s1List}>
-                {[1,2,3,4,5,6].map(item => (
-                <span key={item} className={styles.s1Item} dangerouslySetInnerHTML={{
-                  __html: `📦 ${formatMessage({ id: `virtual-influence.section2.item${item}` })}`,
+          <div className={styles.compareItem}>
+            <h4 className={styles.compareTitle}>{formatMessage({ id: "virtual-influence.section4.list3_title" })}:</h4>
+            <ul className={styles.roadMapSubList}>
+              {["1️⃣", "2️⃣"].map((item, key) => (
+              <li key={item}>{item} {formatMessage({ id: `virtual-influence.section4.list3_item${key + 1}` })}</li>
+              ))}
+            </ul>
+          </div>
+          </div>
+        </SectionColor>
+
+        <SectionGray title={formatMessage({ id: "virtual-influence.section5.title" })}>
+          <div className={styles.itemsList}>
+            {[1,2,3,4,5,6].map(item => (
+            <span key={item} className={styles.itemsListItem}>{item === 6 ? "🎁" : "📖"} {formatMessage({ id: `virtual-influence.section5.item${item}` })}</span>
+            ))}
+          </div>
+
+          <div className={styles.extraMarginTop}>
+          <ImagesSlider images={["201", "202", "203", "204", "205"]} />
+          </div>
+        </SectionGray>
+            
+        <SectionColor title={formatMessage({ id: "virtual-influence.section6.title" })}>
+          <div className={styles.whyWorksList}>
+            <div className={styles.compareItem}>
+              <h4 className={styles.compareTitle}>❌ {formatMessage({ id: "virtual-influence.section6.item1.title" })}:</h4>
+              <ul className={styles.compareSubList}>
+                {[1,2,3,4].map((item, key) => (
+                <li key={item} dangerouslySetInnerHTML={{
+                    __html: formatMessage({ id: `virtual-influence.section6.item1.text${key + 1}` }),
+                  }} />
+                ))}
+              </ul>
+            </div>
+            <div className={styles.compareItem}>
+              <h4 className={styles.compareTitle}>✅ {formatMessage({ id: "virtual-influence.section6.item2.title" })}:</h4>
+              <ul className={styles.compareSubList}>
+                {[1,2,3,4].map((item, key) => (
+                <li key={item} dangerouslySetInnerHTML={{
+                  __html: formatMessage({ id: `virtual-influence.section6.item2.text${key + 1}` }),
                 }} />
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
-          </FadeInSection>
+        </SectionColor>
 
-          <FadeInSection>
-          <div className={styles.section1}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section3.title" })}</h2>
-              <div className={styles.s1List}>
-                {[1,2,3,4].map(item => (
-                <span key={item} className={styles.s1Item}><CheckMark /> {formatMessage({ id: `virtual-influence.section3.item${item}` })}</span>
-                ))}
-              </div>
-            </div>
+        <SectionGray title={formatMessage({ id: "virtual-influence.section7.title" })}>
+          <div className={styles.itemsList}>
+            <span className={styles.itemsListItem}>{formatMessage({ id: `virtual-influence.section7.item1` })}</span>
+            <span className={styles.itemsListItem}>{formatMessage({ id: `virtual-influence.section7.item2` })}</span>
+            <span className={styles.itemsListItemEmp}>{formatMessage({ id: `virtual-influence.section7.item3` })}</span>
           </div>
-          </FadeInSection>
+        </SectionGray>
 
-          <FadeInSection>
-          <div className={styles.section2}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section4.title" })}</h2>
-
-              <div className={styles.subSection}>
-                <h4 className={styles.s2SubTitle}>{formatMessage({ id: "virtual-influence.section4.list1_title" })}:</h4>
-                <div className={styles.smallList}>
-                  {["1️⃣", "2️⃣", "3️⃣"].map((item, key) => (
-                  <span key={item} className={styles.smallListItem}>{item} {formatMessage({ id: `virtual-influence.section4.list1_item${key + 1}` })}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className={styles.subSection}>
-                <h4 className={styles.s2SubTitle}>{formatMessage({ id: "virtual-influence.section4.list2_title" })}:</h4>
-                <div className={styles.smallList}>
-                  {["1️⃣", "2️⃣"].map((item, key) => (
-                  <span key={item} className={styles.smallListItem}>{item} {formatMessage({ id: `virtual-influence.section4.list2_item${key + 1}` })}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className={styles.subSection}>
-                <h4 className={styles.s2SubTitle}>{formatMessage({ id: "virtual-influence.section4.list3_title" })}:</h4>
-                <div className={styles.smallList}>
-                  {["1️⃣", "2️⃣"].map((item, key) => (
-                  <span key={item} className={styles.smallListItem}>{item} {formatMessage({ id: `virtual-influence.section4.list3_item${key + 1}` })}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-          </FadeInSection>
-
-
-          <FadeInSection>
-          <div className={styles.section1}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section5.title" })}</h2>
-              <div className={styles.s1List}>
-                {[1,2,3,4,5,6].map(item => (
-                <span key={item} className={styles.s1Item}>{item === 6 ? "🎁" : "📖"} {formatMessage({ id: `virtual-influence.section5.item${item}` })}</span>
-                ))}
-              </div>
-            </div>
-             <Slider {...settings}  className={`${styles.slider} mobileViewBlack`}>
-              {["201", "202", "203", "204", "205"].map(item => (
-                  <div key={item} className={styles.item}>
-                    <img
-                      className={styles.image}
-                      src={`/images/influencer/${item}.jpg`}
-                    />
-                </div>
-                ))}
-            </Slider>
-          </div>
-          </FadeInSection>
-
-          <FadeInSection>
-          <div className={styles.section2}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section6.title" })}</h2>
-              <div className={styles.s1List}>
-                {(locale === "ru" ? [1,2,3,4,5,6,7,8,9,10] : [1,2,3,4,5,6]).map(item => (
-                <span key={item} className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section6.item${item}` })}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-          </FadeInSection>
-
-          <FadeInSection>
-          <div className={styles.section1}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section7.title" })}</h2>
-              <div className={styles.s1List}>
-                <span className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section7.item1` })}</span>
-                <span className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section7.item2` })}</span>
-                <strong className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section7.item3` })}</strong>
-              </div>
-            </div>
-          </div>
-          </FadeInSection>
-
-          <FadeInSection>
-          <div className={styles.section2}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s2Title}>{formatMessage({ id: "virtual-influence.section8.title" })}</h2>
-              <div className={styles.subSection}>
-                <h4 className={styles.s2SubTitle}>✅ {formatMessage({ id: "virtual-influence.section8.var1_title" })}:</h4>
-                <div className={styles.smallList}>
-                  {[1,2,3,4].map((item, key) => (
-                  <span key={item} className={styles.smallListItem} dangerouslySetInnerHTML={{
-                    __html: formatMessage({ id: `virtual-influence.section8.var1_item${key + 1}` }),
+        <SectionColor title={formatMessage({ id: "virtual-influence.section8.title" })}>
+          <div className={styles.optionsList}>
+            <div className={styles.compareItem}>
+              <h4 className={styles.compareTitle}>❌ {formatMessage({ id: "virtual-influence.section8.var2_title" })}:</h4>
+              <ul className={styles.compareSubList}>
+                {[1,2].map((item, key) => (
+                <li key={item} dangerouslySetInnerHTML={{
+                    __html: formatMessage({ id: `virtual-influence.section8.var2_item${key + 1}` }),
                   }} />
-                  ))}
-                </div>
-              </div>
-              <div className={styles.subSection}>
-                <h4 className={styles.s2SubTitle}>❌ {formatMessage({ id: "virtual-influence.section8.var2_title" })}:</h4>
-                <div className={styles.smallList}>
-                  {[1,2].map((item, key) => (
-                  <span key={item} className={styles.smallListItem}>{formatMessage({ id: `virtual-influence.section8.var2_item${key + 1}` })}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className={styles.subSection}>
-                <div className={styles.smallList}>
-                  <span className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section8.text1` })}</span>
-                  <span className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section8.text2` })}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          </FadeInSection>
-
-
-          <FadeInSection>
-          <div className={styles.section1}>
-            <div className={styles.section1Inner}>
-              <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section9.title" })}</h2>
-
-              <div className={styles.price}>
-                <div>{formatMessage({ id: "virtual-influence.price.title" })}:</div>
-                <div className={styles.priceInner}>
-                  <div className={styles.priceValue}>
-                    <PriceWithUnit value={price} />
-                  </div>
-                  <div className={styles.basePrice}>
-                    <PriceWithUnit value={oldPrice} />
-                  </div>
-                </div>
-              </div>
-              
-              <div className={styles.links}>
-                <Link className={styles.link} href={purchaseLink} target="_blank">
-                  {formatMessage({ id: "common.buy_now" })}
-                </Link>
-
-                <Link
-                  className={styles.link}
-                  href={boostyLink}
-                  target="_blank"
-                >
-                  {formatMessage({ id: "common.buy_now_russia" })}
-                </Link>
-              </div>
-
-              <div className={styles.s1List}>
-                <span className={styles.s1Item}>{formatMessage({ id: `virtual-influence.section9.text1` })}</span>
-              </div>
-            </div>
-          </div>
-          </FadeInSection>
-
-
-          <FadeInSection>
-          <div className={styles.section2}>
-            <Slider {...settings}  className={`${styles.slider} mobileViewBlack`}>
-              {["301", "302", "303", "304", "305"].map(item => (
-                  <div key={item} className={styles.item}>
-                    <img
-                      className={styles.image}
-                      src={`/images/influencer/${item}.jpg`}
-                    />
-                </div>
                 ))}
-            </Slider>
-          </div>
-          </FadeInSection>
-
-
-          <FadeInSection>
-          <div className={styles.section1}>
-          <div className={styles.section1Inner}>
-            <h2 className={styles.s1Title}>{formatMessage({ id: "virtual-influence.section10.title" })}</h2>
-            <FAQBase
-              items={[1, 2, 3, 4, 5].map((key) => ({
-                title: formatMessage({ id: `virtual-influence.section10.question${key}` }),
-                text: formatMessage({ id: `virtual-influence.section10.answer${key}` }),
-              }))}
-            />
+              </ul>
+            </div>
+            <div className={styles.compareItem}>
+              <h4 className={styles.compareTitle}>✅ {formatMessage({ id: "virtual-influence.section8.var1_title" })}:</h4>
+              <ul className={styles.compareSubList}>
+                {[1,2,3].map((item, key) => (
+                <li key={item} dangerouslySetInnerHTML={{
+                  __html: formatMessage({ id: `virtual-influence.section8.var1_item${key + 1}` }),
+                }} />
+                ))}
+              </ul>
             </div>
           </div>
-          </FadeInSection>
+
+          <div className={styles.subSection}>
+            <p className={styles.temp} dangerouslySetInnerHTML={{
+              __html: formatMessage({ id: `virtual-influence.section8.text1` }),
+            }} />
+            <p className={styles.temp} dangerouslySetInnerHTML={{
+              __html: formatMessage({ id: `virtual-influence.section8.text2` }),
+            }} />
+          </div>
+        </SectionColor>
+
+
+        <SectionGray title={formatMessage({ id: "virtual-influence.section9.title" })}>
+          <Price boostyLink={boostyLink} purchaseLink={purchaseLink} />
+        </SectionGray>
+
+
+        <SectionColor title="">
+          <ImagesSlider images={["301", "302", "303", "304", "305"]} />
+        </SectionColor>
+
+
+        <SectionGray title={formatMessage({ id: "virtual-influence.section10.title" })}>
+          <FAQBase
+            items={[1, 2, 3, 4, 5].map((key) => ({
+              title: formatMessage({ id: `virtual-influence.section10.question${key}` }),
+              text: formatMessage({ id: `virtual-influence.section10.answer${key}` }),
+            }))}
+          />
+        </SectionGray>
       </main>
       <Footer />
     </div>

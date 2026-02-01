@@ -1,0 +1,72 @@
+.gradientColor {
+  /* background-image: radial-gradient(circle at 50% 40vh, #ffd27b 0, #df3a93 60vh, #5c1663 100vh); */
+
+  background: #FD5758;
+  background: linear-gradient(90deg,rgba(253, 87, 88, 1) 0%, rgba(139, 79, 255, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--foreground);
+}
+
+.section1 {
+  padding: 42px 24px;
+  width: 100%;
+  /* display: grid; */
+  background-color: #222;
+  color: #dddddd;
+}
+
+.section1Inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.s1Title {
+  font-size: 28px;
+  text-transform: uppercase;
+
+  composes: gradientColor;
+}
+
+
+
+
+
+
+.section2 {
+  composes: section1;
+
+  background: #FD5758;
+  background: linear-gradient(90deg,rgba(253, 87, 88, 1) 0%, rgba(139, 79, 255, 1) 100%);
+
+  position: relative;
+  color: #ffffff;
+}
+
+.s2Title {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.section1Inner {
+  z-index: 2;
+  position: relative;
+}
+
+.fader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(53 53 53 / 10%);
+  z-index: 1;
+}
+
+@media (min-width: 840px) {
+  .section1 {
+    padding: 68px 24px;
+  }
+}
+

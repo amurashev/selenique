@@ -196,7 +196,7 @@
   "prompts.models.chat_gpt.h1": "Prompts de imagen para ChatGPT para una creación visual controlada",
   "prompts.models.chat_gpt.short_description": "Los prompts de imagen para ChatGPT son instrucciones estructuradas diseñadas para ayudar a la IA a generar imágenes claras, detalladas y visualmente consistentes. Los prompts bien escritos traducen ideas en resultados visuales precisos.",
   "prompts.models.chat_gpt.text": "<section><h2>¿Para qué se utilizan los prompts de imagen para ChatGPT?</h2><p>Los prompts de imagen para ChatGPT se utilizan para:</p><ul><li>imágenes e ilustraciones generadas por IA</li><li>conceptos visuales e ideas creativas</li><li>retratos y visuales de personajes</li><li>imágenes de productos y marcas</li><li>escenas artísticas y experimentales</li></ul><p>Ayudan a reducir la ambigüedad y a guiar a la IA hacia resultados visuales intencionales.</p></section><section><h2>Qué puedes crear con los prompts de imagen para ChatGPT</h2><p>Con prompts profesionales de imagen para ChatGPT, puedes:</p><ul><li>generar conceptos de imagen detallados</li><li>crear visuales realistas o estilizados</li><li>diseñar series de imágenes consistentes</li><li>traducir ideas abstractas en imágenes</li><li>adaptar visuales a diferentes estilos y casos de uso</li></ul><p>Los prompts estructurados convierten a ChatGPT en una herramienta de planificación y generación visual.</p></section><section><h2>Por qué los prompts de imagen para ChatGPT listos para usar funcionan mejor</h2><p>La generación de imágenes requiere claridad. Los prompts profesionales de imagen para ChatGPT incluyen:</p><ul><li>descripciones claras del sujeto y la escena</li><li>estilo, atmósfera y composición definidos</li><li>guía de iluminación y perspectiva</li><li>lenguaje conciso y sin ambigüedades</li></ul><p>Esto mejora la precisión visual y la consistencia entre las imágenes generadas.</p></section><section><h2>Para quién son los prompts de imagen para ChatGPT</h2><p>Los prompts de imagen para ChatGPT son ideales para:</p><ul><li>artistas y creadores de IA</li><li>diseñadores e ilustradores</li><li>creadores de contenido</li><li>especialistas en marketing y construcción de marcas</li><li>educadores y estudiantes</li><li>cualquier persona que genere imágenes con IA</li></ul><p>Si quieres más control sobre los visuales generados con IA, los prompts de imagen para ChatGPT son esenciales.</p></section><section><h2>Empieza a usar los prompts de imagen para ChatGPT hoy</h2><p>Los prompts de imagen para ChatGPT no tratan de adivinar. Tratan de claridad, estructura e intención visual.</p><p>Usa los prompts de imagen para ChatGPT para convertir ideas en imágenes con IA limpias, fiables y expresivas.</p></section>",
-  
+
   "virtual-influence.title": "Virtual Influence: The 48-Hour Playbook",
   "virtual-influence.section1.title": "CREATE YOUR VIRTUAL INFLUENCER IN 48 HOURS",
   "virtual-influence.section1.item1": "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
@@ -206,14 +206,25 @@
   "virtual-influence.section1.item5": "You just need the right system.",
 
   "virtual-influence.section2.title": "WHAT YOU GET?",
-  "virtual-influence.section2.item1": "Complete Character Creation System — The Face-Lock method that keeps your AI model 100% consistent across every post",
-  "virtual-influence.section2.item2": "40+ Copy-Paste Prompts — Mirror selfies, lifestyle shots, OOTD, detail photos—every content type ready to use",
-  "virtual-influence.section2.item3": "ChatGPT Automation Blueprint — Write an entire month of captions in 90 minutes",
-  "virtual-influence.section2.item4": "3-Month Instagram Growth Plan — Exact posting schedule and engagement tactics to hit 1,000 followers in 30-90 days",
-  "virtual-influence.section2.item5": "Monetization Roadmap — Start earning with affiliate marketing from Day 1. Scale to brand deals as you grow.",
-  "virtual-influence.section2.item6": "НWeek-by-Week Action Plan — Complete roadmap from concept to 10K followers",
+  "virtual-influence.section2.item1.title": "Complete Character Creation System",
+  "virtual-influence.section2.item1.text": "The Face-Lock method that keeps your AI model 100% consistent across every post",
 
-  "virtual-influence.section3.title": "PERFECT FOR",
+  "virtual-influence.section2.item2.title": "40+ Copy-Paste Prompts",
+  "virtual-influence.section2.item2.text": "Mirror selfies, lifestyle shots, OOTD, detail photos — every content type ready to use",
+
+  "virtual-influence.section2.item3.title": "ChatGPT Automation Blueprint",
+  "virtual-influence.section2.item3.text": "Write an entire month of captions in 90 minutes",
+
+  "virtual-influence.section2.item4.title": "3-Month Instagram Growth Plan",
+  "virtual-influence.section2.item4.text": "Exact posting schedule and engagement tactics to hit 1,000 followers in 30-90 days",
+
+  "virtual-influence.section2.item5.title": "Monetization Roadmap",
+  "virtual-influence.section2.item5.text": "Start earning with affiliate marketing from Day 1. Scale to brand deals as you grow.",
+
+  "virtual-influence.section2.item6.title": "Week-by-Week Action Plan",
+  "virtual-influence.section2.item6.text": "Complete roadmap from concept to 10K followers",
+
+  "virtual-influence.section3.title": "PERFECT FOR:",
   "virtual-influence.section3.item1": "Creative people who hate being on camera",
   "virtual-influence.section3.item2": "Aspiring influencers who want privacy",
   "virtual-influence.section3.item3": "Content creators testing new strategies",
@@ -227,13 +238,13 @@
   
   "virtual-influence.section4.list2_title": "Month 1-3",
   "virtual-influence.section4.list2_item1": "Grow to 1K-3K followers",
-  "virtual-influence.section4.list2_item2": "start affiliate income ($50-200/month",
+  "virtual-influence.section4.list2_item2": "start affiliate income ($50-200/month)",
 
   "virtual-influence.section4.list3_title": "Month 6-12",
   "virtual-influence.section4.list3_item1": "Reach 10K followers",
   "virtual-influence.section4.list3_item2": "Brand partnerships ($1K-3K/month)",
 
-  "virtual-influence.section5.title": "WHAT'S INSIDE",
+  "virtual-influence.section5.title": "WHAT'S INSIDE?",
   "virtual-influence.section5.item1": "PART 1: Why Virtual Influencers Work",
   "virtual-influence.section5.item2": "PART 2: Character Creation Mastery (9-angle Face-Lock system)",
   "virtual-influence.section5.item3": "PART 3: Content Strategy (40+ prompts, mobile realism techniques)",
@@ -241,17 +252,19 @@
   "virtual-influence.section5.item5": "PART 5: Monetization Basics (affiliate marketing, brand deals, subscriptions)",
   "virtual-influence.section5.item6": "BONUS: Quick reference library, action checklists, troubleshooting guide",
 
-  "virtual-influence.section6.title": "WHY THIS WORKS",
-  "virtual-influence.section6.item1": "Generic AI guides → Vague theory",
-  "virtual-influence.section6.item2": "This system → Copy-paste prompts you use today",
-  "virtual-influence.section6.item3": "Other courses → Hours of video fluff",
-  "virtual-influence.section6.item4": "This guide → Zero-fluff blueprint for instant action",
-  "virtual-influence.section6.item5": "Outdated methods → From 2025",
-  "virtual-influence.section6.item6": "This system → Updated January 2026",
-  "virtual-influence.section6.item7": "Дорогие курсы → 30-150 т.р. за доступ к \"эксклюзивному комьюнити\"",
-  "virtual-influence.section6.item8": "Этот гайд → Всё, что нужно, за разумную цену. Без подписок и допродаж",
-  "virtual-influence.section6.item9": "Теория без практики → \"Узнай, как работает ИИ\" (спасибо, но как заработать?)",
-  "virtual-influence.section6.item10": "Эта система → Конкретные шаги от создания до первых денег",
+  "virtual-influence.section6.title": "WHY THIS WORKS?",
+
+  "virtual-influence.section6.item1.title": "Generic AI guides",
+  "virtual-influence.section6.item1.text1": "Vague theory",
+  "virtual-influence.section6.item1.text2": "Hours of video fluff",
+  "virtual-influence.section6.item1.text3": "Outdated methods from 2025",
+  "virtual-influence.section6.item1.text4": "500-1000$ for access to the \"exclusive community\"",
+
+  "virtual-influence.section6.item2.title": "This guide",
+  "virtual-influence.section6.item2.text1": "Copy-paste prompts you use today",
+  "virtual-influence.section6.item2.text2": "Zero-fluff blueprint for instant action",
+  "virtual-influence.section6.item2.text3": "Updated January 2026",
+  "virtual-influence.section6.item2.text4": "Everything you need at a reasonable price. No subscriptions or upsells.",
 
   "virtual-influence.section7.title": "START TODAY",
   "virtual-influence.section7.item1": "You've been thinking about this for weeks. Every day you wait = another day someone else is building their audience.",
@@ -259,12 +272,11 @@
   "virtual-influence.section7.item3": "They started.",
 
   "virtual-influence.section8.title": "WHAT HAPPENS NEXT?",
-  "virtual-influence.section8.var1_title": "Option 1",
-  "virtual-influence.section8.var1_item1": "Click \"I want this\"",
-  "virtual-influence.section8.var1_item2": "Guide sent instantly",
-  "virtual-influence.section8.var1_item3": "This weekend — Create your character",
-  "virtual-influence.section8.var1_item4": "30 days — First 500-1K followers",
-  "virtual-influence.section8.var2_title": "Option 2",
+  "virtual-influence.section8.var1_title": "Option 2",
+  "virtual-influence.section8.var1_item1": "Click <strong>\"Buy now\"</strong> — Guide sent instantly",
+  "virtual-influence.section8.var1_item2": "This weekend — Create your character",
+  "virtual-influence.section8.var1_item3": "30 days — First 500-1K followers",
+  "virtual-influence.section8.var2_title": "Option 1",
   "virtual-influence.section8.var2_item1": "Keep scrolling",
   "virtual-influence.section8.var2_item2": "Be in the same place 6 months from now.",
 
@@ -274,7 +286,7 @@
   "virtual-influence.section9.title": "GET INSTANT ACCESS AND START TODAY",
   "virtual-influence.section9.text1": "P.S. This is not a get-rich-quick scheme. It’s a real system that requires work. But if you’re ready to invest a weekend and a few hours a week — the results will come. Proven.",
 
-  "virtual-influence.section10.title": "Quick answers to common questions",
+  "virtual-influence.section10.title": "FAQ",
   "virtual-influence.section10.question1": "Is it legal?",
   "virtual-influence.section10.answer1": "100% legal. Virtual influencers are mainstream (LIL MIQUELA, IMMA, SHUDU)",
   "virtual-influence.section10.question2": "Is it expensive?",
