@@ -15,6 +15,11 @@
   padding-bottom: 76px;
 }
 
+.content {
+  padding: 0 12px;
+  margin-top: 32px;
+}
+
 .imagesBox {
   width: 100%;
   min-height: 0;
@@ -22,8 +27,18 @@
 }
 
 .title {
-  padding: 0 12px;
-  margin-top: 16px;
+  /* padding: 0 12px; */
+}
+
+.bestseller {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #FD5758;
+  margin-bottom: 4px;
 }
 
 .line {
@@ -35,7 +50,7 @@
 .textBox {
   flex-grow: 1;
   margin-top: 8px;
-  padding: 0 12px;
+  /* padding: 0 12px; */
 }
 
 .text {
@@ -122,11 +137,10 @@
 
 @media (min-width: 760px) {
   .title {
-    padding: 0 24px;
-    margin-top: 24px;
   }
-  .main {
-
+ 
+  .content {
+    padding: 0;
   }
   .line {
     flex-direction: row;

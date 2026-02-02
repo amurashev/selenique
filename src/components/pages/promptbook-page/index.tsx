@@ -28,7 +28,7 @@ import Categories from "./categories";
 
 export default function PromptbookPage({ data, related = [] }: { data: PromptBook, related?: PromptBook[] }) {
   const { formatMessage, locale } = useIntl();
-  const { id, gumroad, name, fileType, type, text, images, isDisabled } = data;
+  const { id, gumroad, name, isBestseller, type, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
 
@@ -55,52 +55,60 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
         </div>
-        <h1 className={styles.title}>{name}</h1>
 
-        <div className={styles.line}>
-          <div className={styles.textBox}>
-            <Advantages data={data} />
+        <div className={styles.content}>
 
-            {packsNumber > 1 && (data as PromptBook).pack && (
-              <Bundle data={data as PromptBook} />
-            )}
+          {isBestseller && (
+            <div className={styles.bestseller}>Bestseller</div>
+          )}
+          <h1 className={styles.title}>{name}</h1>
 
-            <div
-              className={styles.text}
-              dangerouslySetInnerHTML={{
-                __html: text,
-              }}
-            />
+          <div className={styles.line}>
+            <div className={styles.textBox}>
+              <Advantages data={data} />
 
-            <Categories data={data} />
+              {packsNumber > 1 && (data as PromptBook).pack && (
+                <Bundle data={data as PromptBook} />
+              )}
 
-            <Link className={styles.seeAllButton} href={backUrl}>
-              {type !== "guide"
-                ? formatMessage({ id: "prompt_books.see_all" })
-                : formatMessage({ id: "guides.see_all" })
-              }
-            </Link>
-
-            {showRussiaHints && (
-              <div className={styles.hint}>
-                {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-              </div>
-            )}
-          </div>
-
-          <div className={styles.rightSide}>
-            {!isDisabled ? (
-              <RightSide
-                data={data}
-                backUrl={backUrl}
-                purchaseLink={purchaseLink}
+              <div
+                className={styles.text}
+                dangerouslySetInnerHTML={{
+                  __html: text,
+                }}
               />
-            ) : (
-              <div className={styles.rightSideBox}>
-                <div className={styles.naMessage}>Not available for now</div>
-              </div>
-            )}
+
+              <Categories data={data} />
+
+              <Link className={styles.seeAllButton} href={backUrl}>
+                {type !== "guide"
+                  ? formatMessage({ id: "prompt_books.see_all" })
+                  : formatMessage({ id: "guides.see_all" })
+                }
+              </Link>
+
+              {showRussiaHints && (
+                <div className={styles.hint}>
+                  {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+                </div>
+              )}
+            </div>
+
+            <div className={styles.rightSide}>
+              {!isDisabled ? (
+                <RightSide
+                  data={data}
+                  backUrl={backUrl}
+                  purchaseLink={purchaseLink}
+                />
+              ) : (
+                <div className={styles.rightSideBox}>
+                  <div className={styles.naMessage}>Not available for now</div>
+                </div>
+              )}
+            </div>
           </div>
+
         </div>
 
         {related.length !== 0 && (
@@ -109,7 +117,7 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
 
         <Reviews />
-      
+
         {gumroad.slug && (
           <div className={styles.mobileButton}>
             <Link className={styles.link} href={purchaseLink} target="_blank">

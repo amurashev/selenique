@@ -138,6 +138,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
     },
+    isBestseller: true,
     tags: ["beauty"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
@@ -541,6 +542,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
     name: "22 Business Man Headshot Prompts",
     number: 22,
+    isBestseller: true,
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
     },
@@ -696,6 +698,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     boostyId: "19a1dd70-bd6b-4624-a662-706574bf40a5",
     name: "35 Cosmetic Product Photo Prompts",
     number: 35,
+    isBestseller: true,
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",]
     },
@@ -832,6 +835,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
     name: "The Ultra-Realistic AI Influencer Kit (170+ Prompts)",
     number: 170,
+    isBestseller: true,
     links: {},
     tags: ["lifestyle", "women"],
     fileType: "link",

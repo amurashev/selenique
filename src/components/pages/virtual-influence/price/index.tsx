@@ -16,6 +16,8 @@ export default function Price(
   const oldPrice = { en: 79, ru: 4990 }
   const discount = 20;
 
+  const showRussiaHints = ['en', "ru"].includes(locale)
+
   // Текущая дата (без времени, чтобы не было дробных дней)
   // const today = new Date();
   // today.setHours(0, 0, 0, 0);
@@ -52,6 +54,12 @@ export default function Price(
           {formatMessage({ id: "common.buy_now_russia" })}
         </Link>
       </div>
+
+      {showRussiaHints && (
+                <div className={styles.hint}>
+                  {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+                </div>
+              )}
 
       <p className={styles.summary}>
         {formatMessage({ id: `virtual-influence.section9.text1` })}

@@ -58,6 +58,12 @@
   font-size: 18px;
 }
 
+.hint {
+  font-size: 13px;
+  color: var(--text);
+  text-align: center;
+  margin-top: 16px;
+}
 
 @media (min-width: 840px) {
  

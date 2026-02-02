@@ -34,6 +34,7 @@ export type DigitalItem = {
   }
   boostyId?: string
   isDisabled?: boolean;
+  isBestseller?: boolean
   name: string;
   price: PriceType;
   summary?: string;
