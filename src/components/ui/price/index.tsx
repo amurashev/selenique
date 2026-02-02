@@ -21,9 +21,6 @@ export const PriceWithUnit = ({
 }) => {
   const { formatMessage, locale } = useIntl();
 
-  // TODO: l18n
-  let currency = "";
-
   const price = value[locale] || value.en
 
   let fromLabel = "";
