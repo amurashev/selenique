@@ -24,29 +24,30 @@ export const PriceWithUnit = ({
   // TODO: l18n
   let currency = "";
 
-  if (locale === "en") currency = "$";
-  if (locale === "ru") currency = " р.";
-
-  const price = value[locale];
+  const price = value[locale] || value.en
 
   let fromLabel = "";
 
   if (locale === "en") fromLabel = "from";
   if (locale === "ru") fromLabel = "от";
 
+  let priceWithCurrency = "$" + price.toFixed(2);
+  // if (locale === "en") priceWithCurrency = "$" + price.toFixed(2);
+  if (locale === "ru") priceWithCurrency = price +" р.";
+
+
   if (unit) {
     return (
       <>
-        {isFrom ? fromLabel + " " : ""} {price}
-        {currency}/{formatMessage({ id: `common.prices.types.${unit}` })}
+        {isFrom ? fromLabel + " " : ""} {priceWithCurrency}
+        /{formatMessage({ id: `common.prices.types.${unit}` })}
       </>
     );
   }
 
   return (
     <>
-      {isFrom ? fromLabel + " " : ""} {price}
-      {currency}
+      {isFrom ? fromLabel + " " : ""} {priceWithCurrency}
     </>
   );
 };

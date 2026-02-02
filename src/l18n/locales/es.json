@@ -8,6 +8,7 @@
   "common.prices.types.photo": "foto",
   "common.prices.types.angle": "ángulo",
   "common.price": "Precio",
+  "common.discount": "{discount}% de descuento",
   "common.models.sex.women": "Mujeres",
   "common.models.sex.men": "Hombres",
   "locale": "Español",

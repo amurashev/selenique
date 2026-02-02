@@ -12,7 +12,7 @@ export default function Price(
 ) {
   const { formatMessage, locale } = useIntl();
 
-  const price = { en: 67, ru: 3990 }
+  const price = { en: 65, ru: 3990 }
   const oldPrice = { en: 79, ru: 4990 }
   const discount = 20;
 
@@ -40,6 +40,9 @@ export default function Price(
             <PriceWithUnit value={oldPrice} />
           </div>
         </div>
+        <div className={styles.discountInfo}>
+          {formatMessage({ id: "common.discount" }, { discount })}
+        </div>
         {/* <div className={styles.discountInfo}>
           {discount}% off • Sale ends in {daysLeft} days
         </div> */}
@@ -56,10 +59,10 @@ export default function Price(
       </div>
 
       {showRussiaHints && (
-                <div className={styles.hint}>
-                  {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-                </div>
-              )}
+        <div className={styles.hint}>
+          {formatMessage({ id: "prompt_books.payment_russia_hint" })}
+        </div>
+      )}
 
       <p className={styles.summary}>
         {formatMessage({ id: `virtual-influence.section9.text1` })}
