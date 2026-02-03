@@ -29,7 +29,7 @@ export const settings = {
   lazyLoad: true,
   speed: 500,
   centerMode: false,
-  slidesToShow: 3,
+  slidesToShow: 3.3,
   slidesToScroll: 1,
   nextArrow: null,
   prevArrow: null,
@@ -37,7 +37,7 @@ export const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 3.3,
         slidesToScroll: 1,
       },
     },

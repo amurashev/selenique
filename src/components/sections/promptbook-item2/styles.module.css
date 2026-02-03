@@ -2,6 +2,7 @@
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  display: block;
   /* background: #fff; */
   /* padding: 12px; */
 
