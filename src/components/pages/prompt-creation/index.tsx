@@ -5,10 +5,6 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 
 import styles from "./page.module.css";
-import {
-  promptbooksOrdered,
-  promptbooksBundlesOrdered,
-} from "@/constants/promptbooks";
 
 import { homePage } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";

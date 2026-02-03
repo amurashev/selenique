@@ -50,6 +50,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     boostyId: "40f7cb76-5db0-419a-b3f5-55a640de03f9",
     name: "50 High-Fashion Editorial Prompts Vol.2",
     number: 50,
+    isBestseller: true,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
     },
@@ -247,6 +248,43 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "32-business-man-photo-prompts": {
+    id: 24,
+    gumroad: {
+      id: "toebl",
+      slug: "32-business-man-photo-prompts",
+    },
+    name: "32 AI Business Man Photo Prompts",
+    number: 32,
+    links: {
+      // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
+    },
+    tags: ["business", "men"],
+    mainCategory: "business",
+    type: "pack",
+    images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    price: {
+      ru: 1000,
+      en: 9.9,
+    },
+    summary:
+      "This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
+    text: `
+    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content. </p>
+    <h3>📸 What’s inside:</h3>
+    <ul>
+    <li>PDF file with beautifully designed prompt pages</li>
+    <li>Each page includes the full text prompt and its visual reference</li>
+    </ul>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Look confident and professional without expensive photoshoots</li>
+    <li>Create brand-ready portraits in minutes</li>
+    <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
+    </ul>
+    `,
+  },
+
   "30-christmas-woman-photo-prompts": {
     id: 8,
     gumroad: {
@@ -429,6 +467,43 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "15-ai-women-headshot-prompts-professional": {
+    id: 15,
+    gumroad: {
+      id: "kjrgzn",
+      slug: "15-ai-women-headshot-prompts",
+    },
+    boostyId: "7fe0af5d-fcba-4346-8e65-39963eb91e60",
+    name: "15 Women Headshot Professional Prompts",
+    number: 15,
+    links: {
+      // cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
+    },
+    tags: ["business", "women", "headshot"],
+    mainCategory: "business",
+    type: "pack",
+    images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
+    price: {
+      ru: 1000,
+      en: 9,
+    },
+    summary:
+      "This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.",
+    text: `
+    <p>💼 Create confident, professional portraits with AI — perfect for LinkedIn, websites, and personal branding.This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.</p>
+    <h3>📸 What’s included:</h3>
+    <p>PDF file with 15 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
+    <h3>💫 Why you’ll love it:</h3>
+    <ul>
+    <li>Look polished and professional without booking a photographer</li>
+    <li>Create portraits in minutes that elevate your brand</li>
+    <li>Ideal for entrepreneurs, coaches, and creatives</li>
+    </ul>
+    `,
+  },
+
+
+
   "ai-photo-prompts-30-woman-work-lifestyle": {
     id: 14,
     gumroad: {
@@ -463,39 +538,26 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-  "15-ai-women-headshot-prompts-professional": {
-    id: 15,
+  "faceless-aesthetic-100-ai-photo-prompts": {
+    id: 39,
     gumroad: {
-      id: "kjrgzn",
-      slug: "15-ai-women-headshot-prompts",
+      id: "null",
+      slug: "faceless-aesthetic-100-ai-photo-prompts",
     },
-    boostyId: "7fe0af5d-fcba-4346-8e65-39963eb91e60",
-    name: "15 Women Headshot Professional Prompts",
-    number: 15,
-    links: {
-      // cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
-    },
-    tags: ["business", "women", "headshot"],
-    mainCategory: "business",
+    name: "Faceless Aesthetic — 100 AI Photo Prompts",
+    number: 100,
+    tags: ["lifestyle"],
+    mainCategory: "lifestyle",
     type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
+    fileType: "link",
+    images: [1, 3, 4, 5, 6, 7, 8],
     price: {
       ru: 1000,
-      en: 9,
+      en: 18,
     },
     summary:
-      "This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.",
-    text: `
-    <p>💼 Create confident, professional portraits with AI — perfect for LinkedIn, websites, and personal branding.This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.</p>
-    <h3>📸 What’s included:</h3>
-    <p>PDF file with 15 ready-to-use AI prompts + reference pictures. Compatible with Gemini, Nano Banana, Higgsfield, Leonardo AI, and other tools supporting Character Reference Works with your own face photo or model image.</p>
-    <h3>💫 Why you’ll love it:</h3>
-    <ul>
-    <li>Look polished and professional without booking a photographer</li>
-    <li>Create portraits in minutes that elevate your brand</li>
-    <li>Ideal for entrepreneurs, coaches, and creatives</li>
-    </ul>
-    `,
+      "A curated collection of 100 high-quality AI photo prompts designed for creating elegant, faceless lifestyle imagery in a muted color palette.",
+    text: t39,
   },
 
   "50-old-money-ai-photo-prompts-vol1": {
@@ -632,6 +694,38 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
+  "8-red-carpet-couple-ai-photo-prompts": {
+    id: 22,
+    gumroad: {
+      id: "mgkyn",
+      slug: "8-red-carpet-couple-ai-photo-prompts",
+    },
+    name: "8 Red Carpet Couple AI Photo Prompts",
+    number: 8,
+    tags: ["red_carpet", "men", "women"],
+    mainCategory: "red_carpet",
+    type: "pack",
+    images: [1, 2, 3, 4, 5],
+    price: {
+      ru: 1000,
+      en: 6,
+    },
+    summary:
+      "This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.",
+    text: `
+    <p>💫 Step into the spotlight together!</p>
+    <p>This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.</p>
+    <h3>📸 What’s included:</h3>
+    <p>PDF with 8 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
+    <h3>✨ Why you’ll love it:</h3>
+    <ul>
+    <li>Transform your photos into red carpet moments</li>
+    <li>Save time and money on luxury shoots</li>
+    <li>Perfect for couples, creators, and fashion brands</li>
+    </ul>
+    `,
+  },
+
   "8-red-carpet-men-photo-prompts-ai": {
     id: 20,
     gumroad: {
@@ -696,38 +790,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     <li>Transform your photo into a red carpet masterpiece</li>
     <li>Save time and money on luxury fashion shoots</li>
     <li>Perfect for fashion brands, creators, and social media content</li>
-    </ul>
-    `,
-  },
-
-  "8-red-carpet-couple-ai-photo-prompts": {
-    id: 22,
-    gumroad: {
-      id: "mgkyn",
-      slug: "8-red-carpet-couple-ai-photo-prompts",
-    },
-    name: "8 Red Carpet Couple AI Photo Prompts",
-    number: 8,
-    tags: ["red_carpet", "men", "women"],
-    mainCategory: "red_carpet",
-    type: "pack",
-    images: [1, 2, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 6,
-    },
-    summary:
-      "This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.",
-    text: `
-    <p>💫 Step into the spotlight together!</p>
-    <p>This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.</p>
-    <h3>📸 What’s included:</h3>
-    <p>PDF with 8 ready-to-use AI photo prompts + reference pictures Compatible with Gemini, Nano Banana, Higgsfield Works with Character Reference tools for realistic, consistent results</p>
-    <h3>✨ Why you’ll love it:</h3>
-    <ul>
-    <li>Transform your photos into red carpet moments</li>
-    <li>Save time and money on luxury shoots</li>
-    <li>Perfect for couples, creators, and fashion brands</li>
     </ul>
     `,
   },
@@ -803,44 +865,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     <p>Designers, cosmetic brand owners, online shops, content creators and marketers who need polished beauty visuals for e-commerce, portfolios, ads and social media.</p>
     `,
   },
-
-  "32-business-man-photo-prompts": {
-    id: 24,
-    gumroad: {
-      id: "toebl",
-      slug: "32-business-man-photo-prompts",
-    },
-    name: "32 AI Business Man Photo Prompts",
-    number: 32,
-    links: {
-      // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
-    },
-    tags: ["business", "men"],
-    mainCategory: "business",
-    type: "pack",
-    images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-    price: {
-      ru: 1000,
-      en: 9.9,
-    },
-    summary:
-      "This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
-    text: `
-    <p>💼 Elevate your professional image with AI. This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content. </p>
-    <h3>📸 What’s inside:</h3>
-    <ul>
-    <li>PDF file with beautifully designed prompt pages</li>
-    <li>Each page includes the full text prompt and its visual reference</li>
-    </ul>
-    <h3>💫 Why you’ll love it:</h3>
-    <ul>
-    <li>Look confident and professional without expensive photoshoots</li>
-    <li>Create brand-ready portraits in minutes</li>
-    <li>Perfect for entrepreneurs, coaches, designers, and corporate creatives</li>
-    </ul>
-    `,
-  },
-
   "8-advertising-photo-prompts-vol-1": {
     id: 26,
     gumroad: {
@@ -1133,27 +1157,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     summary:
       "Inside are 16 carefully designed photo prompts focused on women-centered Valentine aesthetics — red tones, glossy hearts, elegant poses, and a mix of playful flirtation with classic editorial polish. These prompts help you create images that feel festive, confident, and visually irresistible.",
     text: t38,
-  },
-  "faceless-aesthetic-100-ai-photo-prompts": {
-    id: 39,
-    gumroad: {
-      id: "null",
-      slug: "faceless-aesthetic-100-ai-photo-prompts",
-    },
-    name: "Faceless Aesthetic — 100 AI Photo Prompts",
-    number: 100,
-    tags: ["lifestyle"],
-    mainCategory: "lifestyle",
-    type: "pack",
-    fileType: "link",
-    images: [1, 3, 4, 5, 6, 7, 8],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
-    summary:
-      "A curated collection of 100 high-quality AI photo prompts designed for creating elegant, faceless lifestyle imagery in a muted color palette.",
-    text: t39,
   },
   "25-creative-portraits-photo-prompts": {
     id: 40,
