@@ -69,4 +69,5 @@
   box-shadow: 1px 1px 8px hsl(0deg 0% 20% / 80%);
 
   background-color: #FD5758;
+  z-index: 10;
 }
