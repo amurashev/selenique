@@ -52,6 +52,7 @@ export type PromptBookRaw = DigitalItem & {
   pack?: number[]
   type?: "guide" | "bundle" | "pack"
   tags: PromptCategories[];
+  mainCategory?: PromptCategories
 };
 
 export type PromptBook = PromptBookRaw & {

@@ -7,7 +7,7 @@ import t29 from "./text/29";
 import t30 from "./text/30";
 import t31 from "./text/31";
 import t32 from "./text/32";
-import t33 from "./text/33";
+// import t33 from "./text/33";
 import t34 from "./text/34";
 import t35 from "./text/35";
 import t36 from "./text/36";
@@ -15,7 +15,7 @@ import t37 from "./text/37";
 import t38 from "./text/38";
 import t39 from "./text/39";
 import t40 from "./text/40";
-import t41 from "./text/41";
+// import t41 from "./text/41";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
@@ -29,6 +29,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
     },
+    mainCategory: "fashion",
     tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
@@ -52,7 +53,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
     },
+    mainCategory: "fashion",
     tags: ["fashion", "women"],
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     price: {
       ru: 1000,
@@ -71,7 +74,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "50 High-Fashion Editorial Prompts Vol.3",
     number: 50,
     links: {},
+    mainCategory: "fashion",
     tags: ["fashion", "women"],
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,
@@ -94,6 +99,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
     },
     tags: ["fashion", "men"],
+    mainCategory: "fashion",
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -116,6 +123,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291849761-50-Men-Fashion-Editorial-Prompts-V1",
     },
     tags: ["fashion", "men"],
+    mainCategory: "fashion",
+    type: "pack",
     images: [1, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,
@@ -140,6 +149,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     isBestseller: true,
     tags: ["beauty"],
+    mainCategory: "beauty",
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -173,6 +184,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291904516-50-Jewelry-Product-Photo-AI-Prompts",
     },
     tags: ["jewelry", "product"],
+    mainCategory: "product",
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -206,6 +219,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
     },
     tags: ["fashion", "women", "maternity"],
+    mainCategory: "fashion", // TODO?
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8],
     price: {
       ru: 1000,
@@ -244,6 +259,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291912434-30-Christmas-Woman-Photo-Prompts",
     },
     tags: ["christmas", "women"],
+    mainCategory: "christmas",
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8],
     price: {
       ru: 1000,
@@ -277,6 +294,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291912454-40-Christmas-Kids-Photo-Prompts",
     },
     tags: ["christmas", "kids"],
+    mainCategory: "christmas",
+    type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -316,6 +335,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291916086-30-Business-Woman-Photo-Prompts",
     },
     tags: ["business", "women"],
+    mainCategory: "business",
+    type: "pack",
     images: [1, 3, 4, 6, 7, 8, 9, 10],
     price: {
       ru: 1000,
@@ -348,6 +369,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291921616-60-Fantasy-Photo-Prompts",
     },
     tags: ["fantasy"],
+    mainCategory: "fantasy",
+    type: "pack",
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,
@@ -382,6 +405,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291924923-25-Wizard-School-Photo-Prompts",
     },
     tags: ["fantasy"],
+    mainCategory: "fantasy",
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -416,6 +441,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "https://creativemarket.com/AlenaMurasheva/291933545-Woman-Work-Lifestyle-Photo-Prompts",
     },
     tags: ["business", "women", "lifestyle"],
+    mainCategory: "business",
+    type: "pack",
     images: [1, 3, 4, 17, 18, 19, 20, 21, 22],
     price: {
       ru: 1000,
@@ -449,6 +476,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291933554-Women-Headshot-Professional-Prompts",
     },
     tags: ["business", "women", "headshot"],
+    mainCategory: "business",
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
     price: {
       ru: 1000,
@@ -481,6 +510,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291933657-50-Old-Money-AI-Photo-Prompts-Vol.1",
     },
     tags: ["fashion", "women", "lifestyle"],
+    mainCategory: "lifestyle",
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -513,6 +544,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
     },
     tags: ["fashion", "women", "lifestyle"],
+    mainCategory: "lifestyle",
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -547,6 +580,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291942431-22-Business-Man-Headshot-Prompts",
     },
     tags: ["business", "men", "headshot"],
+    mainCategory: "business",
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -575,6 +610,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291948535-Muslim-Women-Business-Photo-Prompts",
     },
     tags: ["business", "women"],
+    mainCategory: "business",
+    type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 21, 22, 23, 24, 25],
     price: {
       ru: 1000,
@@ -605,6 +642,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 8,
     links: {},
     tags: ["red_carpet", "men"],
+    mainCategory: "red_carpet",
+    type: "pack",
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -638,6 +677,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       cm: "",
     },
     tags: ["red_carpet", "women"],
+    mainCategory: "red_carpet",
+    type: "pack",
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -668,6 +709,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "8 Red Carpet Couple AI Photo Prompts",
     number: 8,
     tags: ["red_carpet", "men", "women"],
+    mainCategory: "red_carpet",
+    type: "pack",
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -703,6 +746,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",]
     },
     tags: ["cosmetic", "product"],
+    mainCategory: "product",
+    type: "pack",
     images: [2, 4, 5, 6, 7, 8, 9, 10, 11],
     price: {
       ru: 1000,
@@ -736,6 +781,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
     },
     tags: ["cosmetic", "product"],
+    mainCategory: "product",
+    type: "pack",
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     price: {
       ru: 1000,
@@ -769,6 +816,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       // cm: "https://creativemarket.com/AlenaMurasheva/291950710-35-AI-Prompts-for-Cosmetic-Products",
     },
     tags: ["business", "men"],
+    mainCategory: "business",
+    type: "pack",
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     price: {
       ru: 1000,
@@ -802,6 +851,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 8,
     links: {},
     tags: ["fantasy"],
+    mainCategory: "fantasy",
+    type: "pack",
     images: [1, 2, 3, 4, 5],
     price: {
       ru: 1000,
@@ -838,6 +889,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     isBestseller: true,
     links: {},
     tags: ["lifestyle", "women"],
+    mainCategory: "lifestyle",
+    type: "pack",
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
     price: {
@@ -982,6 +1035,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "120 Product Podiums Photo Prompts",
     number: 120,
     tags: ["product"],
+    mainCategory: "product",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],
     price: {
@@ -1002,6 +1057,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "32 Monochromatic Studio Portrait Prompt Pack",
     number: 32,
     tags: ["studio"],
+    mainCategory: "studio",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7],
     price: {
@@ -1022,6 +1079,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "120 White Frame Interior Mockup Prompts",
     number: 120,
     tags: ["product"],
+    mainCategory: "product",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],
     price: {
@@ -1042,6 +1101,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "16 Red Backdrop Studio — Photo Prompt Pack",
     number: 16,
     tags: ["studio"],
+    mainCategory: "studio",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5],
     price: {
@@ -1061,6 +1122,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "16 Valentine’s Day Women — Photo Prompt Pack",
     number: 16,
     tags: ["women", "fashion"],
+    mainCategory: "fashion",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5],
     price: {
@@ -1080,6 +1143,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     name: "Faceless Aesthetic — 100 AI Photo Prompts",
     number: 100,
     tags: ["lifestyle"],
+    mainCategory: "lifestyle",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],
     price: {
@@ -1098,7 +1163,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     },
     name: "25 Creative Portraits — Photo Prompts",
     number: 25,
-    tags: ["portrait"],
+    tags: ["fashion"],
+    mainCategory: "fashion",
+    type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6],
     price: {
