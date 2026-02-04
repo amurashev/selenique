@@ -39,19 +39,23 @@ const CATEGORIES: PromptCategories[] = [
 ]
 
 const PROMPTS_BY_CATEGORIES: Record<string, PromptBook[]> = {}
+const BEST_SELLERS: PromptBook[] = []
 
 Object.keys(PROMTBOOKS).forEach(slug => {
-  const { mainCategory, type } = PROMTBOOKS[slug]
+  const { mainCategory, type, isBestseller } = PROMTBOOKS[slug]
 
   if (mainCategory && type === 'pack') {
     if (!PROMPTS_BY_CATEGORIES[mainCategory]) {
       PROMPTS_BY_CATEGORIES[mainCategory] = []
     }
 
-    PROMPTS_BY_CATEGORIES[mainCategory].push({
-      ...PROMTBOOKS[slug],
-      slug,
-    })
+    const packData = { ...PROMTBOOKS[slug], slug }
+
+    PROMPTS_BY_CATEGORIES[mainCategory].push(packData)
+
+    if (isBestseller) {
+      BEST_SELLERS.push(packData)
+    }
   }
 })
 
@@ -82,6 +86,19 @@ export default function PromptbookListPage() {
             list={[...promptbooksOrdered]}
           /> */}
           <div className={styles.categories}>
+            <div>
+              <div className={styles.titleLine}>
+                <h3>{formatMessage({ id: 'common.best_sellers' })}</h3>
+              </div>
+                <Slider {...settings} className={styles.slider}>
+                  {BEST_SELLERS.map(promptPack => (
+                    <div key={promptPack.id} className={styles.item}>
+                      <PromptbookItem item={promptPack} />
+                    </div>
+                  ))}
+                </Slider>
+            </div>
+
             {CATEGORIES.map(category => (
               <div key={category}>
                 <div className={styles.titleLine}>
@@ -100,7 +117,7 @@ export default function PromptbookListPage() {
                       </div>
                     ))}
                   </Slider>
-                  )}
+                )}
               </div>
             ))}
           </div>

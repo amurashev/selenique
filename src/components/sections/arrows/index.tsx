@@ -43,17 +43,19 @@ export function ChevronLeft({ size = 32, stroke = 2, color = "currentColor" }) {
   );
 }
 
-export function SampleNextArrow({ onClick }: { onClick?: () => void }) {
+export function SampleNextArrow({ onClick, className }: { onClick?: () => void, className: string }) {
+  const isDisabled = className.includes('slick-disabled')
   return (
-    <div className={styles.rightArrow} onClick={onClick}>
+    <div className={`${styles.rightArrow} ${isDisabled ? styles.rightArrowDisabled : ""}`} onClick={onClick}>
       <ChevronRight />
     </div>
   );
 }
 
-export function SamplePrevArrow({ onClick }: { onClick?: () => void }) {
+export function SamplePrevArrow({ onClick, className }: { onClick?: () => void, className: string }) {
+  const isDisabled = className.includes('slick-disabled')
   return (
-    <div className={styles.leftArrow} onClick={onClick}>
+    <div className={`${styles.leftArrow} ${isDisabled ? styles.leftArrowDisabled : ""}`} onClick={onClick}>
       <ChevronLeft />
     </div>
   );
