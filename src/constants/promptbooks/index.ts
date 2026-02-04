@@ -216,6 +216,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     boostyId: "4f29f408-09e8-4e27-b308-84fcee7c2de2",
     name: "24 AI Maternity Photoshoot Prompts",
     number: 24,
+    isBestseller: true,
     links: {
       // cm: "https://creativemarket.com/AlenaMurasheva/291909969-24-AI-Maternity-Photoshoot-Prompts",
     },
