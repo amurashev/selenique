@@ -59,12 +59,12 @@ export const settings = {
 } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 const CATEGORIES: PromptCategories[] = [
-  'fashion',
   'business',
+  'lifestyle',
+  'fashion',
   'beauty',
   'product',
   'fantasy',
-  'lifestyle',
   "studio",
   // "portrait",
   // 'christmas', // TODO?
