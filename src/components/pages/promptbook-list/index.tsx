@@ -51,7 +51,7 @@ export const settings = {
       arrows: false,
       breakpoint: 480,
       settings: {
-        slidesToShow: 2.3,
+        slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
