@@ -22,41 +22,8 @@ import Footer from "@/components/layout/footer";
 import Categories from "./categories";
 import { PromptBook, PromptCategories } from "@/components/types";
 import { getPromptCategoryShortLabel, getPromptCategoryTag } from "@/constants/prompts";
+import settings from "./settings";
 
-export const settings = {
-  dots: false,
-  infinite: false,
-  lazyLoad: true,
-  speed: 300,
-  centerMode: false,
-  slidesToShow: 3.3,
-  slidesToScroll: 1,
-  nextArrow: null,
-  prevArrow: null,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3.3,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2.3,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2.3,
-        slidesToScroll: 2,
-      },
-    },
-  ],
-} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 const CATEGORIES: PromptCategories[] = [
   'business',
