@@ -3,6 +3,7 @@
 import { useIntl } from "react-intl";
 import Link from "next/link";
 import Slider from "react-slick";
+import { useMetrica } from 'next-yandex-metrica';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +24,7 @@ import Categories from "./categories";
 import { PromptBook, PromptCategories } from "@/components/types";
 import { getPromptCategoryShortLabel, getPromptCategoryTag } from "@/constants/prompts";
 import settings from "./settings";
+import { useEffect } from "react";
 
 
 const CATEGORIES: PromptCategories[] = [
@@ -70,6 +72,11 @@ Object.keys(PROMPTS_BY_CATEGORIES).map(category => {
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
+  const { reachGoal } = useMetrica();
+
+  useEffect(() => {
+    reachGoal('promptListPage_open')
+  }, [])
 
   return (
     <>

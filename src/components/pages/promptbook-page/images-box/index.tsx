@@ -2,6 +2,7 @@
 
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,9 +23,10 @@ export default function ImagesBox({
     <Slider {...settings} className="mobileView">
       {images.map((item) => (
         <div key={item} className={styles.item}>
-          <img
+          <Image
             className={styles.image}
             src={`/${imageKey}/${id}/${item}.jpg`}
+            alt="Prompt book image"
           />
         </div>
       ))}

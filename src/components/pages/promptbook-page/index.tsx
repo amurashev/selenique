@@ -1,15 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useIntl } from "react-intl";
-import Slider from "react-slick";
 import Link from "next/link";
+import { useMetrica } from 'next-yandex-metrica';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
-import { Guide, PromptBook } from "@/components/types";
+import { PromptBook } from "@/components/types";
 
 import {
   promptBookListPageRoute,
@@ -19,7 +19,6 @@ import {
 import ImagesBox from "./images-box";
 import RightSide from "./right-side";
 import Related from "./related";
-import { ChevronLeft } from "@/components/sections/arrows";
 import Reviews from "./reviews";
 import ShortHeader from "@/components/layout/short-header";
 import Bundle from "./bundle";
@@ -28,6 +27,8 @@ import Categories from "./categories";
 
 export default function PromptbookPage({ data, related = [] }: { data: PromptBook, related?: PromptBook[] }) {
   const { formatMessage, locale } = useIntl();
+  const { reachGoal } = useMetrica();
+
   const { id, gumroad, name, isBestseller, type, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
@@ -38,19 +39,19 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
   const backUrl = backRoute.getUrl(locale)
 
-  // const purchaseLink = `https://gumroad.com/checkout?layout=profile&product=${gumroadId}&quantity=1&referrer=https%3A%2F%2Fseleniquestudio.gumroad.com%2F`;
   const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
 
   const showRussiaHints = ['en', "ru"].includes(locale)
 
+  useEffect(() => {
+    reachGoal('promptPage_open', {
+      id,
+    })
+  }, [])
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        {/* <div className={styles.backBox}>
-          <Link href={backUrl}>
-            <ChevronLeft size={28} />
-          </Link>
-        </div> */}
         <ShortHeader route={backRoute} title={name} color="white" />
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
@@ -120,7 +121,15 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
         {gumroad.slug && (
           <div className={styles.mobileButton}>
-            <Link className={styles.link} href={purchaseLink} target="_blank">
+            <Link
+              className={styles.link}
+              href={purchaseLink}
+              target="_blank"
+              onClick={() => {
+                reachGoal('promptPage_buyClick', {
+                  id,
+                })
+              }}>
               {formatMessage({ id: "common.buy_now" })}
             </Link>
           </div>
