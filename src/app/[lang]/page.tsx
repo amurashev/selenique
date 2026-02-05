@@ -7,8 +7,8 @@ import Layout from "@/components/layout";
 import { i18n, Locale } from "../../../i18n-config";
 import getDeviceType from "@/utils/device";
 
-const title = "Selenique Studio: We are a creative duo specializing in AI-powered visual content.",
-const description = "Our work combines technology and artistry to create images that feel authentic, expressive, and emotionally engaging. ✨We collaborate with brands and creators who value strong storytelling and distinctive aesthetics - from AI photoshoots and branded visuals to tailored prompt design.😎",
+const title = "Selenique Studio: We are a creative duo specializing in AI-powered visual content."
+const description = "Our work combines technology and artistry to create images that feel authentic, expressive, and emotionally engaging. ✨We collaborate with brands and creators who value strong storytelling and distinctive aesthetics - from AI photoshoots and branded visuals to tailored prompt design.😎"
 
 export const metadata: Metadata = {
   title,
