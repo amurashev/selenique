@@ -3,6 +3,10 @@
 import Link from "next/link";
 import { useIntl } from "react-intl";
 import { useEffect, useState } from "react";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
 
@@ -10,7 +14,6 @@ import "react-photo-album/rows.css";
 
 import {
   PROMTBOOKS,
-  promptbooksOrdered,
   guidesOrdered,
   promptbooksBundlesOrdered,
 } from "@/constants/promptbooks";
@@ -27,6 +30,10 @@ import { RowsPhotoAlbum } from "react-photo-album";
 import PromptbookList from "@/components/sections/promptbook-list";
 import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
+import { PromptBook } from "@/components/types";
+
+import PromptbookItem from "@/components/sections/promptbook-item2";
+import settings from "../promptbook-list/settings";
 
 const randomPhotos = PHOTOS.filter((item) => {
   const sourceFile = item.SourceFile.slice(8);
@@ -52,6 +59,22 @@ const photos = randomPhotos
   })
   .slice(0, 8);
 
+
+const BEST_SELLERS: PromptBook[] = []
+
+Object.keys(PROMTBOOKS).forEach(slug => {
+  const { mainCategory, type, isBestseller } = PROMTBOOKS[slug]
+
+  if (mainCategory && type === 'pack') {
+    const packData = { ...PROMTBOOKS[slug], slug }
+
+    if (isBestseller) {
+      BEST_SELLERS.push(packData)
+    }
+  }
+})
+
+
 export default function HomePage({
   deviceType,
 }: {
@@ -63,7 +86,6 @@ export default function HomePage({
 
   const isMobile = deviceType === "mobile";
   const rowHeight = isMobile ? 160 : 240;
-  const booksCount = isMobile ? 4 : 6;
 
   useEffect(() => {
     setIsMounted(true);
@@ -79,9 +101,16 @@ export default function HomePage({
           <Profile />
 
           <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.prompt_books.popular.title" })}</h3>
+            <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
             <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
-            <PromptbookList list={promptbooksOrdered.slice(0, booksCount)} />
+            
+            <Slider {...settings} className={styles.slider}>
+              {BEST_SELLERS.map(promptPack => (
+                <div key={promptPack.id} className={styles.item}>
+                  <PromptbookItem item={promptPack} />
+                </div>
+              ))}
+            </Slider>
 
             <div className={styles.buttonBox}>
               <Link
@@ -94,8 +123,18 @@ export default function HomePage({
           </div>
 
           <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.guides.title" })}</h3>
-            <PromptbookList list={guidesOrdered.slice(0, booksCount)} />
+            <h2>{formatMessage({ id: "home.guides.title" })}</h2>
+
+            <Slider {...settings} className={styles.slider}>
+              {guidesOrdered.map(slug => {
+                const promptPack = { ...PROMTBOOKS[slug], slug }
+                return (
+                  <div key={slug} className={styles.item}>
+                    <PromptbookItem item={promptPack} />
+                  </div>
+                )
+              })}
+            </Slider>
             <div className={styles.buttonBox}>
               <Link
                 className={styles.seeAll}
@@ -107,16 +146,24 @@ export default function HomePage({
           </div>
 
           <div className={styles.section}>
-            <h3>
+            <h2>
               {formatMessage({ id: "home.prompt_bundles.popular.title" })}
-            </h3>
-            <PromptbookList
-              list={promptbooksBundlesOrdered.slice(0, booksCount)}
-            />
+            </h2>
+
+            <Slider {...settings} className={styles.slider}>
+              {promptbooksBundlesOrdered.map(slug => {
+                const promptPack = { ...PROMTBOOKS[slug], slug }
+                return (
+                  <div key={slug} className={styles.item}>
+                    <PromptbookItem item={promptPack} />
+                  </div>
+                )
+              })}
+            </Slider>
           </div>
 
           <div className={styles.section}>
-            <h3>{formatMessage({ id: "home.portfolio.title" })}</h3>
+            <h2>{formatMessage({ id: "home.portfolio.title" })}</h2>
 
             {photos && isMounted && (
               <div className={styles.photos}>
