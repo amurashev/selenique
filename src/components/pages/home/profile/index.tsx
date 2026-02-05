@@ -9,6 +9,11 @@ const Profile = () => {
   return (
     <div className={styles.card}>
       <div className={styles.textBlock}>
+        <img
+          src={"/logo_red.jpg"}
+          alt={"Selenique.Studio"}
+          className={styles.imageDesktop}
+        />
         <div className={styles.lineBlock}>
           <h3 className={styles.title} dangerouslySetInnerHTML={{
             __html: formatMessage({ id: "home.profile.title" }),
@@ -16,7 +21,7 @@ const Profile = () => {
           <img
             src={"/logo_red.jpg"}
             alt={"Selenique.Studio"}
-            className={styles.image}
+            className={styles.imageMobile}
           />
         </div>
         
@@ -34,6 +39,8 @@ const Profile = () => {
             {formatMessage({ id: "home.profile.text4" })} 
           </p>
         </div>
+
+
 
         {/* <p className={styles.description}>
           💡 {formatMessage({ id: "home.profile.item1" })} <br />

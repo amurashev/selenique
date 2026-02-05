@@ -131,6 +131,34 @@ a {
   /* background-color: hsl(0deg 0% 0% / 30%); */
 }
 
+
+.singlePageCase {
+  margin-bottom: 0px;
+
+  .slick-slider {
+    margin-bottom: 0px;
+  }
+
+  .slick-dots {
+    bottom: 4px;
+    z-index: 8888;
+  }
+  .slick-dots li {
+    height: 24px;
+    width: 5px;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #ffffff;
+    opacity: 1;
+  }  
+  .slick-dots li button:before {
+    color: #ffffff;
+    opacity: 0.3;
+    line-height: 18px;
+    font-size: 7px;
+  }
+}
+
 .mobileView {
   .slick-dots li {
     height: 24px;

@@ -19,7 +19,7 @@ export default function ImagesBox({
 }) {
   const imageKey = "promptbooks"
   return (
-    <Slider {...settings} className="mobileView">
+    <Slider {...settings} className="singlePageCase">
       {images.map((item) => (
         <div key={item} className={styles.item}>
           <img
