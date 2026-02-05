@@ -25,7 +25,7 @@ const settings = {
       arrows: false,
       breakpoint: 600,
       settings: {
-        slidesToShow: 2.3,
+        slidesToShow: 2.1,
         slidesToScroll: 1,
       },
     },
@@ -33,7 +33,7 @@ const settings = {
       arrows: false,
       breakpoint: 480,
       settings: {
-        slidesToShow: 2.3,
+        slidesToShow: 2.1,
         slidesToScroll: 2,
       },
     },

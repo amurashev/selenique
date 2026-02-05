@@ -20,6 +20,7 @@ import ImagesBox from "./images-box";
 import RightSide from "./right-side";
 import Related from "./related";
 import Reviews from "./reviews";
+import { ChevronLeft } from "@/components/sections/arrows";
 import ShortHeader from "@/components/layout/short-header";
 import Bundle from "./bundle";
 import Advantages from "./advantages";
@@ -52,7 +53,12 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <ShortHeader route={backRoute} title={name} color="white" />
+        <div className={styles.backBox}>
+          <Link href={backRoute.getUrl(locale)} className={styles.backBoxLink}>
+            <ChevronLeft size={22} color={"#333333"} />
+          </Link>
+        </div>
+        {/* <ShortHeader route={backRoute} title={name} color="white" /> */}
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
         </div>
