@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 
 import HomePage from "@/components/pages/home";
 import Layout from "@/components/layout";
@@ -7,14 +7,22 @@ import Layout from "@/components/layout";
 import { i18n, Locale } from "../../../i18n-config";
 import getDeviceType from "@/utils/device";
 
-// export async function generateStaticParams() {
-//   return [{ lang: "en" }, { lang: "ru" }];
-// }
+const title = "Selenique Studio: We are a creative duo specializing in AI-powered visual content.",
+const description = "Our work combines technology and artistry to create images that feel authentic, expressive, and emotionally engaging. ✨We collaborate with brands and creators who value strong storytelling and distinctive aesthetics - from AI photoshoots and branded visuals to tailored prompt design.😎",
 
 export const metadata: Metadata = {
-  title: "Selenique Studio: We are a creative duo specializing in AI-powered visual content.",
-  description:
-    "Our work combines technology and artistry to create images that feel authentic, expressive, and emotionally engaging. ✨We collaborate with brands and creators who value strong storytelling and distinctive aesthetics - from AI photoshoots and branded visuals to tailored prompt design.😎",
+  title,
+  description,
+  openGraph: {
+    images: [
+      // TODO: Update
+      `https://www.selenique.space/promptbooks/promptbooks.jpg`,
+    ],
+    title,
+    description,
+    url: `https://www.selenique.space`,
+    type: "website",
+  },
 };
 
 export default async function HomeEntry({
