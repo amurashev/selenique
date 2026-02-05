@@ -4,10 +4,10 @@ import { useState } from "react";
 import { useIntl } from "react-intl";
 import Link from "next/link";
 
-import _creationsData from "../../../../local/prompts/creations.json"
-import _outfitData from "../../../../local/prompts/outfit.json"
-import _studioData from "../../../..//local/prompts/studio.json"
-import _posesData from "../../../../local/prompts/poses.json"
+import _creationsData from "./prompts/creations.json"
+import _outfitData from "./prompts/outfit.json"
+import _studioData from "./prompts/studio.json"
+import _posesData from "./prompts/poses.json"
 
 import styles from "./page.module.css";
 

@@ -1,0 +1,12 @@
+{
+  "standard_pose": "The subject standing straight, slightly turned towards the camera, one leg slightly forward",
+  "seated_pose": "The subject sitting on a chair or the floor, one leg bent at an angle, the other leg extended",
+  "hand_on_hip_pose": "The subject with one hand on the hip, the other arm relaxed by the side or raised",
+  "leaning_pose": "The subject leaning slightly forward to create a dynamic and engaging look",
+  "head_turn_pose": "The subject looking to the side instead of directly at the camera, adding a touch of mystery",
+  "dynamic_pose": "The subject in motion, such as stepping forward or turning the body for an energetic effect",
+  "accessory_pose": "The subject holding a bag or another accessory, emphasizing the details of the outfit",
+  "crossed_legs_pose": "The subject standing with crossed legs, creating an interesting silhouette",
+  "wall_lean_pose": "The subject leaning against a wall, giving a relaxed and casual appearance",
+  "group_pose": "Multiple models arranged in a balanced manner, creating a sense of connection and interaction"
+}
