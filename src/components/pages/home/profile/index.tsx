@@ -9,19 +9,31 @@ const Profile = () => {
   return (
     <div className={styles.card}>
       <div className={styles.textBlock}>
-        <h3 className={styles.title}>{formatMessage({ id: "home.profile.title" })} </h3>
-        <p className={styles.description}>
-          {formatMessage({ id: "home.profile.text1" })} 
-        </p>
-        <p className={styles.description}>
-          {formatMessage({ id: "home.profile.text2" })} 
-        </p>
-        <p className={styles.description}>
-          {formatMessage({ id: "home.profile.text3" })} 
-        </p>
-        <p className={styles.description}>
-          {formatMessage({ id: "home.profile.text4" })} 
-        </p>
+        <div className={styles.lineBlock}>
+          <h3 className={styles.title} dangerouslySetInnerHTML={{
+            __html: formatMessage({ id: "home.profile.title" }),
+          }} />
+          <img
+            src={"/logo_red.jpg"}
+            alt={"Selenique.Studio"}
+            className={styles.image}
+          />
+        </div>
+        
+        <div>
+          <p className={styles.description}>
+            {formatMessage({ id: "home.profile.text1" })} 
+          </p>
+          <p className={styles.description}>
+            {formatMessage({ id: "home.profile.text2" })} 
+          </p>
+          <p className={styles.description}>
+            {formatMessage({ id: "home.profile.text3" })} 
+          </p>
+          <p className={styles.description}>
+            {formatMessage({ id: "home.profile.text4" })} 
+          </p>
+        </div>
 
         {/* <p className={styles.description}>
           💡 {formatMessage({ id: "home.profile.item1" })} <br />
@@ -31,11 +43,6 @@ const Profile = () => {
           ✨ {formatMessage({ id: "home.profile.item5" })}  <br />
         </p> */}
       </div>
-      <img
-        src={"/logo_red.jpg"}
-        alt={"Selenique.Studio"}
-        className={styles.image}
-      />
     </div>
   );
 };
