@@ -79,7 +79,9 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
               <Advantages data={data} />
 
               {packsNumber > 1 && (data as PromptBook).pack && (
-                <Bundle data={data as PromptBook} />
+                <div className={styles.bundleBox}>
+                  <Bundle data={data as PromptBook} />
+                </div>
               )}
 
               <div
