@@ -25,6 +25,7 @@ import ShortHeader from "@/components/layout/short-header";
 import Bundle from "./bundle";
 import Advantages from "./advantages";
 import Categories from "./categories";
+import Header from "./header";
 
 export default function PromptbookPage({ data, related = [] }: { data: PromptBook, related?: PromptBook[] }) {
   const { formatMessage, locale } = useIntl();
@@ -44,6 +45,9 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
   const showRussiaHints = ['en', "ru"].includes(locale)
 
+
+  console.warn('data', data)
+
   useEffect(() => {
     reachGoal('promptPage_open', {
       id,
@@ -58,21 +62,12 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
             <ChevronLeft size={22} color={"#333333"} />
           </Link>
         </div>
-        {/* <ShortHeader route={backRoute} title={name} color="white" /> */}
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
         </div>
 
         <div className={styles.content}>
-
-          {/* {isBestseller && (
-            <div className={styles.bestseller}>Bestseller</div>
-          )} */}
-          <h1 className={styles.title}>{name}</h1>
-          <div className={styles.categoriesBox}>
-            <Categories data={data} />
-          </div>
-          
+          <Header data={data} />
 
           <div className={styles.line}>
             <div className={styles.textBox}>
@@ -127,7 +122,7 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
             }
           </Link>
           <div className={styles.reviewBox}><Reviews /></div>
-         
+
         </div>
 
         {gumroad.slug && (

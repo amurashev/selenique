@@ -1,0 +1,57 @@
+.bestseller {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #FD5758;
+  margin-bottom: 4px;
+}
+
+.title {
+  /* padding: 0 12px; */
+  /* text-align: center; */
+  max-width: 320px;
+  /* margin: 0 auto; */
+}
+
+.categoriesBox {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-top: 16px;
+  padding-bottom: 8px;
+}
+
+.startBox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.ratingBox {
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  /* font-size: 16px; */
+  /* font-weight: 700; */
+  gap: 6px;
+  margin-top: 4px;
+  /* margin-bottom: 16px; */
+
+  strong {
+    color: var(--header);
+  }
+}
+
+.divider {
+  color: var(--text-inversive);
+}
+
+@media (min-width: 760px) {
+  .title {
+    max-width: 600px;
+  }
+}
