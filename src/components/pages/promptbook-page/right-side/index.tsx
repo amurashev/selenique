@@ -64,7 +64,7 @@ export default function RightSide({
       <div className={styles.links}>
         {gumroad.slug && (
           <Link className={styles.link} href={purchaseLink} target="_blank">
-            {formatMessage({ id: "common.buy_now" })}
+            {formatMessage({ id: "common.continue" })}
           </Link>
         )}
 

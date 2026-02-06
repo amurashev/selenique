@@ -65,10 +65,14 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
         <div className={styles.content}>
 
-          {isBestseller && (
+          {/* {isBestseller && (
             <div className={styles.bestseller}>Bestseller</div>
-          )}
+          )} */}
           <h1 className={styles.title}>{name}</h1>
+          <div className={styles.categoriesBox}>
+            <Categories data={data} />
+          </div>
+          
 
           <div className={styles.line}>
             <div className={styles.textBox}>
@@ -84,15 +88,6 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
                   __html: text,
                 }}
               />
-
-              <Categories data={data} />
-
-              <Link className={styles.seeAllButton} href={backUrl}>
-                {type !== "guide"
-                  ? formatMessage({ id: "prompt_books.see_all" })
-                  : formatMessage({ id: "guides.see_all" })
-                }
-              </Link>
 
               {showRussiaHints && (
                 <div className={styles.hint}>
@@ -118,12 +113,20 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
         </div>
 
-        {related.length !== 0 && (
-          <Related related={related} />
-        )}
 
-
-        <Reviews />
+        <div className={styles.content}>
+          {related.length !== 0 && (
+            <Related related={related} />
+          )}
+          <Link className={styles.seeAllButton} href={backUrl}>
+            {type !== "guide"
+              ? formatMessage({ id: "prompt_books.see_all" })
+              : formatMessage({ id: "guides.see_all" })
+            }
+          </Link>
+          <div className={styles.reviewBox}><Reviews /></div>
+         
+        </div>
 
         {gumroad.slug && (
           <div className={styles.mobileButton}>
@@ -136,7 +139,7 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
                   id,
                 })
               }}>
-              {formatMessage({ id: "common.buy_now" })}
+              {formatMessage({ id: "common.continue" })}
             </Link>
           </div>
         )}

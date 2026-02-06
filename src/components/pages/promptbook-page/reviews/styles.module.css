@@ -1,5 +1,5 @@
 .box {
-  padding: 16px 16px;
+  /* padding: 16px 16px; */
   margin-top: 8px;
 }
 
@@ -10,7 +10,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   margin-top: 12px;
 }
 
@@ -25,12 +25,12 @@
 
 .line {
   margin-top: 4px;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .image {
   display: block;
-  width: 54px;
+  width: 42px;
   height: auto;
   object-fit: cover;
   border-radius: 50%;
@@ -40,6 +40,6 @@
 
 .text {
   color: var(--text);
-  font-size: 16px;
+  /* font-size: 16px; */
   margin-top: 4px;
 }
