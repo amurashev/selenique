@@ -11,6 +11,39 @@ import { PromptBook } from "@/components/types";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
 import { REVIEWS } from "@/constants/reviews";
+import Slider from "react-slick";
+
+export const settings = {
+  dots: false,
+  infinite: false,
+  lazyLoad: false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1.6,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 const Star = () => (
   <svg
@@ -24,6 +57,22 @@ const Star = () => (
   </svg>
 );
 
+const StarIcon = () => {
+  return (
+    <svg style={{
+      position: "relative",
+      top: '-1px',
+    }} version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+      width="16px" height="16px" viewBox="0 0 64 64" enableBackground="new 0 0 64 64">
+      <path fill="#ffb900" d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265
+	C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642
+	c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854
+	c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72
+	c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"/>
+    </svg>
+  )
+}
+
 export default function Reviews() {
   const { formatMessage, locale } = useIntl();
   const count = Object.keys(REVIEWS).length;
@@ -33,34 +82,37 @@ export default function Reviews() {
       <h2 className={styles.title}>
         {formatMessage({ id: "prompt_books.reviews" })} ({count})
       </h2>
-      <div className={styles.list}>
+      <Slider {...settings} className={styles.list}>
         {Object.keys(REVIEWS).map((id) => {
           const { author, authorId, text, date, mark } = REVIEWS[id];
           return (
             <div key={id} className={styles.item}>
-              <div>
+             <div className={styles.itemInner}>
+              <div className={styles.stars}>
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+              </div>
+              <div className={styles.text}>{text}</div>
+              <div className={styles.userBox}>
                 <img
                   className={styles.image}
                   src={`/reviews_authors/${authorId}.jpg`}
                 />
-              </div>
-              <div className={styles.line}>
-                <div>
-                  <strong>{author}</strong> on {date}
+                <div className={styles.line}>
+                  <strong>{author}</strong>
+                  <div className={styles.date}>
+                    {date}
+                  </div>
                 </div>
-                <div className={styles.stars}>
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
-                </div>
-                <div className={styles.text}>{text}</div>
               </div>
+            </div>
             </div>
           );
         })}
-      </div>
+      </Slider>
     </div>
   );
 }

@@ -2,13 +2,77 @@ export const CREATURE_TYPE = {
   HUMAN: "human",
   REPTILE: "reptilian_humanoid",
   ORK: "ork",
+  ALIEN: "alien",
+  ELF: "elf",
+  DWARF: "dwarf",
+  TROLL: "troll",
 }
 export const CREATION_LIST = [
   CREATURE_TYPE.HUMAN,
   CREATURE_TYPE.ORK,
   CREATURE_TYPE.REPTILE,
+  CREATURE_TYPE.ALIEN,
+  CREATURE_TYPE.ELF,
+  CREATURE_TYPE.DWARF,
+  CREATURE_TYPE.TROLL,
 ]
 
+
+export const GENDER_TYPE = {
+  MALE: "male",
+  FEMALE: "female",
+}
+export const GENDER_LIST = [
+  GENDER_TYPE.MALE,
+  GENDER_TYPE.FEMALE,
+]
+
+export const HAIR_STYLE_TYPE = {
+  STRAIGHT: "straight",
+  WAVY: "wavy",
+  CURLY: "curly",
+  COILY: "coily",
+  BRAIDED: "braided",
+}
+export const HAIR_STYLE_LIST = [
+  HAIR_STYLE_TYPE.STRAIGHT,
+  HAIR_STYLE_TYPE.WAVY,
+  HAIR_STYLE_TYPE.CURLY,
+  HAIR_STYLE_TYPE.COILY,
+  HAIR_STYLE_TYPE.BRAIDED,
+]
+
+export const HAIR_COLOR_TYPE = {
+  BLACK: "black",
+  DARK_BROWN: "dark_brown",
+  LIGHT_BROWN: "light_brown",
+  BLONDE: "blonde",
+  RED: "red",
+  SILVER: "silver",
+}
+export const HAIR_COLOR_LIST = [
+  HAIR_COLOR_TYPE.BLACK,
+  HAIR_COLOR_TYPE.DARK_BROWN,
+  HAIR_COLOR_TYPE.LIGHT_BROWN,
+  HAIR_COLOR_TYPE.BLONDE,
+  HAIR_COLOR_TYPE.RED,
+  HAIR_COLOR_TYPE.SILVER,
+]
+
+export const BODY_TYPE = {
+  SLIM: "slim",
+  AVERAGE: "average",
+  ATHLETIC: "athдetic",
+  CURVY: "curvy",
+  PLUS_SIZE: "plus_size",
+}
+export const BODY_LIST = [
+  BODY_TYPE.SLIM,
+  BODY_TYPE.AVERAGE,
+  BODY_TYPE.ATHLETIC,
+  BODY_TYPE.CURVY,
+  BODY_TYPE.PLUS_SIZE,
+]
 
 export const OUTFIT_TYPE = {
   DARK_JACKET: "dark_jacket",
