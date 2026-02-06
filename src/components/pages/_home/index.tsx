@@ -41,7 +41,7 @@ export default function HomePage() {
         {locale !== "ru" && (
           <>
             <h1>{formatMessage({ id: "home.prompt_books.title" })}</h1>
-            <div className={styles.list}>
+            {/* <div className={styles.list}>
               {promptbooksOrdered.slice(0, 6).map((slug) => {
                 const item = {
                   ...PROMTBOOKS[slug],
@@ -49,7 +49,7 @@ export default function HomePage() {
                 };
                 return <PromptbookItem key={slug} item={item} />;
               })}
-            </div>
+            </div> */}
 
             <div className={styles.buttonBox}>
               <Link

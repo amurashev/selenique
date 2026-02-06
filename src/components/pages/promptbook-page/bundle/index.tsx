@@ -9,6 +9,7 @@ import { PromptBook } from "@/components/types";
 import PromptbookItem from "@/components/sections/promptbook-item2";
 
 import { PROMTBOOKS } from "@/constants/promptbooks";
+import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 export default function Bundle({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -24,10 +25,7 @@ export default function Bundle({ data }: { data: PromptBook }) {
       <h3>{formatMessage({ id: "prompt_books.bundle_contains" })}:</h3>
       <div className={styles.list}>
         {tempSlugArray.map((slug) => {
-          const item = {
-            ...PROMTBOOKS[slug],
-            slug,
-          };
+          const item = getPromptBookData(slug)
           return <PromptbookItem key={slug} item={item} />;
         })}
       </div>

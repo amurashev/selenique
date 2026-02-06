@@ -5,9 +5,9 @@ export default `<div>
    <p>"Love your style! Are you single?"They think it's a real person. They don't realize it's AI.</p>
    <p>That's the power of ultra-realistic prompts. If you are tired of AI images that look plastic, fake, or "too perfect," this collection is for you.</p>
    <h3>📦 WHAT YOU GET INSIDE</h3>
-   <p>You get instant access to my Private Notion Dashboard containing 170+ Copy-Paste Prompts.</p>
+   <p>You get instant access to my Private Notion Dashboard containing 200+ Copy-Paste Prompts.</p>
    <p>Works with Nano Banana Pro/Gemini, Seedream, FLUX, and other major AI tools.</p>
-   <p><b>📸 170+ Prompts Organized by Category:</b></p>
+   <p><b>📸 200+ Prompts Organized by Category:</b></p>
    <ul>
    <li><b>25 Selfie Prompts</b>: Mirror selfies, candid snaps, "woke up like this" vibes.</li>
    <li><b>25 Indoor Prompts</b>: Cozy home shots, atmospheric cafés, restaurants.</li>

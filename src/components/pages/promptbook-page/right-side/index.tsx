@@ -7,11 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./styles.module.css";
-import { Guide, PromptBook } from "@/components/types";
+import { PromptBook } from "@/components/types";
 
-import { PriceWithUnit } from "@/components/ui/price";
 import Link from "next/link";
-import { promptBookListPageRoute } from "@/constants/routes";
 
 const discount = 30;
 const DISCOUNT_END_DAY = "2025-12-16";

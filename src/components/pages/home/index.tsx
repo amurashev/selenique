@@ -34,6 +34,7 @@ import { PromptBook } from "@/components/types";
 
 import PromptbookItem from "@/components/sections/promptbook-item2";
 import settings from "../promptbook-list/settings";
+import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 const randomPhotos = PHOTOS.filter((item) => {
   const sourceFile = item.SourceFile.slice(8);
@@ -63,11 +64,11 @@ const photos = randomPhotos
 const BEST_SELLERS: PromptBook[] = []
 
 Object.keys(PROMTBOOKS).forEach(slug => {
-  const { mainCategory, type, isBestseller } = PROMTBOOKS[slug]
+  const packData = getPromptBookData(slug)
+
+  const { mainCategory, type, isBestseller } = packData
 
   if (mainCategory && type === 'pack') {
-    const packData = { ...PROMTBOOKS[slug], slug }
-
     if (isBestseller) {
       BEST_SELLERS.push(packData)
     }
@@ -127,7 +128,7 @@ export default function HomePage({
 
             <Slider {...settings} className={styles.slider}>
               {guidesOrdered.map(slug => {
-                const promptPack = { ...PROMTBOOKS[slug], slug }
+                const promptPack = getPromptBookData(slug)
                 return (
                   <div key={slug} className={styles.item}>
                     <PromptbookItem item={promptPack} />
@@ -152,7 +153,7 @@ export default function HomePage({
 
             <Slider {...settings} className={styles.slider}>
               {promptbooksBundlesOrdered.map(slug => {
-                const promptPack = { ...PROMTBOOKS[slug], slug }
+                const promptPack = getPromptBookData(slug)
                 return (
                   <div key={slug} className={styles.item}>
                     <PromptbookItem item={promptPack} />

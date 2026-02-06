@@ -40,7 +40,6 @@ export type DigitalItem = {
   summary?: string;
   text: string;
   fileType?: "link"
-  // related?: string[];
   links?: {
     cm?: string;
   };
@@ -57,11 +56,6 @@ export type PromptBookRaw = DigitalItem & {
 
 export type PromptBook = PromptBookRaw & {
   slug: string;
-};
-
-export type GuideRaw = DigitalItem & {
-};
-
-export type Guide = GuideRaw & {
-  slug: string;
+  rating: { rating: number, count: number }
+  sales: number
 };

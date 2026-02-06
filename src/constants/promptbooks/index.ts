@@ -902,15 +902,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     `,
   },
 
-  "realistic-ai-influencer-prompts-170": {
+  "realistic-ai-influencer-prompts": {
     id: 28,
     gumroad: {
       id: "null",
-      slug: "realistic-ai-influencer-prompts-170",
+      slug: "realistic-ai-influencer-prompts",
     },
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
-    name: "The Ultra-Realistic AI Influencer Kit (170+ Prompts)",
-    number: 170,
+    name: "The Ultra-Realistic AI Influencer Kit (200+ Prompts)",
+    number: 200,
     isBestseller: true,
     links: {},
     tags: ["lifestyle", "women"],
@@ -1206,7 +1206,7 @@ export const promptbooksOrdered: string[] = [
   "32-business-man-photo-prompts",
   "50-jewelry-product-photo-ai-prompts",
 
-  "realistic-ai-influencer-prompts-170",
+  "realistic-ai-influencer-prompts",
 
   "50-men-fashion-editorial-prompts-vol-1",
   "50-men-fashion-editorial-prompts-vol-2",

@@ -2,10 +2,8 @@
 
 import React from "react";
 import { useIntl } from "react-intl";
-import Slider from "react-slick";
-import Link from "next/link";
 
-import { Guide, PromptBook } from "@/components/types";
+import { PromptBook } from "@/components/types";
 
 import styles from "./styles.module.css";
 
@@ -25,36 +23,15 @@ const PDFIcon = () => {
   )
 }
 
-const DOCIcon = () => {
-  return (
-    <svg version="1.1" height="22px" width="22px" xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 512" >
-
-      <g>
-        <path d="M464,0H48C21.492,0,0,21.492,0,48v416c0,26.508,21.492,48,48,48h416c26.508,0,48-21.492,48-48V48
-		C512,21.492,490.508,0,464,0z M444.664,35c10.492,0,19,8.508,19,19s-8.508,19-19,19s-19-8.508-19-19S434.172,35,444.664,35z
-		 M374.164,35c10.492,0,19,8.508,19,19s-8.508,19-19,19s-19-8.508-19-19S363.672,35,374.164,35z M303.664,35
-		c10.492,0,19,8.508,19,19s-8.508,19-19,19s-19-8.508-19-19S293.172,35,303.664,35z M472,464c0,4.406-3.586,8-8,8H48
-		c-4.414,0-8-3.594-8-8V104h432V464z"/>
-        <rect x="112" y="192" width="288" height="32" />
-        <rect x="112" y="272" width="288" height="32" />
-        <rect x="112" y="352" width="152" height="32" />
-      </g>
-    </svg>
-  )
-}
-
 export default function Advantages({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { fileType, type } = data;
-  const pack = (data as PromptBook).pack || [];
-  const packsNumber = pack.length || 1;
+  const { fileType } = data;
 
   return (
     <div>
       <div className={styles.part2}>
-      <div className={styles.part2Icon}>
-        <PDFIcon />
+        <div className={styles.part2Icon}>
+          <PDFIcon />
         </div>
 
         <div className={styles.part2Inner}>
@@ -81,7 +58,6 @@ export default function Advantages({ data }: { data: PromptBook }) {
 
       <hr className={styles.hr} />
 
-
       {/* <ul className={styles.advantages}>
         {(data as PromptBook).number && (
           <li>
@@ -92,8 +68,6 @@ export default function Advantages({ data }: { data: PromptBook }) {
           </li>
         )}
       </ul> */}
-
     </div>
-
   );
 }

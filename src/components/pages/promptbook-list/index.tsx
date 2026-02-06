@@ -10,8 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
 import {
-  promptbooksOrdered,
-  promptbooksBundlesOrdered,
   PROMTBOOKS,
 } from "@/constants/promptbooks";
 
@@ -25,6 +23,7 @@ import { PromptBook, PromptCategories } from "@/components/types";
 import { getPromptCategoryShortLabel, getPromptCategoryTag } from "@/constants/prompts";
 import settings from "./settings";
 import { useEffect } from "react";
+import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 
 const CATEGORIES: PromptCategories[] = [
@@ -51,7 +50,7 @@ Object.keys(PROMTBOOKS).forEach(slug => {
       PROMPTS_BY_CATEGORIES[mainCategory] = []
     }
 
-    const packData = { ...PROMTBOOKS[slug], slug }
+    const packData = getPromptBookData(slug)
 
     PROMPTS_BY_CATEGORIES[mainCategory].push(packData)
 
@@ -97,13 +96,13 @@ export default function PromptbookListPage() {
               <div className={styles.titleLine}>
                 <h3>{formatMessage({ id: 'common.best_sellers' })}</h3>
               </div>
-                <Slider {...settings} className={styles.slider}>
-                  {BEST_SELLERS.map(promptPack => (
-                    <div key={promptPack.id} className={styles.item}>
-                      <PromptbookItem item={promptPack} />
-                    </div>
-                  ))}
-                </Slider>
+              <Slider {...settings} className={styles.slider}>
+                {BEST_SELLERS.map(promptPack => (
+                  <div key={promptPack.id} className={styles.item}>
+                    <PromptbookItem item={promptPack} />
+                  </div>
+                ))}
+              </Slider>
             </div>
 
             {CATEGORIES.map(category => (

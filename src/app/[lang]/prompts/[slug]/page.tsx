@@ -10,6 +10,7 @@ import { PROMTBOOKS } from "@/constants/promptbooks";
 import { i18n, Locale } from "../../../../../i18n-config";
 import { getDictionary } from "@/l18n/dictionaries";
 import { getPromptsListKeywords } from "@/constants/prompts";
+import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 export async function generateMetadata({
   params,
@@ -20,10 +21,10 @@ export async function generateMetadata({
 
   const messages = await getDictionary(lang) as Record<string, string>
 
-  const data = PROMTBOOKS[slug || "null"];
+  const promptBook = getPromptBookData(slug)
 
-  const title = `${data.name} | Gemini Prompts`;
-  const description = data.summary;
+  const title = `${promptBook.name} | Gemini Prompts`;
+  const description = promptBook.summary;
   const keywords = messages[getPromptsListKeywords()]
 
   const url = promptBookPageRoute.getUrl(lang, {
@@ -38,7 +39,7 @@ export async function generateMetadata({
     keywords,
     openGraph: {
       images: [
-        `https://www.selenique.space/promptbooks/${data.id}/${data.images[0]}.jpg`,
+        `https://www.selenique.space/promptbooks/${promptBook.id}/${promptBook.images[0]}.jpg`,
       ],
       title: title,
       description,
@@ -56,27 +57,31 @@ export default async function PromptbookPageEntry({
   const { slug, lang } = await params;
   const finalLang = lang || i18n.defaultLocale;
 
-  const data = PROMTBOOKS[slug || "null"];
+  if (!slug) {
+    return redirect(promptBookListPageRoute.getUrl(finalLang));
+  }
 
-  if (!data) {
+  const promptBook = getPromptBookData(slug)
+
+  if (!promptBook) {
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
 
   let relatedIds: string[] = []
 
-  if (data.tags.length && data.tags[0]) {
+  if (promptBook.tags.length && promptBook.tags[0]) {
     // TODO: improve related search
     const marks = Object
       .keys(PROMTBOOKS)
       .filter(
-        itemSlug => PROMTBOOKS[itemSlug].type === data.type
+        itemSlug => PROMTBOOKS[itemSlug].type === promptBook.type
         && slug !== itemSlug
       ).map(itemSlug => {
         const { tags } = PROMTBOOKS[itemSlug]
         let mark = 0
 
         tags.forEach(tag => {
-          if (data.tags.includes(tag)) mark++
+          if (promptBook.tags.includes(tag)) mark++
         })
 
         return {
@@ -89,18 +94,12 @@ export default async function PromptbookPageEntry({
       relatedIds = marks.slice(0,3).map(item => item.itemSlug)
   }
 
-  const related = relatedIds.map(itemSlug => ({
-    ...PROMTBOOKS[itemSlug],
-    slug: itemSlug
-  }))
+  const related = relatedIds.map(itemSlug => getPromptBookData(itemSlug))
 
   return (
     <Layout locale={finalLang}>
       <PromptbookPage
-        data={{
-          ...data,
-          slug,
-        }}
+        data={promptBook}
         related={related}
       />
     </Layout>
