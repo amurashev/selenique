@@ -52,7 +52,7 @@ Object.keys(PROMTBOOKS).forEach(slug => {
 
     PROMPTS_BY_CATEGORIES[mainCategory].push(packData)
 
-    if (isBestseller) {
+    if (isBestseller || packData.reviewsCount) {
       BEST_SELLERS.push(packData)
     }
   }
