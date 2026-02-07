@@ -56,7 +56,7 @@ export default function Price(
           href={purchaseLink}
           target="_blank"
           onClick={() => {
-            reachGoal('virtualInfluencePage_continueClick')
+            reachGoal('virtualInfluencePage_continue-Click')
           }}>
           {formatMessage({ id: "common.buy_now" })}
         </Link>
@@ -66,7 +66,7 @@ export default function Price(
           href={boostyLink}
           target="_blank"
           onClick={() => {
-            reachGoal('virtualInfluencePage_continueRussiaClick')
+            reachGoal('virtualInfluencePage_continueRussia-Click')
           }}
         >
           {formatMessage({ id: "common.buy_now_russia" })}

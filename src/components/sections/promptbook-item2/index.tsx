@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { PromptBook } from "@/components/types";
 import { promptBookPageRoute, guidePageRoute } from "@/constants/routes";
+import StarIcon from "@/components/ui/icons/star";
 
 import styles from "./styles.module.css";
 
@@ -14,7 +15,7 @@ const PromptbookItem: React.FC<{
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { id, slug, name, type, isBestseller, summary } = item;
+  const { id, slug, name, type, isBestseller, reviewsRating, reviewsRatingFixed } = item;
 
   const url = type === "guide" ? guidePageRoute.getUrl(locale, {
     params: {
@@ -40,6 +41,15 @@ const PromptbookItem: React.FC<{
       </div>
       {isBestseller && (
         <div className={styles.bestseller}>Bestseller</div>
+      )}
+
+      {Boolean(reviewsRating) && (
+        <div className={styles.ratingBox}>
+          <div className={styles.startBox}>
+            <StarIcon size={11} />
+            <span><strong>{reviewsRatingFixed}</strong></span>
+          </div>
+        </div>
       )}
       {/* <div className={styles.button}>
         {formatMessage({ id: "common.buy_now" })}

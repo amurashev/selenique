@@ -11,10 +11,16 @@ export const getPromptBookData = (slug: string) => {
   const rating = PROMPTS_RATING[slug] || { rating: 0, count: 0}
   const sales = PROMPTS_SALES[slug] || 0
 
+  const reviewsRating = rating.rating
+  const reviewsRatingFixed = rating.rating.toFixed(1)
+  const reviewsCount = rating.count
+
   const item = {
     ...baseItem,
     slug,
-    rating,
+    reviewsRating,
+    reviewsRatingFixed,
+    reviewsCount,
     sales,
   };
 

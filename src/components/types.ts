@@ -56,6 +56,9 @@ export type PromptBookRaw = DigitalItem & {
 
 export type PromptBook = PromptBookRaw & {
   slug: string;
-  rating: { rating: number, count: number }
+  // rating: { rating: number, count: number }
   sales: number
+  reviewsRating: number
+  reviewsRatingFixed: string
+  reviewsCount: number
 };

@@ -1,18 +1,23 @@
 .bestseller {
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
   padding: 4px 8px;
   border-radius: 4px;
   background-color: #FD5758;
-  margin-bottom: 4px;
+}
+
+.titleBox {
+  display: flex;
+  align-items: start;
 }
 
 .title {
   /* padding: 0 12px; */
   /* text-align: center; */
   max-width: 320px;
+  flex-grow: 1;
   /* margin: 0 auto; */
 }
 
@@ -35,10 +40,10 @@
   color: var(--text);
   display: flex;
   align-items: center;
-  /* font-size: 16px; */
   /* font-weight: 700; */
-  gap: 6px;
-  margin-top: 4px;
+  gap: 8px;
+  /* margin-top: 4px; */
+  margin-bottom: 4px;
   /* margin-bottom: 16px; */
 
   strong {
