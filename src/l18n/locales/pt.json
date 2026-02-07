@@ -13,6 +13,7 @@
   "common.models.sex.women": "Mulheres",
   "common.models.sex.men": "Homens",
   "common.sales": "vendas",
+  "common.review": "{number, plural, =0 {no reseñas} one {# avaliação} other {# avaliações}}",
   "common.see_all": "Veja tudo",
   "common.best_sellers": "Mais vendidos",
   "locale": "Português (Brasil)",

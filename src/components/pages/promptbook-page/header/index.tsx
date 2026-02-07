@@ -15,7 +15,7 @@ import StarIcon from "@/components/ui/icons/star";
 export default function Header({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
 
-  const { name, isBestseller, sales, reviewsRating, reviewsRatingFixed } = data;
+  const { name, isBestseller, reviewsCount, reviewsRating, reviewsRatingFixed } = data;
 
   return (
 
@@ -34,7 +34,7 @@ export default function Header({ data }: { data: PromptBook }) {
                   top: '-1px',
                 }} />
                 <span><strong>{reviewsRatingFixed}</strong></span>
-                {/* <span>( {formatMessage({ id: 'common.review' }, { number: 11 })})</span> */}
+                <span>({formatMessage({ id: 'common.review' }, { number: reviewsCount })})</span>
               </div>
               {/* <span className={styles.divider}>|</span> */}
             </>

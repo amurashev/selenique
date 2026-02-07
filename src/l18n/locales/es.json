@@ -13,6 +13,7 @@
   "common.models.sex.women": "Mujeres",
   "common.models.sex.men": "Hombres",
   "common.sales": "ventas",
+  "common.review": "{number, plural, =0 {no reseñas} one {# reseña} other {# reseñas}}",
   "common.see_all": "Ver todo",
   "common.best_sellers": "Los más vendidos",
   "locale": "Español",
