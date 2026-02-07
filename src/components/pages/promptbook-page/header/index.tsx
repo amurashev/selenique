@@ -21,7 +21,7 @@ export default function Header({ data }: { data: PromptBook }) {
 
     <div className={styles.box}>
 
-      {(Boolean(reviewsRating) || Boolean(sales)) && (
+      {(Boolean(reviewsRating) || isBestseller) && (
         <div className={styles.ratingBox}>
           {isBestseller && (
             <div className={styles.bestseller}>Bestseller</div>
@@ -34,7 +34,7 @@ export default function Header({ data }: { data: PromptBook }) {
                   top: '-1px',
                 }} />
                 <span><strong>{reviewsRatingFixed}</strong></span>
-                {/* <span>( {formatMessage({ id: 'common.review' })})</span> */}
+                {/* <span>( {formatMessage({ id: 'common.review' }, { number: 11 })})</span> */}
               </div>
               {/* <span className={styles.divider}>|</span> */}
             </>

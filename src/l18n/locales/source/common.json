@@ -13,6 +13,8 @@
   "common.models.sex.women": "Women",
   "common.models.sex.men": "Men",
   "common.sales": "sales",
+  "common.review.one": "{number} review",
+  "common.review.other": "{number} reviews",
   "common.see_all": "See all",
   "common.best_sellers": "Best Sellers",
   "locale": "English",
