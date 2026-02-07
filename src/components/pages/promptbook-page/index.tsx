@@ -45,9 +45,6 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
 
   const showRussiaHints = ['en', "ru"].includes(locale)
 
-
-  console.warn('data', data)
-
   useEffect(() => {
     reachGoal('promptPage_open', {
       id,

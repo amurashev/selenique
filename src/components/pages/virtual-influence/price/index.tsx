@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useIntl } from "react-intl";
+import { useMetrica } from 'next-yandex-metrica';
 
 import { PriceWithUnit } from "@/components/ui/price";
 
@@ -11,6 +12,7 @@ export default function Price(
   { purchaseLink, boostyLink }: { purchaseLink: string, boostyLink: string }
 ) {
   const { formatMessage, locale } = useIntl();
+  const { reachGoal } = useMetrica();
 
   const price = { en: 65, ru: 3990 }
   const oldPrice = { en: 79, ru: 4990 }
@@ -49,11 +51,24 @@ export default function Price(
       </div>
 
       <div className={styles.links}>
-        <Link className={styles.link} href={purchaseLink} target="_blank">
+        <Link
+          className={styles.link}
+          href={purchaseLink}
+          target="_blank"
+          onClick={() => {
+            reachGoal('virtualInfluencePage_continueClick')
+          }}>
           {formatMessage({ id: "common.buy_now" })}
         </Link>
 
-        <Link className={styles.link} href={boostyLink} target="_blank">
+        <Link
+          className={styles.link}
+          href={boostyLink}
+          target="_blank"
+          onClick={() => {
+            reachGoal('virtualInfluencePage_continueRussiaClick')
+          }}
+        >
           {formatMessage({ id: "common.buy_now_russia" })}
         </Link>
       </div>
