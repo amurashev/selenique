@@ -2,7 +2,6 @@
 .rightSideBox {
   display: none;
   background-color: #ffffff;
-  border: 1px solid var(--border-light);
   padding: 16px 16px;
   /* margin-bottom: 24px; */
 }
@@ -86,6 +85,8 @@
 
   .rightSideBox {
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    border: 1px solid var(--border-light);
     display: flex;
     flex-direction: column;
   }

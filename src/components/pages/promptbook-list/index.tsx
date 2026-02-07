@@ -14,16 +14,14 @@ import {
 } from "@/constants/promptbooks";
 
 import { homePage, promptsCategoryPageRoute } from "@/constants/routes";
-import PromptbookList from "@/components/sections/promptbook-list";
 import PromptbookItem from "@/components/sections/promptbook-item2";
 import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
-import Categories from "./categories";
 import { PromptBook, PromptCategories } from "@/components/types";
-import { getPromptCategoryShortLabel, getPromptCategoryTag } from "@/constants/prompts";
+import { getPromptCategoryTag } from "@/constants/prompts";
 import settings from "./settings";
 import { useEffect } from "react";
-import { getPromptBookData } from "@/constants/promptbooks/utils";
+import { getPromptBookData, sortByPoints } from "@/constants/promptbooks/utils";
 
 
 const CATEGORIES: PromptCategories[] = [
@@ -62,12 +60,10 @@ Object.keys(PROMTBOOKS).forEach(slug => {
 
 Object.keys(PROMPTS_BY_CATEGORIES).map(category => {
   const prompts = PROMPTS_BY_CATEGORIES[category]
-  prompts.sort((a, b) => {
-
-    // TODO: order by points
-    return Number(Boolean(b.isBestseller)) - Number(Boolean(a.isBestseller))
-  })
+  prompts.sort(sortByPoints)
 })
+
+BEST_SELLERS.sort(sortByPoints)
 
 export default function PromptbookListPage() {
   const { formatMessage, locale } = useIntl();
