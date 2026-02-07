@@ -40,7 +40,7 @@ export default function Header({ data }: { data: PromptBook }) {
         <div className={styles.bestseller}>Bestseller</div>
       )}
       <h1 className={styles.title}>{name}</h1>
-      {(Boolean(rating.count) || Boolean(sales)) && (
+      {/* {(Boolean(rating.count) || Boolean(sales)) && (
         <div className={styles.ratingBox}>
           {Boolean(rating.count) && (
             <>
@@ -55,10 +55,11 @@ export default function Header({ data }: { data: PromptBook }) {
             <span><strong>{sales}</strong> {formatMessage({ id: 'common.sales' })}</span>
           )}
           &nbsp;
+        </div>
+      )} */}
+
           {/* <span className={styles.divider}>|</span>
         <span><strong>1</strong> review</span> */}
-        </div>
-      )}
       <div className={styles.categoriesBox}>
         <Categories data={data} />
       </div>
