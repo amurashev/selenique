@@ -1,12 +1,82 @@
 {
-  "standard_pose": "The subject standing straight, slightly turned towards the camera, one leg slightly forward",
-  "seated_pose": "The subject sitting on a chair or the floor, one leg bent at an angle, the other leg extended",
-  "hand_on_hip_pose": "The subject with one hand on the hip, the other arm relaxed by the side or raised",
-  "leaning_pose": "The subject leaning slightly forward to create a dynamic and engaging look",
-  "head_turn_pose": "The subject looking to the side instead of directly at the camera, adding a touch of mystery",
-  "dynamic_pose": "The subject in motion, such as stepping forward or turning the body for an energetic effect",
-  "accessory_pose": "The subject holding a bag or another accessory, emphasizing the details of the outfit",
-  "crossed_legs_pose": "The subject standing with crossed legs, creating an interesting silhouette",
-  "wall_lean_pose": "The subject leaning against a wall, giving a relaxed and casual appearance",
-  "group_pose": "Multiple models arranged in a balanced manner, creating a sense of connection and interaction"
+  "standing_straight_pose": "The subject standing straight, slightly turned towards the camera, one leg slightly forward",
+  "sitting_bent_extended_pose": "The subject sitting on a chair, one leg bent at an angle, the other leg extended",
+  "standing_hand_on_hip_pose": "The subject with one hand on the hip, the other arm relaxed by the side or raised",
+  "standing_leaning_pose": "The subject leaning slightly forward to create a dynamic and engaging look",
+  "standing_head_turn_pose": "The subject looking to the side instead of directly at the camera, adding a touch of mystery",
+  "standing_dynamic_pose": "The subject in motion, such as stepping forward or turning the body for an energetic effect",
+  "standing_crossed_legs_pose": "The subject standing with crossed legs, creating an interesting silhouette",
+  "standing_wall_lean_pose": "The subject leaning against a wall, giving a relaxed and casual appearance",
+  "standing_contrapposto_pose": "The subject standing in a relaxed contrapposto, weight shifted onto one leg, shoulders slightly angled toward the camera",
+  "standing_hand_in_pocket_pose": "The subject facing the camera with the torso slightly turned, one hand resting casually in a pocket, the other relaxed by the side",
+
+
+  "sitting_hands_on_thighs_pose": "The subject seated on a simple studio stool, back straight, feet grounded, hands resting loosely on the thighs",
+  "standing_hands_clasped_at_waist_pose": "The subject standing front-facing with hands gently clasped at the waist, calm composed posture",
+  "sitting_crossed_legs_pose": "The subject seated with one leg crossed over the other, torso upright, shoulders relaxed, editorial studio pose",
+  "standing_turn_away_pose": "The subject standing with the body slightly turned away from the camera, head turned back toward the lens, calm composed expression",
+  "sitting_torso_forward_pose": "The subject seated at the edge of a stool, torso leaning slightly forward, elbows resting loosely on the thighs",
+  "standing_hand_adjusting_pose": "The subject standing with one hand adjusting the blazer lapel, the other relaxed, natural editorial gesture",
+  "standing_hands_at_front_pose": "The subject standing with arms relaxed, hands lightly touching at the front, minimal controlled posture",
+  "standing_hands_behind_pose": "The subject standing with hands placed behind the back, posture straight, clean studio silhouette",
+  "sitting_torso_twisted_pose": "The subject seated sideways on a stool, torso twisted gently toward the camera, elegant studio pose",
+  "standing_hands_in_pockets_pose": "The subject standing with both hands in pockets, elbows slightly out, relaxed confident posture",
+  "standing_hands_in_pockets_head_tilted": "The subject stands with weight shifted slightly forward, hands placed in the pockets, shoulders relaxed, head tilted downward, torso subtly angled, creating a soft, introspective editorial pose.",
+  "standing_hands_raised_to_neck": "The subject stands facing the camera with shoulders squared and posture upright. One arm crosses the body at waist level, while the opposite hand is raised to the neck, fingers resting lightly beneath the chin. The head is held level with a calm, confident gaze forward, creating a poised, editorial portrait pose that highlights the face.",
+
+  "standing_hand_rests_chair": "The subject stands in a relaxed three-quarter stance, body angled slightly to the side rather than facing the camera directly. One hand rests casually on the back of a chair for balance, while the other arm hangs naturally by the hip. The weight is shifted onto one leg, creating a soft bend in the opposite knee and a gentle S-curve through the body. The head turns away from the camera.",
+  "standing_hand_waist_hand_near_face": "The subject stands facing the camera with a calm, confident posture. The weight is evenly distributed, creating a stable, elegant stance. One arm crosses the body at the waist, supporting the opposite elbow, while the other hand is lifted softly near the face with relaxed fingers.",
+  "siting_crouching": "The subject is crouching low with both knees bent close to the chest, balancing on high heels, one elbow resting on the raised knee while the hand lightly touches the side of the face, the other arm relaxed forward with fingers softly extended, torso slightly angled and head turned to the side in a contemplative pose.",
+  "standing_bent_over_head": "The subject is standing upright with one arm extended upward and bent over the head, the forearm curving across the crown, while the other arm is raised with the hand softly framing the side of the face, torso elongated and slightly twisted to emphasize a sculptural silhouette, head facing forward in a poised, statuesque stance.",
+  "standing_hand_hide_face": "The subject is standing with the torso slightly angled, one arm lifted horizontally across the face to shield the eyes, palm facing outward, elbow bent, while the other arm hangs relaxed by the side, head tilted subtly downward in a confident, editorial pose.",
+  "siting_leg_surface_leg_downward": "The subject is seated on a stool with one leg bent and lifted onto the surface, the other leg extended downward, torso upright and slightly angled, one elbow resting on the raised knee with the hand touching the side of the head, the opposite hand relaxed near the ankle, chin slightly lifted.",
+
+
+
+ 
+
+
+
+  "standing_walking_illusion_pose": "The subject stands with one foot slightly forward, creating a gentle walking illusion, elegant elongated silhouette",
+  "standing_base_pose": "The subject stands with arms relaxed at the sides, chest open, shoulders back, strong minimalist editorial pose",
+  "standing_three_quarter_pose": "The subject stands in a slight three-quarter body turn, feet grounded, posture tall and composed.",
+  "standing_feet_shoulder_width_pose": "The subject stands with feet shoulder-width apart, grounded balanced posture, architectural silhouette emphasis.",
+  "standing_touching_jacket_pose": "The subject stands with both hands lightly touching the jacket edges, controlled gesture emphasizing tailoring",
+  "standing_arms_crossed_pose": "The subject stands with arms loosely crossed at the wrists in front of the body, calm intellectual fashion stance",
+  "standing_angled_away_pose": "The subject stands angled slightly away from the camera, head aligned forward, elongated full-body line",
+  "standing_head_tilted_pose": "The subject stands with the body fully frontal, head slightly tilted to one side, relaxed asymmetry creating editorial tension",
+  "standing_shoulders_to_camera_pose": "The subject stands with shoulders angled toward the camera and hips squared, sharp editorial geometry",
+
+  "sitting_elbows_on_knees_pose": "The subject sits with legs slightly apart, elbows resting lightly on the knees, modern confident fashion stance",
+  "sitting_arm_draped_back_pose": "The subject sits with one arm draped casually over the back of the chair, relaxed luxury attitude",
+  "sitting_relaxed_pose": "The subject sits back into the chair with shoulders relaxed, calm powerful editorial presence",
+  "sitting_elbows_resting_pose": "The subject sits with elbows resting lightly on the armrests, shoulders relaxed, refined luxury presence",
+  
+  "sitting_head_on_hand": "The subject sits relaxed on a chair, one leg bent on the seat and the other extended downward, torso leaning slightly forward, head resting gently on one hand, creating an effortless intimate editorial pose",
+  "standing_head_on_hand": "The subject stands in a relaxed full-body pose, weight shifted onto one leg, hips slightly angled, one hand resting casually in a pocket while the other touches the side of the head, creating an effortless confident editorial stance",
+  "sitting_knee_on_seat": "The subject kneels on a stool with one knee placed on the seat and the other leg extended down to the floor, torso angled slightly forward, hips pushed back, arms resting naturally on the raised leg, creating a sculptural, elongated editorial pose",
+  "sitting_floor_legs_extended": "The subject sits on the floor with legs extended forward and slightly bent, torso leaning back supported by hands placed behind the body, head tilted back, creating an elongated, dramatic editorial pose",
+  "standing_hands_adjusting": "The subject stands in a full-body frontal pose with weight evenly distributed, hands positioned near the wrists as if adjusting a cuff, elbows slightly bent, posture tall and composed, creating a controlled, confident editorial stance",
+  "sitting_arms_crossed": "The subject sits upright on a stool, legs slightly apart with feet grounded, arms crossed loosely over the torso, shoulders relaxed, posture composed and steady, creating a calm, self-contained editorial pose",
+  "sitting_sideways": "The subject sits sideways on a stool, one foot resting on the floor and the other leg crossed casually at the ankle, torso leaning slightly back, one hand placed in a pocket, head turned away from the camera, creating a relaxed contemplative editorial pose",
+  "sitting_chair_back": "The subject sits straddling a chair facing backward, legs wide and feet grounded, forearms resting across the chair back, one hand supporting the head, torso leaning slightly forward, creating a relaxed, intimate editorial pose",
+  "sitting_leg_crossed_relaxed": "The subject sits back in a chair with one leg crossed over the other, torso slightly reclined, one arm resting on the armrest while the other is lifted casually, posture relaxed and open, creating an easy, confident editorial pose",
+  "sitting_thinking_gestue": "The subject sits forward on a chair with legs apart, torso leaning toward the camera, one forearm resting on a thigh while the other hand is raised to the face, creating an intense, contemplative editorial pos.",
+  "sitting_floor_one_leg_angle": "The subject sits on the floor with one leg extended and the other bent at the knee, torso angled sideways, one arm supporting the body behind while the opposite arm rests loosely over the raised knee, head tilted downward in a relaxed, introspective editorial pose",
+  "sitting_against_chair_back": "The subject leans against the back of a chair in a half-seated stance, hips resting lightly on the seat, one leg bent and the other grounded, torso angled sideways, hands relaxed in pockets, creating a poised transitional editorial pose",
+  "sitting_leaning_chair_back": "The subject stands leaning diagonally against the back of a chair, one hand gripping the chair for support, body tilted sideways with weight shifted onto one leg, the other leg extended, creating a relaxed yet dramatic editorial pose",
+  "standing_walks_forward": "The subject walks forward in a long, confident stride, body shown in profile, one leg extended ahead and the other trailing behind, arms relaxed along the sides, posture elongated and purposeful, creating a dynamic runway-style editorial pose",
+  "standing_arms_lifted": "The subject stands in a dynamic full-body stance with legs set wide apart, weight subtly shifting, arms lifted and bent as if caught mid-movement, torso angled slightly forward, creating a bold, energetic editorial pose.",
+  "standing_leaning_stool_edge": "The subject stands leaning casually against a stool with one hip resting on the edge, one hand placed in a pocket, the other arm relaxed along the body, torso angled slightly toward the camera, posture confident and composed, creating a classic authoritative editorial pose",
+  "sitting_hands_together": "The subject sits leaning slightly forward, elbows resting on the knees, hands brought together in a loose steeple gesture, shoulders relaxed, posture open and attentive, creating a calm, focused editorial pose.",
+  "standing_crossed_arms": "The subject stands in a full-body pose with arms crossed over the torso, hips subtly angled, posture tall and composed, creating a confident, authoritative editorial stance",
+  "standing_hands_on_hips": "The subject stands facing the camera with feet planted apart, hands placed firmly on the hips, elbows angled outward, torso upright, shoulders relaxed, creating a strong, confident full-body editorial pose",
+  "standing_thinking": " The subject stands upright with arms crossed, one hand lifted to rest lightly under the chin, head tilted slightly to the side, shoulders relaxed, creating a poised, thoughtful editorial pose"
+
+
+ 
 }
+
+
+
+

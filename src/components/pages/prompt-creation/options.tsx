@@ -80,13 +80,21 @@ export const OUTFIT_TYPE = {
   PUFFER_JACKET: "puffer_jacket",
   NEON_BOMBER: "neon_bomber",
   BLAZER_TROUSERS: "blazer_trousers",
+  SUIT_SHIRT: "suit_shirt",
+  SUIT_TIE: "suit_with_tie",
+  BLAZER_SHIRT: "blazer_shirt",
+  TURTLENECK_TROUSERS: "turtleneck_trousers",
 }
 export const OUTFIT_LIST = [
+  OUTFIT_TYPE.SUIT_SHIRT,
   OUTFIT_TYPE.DARK_JACKET,
   OUTFIT_TYPE.TECHWEAR,
   OUTFIT_TYPE.PUFFER_JACKET,
   OUTFIT_TYPE.NEON_BOMBER,
   OUTFIT_TYPE.BLAZER_TROUSERS,
+  OUTFIT_TYPE.SUIT_TIE,
+  OUTFIT_TYPE.BLAZER_SHIRT,
+  OUTFIT_TYPE.TURTLENECK_TROUSERS,
 ]
 
 
@@ -118,6 +126,8 @@ export const BACKGROUND_COLOR = {
   IVORY_CREAM: "Ivory cream",
   EMERALD_GREEN: "emerald green",
   CAMEL: "Camel",
+  GREY: "grey",
+  DARK_GREY: "dark grey",
 }
 export const BACKGROUND_COLOR_LIST = [
   BACKGROUND_COLOR.WHITE,
@@ -139,34 +149,157 @@ export const BACKGROUND_COLOR_LIST = [
   BACKGROUND_COLOR.IVORY_CREAM,
   BACKGROUND_COLOR.EMERALD_GREEN,
   BACKGROUND_COLOR.CAMEL,
+  BACKGROUND_COLOR.GREY,
+  BACKGROUND_COLOR.DARK_GREY,
 ]
-
 
 export const POSE_TYPE = {
-  STANDARD: "standard_pose",
-  SEATED: "seated_pose",
-  HAND_ON_HIP: "hand_on_hip_pose",
-  LEANING: "leaning_pose",
-  HEAD_TURN: "head_turn_pose",
-  DYNAMIC: "dynamic_pose",
-  ACCESSORY: "accessory_pose",
-  CROSSED_LEGS: "crossed_legs_pose",
-  WALL_LEAN: "wall_lean_pose",
-  GROUP: "group_pose"
-}
-export const POSE_LIST = [
-  POSE_TYPE.STANDARD,
-  POSE_TYPE.SEATED,
-  POSE_TYPE.HAND_ON_HIP,
-  POSE_TYPE.LEANING,
-  POSE_TYPE.HEAD_TURN,
-  POSE_TYPE.DYNAMIC,
-  POSE_TYPE.ACCESSORY,
-  POSE_TYPE.CROSSED_LEGS,
-  POSE_TYPE.WALL_LEAN,
-  POSE_TYPE.GROUP,
-]
+  STANDING_STRAIGHT: "standing_straight_pose",
+  STANDING_HAND_ON_HIP: "standing_hand_on_hip_pose",
+  STANDING_LEANING: "standing_leaning_pose",
+  STANDING_HEAD_TURN: "standing_head_turn_pose",
+  STANDING_DYNAMIC: "standing_dynamic_pose",
+  STANDING_CROSSED_LEGS: "standing_crossed_legs_pose",
+  STANDING_WALL_LEAN: "standing_wall_lean_pose",
+  STANDING_CONTRAPPOSTO: "standing_contrapposto_pose",
+  STANDING_HAND_IN_POCKET: "standing_hand_in_pocket_pose",
 
+  STANDING_CROSSED_ARMS: "standing_crossed_arms",
+  STANDING_HANDS_ON_HIPS: "standing_hands_on_hips",
+  
+  // STANDING_HANDS_CLASPED_AT_WAIST: "standing_hands_clasped_at_waist_pose",
+  STANDING_TURN_AWAY: "standing_turn_away_pose",
+  STANDING_HAND_ADJUSTING: "standing_hand_adjusting_pose",
+  // STANDING_HANDS_AT_FRONT: "standing_hands_at_front_pose",
+  STANDING_HANDS_BEHIND: "standing_hands_behind_pose",
+  STANDING_HANDS_IN_POCKETS: "standing_hands_in_pockets_pose",
+  STANDING_HANDS_IN_POCKETS_HEAD_TILTED: "standing_hands_in_pockets_head_tilted",
+
+  STANDING_WALKING_ILLUSION: "standing_walking_illusion_pose",
+  STANDING_BASE: "standing_base_pose",
+  STANDING_THREE_QUARTER: "standing_three_quarter_pose",
+  STANDING_FEET_SHOULDER_WIDTH: "standing_feet_shoulder_width_pose",
+  STANDING_TOUCHING_JACKET: "standing_touching_jacket_pose",
+  STANDING_ARMS_CROSSED: "standing_arms_crossed_pose",
+  STANDING_THINKING: "standing_thinking",
+  STANDING_HAND_RESTS_CHAIR: "standing_hand_rests_chair",
+
+
+
+  
+
+  
+  // STANDING_ANGLED_AWAY: "standing_angled_away_pose",
+  STANDING_HEAD_TILTED: "standing_head_tilted_pose",
+  STANDING_SHOULDERS_TO_CAMERA: "standing_shoulders_to_camera_pose",
+  STANDING_HEAD_ON_HAND: "standing_head_on_hand",
+  STANDING_HANDS_ADJUSTING: "standing_hands_adjusting",
+  STANDING_WALKS_FORWARD: "standing_walks_forward",
+  STANDING_ARMS_LIFTED: "standing_arms_lifted",
+  STANDING_LEANING_STOOL_EDGE: "standing_leaning_stool_edge",
+
+  // SITTING_BENT_EXTENDED: "sitting_bent_extended_pose",
+  SITTING_HANDS_ON_THIGHS: "sitting_hands_on_thighs_pose",
+  SITTING_TORSO_FORWARD: "sitting_torso_forward_pose",
+  SITTING_CROSSED_LEGS: "sitting_crossed_legs_pose",
+  SITTING_ELBOWS_ON_KNEES: "sitting_elbows_on_knees_pose",
+  SITTING_ARM_DRAPED_BACK: "sitting_arm_draped_back_pose",
+  SITTING_RELAXED: "sitting_relaxed_pose",
+  SITTING_TORSO_TWISTED: "sitting_torso_twisted_pose",
+  SITTING_ELBOWS_RESTING: "sitting_elbows_resting_pose",
+  SITTING_HEAD_ON_HAND: "sitting_head_on_hand",
+  // SITTING_KNEE_ON_SEAT: "sitting_knee_on_seat",
+  SITTING_ARMS_CROSSED: "sitting_arms_crossed",
+  SITTING_SIDEWAYS: "sitting_sideways",
+  SITTING_CHAIR_BACK: "sitting_chair_back",
+  SITTING_LEG_CROSSED_RELAXED: "sitting_leg_crossed_relaxed",
+  SITTING_THINKING_GESTUE: "sitting_thinking_gestue",
+  SITTING_AGAINST_CHAIR_BACK: "sitting_against_chair_back",
+  SITTING_LEANING_CHAIR_BACK: "sitting_leaning_chair_back",
+  SITTING_HANDS_TOGETHER: "sitting_hands_together",
+
+  SITTING_FLOOR_LEGS_EXTENDED: "sitting_floor_legs_extended",
+  SITTING_FLOOR_ONE_LEG_ANGLE: "sitting_floor_one_leg_angle",
+
+
+  STANDING_HANDS_RAISED_TO_NECK: "standing_hands_raised_to_neck",
+  STANDING_HAND_WAIST_HAND_NEAR_FACE: "standing_hand_waist_hand_near_face",
+  SITING_CROUCHING: "siting_crouching",
+  STANDING_BENT_OVER_HEAD: "standing_bent_over_head",
+  STANDING_HAND_HIDE_FACE: "standing_hand_hide_face",
+  SITING_LEG_SURFACE_LEG_DOWNWARD: "siting_leg_surface_leg_downward",
+}
+
+
+export const POSE_LIST = [
+  POSE_TYPE.STANDING_STRAIGHT,
+  POSE_TYPE.STANDING_HAND_ON_HIP,
+  POSE_TYPE.STANDING_LEANING,
+  POSE_TYPE.STANDING_HEAD_TURN,
+  POSE_TYPE.STANDING_DYNAMIC,
+  POSE_TYPE.STANDING_CROSSED_LEGS,
+  POSE_TYPE.STANDING_WALL_LEAN,
+  POSE_TYPE.STANDING_CONTRAPPOSTO,
+  POSE_TYPE.STANDING_HAND_IN_POCKET,
+  POSE_TYPE.STANDING_CROSSED_ARMS,
+  POSE_TYPE.STANDING_HANDS_ON_HIPS,
+
+  // POSE_TYPE.STANDING_HANDS_CLASPED_AT_WAIST,
+  POSE_TYPE.STANDING_TURN_AWAY,
+  POSE_TYPE.STANDING_HAND_ADJUSTING,
+  // POSE_TYPE.STANDING_HANDS_AT_FRONT,
+  POSE_TYPE.STANDING_HANDS_BEHIND,
+  POSE_TYPE.STANDING_HANDS_IN_POCKETS,
+  POSE_TYPE.STANDING_HANDS_IN_POCKETS_HEAD_TILTED,
+  POSE_TYPE.STANDING_WALKING_ILLUSION,
+  POSE_TYPE.STANDING_BASE,
+  POSE_TYPE.STANDING_THREE_QUARTER,
+  POSE_TYPE.STANDING_FEET_SHOULDER_WIDTH,
+  POSE_TYPE.STANDING_TOUCHING_JACKET,
+  POSE_TYPE.STANDING_ARMS_CROSSED,
+  // POSE_TYPE.STANDING_ANGLED_AWAY,
+  POSE_TYPE.STANDING_THINKING,
+  POSE_TYPE.STANDING_HEAD_TILTED,
+  POSE_TYPE.STANDING_SHOULDERS_TO_CAMERA,
+  POSE_TYPE.STANDING_HEAD_ON_HAND,
+  POSE_TYPE.STANDING_HANDS_ADJUSTING,
+  POSE_TYPE.STANDING_WALKS_FORWARD,
+  POSE_TYPE.STANDING_ARMS_LIFTED,
+  POSE_TYPE.STANDING_LEANING_STOOL_EDGE,
+  POSE_TYPE.STANDING_HAND_RESTS_CHAIR,
+
+  // POSE_TYPE.SITTING_BENT_EXTENDED,
+  POSE_TYPE.SITTING_HANDS_ON_THIGHS,
+  POSE_TYPE.SITTING_TORSO_FORWARD,
+  POSE_TYPE.SITTING_CROSSED_LEGS,
+  POSE_TYPE.SITTING_ELBOWS_ON_KNEES,
+  POSE_TYPE.SITTING_ARM_DRAPED_BACK,
+  POSE_TYPE.SITTING_RELAXED,
+  POSE_TYPE.SITTING_ELBOWS_RESTING,
+  POSE_TYPE.SITTING_TORSO_TWISTED,
+
+  POSE_TYPE.SITTING_HEAD_ON_HAND,
+  // POSE_TYPE.SITTING_KNEE_ON_SEAT,
+  POSE_TYPE.SITTING_ARMS_CROSSED,
+  POSE_TYPE.SITTING_SIDEWAYS,
+  POSE_TYPE.SITTING_CHAIR_BACK,
+  POSE_TYPE.SITTING_LEG_CROSSED_RELAXED,
+  POSE_TYPE.SITTING_THINKING_GESTUE,
+  POSE_TYPE.SITTING_AGAINST_CHAIR_BACK,
+  POSE_TYPE.SITTING_LEANING_CHAIR_BACK,
+  POSE_TYPE.SITTING_HANDS_TOGETHER,
+
+  POSE_TYPE.SITTING_FLOOR_LEGS_EXTENDED,
+  POSE_TYPE.SITTING_FLOOR_ONE_LEG_ANGLE,
+
+  // Woman
+  POSE_TYPE.STANDING_HANDS_RAISED_TO_NECK,
+  POSE_TYPE.STANDING_HAND_WAIST_HAND_NEAR_FACE,
+  POSE_TYPE.SITING_CROUCHING,
+  POSE_TYPE.STANDING_BENT_OVER_HEAD,
+  POSE_TYPE.STANDING_HAND_HIDE_FACE,
+  POSE_TYPE.SITING_LEG_SURFACE_LEG_DOWNWARD,
+]
 
 /*
 

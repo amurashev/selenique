@@ -3,5 +3,9 @@
   "techwear": "The subject is wearing an oversized black techwear hoodie with multiple tactical straps, buckles, and a high-tech waterproof fabric texture. A heavy metallic chain is around the neck",
   "puffer_jacket": "The subject is wearing a vibrant, oversized electric blue puffer jacket layered over a minimalist white graphic t-shirt",
   "neon_bomber": "The subject is wearing a sleek, translucent neon-trimmed bomber jacket with glowing fiber-optic patterns and a futuristic high collar. The look is clean, sharp, and avant-garde",
-  "blazer_trousers": "The subject is wearing a {outfit_color} structured pantsuit with double-breasted blazer and wide-leg trousers"
+  "blazer_trousers": "The subject is wearing a {outfit_color} structured pantsuit with double-breasted blazer and wide-leg trousers",
+  "suit_shirt": "{outfit_color} tailored suit, white dress shirt, no tie",
+  "suit_with_tie": "tailored {outfit_color} suit, striped tie",
+  "blazer_shirt": "{outfit_color} blazer, subtle patterned shirt",
+  "turtleneck_trousers": "{outfit_color} turtleneck, tailored trousers"
 }

@@ -54,6 +54,9 @@ export default function PromptCreationPage() {
   // })
 
 
+  const hasOutfit = false
+
+
   const mainPart = "High-end fashion catalog photography of a female model, close-up and full-body detail"
 
   const creatureType = `photo of a ${selectedCreature.replace('_', " ")}. ${creationsData[selectedCreature]}` 
@@ -63,11 +66,13 @@ export default function PromptCreationPage() {
   const background = `Minimalist monochromatic studio background, clean seamless paper backdrop in neutral ${selectedColor} tone, high-end retouching, clean aesthetic` // soft gradient,
   // The background is a plain, pure ${selectedColor}, light, neutral studio setting.
 
-  const outfit = (outfitData[selectedOutfit] as string).replaceAll('{outfit_color}', selectedOutfitColor)
+  const outfit = hasOutfit ? (outfitData[selectedOutfit] as string).replaceAll('{outfit_color}', selectedOutfitColor) + "." : ''
 
   const pose = posesData[selectedPose]
 
-  const value = `High-end fashion catalog ${creatureType}. Close-up and full-body detail. ${outfit}. ${pose}. ${studioParams}. ${background}.`
+  const useReference = true ? 'Use the attached reference image as the exact appearance reference for the subject, preserving facial features, bone structure, proportions, and overall likeness' : ""
+
+  const value = `Luxury fashion editorial full-body portrait. ${useReference}.${outfit}\n${pose}.\n${studioParams}.\n${background}.`
 
   return (
     <>
@@ -123,9 +128,9 @@ export default function PromptCreationPage() {
             />
           </div>
 
+          <Button onClick={copyText}>Copy</Button>
           <textarea id="prompt" value={value} className={styles.textarea} />
 
-          <Button onClick={copyText}>Copy</Button>
         </main>
         {/* <Footer /> */}
       </div>
