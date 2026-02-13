@@ -17,7 +17,6 @@
   height: calc(100lvh - 50px);
   padding: 0 12px;
   position: relative;
-  color: #ffffff;
 }
 
 .h1Box {
@@ -65,37 +64,6 @@
 
 .icon {
   animation: _1jyak14m 1s ease-in-out infinite alternate;
-}
-
-
-.languages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 8px;
-}
-
-.languagesTitle {
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text-inversive);
-}
-
-.languagesList {
-  display: flex;
-  gap: 12px;
-  margin-top: 4px;
-}
-
-.imageSuggested {
-  display: block;
-  width: 38px;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-  flex-shrink: 0;
 }
 
 

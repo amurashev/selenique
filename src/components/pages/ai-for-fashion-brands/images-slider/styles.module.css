@@ -1,0 +1,16 @@
+.slider {
+  margin: 0 -4px;
+  /* margin-top: 24px; */
+  width: 100%;
+}
+.item {
+  width: 100%;
+  padding: 0 8px;
+}
+.image {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  /* border-radius: 8px; */
+}

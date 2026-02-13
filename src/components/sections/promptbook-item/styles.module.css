@@ -1,26 +1,30 @@
 .card {
   border-radius: 8px;
   overflow: hidden;
-  background: #fff;
-  padding: 12px;
+  position: relative;
+  display: block;
+  /* background: #fff; */
+  /* padding: 12px; */
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
   }
 }
 
 .box {
   display: flex;
   gap: 12px;
-  margin-bottom: 12px;
+  overflow: hidden;
+  /* margin-bottom: 12px; */
 }
-
 
 .image {
   display: block;
-  width: 110px;
+  width: 100%;
   height: auto;
   object-fit: cover;
+  color: white;
+  border-radius: 8px;
 }
 
 .textBlock {
@@ -52,4 +56,40 @@
   text-transform:uppercase;
   font-weight: bold;
   font-size: 12px;
+}
+
+.bestseller {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px hsl(0deg 0% 20% / 80%);
+
+  background-color: #FD5758;
+  z-index: 10;
+}
+
+.ratingBox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: hsl(0deg 0% 5.73% / 59%);
+  padding: 2px 4px;
+  border-radius: 4px;
+  gap: 8px;
+
+  strong {
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+
+.startBox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

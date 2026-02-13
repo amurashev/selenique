@@ -19,6 +19,7 @@ export const getPromptBookData = (slug: string) => {
   const item = {
     ...baseItem,
     slug,
+    vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
     reviewsRating,
     reviewsRatingFixed,
     reviewsCount,

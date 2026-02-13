@@ -19,12 +19,12 @@ import {
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import {
   promptbooksOrdered,
-  guidesOrdered,
   promptbooksBundlesOrdered,
 } from "@/constants/promptbooks";
 import { PROMPT_CATEGORIES, PROMPT_MODELS } from "@/constants/prompts";
 
 import { i18n, Locale } from "../../i18n-config";
+import { getGuidesList } from "@/constants/guides/utils";
 
 const DOMAIN = "https://www.selenique.space";
 
@@ -93,9 +93,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         promptBookPageRoute.getUrl(locale, { params: { slug } })
       ),
       // Guides
-      ...guidesOrdered.map((slug) =>
-        guidePageRoute.getUrl(locale, { params: { slug } })
-      ),
+      ...getGuidesList(locale).map(item => guidePageRoute.getUrl(locale, { params: { slug: item.slug } }))
     ].forEach((item) => {
       pages.push({
         url: `${DOMAIN}${item}`,

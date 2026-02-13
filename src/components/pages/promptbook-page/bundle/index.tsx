@@ -6,7 +6,7 @@ import { useIntl } from "react-intl";
 import styles from "./styles.module.css";
 import { PromptBook } from "@/components/types";
 
-import PromptbookItem from "@/components/sections/promptbook-item2";
+import PromptbookItem from "@/components/sections/promptbook-item";
 
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { getPromptBookData } from "@/constants/promptbooks/utils";

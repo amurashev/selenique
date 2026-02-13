@@ -14,7 +14,7 @@ import {
 } from "@/constants/promptbooks";
 
 import { homePage, promptsCategoryPageRoute } from "@/constants/routes";
-import PromptbookItem from "@/components/sections/promptbook-item2";
+import PromptbookItem from "@/components/sections/promptbook-item";
 import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
 import { PromptBook, PromptCategories } from "@/components/types";

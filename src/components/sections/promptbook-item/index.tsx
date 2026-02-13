@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { PromptBook } from "@/components/types";
 import { promptBookPageRoute } from "@/constants/routes";
+import StarIcon from "@/components/ui/icons/star";
 
 import styles from "./styles.module.css";
 
@@ -14,28 +15,35 @@ const PromptbookItem: React.FC<{
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { id, slug, name, summary } = item;
+  const { slug, name, vertImage, isBestseller, reviewsRating, reviewsRatingFixed } = item;
+
+  const url = promptBookPageRoute.getUrl(locale, {
+    params: {
+      slug,
+    },
+  })
 
   return (
     <Link
       key={slug}
-      href={promptBookPageRoute.getUrl(locale, {
-        params: {
-          slug,
-        },
-      })}
+      href={url}
       className={styles.card}
     >
       <div className={styles.box}>
-        <img src={`/promptbooks/${id}/vert.jpg`} alt={name} className={styles.image} />
-        <div className={styles.textBlock}>
-          <div className={styles.title}>{name}</div>
-          <div className={styles.text}>{summary}</div>
+        <img src={vertImage} title={name} alt={name} className={styles.image} />
+      </div>
+      {isBestseller && (
+        <div className={styles.bestseller}>Bestseller</div>
+      )}
+
+      {Boolean(reviewsRating) && (
+        <div className={styles.ratingBox}>
+          <div className={styles.startBox}>
+            <StarIcon size={11} />
+            <span><strong>{reviewsRatingFixed}</strong></span>
+          </div>
         </div>
-      </div>
-      <div className={styles.button}>
-        {formatMessage({ id: "common.buy_now" })}
-      </div>
+      )}
     </Link>
   );
 };

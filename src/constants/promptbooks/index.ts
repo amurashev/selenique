@@ -1010,39 +1010,19 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "A premium bundle of AI prompts inspired by red carpet events, award ceremonies, and high-profile fashion moments. This collection brings together prompts for women, men, and couples to create glamorous, cinematic, and event-ready visuals with a true celebrity feel.",
     text: t32,
   },
-  "virtual-influence-guide": {
-    id: 33,
+  "ai-for-fashion-brands": {
+    id: 42,
     gumroad: {
       id: "null",
-      slug: "virtual-influence-guide",
+      slug: "ai-for-fashion-brands",
     },
-    name: "Iconista lab: Virtual Influence: The 48-Hour Playbook",
-    type: "guide",
-    fileType: "link",
-    links: {},
-    tags: [],
-    images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    price: {
-      ru: 4990,
-      en: 67,
-    },
-    summary:
-      "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
-    text: "",
-  },
-  "virtual-influence-guide-ru": {
-    id: 41,
-    gumroad: {
-      id: "null",
-      slug: "virtual-influence-guide-ru",
-    },
-    boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
+    // boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
     name: "Iconista Lab: Пошаговый гайд по созданию ИИ инфлюенсера",
     type: "guide",
     fileType: "link",
     links: {},
     tags: [],
-    images: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    images: [],
     price: {
       ru: 4990,
       en: 67,
@@ -1187,11 +1167,6 @@ export const promptbooksBundlesOrdered: string[] = [
   "business-men-prompts-bundle",
   "business-women-prompts-bundle",
   "red-carpet-prompts-bundle",
-];
-
-export const guidesOrdered: string[] = [
-  "virtual-influence-guide",
-  // "virtual-influence-guide-ru"
 ];
 
 export const promptbooksOrdered: string[] = [

@@ -1,14 +1,13 @@
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
 
-import GuidePage from "@/components/pages/promptbook-page";
 import VirtualInfluencePage from "@/components/pages/virtual-influence";
-// import AIFashionGuidePage from "@/components/pages/ai-fashion-guide";
+import AIFashionGuidePage from "@/components/pages/ai-for-fashion-brands";
 import { i18n, Locale } from "../../../../../i18n-config";
 
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import { GUIDES } from "@/constants/guides";
 
 export async function generateMetadata({
   params,
@@ -17,21 +16,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug, lang } = await params;
 
-  // TODO: fix 
-  const fixedSlug = lang === "ru" ? "virtual-influence-guide-ru" : "virtual-influence-guide"
-  const fixedId = lang === "ru" ? 41 : 33
+  const finalLang = lang || i18n.defaultLocale
 
-  const data = PROMTBOOKS[fixedSlug || "null"];
+  const data = GUIDES[slug];
+  const guideData = data.locales[finalLang] || data.locales['en']
 
-  const title = data.name;
-  const description = data.summary;
+  const id = guideData.id
+  const title = guideData.name
+  const description = guideData.description
 
   return {
     title,
     description,
     openGraph: {
       images: [
-        `https://www.selenique.space/promptbooks/${fixedId}/${data.images[0]}.jpg`,
+        // TODO
+        `https://www.selenique.space/promptbooks/${id}/1.jpg`,
       ],
       title: title,
       description,
@@ -49,7 +49,7 @@ export default async function PromptbookPageEntry({
   const { slug, lang } = await params;
   const finalLang = lang || i18n.defaultLocale;
 
-  const data = PROMTBOOKS[slug || "null"];
+  const data = GUIDES[slug];
 
   if (!data) {
     return redirect("/guides");
@@ -58,7 +58,7 @@ export default async function PromptbookPageEntry({
   return (
     <Layout locale={finalLang}>
       {slug === "virtual-influence-guide" && <VirtualInfluencePage />}
-      {/* {slug === "ai-for-fashion-brands" && <AIFashionGuidePage />} */}
+      {slug === "ai-for-fashion-brands" && <AIFashionGuidePage />}
     </Layout>
   );
 }

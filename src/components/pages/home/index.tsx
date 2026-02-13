@@ -14,7 +14,6 @@ import "react-photo-album/rows.css";
 
 import {
   PROMTBOOKS,
-  guidesOrdered,
   promptbooksBundlesOrdered,
 } from "@/constants/promptbooks";
 import {
@@ -27,14 +26,15 @@ import PHOTOS from "../../../../source/portfolio.json";
 import Profile from "./profile";
 import shuffle from "@/utils/arrays";
 import { RowsPhotoAlbum } from "react-photo-album";
-import PromptbookList from "@/components/sections/promptbook-list";
 import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
 import { PromptBook } from "@/components/types";
 
-import PromptbookItem from "@/components/sections/promptbook-item2";
+import PromptbookItem from "@/components/sections/promptbook-item";
 import settings from "../promptbook-list/settings";
 import { getPromptBookData } from "@/constants/promptbooks/utils";
+import { getGuideData, getGuidesList } from "@/constants/guides/utils";
+import GuideItem from "@/components/sections/guide-item";
 
 const randomPhotos = PHOTOS.filter((item) => {
   const sourceFile = item.SourceFile.slice(8);
@@ -92,6 +92,9 @@ export default function HomePage({
     setIsMounted(true);
   }, []);
 
+  const guidesListId = getGuidesList(locale)
+  const guidesList = guidesListId.map(item => getGuideData(item.slug, locale))
+
   return (
     <div className={styles.page}>
       <ShortHeader
@@ -126,16 +129,15 @@ export default function HomePage({
           <div className={styles.section}>
             <h2>{formatMessage({ id: "home.guides.title" })}</h2>
 
-            <Slider {...settings} className={styles.slider}>
-              {guidesOrdered.map(slug => {
-                const promptPack = getPromptBookData(slug)
+            <div className={styles.list}>
+              {guidesList.map(item => {
                 return (
-                  <div key={slug} className={styles.item}>
-                    <PromptbookItem item={promptPack} />
+                  <div key={item.slug} className={styles.item}>
+                    <GuideItem item={item} />
                   </div>
                 )
               })}
-            </Slider>
+            </div>
             <div className={styles.buttonBox}>
               <Link
                 className={styles.seeAll}

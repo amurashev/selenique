@@ -4,15 +4,18 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 
 import styles from "./page.module.css";
-import { guidesOrdered } from "@/constants/promptbooks";
 
 import { homePage } from "@/constants/routes";
-import PromptbookList from "@/components/sections/promptbook-list";
 import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
+import { getGuidesList, getGuideData } from "@/constants/guides/utils";
+import GuideItem from "@/components/sections/guide-item";
 
 export default function GuidesListPage() {
   const { formatMessage, locale } = useIntl();
+
+  const guidesListId = getGuidesList(locale)
+  const guidesList = guidesListId.map(item => getGuideData(item.slug, locale))
 
   return (
     <div className={styles.page}>
@@ -23,7 +26,17 @@ export default function GuidesListPage() {
       <main className={styles.main}>
         <h1>{formatMessage({ id: "guides.title" })}</h1>
         <p>{formatMessage({ id: "guides.text" })}</p>
-        <PromptbookList list={guidesOrdered} />
+
+        <div className={styles.list}>
+          {guidesList.map(item => {
+            return (
+              <div key={item.slug} className={styles.item}>
+                <GuideItem item={item} />
+              </div>
+            )
+          })}
+        </div>
+
         <div className={styles.buttonBox}>
           <Link className={styles.seeAll} href={homePage.getUrl(locale)}>
             {formatMessage({ id: "home.guides.see_all" })}

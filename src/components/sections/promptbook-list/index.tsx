@@ -1,6 +1,6 @@
 "use client";
 
-import PromptbookItem from "@/components/sections/promptbook-item2";
+import PromptbookItem from "@/components/sections/promptbook-item";
 
 import styles from "./styles.module.css";
 import { getPromptBookData } from "@/constants/promptbooks/utils";

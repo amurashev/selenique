@@ -16,7 +16,7 @@ import { BaseRouteType, Route } from "@/utils/routing";
 // Flags: https://www.flaticon.com/packs/international-flags-6?word=flag
 export default function ShortHeader({ route, title, color = "black"} : {
   route?: Route<BaseRouteType>,
-  title: string,
+  title?: string,
   color?: "white" | "black"
 }) {
   const { formatMessage, locale } = useIntl();
@@ -59,7 +59,6 @@ export default function ShortHeader({ route, title, color = "black"} : {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
 
   return (
     <div className={`${styles.box} ${color === "white" ? styles.boxWhite : ""}`}>

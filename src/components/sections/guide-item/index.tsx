@@ -5,30 +5,24 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 
 import { PromptBook } from "@/components/types";
-import { promptBookPageRoute, guidePageRoute } from "@/constants/routes";
+import { guidePageRoute } from "@/constants/routes";
 import StarIcon from "@/components/ui/icons/star";
 
 import styles from "./styles.module.css";
+import { Guide } from "@/constants/guides";
 
-const PromptbookItem: React.FC<{
-  item: PromptBook;
+const GuideItem: React.FC<{
+  item: Guide;
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { id, slug, name, type, isBestseller, reviewsRating, reviewsRatingFixed } = item;
+  const { slug, name, vertImage } = item;
 
-  const url = type === "guide" ? guidePageRoute.getUrl(locale, {
-    params: {
-      slug,
-    },
-  }) : promptBookPageRoute.getUrl(locale, {
+  const url = guidePageRoute.getUrl(locale, {
     params: {
       slug,
     },
   })
-
-  // TODO" localise
-  const fixedId = locale === "ru" && id === 33 ? 41 : id
 
   return (
     <Link
@@ -37,25 +31,22 @@ const PromptbookItem: React.FC<{
       className={styles.card}
     >
       <div className={styles.box}>
-        <img src={`/promptbooks/${fixedId}/vert.jpg`} title={name} alt={name} className={styles.image} />
+        <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>
-      {isBestseller && (
+      {/* {isBestseller && (
         <div className={styles.bestseller}>Bestseller</div>
-      )}
+      )} */}
 
-      {Boolean(reviewsRating) && (
+      {/* {Boolean(reviewsRating) && (
         <div className={styles.ratingBox}>
           <div className={styles.startBox}>
             <StarIcon size={11} />
             <span><strong>{reviewsRatingFixed}</strong></span>
           </div>
         </div>
-      )}
-      {/* <div className={styles.button}>
-        {formatMessage({ id: "common.buy_now" })}
-      </div> */}
+      )} */}
     </Link>
   );
 };
 
-export default PromptbookItem;
+export default GuideItem;

@@ -7,14 +7,15 @@ import { useMetrica } from 'next-yandex-metrica';
 import { PriceWithUnit } from "@/components/ui/price";
 
 import styles from "./styles.module.css";
-import { PriceType } from "@/components/types";
 
 export default function Price(
-  { purchaseLink, boostyLink, price, oldPrice }: { purchaseLink: string, boostyLink?: string, price: PriceType, oldPrice: PriceType }
+  { purchaseLink, boostyLink }: { purchaseLink: string, boostyLink: string }
 ) {
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
+  const price = { en: 65, ru: 3990 }
+  const oldPrice = { en: 79, ru: 4990 }
   const discount = 20;
 
   const showRussiaHints = ['en', "ru"].includes(locale)
@@ -60,19 +61,16 @@ export default function Price(
           {formatMessage({ id: "common.buy_now" })}
         </Link>
 
-
-        {boostyLink && (
-          <Link
-            className={styles.link}
-            href={boostyLink}
-            target="_blank"
-            onClick={() => {
-              reachGoal('virtualInfluencePage_continueRussia-Click')
-            }}
-          >
-            {formatMessage({ id: "common.buy_now_russia" })}
-          </Link>
-        )}
+        <Link
+          className={styles.link}
+          href={boostyLink}
+          target="_blank"
+          onClick={() => {
+            reachGoal('virtualInfluencePage_continueRussia-Click')
+          }}
+        >
+          {formatMessage({ id: "common.buy_now_russia" })}
+        </Link>
       </div>
 
       {showRussiaHints && (

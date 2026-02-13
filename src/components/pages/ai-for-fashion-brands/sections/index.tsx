@@ -8,13 +8,13 @@ import { FadeInSection } from "@/utils/fade";
 import styles from "./styles.module.css";
 
 export function SectionGray(
-  { id, title, children }: { id?: string, title: string, children: React.ReactNode; }
+  { title, children }: { title: string, children: React.ReactNode; }
 ) {
   const { formatMessage, locale } = useIntl();
 
   return (
     <FadeInSection>
-      <div id={id} className={styles.section1}>
+      <div className={styles.section1}>
         <div className={styles.section1Inner}>
           <h2 className={styles.s1Title}>
             {title}
@@ -30,13 +30,13 @@ export function SectionGray(
 
 
 export function SectionColor(
-  { id, title, children }: { id?: string, title: string, children: React.ReactNode; }
+  { title, children }: { title: string, children: React.ReactNode; }
 ) {
   const { formatMessage, locale } = useIntl();
 
   return (
     <FadeInSection>
-      <div id={id} className={styles.section2}>
+      <div className={styles.section2}>
         {/* <div className={styles.fader} /> */}
         <div className={styles.section1Inner}>
           {title &&

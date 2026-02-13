@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { PromptBook } from "@/components/types";
-import PromptbookItem from "@/components/sections/promptbook-item2";
+import PromptbookItem from "@/components/sections/promptbook-item";
 
 import styles from "./styles.module.css";
 
