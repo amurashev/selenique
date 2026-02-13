@@ -2,23 +2,34 @@
 
 import Link from "next/link";
 import { useIntl } from "react-intl";
-import { useMetrica } from 'next-yandex-metrica';
+import { useMetrica } from "next-yandex-metrica";
 
 import { PriceWithUnit } from "@/components/ui/price";
+import { PriceType } from "@/components/types";
 
 import styles from "./styles.module.css";
 
-export default function Price(
-  { purchaseLink, boostyLink }: { purchaseLink: string, boostyLink: string }
-) {
+export default function Price({
+  purchaseLink,
+  boostyLink,
+  price,
+  oldPrice,
+  summary,
+  discount,
+  // onBuyClick
+}: {
+  purchaseLink: string;
+  boostyLink?: string;
+  price: PriceType;
+  oldPrice: PriceType;
+  summary?: string;
+  discount: number
+  // onBuyClick: () => void
+}) {
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
-  const price = { en: 65, ru: 3990 }
-  const oldPrice = { en: 79, ru: 4990 }
-  const discount = 20;
-
-  const showRussiaHints = ['en', "ru"].includes(locale)
+  const showRussiaHints = ["en", "ru"].includes(locale);
 
   // Текущая дата (без времени, чтобы не было дробных дней)
   // const today = new Date();
@@ -28,12 +39,12 @@ export default function Price(
   // const diff = Number(targetDate) - Number(today);
 
   // Переводим миллисекунды в дни
-  const daysLeft = 2// Math.ceil(diff / (1000 * 60 * 60 * 24));
+  const daysLeft = 2; // Math.ceil(diff / (1000 * 60 * 60 * 24));
 
   return (
     <div>
       <div className={styles.price}>
-        <div>{formatMessage({ id: "virtual-influence.price.title" })}:</div>
+        <div>{formatMessage({ id: "common.todays_price" })}:</div>
         <div className={styles.priceInner}>
           <div className={styles.priceValue}>
             <PriceWithUnit value={price} />
@@ -55,22 +66,25 @@ export default function Price(
           className={styles.link}
           href={purchaseLink}
           target="_blank"
-          onClick={() => {
-            reachGoal('virtualInfluencePage_continue-Click')
-          }}>
+          // onClick={() => {
+          //   reachGoal("virtualInfluencePage_continue-Click");
+          // }}
+        >
           {formatMessage({ id: "common.buy_now" })}
         </Link>
 
-        <Link
-          className={styles.link}
-          href={boostyLink}
-          target="_blank"
-          onClick={() => {
-            reachGoal('virtualInfluencePage_continueRussia-Click')
-          }}
-        >
-          {formatMessage({ id: "common.buy_now_russia" })}
-        </Link>
+        {boostyLink && (
+          <Link
+            className={styles.link}
+            href={boostyLink}
+            target="_blank"
+            // onClick={() => {
+            //   reachGoal("virtualInfluencePage_continueRussia-Click");
+            // }}
+          >
+            {formatMessage({ id: "common.buy_now_russia" })}
+          </Link>
+        )}
       </div>
 
       {showRussiaHints && (
@@ -79,9 +93,11 @@ export default function Price(
         </div>
       )}
 
-      <p className={styles.summary}>
-        {formatMessage({ id: `virtual-influence.section9.text1` })}
-      </p>
+      {summary && (
+        <p className={styles.summary}>
+          {summary}
+        </p>
+      )}
     </div>
   );
 }

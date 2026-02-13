@@ -49,7 +49,7 @@ export type DigitalItem = {
 export type PromptBookRaw = DigitalItem & {
   number?: number;
   pack?: number[]
-  type?: "guide" | "bundle" | "pack"
+  type?: "bundle" | "pack"
   tags: PromptCategories[];
   mainCategory?: PromptCategories
 };
@@ -62,6 +62,8 @@ export type PromptBook = PromptBookRaw & {
   reviewsRatingFixed: string
   reviewsCount: number
   vertImage: string
+  purchaseLink: string
+  boostyLink: string
 };
 
 

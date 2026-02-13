@@ -1,0 +1,110 @@
+.page {
+  height: 100vh;
+  background-color: var(--foreground);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--foreground);
+  font-size: 18px;
+}
+
+.itemsList {
+  /* margin-top: 12px; */
+  line-height: 1.2;
+  list-style: none;
+  padding-left: 0px;
+
+  li + li {
+    margin-top: 12px;
+  }
+}
+
+.header3 {
+  font-size: 21px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.emphasized {
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+}
+.smallMarginTop {
+  margin-top: 8px;
+}
+
+.extraMarginTop {
+  margin-top: 24px;
+}
+
+
+.blocksList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+.blocksListItem {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 12px 12px;
+  font-size: 15px;
+}
+.blocksListItemTitle {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.blocksListItemSubList {
+  padding-left: 12px;
+
+  li + li {
+    margin-top: 2px;
+  }
+}
+
+
+.blocksList2El {
+  composes: blocksList;
+}
+.blocksList3El {
+  composes: blocksList;
+}
+.blocksList4El {
+  composes: blocksList;
+  grid-template-columns: repeat(2, 1fr);
+}
+.roadMapSubList {
+  composes: blocksListItemSubList;
+  list-style: none;
+  padding-left: 0px;
+}
+
+@media (min-width: 840px) {
+  .blocksListItem {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .blocksListItemTitle {
+    font-size: 20px;
+  }
+  .blocksList4El {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .blocksList3El {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .blocksList2El {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}

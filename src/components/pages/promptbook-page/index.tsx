@@ -31,13 +31,11 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
-  const { id, gumroad, name, isBestseller, type, text, images, isDisabled } = data;
+  const { id, gumroad, name, isBestseller, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
 
-  const backRoute = type !== "guide"
-    ? promptBookListPageRoute
-    : guidesListPageRoute
+  const backRoute = promptBookListPageRoute
 
   const backUrl = backRoute.getUrl(locale)
 
@@ -113,10 +111,7 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
             <Related related={related} />
           )}
           <Link className={styles.seeAllButton} href={backUrl}>
-            {type !== "guide"
-              ? formatMessage({ id: "prompt_books.see_all" })
-              : formatMessage({ id: "guides.see_all" })
-            }
+            {formatMessage({ id: "prompt_books.see_all" })}
           </Link>
           <div className={styles.reviewBox}><Reviews /></div>
 

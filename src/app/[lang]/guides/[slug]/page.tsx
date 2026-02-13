@@ -55,6 +55,12 @@ export default async function PromptbookPageEntry({
     return redirect("/guides");
   }
 
+  const guideData = data.locales[finalLang]
+
+  if (!guideData) {
+    return redirect("/guides");
+  }
+
   return (
     <Layout locale={finalLang}>
       {slug === "virtual-influence-guide" && <VirtualInfluencePage />}

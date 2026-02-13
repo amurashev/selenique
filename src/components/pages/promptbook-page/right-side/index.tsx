@@ -83,10 +83,7 @@ export default function RightSide({
         )}
 
         <Link className={styles.seeAllButton} href={backUrl}>
-          {type !== "guide"
-            ? formatMessage({ id: "prompt_books.see_all" })
-            : formatMessage({ id: "guides.see_all" })
-          }
+          {formatMessage({ id: "prompt_books.see_all" })}
         </Link>
 
         {/* {links.cm && (

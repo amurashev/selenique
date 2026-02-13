@@ -16,6 +16,8 @@ export type GuideItem = {
 export type Guide = GuideLocaleItem & {
   slug: string
   vertImage: string
+  purchaseLink: string
+  boostyLink: string
 };
 
 export const GUIDES: Record<string, GuideItem> = {
@@ -42,4 +44,18 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     }
   },
+  "ai-for-fashion-brands": {
+    locales: {
+      ru: {
+        id: 43,
+        gumroadSlug: "ai-for-fashion-brands-guide-ru",
+        boostyId: "",
+        name: "Практический мини-курс: AI-съёмка для fashion-брендов",
+        description: "Если вы работаете в fashion, вы знаете:съёмки - это дорого, долго и зависимо от десятков факторов. Этот курс - о том, как перевести большую часть продакшна на AI и выстроить управляемую систему съёмок внутри бренда.",
+        price: {
+          ru: 5990
+        },
+      },
+    }
+  }
 }

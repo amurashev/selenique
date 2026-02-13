@@ -21,6 +21,8 @@ export const getGuideData = (slug: string, locale: string): Guide => {
     ...guideData,
     slug,
     vertImage: `/promptbooks/${guideData.id}/vert.jpg`,
+    purchaseLink: `https://seleniquestudio.gumroad.com/l/${guideData.gumroadSlug}?wanted=true`,
+    boostyLink: guideData.boostyId ? `https://boosty.to/selenique/posts/${guideData.boostyId}` : ''
   };
 
   return item

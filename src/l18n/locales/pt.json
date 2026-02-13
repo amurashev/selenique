@@ -10,6 +10,7 @@
   "common.prices.types.photo": "foto",
   "common.prices.types.angle": "ângulo",
   "common.price": "Preço",
+  "common.todays_price": "Today's Price",
   "common.discount": "{discount}% de desconto",
   "common.models.sex.women": "Mulheres",
   "common.models.sex.men": "Homens",
@@ -308,8 +309,6 @@
   "virtual-influence.section10.question4": "Can I actually make money?",
   "virtual-influence.section10.answer4": "Yes. Brands pay virtual influencers the same way they pay real ones",
   "virtual-influence.section10.question5": "What if I can’t handle it?",
-  "virtual-influence.section10.answer5": "You’ll learn AI, content strategy, and marketing — skills worth thousands",
-
-  "virtual-influence.price.title": "Today's Price"
+  "virtual-influence.section10.answer5": "You’ll learn AI, content strategy, and marketing — skills worth thousands"
 }
   

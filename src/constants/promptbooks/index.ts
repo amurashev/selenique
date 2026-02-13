@@ -1010,27 +1010,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "A premium bundle of AI prompts inspired by red carpet events, award ceremonies, and high-profile fashion moments. This collection brings together prompts for women, men, and couples to create glamorous, cinematic, and event-ready visuals with a true celebrity feel.",
     text: t32,
   },
-  "ai-for-fashion-brands": {
-    id: 42,
-    gumroad: {
-      id: "null",
-      slug: "ai-for-fashion-brands",
-    },
-    // boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
-    name: "Iconista Lab: Пошаговый гайд по созданию ИИ инфлюенсера",
-    type: "guide",
-    fileType: "link",
-    links: {},
-    tags: [],
-    images: [],
-    price: {
-      ru: 4990,
-      en: 67,
-    },
-    summary:
-      "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
-    text: "",
-  },
   "120-product-podiums-photo-prompts": {
     id: 34,
     gumroad: {

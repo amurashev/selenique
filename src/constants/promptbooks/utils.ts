@@ -20,6 +20,8 @@ export const getPromptBookData = (slug: string) => {
     ...baseItem,
     slug,
     vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
+    purchaseLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroad.slug}?wanted=true`,
+    boostyLink: baseItem.boostyId ? `https://boosty.to/selenique/posts/${baseItem.boostyId}` : '',
     reviewsRating,
     reviewsRatingFixed,
     reviewsCount,
