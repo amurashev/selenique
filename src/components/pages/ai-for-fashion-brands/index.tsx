@@ -21,6 +21,9 @@ import { getGuideData } from "@/constants/guides/utils";
 import CheckMark from "@/components/ui/icons/check-mark";
 
 import styles from "@/components/sections/landing-black/page.module.css";
+import BlockSlider, {
+  BlockSliderItem,
+} from "@/components/sections/landing-black/block-slider";
 
 export default function AIForBrandsPage() {
   const { formatMessage, locale } = useIntl();
@@ -71,25 +74,17 @@ export default function AIForBrandsPage() {
             </h3>
             <ul className={styles.itemsList}>
               {[1, 2, 3].map((item) => (
-                <li key={item}>
-                  {formatMessage({
-                    id: `ai-for-fashion-brands.section2.item${item}`,
-                  })}
-                </li>
+                <li
+                  key={item}
+                  dangerouslySetInnerHTML={{
+                    __html: formatMessage({
+                      id: `ai-for-fashion-brands.section2.item${item}`,
+                    }),
+                  }}
+                />
               ))}
             </ul>
           </div>
-          {/* <div className={styles.extraMarginTop}>
-            <ImagesSlider
-              images={[
-                "/images/influencer/101.jpg",
-                "/images/influencer/102.jpg",
-                "/images/influencer/103.jpg",
-                "/images/influencer/104.jpg",
-                "/images/influencer/105.jpg",
-              ]}
-            />
-          </div> */}
         </SectionGray>
 
         <SectionColor title="">
@@ -151,7 +146,7 @@ export default function AIForBrandsPage() {
         >
           <div className={styles.temp}>
             <p
-              className={styles.smallMarginTop}
+              // className={styles.smallMarginTop}
               dangerouslySetInnerHTML={{
                 __html: formatMessage({
                   id: `ai-for-fashion-brands.organisation.summary2`,
@@ -177,9 +172,10 @@ export default function AIForBrandsPage() {
             {formatMessage({
               id: "ai-for-fashion-brands.standard.subtitle",
             })}
+            :
           </h3>
           <ul className={styles.itemsList}>
-            {[1, 2, 3, 4].map((item) => (
+            {[1, 2, 3, 4, 5].map((item) => (
               <li key={item}>
                 <CheckMark />{" "}
                 {formatMessage({
@@ -222,7 +218,7 @@ export default function AIForBrandsPage() {
           title={formatMessage({ id: "ai-for-fashion-brands.who.title" })}
         >
           <div className={styles.blocksList3El}>
-            {["👩‍💼", "👩‍💻", "📸", "💃", "👗"].map((item, key) => (
+            {["👩‍💼", "👩‍💻", "📸", "👗", "💃"].map((item, key) => (
               <div key={item} className={styles.blocksListItem}>
                 <h4 className={styles.blocksListItemTitle}>
                   {item}{" "}

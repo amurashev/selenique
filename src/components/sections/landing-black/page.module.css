@@ -71,6 +71,15 @@
 }
 
 
+
+.blocksListItem2 {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 12px 12px;
+  font-size: 15px;
+  height: 120px;
+}
+
 .blocksList2El {
   composes: blocksList;
 }
