@@ -16,20 +16,18 @@ const GuideItem: React.FC<{
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { slug, name, vertImage } = item;
+  const { slug, name, vertImage, gumroadLink, noLanding } = item;
 
-  const url = guidePageRoute.getUrl(locale, {
-    params: {
-      slug,
-    },
-  })
+  const url = noLanding
+    ? gumroadLink
+    : guidePageRoute.getUrl(locale, {
+        params: {
+          slug,
+        },
+      });
 
   return (
-    <Link
-      key={slug}
-      href={url}
-      className={styles.card}
-    >
+    <Link key={slug} href={url} className={styles.card}>
       <div className={styles.box}>
         <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>

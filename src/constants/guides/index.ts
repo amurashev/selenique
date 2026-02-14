@@ -7,6 +7,7 @@ export type GuideLocaleItem = {
   name: string
   description: string
   price: PriceType
+  noLanding?: boolean
 };
 
 export type GuideItem = {
@@ -18,6 +19,7 @@ export type Guide = GuideLocaleItem & {
   vertImage: string
   purchaseLink: string
   boostyLink: string
+  gumroadLink: string
 };
 
 export const GUIDES: Record<string, GuideItem> = {
@@ -54,6 +56,21 @@ export const GUIDES: Record<string, GuideItem> = {
         description: "Если вы работаете в fashion, вы знаете:съёмки - это дорого, долго и зависимо от десятков факторов. Этот курс - о том, как перевести большую часть продакшна на AI и выстроить управляемую систему съёмок внутри бренда.",
         price: {
           ru: 5990
+        },
+      },
+    }
+  },
+  "virtual-influence-instagram-playbook": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 46,
+        gumroadSlug: "virtual-influence-instagram-playbook",
+        boostyId: "",
+        name: "Mastering Virtual Influence: The Step-by-Step Instagram Playbook",
+        description: "This guide is a comprehensive, 7-part roadmap designed to help you build, grow, and monetize a virtual persona on Instagram. This guide provides a step-by-step action plan to automate 94% of your content creation using AI, master the Instagram algorithm through strategic engagement, and scale your digital brand from zero to a realistic 2K–5K monthly income within one year.",
+        price: {
+          en: 14.9
         },
       },
     }

@@ -64,6 +64,28 @@ export default function HomePage({
       <Profile />
 
       <div className={styles.section}>
+        <h2>{formatMessage({ id: "home.guides.title" })}</h2>
+
+        <div className={styles.list}>
+          {guidesList.map((item) => {
+            return (
+              <div key={item.slug} className={styles.null}>
+                <GuideItem item={item} />
+              </div>
+            );
+          })}
+        </div>
+        <div className={styles.buttonBox}>
+          <Link
+            className={styles.seeAll}
+            href={guidesListPageRoute.getUrl(locale)}
+          >
+            {formatMessage({ id: "home.guides.see_all" })}
+          </Link>
+        </div>
+      </div>
+
+      <div className={styles.section}>
         <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
         <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
 
@@ -83,28 +105,6 @@ export default function HomePage({
             href={promptBookListPageRoute.getUrl(locale)}
           >
             {formatMessage({ id: "home.prompt_books.see_all" })}
-          </Link>
-        </div>
-      </div>
-
-      <div className={styles.section}>
-        <h2>{formatMessage({ id: "home.guides.title" })}</h2>
-
-        <div className={styles.list}>
-          {guidesList.map((item) => {
-            return (
-              <div key={item.slug} className={styles.null}>
-                <GuideItem item={item} />
-              </div>
-            );
-          })}
-        </div>
-        <div className={styles.buttonBox}>
-          <Link
-            className={styles.seeAll}
-            href={guidesListPageRoute.getUrl(locale)}
-          >
-            {formatMessage({ id: "home.guides.see_all" })}
           </Link>
         </div>
       </div>
