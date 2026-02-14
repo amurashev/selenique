@@ -13,19 +13,13 @@ import styles from "./page.module.css";
 import "react-photo-album/rows.css";
 
 import {
-  PROMTBOOKS,
-  promptbooksBundlesOrdered,
-} from "@/constants/promptbooks";
-import {
   promptBookListPageRoute,
   promptBundleListPageRoute,
   guidesListPageRoute,
   productPortfolioPageRoute,
 } from "@/constants/routes";
 
-import PHOTOS from "../../../../source/portfolio.json";
 import Profile from "./profile";
-import shuffle from "@/utils/arrays";
 import { RowsPhotoAlbum } from "react-photo-album";
 import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
@@ -34,54 +28,28 @@ import { PromptBook } from "@/components/types";
 import PromptbookItem from "@/components/sections/promptbook-item";
 import settings from "../promptbook-list/settings";
 import { getPromptBookData } from "@/constants/promptbooks/utils";
-import { getGuideData, getGuidesList } from "@/constants/guides/utils";
 import GuideItem from "@/components/sections/guide-item";
-
-const randomPhotos = PHOTOS.filter((item) => {
-  const sourceFile = item.SourceFile.slice(8);
-  const category = sourceFile.split("/")[3];
-  return category === "top";
-});
-
-shuffle(randomPhotos);
-
-const photos = randomPhotos
-  .map((item) => {
-    const sourceFile = item.SourceFile.slice(8);
-    const category = sourceFile.split("/")[3];
-    const fileName = sourceFile.split("/")[4];
-    return {
-      src: sourceFile,
-      category,
-      width: item.ImageWidth,
-      height: item.ImageHeight,
-      alt: fileName,
-      title: fileName,
-    };
-  })
-  .slice(0, 8);
-
-
-const BEST_SELLERS: PromptBook[] = []
-
-Object.keys(PROMTBOOKS).forEach(slug => {
-  const packData = getPromptBookData(slug)
-
-  const { mainCategory, type, isBestseller } = packData
-
-  if (mainCategory && type === 'pack') {
-    if (isBestseller) {
-      BEST_SELLERS.push(packData)
-    }
-  }
-})
-
+import { Guide } from "@/constants/guides";
 
 export default function HomePage({
   deviceType,
+  bestSellers,
+  photos,
+  guidesList,
+  bundles,
 }: {
   deviceType: "mobile" | "desktop";
-  // bestSellers: PromptBook[]
+  bestSellers: PromptBook[];
+  guidesList: Guide[];
+  bundles: PromptBook[]
+  photos: {
+    alt: string;
+    category: string;
+    height: number;
+    src: string;
+    title: string;
+    width: number;
+  }[];
 }) {
   const { formatMessage, locale } = useIntl();
 
@@ -94,14 +62,9 @@ export default function HomePage({
     setIsMounted(true);
   }, []);
 
-  const guidesListId = getGuidesList(locale)
-  const guidesList = guidesListId.map(item => getGuideData(item.slug, locale))
-
   return (
     <div className={styles.page}>
-      <ShortHeader
-        title={"Selenique.Studio"}
-      />
+      <ShortHeader title={"Selenique.Studio"} />
       <main className={styles.main}>
         <div className={styles.inner}>
           <Profile />
@@ -109,9 +72,9 @@ export default function HomePage({
           <div className={styles.section}>
             <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
             <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
-            
+
             <Slider {...settings} className={styles.slider}>
-              {BEST_SELLERS.map(promptPack => (
+              {bestSellers.map((promptPack) => (
                 <div key={promptPack.id} className={styles.item}>
                   <PromptbookItem item={promptPack} />
                 </div>
@@ -132,12 +95,12 @@ export default function HomePage({
             <h2>{formatMessage({ id: "home.guides.title" })}</h2>
 
             <div className={styles.list}>
-              {guidesList.map(item => {
+              {guidesList.map((item) => {
                 return (
                   <div key={item.slug} className={styles.item}>
                     <GuideItem item={item} />
                   </div>
-                )
+                );
               })}
             </div>
             <div className={styles.buttonBox}>
@@ -156,13 +119,12 @@ export default function HomePage({
             </h2>
 
             <Slider {...settings} className={styles.slider}>
-              {promptbooksBundlesOrdered.map(slug => {
-                const promptPack = getPromptBookData(slug)
+              {bundles.map((item) => {
                 return (
-                  <div key={slug} className={styles.item}>
-                    <PromptbookItem item={promptPack} />
+                  <div key={item.slug} className={styles.item}>
+                    <PromptbookItem item={item} />
                   </div>
-                )
+                );
               })}
             </Slider>
 

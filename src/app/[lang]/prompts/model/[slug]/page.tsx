@@ -71,12 +71,6 @@ export default async function PromptsModelPageEntry({
     return redirect(promptBookListPageRoute.getUrl(lang));
   }
 
-  // const promptsWithTag = promptbooksOrdered.filter(item => {
-  //   const promptData = PROMTBOOKS[item];
-
-  //   return promptData.tags.includes(slug)
-  // })
-
   return (
     <Layout locale={finalLang}>
       <PromptsModelPage

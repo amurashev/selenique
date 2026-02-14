@@ -8,10 +8,8 @@ import Card from "./card";
 import Header from "@/components/layout/header";
 import { SERVICES } from "@/constants/services";
 import Footer from "@/components/layout/footer";
-import { PROMTBOOKS, promptbooksOrdered } from "@/constants/promptbooks";
 import { promptBookListPageRoute } from "@/constants/routes";
 
-import PromptbookItem from "@/components/sections/promptbook-item";
 
 export default function HomePage() {
   const { formatMessage, locale } = useIntl();
@@ -41,16 +39,6 @@ export default function HomePage() {
         {locale !== "ru" && (
           <>
             <h1>{formatMessage({ id: "home.prompt_books.title" })}</h1>
-            {/* <div className={styles.list}>
-              {promptbooksOrdered.slice(0, 6).map((slug) => {
-                const item = {
-                  ...PROMTBOOKS[slug],
-                  slug,
-                };
-                return <PromptbookItem key={slug} item={item} />;
-              })}
-            </div> */}
-
             <div className={styles.buttonBox}>
               <Link
                 className={styles.linkSecondary}

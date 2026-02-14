@@ -18,10 +18,7 @@ import {
   promptBundleListPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
-import {
-  promptbooksOrdered,
-  promptbooksBundlesOrdered,
-} from "@/constants/promptbooks";
+import { PROMTBOOKS } from "@/constants/promptbooks";
 import { PROMPT_CATEGORIES, PROMPT_MODELS } from "@/constants/prompts";
 
 import { i18n, Locale } from "../../i18n-config";
@@ -40,8 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // },
   ] as MetadataRoute.Sitemap;
 
-
-  i18n.locales.forEach(locale => {
+  i18n.locales.forEach((locale) => {
     [
       // Home
       homePage.getUrl(locale),
@@ -88,14 +84,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     [
       // Prompts
-      ...promptbooksOrdered.map((slug) =>
-        promptBookPageRoute.getUrl(locale, { params: { slug } })
-      ),
-      ...promptbooksBundlesOrdered.map((slug) =>
-        promptBookPageRoute.getUrl(locale, { params: { slug } })
-      ),
+      ...Object.keys(PROMTBOOKS)
+        .filter((item) => PROMTBOOKS[item].type === "pack")
+        .map((slug) =>
+          promptBookPageRoute.getUrl(locale, { params: { slug } })
+        ),
+      ...Object.keys(PROMTBOOKS)
+        .filter((item) => PROMTBOOKS[item].type === "bundle")
+        .map((slug) =>
+          promptBookPageRoute.getUrl(locale, { params: { slug } })
+        ),
+
       // Guides
-      ...getGuidesList(locale).map(item => guidePageRoute.getUrl(locale, { params: { slug: item.slug } }))
+      ...getGuidesList(locale).map((item) =>
+        guidePageRoute.getUrl(locale, { params: { slug: item.slug } })
+      ),
     ].forEach((item) => {
       pages.push({
         url: `${DOMAIN}${item}`,
@@ -108,7 +111,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     [
       // Portfolio
       ...PORTFOLIO_TYPES.map((item) =>
-        productPortfolioPageRoute.getUrl(locale, { params: { type: item.index } })
+        productPortfolioPageRoute.getUrl(locale, {
+          params: { type: item.index },
+        })
       ),
     ].forEach((item) => {
       pages.push({
@@ -118,8 +123,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.3,
       });
     });
-
-  })
+  });
 
   return pages;
 }
