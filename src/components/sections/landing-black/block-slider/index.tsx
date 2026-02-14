@@ -9,7 +9,11 @@ import { settings } from "./settings";
 
 import styles from "./styles.module.css";
 
-export default function BlockSlider({ children }: { children: React.ReactNode; }) {
+export default function BlockSlider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <Slider {...settings} className={`${styles.slider} mobileViewBlack`}>
       {children}
@@ -17,10 +21,6 @@ export default function BlockSlider({ children }: { children: React.ReactNode; }
   );
 }
 
-export function BlockSliderItem({ children }: { children: React.ReactNode; }) {
-  return (
-    <div className={`${styles.item}`}>
-      {children}
-    </div>
-  );
+export function BlockSliderItem({ children }: { children: React.ReactNode }) {
+  return <div className={`${styles.item}`}>{children}</div>;
 }
