@@ -51,7 +51,7 @@ export const GUIDES: Record<string, GuideItem> = {
       ru: {
         id: 43,
         gumroadSlug: "ai-for-fashion-brands-guide-ru",
-        boostyId: "",
+        boostyId: "1435ceb3-6d80-48f7-82b1-2643bad96a14",
         name: "Практический мини-курс: AI-съёмка для fashion-брендов",
         description: "Если вы работаете в fashion, вы знаете:съёмки - это дорого, долго и зависимо от десятков факторов. Этот курс - о том, как перевести большую часть продакшна на AI и выстроить управляемую систему съёмок внутри бренда.",
         price: {
