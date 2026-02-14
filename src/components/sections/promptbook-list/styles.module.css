@@ -9,12 +9,6 @@
 @media (min-width: 600px) {
   .list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-}
-
-@media (min-width: 1080px) {
-  .list {
-    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 16px;
   }
 }

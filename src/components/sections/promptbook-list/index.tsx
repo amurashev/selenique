@@ -1,9 +1,9 @@
 "use client";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
+import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 import styles from "./styles.module.css";
-import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 export default function PromptbookList({ list }: { list: string[]}) {
 

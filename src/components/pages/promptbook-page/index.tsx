@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { useIntl } from "react-intl";
 import Link from "next/link";
-import { useMetrica } from 'next-yandex-metrica';
+import { useMetrica } from "next-yandex-metrica";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,49 +11,47 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./page.module.css";
 import { PromptBook } from "@/components/types";
 
-import {
-  promptBookListPageRoute,
-  guidesListPageRoute,
-} from "@/constants/routes";
+import { promptBookListPageRoute } from "@/constants/routes";
 
 import ImagesBox from "./images-box";
 import RightSide from "./right-side";
 import Related from "./related";
 import Reviews from "./reviews";
 import { ChevronLeft } from "@/components/sections/arrows";
-import ShortHeader from "@/components/layout/short-header";
 import Bundle from "./bundle";
 import Advantages from "./advantages";
 import Categories from "./categories";
 import Header from "./header";
 
-export default function PromptbookPage({ data, related = [] }: { data: PromptBook, related?: PromptBook[] }) {
+export default function PromptbookPage({
+  data,
+  related = [],
+}: {
+  data: PromptBook;
+  related?: PromptBook[];
+}) {
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
-  const { id, gumroad, name, isBestseller, text, images, isDisabled } = data;
+  const { id, purchaseLink, text, images, isDisabled } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
 
-  const backRoute = promptBookListPageRoute
+  const backUrl = promptBookListPageRoute.getUrl(locale);
 
-  const backUrl = backRoute.getUrl(locale)
-
-  const purchaseLink = `https://seleniquestudio.gumroad.com/l/${gumroad.slug}?wanted=true`;
-
-  const showRussiaHints = ['en', "ru"].includes(locale)
+  const showRussiaHints = ["en", "ru"].includes(locale);
 
   useEffect(() => {
-    reachGoal('promptPage_open', {
+    reachGoal("promptPage_open", {
       id,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.backBox}>
-          <Link href={backRoute.getUrl(locale)} className={styles.backBoxLink}>
+          <Link href={backUrl} className={styles.backBoxLink}>
             <ChevronLeft size={22} color={"#333333"} />
           </Link>
         </div>
@@ -102,32 +100,30 @@ export default function PromptbookPage({ data, related = [] }: { data: PromptBoo
               )}
             </div>
           </div>
-
         </div>
 
-
         <div className={styles.content}>
-          {related.length !== 0 && (
-            <Related related={related} />
-          )}
+          {related.length !== 0 && <Related related={related} />}
           <Link className={styles.seeAllButton} href={backUrl}>
             {formatMessage({ id: "prompt_books.see_all" })}
           </Link>
-          <div className={styles.reviewBox}><Reviews /></div>
-
+          <div className={styles.reviewBox}>
+            <Reviews />
+          </div>
         </div>
 
-        {gumroad.slug && (
+        {purchaseLink && (
           <div className={styles.mobileButton}>
             <Link
               className={styles.link}
               href={purchaseLink}
               target="_blank"
               onClick={() => {
-                reachGoal('promptPage_buyClick', {
+                reachGoal("promptPage_buyClick", {
                   id,
-                })
-              }}>
+                });
+              }}
+            >
               {formatMessage({ id: "common.continue" })}
             </Link>
           </div>
