@@ -67,8 +67,8 @@ export const GUIDES: Record<string, GuideItem> = {
         id: 46,
         gumroadSlug: "virtual-influence-instagram-playbook",
         boostyId: "",
-        name: "Mastering Virtual Influence: The Step-by-Step Instagram Playbook",
-        description: "This guide is a comprehensive, 7-part roadmap designed to help you build, grow, and monetize a virtual persona on Instagram. This guide provides a step-by-step action plan to automate 94% of your content creation using AI, master the Instagram algorithm through strategic engagement, and scale your digital brand from zero to a realistic 2K–5K monthly income within one year.",
+        name: "Virtual Influencer’s Handbook: Strategy, Growth, And Profit",
+        description: "This guide is a comprehensive, step-by-step system designed to help you build, grow, and monetize a professional virtual influencer brand on Instagram without ever needing to appear on camera. It transforms a complex creative process into a highly efficient business model.",
         price: {
           en: 14.9
         },
