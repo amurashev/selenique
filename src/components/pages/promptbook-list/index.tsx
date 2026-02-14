@@ -25,6 +25,7 @@ const CATEGORIES: PromptCategories[] = [
   "product",
   "fantasy",
   "studio",
+  "design",
   // 'christmas', // TODO?
   "red_carpet",
 ];

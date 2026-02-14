@@ -15,6 +15,7 @@ import t37 from "./text/37";
 import t38 from "./text/38";
 import t39 from "./text/39";
 import t40 from "./text/40";
+import t44 from "./text/44";
 // import t41 from "./text/41";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
@@ -1139,6 +1140,27 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "25 Creative Portraits — Photo Prompts is a curated collection for creators who see portrait photography as a form of visual expression, not just a face on a background.",
     text: t40,
   },
+  "cartoon-style-image-prompts": {
+    id: 44,
+    gumroad: {
+      id: "null",
+      slug: "cartoon-style-image-prompts",
+    },
+    name: "10 Cartoon Style Image Prompts",
+    number: 10,
+    tags: ["design"],
+    mainCategory: "design",
+    type: "pack",
+    fileType: "link",
+    images: [1, 2, 3],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "10 Cartoon Style Image Prompts is a curated prompt pack designed to help you create stylish, high-quality cartoon illustrations with a polished fashion aesthetic.",
+    text: t44,
+  },
 };
 
 export const promptbooksOrdered: string[] = [
@@ -1165,6 +1187,7 @@ export const promptbooksOrdered: string[] = [
   "faceless-aesthetic-100-ai-photo-prompts",
   "25-creative-portraits-photo-prompts",
   "8-advertising-photo-prompts-vol-1",
+  "cartoon-style-image-prompts",
 
   "ai-photo-prompts-30-woman-work-lifestyle",
   "75-cosmetic-product-photo-prompts",
