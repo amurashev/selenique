@@ -70,12 +70,12 @@ export default function HomePage({
         <ProductSlider>
           {bestSellers.map((item) => {
             return (
-              <ProductSliderItem>
+              <ProductSliderItem key={item.slug}>
                 <PromptbookItem item={item} />
               </ProductSliderItem>
             );
           })}
-        </ProductSlider> 
+        </ProductSlider>
 
         <div className={styles.buttonBox}>
           <Link
@@ -115,7 +115,7 @@ export default function HomePage({
         <ProductSlider>
           {bundles.map((item) => {
             return (
-              <ProductSliderItem>
+              <ProductSliderItem key={item.slug}>
                 <PromptbookItem item={item} />
               </ProductSliderItem>
             );

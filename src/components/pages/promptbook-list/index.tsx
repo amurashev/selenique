@@ -59,7 +59,7 @@ export default function PromptbookListPage({
           </div>
           <ProductSlider>
             {bestSellers.map((promptPack) => (
-              <ProductSliderItem>
+              <ProductSliderItem key={promptPack.slug}>
                 <PromptbookItem item={promptPack} />
               </ProductSliderItem>
             ))}
@@ -84,7 +84,7 @@ export default function PromptbookListPage({
             {promptsByCategories[category] && (
               <ProductSlider>
                 {promptsByCategories[category].map((promptPack) => (
-                  <ProductSliderItem>
+                  <ProductSliderItem key={promptPack.slug}>
                     <PromptbookItem item={promptPack} />
                   </ProductSliderItem>
                 ))}
