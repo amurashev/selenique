@@ -12,11 +12,11 @@ import {
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { PromptBook, PromptCategories } from "@/components/types";
 import { i18n, Locale } from "../../../../../../i18n-config";
-import { PROMPT_CATEGORIES } from "@/constants/prompts";
+import { PROMPT_CATEGORIES } from "@/constants/promptbooks/categories";
 import { promptsCategoryPageRoute, promptBookListPageRoute } from "@/constants/routes";
 
 import { getDictionary } from "@/l18n/dictionaries";
-import { getPromptCategoryKeywords, getPromptCategoryTitle, getPromptCategoryDescription } from "@/constants/prompts";
+import { getPromptCategoryKeywords, getPromptCategoryTitle, getPromptCategoryDescription } from "@/constants/promptbooks/categories";
 
 export async function generateMetadata({
   params,

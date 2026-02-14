@@ -128,7 +128,7 @@
   .firstCol {
     /* width: 75%; */
     flex-direction: row;
-    gap: 32px;
+    gap: 24px;
   }
 
   .secondCol {

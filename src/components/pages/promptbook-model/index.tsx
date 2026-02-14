@@ -11,7 +11,7 @@ import {
   getPromptModelH1,
   getPromptModelShortDescription,
   getPromptModelText,
-} from "@/constants/prompts";
+} from "@/constants/promptbooks/categories";
 import { PromptModels } from "@/components/types";
 import BasePageLayout from "@/components/layout/base-page";
 

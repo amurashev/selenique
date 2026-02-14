@@ -12,7 +12,7 @@ import {
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { PromptBook, PromptModels } from "@/components/types";
 import { i18n, Locale } from "../../../../../../i18n-config";
-import { PROMPT_MODELS } from "@/constants/prompts";
+import { PROMPT_MODELS } from "@/constants/promptbooks/categories";
 import {
   promptsModelPageRoute,
   promptBookListPageRoute
@@ -23,7 +23,7 @@ import {
   getPromptModelKeywords,
   getPromptModelTitle,
   getPromptModelDescription,
-} from "@/constants/prompts";
+} from "@/constants/promptbooks/categories";
 
 export async function generateMetadata({
   params,

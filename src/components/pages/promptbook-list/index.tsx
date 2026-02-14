@@ -12,7 +12,7 @@ import PromptbookItem from "@/components/sections/promptbook-item";
 
 import BasePageLayout from "@/components/layout/base-page";
 import { PromptBook, PromptCategories } from "@/components/types";
-import { getPromptCategoryTag } from "@/constants/prompts";
+import { getPromptCategoryTag } from "@/constants/promptbooks/categories";
 import ProductSlider, {
   ProductSliderItem,
 } from "../promptbook-list/product-slider";

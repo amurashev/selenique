@@ -12,7 +12,7 @@ import {
   getPromptCategoryH1,
   getPromptCategoryShortDescription,
   getPromptCategoryText,
-} from "@/constants/prompts";
+} from "@/constants/promptbooks/categories";
 import { PromptCategories } from "@/components/types";
 
 export default function PromptsCategoryPage({
