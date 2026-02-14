@@ -24,12 +24,12 @@ export default function RightSide({
   purchaseLink: string;
 }) {
   const { formatMessage, locale } = useIntl();
-  const { gumroad, price, links, boostyId, type } = data;
+  const { links, boostyId, type } = data;
 
-  const discountedPrice = {
-    ru: price.ru + Math.ceil((price.ru * discount) / 50),
-    en: Math.ceil(price.en - Math.ceil((price.en * discount) / 100)),
-  };
+  // const discountedPrice = {
+  //   ru: price.ru + Math.ceil((price.ru * discount) / 50),
+  //   en: Math.ceil(price.en - Math.ceil((price.en * discount) / 100)),
+  // };
 
   const targetDate = new Date(DISCOUNT_END_DAY);
 
@@ -60,7 +60,7 @@ export default function RightSide({
                   {discount}% off • Sale ends in {daysLeft} days
                 </div> */}
       <div className={styles.links}>
-        {gumroad.slug && (
+        {purchaseLink && (
           <Link className={styles.link} href={purchaseLink} target="_blank">
             {formatMessage({ id: "common.continue" })}
           </Link>

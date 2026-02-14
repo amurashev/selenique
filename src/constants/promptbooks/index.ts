@@ -22,10 +22,7 @@ import t45 from "./text/45";
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "50-high-fashion-editorial-prompts-vol-1": {
     id: 1,
-    gumroad: {
-      id: "lyuhe",
-      slug: "50-ai-fashion-editorial-prompts-vol1",
-    },
+    gumroadSlug: "50-ai-fashion-editorial-prompts-vol1",
     name: "50 High-Fashion Editorial Prompts Vol.1",
     number: 50,
     links: {
@@ -34,10 +31,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     tags: ["fashion", "women"],
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
     text: t27,
@@ -45,10 +38,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-high-fashion-editorial-prompts-vol-2": {
     id: 5,
-    gumroad: {
-      id: "ettrel",
-      slug: "50-ai-fashion-editorial-prompts-vol2",
-    },
+    gumroadSlug: "50-ai-fashion-editorial-prompts-vol2",
     boostyId: "40f7cb76-5db0-419a-b3f5-55a640de03f9",
     name: "50 High-Fashion Editorial Prompts Vol.2",
     number: 50,
@@ -60,20 +50,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "women"],
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts.",
     text: t27,
   },
   "50-high-fashion-editorial-prompts-vol-3": {
     id: 27,
-    gumroad: {
-      id: "lstqzg",
-      slug: "50-ai-fashion-editorial-prompts-vol3",
-    },
+    gumroadSlug: "50-ai-fashion-editorial-prompts-vol3",
     name: "50 High-Fashion Editorial Prompts Vol.3",
     number: 50,
     links: {},
@@ -81,10 +64,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "women"],
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts.",
     text: t27,
@@ -92,10 +71,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-men-fashion-editorial-prompts-vol-1": {
     id: 3,
-    gumroad: {
-      id: "lenks",
-      slug: "50-men-fashion-editorial-prompts-vol-1",
-    },
+    gumroadSlug: "50-men-fashion-editorial-prompts-vol-1",
     name: "50 Men-Fashion Editorial Prompts Vol.1",
     number: 50,
     links: {
@@ -105,10 +81,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
     text: t3,
@@ -116,10 +88,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-men-fashion-editorial-prompts-vol-2": {
     id: 42,
-    gumroad: {
-      id: "dzvfr",
-      slug: "50-men-fashion-editorial-prompts-vol-2",
-    },
+    gumroadSlug: "50-men-fashion-editorial-prompts-vol-2",
     name: "50 Men-Fashion Editorial Prompts Vol.2",
     number: 50,
     links: {
@@ -129,10 +98,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     type: "pack",
     images: [1, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Take your AI-generated fashion images to the next level with this exclusive Prompt Book, featuring 50 meticulously crafted high-fashion editorial prompts. Designed for creatives, photographers, fashion brands, and digital artists, these prompts bring the elegance of luxury fashion houses into your AI workflows.",
     text: t3,
@@ -140,10 +105,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-ideal-skin-midjourney-prompts-vol-1": {
     id: 4,
-    gumroad: {
-      id: "axsggm",
-      slug: "50-ideal-skin-midjourney-prompts-beauty",
-    },
+    gumroadSlug: "50-ideal-skin-midjourney-prompts-beauty",
     boostyId: "6801a414-dcef-46b9-9af5-4700e229ac12",
     name: "50 Ideal Skin Midjourney Prompts Vol .1",
     number: 50,
@@ -155,10 +117,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "beauty",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    price: {
-      ru: 1000,
-      en: 20.5,
-    },
     summary:
       "This pack gives you 50 proven Midjourney prompts focused on ideal, realistic skin and commercial beauty aesthetics.",
     text: `
@@ -177,10 +135,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-jewelry-product-photo-ai-prompts": {
     id: 6,
-    gumroad: {
-      id: "chkhjfd",
-      slug: "50-ai-jewelry-photography-prompts",
-    },
+    gumroadSlug: "50-ai-jewelry-photography-prompts",
     name: "50 Jewelry Product Photo AI Prompts",
     number: 50,
     links: {
@@ -190,10 +145,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "product",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    price: {
-      ru: 1000,
-      en: 20.5,
-    },
     summary:
       "This digital prompt book includes 50 universal prompts for generating luxurious visuals of rings, earrings, bracelets, and necklaces. Perfect for jewelry brands, designers, marketers, and creatives who want professional-quality images without expensive photo shoots.",
     text: `
@@ -211,10 +162,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "24-ai-maternity-photoshoot-prompts": {
     id: 7,
-    gumroad: {
-      id: "rertdk",
-      slug: "24-ai-maternity-photoshoot-prompts",
-    },
+    gumroadSlug: "24-ai-maternity-photoshoot-prompts",
     boostyId: "4f29f408-09e8-4e27-b308-84fcee7c2de2",
     name: "24 AI Maternity Photoshoot Prompts",
     number: 24,
@@ -226,10 +174,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion", // TODO?
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8],
-    price: {
-      ru: 1000,
-      en: 13.2,
-    },
     summary:
       "This AI Maternity Photoshoot Prompt Collection helps you create breathtaking images of a pregnant woman in just a few clicks.",
     text: `
@@ -253,10 +197,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "32-business-man-photo-prompts": {
     id: 24,
-    gumroad: {
-      id: "toebl",
-      slug: "32-business-man-photo-prompts",
-    },
+    gumroadSlug: "32-business-man-photo-prompts",
     name: "32 AI Business Man Photo Prompts",
     number: 32,
     links: {
@@ -266,10 +207,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-    price: {
-      ru: 1000,
-      en: 9.9,
-    },
     summary:
       "This Business Man Prompt Pack includes 32 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
     text: `
@@ -290,10 +227,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-christmas-woman-photo-prompts": {
     id: 8,
-    gumroad: {
-      id: "woarfp",
-      slug: "30-christmas-woman-photo-prompts",
-    },
+    gumroadSlug: "30-christmas-woman-photo-prompts",
     name: "30 Christmas Woman Photo Prompts",
     number: 30,
     links: {
@@ -303,10 +237,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "christmas",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8],
-    price: {
-      ru: 1000,
-      en: 13.2,
-    },
     summary:
       "This AI prompt pack includes 30 Christmas woman photo prompts that turn your selfie into a festive magazine-style portrait. Perfect for cozy holiday cards, gifts, or social media content.",
     text: `
@@ -325,10 +255,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "40-christmas-kids-photo-prompts-ai": {
     id: 9,
-    gumroad: {
-      id: "uomxe",
-      slug: "40-christmas-kids-ai-photo-prompts",
-    },
+    gumroadSlug: "40-christmas-kids-ai-photo-prompts",
     name: "40 Christmas Kids Photo Prompts",
     number: 40,
     links: {
@@ -338,10 +265,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "christmas",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    price: {
-      ru: 1000,
-      en: 16.2,
-    },
     summary:
       "This AI prompt pack includes 40 Christmas Kids Photo Prompts designed to create cozy, festive, and heart-warming images in just minutes.",
     text: `
@@ -365,10 +288,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-business-woman-photo-prompts-ai": {
     id: 10,
-    gumroad: {
-      id: "ejoktb",
-      slug: "30-ai-business-woman-photo-prompts",
-    },
+    gumroadSlug: "30-ai-business-woman-photo-prompts",
     boostyId: "796a8676-c1e8-4ee7-9c6f-0f4ad6c29a48",
     name: "30 Business Woman Photo Prompts",
     number: 30,
@@ -379,10 +299,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 6, 7, 8, 9, 10],
-    price: {
-      ru: 1000,
-      en: 13.2,
-    },
     summary:
       "Prompt Pack includes 30 photo prompts to create confident, stylish, and high-end portraits for your personal brand, LinkedIn profile, website, or business content.",
     text: `
@@ -400,10 +316,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "60-fantasy-photo-prompts-ai-portrait": {
     id: 11,
-    gumroad: {
-      id: "npbsxg",
-      slug: "60-fantasy-portrait-ai-prompts-character",
-    },
+    gumroadSlug: "60-fantasy-portrait-ai-prompts-character",
     name: "60 Fantasy Photo Prompts",
     number: 60,
     links: {
@@ -413,10 +326,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fantasy",
     type: "pack",
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-    price: {
-      ru: 1000,
-      en: 25,
-    },
     summary:
       "Bring your fantasy vision to life with this 60 FANTASY PHOTO PROMPTS PACK — a complete digital toolkit for creating stunning AI portraits in minutes.",
     text: `
@@ -436,10 +345,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "25-wizard-school-photo-prompts-ai": {
     id: 12,
-    gumroad: {
-      id: "inrccd",
-      slug: "25-wizard-school-ai-photo-prompts",
-    },
+    gumroadSlug: "25-wizard-school-ai-photo-prompts",
     name: "25 Wizard School Photo Prompts",
     number: 25,
     links: {
@@ -449,10 +355,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fantasy",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    price: {
-      ru: 1000,
-      en: 13.2,
-    },
     summary:
       "This AI Wizard School Prompt Pack includes 25 fantasy photo prompts inspired by the world of wizards and spells.",
     text: `
@@ -472,10 +374,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "15-ai-women-headshot-prompts-professional": {
     id: 15,
-    gumroad: {
-      id: "kjrgzn",
-      slug: "15-ai-women-headshot-prompts",
-    },
+    gumroadSlug: "15-ai-women-headshot-prompts",
     boostyId: "7fe0af5d-fcba-4346-8e65-39963eb91e60",
     name: "15 Women Headshot Professional Prompts",
     number: 15,
@@ -486,10 +385,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
-    price: {
-      ru: 1000,
-      en: 9,
-    },
     summary:
       "This AI prompt pack includes 15 professional women headshot prompts for clean, modern business-style portraits.",
     text: `
@@ -504,15 +399,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     </ul>
     `,
   },
-
-
-
   "ai-photo-prompts-30-woman-work-lifestyle": {
     id: 14,
-    gumroad: {
-      id: "fiymsd",
-      slug: "30-woman-work-lifestyle-prompts",
-    },
+    gumroadSlug: "30-woman-work-lifestyle-prompts",
     name: "30 Woman Work & Lifestyle Photo Prompts",
     number: 30,
     links: {
@@ -522,10 +411,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 17, 18, 19, 20, 21, 22],
-    price: {
-      ru: 1000,
-      en: 13.2,
-    },
     summary:
       "This prompt pack includes 30 Woman Work & Lifestyle Photo Prompts designed for personal branding, business visuals, and social media content. Perfect for entrepreneurs, coaches, and creatives who want high-quality, natural portraits without expensive photoshoots.",
     text: `
@@ -543,10 +428,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "faceless-aesthetic-100-ai-photo-prompts": {
     id: 39,
-    gumroad: {
-      id: "null",
-      slug: "faceless-aesthetic-100-ai-photo-prompts",
-    },
+    gumroadSlug: "faceless-aesthetic-100-ai-photo-prompts",
     name: "Faceless Aesthetic — 100 AI Photo Prompts",
     number: 100,
     tags: ["lifestyle"],
@@ -554,10 +436,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A curated collection of 100 high-quality AI photo prompts designed for creating elegant, faceless lifestyle imagery in a muted color palette.",
     text: t39,
@@ -565,10 +443,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol1": {
     id: 16,
-    gumroad: {
-      id: "ighjrv",
-      slug: "50-old-money-ai-photo-prompts-vol1",
-    },
+    gumroadSlug: "50-old-money-ai-photo-prompts-vol1",
     name: "50 Old Money AI Photo Prompts Vol.1",
     number: 50,
     links: {
@@ -578,10 +453,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "lifestyle",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    price: {
-      ru: 1000,
-      en: 20.5,
-    },
     summary:
       "Step into the world of timeless elegance with 50 Old Money AI Photo Prompts (Vol.1) — a curated guide to creating luxurious portraits and fashion visuals in the classic Old Money aesthetic. Think silk, pearls, linen, vintage cars, and golden sunlight.",
     text: `
@@ -599,15 +470,9 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol2": {
     id: 17,
-    gumroad: {
-      id: "nbgtgn",
-      slug: "50-old-money-ai-photo-prompts-vol2",
-    },
+    gumroadSlug: "50-old-money-ai-photo-prompts-vol2",
     name: "50 Old Money AI Photo Prompts Vol.2",
     number: 50,
-    links: {
-      // cm: "https://creativemarket.com/AlenaMurasheva/291933695-50-Old-Money-AI-Photo-Prompts-Vol.2",
-    },
     tags: ["fashion", "women", "lifestyle"],
     mainCategory: "lifestyle",
     type: "pack",
@@ -633,10 +498,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "22-business-man-headshot-prompts-ai": {
     id: 18,
-    gumroad: {
-      id: "hlvbhd",
-      slug: "22-business-man-headshot-prompts",
-    },
+    gumroadSlug: "22-business-man-headshot-prompts",
     boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
     name: "22 Business Man Headshot Prompts",
     number: 22,
@@ -648,10 +510,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    price: {
-      ru: 1000,
-      en: 9,
-    },
     summary:
       "Prompt pack includes 22 professional men’s headshot prompts — perfect for LinkedIn, websites, personal branding, and corporate visuals.",
     text: `
@@ -665,10 +523,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "40-muslim-women-business-photo-prompts": {
     id: 19,
-    gumroad: {
-      id: "dtsmas",
-      slug: "40-ai-muslim-women-business-photo",
-    },
+    gumroadSlug: "40-ai-muslim-women-business-photo",
     name: "40 Muslim Women Business Photo Prompts",
     number: 40,
     links: {
@@ -678,10 +533,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 21, 22, 23, 24, 25],
-    price: {
-      ru: 1000,
-      en: 20.5,
-    },
     summary:
       "Elegant, confident, and professional — this AI prompt pack includes 40 photo prompts of Muslim women in business and lifestyle settings.",
     text: `
@@ -699,20 +550,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-couple-ai-photo-prompts": {
     id: 22,
-    gumroad: {
-      id: "mgkyn",
-      slug: "8-red-carpet-couple-ai-photo-prompts",
-    },
+    gumroadSlug: "8-red-carpet-couple-ai-photo-prompts",
     name: "8 Red Carpet Couple AI Photo Prompts",
     number: 8,
     tags: ["red_carpet", "men", "women"],
     mainCategory: "red_carpet",
     type: "pack",
     images: [1, 2, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 6,
-    },
     summary:
       "This AI prompt pack includes 8 red carpet couple photo prompts inspired by celebrity galas, premieres, and award nights. Perfect for creating stylish, cinematic portraits with luxurious atmosphere — no studio or photographer needed.",
     text: `
@@ -731,10 +575,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-men-photo-prompts-ai": {
     id: 20,
-    gumroad: {
-      id: "giarye",
-      slug: "8-red-carpet-men-photo-prompts",
-    },
+    gumroadSlug: "8-red-carpet-men-photo-prompts",
     name: "8 Red Carpet Men Photo Prompts",
     number: 8,
     links: {},
@@ -742,10 +583,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "red_carpet",
     type: "pack",
     images: [1, 2, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 6,
-    },
     summary:
       "This AI prompt pack includes 8 red carpet photo prompts for men, inspired by celebrity galas, movie premieres, and award nights. Perfect for creating stylish portraits in tuxedos and tailored suits — no photographer or studio needed.",
     text: `
@@ -764,10 +601,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "8-red-carpet-women-photo-prompts": {
     id: 21,
-    gumroad: {
-      id: "rbmxu",
-      slug: "8-red-carpet-women-ai-photo-prompts",
-    },
+    gumroadSlug: "8-red-carpet-women-ai-photo-prompts",
     name: "8 Red Carpet Women Photo Prompts",
     number: 8,
     links: {
@@ -777,10 +611,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "red_carpet",
     type: "pack",
     images: [1, 2, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 6,
-    },
     summary:
       "This AI prompt pack includes 8 high-fashion women photo prompts inspired by glamorous award shows, flashing cameras, and couture looks. Create cinematic portraits that feel straight from Cannes, Vogue, or the Met Gala — no studio or stylist needed.",
     text: `
@@ -799,10 +629,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "35-cosmetic-product-photo-prompts": {
     id: 23,
-    gumroad: {
-      id: "gwmam",
-      slug: "35-cosmetic-product-photo-prompts",
-    },
+    gumroadSlug: "35-cosmetic-product-photo-prompts",
     boostyId: "19a1dd70-bd6b-4624-a662-706574bf40a5",
     name: "35 Cosmetic Product Photo Prompts",
     number: 35,
@@ -814,10 +641,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "product",
     type: "pack",
     images: [2, 4, 5, 6, 7, 8, 9, 10, 11],
-    price: {
-      ru: 1000,
-      en: 14.5,
-    },
     summary:
       "This digital PDF includes 35 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers.",
     text: `
@@ -836,10 +659,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "75-cosmetic-product-photo-prompts": {
     id: 25,
-    gumroad: {
-      id: "ztbknr",
-      slug: "75-cosmetic-product-photo-prompts",
-    },
+    gumroadSlug: "75-cosmetic-product-photo-prompts",
     name: "75 Cosmetic Product Photo Prompts",
     number: 75,
     links: {
@@ -849,10 +669,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "product",
     type: "pack",
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-    price: {
-      ru: 1000,
-      en: 14.5,
-    },
     summary:
       "This digital PDF includes 75 editable AI photo prompts designed for clean, editorial beauty shots: serums, creams, lotions, perfumes, jars, pumps and droppers.",
     text: `
@@ -870,10 +686,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
   "8-advertising-photo-prompts-vol-1": {
     id: 26,
-    gumroad: {
-      id: "jjtfyv",
-      slug: "8-advertising-photo-prompts",
-    },
+    gumroadSlug: "8-advertising-photo-prompts",
     name: "8 AI Advertising Photo Prompts",
     number: 8,
     links: {},
@@ -881,10 +694,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fantasy",
     type: "pack",
     images: [1, 2, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 9.9,
-    },
     summary:
       "This AI prompt pack includes 8 commercial photo prompts inspired by fashion, tech, beauty, and lifestyle advertising. Perfect for creating eye-catching visuals that look like luxury brand campaigns.",
     text: `
@@ -906,10 +715,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "realistic-ai-influencer-prompts": {
     id: 28,
-    gumroad: {
-      id: "null",
-      slug: "realistic-ai-influencer-prompts",
-    },
+    gumroadSlug: "realistic-ai-influencer-prompts",
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
     name: "The Ultra-Realistic AI Influencer Kit (200+ Prompts)",
     number: 200,
@@ -920,20 +726,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary: "🔥 CREATE ULTRA-REALISTIC AI MODELS THAT PEOPLE THINK ARE REAL",
     text: t28,
   },
 
   "women-fashion-editorial-prompts-bundle": {
     id: 29,
-    gumroad: {
-      id: "null",
-      slug: "women-fashion-editorial-prompts-bundle",
-    },
+    gumroadSlug: "women-fashion-editorial-prompts-bundle",
     name: "Women Fashion Editorial Prompts Bundle",
     number: 150,
     pack: [1, 5, 27],
@@ -941,20 +740,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "women"],
     type: "bundle",
     images: [0, 1, 2, 3],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A curated bundle of 150 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together three prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
     text: t29,
   },
   "business-men-prompts-bundle": {
     id: 30,
-    gumroad: {
-      id: "null",
-      slug: "business-men-prompts-bundle",
-    },
+    gumroadSlug: "business-men-prompts-bundle",
     name: "Business Men + Men Headshots Prompts — Complete Bundle",
     number: 54,
     pack: [24, 18],
@@ -962,20 +754,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "men"],
     type: "bundle",
     images: [0, 1, 2, 3, 4, 5, 6, 7],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A professional AI prompt bundle combining business lifestyle scenes and clean men’s headshots in one practical collection. This bundle includes 54 ready-to-use prompts designed for creating confident, polished, and trustworthy male visuals.",
     text: t30,
   },
   "business-women-prompts-bundle": {
     id: 31,
-    gumroad: {
-      id: "null",
-      slug: "business-women-prompts-bundle",
-    },
+    gumroadSlug: "business-women-prompts-bundle",
     name: "Business Women Prompts — Complete Bundle",
     number: 75,
     pack: [10, 15, 14],
@@ -983,20 +768,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "women"],
     type: "bundle",
     images: [0, 1, 2, 3, 4, 5, 6],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A professional AI prompt bundle combining business lifestyle scenes and clean men’s headshots in one practical collection. This bundle includes 54 ready-to-use prompts designed for creating confident, polished, and trustworthy male visuals.",
     text: t31,
   },
   "red-carpet-prompts-bundle": {
     id: 32,
-    gumroad: {
-      id: "null",
-      slug: "red-carpet-prompts-bundle",
-    },
+    gumroadSlug: "red-carpet-prompts-bundle",
     name: "Red Carpet Prompts — Complete Bundle",
     number: 24,
     pack: [22, 21, 20],
@@ -1004,20 +782,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["red_carpet"],
     type: "bundle",
     images: [0, 1, 2, 3],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A premium bundle of AI prompts inspired by red carpet events, award ceremonies, and high-profile fashion moments. This collection brings together prompts for women, men, and couples to create glamorous, cinematic, and event-ready visuals with a true celebrity feel.",
     text: t32,
   },
   "120-product-podiums-photo-prompts": {
     id: 34,
-    gumroad: {
-      id: "null",
-      slug: "120-product-podiums-photo-prompts",
-    },
+    gumroadSlug: "120-product-podiums-photo-prompts",
     name: "120 Product Podiums Photo Prompts",
     number: 120,
     tags: ["product"],
@@ -1025,10 +796,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A curated set of 120 professional photo prompts for creating clean, stylish product podium scenes.",
     text: t34,
@@ -1036,10 +803,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "32-monochromatic-studio-portrait-prompt-pack": {
     id: 35,
-    gumroad: {
-      id: "null",
-      slug: "32-monochromatic-studio-portrait-prompt-pack",
-    },
+    gumroadSlug: "32-monochromatic-studio-portrait-prompt-pack",
     name: "32 Monochromatic Studio Portrait Prompt Pack",
     number: 32,
     tags: ["studio"],
@@ -1047,10 +811,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Monochromatic Studio Portrait Prompt Pack is a curated collection of 32 carefully crafted photo prompts designed for realistic, modern studio portraits in a single color palette.",
     text: t35,
@@ -1058,10 +818,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "120-white-frame-interior-mockup-prompts": {
     id: 36,
-    gumroad: {
-      id: "null",
-      slug: "120-white-frame-interior-mockup-prompts",
-    },
+    gumroadSlug: "120-white-frame-interior-mockup-prompts",
     name: "120 White Frame Interior Mockup Prompts",
     number: 120,
     tags: ["product"],
@@ -1069,10 +826,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7, 8],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A curated collection of 120 professional interior photo prompts designed for clean, modern wall art and poster mockups with blank white frames.",
     text: t36,
@@ -1080,10 +833,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "16-red-backdrop-studio-photo-prompts": {
     id: 37,
-    gumroad: {
-      id: "null",
-      slug: "16-red-backdrop-studio-photo-prompts",
-    },
+    gumroadSlug: "16-red-backdrop-studio-photo-prompts",
     name: "16 Red Backdrop Studio — Photo Prompt Pack",
     number: 16,
     tags: ["studio"],
@@ -1091,20 +841,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Inside you’ll find 16 carefully crafted photo prompts built around a deep red draped backdrop that adds drama, depth, and a strong editorial mood to any shoot.",
     text: t37,
   },
   "16-valentines-day-women-photo-prompts": {
     id: 38,
-    gumroad: {
-      id: "null",
-      slug: "16-valentines-day-women-photo-prompts",
-    },
+    gumroadSlug: "16-valentines-day-women-photo-prompts",
     name: "16 Valentine’s Day Women — Photo Prompt Pack",
     number: 16,
     tags: ["women", "fashion"],
@@ -1112,20 +855,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 4, 5],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "Inside are 16 carefully designed photo prompts focused on women-centered Valentine aesthetics — red tones, glossy hearts, elegant poses, and a mix of playful flirtation with classic editorial polish. These prompts help you create images that feel festive, confident, and visually irresistible.",
     text: t38,
   },
   "25-creative-portraits-photo-prompts": {
     id: 40,
-    gumroad: {
-      id: "null",
-      slug: "25-creative-portraits-photo-prompts",
-    },
+    gumroadSlug: "25-creative-portraits-photo-prompts",
     name: "25 Creative Portraits — Photo Prompts",
     number: 25,
     tags: ["fashion"],
@@ -1143,10 +879,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   },
   "cartoon-style-image-prompts": {
     id: 44,
-    gumroad: {
-      id: "null",
-      slug: "cartoon-style-image-prompts",
-    },
+    gumroadSlug: "cartoon-style-image-prompts",
     name: "10 Cartoon Style Image Prompts",
     number: 10,
     tags: ["design"],
@@ -1154,10 +887,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 2, 3],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "10 Cartoon Style Image Prompts is a curated prompt pack designed to help you create stylish, high-quality cartoon illustrations with a polished fashion aesthetic.",
     text: t44,
@@ -1165,10 +894,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "250-fashion-editorial-prompts-bundle": {
     id: 45,
-    gumroad: {
-      id: "null",
-      slug: "250-fashion-editorial-prompts-bundle",
-    },
+    gumroadSlug: "250-fashion-editorial-prompts-bundle",
     name: "250 Fashion Editorial Prompts Bundle",
     number: 250,
     pack: [1, 5, 27, 3, 42],
@@ -1176,10 +902,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "women", "men"],
     type: "bundle",
     images: [0,1,2,3,4,5],
-    price: {
-      ru: 1000,
-      en: 18,
-    },
     summary:
       "A curated bundle of 250 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together five prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
     text: t45,

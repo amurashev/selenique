@@ -30,15 +30,12 @@ export type PromptModels = | "gemini"
 
 export type DigitalItem = {
   id: number;
-  gumroad: {
-    id: string
-    slug: string
-  }
+  gumroadSlug: string
   boostyId?: string
   isDisabled?: boolean;
   isBestseller?: boolean
   name: string;
-  price: PriceType;
+  price?: PriceType;
   summary?: string;
   text: string;
   fileType?: "link"
