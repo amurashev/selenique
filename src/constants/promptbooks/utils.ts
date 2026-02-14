@@ -38,14 +38,14 @@ export const sortByPoints = (a: PromptBook, b: PromptBook) => {
   let pointsA = 0
   let pointsB = 0
 
-  if (b.point > a.point) pointsB += 10000
-  if (b.point < a.point) pointsA += 10000
-
   if (Boolean(b.isBestseller) > Boolean(a.isBestseller)) pointsB += 1000
   if (Boolean(b.isBestseller) < Boolean(a.isBestseller)) pointsA += 1000
 
   if (b.reviewsRating > a.reviewsRating) pointsB += 100
   if (b.reviewsRating < a.reviewsRating) pointsA += 100
+
+  if (b.point > a.point) pointsB += 50
+  if (b.point < a.point) pointsA += 50
 
   if (b.reviewsCount > a.reviewsCount) pointsB += 10
   if (b.reviewsCount < a.reviewsCount) pointsA += 10
