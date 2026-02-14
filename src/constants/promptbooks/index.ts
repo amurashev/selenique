@@ -16,6 +16,7 @@ import t38 from "./text/38";
 import t39 from "./text/39";
 import t40 from "./text/40";
 import t44 from "./text/44";
+import t45 from "./text/45";
 // import t41 from "./text/41";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
@@ -1160,6 +1161,28 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     summary:
       "10 Cartoon Style Image Prompts is a curated prompt pack designed to help you create stylish, high-quality cartoon illustrations with a polished fashion aesthetic.",
     text: t44,
+  },
+
+  "250-fashion-editorial-prompts-bundle": {
+    id: 45,
+    gumroad: {
+      id: "null",
+      slug: "250-fashion-editorial-prompts-bundle",
+    },
+    name: "250 Fashion Editorial Prompts Bundle",
+    number: 250,
+    pack: [1, 5, 27, 3, 42],
+    links: {},
+    tags: ["fashion", "women", "men"],
+    type: "bundle",
+    images: [0,1,2,3,4,5],
+    price: {
+      ru: 1000,
+      en: 18,
+    },
+    summary:
+      "A curated bundle of 250 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together five prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
+    text: t45,
   },
 };
 

@@ -3,14 +3,16 @@ import { PromptBook } from "@/components/types";
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import PROMPTS_RATING from "@/constants/promptbooks/reviews";
 import PROMPTS_SALES from "@/constants/promptbooks/sales";
+import PROMPTS_POINTS from "@/constants/promptbooks/points";
 
-export const getPromptBookData = (slug: string) => {
+export const getPromptBookData = (slug: string): PromptBook => {
   const baseItem = PROMTBOOKS[slug]
 
   // if (!baseItem) return undefined
 
   const rating = PROMPTS_RATING[slug] || { rating: 0, count: 0}
   const sales = PROMPTS_SALES[slug] || 0
+  const point = PROMPTS_POINTS[slug] || 0
 
   const reviewsRating = rating.rating
   const reviewsRatingFixed = rating.rating.toFixed(1)
@@ -26,6 +28,7 @@ export const getPromptBookData = (slug: string) => {
     reviewsRatingFixed,
     reviewsCount,
     sales,
+    point,
   };
 
   return item
@@ -34,6 +37,9 @@ export const getPromptBookData = (slug: string) => {
 export const sortByPoints = (a: PromptBook, b: PromptBook) => {
   let pointsA = 0
   let pointsB = 0
+
+  if (b.point > a.point) pointsB += 10000
+  if (b.point < a.point) pointsA += 10000
 
   if (Boolean(b.isBestseller) > Boolean(a.isBestseller)) pointsB += 1000
   if (Boolean(b.isBestseller) < Boolean(a.isBestseller)) pointsA += 1000

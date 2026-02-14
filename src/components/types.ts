@@ -63,6 +63,7 @@ export type PromptBook = PromptBookRaw & {
   reviewsRating: number
   reviewsRatingFixed: string
   reviewsCount: number
+  point: number
   vertImage: string
   purchaseLink: string
   boostyLink: string
