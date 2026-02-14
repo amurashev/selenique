@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { useIntl } from "react-intl";
 import { useEffect, useState } from "react";
-import Slider from "react-slick";
 import { RowsPhotoAlbum } from "react-photo-album";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
 
@@ -23,12 +19,14 @@ import {
 import { PromptBook } from "@/components/types";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
-import settings from "../promptbook-list/settings";
 import GuideItem from "@/components/sections/guide-item";
 import { Guide } from "@/constants/guides";
 import BasePageLayout from "@/components/layout/base-page";
 
 import Profile from "./profile";
+import ProductSlider, {
+  ProductSliderItem,
+} from "../promptbook-list/product-slider";
 
 export default function HomePage({
   deviceType,
@@ -69,13 +67,15 @@ export default function HomePage({
         <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
         <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
 
-        <Slider {...settings} className={styles.slider}>
-          {bestSellers.map((promptPack) => (
-            <div key={promptPack.id} className={styles.item}>
-              <PromptbookItem item={promptPack} />
-            </div>
-          ))}
-        </Slider>
+        <ProductSlider>
+          {bestSellers.map((item) => {
+            return (
+              <ProductSliderItem>
+                <PromptbookItem item={item} />
+              </ProductSliderItem>
+            );
+          })}
+        </ProductSlider> 
 
         <div className={styles.buttonBox}>
           <Link
@@ -93,7 +93,7 @@ export default function HomePage({
         <div className={styles.list}>
           {guidesList.map((item) => {
             return (
-              <div key={item.slug} className={styles.item}>
+              <div key={item.slug} className={styles.null}>
                 <GuideItem item={item} />
               </div>
             );
@@ -112,15 +112,15 @@ export default function HomePage({
       <div className={styles.section}>
         <h2>{formatMessage({ id: "home.prompt_bundles.popular.title" })}</h2>
 
-        <Slider {...settings} className={styles.slider}>
+        <ProductSlider>
           {bundles.map((item) => {
             return (
-              <div key={item.slug} className={styles.item}>
+              <ProductSliderItem>
                 <PromptbookItem item={item} />
-              </div>
+              </ProductSliderItem>
             );
           })}
-        </Slider>
+        </ProductSlider>
 
         <div className={styles.buttonBox}>
           <Link

@@ -2,12 +2,8 @@
 
 import { useIntl } from "react-intl";
 import Link from "next/link";
-import Slider from "react-slick";
 import { useEffect } from "react";
 import { useMetrica } from "next-yandex-metrica";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
 
@@ -17,8 +13,9 @@ import PromptbookItem from "@/components/sections/promptbook-item";
 import BasePageLayout from "@/components/layout/base-page";
 import { PromptBook, PromptCategories } from "@/components/types";
 import { getPromptCategoryTag } from "@/constants/prompts";
-
-import settings from "./settings";
+import ProductSlider, {
+  ProductSliderItem,
+} from "../promptbook-list/product-slider";
 
 const CATEGORIES: PromptCategories[] = [
   "business",
@@ -60,13 +57,13 @@ export default function PromptbookListPage({
           <div className={styles.titleLine}>
             <h3>{formatMessage({ id: "common.best_sellers" })}</h3>
           </div>
-          <Slider {...settings} className={styles.slider}>
+          <ProductSlider>
             {bestSellers.map((promptPack) => (
-              <div key={promptPack.id} className={styles.item}>
+              <ProductSliderItem>
                 <PromptbookItem item={promptPack} />
-              </div>
+              </ProductSliderItem>
             ))}
-          </Slider>
+          </ProductSlider>
         </div>
 
         {CATEGORIES.map((category) => (
@@ -85,13 +82,13 @@ export default function PromptbookListPage({
               </Link>
             </div>
             {promptsByCategories[category] && (
-              <Slider {...settings} className={styles.slider}>
+              <ProductSlider>
                 {promptsByCategories[category].map((promptPack) => (
-                  <div key={promptPack.id} className={styles.item}>
+                  <ProductSliderItem>
                     <PromptbookItem item={promptPack} />
-                  </div>
+                  </ProductSliderItem>
                 ))}
-              </Slider>
+              </ProductSlider>
             )}
           </div>
         ))}

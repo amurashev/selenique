@@ -21,9 +21,6 @@ import { getGuideData } from "@/constants/guides/utils";
 import CheckMark from "@/components/ui/icons/check-mark";
 
 import styles from "@/components/sections/landing-black/page.module.css";
-import BlockSlider, {
-  BlockSliderItem,
-} from "@/components/sections/landing-black/block-slider";
 
 export default function AIForBrandsPage() {
   const { formatMessage, locale } = useIntl();

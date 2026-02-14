@@ -1,0 +1,12 @@
+.slider {
+  margin: 0 -6px;
+  margin-top: 18px;
+}
+
+.sliderBox {
+  width: 100%;
+}
+
+.item {
+  padding: 0 6px;
+}
