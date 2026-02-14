@@ -6,7 +6,6 @@ import { promptBookListPageRoute } from "@/constants/routes";
 
 import PromptCreationPage from "@/components/pages/prompt-creation";
 import { getDictionary } from "@/l18n/dictionaries";
-import { getPromptsListKeywords, getPromptsListTitle, getPromptsListDescription } from "@/constants/prompts";
 
 export async function generateMetadata({
   params,

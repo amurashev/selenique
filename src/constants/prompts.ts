@@ -9,10 +9,6 @@ export const PROMPT_MODELS: PromptModels[] = [
   "gemini", "nano_banana", "midjourney", "chat_gpt",
 ]
 
-export const getPromptsListTitle = () => `prompt_books.title`
-export const getPromptsListDescription = () => `prompt_books.description`
-export const getPromptsListKeywords = () => `prompt_books.keywords`
-
 export const getPromptCategoryShortLabel = (category: PromptCategories) => `prompts.categories.${category}.short_label`
 export const getPromptCategoryTag = (category: PromptCategories) => `prompts.categories.${category}.tag`
 export const getPromptCategoryTitle = (category: PromptCategories) => `prompts.categories.${category}.title`

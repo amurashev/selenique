@@ -18,6 +18,7 @@ import {
 } from "@/constants/promptbooks";
 import {
   promptBookListPageRoute,
+  promptBundleListPageRoute,
   guidesListPageRoute,
   productPortfolioPageRoute,
 } from "@/constants/routes";
@@ -80,6 +81,7 @@ export default function HomePage({
   deviceType,
 }: {
   deviceType: "mobile" | "desktop";
+  // bestSellers: PromptBook[]
 }) {
   const { formatMessage, locale } = useIntl();
 
@@ -163,6 +165,15 @@ export default function HomePage({
                 )
               })}
             </Slider>
+
+            <div className={styles.buttonBox}>
+              <Link
+                className={styles.seeAll}
+                href={promptBundleListPageRoute.getUrl(locale)}
+              >
+                {formatMessage({ id: "home.prompt_books.see_all" })}
+              </Link>
+            </div>
           </div>
 
           <div className={styles.section}>

@@ -28,6 +28,7 @@
   "footer.navigation": "Navigation",
   "footer.prompts": "Prompts",
   "footer.guides": "Guides",
+  "footer.prompt_bundles": "Prompt Bundles",
   "footer.prompt_categories": "Prompt Categories",
   "footer.prompt_models": "Prompts by models"
 }

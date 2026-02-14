@@ -5,6 +5,7 @@ export const productPortfolioPageRoute = route("/products-portfolio/[type]");
 export const modelsPageRoute = route("/models/[type]");
 export const modelPageRoute = route("/models/[type]/[id]");
 export const promptBookListPageRoute = route("/prompts");
+export const promptBundleListPageRoute = route("/prompt-bundles");
 export const promptBookPageRoute = route("/prompts/[slug]");
 export const promptsCategoryPageRoute = route("/prompts/category/[slug]");
 export const promptsModelPageRoute = route("/prompts/model/[slug]");

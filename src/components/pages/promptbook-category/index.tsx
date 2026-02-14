@@ -8,10 +8,21 @@ import { promptBookListPageRoute } from "@/constants/routes";
 import PromptbookList from "@/components/sections/promptbook-list";
 import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
-import { getPromptCategoryShortLabel, getPromptCategoryH1, getPromptCategoryShortDescription, getPromptCategoryText } from "@/constants/prompts";
+import {
+  getPromptCategoryShortLabel,
+  getPromptCategoryH1,
+  getPromptCategoryShortDescription,
+  getPromptCategoryText,
+} from "@/constants/prompts";
 import { PromptCategories } from "@/components/types";
 
-export default function PromptsCategoryPage({ slug, prompts }: { slug: PromptCategories, prompts: string[] },) {
+export default function PromptsCategoryPage({
+  slug,
+  prompts,
+}: {
+  slug: PromptCategories;
+  prompts: string[];
+}) {
   const { formatMessage, locale } = useIntl();
 
   return (
@@ -23,11 +34,11 @@ export default function PromptsCategoryPage({ slug, prompts }: { slug: PromptCat
         />
         <main className={styles.main}>
           <h1>{formatMessage({ id: getPromptCategoryH1(slug) })}</h1>
-          <p>{formatMessage({ id: getPromptCategoryShortDescription(slug) })}</p>
+          <p>
+            {formatMessage({ id: getPromptCategoryShortDescription(slug) })}
+          </p>
 
-          <PromptbookList
-            list={prompts}
-          />
+          <PromptbookList list={prompts} />
 
           <div
             className={styles.content}

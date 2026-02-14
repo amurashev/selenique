@@ -14,6 +14,7 @@ import {
 import {
   promptBookListPageRoute,
   guidesListPageRoute,
+  promptBundleListPageRoute,
   productPortfolioPageRoute,
   promptsCategoryPageRoute,
   promptsModelPageRoute,
@@ -70,6 +71,15 @@ export default function Footer() {
                     className={styles.menuLink}
                   >
                     {formatMessage({ id: "footer.prompts" })}
+                  </Link>
+                </li>
+
+                <li className={styles.menuItem}>
+                  <Link
+                    href={promptBundleListPageRoute.getUrl(locale)}
+                    className={styles.menuLink}
+                  >
+                    {formatMessage({ id: "footer.prompt_bundles" })}
                   </Link>
                 </li>
 

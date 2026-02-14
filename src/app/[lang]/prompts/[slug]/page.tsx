@@ -9,7 +9,6 @@ import { PROMTBOOKS } from "@/constants/promptbooks";
 
 import { i18n, Locale } from "../../../../../i18n-config";
 import { getDictionary } from "@/l18n/dictionaries";
-import { getPromptsListKeywords } from "@/constants/prompts";
 import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 export async function generateMetadata({
@@ -25,7 +24,7 @@ export async function generateMetadata({
 
   const title = `${promptBook.name} | Gemini Prompts`;
   const description = promptBook.summary;
-  const keywords = messages[getPromptsListKeywords()]
+  const keywords = messages["prompt_books.keywords"]
 
   const url = promptBookPageRoute.getUrl(lang, {
     params: {

@@ -20,6 +20,7 @@ export type PromptCategories = | "fashion"
   | "lifestyle"
   | "faceless"
   | "portrait"
+  | "bundles"
 
 export type PromptModels = | "gemini"
   | "nano_banana"
