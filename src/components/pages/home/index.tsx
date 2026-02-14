@@ -64,7 +64,18 @@ export default function HomePage({
       <Profile />
 
       <div className={styles.section}>
-        <h2>{formatMessage({ id: "home.guides.title" })}</h2>
+        <div className={styles.firstLine}>
+          <h2>{formatMessage({ id: "home.guides.title" })}</h2>
+
+          <div className={styles.buttonBox}>
+            <Link
+              className={styles.seeAll}
+              href={guidesListPageRoute.getUrl(locale)}
+            >
+              {formatMessage({ id: "common.see_all" })}
+            </Link>
+          </div>
+        </div>
 
         <div className={styles.list}>
           {guidesList.map((item) => {
@@ -75,18 +86,21 @@ export default function HomePage({
             );
           })}
         </div>
-        <div className={styles.buttonBox}>
-          <Link
-            className={styles.seeAll}
-            href={guidesListPageRoute.getUrl(locale)}
-          >
-            {formatMessage({ id: "home.guides.see_all" })}
-          </Link>
-        </div>
       </div>
 
       <div className={styles.section}>
-        <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
+        <div className={styles.firstLine}>
+          <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
+
+          <div className={styles.buttonBox}>
+            <Link
+              className={styles.seeAll}
+              href={promptBookListPageRoute.getUrl(locale)}
+            >
+              {formatMessage({ id: "common.see_all" })}
+            </Link>
+          </div>
+        </div>
         <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
 
         <ProductSlider>
@@ -98,19 +112,21 @@ export default function HomePage({
             );
           })}
         </ProductSlider>
-
-        <div className={styles.buttonBox}>
-          <Link
-            className={styles.seeAll}
-            href={promptBookListPageRoute.getUrl(locale)}
-          >
-            {formatMessage({ id: "home.prompt_books.see_all" })}
-          </Link>
-        </div>
       </div>
 
       <div className={styles.section}>
-        <h2>{formatMessage({ id: "home.prompt_bundles.popular.title" })}</h2>
+        <div className={styles.firstLine}>
+          <h2>{formatMessage({ id: "home.prompt_bundles.popular.title" })}</h2>
+
+          <div className={styles.buttonBox}>
+            <Link
+              className={styles.seeAll}
+              href={promptBundleListPageRoute.getUrl(locale)}
+            >
+              {formatMessage({ id: "common.see_all" })}
+            </Link>
+          </div>
+        </div>
 
         <ProductSlider>
           {bundles.map((item) => {
@@ -121,19 +137,25 @@ export default function HomePage({
             );
           })}
         </ProductSlider>
-
-        <div className={styles.buttonBox}>
-          <Link
-            className={styles.seeAll}
-            href={promptBundleListPageRoute.getUrl(locale)}
-          >
-            {formatMessage({ id: "home.prompt_books.see_all" })}
-          </Link>
-        </div>
       </div>
 
       <div className={styles.section}>
-        <h2>{formatMessage({ id: "home.portfolio.title" })}</h2>
+        <div className={styles.firstLine}>
+          <h2>{formatMessage({ id: "home.portfolio.title" })}</h2>
+
+          <div className={styles.buttonBox}>
+            <Link
+              className={styles.seeAll}
+              href={productPortfolioPageRoute.getUrl(locale, {
+                params: {
+                  type: "all",
+                },
+              })}
+            >
+              {formatMessage({ id: "home.portfolio.see_all" })}
+            </Link>
+          </div>
+        </div>
 
         {photos && isMounted && (
           <div className={styles.photos}>
@@ -144,19 +166,6 @@ export default function HomePage({
             />
           </div>
         )}
-
-        <div className={styles.buttonBox}>
-          <Link
-            className={styles.seeAll}
-            href={productPortfolioPageRoute.getUrl(locale, {
-              params: {
-                type: "all",
-              },
-            })}
-          >
-            {formatMessage({ id: "home.portfolio.see_all" })}
-          </Link>
-        </div>
       </div>
     </BasePageLayout>
   );
