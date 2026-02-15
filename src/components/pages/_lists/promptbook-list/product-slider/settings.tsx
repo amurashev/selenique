@@ -33,7 +33,7 @@ const settings = {
       arrows: false,
       breakpoint: 480,
       settings: {
-        slidesToShow: 1.85,
+        slidesToShow: 1.66,
         slidesToScroll: 2,
       },
     },
