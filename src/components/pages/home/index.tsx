@@ -27,6 +27,7 @@ import Profile from "./profile";
 import ProductSlider, {
   ProductSliderItem,
 } from "../promptbook-list/product-slider";
+import GroupHeader from "@/components/sections/group-header";
 
 export default function HomePage({
   deviceType,
@@ -64,18 +65,10 @@ export default function HomePage({
       <Profile />
 
       <div className={styles.section}>
-        <div className={styles.firstLine}>
-          <h2>{formatMessage({ id: "home.guides.title" })}</h2>
-
-          <div className={styles.buttonBox}>
-            <Link
-              className={styles.seeAll}
-              href={guidesListPageRoute.getUrl(locale)}
-            >
-              {formatMessage({ id: "common.see_all" })}
-            </Link>
-          </div>
-        </div>
+        <GroupHeader
+          title={formatMessage({ id: "home.guides.title" })}
+          href={guidesListPageRoute.getUrl(locale)}
+        />
 
         <div className={styles.list}>
           {guidesList.map((item) => {
@@ -89,18 +82,11 @@ export default function HomePage({
       </div>
 
       <div className={styles.section}>
-        <div className={styles.firstLine}>
-          <h2>{formatMessage({ id: "home.prompt_books.popular.title" })}</h2>
+        <GroupHeader
+          title={formatMessage({ id: "home.prompt_books.popular.title" })}
+          href={promptBookListPageRoute.getUrl(locale)}
+        />
 
-          <div className={styles.buttonBox}>
-            <Link
-              className={styles.seeAll}
-              href={promptBookListPageRoute.getUrl(locale)}
-            >
-              {formatMessage({ id: "common.see_all" })}
-            </Link>
-          </div>
-        </div>
         <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
 
         <ProductSlider>
@@ -115,18 +101,10 @@ export default function HomePage({
       </div>
 
       <div className={styles.section}>
-        <div className={styles.firstLine}>
-          <h2>{formatMessage({ id: "home.prompt_bundles.popular.title" })}</h2>
-
-          <div className={styles.buttonBox}>
-            <Link
-              className={styles.seeAll}
-              href={promptBundleListPageRoute.getUrl(locale)}
-            >
-              {formatMessage({ id: "common.see_all" })}
-            </Link>
-          </div>
-        </div>
+        <GroupHeader
+          title={formatMessage({ id: "home.prompt_bundles.popular.title" })}
+          href={promptBundleListPageRoute.getUrl(locale)}
+        />
 
         <ProductSlider>
           {bundles.map((item) => {
@@ -140,22 +118,26 @@ export default function HomePage({
       </div>
 
       <div className={styles.section}>
-        <div className={styles.firstLine}>
+        <GroupHeader
+          title={formatMessage({ id: "home.portfolio.title" })}
+          href={productPortfolioPageRoute.getUrl(locale, {
+            params: {
+              type: "all",
+            },
+          })}
+        />
+        {/* <div className={styles.firstLine}>
           <h2>{formatMessage({ id: "home.portfolio.title" })}</h2>
 
           <div className={styles.buttonBox}>
             <Link
               className={styles.seeAll}
-              href={productPortfolioPageRoute.getUrl(locale, {
-                params: {
-                  type: "all",
-                },
-              })}
+              href={}
             >
               {formatMessage({ id: "home.portfolio.see_all" })}
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {photos && isMounted && (
           <div className={styles.photos}>

@@ -16,6 +16,7 @@ import { getPromptCategoryTag } from "@/constants/promptbooks/categories";
 import ProductSlider, {
   ProductSliderItem,
 } from "../promptbook-list/product-slider";
+import GroupHeader from "@/components/sections/group-header";
 
 const CATEGORIES: PromptCategories[] = [
   "business",
@@ -55,9 +56,7 @@ export default function PromptbookListPage({
 
       <div className={styles.categories}>
         <div>
-          <div className={styles.titleLine}>
-            <h3>{formatMessage({ id: "common.best_sellers" })}</h3>
-          </div>
+          <GroupHeader title={formatMessage({ id: "common.best_sellers" })} />
           <ProductSlider>
             {bestSellers.map((promptPack) => (
               <ProductSliderItem key={promptPack.slug}>
@@ -69,19 +68,14 @@ export default function PromptbookListPage({
 
         {CATEGORIES.map((category) => (
           <div key={category}>
-            <div className={styles.titleLine}>
-              <h3>{formatMessage({ id: getPromptCategoryTag(category) })}</h3>
-              <Link
-                className={styles.link}
-                href={promptsCategoryPageRoute.getUrl(locale, {
-                  params: {
-                    slug: category,
-                  },
-                })}
-              >
-                {formatMessage({ id: "common.see_all" })}
-              </Link>
-            </div>
+            <GroupHeader
+              title={formatMessage({ id: getPromptCategoryTag(category) })}
+              href={promptsCategoryPageRoute.getUrl(locale, {
+                params: {
+                  slug: category,
+                },
+              })}
+            />
             {promptsByCategories[category] && (
               <ProductSlider>
                 {promptsByCategories[category].map((promptPack) => (

@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  h3 {
+    flex-grow: 1;
+  }
+}
+
+.seeAll {
+  /* font-size: 15px; */
+  /* font-weight: 700;
+  display: block;
+  color: rgb(10, 10, 10);
+  background-color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 6px 24px;
+
+  &:hover {
+    border-color: #3a9bff;
+  } */
+
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-inversive);
+  flex-shrink: 0;
+}
+
+.buttonBox {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}

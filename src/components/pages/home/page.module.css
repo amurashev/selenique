@@ -1,50 +1,6 @@
-.firstLine {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-
-  h2 {
-    flex-grow: 1;
-  }
-}
-
-
-.seeAll {
-  font-weight: 700;
-  /* font-size: 15px; */
-  display: block;
-  color: rgb(10, 10, 10);
-  background-color: white;
-  text-align: center;
-  border-radius: 8px;
-  padding: 6px 24px;
-
-  &:hover {
-    border-color: #3a9bff;
-  }
-}
-
-.buttonBox {
-  margin-top: 0px;
-}
-
 .section {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   margin-top: 48px;
   width: 100%;
-
-  /* h2 {
-    text-align: center;
-    color: var(--header-inversive);
-  } */
-
-  p {
-    /* margin-top: 8px; */
-  }
 }
 
 .photos {
