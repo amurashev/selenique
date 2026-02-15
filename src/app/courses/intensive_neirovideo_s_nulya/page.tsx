@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 import Layout from "@/components/layout";
-import IntensiveNeiroVideoPage from "@/components/pages/intensive_neirovideo";
+import IntensiveNeiroVideoPage from "@/components/pages/_old/intensive_neirovideo";
 import { intensiveNeurovideoPageRoute } from "@/constants/routes";
 import { COURSES_DATA } from "@/constants/courses";
 

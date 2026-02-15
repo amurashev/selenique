@@ -1,7 +1,7 @@
 import Layout from "@/components/layout";
 
 import { Metadata } from "next";
-import IIPhotoPage from "@/components/pages/ii-fotosessiya";
+import IIPhotoPage from "@/components/pages/_old/ii-fotosessiya";
 
 const title = "AI Photoshoot — dream portraits without a studio"
 const description = "Portraits and mini videos for avatars, resumes, social networks, dating and gifts — fully online, across the World. You send your photos, we create realistic scenes and looks without plastic over-smoothing."

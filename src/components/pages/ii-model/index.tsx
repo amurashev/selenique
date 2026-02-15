@@ -4,7 +4,7 @@ import Footer from "@/components/layout/footer";
 
 import styles from "./page.module.css";
 import FAQ from "./sections/faq";
-import Form from "../products/sections/form";
+import Form from "../_old/products/sections/form";
 import WhatIsThat from "./sections/what-is-that";
 import WhatYouGet from "./sections/what-you-get";
 import Examples from "./sections/examples";

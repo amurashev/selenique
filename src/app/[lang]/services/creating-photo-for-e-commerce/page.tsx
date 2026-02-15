@@ -1,4 +1,4 @@
-import ProductPage from "@/components/pages/products";
+import ProductPage from "@/components/pages/_old/products";
 import Layout from "@/components/layout";
 
 import { Metadata } from "next";

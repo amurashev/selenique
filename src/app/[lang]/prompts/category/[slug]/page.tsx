@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
 
-import PromptsCategoryPage from "@/components/pages/promptbook-category";
+import PromptsCategoryPage from "@/components/pages/_lists/promptbook-category";
 
 import {
   promptbooksOrdered,

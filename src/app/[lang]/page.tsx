@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import HomePage from "@/components/pages/home";
+import HomePage from "@/components/pages/_lists/home";
 import Layout from "@/components/layout";
 
 import { i18n, Locale } from "../../../i18n-config";

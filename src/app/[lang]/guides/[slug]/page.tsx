@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 
 import Layout from "@/components/layout";
 
-import VirtualInfluencePage from "@/components/pages/virtual-influence";
-import AIFashionGuidePage from "@/components/pages/ai-for-fashion-brands";
+import VirtualInfluencePage from "@/components/pages/_landings/virtual-influence";
+import AIFashionGuidePage from "@/components/pages/_landings/ai-for-fashion-brands";
 import { i18n, Locale } from "../../../../../i18n-config";
 
 import { GUIDES } from "@/constants/guides";

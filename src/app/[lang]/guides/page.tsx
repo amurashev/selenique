@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 import Layout from "@/components/layout";
 
-import GuidesListPage from "@/components/pages/guides-list";
+import GuidesListPage from "@/components/pages/_lists/guides-list";
 
 import { i18n, Locale } from "../../../../i18n-config";
 import { guidesListPageRoute } from "@/constants/routes";

@@ -4,7 +4,7 @@ import { i18n, Locale } from "../../../../i18n-config";
 import Layout from "@/components/layout";
 import { promptBundleListPageRoute } from "@/constants/routes";
 
-import PromptsCategoryPage from "@/components/pages/promptbook-category";
+import PromptsCategoryPage from "@/components/pages/_lists/promptbook-category";
 import { getDictionary } from "@/l18n/dictionaries";
 import { PROMTBOOKS } from "@/constants/promptbooks";
 import { getPromptBookData } from "@/constants/promptbooks/utils";

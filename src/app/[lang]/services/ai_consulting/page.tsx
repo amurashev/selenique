@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import ConsultationsPage from "@/components/pages/consultations";
+import ConsultationsPage from "@/components/pages/_old/consultations";
 import Layout from "@/components/layout";
 
 export const metadata: Metadata = {
