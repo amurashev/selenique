@@ -22,7 +22,7 @@ export default function Languages({
 
   return (
     <div
-      className={`${styles.box} ${isOpen ? styles.open : styles.drawer}`}
+      className={`${isOpen ? styles.open : styles.drawer}`}
       ref={ref}
     >
       {[

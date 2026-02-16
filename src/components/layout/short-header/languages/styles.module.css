@@ -1,8 +1,9 @@
 .drawer {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50px;
+  /* left: 0; */
   right: 0;
+  width: 100%;
   color: white;
   background-color: var(--foreground);
   display: flex;
@@ -10,17 +11,17 @@
   gap: 18px;
   border-bottom: 1px solid var(--border-dark);
   padding: 8px 20px;
-  z-index: 50;
+  z-index: -1;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(100%, 0, 0);
   transition-duration: 300ms;
 }
 
 .open {
   composes: drawer;
 
-  transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 

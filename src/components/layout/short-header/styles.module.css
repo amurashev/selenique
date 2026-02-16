@@ -8,15 +8,15 @@
   display: flex;
   align-items: center;
   padding: 12px 12px;
-  border-bottom: 1px solid var(--border-dark);
-  color: white;
   background-color: var(--foreground);
+  border-bottom: 1px solid var(--border-dark);
+  z-index: 100;
+  color: white;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
 }
 
 .nullLink {
@@ -73,7 +73,7 @@
 
 .flagImage {
   display: block;
-  width: 24px;
+  width: 22px;
   height: auto;
   object-fit: cover;
   overflow: hidden;

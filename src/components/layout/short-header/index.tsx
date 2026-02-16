@@ -30,6 +30,7 @@ export default function ShortHeader({
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+  const flagRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const onFlagClick = (newLocale: string) => {
@@ -57,7 +58,8 @@ export default function ShortHeader({
     const handleClickOutside = (event: MouseEvent) => {
       if (
         modalRef.current &&
-        !modalRef.current.contains(event.target as Node)
+        !modalRef.current.contains(event.target as Node) &&
+        !flagRef.current?.contains(event.target as Node)
       ) {
         setIsOpen(false);
         event.stopPropagation();
@@ -99,7 +101,13 @@ export default function ShortHeader({
 
         <div className={styles.null}>
           <div className={styles.card}>
-            <div className={styles.flagBox} onClick={() => setIsOpen(true)}>
+            <div
+              ref={flagRef}
+              className={styles.flagBox}
+              onClick={() => {
+                if (!isOpen) setIsOpen(true);
+              }}
+            >
               {locale.toUpperCase()}
               <img
                 src={`/flags/${locale}.png`}
@@ -117,9 +125,9 @@ export default function ShortHeader({
         >
           <MenuIcon size={28} />
         </div>
+        <Menu ref={menuRef} isOpen={isMenuOpen} />
+        <Languages ref={modalRef} isOpen={isOpen} onSelect={onFlagClick} />
       </div>
-      <Menu ref={menuRef} isOpen={isMenuOpen} />
-      <Languages ref={modalRef} isOpen={isOpen} onSelect={onFlagClick} />
     </div>
   );
 }

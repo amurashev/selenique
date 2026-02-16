@@ -27,7 +27,7 @@ export default function Menu({
   return (
     <div
       ref={ref}
-      className={`${styles.box} ${isOpen ? styles.open : styles.drawer}`}
+      className={`${isOpen ? styles.open : styles.drawer}`}
     >
       <div className={styles.linksBox}>
         <ul className={styles.menuList}>
