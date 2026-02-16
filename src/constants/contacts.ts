@@ -1,5 +1,7 @@
 export const TELEGRAM_LINK = "https://t.me/alenaamoore"
 export const TELEGRAM_NAME = "@alenaamoore"
+export const THREADS_NAME = "selenique.studio"
+export const INSTAGRAM_NAME = "selenique.studio"
 
 export const EMAIL = "selenique.studio@gmail.com"
 export const NAME = "Мурашева Алёна Николаевна"

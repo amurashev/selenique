@@ -64,6 +64,8 @@ export default function HomePage({
     <BasePageLayout>
       <Profile />
 
+      <hr className={styles.hr} />
+
       <div className={styles.section}>
         <GroupHeader
           title={formatMessage({ id: "home.guides.title" })}
@@ -80,6 +82,8 @@ export default function HomePage({
           })}
         </ProductSlider>
       </div>
+
+      <hr className={styles.hr} />
 
       <div className={styles.section}>
         <GroupHeader
@@ -99,6 +103,8 @@ export default function HomePage({
           })}
         </ProductSlider>
       </div>
+
+      <hr className={styles.hr} />
 
       <div className={styles.section}>
         <GroupHeader

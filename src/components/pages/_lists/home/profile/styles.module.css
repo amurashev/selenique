@@ -44,6 +44,14 @@
   margin-top: 8px;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 16px;
+}
+
 @media (min-width: 600px) {
   .title {
     font-size: 26px;
