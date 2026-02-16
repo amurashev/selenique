@@ -52,7 +52,7 @@ const Profile = () => {
 
         <div className={styles.icons}>
           <Link href={`https://www.threads.com/@${THREADS_NAME}`} target="_blank">
-            <ThreadsIcon size={32} />{" "}
+            <ThreadsIcon size={32} />
           </Link>
           <Link href={`https://www.instagram.com/${INSTAGRAM_NAME}`} target="_blank">
             <InstagramIcon size={32} />

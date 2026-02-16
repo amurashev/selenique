@@ -67,25 +67,28 @@ export default function PromptbookListPage({
         </div>
 
         {CATEGORIES.map((category) => (
-          <div key={category}>
-            <GroupHeader
-              title={formatMessage({ id: getPromptCategoryTag(category) })}
-              href={promptsCategoryPageRoute.getUrl(locale, {
-                params: {
-                  slug: category,
-                },
-              })}
-            />
-            {promptsByCategories[category] && (
-              <ProductSlider>
-                {promptsByCategories[category].map((promptPack) => (
-                  <ProductSliderItem key={promptPack.slug}>
-                    <PromptbookItem item={promptPack} />
-                  </ProductSliderItem>
-                ))}
-              </ProductSlider>
-            )}
-          </div>
+          <>
+            <hr className={styles.hr} />
+            <div key={category}>
+              <GroupHeader
+                title={formatMessage({ id: getPromptCategoryTag(category) })}
+                href={promptsCategoryPageRoute.getUrl(locale, {
+                  params: {
+                    slug: category,
+                  },
+                })}
+              />
+              {promptsByCategories[category] && (
+                <ProductSlider>
+                  {promptsByCategories[category].map((promptPack) => (
+                    <ProductSliderItem key={promptPack.slug}>
+                      <PromptbookItem item={promptPack} />
+                    </ProductSliderItem>
+                  ))}
+                </ProductSlider>
+              )}
+            </div>
+          </>
         ))}
       </div>
     </BasePageLayout>
