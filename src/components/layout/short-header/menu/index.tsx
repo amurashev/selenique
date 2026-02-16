@@ -14,7 +14,14 @@ import {
 
 import styles from "./styles.module.css";
 
-export default function Menu({ ref, isOpen }: { ref: any; isOpen: boolean }) {
+export default function Menu({
+  ref,
+  isOpen,
+}: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, react/display-name
+  ref: any;
+  isOpen: boolean;
+}) {
   const { formatMessage, locale } = useIntl();
 
   return (

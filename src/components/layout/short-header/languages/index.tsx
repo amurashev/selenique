@@ -13,6 +13,7 @@ export default function Languages({
   isOpen,
   onSelect,
 }: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, react/display-name
   ref: any;
   isOpen: boolean;
   onSelect: (newFlag: string) => void
