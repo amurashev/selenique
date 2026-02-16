@@ -70,15 +70,15 @@ export default function HomePage({
           href={guidesListPageRoute.getUrl(locale)}
         />
 
-        <div className={styles.list}>
+        <ProductSlider>
           {guidesList.map((item) => {
             return (
-              <div key={item.slug} className={styles.null}>
+              <ProductSliderItem key={item.slug}>
                 <GuideItem item={item} />
-              </div>
+              </ProductSliderItem>
             );
           })}
-        </div>
+        </ProductSlider>
       </div>
 
       <div className={styles.section}>
@@ -117,7 +117,7 @@ export default function HomePage({
         </ProductSlider>
       </div>
 
-      <div className={styles.section}>
+      {/* <div className={styles.section}>
         <GroupHeader
           title={formatMessage({ id: "home.portfolio.title" })}
           href={productPortfolioPageRoute.getUrl(locale, {
@@ -126,19 +126,6 @@ export default function HomePage({
             },
           })}
         />
-        {/* <div className={styles.firstLine}>
-          <h2>{formatMessage({ id: "home.portfolio.title" })}</h2>
-
-          <div className={styles.buttonBox}>
-            <Link
-              className={styles.seeAll}
-              href={}
-            >
-              {formatMessage({ id: "home.portfolio.see_all" })}
-            </Link>
-          </div>
-        </div> */}
-
         {photos && isMounted && (
           <div className={styles.photos}>
             <RowsPhotoAlbum
@@ -148,7 +135,7 @@ export default function HomePage({
             />
           </div>
         )}
-      </div>
+      </div> */}
     </BasePageLayout>
   );
 }

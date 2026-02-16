@@ -60,6 +60,21 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     }
   },
+  "create-virtual-influencer": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 47,
+        gumroadSlug: "create-virtual-influencer-guide",
+        boostyId: "",
+        name: "Create your own Virtual Influencer (step-by-step guide)",
+        description: "This comprehensive guide provides a complete roadmap to building a professional AI virtual influencer, allowing you to create a high-income digital presence without ever showing your face on camera. It covers everything from technical tool setup to advanced video and monetization strategies.",
+        price: {
+          en: 14.9
+        },
+      },
+    }
+  },
   "virtual-influence-instagram-playbook": {
     locales: {
       en: {
@@ -74,5 +89,5 @@ export const GUIDES: Record<string, GuideItem> = {
         },
       },
     }
-  }
+  },
 }
