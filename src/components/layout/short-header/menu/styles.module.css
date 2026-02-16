@@ -1,0 +1,46 @@
+.drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 200;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  background-color: #111;
+  transition-duration: 200ms;
+}
+
+.open {
+  composes: drawer;
+
+  transform: translate3d(0, 0, 0);
+}
+
+.menuHeader {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: #919496;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.linksBox {
+  color: #fff;
+  padding: 24px 24px;
+}
+.menuItem {
+  margin-bottom: 8px;
+}
+.menuList {
+  list-style: none;
+}
+.menuLink {
+  font-size: 15px;
+  font-weight: bold;
+}

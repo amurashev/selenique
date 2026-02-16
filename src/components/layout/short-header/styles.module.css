@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 100;
 }
 
 .nullLink {
@@ -46,9 +46,16 @@
 .null {
   /* width: 72px; */
   flex-shrink: 0;
-  width: 80px;
+  /* width: 80px; */
   display: flex;
   justify-content: end;
+}
+
+.menuBox {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  cursor: pointer;
 }
 
 
@@ -61,6 +68,7 @@
   gap: 6px;
   cursor: pointer;
   font-size: 10px;
+  margin-left: 8px;
 }
 
 .flagImage {
@@ -70,41 +78,4 @@
   object-fit: cover;
   overflow: hidden;
   flex-shrink: 0;
-}
-
-.modal {
-  position: absolute;
-  top: calc(100% + 1px);
-  left: 0;
-  right: 0;
-  color: white;
-  background-color: var(--foreground);
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  border-bottom: 1px solid var(--border-dark);
-  padding: 8px 20px;
-}
-
-.imageSuggested {
-  display: block;
-  width: 48px;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-
-.boxWhite {
-  .backBox {
-    background-color: white;
-    color: var(--foreground);
-    border-bottom: 1px solid var(--border-light);
-  }
-
-  .modal {
-    background-color: white;
-    border-color: var(--border-light);
-  }
 }

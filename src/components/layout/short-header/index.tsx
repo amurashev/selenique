@@ -10,40 +10,48 @@ import styles from "./styles.module.css";
 import { i18n, Locale } from "../../../../i18n-config";
 import { ChevronLeft } from "@/components/sections/arrows";
 import { BaseRouteType, Route } from "@/utils/routing";
+import MenuIcon from "@/components/ui/icons/menu";
+import Menu from "./menu";
+import Languages from "./languages";
 // import Locales from "../../layout/locales";
 
-
 // Flags: https://www.flaticon.com/packs/international-flags-6?word=flag
-export default function ShortHeader({ route, title, color = "black"} : {
-  route?: Route<BaseRouteType>,
-  title?: string,
-  color?: "white" | "black"
+export default function ShortHeader({
+  route,
+  title,
+  color = "black",
+}: {
+  route?: Route<BaseRouteType>;
+  title?: string;
+  color?: "white" | "black";
 }) {
   const { formatMessage, locale } = useIntl();
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const onFlagClick = (newLocale: string) => {
-    const pathArray = pathname.split('/')
+    const pathArray = pathname.split("/");
 
-    const pathWithoutLocale = i18n.locales.includes(pathArray[1] as Locale) 
-      ? pathArray.slice(2).join('/') 
-      : pathArray.slice(1).join('/')
+    const pathWithoutLocale = i18n.locales.includes(pathArray[1] as Locale)
+      ? pathArray.slice(2).join("/")
+      : pathArray.slice(1).join("/");
 
-    let newPath = "/"
+    let newPath = "/";
 
     // TODO: Common helper
     if (i18n.locales.includes(locale as Locale)) {
       if (newLocale === i18n.defaultLocale) {
-        newPath = `/${pathWithoutLocale}`
+        newPath = `/${pathWithoutLocale}`;
       } else {
-        newPath = `/${newLocale}/${pathWithoutLocale}`
+        newPath = `/${newLocale}/${pathWithoutLocale}`;
       }
     }
 
-    redirect(newPath)
-  }
+    redirect(newPath);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -52,6 +60,16 @@ export default function ShortHeader({ route, title, color = "black"} : {
         !modalRef.current.contains(event.target as Node)
       ) {
         setIsOpen(false);
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        event.preventDefault();
+      }
+
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        event.preventDefault();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -61,50 +79,47 @@ export default function ShortHeader({ route, title, color = "black"} : {
   }, []);
 
   return (
-    <div className={`${styles.box} ${color === "white" ? styles.boxWhite : ""}`}>
+    <div
+      className={`${styles.box} ${color === "white" ? styles.boxWhite : ""}`}
+    >
       <div className={styles.backBox}>
-        {!route && (<div className={styles.nullLink}>&nbsp;</div>)}
+        {!route && <div className={styles.nullLink}>&nbsp;</div>}
+
         {route && (
           <Link href={route.getUrl(locale)} className={styles.link}>
-            <ChevronLeft size={28} color={color === "white" ? "#444444" : "#ffffff"} />
+            <ChevronLeft
+              size={28}
+              color={color === "white" ? "#444444" : "#ffffff"}
+            />
             <span>{formatMessage({ id: "common.back" })}</span>
           </Link>
         )}
 
         <div className={styles.title}>{title}</div>
+
         <div className={styles.null}>
           <div className={styles.card}>
             <div className={styles.flagBox} onClick={() => setIsOpen(true)}>
+              {locale.toUpperCase()}
               <img
                 src={`/flags/${locale}.png`}
                 alt={"Selenique.Studio"}
                 className={styles.flagImage}
               />
-              {locale.toUpperCase()}
             </div>
           </div>
         </div>
-
-
-        {isOpen && (
-          <div className={styles.modal} ref={modalRef}>
-            {[i18n.locales.map(item => {
-              return (
-                <Link key={item} href="#"><img
-                  src={`/flags/${item}.png`}
-                  alt={"Selenique.Studio"}
-                  className={styles.imageSuggested}
-                  onClick={(e) => {
-                    e.preventDefault()
-                    e.stopPropagation()
-                    onFlagClick(item)
-                  }}
-                /></Link>
-              )
-            })]}
-          </div>
-        )}
+        <div
+          className={styles.menuBox}
+          onClick={() => {
+            setIsMenuOpen(true);
+          }}
+        >
+          <MenuIcon size={28} />
+        </div>
       </div>
+      <Menu ref={menuRef} isOpen={isMenuOpen} />
+      <Languages ref={modalRef} isOpen={isOpen} onSelect={onFlagClick} />
     </div>
   );
 }
