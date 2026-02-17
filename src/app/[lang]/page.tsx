@@ -67,10 +67,10 @@ export default async function HomeEntry({
   bundles.sort(sortByPoints);
 
   const guidesListId = getGuidesList(finalLang);
-  const guidesList = guidesListId.map((item) =>
-    getGuideData(item.slug, finalLang)
-  );
 
+  const guidesList = guidesListId.map((item) =>
+    getGuideData(item.slug, item.locale)
+  );
 
   const randomPhotos = PHOTOS.filter((item) => {
     const sourceFile = item.SourceFile.slice(8);

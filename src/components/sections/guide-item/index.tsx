@@ -16,7 +16,7 @@ const GuideItem: React.FC<{
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { slug, name, vertImage, gumroadLink, noLanding } = item;
+  const { slug, lang, name, isBestseller, vertImage, gumroadLink, noLanding } = item;
 
   const url = noLanding
     ? gumroadLink
@@ -28,12 +28,19 @@ const GuideItem: React.FC<{
 
   return (
     <Link key={slug} href={url} className={styles.card}>
+      {lang && (
+        <img
+          src={`/flags/${lang}.png`}
+          alt={name}
+          className={styles.flagImage}
+        />
+      )}
       <div className={styles.box}>
         <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>
-      {/* {isBestseller && (
+      {isBestseller && (
         <div className={styles.bestseller}>Bestseller</div>
-      )} */}
+      )}
 
       {/* {Boolean(reviewsRating) && (
         <div className={styles.ratingBox}>

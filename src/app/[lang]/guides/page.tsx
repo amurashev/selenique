@@ -6,6 +6,7 @@ import GuidesListPage from "@/components/pages/_lists/guides-list";
 
 import { i18n, Locale } from "../../../../i18n-config";
 import { guidesListPageRoute } from "@/constants/routes";
+import { getGuidesList, getGuideData } from "@/constants/guides/utils";
 import { getDictionary } from "@/l18n/dictionaries";
 
 export async function generateMetadata({
@@ -40,7 +41,6 @@ export async function generateMetadata({
   };
 }
 
-
 export default async function PromptbookPageEntry({
   params,
 }: {
@@ -49,9 +49,14 @@ export default async function PromptbookPageEntry({
   const { lang } = await params;
   const finalLang = lang || i18n.defaultLocale;
 
+  const guidesListId = getGuidesList(finalLang);
+  const guidesList = guidesListId.map((item) =>
+    getGuideData(item.slug, item.locale)
+  );
+
   return (
     <Layout locale={finalLang}>
-      <GuidesListPage />
+      <GuidesListPage guidesList={guidesList} />
     </Layout>
   );
 }

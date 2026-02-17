@@ -6,17 +6,18 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 import { homePage } from "@/constants/routes";
-import { getGuidesList, getGuideData } from "@/constants/guides/utils";
 import GuideItem from "@/components/sections/guide-item";
 import BasePageLayout from "@/components/layout/base-page";
+import { Guide } from "@/constants/guides";
 
-export default function GuidesListPage() {
+export default function GuidesListPage({
+  guidesList,
+}: {
+  guidesList: Guide[];
+}) {
   const { formatMessage, locale } = useIntl();
 
-  const guidesListId = getGuidesList(locale);
-  const guidesList = guidesListId.map((item) =>
-    getGuideData(item.slug, locale)
-  );
+  console.warn(guidesList)
 
   return (
     <BasePageLayout
