@@ -55,10 +55,10 @@ const Profile = () => {
             <ThreadsIcon size={32} />
           </Link>
           <Link href={`https://www.instagram.com/${INSTAGRAM_NAME}`} target="_blank">
-            <InstagramIcon size={32} />
+            <InstagramIcon size={30} />
           </Link>
           <Link href={`mailto:${EMAIL}`}>
-            <EmailIcon size={36} />
+            <EmailIcon size={38} />
           </Link>
         </div>
 

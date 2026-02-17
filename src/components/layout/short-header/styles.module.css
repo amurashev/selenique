@@ -54,7 +54,7 @@
 .menuBox {
   display: flex;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 12px;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
 
 .flagImage {
   display: block;
-  width: 22px;
+  width: 20px;
   height: auto;
   object-fit: cover;
   overflow: hidden;
