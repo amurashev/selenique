@@ -66,24 +66,28 @@ export default function HomePage({
 
       <hr className={styles.hr} />
 
-      <div className={styles.section}>
-        <GroupHeader
-          title={formatMessage({ id: "home.guides.title" })}
-          href={guidesListPageRoute.getUrl(locale)}
-        />
+      {guidesList.length > 0 && (
+        <>
+          <div className={styles.section}>
+            <GroupHeader
+              title={formatMessage({ id: "home.guides.title" })}
+              href={guidesListPageRoute.getUrl(locale)}
+            />
 
-        <ProductSlider>
-          {guidesList.map((item) => {
-            return (
-              <ProductSliderItem key={item.slug}>
-                <GuideItem item={item} />
-              </ProductSliderItem>
-            );
-          })}
-        </ProductSlider>
-      </div>
+            <ProductSlider>
+              {guidesList.map((item) => {
+                return (
+                  <ProductSliderItem key={item.slug}>
+                    <GuideItem item={item} />
+                  </ProductSliderItem>
+                );
+              })}
+            </ProductSlider>
+          </div>
 
-      <hr className={styles.hr} />
+          <hr className={styles.hr} />
+        </>
+      )}
 
       <div className={styles.section}>
         <GroupHeader
