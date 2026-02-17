@@ -10,6 +10,7 @@ import {
   guidesListPageRoute,
   promptBundleListPageRoute,
   productPortfolioPageRoute,
+  homePage,
 } from "@/constants/routes";
 
 import styles from "./styles.module.css";
@@ -25,15 +26,13 @@ export default function Menu({
   const { formatMessage, locale } = useIntl();
 
   return (
-    <div
-      ref={ref}
-      className={`${isOpen ? styles.open : styles.drawer}`}
-    >
+    <div ref={ref} className={`${isOpen ? styles.open : styles.drawer}`}>
       <div className={styles.linksBox}>
+        <Link className={styles.brand} href={homePage.getUrl(locale)}>
+          Selenique Studio
+        </Link>
+        <hr className={styles.hr} />
         <ul className={styles.menuList}>
-          <span className={styles.menuHeader}>
-            {formatMessage({ id: "footer.navigation" })}
-          </span>
           <li className={styles.menuItem}>
             <Link
               href={promptBookListPageRoute.getUrl(locale)}
