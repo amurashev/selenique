@@ -177,6 +177,11 @@ export const POSE_TYPE = {
 
   STANDING_WALKING_ILLUSION: "standing_walking_illusion_pose",
   STANDING_BASE: "standing_base_pose",
+  STANDING_BASE_BACK: "standing_base_back_pose",
+  STANDING_BASE_LEFT: "standing_base_left_pose",
+  STANDING_BASE_RIGHT: "standing_base_right_pose",
+
+  
   STANDING_THREE_QUARTER: "standing_three_quarter_pose",
   STANDING_FEET_SHOULDER_WIDTH: "standing_feet_shoulder_width_pose",
   STANDING_TOUCHING_JACKET: "standing_touching_jacket_pose",
@@ -253,6 +258,9 @@ export const POSE_LIST = [
   POSE_TYPE.STANDING_HANDS_IN_POCKETS_HEAD_TILTED,
   POSE_TYPE.STANDING_WALKING_ILLUSION,
   POSE_TYPE.STANDING_BASE,
+  POSE_TYPE.STANDING_BASE_BACK,
+  POSE_TYPE.STANDING_BASE_LEFT,
+  POSE_TYPE.STANDING_BASE_RIGHT,
   POSE_TYPE.STANDING_THREE_QUARTER,
   POSE_TYPE.STANDING_FEET_SHOULDER_WIDTH,
   POSE_TYPE.STANDING_TOUCHING_JACKET,

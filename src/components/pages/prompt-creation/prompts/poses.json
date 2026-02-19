@@ -38,7 +38,10 @@
 
 
   "standing_walking_illusion_pose": "The subject stands with one foot slightly forward, creating a gentle walking illusion, elegant elongated silhouette",
-  "standing_base_pose": "The subject stands with arms relaxed at the sides, chest open, shoulders back, strong minimalist editorial pose",
+  "standing_base_pose": "The subject is standing facing directly forward in a neutral full-body stance, feet placed naturally under the hips, arms relaxed straight down along the sides, shoulders level, posture upright and symmetrical, gaze directed forward.",
+  "standing_base_back_pose": "The subject is standing upright with her back facing the camera, arms relaxed naturally at her sides, shoulders aligned, weight evenly distributed on both feet, maintaining a straight, neutral posture.",
+  "standing_base_left_pose": "The subject is standing in a clean side profile facing left, body aligned vertically, shoulders relaxed, arms resting naturally, weight evenly balanced, maintaining a straight, composed posture.",
+  "standing_base_right_pose": "The subject is standing in a clean side profile facing right, body aligned vertically, shoulders relaxed, arms resting naturally, weight evenly balanced, maintaining a straight, composed posture.",
   "standing_three_quarter_pose": "The subject stands in a slight three-quarter body turn, feet grounded, posture tall and composed.",
   "standing_feet_shoulder_width_pose": "The subject stands with feet shoulder-width apart, grounded balanced posture, architectural silhouette emphasis.",
   "standing_touching_jacket_pose": "The subject stands with both hands lightly touching the jacket edges, controlled gesture emphasizing tailoring",
