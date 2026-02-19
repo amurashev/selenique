@@ -2,7 +2,7 @@
 
 import { useIntl } from "react-intl";
 import Link from "next/link";
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import { useMetrica } from "next-yandex-metrica";
 
 import styles from "./page.module.css";
@@ -67,7 +67,7 @@ export default function PromptbookListPage({
         </div>
 
         {CATEGORIES.map((category) => (
-          <>
+          <Fragment key={category}>
             <hr className={styles.hr} />
             <div key={category}>
               <GroupHeader
@@ -88,7 +88,7 @@ export default function PromptbookListPage({
                 </ProductSlider>
               )}
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </BasePageLayout>

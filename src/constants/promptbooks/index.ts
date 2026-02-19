@@ -17,6 +17,7 @@ import t39 from "./text/39";
 import t40 from "./text/40";
 import t44 from "./text/44";
 import t45 from "./text/45";
+import t48 from "./text/48";
 // import t41 from "./text/41";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
@@ -901,10 +902,24 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {},
     tags: ["fashion", "women", "men"],
     type: "bundle",
-    images: [0,1,2,3,4,5],
+    images: [0, 1, 2, 3, 4, 5],
     summary:
       "A curated bundle of 250 fashion editorial AI prompts designed for high-end, magazine-style visuals. This collection brings together five prompt packs into one powerful toolkit for creating cinematic, stylish, and editorial fashion images.",
     text: t45,
+  },
+  "studio-poses-photo-prompts": {
+    id: 48,
+    gumroadSlug: "studio-poses-photo-prompts",
+    name: "55+ Studio Poses – Photo Prompts",
+    number: 55,
+    tags: ["studio"],
+    mainCategory: "studio",
+    type: "pack",
+    fileType: "link",
+    images: [1, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13],
+    summary:
+      "This collection includes over 55 structured pose prompts suitable for both male and female models in a minimalist studio environment. The poses are optimized for fashion, business, personal branding, and commercial photography.",
+    text: t48,
   },
 };
 
@@ -926,6 +941,7 @@ export const promptbooksOrdered: string[] = [
   "50-men-fashion-editorial-prompts-vol-2",
   "8-red-carpet-men-photo-prompts-ai",
   "8-red-carpet-women-photo-prompts",
+  "studio-poses-photo-prompts",
   "32-monochromatic-studio-portrait-prompt-pack",
   "16-red-backdrop-studio-photo-prompts",
   "16-valentines-day-women-photo-prompts",
