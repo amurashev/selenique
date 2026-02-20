@@ -18,6 +18,7 @@ import t40 from "./text/40";
 import t44 from "./text/44";
 import t45 from "./text/45";
 import t48 from "./text/48";
+import t49 from "./text/49";
 // import t41 from "./text/41";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
@@ -921,6 +922,22 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
       "This collection includes over 55 structured pose prompts suitable for both male and female models in a minimalist studio environment. The poses are optimized for fashion, business, personal branding, and commercial photography.",
     text: t48,
   },
+
+  "viral-image-prompts": {
+    id: 49,
+    isBestseller: true,
+    gumroadSlug: "viral-image-prompts",
+    name: "44 Viral Image Prompts",
+    number: 44,
+    tags: ["fantasy", "design"],
+    mainCategory: "fantasy",
+    type: "pack",
+    fileType: "link",
+    images: [1, 3, 7, 8, 9, 10, 11, 12],
+    summary:
+      "44 Viral Image Prompts is a curated collection of high-impact concepts designed to generate attention-grabbing, scroll-stopping visuals for social media and digital platforms.",
+    text: t49,
+  },
 };
 
 export const promptbooksOrdered: string[] = [
@@ -936,6 +953,7 @@ export const promptbooksOrdered: string[] = [
   "50-jewelry-product-photo-ai-prompts",
 
   "realistic-ai-influencer-prompts",
+  "viral-image-prompts",
 
   "50-men-fashion-editorial-prompts-vol-1",
   "50-men-fashion-editorial-prompts-vol-2",
