@@ -718,7 +718,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     id: 28,
     gumroadSlug: "realistic-ai-influencer-prompts",
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
-    name: "The Ultra-Realistic AI Influencer Kit (200+ Prompts)",
+    name: "The Ultra-Realistic AI Avatar Kit (200+ Prompts for Virtual Influencer)",
     number: 200,
     isBestseller: true,
     links: {},
@@ -727,7 +727,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
-    summary: "🔥 CREATE ULTRA-REALISTIC AI MODELS THAT PEOPLE THINK ARE REAL",
+    summary: "You get instant access to my Private Notion Dashboard containing 200+ Copy-Paste Prompts. Works with Nano Banana Pro/Gemini, Seedream, FLUX, and other major AI tools.",
     text: t28,
   },
 
