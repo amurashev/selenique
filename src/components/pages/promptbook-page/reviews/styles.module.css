@@ -70,3 +70,10 @@
   display: flex;
   gap: 8px;
 }
+
+
+@media (min-width: 600px) {
+  .itemInner {
+    min-height: 160px;
+  }
+}
