@@ -17,6 +17,7 @@ export const getPromptBookData = (slug: string): PromptBook => {
   const baseItem = PROMTBOOKS[slug]
 
   const id = getPromptBookId(slug) || 0
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const localData = require(`./../../../source/promptbooks/${id}.json`);
 
   const rating = PROMPTS_RATING[slug] || { rating: 0, count: 0}

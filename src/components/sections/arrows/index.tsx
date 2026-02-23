@@ -1,7 +1,6 @@
-
 import styles from "./styles.module.css";
 
-export function ChevronRight({ size = 32, stroke = 2, color = "currentColor" }) {
+export function ChevronRight({ size = 32, stroke = 2, color = "#ffffff" }) {
   return (
     <svg
       width={size}
@@ -22,7 +21,7 @@ export function ChevronRight({ size = 32, stroke = 2, color = "currentColor" }) 
   );
 }
 
-export function ChevronLeft({ size = 32, stroke = 2, color = "currentColor" }) {
+export function ChevronLeft({ size = 32, stroke = 2, color = "#ffffff" }) {
   return (
     <svg
       width={size}
@@ -43,20 +42,42 @@ export function ChevronLeft({ size = 32, stroke = 2, color = "currentColor" }) {
   );
 }
 
-export function SampleNextArrow({ onClick, className }: { onClick?: () => void, className?: string }) {
-  const isDisabled = className?.includes('slick-disabled')
+export function SampleNextArrow({
+  onClick,
+  color = "#ffffff",
+  className,
+}: {
+  onClick?: () => void;
+  color?: string;
+  className?: string;
+}) {
+  const isDisabled = className?.includes("slick-disabled");
   return (
-    <div className={`${styles.rightArrow} ${isDisabled ? styles.rightArrowDisabled : ""}`} onClick={onClick}>
-      <ChevronRight />
+    <div
+      className={`${styles.rightArrow} ${isDisabled ? styles.rightArrowDisabled : ""}`}
+      onClick={onClick}
+    >
+      <ChevronRight color={color} />
     </div>
   );
 }
 
-export function SamplePrevArrow({ onClick, className }: { onClick?: () => void, className?: string }) {
-  const isDisabled = className?.includes('slick-disabled')
+export function SamplePrevArrow({
+  onClick,
+  color = "#ffffff",
+  className,
+}: {
+  onClick?: () => void;
+  color?: string;
+  className?: string;
+}) {
+  const isDisabled = className?.includes("slick-disabled");
   return (
-    <div className={`${styles.leftArrow} ${isDisabled ? styles.leftArrowDisabled : ""}`} onClick={onClick}>
-      <ChevronLeft />
+    <div
+      className={`${styles.leftArrow} ${isDisabled ? styles.leftArrowDisabled : ""}`}
+      onClick={onClick}
+    >
+      <ChevronLeft color={color} />
     </div>
   );
 }

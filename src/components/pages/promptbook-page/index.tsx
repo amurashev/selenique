@@ -47,13 +47,8 @@ export default function PromptbookPage({
     images,
     isDisabled,
   } = data;
-  const pack = (data as PromptBook).pack || [];
-  const packsNumber = pack.length || 1;
-
   const finalTopText = description || summary;
-
   const backUrl = promptBookListPageRoute.getUrl(locale);
-
   const showRussiaHints = ["en", "ru"].includes(locale);
 
   useEffect(() => {
@@ -123,8 +118,6 @@ export default function PromptbookPage({
               {/* <div className={styles.section}>
                 <Who data={data as PromptBook} />
               </div> */}
-
-              {/* <Text text={data.text} /> */}
 
               {showRussiaHints && (
                 <div className={styles.hint}>
