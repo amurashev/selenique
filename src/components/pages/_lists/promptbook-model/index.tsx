@@ -11,16 +11,16 @@ import {
   getPromptModelH1,
   getPromptModelShortDescription,
   getPromptModelText,
-} from "@/constants/promptbooks/categories";
-import { PromptModels } from "@/components/types";
+} from "@/content/promptbooks/categories";
+import { PromptBook, PromptModels } from "@/components/types";
 import BasePageLayout from "@/components/layout/base-page";
 
 export default function PromptsModelPage({
   slug,
-  prompts,
+  promptBooks,
 }: {
   slug: PromptModels;
-  prompts: string[];
+  promptBooks: PromptBook[];
 }) {
   const { formatMessage, locale } = useIntl();
 
@@ -33,7 +33,7 @@ export default function PromptsModelPage({
       <h1>{formatMessage({ id: getPromptModelH1(slug) })}</h1>
       <p>{formatMessage({ id: getPromptModelShortDescription(slug) })}</p>
 
-      <PromptbookList list={prompts} />
+      <PromptbookList list={promptBooks} />
     </BasePageLayout>
   );
 }

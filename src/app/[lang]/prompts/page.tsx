@@ -6,9 +6,9 @@ import { promptBookListPageRoute } from "@/constants/routes";
 
 import PromptbookListPage from "@/components/pages/_lists/promptbook-list";
 import { getDictionary } from "@/l18n/dictionaries";
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import { PROMTBOOKS } from "@/content/promptbooks";
 import { PromptBook } from "@/components/types";
-import { getPromptBookData, sortByPoints } from "@/constants/promptbooks/utils";
+import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,

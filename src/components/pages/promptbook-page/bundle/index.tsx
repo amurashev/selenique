@@ -8,25 +8,19 @@ import { PromptBook } from "@/components/types";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
 
-import { PROMTBOOKS } from "@/constants/promptbooks";
-import { getPromptBookData } from "@/constants/promptbooks/utils";
-
-export default function Bundle({ data }: { data: PromptBook }) {
+export default function Bundle({
+  bundleContent,
+}: {
+  bundleContent: PromptBook[];
+}) {
   const { formatMessage, locale } = useIntl();
-  const packIds = data.pack || [];
-
-  const tempSlugArray = Object.keys(PROMTBOOKS).filter((slug) => {
-    const pack = PROMTBOOKS[slug];
-    return packIds.includes(pack.id);
-  });
 
   return (
     <div>
       <h3>{formatMessage({ id: "prompt_books.bundle_contains" })}:</h3>
       <div className={styles.list}>
-        {tempSlugArray.map((slug) => {
-          const item = getPromptBookData(slug)
-          return <PromptbookItem key={slug} item={item} />;
+        {bundleContent.map((item) => {
+          return <PromptbookItem key={item.id} item={item} />;
         })}
       </div>
     </div>

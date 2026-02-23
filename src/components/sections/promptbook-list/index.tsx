@@ -1,17 +1,16 @@
 "use client";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
-import { getPromptBookData } from "@/constants/promptbooks/utils";
 
 import styles from "./styles.module.css";
+import { PromptBook } from "@/components/types";
 
-export default function PromptbookList({ list }: { list: string[]}) {
+export default function PromptbookList({ list }: { list: PromptBook[]}) {
 
   return (
     <div className={styles.list}>
-      {list.map((slug) => {
-        const item = getPromptBookData(slug)
-        return <PromptbookItem key={slug} item={item} />;
+      {list.map((item) => {
+        return <PromptbookItem key={item.id} item={item} />;
       })}
     </div>
   );

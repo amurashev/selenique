@@ -10,7 +10,7 @@ import {
   getPromptModelTag,
   PROMPT_CATEGORIES,
   PROMPT_MODELS,
-} from "@/constants/promptbooks/categories";
+} from "@/content/promptbooks/categories";
 import {
   promptBookListPageRoute,
   guidesListPageRoute,

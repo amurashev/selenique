@@ -18,8 +18,8 @@ import {
   promptBundleListPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
-import { PROMTBOOKS } from "@/constants/promptbooks";
-import { PROMPT_CATEGORIES, PROMPT_MODELS } from "@/constants/promptbooks/categories";
+import { PROMTBOOKS } from "@/content/promptbooks";
+import { PROMPT_CATEGORIES, PROMPT_MODELS } from "@/content/promptbooks/categories";
 
 import { i18n, Locale } from "../../i18n-config";
 import { getGuidesList } from "@/constants/guides/utils";

@@ -5,17 +5,14 @@ import Layout from "@/components/layout";
 
 import PromptsModelPage from "@/components/pages/_lists/promptbook-model";
 
-import {
-  promptbooksOrdered,
-} from "@/constants/promptbooks";
+import { promptbooksOrdered } from "@/content/promptbooks";
 
-import { PROMTBOOKS } from "@/constants/promptbooks";
-import { PromptBook, PromptModels } from "@/components/types";
+import { PromptModels } from "@/components/types";
 import { i18n, Locale } from "../../../../../../i18n-config";
-import { PROMPT_MODELS } from "@/constants/promptbooks/categories";
+import { PROMPT_MODELS } from "@/content/promptbooks/categories";
 import {
   promptsModelPageRoute,
-  promptBookListPageRoute
+  promptBookListPageRoute,
 } from "@/constants/routes";
 
 import { getDictionary } from "@/l18n/dictionaries";
@@ -23,7 +20,8 @@ import {
   getPromptModelKeywords,
   getPromptModelTitle,
   getPromptModelDescription,
-} from "@/constants/promptbooks/categories";
+} from "@/content/promptbooks/categories";
+import { getPromptBookData } from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,
@@ -32,16 +30,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug, lang } = await params;
 
-  const messages = await getDictionary(lang) as Record<string, string>
+  const messages = (await getDictionary(lang)) as Record<string, string>;
 
-  const title = messages[getPromptModelTitle(slug)]
-  const description = messages[getPromptModelDescription(slug)]
-  const keywords = messages[getPromptModelKeywords(slug)]
+  const title = messages[getPromptModelTitle(slug)];
+  const description = messages[getPromptModelDescription(slug)];
+  const keywords = messages[getPromptModelKeywords(slug)];
   const url = promptsModelPageRoute.getUrl(lang, {
     params: {
-      slug
-    }
-  })
+      slug,
+    },
+  });
 
   return {
     title,
@@ -71,12 +69,11 @@ export default async function PromptsModelPageEntry({
     return redirect(promptBookListPageRoute.getUrl(lang));
   }
 
+  const promptBooks = promptbooksOrdered.map((item) => getPromptBookData(item));
+
   return (
     <Layout locale={finalLang}>
-      <PromptsModelPage
-        slug={slug}
-        prompts={promptbooksOrdered}
-      />
+      <PromptsModelPage slug={slug} promptBooks={promptBooks} />
     </Layout>
   );
 }

@@ -4,12 +4,20 @@ import type { Metadata } from "next";
 import Layout from "@/components/layout";
 import PromptbookPage from "@/components/pages/promptbook-page";
 
-import { promptBookListPageRoute, promptBookPageRoute } from "@/constants/routes";
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import {
+  promptBookListPageRoute,
+  promptBookPageRoute,
+} from "@/constants/routes";
+import { PROMTBOOKS } from "@/content/promptbooks";
 
 import { i18n, Locale } from "../../../../../i18n-config";
 import { getDictionary } from "@/l18n/dictionaries";
-import { getPromptBookData } from "@/constants/promptbooks/utils";
+import {
+  getPromptBookData,
+  getPromptBookId,
+  sortByPoints,
+} from "@/content/promptbooks/utils";
+import { PromptBook } from "@/components/types";
 
 export async function generateMetadata({
   params,
@@ -18,19 +26,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug, lang } = await params;
 
-  const messages = await getDictionary(lang) as Record<string, string>
+  const messages = (await getDictionary(lang)) as Record<string, string>;
 
-  const promptBook = getPromptBookData(slug)
+  const promptBook = getPromptBookData(slug);
 
-  const title = `${promptBook.name} | Gemini Prompts`;
+  const title = `${promptBook.name} | Gemini | Nano Banana Pro | ChatGPT Image`;
   const description = promptBook.summary;
-  const keywords = messages["prompt_books.keywords"]
+  const keywords = messages["prompt_books.keywords"];
 
   const url = promptBookPageRoute.getUrl(lang, {
     params: {
-      slug
-    }
-  })
+      slug,
+    },
+  });
 
   return {
     title,
@@ -60,46 +68,62 @@ export default async function PromptbookPageEntry({
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
 
-  const promptBook = getPromptBookData(slug)
+  const id = getPromptBookId(slug);
+
+  if (!id) {
+    return redirect(promptBookListPageRoute.getUrl(finalLang));
+  }
+
+  const promptBook = getPromptBookData(slug);
 
   if (!promptBook) {
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
 
-  let relatedIds: string[] = []
+  /**
+   * Related
+   */
+  let related: PromptBook[] = [];
 
   if (promptBook.tags.length && promptBook.tags[0]) {
     // TODO: improve related search
-    const marks = Object
-      .keys(PROMTBOOKS)
+    related = Object.keys(PROMTBOOKS)
       .filter(
-        itemSlug => PROMTBOOKS[itemSlug].type === promptBook.type
-        && slug !== itemSlug
-      ).map(itemSlug => {
-        const { tags } = PROMTBOOKS[itemSlug]
-        let mark = 0
+        (itemSlug) =>
+          PROMTBOOKS[itemSlug].type === promptBook.type &&
+          slug !== itemSlug &&
+          PROMTBOOKS[itemSlug].mainCategory === promptBook.mainCategory
+      )
+      .map((itemSlug) => getPromptBookData(itemSlug));
 
-        tags.forEach(tag => {
-          if (promptBook.tags.includes(tag)) mark++
-        })
-
-        return {
-          itemSlug,
-          mark,
-        }
-      })
-
-      marks.sort((a,b) => b.mark - a.mark)
-      relatedIds = marks.slice(0,3).map(item => item.itemSlug)
+    related.sort(sortByPoints);
   }
 
-  const related = relatedIds.map(itemSlug => getPromptBookData(itemSlug))
+  /**
+   * Bundle
+   */
+  let bundleContent: PromptBook[] = [];
+  const pack = promptBook.pack;
+
+  if (pack && pack.length > 1) {
+    const packIds = pack;
+
+    const tempSlugArray = Object.keys(PROMTBOOKS).filter((slug) => {
+      const item = PROMTBOOKS[slug];
+      return packIds.includes(item.id);
+    });
+
+    bundleContent = tempSlugArray.map((itemSlug) =>
+      getPromptBookData(itemSlug)
+    );
+  }
 
   return (
     <Layout locale={finalLang}>
       <PromptbookPage
         data={promptBook}
         related={related}
+        bundleContent={bundleContent}
       />
     </Layout>
   );

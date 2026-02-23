@@ -1,5 +1,0 @@
-export default `
-<p>A professional AI prompt bundle combining business lifestyle scenes and clean men’s headshots in one practical collection. This bundle includes 54 ready-to-use prompts designed for creating confident, polished, and trustworthy male visuals.</p>
-<p>The prompts are built for realistic business portraits, executive headshots, and professional environments — offices, meetings, presentations, and leadership settings. Each prompt helps generate consistent, high-quality images suitable for commercial use, branding, and corporate content.</p>
-<p>This bundle is ideal if you need business-ready visuals without a studio shoot, complex setups, or endless prompt testing.</p>
-`;

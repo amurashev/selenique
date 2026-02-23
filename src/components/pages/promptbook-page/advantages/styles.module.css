@@ -2,15 +2,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   /* border-top: 1px solid var(--border-light); */
   padding-top: 12px;
+  padding-bottom: 16px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   gap: 12px;
 
-  li {
+  /* li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +28,7 @@
       font-weight: 400;
       color: var(--text);
     }
-  }
+  } */
 
   /* li + li {
     margin-top: 4px;
@@ -36,12 +37,12 @@
 
 
 .part2 {
-  border-top: 1px solid var(--border-light);
+  /* border-top: 1px solid var(--border-light); */
   /* border-bottom: 1px solid var(--border-light); */
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  padding: 12px 0;
+  /* padding: 12px 0; */
 }
 
 .part2Inner {
@@ -54,6 +55,19 @@
 .part2Icon {
   flex-shrink: 0;
 }
+
+.part2Number2 {
+  width: 34px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.part2Number3 {
+  composes: part2Number2;
+  font-size: 22px;
+}
+
 
 .aiItems {
   color: var(--text);

@@ -22,6 +22,7 @@ export type PromptCategories = | "fashion"
   | "portrait"
   | "bundles"
   | "design"
+  | "character_reference"
 
 export type PromptModels = | "gemini"
   | "nano_banana"
@@ -34,10 +35,10 @@ export type DigitalItem = {
   boostyId?: string
   isDisabled?: boolean;
   isBestseller?: boolean
-  name: string;
   price?: PriceType;
-  summary?: string;
-  text: string;
+  // summary?: string;
+  // why?: string
+  // text?: string;
   fileType?: "link"
   links?: {
     cm?: string;
@@ -55,6 +56,12 @@ export type PromptBookRaw = DigitalItem & {
 
 export type PromptBook = PromptBookRaw & {
   slug: string;
+  name: string;
+  summary: string;
+  description: string;
+  why?: string
+  text: string;
+
   // rating: { rating: number, count: number }
   sales: number
   reviewsRating: number

@@ -5,18 +5,24 @@ import Layout from "@/components/layout";
 
 import PromptsCategoryPage from "@/components/pages/_lists/promptbook-category";
 
-import {
-  promptbooksOrdered,
-} from "@/constants/promptbooks";
+import { promptbooksOrdered } from "@/content/promptbooks";
 
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import { PROMTBOOKS } from "@/content/promptbooks";
 import { PromptBook, PromptCategories } from "@/components/types";
 import { i18n, Locale } from "../../../../../../i18n-config";
-import { PROMPT_CATEGORIES } from "@/constants/promptbooks/categories";
-import { promptsCategoryPageRoute, promptBookListPageRoute } from "@/constants/routes";
+import { PROMPT_CATEGORIES } from "@/content/promptbooks/categories";
+import {
+  promptsCategoryPageRoute,
+  promptBookListPageRoute,
+} from "@/constants/routes";
 
 import { getDictionary } from "@/l18n/dictionaries";
-import { getPromptCategoryKeywords, getPromptCategoryTitle, getPromptCategoryDescription } from "@/constants/promptbooks/categories";
+import {
+  getPromptCategoryKeywords,
+  getPromptCategoryTitle,
+  getPromptCategoryDescription,
+} from "@/content/promptbooks/categories";
+import { getPromptBookData } from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,
@@ -25,16 +31,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug, lang } = await params;
 
-  const messages = await getDictionary(lang) as Record<string, string>
+  const messages = (await getDictionary(lang)) as Record<string, string>;
 
-  const title = messages[getPromptCategoryTitle(slug)]
-  const description = messages[getPromptCategoryDescription(slug)]
-  const keywords = messages[getPromptCategoryKeywords(slug)]
+  const title = messages[getPromptCategoryTitle(slug)];
+  const description = messages[getPromptCategoryDescription(slug)];
+  const keywords = messages[getPromptCategoryKeywords(slug)];
   const url = promptsCategoryPageRoute.getUrl(lang, {
     params: {
-      slug
-    }
-  })
+      slug,
+    },
+  });
 
   return {
     title,
@@ -64,18 +70,16 @@ export default async function PromptsCategoryPageEntry({
     return redirect(promptBookListPageRoute.getUrl(lang));
   }
 
-  const promptsWithTag = promptbooksOrdered.filter(item => {
-    const promptData = PROMTBOOKS[item];
-
-    return promptData.tags.includes(slug)
-  })
+  const promptsWithTag = promptbooksOrdered
+    .filter((item) => {
+      const promptData = PROMTBOOKS[item];
+      return promptData.tags.includes(slug);
+    })
+    .map((item) => getPromptBookData(item));
 
   return (
     <Layout locale={finalLang}>
-      <PromptsCategoryPage
-        slug={slug}
-        prompts={promptsWithTag}
-      />
+      <PromptsCategoryPage slug={slug} promptBooks={promptsWithTag} />
     </Layout>
   );
 }

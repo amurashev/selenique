@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import styles from "./styles.module.css";
 import { promptsCategoryPageRoute } from "@/constants/routes";
-import { getPromptCategoryTag, PROMPT_CATEGORIES } from "@/constants/promptbooks/categories";
+import { getPromptCategoryTag, PROMPT_CATEGORIES } from "@/content/promptbooks/categories";
 
 export default function Categories() {
   const { formatMessage, locale } = useIntl();

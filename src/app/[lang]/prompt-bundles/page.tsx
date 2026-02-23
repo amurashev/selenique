@@ -6,9 +6,8 @@ import { promptBundleListPageRoute } from "@/constants/routes";
 
 import PromptsCategoryPage from "@/components/pages/_lists/promptbook-category";
 import { getDictionary } from "@/l18n/dictionaries";
-import { PROMTBOOKS } from "@/constants/promptbooks";
-import { getPromptBookData } from "@/constants/promptbooks/utils";
-import { PromptBook } from "@/components/types";
+import { PROMTBOOKS } from "@/content/promptbooks";
+import { getPromptBookData } from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,
@@ -17,21 +16,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
-  const messages = await getDictionary(lang) as Record<string, string>
+  const messages = (await getDictionary(lang)) as Record<string, string>;
 
-  const title = messages["prompts.categories.bundles.title"]
-  const description = messages["prompts.categories.bundles.description"]
-  const keywords = messages["prompts.categories.bundles.keywords"]
-  const url = promptBundleListPageRoute.getUrl(lang)
+  const title = messages["prompts.categories.bundles.title"];
+  const description = messages["prompts.categories.bundles.description"];
+  const keywords = messages["prompts.categories.bundles.keywords"];
+  const url = promptBundleListPageRoute.getUrl(lang);
 
   return {
     title,
     description,
     keywords,
     openGraph: {
-      images: [
-        `https://www.selenique.space/promptbooks/promptbooks.jpg`,
-      ],
+      images: [`https://www.selenique.space/promptbooks/promptbooks.jpg`],
       title: title,
       description,
       url: `https://www.selenique.space${url}`,
@@ -45,25 +42,19 @@ export default async function PromptBundlesPageEntry({
 }: {
   params: Promise<{ lang: Locale }>;
 }) {
-  const { lang } = await params
-  const finalLang = lang || i18n.defaultLocale
+  const { lang } = await params;
+  const finalLang = lang || i18n.defaultLocale;
 
-  const bundles: string[] = []
-
-  Object.keys(PROMTBOOKS).forEach(item => {
-    const data = PROMTBOOKS[item]
-
-    if (data.type === "bundle") {
-      bundles.push(item)
-    }
-  })
+  const bundles = Object.keys(PROMTBOOKS)
+    .filter((item) => {
+      const promptData = PROMTBOOKS[item];
+      return promptData.type === "bundle";
+    })
+    .map((item) => getPromptBookData(item));
 
   return (
     <Layout locale={finalLang}>
-      <PromptsCategoryPage
-        slug={'bundles'}
-        prompts={bundles}
-      />
+      <PromptsCategoryPage slug={"bundles"} promptBooks={bundles} />
     </Layout>
   );
 }

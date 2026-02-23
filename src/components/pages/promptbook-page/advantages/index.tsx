@@ -3,60 +3,166 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import { PromptBook } from "@/components/types";
+import { PromptBook, PromptCategories } from "@/components/types";
 
 import styles from "./styles.module.css";
 
 const PuzzleIcon = () => {
   return (
-    <svg style={{ top: "4px", position: "relative" }}  width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2L15.6 5.6C18 -0.7 24.7 6 18.4 8.4L22 12L18.4 15.6C16 9.3 9.3 16 15.6 18.4L12 22L8.4 18.4C6 24.7 -0.7 18 5.6 15.6L2 12L5.6 8.4C8 14.7 14.7 8 8.4 5.6L12 2Z" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      style={{ top: "4px", position: "relative" }}
+      width="30px"
+      height="30px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2L15.6 5.6C18 -0.7 24.7 6 18.4 8.4L22 12L18.4 15.6C16 9.3 9.3 16 15.6 18.4L12 22L8.4 18.4C6 24.7 -0.7 18 5.6 15.6L2 12L5.6 8.4C8 14.7 14.7 8 8.4 5.6L12 2Z"
+        stroke="#000000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
-  )
-}
+  );
+};
 
 const PDFIcon = () => {
   return (
-    <svg style={{ top: "0px", position: "relative" }} width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 17H15M9 14H15M13.0004 3.00087C12.9048 3 12.7974 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20302 18.9999 9.09553 18.999 9M13.0004 3.00087C13.2858 3.00348 13.4657 3.01407 13.6382 3.05547C13.8423 3.10446 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59181 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53379 18.9964 8.71454 18.999 9M13.0004 3.00087L13 5.80021C13 6.92031 13 7.48015 13.218 7.90797C13.4097 8.2843 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.999" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      style={{ top: "0px", position: "relative" }}
+      width="32px"
+      height="32px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 17H15M9 14H15M13.0004 3.00087C12.9048 3 12.7974 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20302 18.9999 9.09553 18.999 9M13.0004 3.00087C13.2858 3.00348 13.4657 3.01407 13.6382 3.05547C13.8423 3.10446 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59181 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53379 18.9964 8.71454 18.999 9M13.0004 3.00087L13 5.80021C13 6.92031 13 7.48015 13.218 7.90797C13.4097 8.2843 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.999"
+        stroke="#000000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
-  )
-}
+  );
+};
+
+const ZapIcon = () => {
+  return (
+    <svg
+      width="32px"
+      height="32px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M14.4528 1.10836C14.8686 1.31952 15.0833 1.79008 14.9702 2.24253L13.2808 9H20C20.388 9 20.741 9.22445 20.9056 9.57584C21.0702 9.92723 21.0166 10.3421 20.7682 10.6402L10.7682 22.6402C10.4697 22.9985 9.96309 23.1028 9.54725 22.8916C9.13142 22.6805 8.91676 22.2099 9.02987 21.7575L10.7192 15H4.00001C3.61199 15 3.259 14.7755 3.09442 14.4242C2.92984 14.0728 2.98339 13.6579 3.23179 13.3598L13.2318 1.35981C13.5304 1.00153 14.0369 0.897207 14.4528 1.10836ZM6.13505 13H12C12.3079 13 12.5987 13.1419 12.7882 13.3846C12.9777 13.6273 13.0448 13.9438 12.9702 14.2425L12.0304 18.0014L17.865 11H12C11.6921 11 11.4013 10.8581 11.2118 10.6154C11.0223 10.3727 10.9552 10.0562 11.0299 9.75746L11.9696 5.99854L6.13505 13Z"
+        fill="#000000"
+      />
+    </svg>
+  );
+};
+
+const CharacterIcon = () => {
+  return (
+    <svg
+      width="32px"
+      height="32px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.0295 15.7412C14.1628 16.2772 14.7052 16.6037 15.2412 16.4705C15.7772 16.3372 16.1037 15.7948 15.9705 15.2588L14.0295 15.7412ZM8.02953 15.2588C7.89631 15.7948 8.2228 16.3372 8.75878 16.4705C9.29476 16.6037 9.83725 16.2772 9.97047 15.7412L8.02953 15.2588ZM12 8.5C11.4477 8.5 11 8.94772 11 9.5C11 10.0523 11.4477 10.5 12 10.5V8.5ZM12.01 10.5C12.5623 10.5 13.01 10.0523 13.01 9.5C13.01 8.94772 12.5623 8.5 12.01 8.5V10.5ZM4.09202 19.782L4.54601 18.891L4.09202 19.782ZM3.21799 18.908L4.10899 18.454L3.21799 18.908ZM20.782 18.908L19.891 18.454L20.782 18.908ZM19.908 19.782L19.454 18.891L19.908 19.782ZM19.908 4.21799L19.454 5.10899L19.908 4.21799ZM20.782 5.09202L19.891 5.54601L20.782 5.09202ZM4.09202 4.21799L4.54601 5.10899L4.09202 4.21799ZM3.21799 5.09202L4.10899 5.54601L3.21799 5.09202ZM12 9.5V11.5C13.1046 11.5 14 10.6046 14 9.5H12ZM12 9.5H10C10 10.6046 10.8954 11.5 12 11.5V9.5ZM12 9.5V7.5C10.8954 7.5 10 8.39543 10 9.5H12ZM12 9.5H14C14 8.39543 13.1046 7.5 12 7.5V9.5ZM12 14.5C13.145 14.5 13.8839 15.1554 14.0295 15.7412L15.9705 15.2588C15.5488 13.5624 13.817 12.5 12 12.5V14.5ZM9.97047 15.7412C10.1161 15.1554 10.855 14.5 12 14.5V12.5C10.183 12.5 8.45119 13.5624 8.02953 15.2588L9.97047 15.7412ZM12 10.5H12.01V8.5H12V10.5ZM6.2 5H17.8V3H6.2V5ZM20 7.2V16.8H22V7.2H20ZM17.8 19H6.2V21H17.8V19ZM4 16.8V7.2H2V16.8H4ZM6.2 19C5.62345 19 5.25117 18.9992 4.96784 18.9761C4.69617 18.9539 4.59545 18.9162 4.54601 18.891L3.63803 20.673C4.01641 20.8658 4.40963 20.9371 4.80497 20.9694C5.18864 21.0008 5.65645 21 6.2 21V19ZM2 16.8C2 17.3436 1.99922 17.8114 2.03057 18.195C2.06287 18.5904 2.13419 18.9836 2.32698 19.362L4.10899 18.454C4.0838 18.4045 4.04612 18.3038 4.02393 18.0322C4.00078 17.7488 4 17.3766 4 16.8H2ZM4.54601 18.891C4.35785 18.7951 4.20487 18.6422 4.10899 18.454L2.32698 19.362C2.6146 19.9265 3.07354 20.3854 3.63803 20.673L4.54601 18.891ZM20 16.8C20 17.3766 19.9992 17.7488 19.9761 18.0322C19.9539 18.3038 19.9162 18.4045 19.891 18.454L21.673 19.362C21.8658 18.9836 21.9371 18.5904 21.9694 18.195C22.0008 17.8114 22 17.3436 22 16.8H20ZM17.8 21C18.3436 21 18.8114 21.0008 19.195 20.9694C19.5904 20.9371 19.9836 20.8658 20.362 20.673L19.454 18.891C19.4045 18.9162 19.3038 18.9539 19.0322 18.9761C18.7488 18.9992 18.3766 19 17.8 19V21ZM19.891 18.454C19.7951 18.6422 19.6422 18.7951 19.454 18.891L20.362 20.673C20.9265 20.3854 21.3854 19.9265 21.673 19.362L19.891 18.454ZM17.8 5C18.3766 5 18.7488 5.00078 19.0322 5.02393C19.3038 5.04612 19.4045 5.0838 19.454 5.10899L20.362 3.32698C19.9836 3.13419 19.5904 3.06287 19.195 3.03057C18.8114 2.99922 18.3436 3 17.8 3V5ZM22 7.2C22 6.65645 22.0008 6.18864 21.9694 5.80497C21.9371 5.40963 21.8658 5.01641 21.673 4.63803L19.891 5.54601C19.9162 5.59545 19.9539 5.69617 19.9761 5.96784C19.9992 6.25117 20 6.62345 20 7.2H22ZM19.454 5.10899C19.6422 5.20487 19.7951 5.35785 19.891 5.54601L21.673 4.63803C21.3854 4.07354 20.9265 3.6146 20.362 3.32698L19.454 5.10899ZM6.2 3C5.65645 3 5.18864 2.99922 4.80497 3.03057C4.40963 3.06287 4.01641 3.13419 3.63803 3.32698L4.54601 5.10899C4.59545 5.0838 4.69617 5.04612 4.96784 5.02393C5.25117 5.00078 5.62345 5 6.2 5V3ZM4 7.2C4 6.62345 4.00078 6.25117 4.02393 5.96784C4.04612 5.69617 4.0838 5.59545 4.10899 5.54601L2.32698 4.63803C2.13419 5.01641 2.06287 5.40963 2.03057 5.80497C1.99922 6.18864 2 6.65645 2 7.2H4ZM3.63803 3.32698C3.07354 3.6146 2.6146 4.07354 2.32698 4.63803L4.10899 5.54601C4.20487 5.35785 4.35785 5.20487 4.54601 5.10899L3.63803 3.32698Z"
+        fill="#000000"
+      />
+    </svg>
+  );
+};
+
+const ListItem = ({ icon, text }: { icon: React.ReactNode; text: string }) => {
+  return (
+    <div className={styles.part2}>
+      <div className={styles.part2Icon}>{icon}</div>
+
+      <div className={styles.part2Inner}>
+        {/* <h4>
+              {formatMessage({ id: "prompt_books.character_reference.title" })}:
+            </h4> */}
+        <div
+          className={styles.aiItems}
+          dangerouslySetInnerHTML={{
+            __html: text,
+          }}
+        />
+      </div>
+    </div>
+  );
+};
 
 export default function Advantages({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
-  const { fileType } = data;
+  const { fileType, number, tags } = data;
+
+  const hasCharacterReference = tags.some((item) => {
+    const referenceCategories: PromptCategories[] = [
+      "business",
+      "headshot",
+      "fashion",
+      "fantasy",
+      "red_carpet",
+      "studio",
+      "christmas",
+      "character_reference",
+    ];
+    return referenceCategories.includes(item);
+  });
 
   return (
     <div>
-      <div className={styles.part2}>
-        <div className={styles.part2Icon}>
-          <PDFIcon />
-        </div>
+      <h3>What You Get</h3>
+      <div className={styles.advantages}>
+        <ListItem
+          icon={
+            <div
+              className={
+                Number(number) > 99 ? styles.part2Number3 : styles.part2Number2
+              }
+            >
+              {number}
+            </div>
+          }
+          text={formatMessage({ id: "prompt_books.prompts_count.text" })}
+        />
 
-        <div className={styles.part2Inner}>
-          <h4>{formatMessage({ id: "prompt_books.file_type" })}:</h4>
+        {hasCharacterReference && (
+          <ListItem
+            icon={<CharacterIcon />}
+            text={formatMessage({
+              id: "prompt_books.character_reference.text",
+            })}
+          />
+        )}
 
-          {fileType && fileType === "link" ? (
-            <div className={styles.aiItems}>{formatMessage({ id: "prompt_books.link_to_notion" })}</div>
-          ) : (
-            <div className={styles.aiItems}>{formatMessage({ id: "prompt_books.pdf" })}</div>
-          )}
-        </div>
+        <ListItem
+          icon={<PDFIcon />}
+          text={
+            fileType && fileType === "link"
+              ? formatMessage({ id: "prompt_books.link_to_notion" })
+              : formatMessage({ id: "prompt_books.pdf" })
+          }
+        />
+
+        <ListItem
+          icon={<ZapIcon />}
+          text={formatMessage({ id: "prompt_books.instant_download.text" })}
+        />
       </div>
-
-      <div className={styles.part2}>
-        <div className={styles.part2Icon}>
-          <PuzzleIcon />
-        </div>
-
-        <div className={styles.part2Inner}>
-          <h4>{formatMessage({ id: "prompt_books.compatible_with" })}:</h4>
-          <div className={styles.aiItems}>Gemini, Nano Banana Pro, Nano Banana, Flux, ChatGPT Image, Seedream, MidJourney</div>
-        </div>
-      </div>
-
-      <hr className={styles.hr} />
 
       {/* <ul className={styles.advantages}>
         {(data as PromptBook).number && (

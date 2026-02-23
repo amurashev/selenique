@@ -1,0 +1,18 @@
+.text {
+  ul {
+    padding-left: 20px;
+    margin-top: 8px;
+
+    li + li {
+      margin-top: 4px;
+    }
+  }
+
+  p {
+    margin-top: 4px;
+  }
+
+  h3 {
+    margin-top: 12px;
+  }
+}

@@ -12,15 +12,15 @@ import {
   getPromptCategoryH1,
   getPromptCategoryShortDescription,
   getPromptCategoryText,
-} from "@/constants/promptbooks/categories";
-import { PromptCategories } from "@/components/types";
+} from "@/content/promptbooks/categories";
+import { PromptBook, PromptCategories } from "@/components/types";
 
 export default function PromptsCategoryPage({
   slug,
-  prompts,
+  promptBooks,
 }: {
   slug: PromptCategories;
-  prompts: string[];
+  promptBooks: PromptBook[];
 }) {
   const { formatMessage, locale } = useIntl();
 
@@ -33,7 +33,7 @@ export default function PromptsCategoryPage({
       <h1>{formatMessage({ id: getPromptCategoryH1(slug) })}</h1>
       <p>{formatMessage({ id: getPromptCategoryShortDescription(slug) })}</p>
 
-      <PromptbookList list={prompts} />
+      <PromptbookList list={promptBooks} />
     </BasePageLayout>
   );
 }

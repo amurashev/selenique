@@ -22,20 +22,35 @@ import Bundle from "./bundle";
 import Advantages from "./advantages";
 import Categories from "./categories";
 import Header from "./header";
+import Who from "./who";
+import Text from "./text";
 
 export default function PromptbookPage({
   data,
   related = [],
+  bundleContent,
 }: {
   data: PromptBook;
   related?: PromptBook[];
+  bundleContent?: PromptBook[];
 }) {
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
-  const { id, purchaseLink, text, images, isDisabled } = data;
+  const {
+    id,
+    purchaseLink,
+    text,
+    description,
+    summary,
+    why,
+    images,
+    isDisabled,
+  } = data;
   const pack = (data as PromptBook).pack || [];
   const packsNumber = pack.length || 1;
+
+  const finalTopText = description || summary;
 
   const backUrl = promptBookListPageRoute.getUrl(locale);
 
@@ -46,6 +61,8 @@ export default function PromptbookPage({
       id,
     });
   }, []);
+
+  // console.warn("PromptbookPage", data);
 
   return (
     <div className={styles.page}>
@@ -62,22 +79,52 @@ export default function PromptbookPage({
         <div className={styles.content}>
           <Header data={data} />
 
+          {finalTopText && (
+            <div className={styles.section}>
+              <Text text={finalTopText} />
+            </div>
+          )}
+
+          <div className={styles.hr} />
+
           <div className={styles.line}>
             <div className={styles.textBox}>
               <Advantages data={data} />
 
-              {packsNumber > 1 && (data as PromptBook).pack && (
+              <div className={styles.hr} />
+
+              {bundleContent && bundleContent.length > 0 && (
                 <div className={styles.bundleBox}>
-                  <Bundle data={data as PromptBook} />
+                  <Bundle bundleContent={bundleContent} />
                 </div>
               )}
 
-              <div
-                className={styles.text}
-                dangerouslySetInnerHTML={{
-                  __html: text,
-                }}
-              />
+              {/* TODO: Temp workaround for old texts */}
+              {text && (
+                <div className={styles.section}>
+                  <Text text={text} />
+                </div>
+              )}
+
+              {/* {why && (
+                <div className={styles.section}>
+                  <h3>Why You Need This</h3>
+                  <p
+                    className={styles.text}
+                    dangerouslySetInnerHTML={{
+                      __html: why,
+                    }}
+                  />
+                </div>
+              )} */}
+
+              {/* <div className={styles.hr} /> */}
+
+              {/* <div className={styles.section}>
+                <Who data={data as PromptBook} />
+              </div> */}
+
+              {/* <Text text={data.text} /> */}
 
               {showRussiaHints && (
                 <div className={styles.hint}>
@@ -101,6 +148,8 @@ export default function PromptbookPage({
             </div>
           </div>
         </div>
+
+        {/* <div className={styles.hr} /> */}
 
         <div className={styles.content}>
           {related.length !== 0 && <Related related={related} />}

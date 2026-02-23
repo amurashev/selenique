@@ -7,9 +7,9 @@ import Layout from "@/components/layout";
 import { i18n, Locale } from "../../../i18n-config";
 import getDeviceType from "@/utils/device";
 import { PromptBook } from "@/components/types";
-import { PROMTBOOKS } from "@/constants/promptbooks";
+import { PROMTBOOKS } from "@/content/promptbooks";
 import PHOTOS from "../../../source/portfolio.json";
-import { getPromptBookData, sortByPoints } from "@/constants/promptbooks/utils";
+import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import shuffle from "@/utils/arrays";
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
