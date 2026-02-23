@@ -1,5 +1,6 @@
 .text {
   ul {
+    color: var(--text);
     padding-left: 20px;
     margin-top: 8px;
 
@@ -9,10 +10,17 @@
   }
 
   p {
+    color: var(--text);
     margin-top: 4px;
+    line-height: 1.4;
   }
 
   h3 {
     margin-top: 12px;
   }
+}
+
+.textTag {
+  color: var(--text);
+  line-height: 1.4;
 }

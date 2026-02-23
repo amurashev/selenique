@@ -22,6 +22,7 @@ export type PromptCategories = | "fashion"
   | "portrait"
   | "bundles"
   | "design"
+  | "avatar"
   | "character_reference"
 
 export type PromptModels = | "gemini"

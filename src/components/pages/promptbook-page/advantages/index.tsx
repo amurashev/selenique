@@ -94,7 +94,7 @@ const ListItem = ({ icon, text }: { icon: React.ReactNode; text: string }) => {
         {/* <h4>
               {formatMessage({ id: "prompt_books.character_reference.title" })}:
             </h4> */}
-        <div
+        <p
           className={styles.aiItems}
           dangerouslySetInnerHTML={{
             __html: text,
@@ -118,6 +118,7 @@ export default function Advantages({ data }: { data: PromptBook }) {
       "red_carpet",
       "studio",
       "christmas",
+      "avatar",
       "character_reference",
     ];
     return referenceCategories.includes(item);
@@ -125,7 +126,7 @@ export default function Advantages({ data }: { data: PromptBook }) {
 
   return (
     <div>
-      <h3>What You Get</h3>
+      <h3>{formatMessage({ id: "prompt_books.what_you_get" })}</h3>
       <div className={styles.advantages}>
         <ListItem
           icon={

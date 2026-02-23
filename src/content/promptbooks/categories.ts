@@ -14,6 +14,7 @@ export const PROMPT_CATEGORIES: PromptCategories[] = [
   "women",
   "studio",
   "design",
+  "avatar",
 ];
 
 export const PROMPT_MODELS: PromptModels[] = [

@@ -45,12 +45,12 @@
 .line {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 0px;
+  margin-top: 12px;
 }
 
 .textBox {
   flex-grow: 1;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   /* padding: 0 12px; */
 }
 
@@ -147,10 +147,6 @@
   }
   .textBox {
     margin-top: 0;
-
-    p {
-      margin-top: 8px;
-    }
   }
 
   .seeAllButton {

@@ -4,7 +4,7 @@
   margin: 0;
   /* margin-bottom: 12px; */
   /* border-top: 1px solid var(--border-light); */
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 16px;
 
   display: grid;
@@ -79,4 +79,12 @@
   height: 1px;
   background: var(--border-light);
   border: none;
+}
+
+
+
+@media (min-width: 760px) {
+  .advantages {
+    padding-top: 12px;
+  }
 }

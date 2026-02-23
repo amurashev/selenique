@@ -23,7 +23,8 @@ import Advantages from "./advantages";
 import Categories from "./categories";
 import Header from "./header";
 import Who from "./who";
-import Text from "./text";
+import { TextBox, TextTag } from "./text";
+import Footer from "@/components/layout/footer";
 
 export default function PromptbookPage({
   data,
@@ -76,7 +77,7 @@ export default function PromptbookPage({
 
           {finalTopText && (
             <div className={styles.section}>
-              <Text text={finalTopText} />
+              <TextTag text={finalTopText} />
             </div>
           )}
 
@@ -97,7 +98,7 @@ export default function PromptbookPage({
               {/* TODO: Temp workaround for old texts */}
               {text && (
                 <div className={styles.section}>
-                  <Text text={text} />
+                  <TextBox text={text} />
                 </div>
               )}
 
@@ -171,6 +172,7 @@ export default function PromptbookPage({
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 }

@@ -299,7 +299,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
     number: 200,
     isBestseller: true,
-    tags: ["lifestyle", "women"],
+    tags: ["lifestyle", "women", "avatar"],
     mainCategory: "lifestyle",
     type: "pack",
     fileType: "link",
