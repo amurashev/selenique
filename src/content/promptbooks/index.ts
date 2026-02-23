@@ -300,7 +300,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     number: 200,
     isBestseller: true,
     tags: ["lifestyle", "women", "avatar"],
-    mainCategory: "lifestyle",
+    mainCategory: "avatar",
     type: "pack",
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
