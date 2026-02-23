@@ -28,7 +28,7 @@
 .main {
   max-width: 780px;
   margin: 0 auto;
-  padding-bottom: 76px;
+  padding-bottom: 16px;
 }
 
 .content {
@@ -132,6 +132,9 @@
 }
 
 @media (min-width: 760px) {
+  .main {
+    padding-bottom: 24px;
+  }
   .content {
     padding: 12px 0;
   }

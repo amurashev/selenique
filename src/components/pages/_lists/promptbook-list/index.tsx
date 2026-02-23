@@ -21,6 +21,7 @@ import GroupHeader from "@/components/sections/group-header";
 const CATEGORIES: PromptCategories[] = [
   "business",
   "lifestyle",
+  "avatar",
   "fashion",
   "beauty",
   "product",

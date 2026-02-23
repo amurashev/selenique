@@ -457,4 +457,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     images: [1, 3, 7, 8, 9, 10, 11, 12],
   },
+  "ai-avatar-selfie-prompts": {
+    id: 50,
+    gumroadSlug: "ai-avatar-selfie-prompts",
+    number: 25,
+    tags: ["avatar", "lifestyle"],
+    mainCategory: "avatar",
+    type: "pack",
+    fileType: "link",
+    images: [1, 3, 5, 6, 7, 8],
+  },
 };
