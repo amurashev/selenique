@@ -450,7 +450,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     id: 49,
     isBestseller: true,
     gumroadSlug: "viral-image-prompts",
-    number: 44,
+    number: 45,
     tags: ["fantasy", "design"],
     mainCategory: "fantasy",
     type: "pack",
