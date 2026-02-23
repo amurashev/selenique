@@ -13,6 +13,10 @@ export const getPromptBookId = (slug: string): number | undefined => {
   }
 }
 
+export const getPromptBooksList = () => {
+  return Object.keys(PROMTBOOKS).map((slug) => slug)
+}
+
 export const getPromptBookData = (slug: string): PromptBook => {
   const baseItem = PROMTBOOKS[slug]
 

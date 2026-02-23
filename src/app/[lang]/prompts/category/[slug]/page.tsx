@@ -5,10 +5,8 @@ import Layout from "@/components/layout";
 
 import PromptsCategoryPage from "@/components/pages/_lists/promptbook-category";
 
-import { promptbooksOrdered } from "@/content/promptbooks";
-
 import { PROMTBOOKS } from "@/content/promptbooks";
-import { PromptBook, PromptCategories } from "@/components/types";
+import { PromptCategories } from "@/components/types";
 import { i18n, Locale } from "../../../../../../i18n-config";
 import { PROMPT_CATEGORIES } from "@/content/promptbooks/categories";
 import {
@@ -22,7 +20,11 @@ import {
   getPromptCategoryTitle,
   getPromptCategoryDescription,
 } from "@/content/promptbooks/categories";
-import { getPromptBookData } from "@/content/promptbooks/utils";
+import {
+  getPromptBookData,
+  getPromptBooksList,
+  sortByPoints,
+} from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,
@@ -70,12 +72,14 @@ export default async function PromptsCategoryPageEntry({
     return redirect(promptBookListPageRoute.getUrl(lang));
   }
 
-  const promptsWithTag = promptbooksOrdered
+  const promptsWithTag = getPromptBooksList()
     .filter((item) => {
       const promptData = PROMTBOOKS[item];
-      return promptData.tags.includes(slug);
+      return promptData.tags.includes(slug) && promptData.type === "pack";
     })
     .map((item) => getPromptBookData(item));
+
+  promptsWithTag.sort(sortByPoints);
 
   return (
     <Layout locale={finalLang}>
