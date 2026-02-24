@@ -26,6 +26,7 @@ const CATEGORIES: PromptCategories[] = [
   "beauty",
   "product",
   "fantasy",
+  "food",
   "studio",
   "design",
   // 'christmas', // TODO?

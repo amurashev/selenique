@@ -62,16 +62,16 @@ export default function ShortHeader({
         !flagRef.current?.contains(event.target as Node)
       ) {
         setIsOpen(false);
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        event.preventDefault();
+        // event.stopPropagation();
+        // event.stopImmediatePropagation();
+        // event.preventDefault();
       }
 
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsMenuOpen(false);
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        event.preventDefault();
+        // event.stopPropagation();
+        // event.stopImmediatePropagation();
+        // event.preventDefault();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);

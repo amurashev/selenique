@@ -23,6 +23,7 @@ export type PromptCategories = | "fashion"
   | "bundles"
   | "design"
   | "avatar"
+  | "food"
   | "character_reference"
 
 export type PromptModels = | "gemini"
