@@ -6,15 +6,7 @@ import { useMetrica } from "next-yandex-metrica";
 
 import styles from "./styles.module.css";
 
-export default function Join(
-  {
-    // purchaseLink,
-    // summary,
-  }: {
-    // purchaseLink: string;
-    // summary?: string;
-  }
-) {
+export default function Join() {
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 

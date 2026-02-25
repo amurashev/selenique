@@ -28,7 +28,7 @@ const Chevron = () => {
   );
 };
 
-export default function Hero({}: {}) {
+export default function Hero() {
   const { formatMessage, locale } = useIntl();
 
   return (
