@@ -6,6 +6,7 @@ import {
   aiConsultationPageRoute,
   iiPhotoShootPageRoute,
   modelsPageRoute,
+  affiliatePageRoute,
   productPortfolioPageRoute,
   promptBookListPageRoute,
   guidesListPageRoute,
@@ -67,6 +68,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       promptBookListPageRoute.getUrl(locale),
       guidesListPageRoute.getUrl(locale),
       promptBundleListPageRoute.getUrl(locale),
+      affiliatePageRoute.getUrl(locale),
       ...PROMPT_CATEGORIES.map((tag) =>
         promptsCategoryPageRoute.getUrl(locale, { params: { slug: tag } })
       ),

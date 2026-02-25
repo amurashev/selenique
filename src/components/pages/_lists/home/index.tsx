@@ -13,7 +13,7 @@ import {
   promptBookListPageRoute,
   promptBundleListPageRoute,
   guidesListPageRoute,
-  productPortfolioPageRoute,
+  affiliatePageRoute,
 } from "@/constants/routes";
 
 import { PromptBook } from "@/components/types";
@@ -106,6 +106,47 @@ export default function HomePage({
             );
           })}
         </ProductSlider>
+      </div>
+
+      <hr className={styles.hr} />
+
+      <div className={styles.section}>
+        <GroupHeader
+          title={formatMessage({ id: "home.affiliate.title" })}
+          label={formatMessage({ id: "common.see_more" })}
+          href={affiliatePageRoute.getUrl(locale)}
+        />
+
+        <p
+          className={""}
+          dangerouslySetInnerHTML={{
+            __html: formatMessage({ id: "home.affiliate.text" }),
+          }}
+        />
+
+        <ProductSlider>
+          {[1, 2, 3].map((item) => {
+            return (
+              <ProductSliderItem key={item}>
+                <div className={styles.box}>
+                  <img
+                    src={`/images/affiliate/${item}.jpg`}
+                    className={styles.image}
+                  />
+                </div>
+              </ProductSliderItem>
+            );
+          })}
+        </ProductSlider>
+
+        <div className={styles.joinButtonBox}>
+          <Link
+            href={"https://seleniquestudio.gumroad.com/affiliates"}
+            className={styles.joinButton}
+          >
+            {formatMessage({ id: "home.affiliate.join" })}
+          </Link>
+        </div>
       </div>
 
       <hr className={styles.hr} />

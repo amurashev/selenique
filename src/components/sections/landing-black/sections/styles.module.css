@@ -60,6 +60,12 @@
   text-transform: uppercase;
 }
 
+.s2TitleIsCentered {
+  text-align: center;
+
+  composes: s2Title;
+}
+
 .s2Content {
   margin-top: 16px;
 }

@@ -10,6 +10,7 @@ import {
   guidesListPageRoute,
   promptBundleListPageRoute,
   productPortfolioPageRoute,
+  affiliatePageRoute,
   homePage,
 } from "@/constants/routes";
 
@@ -57,6 +58,15 @@ export default function Menu({
               className={styles.menuLink}
             >
               {formatMessage({ id: "footer.guides" })}
+            </Link>
+          </li>
+
+          <li className={styles.menuItem}>
+            <Link
+              href={affiliatePageRoute.getUrl(locale)}
+              className={styles.menuLink}
+            >
+              {formatMessage({ id: "header.menu.affiliate" })}
             </Link>
           </li>
 

@@ -17,6 +17,39 @@
   border-top: 1px solid var(--border-dark);
 }
 
+.box {
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+  /* margin-bottom: 12px; */
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  color: white;
+  border-radius: 8px;
+}
+
+.joinButtonBox {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.joinButton {
+  background-color: rgb(255, 144, 232);
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: var(--foreground);
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
 @media (min-width: 840px) {
   .section {
     /* h3 {

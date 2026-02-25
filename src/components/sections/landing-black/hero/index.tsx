@@ -31,11 +31,11 @@ const Chevron = () => {
 export default function Hero({
   slug,
   title,
-  languages,
+  languages = [],
 }: {
   slug: string;
   title: string;
-  languages: string[];
+  languages?: string[];
 }) {
   const { formatMessage, locale } = useIntl();
 

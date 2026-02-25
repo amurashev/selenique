@@ -11,9 +11,11 @@ import { ChevronRight } from "@/components/ui/icons/chevron";
 export default function GroupHeader({
   title,
   href,
+  label,
 }: {
   title: string;
   href?: string;
+  label?: string;
 }) {
   const { formatMessage, locale } = useIntl();
 
@@ -24,7 +26,7 @@ export default function GroupHeader({
       {href && (
         <div className={styles.buttonBox}>
           <Link className={styles.seeAll} href={href}>
-            {formatMessage({ id: "common.see_all" })}
+            {label || formatMessage({ id: "common.see_all" })}
           </Link>
           <ChevronRight size={24} />
         </div>

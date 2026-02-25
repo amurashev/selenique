@@ -32,10 +32,12 @@ export function SectionColor({
   id,
   title,
   children,
+  isCentered,
 }: {
   id?: string;
   title: string;
   subTitle?: string;
+  isCentered?: boolean
   children: React.ReactNode;
 }) {
   return (
@@ -43,7 +45,7 @@ export function SectionColor({
       <div id={id} className={styles.section2}>
       {/* <div className={styles.fader} /> */}
         <div className={styles.section1Inner}>
-          {title && <h2 className={styles.s2Title}>{title}</h2>}
+        <h2 className={isCentered ? styles.s2TitleIsCentered : styles.s2Title}>{title}</h2>
           <div className={styles.s2Content}>{children}</div>
         </div>
       </div>

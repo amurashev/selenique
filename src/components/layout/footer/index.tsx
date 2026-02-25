@@ -18,6 +18,7 @@ import {
   productPortfolioPageRoute,
   promptsCategoryPageRoute,
   promptsModelPageRoute,
+  affiliatePageRoute,
 } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
 
@@ -91,6 +92,18 @@ export default function Footer() {
                     {formatMessage({ id: "footer.guides" })}
                   </Link>
                 </li>
+
+
+
+                <li className={styles.menuItem}>
+                  <Link
+                    href={affiliatePageRoute.getUrl(locale)}
+                    className={styles.menuLink}
+                  >
+                    {formatMessage({ id: "header.menu.affiliate" })}
+                  </Link>
+                </li>
+
 
                 <li className={styles.menuItem}>
                   <Link

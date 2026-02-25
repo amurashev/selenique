@@ -1,0 +1,29 @@
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 320px;
+}
+.link {
+  background-color: rgb(255, 144, 232);
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: var(--foreground);
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.summary {
+  margin-top: 16px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+ 
+}

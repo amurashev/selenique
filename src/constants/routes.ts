@@ -13,6 +13,8 @@ export const promptsModelPageRoute = route("/prompts/model/[slug]");
 export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");
 
+export const affiliatePageRoute = route("/affiliate");
+
 export const productPageRoute = route({
   default: "/services/creating-photo-for-e-commerce",
   ru: "/obrabotka-foto-tovarov-dlya-marketpleysov",
