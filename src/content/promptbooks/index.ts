@@ -467,4 +467,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     images: [1, 3, 5, 6, 7, 8],
   },
+  "food-prompts-dark-moody-macro": {
+    id: 51,
+    gumroadSlug: "food-prompts-dark-moody-macro",
+    number: 90,
+    tags: ["food", "product"],
+    mainCategory: "food",
+    type: "pack",
+    fileType: "link",
+    images: [1, 2, 3, 5, 6, 7, 8],
+  },
 };
