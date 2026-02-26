@@ -18,6 +18,7 @@
   "common.review": "{number, plural, =0 {no reseñas} one {# avaliação} other {# avaliações}}",
   "common.see_all": "Veja tudo",
   "common.see_more": "Ver más",
+  "common.read_more": "Leia mais",
   "common.best_sellers": "Mais vendidos",
   "locale": "Português (Brasil)",
   "header.menu.services": "Serviços",

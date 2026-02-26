@@ -18,6 +18,7 @@
   "common.review": "{number, plural, =0 {no reseñas} one {# отзыв} few {# отзыва} other {# отзывов}}",
   "common.see_all": "Смотреть все",
   "common.see_more": "Смотреть больше",
+  "common.read_more": "Читать далее",
   "common.best_sellers": "Бестселлеры",
   "locale": "Русский",
   "header.menu.services": "Услуги",

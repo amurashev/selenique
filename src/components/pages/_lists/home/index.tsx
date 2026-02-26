@@ -141,6 +141,12 @@ export default function HomePage({
 
         <div className={styles.joinButtonBox}>
           <Link
+            href={affiliatePageRoute.getUrl(locale)}
+            className={styles.readButton}
+          >
+            {formatMessage({ id: "common.read_more" })}
+          </Link>
+          <Link
             href={"https://seleniquestudio.gumroad.com/affiliates"}
             className={styles.joinButton}
           >

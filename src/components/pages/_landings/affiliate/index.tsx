@@ -6,7 +6,7 @@ import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
 
 import { GUIDES } from "@/constants/guides";
-import { guidesListPageRoute } from "@/constants/routes";
+import { guidesListPageRoute, homePage } from "@/constants/routes";
 
 import {
   SectionColor,
@@ -23,7 +23,7 @@ export default function AffiliatePage() {
 
   return (
     <div className={styles.page}>
-      <ShortHeader route={guidesListPageRoute} />
+      <ShortHeader route={homePage} />
       <main className={styles.main}>
         <Hero />
 

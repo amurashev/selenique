@@ -18,6 +18,7 @@
   "common.review": "{number, plural, =0 {no reseñas} one {# reseña} other {# reseñas}}",
   "common.see_all": "Ver todo",
   "common.see_more": "Ver más",
+  "common.read_more": "Leer más",
   "common.best_sellers": "Los más vendidos",
   "locale": "Español",
   "header.menu.services": "Servicios",

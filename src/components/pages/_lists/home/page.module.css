@@ -37,6 +37,18 @@
   margin-top: 16px;
   display: flex;
   justify-content: center;
+  gap: 16px;
+}
+
+.readButton {
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: var(--foreground);
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
 }
 
 .joinButton {
