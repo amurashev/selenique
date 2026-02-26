@@ -487,4 +487,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     images: [1, 2, 3, 5, 6, 7, 8],
   },
+  "icon-styles-pack": {
+    id: 53,
+    gumroadSlug: "icon-styles-pack",
+    number: 55,
+    tags: ["design"],
+    mainCategory: "design",
+    type: "pack",
+    fileType: "link",
+    images: [1, 6, 7, 8, 9, 10, 11, 12],
+  },
 };
