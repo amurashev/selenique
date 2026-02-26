@@ -13,26 +13,38 @@ import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import shuffle from "@/utils/arrays";
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
+import { homePage } from "@/constants/routes";
+import { getDictionary } from "@/l18n/dictionaries";
 
-const title =
-  "Selenique Studio: We are a creative duo specializing in AI-powered visual content.";
-const description =
-  "Our work combines technology and artistry to create images that feel authentic, expressive, and emotionally engaging. ✨We collaborate with brands and creators who value strong storytelling and distinctive aesthetics - from AI photoshoots and branded visuals to tailored prompt design.😎";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const finalLang = lang || i18n.defaultLocale;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    images: [
-      // TODO: Update
-      `https://www.selenique.space/promptbooks/promptbooks.jpg`,
-    ],
+  const messages = (await getDictionary(finalLang)) as Record<string, string>;
+
+  const title = messages["home.profile.title"];
+  const description = messages["home.profile.text1"];
+  // const keywords = messages['']
+  const url = homePage.getUrl(finalLang);
+
+  return {
     title,
     description,
-    url: `https://www.selenique.space`,
-    type: "website",
-  },
-};
+    // keywords,
+    openGraph: {
+      // TODO: Add image
+      images: [`https://www.selenique.space/promptbooks/promptbooks.jpg`],
+      title: title,
+      description,
+      url: `https://www.selenique.space${url}`,
+      type: "website",
+    },
+  };
+}
 
 export default async function HomeEntry({
   params,
@@ -48,7 +60,7 @@ export default async function HomeEntry({
   }
 
   const bestSellers: PromptBook[] = [];
-  const bundles: PromptBook[] = []
+  const bundles: PromptBook[] = [];
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug);
@@ -59,7 +71,7 @@ export default async function HomeEntry({
     }
 
     if (type === "bundle") {
-      bundles.push(packData)
+      bundles.push(packData);
     }
   });
 

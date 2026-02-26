@@ -5,23 +5,40 @@ import AffiliatePage from "@/components/pages/_landings/affiliate";
 import Layout from "@/components/layout";
 
 import { i18n, Locale } from "../../../../i18n-config";
+import { affiliatePageRoute } from "@/constants/routes";
+import { getDictionary } from "@/l18n/dictionaries";
 
-const title = "Selenique Studio";
-const description = "";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const finalLang = lang || i18n.defaultLocale
 
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    images: [
-      `https://www.selenique.space/promptbooks/promptbooks.jpg`,
-    ],
+  const messages = await getDictionary(finalLang) as Record<string, string>
+
+  const title = messages["affiliate.hero.subtitle"] + " " + messages["affiliate.hero.title"]
+  const description = messages["affiliate.hero.text2"] + " " + messages["affiliate.hero.text3"]
+  // const keywords = messages['']
+  const url = affiliatePageRoute.getUrl(finalLang)
+
+  return {
     title,
     description,
-    url: `https://www.selenique.space/affiliate`,
-    type: "website",
-  },
-};
+    // keywords,
+    openGraph: {
+      // TODO: Add image
+      // images: [
+      //   `https://www.selenique.space/promptbooks/promptbooks.jpg`,
+      // ],
+      title: title,
+      description,
+      url: `https://www.selenique.space${url}`,
+      type: "website",
+    },
+  };
+}
 
 export default async function HomeEntry({
   params,

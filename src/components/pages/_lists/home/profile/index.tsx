@@ -18,7 +18,7 @@ const Profile = () => {
       <div className={styles.textBlock}>
         <img
           src={"/logo_red.jpg"}
-          alt={"Selenique.Studio"}
+          alt={formatMessage({ id: "common.name" })}
           className={styles.imageDesktop}
         />
         <div className={styles.lineBlock}>
@@ -30,7 +30,7 @@ const Profile = () => {
           />
           <img
             src={"/logo_red.jpg"}
-            alt={"Selenique.Studio"}
+            alt={formatMessage({ id: "common.name" })}
             className={styles.imageMobile}
           />
         </div>

@@ -111,7 +111,7 @@ export default function ShortHeader({
               {locale.toUpperCase()}
               <img
                 src={`/flags/${locale}.png`}
-                alt={"Selenique.Studio"}
+                alt={formatMessage({ id: "common.name" })}
                 className={styles.flagImage}
               />
             </div>

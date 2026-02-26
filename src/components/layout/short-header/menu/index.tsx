@@ -30,7 +30,7 @@ export default function Menu({
     <div ref={ref} className={`${isOpen ? styles.open : styles.drawer}`}>
       <div className={styles.linksBox}>
         <Link className={styles.brand} href={homePage.getUrl(locale)}>
-          Selenique Studio
+          {formatMessage({ id: "common.name" })}
         </Link>
         <hr className={styles.hr} />
         <ul className={styles.menuList}>

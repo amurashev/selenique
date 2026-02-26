@@ -21,6 +21,7 @@ import {
   affiliatePageRoute,
 } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
+import { EMAIL } from "@/constants/contacts";
 
 const EMailIcon = () => (
   <svg
@@ -54,7 +55,7 @@ export default function Footer() {
               /> */}
 
 
-              <div className={styles.title}>Selenique.Studio</div>
+              <div className={styles.title}>{formatMessage({ id: "common.name" })}</div>
             </div>
 
             <div className={styles.linksBox}>
@@ -175,10 +176,10 @@ export default function Footer() {
             <div className={styles.email}>
               <EMailIcon />
               <a
-                href="mailto:selenique.studio@gmail.com"
+                href={`mailto:${EMAIL}`}
                 className={styles.link}
               >
-                selenique.studio@gmail.com
+                {EMAIL}
               </a>
             </div>
 

@@ -31,7 +31,7 @@ export default function Languages({
             <Link key={item} href="#">
               <img
                 src={`/flags/${item}.png`}
-                alt={"Selenique.Studio"}
+                alt={item}
                 className={styles.imageSuggested}
                 onClick={(e) => {
                   e.preventDefault();
