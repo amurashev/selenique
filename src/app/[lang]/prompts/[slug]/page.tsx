@@ -31,7 +31,7 @@ export async function generateMetadata({
   const promptBook = getPromptBookData(slug);
 
   const title = `${promptBook.name} | Gemini | Nano Banana Pro | ChatGPT Image`;
-  const description = promptBook.summary;
+  const description = promptBook.summary || promptBook.description
   const keywords = messages["prompt_books.keywords"];
 
   const url = promptBookPageRoute.getUrl(lang, {
