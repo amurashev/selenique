@@ -164,17 +164,6 @@ export default function Advantages({ data }: { data: PromptBook }) {
           text={formatMessage({ id: "prompt_books.instant_download.text" })}
         />
       </div>
-
-      {/* <ul className={styles.advantages}>
-        {(data as PromptBook).number && (
-          <li>
-            <span>{(data as PromptBook).number}</span>
-            <strong>
-              {formatMessage({ id: "prompt_books.prompts" })}
-            </strong>
-          </li>
-        )}
-      </ul> */}
     </div>
   );
 }

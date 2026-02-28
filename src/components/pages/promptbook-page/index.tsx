@@ -29,6 +29,7 @@ import Who from "./who";
 import { TextBox, TextTag } from "./text";
 import Footer from "@/components/layout/footer";
 import { COMMISSION } from "@/constants/affiliate";
+import Affiliate from "./affiliate";
 
 export default function PromptbookPage({
   data,
@@ -106,38 +107,22 @@ export default function PromptbookPage({
                 </div>
               )}
 
-              {/* {why && (
-                <div className={styles.section}>
-                  <h3>Why You Need This</h3>
-                  <p
-                    className={styles.text}
-                    dangerouslySetInnerHTML={{
-                      __html: why,
-                    }}
-                  />
-                </div>
-              )} */}
-
               {/* <div className={styles.hr} /> */}
 
               {/* <div className={styles.section}>
                 <Who data={data as PromptBook} />
               </div> */}
 
-              <div className={styles.affiliateBox}>
-                <div className={styles.affiliateBoxText}>
-                  {formatMessage(
-                    { id: "affiliate.texts.item1" },
-                    { commission: COMMISSION, strong: (el) => <strong>{el}</strong> }
-                  )}
-                </div>
-                <Link
-                  href={affiliatePageRoute.getUrl(locale)}
-                  className={styles.seeAllButton}
-                >
-                  {formatMessage({ id: "affiliate.hero.subtitle" })}
-                </Link>
+              <div className={styles.section}>
+                <Affiliate />
               </div>
+
+              {/* {why && (
+                <div className={styles.section}>
+                  <h3>Why You Need This</h3>
+                  <TextTag text={why} />
+                </div>
+              )} */}
 
               {showRussiaHints && (
                 <div className={styles.hint}>

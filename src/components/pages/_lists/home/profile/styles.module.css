@@ -47,7 +47,6 @@
 .icons {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 32px;
   margin-top: 16px;
 }
@@ -84,5 +83,8 @@
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
+  }
+  .icons {
+  justify-content: center;
   }
 }

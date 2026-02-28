@@ -42,7 +42,7 @@
 
 .affiliateBoxText {
   strong { 
-    color: var(--orange);
+    color: var(--pink);
   }
 }
 
@@ -59,7 +59,7 @@
 }
 
 .joinButton {
-  background-color: rgb(255, 144, 232);
+  background-color: var(--pink);
   font-weight: 700;
   font-size: 15px;
   display: block;

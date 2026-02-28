@@ -8,7 +8,7 @@
   max-width: 320px;
 }
 .link {
-  background-color: rgb(255, 144, 232);
+  background-color: var(--pink);
   font-weight: 700;
   font-size: 15px;
   display: block;
