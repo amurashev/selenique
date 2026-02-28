@@ -129,7 +129,7 @@ export default function HomePage({
         />
 
         <ProductSlider>
-          {[1, 2, 3].map((item) => {
+          {[1, 2, 3, 4, 5].map((item) => {
             return (
               <ProductSliderItem key={item}>
                 <div className={styles.box}>
