@@ -59,14 +59,13 @@
 }
 
 .joinButton {
+  composes: readButton;
   background-color: var(--pink);
-  font-weight: 700;
-  font-size: 15px;
-  display: block;
-  color: var(--foreground);
-  text-align: center;
-  border-radius: 8px;
-  padding: 12px 16px;
+}
+
+.supportButton {
+  composes: readButton;
+  background-color: var(--yellow);
 }
 
 @media (min-width: 840px) {

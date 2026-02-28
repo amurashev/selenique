@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
 
-export const CoffeCupIcon = ({
+export const CoffeeCupIcon = ({
   size = 16,
   color = "#ffffff",
 }: {
@@ -95,7 +95,7 @@ const Profile = () => {
             target="_blank"
             title="Buy me a coffee"
           >
-            <CoffeCupIcon size={32} />
+            <CoffeeCupIcon size={32} color="#ffb900" />
           </Link>
         </div>
 

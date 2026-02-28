@@ -178,6 +178,33 @@ export default function HomePage({
         </ProductSlider>
       </div>
 
+      <hr className={styles.hr} />
+
+      <div className={styles.section}>
+        <GroupHeader
+          title={formatMessage({ id: "home.coffee.title" })}
+        />
+
+        <p
+          className={styles.affiliateBoxText}
+          dangerouslySetInnerHTML={{
+            __html: formatMessage(
+              { id: "home.coffee.text" }
+            ),
+          }}
+        />
+
+        <div className={styles.joinButtonBox}>
+          <Link
+            href={"https://seleniquestudio.gumroad.com/coffee"}
+            className={styles.supportButton}
+          >
+            {formatMessage({ id: "home.coffee.cta" })}
+          </Link>
+        </div>
+      </div>
+
+
       {/* <div className={styles.section}>
         <GroupHeader
           title={formatMessage({ id: "home.portfolio.title" })}
