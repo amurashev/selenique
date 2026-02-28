@@ -128,7 +128,7 @@ export default function PromptbookPage({
                 <div className={styles.affiliateBoxText}>
                   {formatMessage(
                     { id: "affiliate.texts.item1" },
-                    { commission: COMMISSION }
+                    { commission: COMMISSION, strong: (el) => <strong>{el}</strong> }
                   )}
                 </div>
                 <Link

@@ -119,11 +119,11 @@ export default function HomePage({
         />
 
         <p
-          className={""}
+          className={styles.affiliateBoxText}
           dangerouslySetInnerHTML={{
             __html: formatMessage(
               { id: "home.affiliate.text" },
-              { commission: COMMISSION }
+              { commission: COMMISSION, strong: (el) => `<strong>${el}</strong>` }
             ),
           }}
         />

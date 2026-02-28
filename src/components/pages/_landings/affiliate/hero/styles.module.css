@@ -1,7 +1,7 @@
 .gradientColor {
   /* background-image: radial-gradient(circle at 50% 40vh, #ffd27b 0, #df3a93 60vh, #5c1663 100vh); */
 
-  background: #FD5758;
+  background: var(--orange);
   background: linear-gradient(90deg,rgba(253, 87, 88, 1) 0%, rgba(139, 79, 255, 1) 100%);
   -webkit-background-clip: text;
   background-clip: text;

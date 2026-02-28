@@ -10,6 +10,7 @@ import StarIcon from "@/components/ui/icons/star";
 
 import styles from "./styles.module.css";
 import { Guide } from "@/constants/guides";
+import { BestsellerBox } from "@/components/ui/bestseller";
 
 const GuideItem: React.FC<{
   item: Guide;
@@ -39,7 +40,7 @@ const GuideItem: React.FC<{
         <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>
       {isBestseller && (
-        <div className={styles.bestseller}>Bestseller</div>
+        <BestsellerBox />
       )}
 
       {/* {Boolean(reviewsRating) && (

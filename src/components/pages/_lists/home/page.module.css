@@ -40,6 +40,13 @@
   gap: 16px;
 }
 
+.affiliateBoxText {
+  strong { 
+    color: var(--orange);
+  }
+}
+
+
 .readButton {
   background-color: #ffffff;
   font-weight: 700;

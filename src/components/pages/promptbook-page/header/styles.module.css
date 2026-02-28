@@ -1,13 +1,3 @@
-.bestseller {
-  color: #ffffff;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 4px 8px;
-  border-radius: 4px;
-  background-color: #FD5758;
-}
-
 .titleBox {
   display: flex;
   align-items: start;

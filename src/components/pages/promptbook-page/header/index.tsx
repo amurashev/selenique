@@ -10,6 +10,7 @@ import { PromptBook } from "@/components/types";
 
 import Categories from "../categories";
 import StarIcon from "@/components/ui/icons/star";
+import { Bestseller } from "@/components/ui/bestseller";
 
 export default function Header({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -26,7 +27,7 @@ export default function Header({ data }: { data: PromptBook }) {
     <div className={styles.box}>
       {(Boolean(reviewsRating) || isBestseller) && (
         <div className={styles.ratingBox}>
-          {isBestseller && <div className={styles.bestseller}>Bestseller</div>}
+          {isBestseller && <Bestseller size="big" />}
           {Boolean(reviewsRating) && (
             <>
               <div className={styles.startBox}>

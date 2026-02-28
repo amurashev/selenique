@@ -5,7 +5,7 @@
   "affiliate.hero.text2": "We’ve launched an affiliate program for digital products: guides and prompt packs.",
   "affiliate.hero.text3": "You recommend → someone buys → you earn <strong>{commission}%</strong> from every sale.",
 
-  "affiliate.texts.item1": "Earn {commission}% on every sale — just by sharing what you already recommend",
+  "affiliate.texts.item1": "Earn <strong>{commission}%</strong> on every sale — just by sharing what you already recommend",
 
   "affiliate.how_it_works.title": "How it works",
   "affiliate.how_it_works.text": "Think of it like recommending a good resource to a friend — just with commission 🙂",

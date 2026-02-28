@@ -126,6 +126,10 @@
 .affiliateBoxText {
   font-size: 16px;
   font-weight: 700;
+
+  strong { 
+    color: var(--orange);
+  }
 }
 
 .reviewBox {
