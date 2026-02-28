@@ -59,6 +59,9 @@
   "home.affiliate.title": "Afiliados",
   "home.affiliate.text": "Si eres creador y quieres ganar con nuestro contenido, únete a nuestro programa de afiliados en Gumroad y empieza a ganar una comisión del <strong>{commission}%</strong> por cada venta que generes 🤑",
   "home.affiliate.join": "Unirse al Programa",
+  "home.coffee.title": "Invítanos un café",
+  "home.coffee.text": "Si has encontrado valor en nuestros recursos y productos digitales y quieres apoyar nuestro trabajo, considera darnos las gracias con un café. Cada café que nos invitas impulsa nuestra creatividad y nos ayuda a seguir ofreciendo recursos de diseño valiosos e innovadores. ¡Tu apoyo significa muchísimo para nosotros!",
+  "home.coffee.cta": "Apóyanos",
 
   "affiliate.hero.title": "Gana un {commission}% en cada venta",
   "affiliate.hero.subtitle": "Programa de Afiliados",
