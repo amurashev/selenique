@@ -28,6 +28,7 @@ import ProductSlider, {
   ProductSliderItem,
 } from "@/components/pages/_lists/promptbook-list/product-slider";
 import GroupHeader from "@/components/sections/group-header";
+import { COMMISSION } from "@/constants/affiliate";
 
 export default function HomePage({
   deviceType,
@@ -120,7 +121,10 @@ export default function HomePage({
         <p
           className={""}
           dangerouslySetInnerHTML={{
-            __html: formatMessage({ id: "home.affiliate.text" }),
+            __html: formatMessage(
+              { id: "home.affiliate.text" },
+              { commission: COMMISSION }
+            ),
           }}
         />
 

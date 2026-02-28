@@ -40,6 +40,14 @@
   /* margin-top: 16px; */
 }
 
+.linksSmall {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* margin-top: 16px; */
+}
+
+
 .link {
   background-color: #0974e2;
   font-weight: 700;

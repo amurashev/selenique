@@ -11,7 +11,10 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./page.module.css";
 import { PromptBook } from "@/components/types";
 
-import { promptBookListPageRoute } from "@/constants/routes";
+import {
+  affiliatePageRoute,
+  promptBookListPageRoute,
+} from "@/constants/routes";
 
 import ImagesBox from "./images-box";
 import RightSide from "./right-side";
@@ -25,6 +28,7 @@ import Header from "./header";
 import Who from "./who";
 import { TextBox, TextTag } from "./text";
 import Footer from "@/components/layout/footer";
+import { COMMISSION } from "@/constants/affiliate";
 
 export default function PromptbookPage({
   data,
@@ -119,6 +123,21 @@ export default function PromptbookPage({
               {/* <div className={styles.section}>
                 <Who data={data as PromptBook} />
               </div> */}
+
+              <div className={styles.affiliateBox}>
+                <div className={styles.affiliateBoxText}>
+                  {formatMessage(
+                    { id: "affiliate.texts.item1" },
+                    { commission: COMMISSION }
+                  )}
+                </div>
+                <Link
+                  href={affiliatePageRoute.getUrl(locale)}
+                  className={styles.seeAllButton}
+                >
+                  {formatMessage({ id: "affiliate.hero.subtitle" })}
+                </Link>
+              </div>
 
               {showRussiaHints && (
                 <div className={styles.hint}>

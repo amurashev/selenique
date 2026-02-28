@@ -53,14 +53,16 @@
   "home.profile.item4": "La moda es nuestra profesión",
   "home.profile.item5": "Motivados para inspirar",
   "home.affiliate.title": "Afiliados",
-  "home.affiliate.text": "Si eres creador y quieres ganar con nuestro contenido, únete a nuestro programa de afiliados en Gumroad y empieza a ganar una comisión del <strong>35%</strong> por cada venta que generes 🤑",
+  "home.affiliate.text": "Si eres creador y quieres ganar con nuestro contenido, únete a nuestro programa de afiliados en Gumroad y empieza a ganar una comisión del <strong>{commission}%</strong> por cada venta que generes 🤑",
   "home.affiliate.join": "Unirse al Programa",
 
-  "affiliate.hero.title": "Gana un 35% en cada venta",
+  "affiliate.hero.title": "Gana un {commission}% en cada venta",
   "affiliate.hero.subtitle": "Programa de Afiliados",
   "affiliate.hero.text1": "Simplemente compartiendo lo que ya recomiendas 🤩",
   "affiliate.hero.text2": "Hemos lanzado un programa de afiliados para productos digitales: guías y packs de prompts.",
-  "affiliate.hero.text3": "Tú recomiendas → alguien compra → tú ganas <strong>35%</strong> de cada venta.",
+  "affiliate.hero.text3": "Tú recomiendas → alguien compra → tú ganas <strong>{commission}%</strong> de cada venta.",
+
+  "affiliate.texts.item1": "Gana un {commission}% en cada venta, simplemente compartiendo lo que ya recomiendas",
 
   "affiliate.how_it_works.title": "Cómo funciona",
   "affiliate.how_it_works.text": "Piénsalo como recomendar un buen recurso a un amigo — pero con comisión 🙂",
@@ -70,7 +72,7 @@
   "affiliate.how_it_works.item2.text": "Redes sociales, Telegram, blog, newsletter, Pinterest — donde esté tu audiencia.",
   "affiliate.how_it_works.item3.title": "Alguien compra un producto",
   "affiliate.how_it_works.item3.text": "Todos los productos son digitales con entrega instantánea.",
-  "affiliate.how_it_works.item4.title": "Ganas un 35% por venta",
+  "affiliate.how_it_works.item4.title": "Ganas un {commission}% por venta",
   "affiliate.how_it_works.item4.text": "Por cada compra realizada a través de tu enlace.",
 
   "affiliate.instruction.title": "Paso a paso",

@@ -10,6 +10,7 @@ import styles from "./styles.module.css";
 import { PromptBook } from "@/components/types";
 
 import Link from "next/link";
+import { affiliatePageRoute } from "@/constants/routes";
 
 const discount = 30;
 const DISCOUNT_END_DAY = "2025-12-16";
@@ -43,7 +44,7 @@ export default function RightSide({
   // Переводим миллисекунды в дни
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
-  const showRussiaHints = ['en', "ru"].includes(locale)
+  const showRussiaHints = ["en", "ru"].includes(locale);
 
   return (
     <div className={styles.rightSideBox}>
@@ -60,21 +61,23 @@ export default function RightSide({
                   {discount}% off • Sale ends in {daysLeft} days
                 </div> */}
       <div className={styles.links}>
-        {purchaseLink && (
-          <Link className={styles.link} href={purchaseLink} target="_blank">
-            {formatMessage({ id: "common.continue" })}
-          </Link>
-        )}
+        <div className={styles.linksSmall}>
+          {purchaseLink && (
+            <Link className={styles.link} href={purchaseLink} target="_blank">
+              {formatMessage({ id: "common.continue" })}
+            </Link>
+          )}
 
-        {boostyId && showRussiaHints && (
-          <Link
-            className={styles.link}
-            href={`https://boosty.to/selenique/posts/${boostyId}`}
-            target="_blank"
-          >
-            {formatMessage({ id: "common.buy_now_russia" })}
-          </Link>
-        )}
+          {boostyId && showRussiaHints && (
+            <Link
+              className={styles.link}
+              href={`https://boosty.to/selenique/posts/${boostyId}`}
+              target="_blank"
+            >
+              {formatMessage({ id: "common.buy_now_russia" })}
+            </Link>
+          )}
+        </div>
 
         {showRussiaHints && (
           <div className={styles.hint}>
@@ -82,10 +85,18 @@ export default function RightSide({
           </div>
         )}
 
-        <Link className={styles.seeAllButton} href={backUrl}>
-          {formatMessage({ id: "prompt_books.see_all" })}
-        </Link>
+        <div className={styles.linksSmall}>
+          <Link className={styles.seeAllButton} href={backUrl}>
+            {formatMessage({ id: "prompt_books.see_all" })}
+          </Link>
 
+          <Link
+            href={affiliatePageRoute.getUrl(locale)}
+            className={styles.seeAllButton}
+          >
+            {formatMessage({ id: "affiliate.hero.subtitle" })}
+          </Link>
+        </div>
         {/* {links.cm && (
                     <Link
                       className={styles.link}

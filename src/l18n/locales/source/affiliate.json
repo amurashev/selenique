@@ -1,9 +1,11 @@
 {
-  "affiliate.hero.title": "Earn 35% on every sale",
+  "affiliate.hero.title": "Earn {commission}% on every sale",
   "affiliate.hero.subtitle": "Affiliate Program",
   "affiliate.hero.text1": "Just by sharing what you already recommend 🤩",
   "affiliate.hero.text2": "We’ve launched an affiliate program for digital products: guides and prompt packs.",
-  "affiliate.hero.text3": "You recommend → someone buys → you earn <strong>35%</strong> from every sale.",
+  "affiliate.hero.text3": "You recommend → someone buys → you earn <strong>{commission}%</strong> from every sale.",
+
+  "affiliate.texts.item1": "Earn {commission}% on every sale — just by sharing what you already recommend",
 
   "affiliate.how_it_works.title": "How it works",
   "affiliate.how_it_works.text": "Think of it like recommending a good resource to a friend — just with commission 🙂",
@@ -13,7 +15,7 @@
   "affiliate.how_it_works.item2.text": "Social media, Telegram, blog, newsletter, Pinterest — wherever your audience is.",
   "affiliate.how_it_works.item3.title": "Someone purchases a product",
   "affiliate.how_it_works.item3.text": "All products are digital with instant delivery.",
-  "affiliate.how_it_works.item4.title": "You earn 35% per sale",
+  "affiliate.how_it_works.item4.title": "You earn {commission}% per sale",
   "affiliate.how_it_works.item4.text": "For every purchase made through your link.",
 
   "affiliate.instruction.title": "Step-by-step",

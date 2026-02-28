@@ -17,6 +17,7 @@ import ImagesSlider from "@/components/sections/landing-black/images-slider";
 import styles from "@/components/sections/landing-black/page.module.css";
 import Join from "./join";
 import Hero from "./hero";
+import { COMMISSION } from "@/constants/affiliate";
 
 export default function AffiliatePage() {
   const { formatMessage, locale } = useIntl();
@@ -44,14 +45,14 @@ export default function AffiliatePage() {
                   {item}{" "}
                   {formatMessage({
                     id: `affiliate.how_it_works.item${key + 1}.title`,
-                  })}
+                  }, { commission: COMMISSION })}
                 </h4>
                 <p
                   className={""}
                   dangerouslySetInnerHTML={{
                     __html: formatMessage({
                       id: `affiliate.how_it_works.item${key + 1}.text`,
-                    }),
+                    }, { commission: COMMISSION }),
                   }}
                 />
               </div>

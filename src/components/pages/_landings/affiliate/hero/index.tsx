@@ -6,6 +6,7 @@ import Link from "next/link";
 import { guidePageRoute } from "@/constants/routes";
 
 import styles from "./styles.module.css";
+import { COMMISSION } from "@/constants/affiliate";
 
 const Chevron = () => {
   return (
@@ -38,7 +39,7 @@ export default function Hero() {
           {formatMessage({ id: "affiliate.hero.subtitle" })}:
         </span>
         <h1 className={styles.h1}>
-          {formatMessage({ id: "affiliate.hero.title" })}
+          {formatMessage({ id: "affiliate.hero.title" }, { commission: COMMISSION })}
         </h1>
         <div className={styles.textBox}>
           <p
