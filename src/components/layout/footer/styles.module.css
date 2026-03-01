@@ -39,6 +39,13 @@
   color: var(--header-inversive);
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
 /* 
 .logoImage {
   width: 100%;

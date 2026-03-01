@@ -19,9 +19,15 @@ import {
   promptsCategoryPageRoute,
   promptsModelPageRoute,
   affiliatePageRoute,
+  homePage,
 } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
-import { EMAIL } from "@/constants/contacts";
+import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
+import {
+  EmailIcon,
+  InstagramIcon,
+  ThreadsIcon,
+} from "@/components/ui/icons/socials";
 
 const EMailIcon = () => (
   <svg
@@ -54,8 +60,27 @@ export default function Footer() {
                 className={styles.logoImage}
               /> */}
 
+              <Link href={homePage.getUrl(locale)} className={styles.title}>
+                {formatMessage({ id: "common.name" })}
+              </Link>
 
-              <div className={styles.title}>{formatMessage({ id: "common.name" })}</div>
+              <div className={styles.icons}>
+                <Link
+                  href={`https://www.threads.com/@${THREADS_NAME}`}
+                  target="_blank"
+                >
+                  <ThreadsIcon size={24} color="#919496" />
+                </Link>
+                <Link
+                  href={`https://www.instagram.com/${INSTAGRAM_NAME}`}
+                  target="_blank"
+                >
+                  <InstagramIcon size={22} color="#919496" />
+                </Link>
+                <Link href={`mailto:${EMAIL}`}>
+                  <EmailIcon size={30} color="#919496" />
+                </Link>
+              </div>
             </div>
 
             <div className={styles.linksBox}>
@@ -94,8 +119,6 @@ export default function Footer() {
                   </Link>
                 </li>
 
-
-
                 <li className={styles.menuItem}>
                   <Link
                     href={affiliatePageRoute.getUrl(locale)}
@@ -104,7 +127,6 @@ export default function Footer() {
                     {formatMessage({ id: "header.menu.affiliate" })}
                   </Link>
                 </li>
-
 
                 <li className={styles.menuItem}>
                   <Link
@@ -128,7 +150,7 @@ export default function Footer() {
                   {formatMessage({ id: "footer.prompt_categories" })}
                 </span>
 
-                {PROMPT_CATEGORIES.map(item => (
+                {PROMPT_CATEGORIES.map((item) => (
                   <li key={item} className={styles.menuItem}>
                     <Link
                       href={promptsCategoryPageRoute.getUrl(locale, {
@@ -154,7 +176,7 @@ export default function Footer() {
                   {formatMessage({ id: "footer.prompt_models" })}
                 </span>
 
-                {PROMPT_MODELS.map(item => (
+                {PROMPT_MODELS.map((item) => (
                   <li key={item} className={styles.menuItem}>
                     <Link
                       href={promptsModelPageRoute.getUrl(locale, {
@@ -173,15 +195,12 @@ export default function Footer() {
           </div>
 
           <div className={styles.secondCol}>
-            <div className={styles.email}>
+            {/* <div className={styles.email}>
               <EMailIcon />
-              <a
-                href={`mailto:${EMAIL}`}
-                className={styles.link}
-              >
+              <a href={`mailto:${EMAIL}`} className={styles.link}>
                 {EMAIL}
               </a>
-            </div>
+            </div> */}
 
             <div>© 2026 {formatMessage({ id: "common.name" })}</div>
             {/* <div className={styles.flags}>
