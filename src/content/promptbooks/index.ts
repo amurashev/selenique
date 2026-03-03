@@ -137,6 +137,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "60-fantasy-photo-prompts-ai-portrait": {
     id: 11,
+    isDisabled: true,
     gumroadSlug: "60-fantasy-portrait-ai-prompts-character",
     number: 60,
     tags: ["fantasy"],

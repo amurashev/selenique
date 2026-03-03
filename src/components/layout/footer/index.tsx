@@ -81,6 +81,8 @@ export default function Footer() {
                   <EmailIcon size={30} color="#919496" />
                 </Link>
               </div>
+
+              <div className={styles.built}>Built with ❤️</div>
             </div>
 
             <div className={styles.linksBox}>
