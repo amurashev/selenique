@@ -146,6 +146,16 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
   },
 
+  "cinematic-fantasy-photo": {
+    id: 55,
+    gumroadSlug: "cinematic-fantasy-photo",
+    number: 150,
+    tags: ["fantasy"],
+    mainCategory: "fantasy",
+    type: "pack",
+    images: [1, 5, 6, 7, 8, 9, 10],
+  },
+
   "25-wizard-school-photo-prompts-ai": {
     id: 12,
     gumroadSlug: "25-wizard-school-ai-photo-prompts",
