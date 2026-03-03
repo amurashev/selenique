@@ -116,9 +116,9 @@ export default function AffiliatePage() {
           <div className={styles.extraMarginTop}>
             <ImagesSlider
               images={[
-                "/images/affiliate/1.jpg",
-                "/images/affiliate/2.jpg",
                 "/images/affiliate/3.jpg",
+                "/images/affiliate/4.jpg",
+                "/images/affiliate/5.jpg",
               ]}
             />
           </div>
