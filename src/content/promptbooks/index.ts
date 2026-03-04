@@ -518,4 +518,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     images: [1, 3, 4, 5, 6, 7],
   },
+  "wedding-photoshoot": {
+    id: 56,
+    gumroadSlug: "wedding-photoshoot",
+    number: 80,
+    tags: ["lifestyle", "fashion"],
+    mainCategory: "lifestyle",
+    type: "pack",
+    images: [1, 3, 4, 5, 6, 7],
+  },
 };
