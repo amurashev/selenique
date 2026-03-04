@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useIntl } from "react-intl";
 import Link from "next/link";
 import { useMetrica } from "next-yandex-metrica";
@@ -40,6 +40,7 @@ export default function PromptbookPage({
   related?: PromptBook[];
   bundleContent?: PromptBook[];
 }) {
+  const [isRedirect, setIsRedirect] = useState(false);
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
@@ -107,35 +108,39 @@ export default function PromptbookPage({
                 </div>
               )}
 
-
-<div className={styles.section}>
+              <div className={styles.section}>
                 <Affiliate />
               </div>
 
               {purchaseLink && (
-                <div className={styles.getPromptBox}>
-                  <Link className={styles.link} href={purchaseLink}>
-                    {formatMessage({ id: "prompt_books.get_prompt_pack" })}
-                  </Link>
+                <>
+                  <div className={styles.getPromptBox}>
+                    <Link
+                      className={isRedirect ? styles.linkDisabled : styles.link}
+                      href={purchaseLink}
+                      onClick={() => setIsRedirect(true)}
+                    >
+                      {isRedirect ? <span className={styles.loader} /> : null}
+                      {formatMessage({ id: "prompt_books.get_prompt_pack" })}
+                    </Link>
 
-                  {showRussiaHints && (
-                    <div className={styles.hint}>
-                      {formatMessage({
-                        id: "prompt_books.payment_russia_hint",
-                      })}
-                    </div>
-                  )}
-                </div>
+                    {showRussiaHints && (
+                      <div className={styles.hint}>
+                        {formatMessage({
+                          id: "prompt_books.payment_russia_hint",
+                        })}
+                      </div>
+                    )}
+                  </div>
+                  <div className={styles.hr} />
+                </>
               )}
-
-              <div className={styles.hr} />
 
               {/* <div className={styles.hr} /> */}
 
               {/* <div className={styles.section}>
                 <Who data={data as PromptBook} />
               </div> */}
-
 
               {/* {why && (
                 <div className={styles.section}>
@@ -176,15 +181,17 @@ export default function PromptbookPage({
         {purchaseLink && (
           <div className={styles.mobileButton}>
             <Link
-              className={styles.link}
+              className={isRedirect ? styles.linkDisabled : styles.link}
               href={purchaseLink}
               target="_blank"
               onClick={() => {
+                setIsRedirect(true);
                 reachGoal("promptPage_buyClick", {
                   id,
                 });
               }}
             >
+              {isRedirect ? <span className={styles.loader} /> : null}
               {formatMessage({ id: "prompt_books.get_prompt_pack" })}
             </Link>
           </div>
