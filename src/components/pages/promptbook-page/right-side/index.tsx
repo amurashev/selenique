@@ -64,7 +64,7 @@ export default function RightSide({
         <div className={styles.linksSmall}>
           {purchaseLink && (
             <Link className={styles.link} href={purchaseLink} target="_blank">
-              {formatMessage({ id: "common.continue" })}
+              {formatMessage({ id: "prompt_books.get_prompt_pack" })}
             </Link>
           )}
 

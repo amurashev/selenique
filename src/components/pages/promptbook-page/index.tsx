@@ -107,15 +107,35 @@ export default function PromptbookPage({
                 </div>
               )}
 
+
+<div className={styles.section}>
+                <Affiliate />
+              </div>
+
+              {purchaseLink && (
+                <div className={styles.getPromptBox}>
+                  <Link className={styles.link} href={purchaseLink}>
+                    {formatMessage({ id: "prompt_books.get_prompt_pack" })}
+                  </Link>
+
+                  {showRussiaHints && (
+                    <div className={styles.hint}>
+                      {formatMessage({
+                        id: "prompt_books.payment_russia_hint",
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <div className={styles.hr} />
+
               {/* <div className={styles.hr} /> */}
 
               {/* <div className={styles.section}>
                 <Who data={data as PromptBook} />
               </div> */}
 
-              <div className={styles.section}>
-                <Affiliate />
-              </div>
 
               {/* {why && (
                 <div className={styles.section}>
@@ -123,12 +143,6 @@ export default function PromptbookPage({
                   <TextTag text={why} />
                 </div>
               )} */}
-
-              {showRussiaHints && (
-                <div className={styles.hint}>
-                  {formatMessage({ id: "prompt_books.payment_russia_hint" })}
-                </div>
-              )}
             </div>
 
             <div className={styles.rightSide}>
@@ -171,7 +185,7 @@ export default function PromptbookPage({
                 });
               }}
             >
-              {formatMessage({ id: "common.continue" })}
+              {formatMessage({ id: "prompt_books.get_prompt_pack" })}
             </Link>
           </div>
         )}

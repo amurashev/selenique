@@ -127,6 +127,7 @@
   "prompt_books.reviews": "Todas las reseñas de esta tienda",
   "prompt_books.bundle_contains": "Este paquete contiene",
   "prompt_books.you_may_like": "También te puede interesar",
+  "prompt_books.get_prompt_pack": "Obtener paquete",
 
   "prompts.categories.business.title": "Prompts de Negocio para IA — Prompts Profesionales para Marketing, Branding y Contenido",
   "prompts.categories.business.description": "Prompts de negocio listos para usar en herramientas de IA. Crea contenido de marketing, visuales de marca, ideas de productos y activos empresariales más rápido con packs profesionales.",
