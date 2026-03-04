@@ -13,6 +13,12 @@ import {
   affiliatePageRoute,
   homePage,
 } from "@/constants/routes";
+import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
+import {
+  EmailIcon,
+  InstagramIcon,
+  ThreadsIcon,
+} from "@/components/ui/icons/socials";
 
 import styles from "./styles.module.css";
 
@@ -81,6 +87,25 @@ export default function Menu({
             </Link>
           </li>
         </ul>
+        <hr className={styles.hr} />
+
+        <div className={styles.icons}>
+          <Link
+            href={`https://www.threads.com/@${THREADS_NAME}`}
+            target="_blank"
+          >
+            <ThreadsIcon size={19} color="#919496" />
+          </Link>
+          <Link
+            href={`https://www.instagram.com/${INSTAGRAM_NAME}`}
+            target="_blank"
+          >
+            <InstagramIcon size={18} color="#919496" />
+          </Link>
+          <Link href={`mailto:${EMAIL}`}>
+            <EmailIcon size={21} color="#919496" />
+          </Link>
+        </div>
       </div>
     </div>
   );

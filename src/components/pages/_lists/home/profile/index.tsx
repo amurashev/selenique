@@ -106,26 +106,26 @@ const Profile = () => {
             href={`https://www.threads.com/@${THREADS_NAME}`}
             target="_blank"
           >
-            <ThreadsIcon size={32} />
+            <ThreadsIcon size={18} color="#ffffff" />
           </Link>
           <Link
             href={`https://www.instagram.com/${INSTAGRAM_NAME}`}
             target="_blank"
           >
-            <InstagramIcon size={30} />
+            <InstagramIcon size={19} color="#ffffff" />
           </Link>
           <Link href={`mailto:${EMAIL}`}>
-            <EmailIcon size={38} />
+            <EmailIcon size={21} color="#ffffff" />
           </Link>
           <Link
             href={`https://seleniquestudio.gumroad.com/coffee`}
             target="_blank"
             title="Buy me a coffee"
           >
-            <CoffeeCupIcon size={32} color="#ffffff" />
+            <CoffeeCupIcon size={21} color="#ffffff" />
           </Link>
           <Link href={affiliatePageRoute.getUrl(locale)}>
-            <DollarIcon size={30} color="#ffffff" />
+            <DollarIcon size={19} color="#ffffff" />
           </Link>
         </div>
 

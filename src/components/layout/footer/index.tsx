@@ -29,23 +29,6 @@ import {
   ThreadsIcon,
 } from "@/components/ui/icons/socials";
 
-const EMailIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    viewBox="0 0 24 24"
-  >
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-    <polyline points="22,6 12,13 2,6" />
-  </svg>
-);
-
 export default function Footer() {
   const { formatMessage, locale } = useIntl();
   return (
@@ -69,16 +52,16 @@ export default function Footer() {
                   href={`https://www.threads.com/@${THREADS_NAME}`}
                   target="_blank"
                 >
-                  <ThreadsIcon size={24} color="#919496" />
+                  <ThreadsIcon size={19} color="#ffffff" />
                 </Link>
                 <Link
                   href={`https://www.instagram.com/${INSTAGRAM_NAME}`}
                   target="_blank"
                 >
-                  <InstagramIcon size={22} color="#919496" />
+                  <InstagramIcon size={18} color="#ffffff" />
                 </Link>
                 <Link href={`mailto:${EMAIL}`}>
-                  <EmailIcon size={30} color="#919496" />
+                  <EmailIcon size={21} color="#ffffff" />
                 </Link>
               </div>
 
