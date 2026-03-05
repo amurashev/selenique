@@ -33,5 +33,13 @@
   "prompt_books.bundle_contains": "This bundle contains",
   "prompt_books.payment_russia_hint": "If you are unable to pay for your purchase using available payment methods (EG: you are from Russia or Belarus), please contact us via Telegram (@alenaamoore) or email (selenique.studio@gmail.com)",
   "prompt_books.you_may_like": "You may also like",
-  "prompt_books.get_prompt_pack": "Get Prompt Pack"
+  "prompt_books.get_prompt_pack": "Get Prompt Pack",
+  "prompt_books.instruction.title1": "No real photoshoot needed",
+  "prompt_books.instruction.title2": "No traditional product photoshoot needed",
+  "prompt_books.instruction.text1": "No dress fittings, no photographer, no studio rental, no retouching sessions.",
+  "prompt_books.instruction.text2": "No studio setup, no lighting equipment, no photographers, no costly props.",
+  "prompt_books.instruction.item1": "Just upload your photo",
+  "prompt_books.instruction.item2": "Paste the prompt",
+  "prompt_books.instruction.item3": "Receive your photos in minutes",
+  "prompt_books.instruction.item4": "Get your images in minutes"
 }

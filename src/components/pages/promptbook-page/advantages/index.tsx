@@ -105,24 +105,15 @@ const ListItem = ({ icon, text }: { icon: React.ReactNode; text: string }) => {
   );
 };
 
-export default function Advantages({ data }: { data: PromptBook }) {
+export default function Advantages({
+  data,
+  hasCharacterReference,
+}: {
+  data: PromptBook;
+  hasCharacterReference: boolean;
+}) {
   const { formatMessage, locale } = useIntl();
-  const { fileType, number, tags } = data;
-
-  const hasCharacterReference = tags.some((item) => {
-    const referenceCategories: PromptCategories[] = [
-      "business",
-      "headshot",
-      "fashion",
-      "fantasy",
-      "red_carpet",
-      "studio",
-      "christmas",
-      "avatar",
-      "character_reference",
-    ];
-    return referenceCategories.includes(item);
-  });
+  const { fileType, number } = data;
 
   return (
     <div>

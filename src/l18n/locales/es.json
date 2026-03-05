@@ -129,6 +129,15 @@
   "prompt_books.you_may_like": "También te puede interesar",
   "prompt_books.get_prompt_pack": "Obtener paquete",
 
+  "prompt_books.instruction.title1": "No se necesita una sesión de fotos real",
+  "prompt_books.instruction.title2": "No se necesita una sesión de fotos de producto tradicional",
+  "prompt_books.instruction.text1": "Sin pruebas de vestuario, sin fotógrafo, sin alquiler de estudio, sin sesiones de retoque.",
+  "prompt_books.instruction.text2": "Sin montaje de estudio, sin equipo de iluminación, sin fotógrafos, sin accesorios costosos.",
+  "prompt_books.instruction.item1": "Solo sube tu foto",
+  "prompt_books.instruction.item2": "Pega el prompt",
+  "prompt_books.instruction.item3": "Recibe tus fotos en minutos",
+  "prompt_books.instruction.item4": "Obtén tus imágenes en minutos",
+
   "prompts.categories.business.title": "Prompts de Negocio para IA — Prompts Profesionales para Marketing, Branding y Contenido",
   "prompts.categories.business.description": "Prompts de negocio listos para usar en herramientas de IA. Crea contenido de marketing, visuales de marca, ideas de productos y activos empresariales más rápido con packs profesionales.",
   "prompts.categories.business.keywords": "prompts de negocio, prompts de ia para negocios, prompts para empresas, prompts de marketing ia, prompts de branding, prompts de creación de contenido, prompts de ia para emprendedores, prompts de ia para marketing, prompts profesionales de ia, packs de prompts para negocios, prompts para startups, prompts para creadores, prompts para freelancers",

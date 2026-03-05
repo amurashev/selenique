@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./page.module.css";
-import { PromptBook } from "@/components/types";
+import { PromptBook, PromptCategories } from "@/components/types";
 
 import {
   affiliatePageRoute,
@@ -30,6 +30,7 @@ import { TextBox, TextTag } from "./text";
 import Footer from "@/components/layout/footer";
 import { COMMISSION } from "@/constants/affiliate";
 import Affiliate from "./affiliate";
+import Instruction from "./instruction";
 
 export default function PromptbookPage({
   data,
@@ -50,6 +51,7 @@ export default function PromptbookPage({
     text,
     description,
     summary,
+    tags,
     why,
     images,
     isDisabled,
@@ -57,6 +59,22 @@ export default function PromptbookPage({
   const finalTopText = description || summary;
   const backUrl = promptBookListPageRoute.getUrl(locale);
   const showRussiaHints = ["en", "ru"].includes(locale);
+
+  const hasCharacterReference = tags.some((item) => {
+    const referenceCategories: PromptCategories[] = [
+      "business",
+      "headshot",
+      "fashion",
+      "fantasy",
+      "red_carpet",
+      "studio",
+      "christmas",
+      "avatar",
+      "character_reference",
+    ];
+    return referenceCategories.includes(item);
+  });
+
 
   useEffect(() => {
     reachGoal("promptPage_open", {
@@ -91,7 +109,7 @@ export default function PromptbookPage({
 
           <div className={styles.line}>
             <div className={styles.textBox}>
-              <Advantages data={data} />
+              <Advantages data={data} hasCharacterReference={hasCharacterReference} />
 
               <div className={styles.hr} />
 
@@ -100,6 +118,8 @@ export default function PromptbookPage({
                   <Bundle bundleContent={bundleContent} />
                 </div>
               )}
+
+              <Instruction hasCharacterReference={hasCharacterReference} />
 
               {/* TODO: Temp workaround for old texts */}
               {text && (
@@ -132,7 +152,6 @@ export default function PromptbookPage({
                       </div>
                     )}
                   </div>
-                  <div className={styles.hr} />
                 </>
               )}
 
