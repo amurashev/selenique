@@ -530,10 +530,10 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "mythical-character-photo": {
     id: 57,
     gumroadSlug: "mythical-character-photo",
-    number: 16,
+    number: 20,
     tags: ["fantasy", "avatar"],
     mainCategory: "fantasy",
     type: "pack",
-    images: [1, 6, 7, 8, 9],
+    images: [1, 6, 7, 8, 9, 10],
   },
 };
