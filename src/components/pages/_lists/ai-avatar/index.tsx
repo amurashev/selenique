@@ -27,6 +27,7 @@ import GroupHeader from "@/components/sections/group-header";
 import FAQBase from "@/components/sections/faq";
 import ImagesSlider from "@/components/sections/landing-black/images-slider";
 import ShortHeader from "@/components/layout/short-header";
+import Footer from "@/components/layout/footer";
 
 export default function AiAvatarPage({
   guidesList,
@@ -120,6 +121,8 @@ export default function AiAvatarPage({
           />
         </SectionGray>
       </main>
+
+      <Footer />
     </div>
   );
 }
