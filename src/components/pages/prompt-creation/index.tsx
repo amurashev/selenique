@@ -72,7 +72,7 @@ export default function PromptCreationPage() {
 
   const useReference = true ? 'Use the attached reference image as the exact appearance reference for the subject, preserving facial features, bone structure, proportions, and overall likeness' : ""
 
-  const value = `Luxury fashion editorial full-body portrait. ${useReference}.${outfit}\n${pose}.\n${studioParams}.\n${background}.`
+  const value = `Luxury fashion editorial full-body portrait. ${creatureType} ${useReference}.${outfit}\n${pose}.\n${studioParams}.\n${background}.`
 
   return (
     <>
