@@ -10,7 +10,7 @@ import { settings } from "./settings";
 import styles from "./styles.module.css";
 
 export default function ImagesSlider(
-  { images }: { images: string[] }
+  { images, alt }: { images: string[], alt?: string }
 ) {
   return (
     <Slider {...settings} className={`${styles.slider} mobileViewBlack`}>
@@ -19,6 +19,8 @@ export default function ImagesSlider(
             <img
               className={styles.image}
               src={`${item}`}
+              alt={alt}
+              title={alt}
             />
         </div>
         ))}

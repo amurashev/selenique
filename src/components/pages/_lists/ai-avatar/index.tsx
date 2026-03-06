@@ -98,6 +98,7 @@ export default function AiAvatarPage({
 
         <SectionColor title="">
           <ImagesSlider
+            alt="AI avatar generated with prompt example"
             images={[
               "/images/influencer/301.jpg",
               "/images/influencer/302.jpg",

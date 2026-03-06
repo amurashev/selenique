@@ -60,6 +60,7 @@ export default function VirtualInfluencePage() {
           </ul>
           <div className={styles.extraMarginTop}>
             <ImagesSlider
+              alt="AI avatar generated with prompt example"
               images={[
                 "/images/influencer/101.jpg",
                 "/images/influencer/102.jpg",
@@ -191,6 +192,7 @@ export default function VirtualInfluencePage() {
 
           <div className={styles.extraMarginTop}>
             <ImagesSlider
+              alt="AI avatar generated with prompt example"
               images={[
                 "/images/influencer/201.jpg",
                 "/images/influencer/202.jpg",
@@ -341,6 +343,7 @@ export default function VirtualInfluencePage() {
 
         <SectionColor title="">
           <ImagesSlider
+            alt="realistic AI avatar portrait generated with nano Banana prompt"
             images={[
               "/images/influencer/301.jpg",
               "/images/influencer/302.jpg",
