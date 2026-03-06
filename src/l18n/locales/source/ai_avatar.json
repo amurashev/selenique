@@ -1,0 +1,36 @@
+{
+  "ai_avatar.meta.title": "AI Avatar Prompts & Resources for Creating Realistic AI Avatars",
+  "ai_avatar.meta.description": "Create stunning AI avatars with professional prompts, templates and guides. Learn how to generate consistent characters for social media, branding and virtual influencers.",
+  "ai_avatar.meta.keywords": "AI avatar prompts, AI avatar generator prompts, create AI avatars, AI character prompts, AI influencer prompts, virtual avatar prompts, AI portrait prompts, Nano Banana avatar prompts, consistent character AI, AI avatar prompt pack",
+
+  "ai_avatar.hero.title": "AI Avatar Prompts & Resources for Stunning Characters",
+  "ai_avatar.hero.text": "Discover proven AI avatar prompts, style references, and guides that help you produce realistic and cohesive characters.",
+
+  "ai_avatar.prompts.title": "Proven Prompts for Realistic AI Avatars",
+  "ai_avatar.prompts.text": "Well-crafted AI avatar prompts define appearance, clothing, lighting, and style, allowing you to create consistent, realistic characters. By keeping the core structure and adjusting only details like pose or background, you can generate multiple avatars with a recognizable visual identity.",
+  "ai_avatar.section2.title": "Materials for Creating AI Avatars",
+  "ai_avatar.section2.text": "Creating a strong AI avatar is not only about writing a prompt. The quality and consistency of the character often depend on the materials you use during the generation process. These materials help guide the AI, control appearance, and maintain visual identity across many images.",
+  "ai_avatar.section3.title": "AI Avatar Prompt Examples",
+  "ai_avatar.section3.text": "Example structure for creating avatars:",
+  "ai_avatar.section3.item1.title": "Basic AI Avatar Prompt",
+  "ai_avatar.section3.item1.text": "Portrait of a young woman with natural skin texture, soft studio lighting, modern fashion outfit, confident expression, shallow depth of field, professional fashion photography, shot on Canon R5, 85mm lens",
+  "ai_avatar.section3.item2.title": "Virtual Influencer Style",
+  "ai_avatar.section3.item2.text": "Stylish digital influencer avatar, trendy streetwear outfit, cinematic lighting, editorial fashion photography, urban background, ultra realistic portrait",
+
+  "ai_avatar.faq.title": "FAQ",
+  "ai_avatar.faq.item1.title": "What is an AI avatar?",
+  "ai_avatar.faq.item1.text": "An AI avatar is a digital character generated with artificial intelligence tools such as Midjourney or other image generators. These avatars can look like realistic portraits, stylized characters, or virtual influencers and are often used for social media, branding, and digital content creation.",
+  "ai_avatar.faq.item2.title": "How do you create an AI avatar?",
+  "ai_avatar.faq.item2.text": "To create an AI avatar you usually need three things: a clear prompt describing the character, optional reference images to guide appearance, and an AI image generator. The prompt defines features like face, clothing, lighting, and photography style.",
+  "ai_avatar.faq.item3.title": "What tools can generate AI avatars?",
+  "ai_avatar.faq.item3.text": "AI avatars can be generated with tools such as Midjourney, Stable Diffusion, and other AI image generators. These tools allow creators to produce portraits, characters, and full virtual personalities using text prompts and reference images.",
+  "ai_avatar.faq.item4.title": "How do you keep an AI avatar consistent?",
+  "ai_avatar.faq.item4.text": "Consistency is achieved by using the same character description, reference images, and prompt structure. Many creators also build a character sheet that defines facial features, hairstyle, clothing style, and lighting.",
+  "ai_avatar.faq.item5.title": "What are AI avatar prompts?",
+  "ai_avatar.faq.item5.text": "AI avatar prompts are text instructions that tell the AI how to generate an avatar. A good prompt includes details about appearance, lighting, camera angle, clothing, and environment.",
+  "ai_avatar.faq.item6.title": "Can AI avatars be used for social media?",
+  "ai_avatar.faq.item6.text": "Yes. Many creators use AI avatars for social media profiles, virtual influencers, marketing visuals, and storytelling content. Consistent avatars can help build recognizable digital identities.",
+  "ai_avatar.faq.item7.title": "What materials help create better AI avatars?",
+  "ai_avatar.faq.item7.text": "Useful materials include reference photos, style references, pose guides, prompt templates, and character sheets. These elements help maintain visual consistency across multiple images.",
+  "ai_avatar.gallery.title": "Gallery"
+}

@@ -12,6 +12,7 @@ import {
   productPortfolioPageRoute,
   affiliatePageRoute,
   homePage,
+  aiAvatarPageRoute,
 } from "@/constants/routes";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
 import {
@@ -64,6 +65,15 @@ export default function Menu({
               className={styles.menuLink}
             >
               {formatMessage({ id: "footer.guides" })}
+            </Link>
+          </li>
+
+          <li className={styles.menuItem}>
+            <Link
+              href={aiAvatarPageRoute.getUrl(locale)}
+              className={styles.menuLink}
+            >
+              {formatMessage({ id: "footer.ai_avatar" })}
             </Link>
           </li>
 

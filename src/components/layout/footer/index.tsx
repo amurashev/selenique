@@ -20,6 +20,7 @@ import {
   promptsModelPageRoute,
   affiliatePageRoute,
   homePage,
+  aiAvatarPageRoute,
 } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
@@ -101,6 +102,15 @@ export default function Footer() {
                     className={styles.menuLink}
                   >
                     {formatMessage({ id: "footer.guides" })}
+                  </Link>
+                </li>
+
+                <li className={styles.menuItem}>
+                  <Link
+                    href={aiAvatarPageRoute.getUrl(locale)}
+                    className={styles.menuLink}
+                  >
+                    {formatMessage({ id: "footer.ai_avatar" })}
                   </Link>
                 </li>
 

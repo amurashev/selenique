@@ -14,6 +14,7 @@ export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");
 
 export const affiliatePageRoute = route("/affiliate");
+export const aiAvatarPageRoute = route("/ai-avatar");
 
 export const productPageRoute = route({
   default: "/services/creating-photo-for-e-commerce",

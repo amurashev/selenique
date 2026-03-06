@@ -37,14 +37,12 @@ export const FAQItem: React.FC<{
           <Arrow />
         </span>
       </button>
-      {isOpen && (
-        <div
-          dangerouslySetInnerHTML={{
-            __html: text,
-          }}
-          className={styles.body}
-        />
-      )}
+      <div
+        dangerouslySetInnerHTML={{
+          __html: text,
+        }}
+        className={isOpen ? styles.body : styles.bodyHidden}
+      />
     </div>
   );
 };

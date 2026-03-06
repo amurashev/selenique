@@ -1,0 +1,20 @@
+
+
+.prompts {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prompt {
+  padding: 16px;
+  background-color: #202020;
+  border-radius: 12px;
+  font-family: Courier, monospace;
+  white-space: break-spaces;
+  word-break: break-all;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
