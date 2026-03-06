@@ -58,7 +58,7 @@ export default async function AiAvatarPageEntry({
   const promptPacks = Object.keys(PROMTBOOKS)
   .filter((item) => {
     const promptData = PROMTBOOKS[item];
-    return promptData.mainCategory === "avatar";
+    return promptData.tags.includes("avatar");
   })
   .map((item) => getPromptBookData(item));
 
