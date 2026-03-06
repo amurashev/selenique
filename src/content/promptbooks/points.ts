@@ -1,6 +1,7 @@
 const PROMPTS_POINTS: Record<string, number> = {
   "realistic-ai-influencer-prompts": 100,
   "cinematic-fantasy-photo": 100,
+  "mythical-character-photo": 10,
 
   /* Bundles */
   "250-fashion-editorial-prompts-bundle": 100,

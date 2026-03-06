@@ -7,7 +7,7 @@ import Layout from "@/components/layout";
 import { i18n, Locale } from "../../../../i18n-config";
 import getDeviceType from "@/utils/device";
 import { PROMTBOOKS } from "@/content/promptbooks";
-import { getPromptBookData } from "@/content/promptbooks/utils";
+import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
 import { homePage } from "@/constants/routes";
@@ -61,6 +61,8 @@ export default async function AiAvatarPageEntry({
     return promptData.tags.includes("avatar");
   })
   .map((item) => getPromptBookData(item));
+
+  promptPacks.sort(sortByPoints);
 
   const guidesListId = getGuidesList(finalLang);
   const guidesList = guidesListId.map((item) =>

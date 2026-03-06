@@ -108,7 +108,7 @@
   "portfolio.types.jewelry": "Joyería",
   "prompt_books.title": "Paquetes de Prompts de IA para Imágenes, Visuales y Creación de Contenido Realistas",
   "prompt_books.description": "Paquetes de prompts de IA listos para usar para crear imágenes, visuales y contenido realistas. Ahorra tiempo, mejora la calidad y obtén resultados consistentes para trabajo y ventas.",
-  "prompt_books.keywords": "prompts, prompts de IA, paquete de prompts, colección de prompts, prompts de Nano Banana, prompts de Gemini, prompts de DALL-E, prompts de MidJourney, prompts de Stable Diffusion, prompts de Flux, prompts de ChatGPT, prompts de Kling AI, prompts de imagen, prompts de diseño, prompts de marketing, prompts de negocios, prompts de fotografía",
+  "prompt_books.keywords": "prompts, prompts de IA, paquete de prompts, colección de prompts, prompts de Nano Banana, prompts de Gemini, prompts de DALL-E, prompts de MidJourney, prompts de Nano Banana, prompts de Flux, prompts de ChatGPT, prompts de Kling AI, prompts de imagen, prompts de diseño, prompts de marketing, prompts de negocios, prompts de fotografía",
 
   "prompt_books.title_short": "Paquetes de Prompts de IA",
   "prompt_books.text": "Esta página ofrece paquetes de prompts de IA listos para usar, diseñados para ayudarte a crear imágenes, visuales y contenido de manera más rápida y con calidad consistente. Estos prompts están cuidadosamente estructurados y probados para ahorrar tiempo, mejorar resultados y optimizar tu flujo creativo, ya sea que trabajes con imágenes para stock, redes sociales o productos digitales.",
@@ -332,11 +332,11 @@
 
   "ai_avatar.faq.title": "Preguntas frecuentes",
   "ai_avatar.faq.item1.title": "¿Qué es un avatar con IA?",
-  "ai_avatar.faq.item1.text": "Un avatar con IA es un personaje digital generado con herramientas de inteligencia artificial como Midjourney u otros generadores de imágenes. Estos avatares pueden parecer retratos realistas, personajes estilizados o influencers virtuales y se utilizan a menudo para redes sociales, branding y creación de contenido digital.",
+  "ai_avatar.faq.item1.text": "Un avatar con IA es un personaje digital generado con herramientas de inteligencia artificial como Nano Banana u otros generadores de imágenes. Estos avatares pueden parecer retratos realistas, personajes estilizados o influencers virtuales y se utilizan a menudo para redes sociales, branding y creación de contenido digital.",
   "ai_avatar.faq.item2.title": "¿Cómo se crea un avatar con IA?",
   "ai_avatar.faq.item2.text": "Para crear un avatar con IA normalmente necesitas tres cosas: un prompt claro que describa al personaje, imágenes de referencia opcionales para guiar la apariencia y un generador de imágenes con IA. El prompt define características como el rostro, la ropa, la iluminación y el estilo fotográfico.",
   "ai_avatar.faq.item3.title": "¿Qué herramientas pueden generar avatares con IA?",
-  "ai_avatar.faq.item3.text": "Los avatares con IA pueden generarse con herramientas como Midjourney, Stable Diffusion y otros generadores de imágenes con IA. Estas herramientas permiten a los creadores producir retratos, personajes y personalidades virtuales completas usando prompts de texto e imágenes de referencia.",
+  "ai_avatar.faq.item3.text": "Los avatares con IA pueden generarse con herramientas como Midjourney, Nano Banana y otros generadores de imágenes con IA. Estas herramientas permiten a los creadores producir retratos, personajes y personalidades virtuales completas usando prompts de texto e imágenes de referencia.",
   "ai_avatar.faq.item4.title": "¿Cómo mantener la consistencia de un avatar con IA?",
   "ai_avatar.faq.item4.text": "La consistencia se logra utilizando la misma descripción del personaje, imágenes de referencia y estructura de prompt. Muchos creadores también elaboran una ficha de personaje que define rasgos faciales, peinado, estilo de ropa e iluminación.",
   "ai_avatar.faq.item5.title": "¿Qué son los prompts de avatar con IA?",
