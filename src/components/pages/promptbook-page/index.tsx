@@ -47,6 +47,7 @@ export default function PromptbookPage({
 
   const {
     id,
+    slug,
     purchaseLink,
     text,
     description,
@@ -60,21 +61,24 @@ export default function PromptbookPage({
   const backUrl = promptBookListPageRoute.getUrl(locale);
   const showRussiaHints = ["en", "ru"].includes(locale);
 
-  const hasCharacterReference = tags.some((item) => {
-    const referenceCategories: PromptCategories[] = [
-      "business",
-      "headshot",
-      "fashion",
-      "fantasy",
-      "red_carpet",
-      "studio",
-      "christmas",
-      "avatar",
-      "character_reference",
-    ];
-    return referenceCategories.includes(item);
-  });
+  const exclude = ["mythical-character-photo"];
 
+  const hasCharacterReference =
+    tags.some((item) => {
+      const referenceCategories: PromptCategories[] = [
+        "business",
+        "headshot",
+        "fashion",
+        "fantasy",
+        "red_carpet",
+        "studio",
+        "christmas",
+        "avatar",
+        "character_reference",
+      ];
+
+      return referenceCategories.includes(item);
+    }) && !exclude.includes(slug);
 
   useEffect(() => {
     reachGoal("promptPage_open", {
@@ -109,7 +113,10 @@ export default function PromptbookPage({
 
           <div className={styles.line}>
             <div className={styles.textBox}>
-              <Advantages data={data} hasCharacterReference={hasCharacterReference} />
+              <Advantages
+                data={data}
+                hasCharacterReference={hasCharacterReference}
+              />
 
               <div className={styles.hr} />
 
