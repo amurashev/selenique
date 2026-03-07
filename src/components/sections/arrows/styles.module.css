@@ -24,7 +24,7 @@
   left: -36px;
   cursor: pointer;
   z-index: 10;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .rightArrow {
@@ -33,15 +33,15 @@
   right: -36px;
   cursor: pointer;
   z-index: 10;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .rightArrowDisabled {
-  color: #444444;
+  /* color: #444444; */
 }
 
 .leftArrowDisabled {
-  color: #444444;
+  /* color: #444444; */
 }
 
 .buttonBox {

@@ -11,8 +11,8 @@ export const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  nextArrow: <SampleNextArrow color="#333333" />,
-  prevArrow: <SamplePrevArrow color="#333333" />,
+  nextArrow: <SampleNextArrow color="#333333" colorDisabled="#cccccc" />,
+  prevArrow: <SamplePrevArrow color="#333333" colorDisabled="#cccccc" />,
   responsive: [
     {
       breakpoint: 1024,
