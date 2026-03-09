@@ -52,27 +52,3 @@ export function SectionColor({
     </FadeInSection>
   );
 }
-
-export function SectionGrayShort({
-  id,
-  title,
-  children,
-  isCentered,
-}: {
-  id?: string;
-  title: string;
-  subTitle?: string;
-  isCentered?: boolean
-  children: React.ReactNode;
-}) {
-  return (
-    <FadeInSection>
-      <div id={id} className={styles.section3}>
-        <div className={styles.section3Inner}>
-          <h2 className={isCentered ? styles.s3TitleIsCentered : styles.s3Title}>{title}</h2>
-          <div className={styles.s3Content}>{children}</div>
-        </div>
-      </div>
-    </FadeInSection>
-  );
-}

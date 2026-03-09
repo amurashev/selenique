@@ -17,7 +17,6 @@ import BasePageLayout from "@/components/layout/base-page";
 import {
   SectionColor,
   SectionGray,
-  SectionGrayShort,
 } from "@/components/sections/landing-black/sections";
 
 import ProductSlider, {
@@ -44,47 +43,23 @@ export default function AiAvatarFAQPage() {
           text={formatMessage({ id: "ai_avatar.faq.text" })}
         />
 
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item1.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item1.text" })}</p>
-        </SectionGrayShort>
-        <hr className={styles.hr} />
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item2.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item2.text" })}</p>
-        </SectionGrayShort>
-        <hr className={styles.hr} />
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item3.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item3.text" })}</p>
-        </SectionGrayShort>
-        <hr className={styles.hr} />
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item4.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item4.text" })}</p>
-        </SectionGrayShort>
-        <hr className={styles.hr} />
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item5.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item5.text" })}</p>
-        </SectionGrayShort>
-        <hr className={styles.hr} />
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item6.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item6.text" })}</p>
-        </SectionGrayShort>
-        <hr className={styles.hr} />
-        <SectionGrayShort
-          title={formatMessage({ id: "ai_avatar.faq.item7.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.faq.item7.text" })}</p>
-        </SectionGrayShort>
+        <div className={innerStyles.list}>
+          <div className={innerStyles.inner}>
+            {[1, 2, 3, 4, 5, 6, 7].map((item) => (
+              <>
+                <div className={innerStyles.item}>
+                  <h2 className={innerStyles.title}>
+                    {formatMessage({ id: `ai_avatar.faq.item${item}.title` })}
+                  </h2>
+                  <p className={innerStyles.text}>
+                    {formatMessage({ id: `ai_avatar.faq.item${item}.text` })}
+                  </p>
+                </div>
+                {item != 7 && <hr className={styles.hr} />}
+              </>
+            ))}
+          </div>
+        </div>
       </main>
 
       <Footer />
