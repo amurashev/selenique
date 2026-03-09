@@ -4,6 +4,9 @@
   gap: 8px;
   margin-bottom: 12px;
 
+  h2 {
+    flex-grow: 1;
+  }
   h3 {
     flex-grow: 1;
   }

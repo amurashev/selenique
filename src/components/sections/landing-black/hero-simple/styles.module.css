@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100lvh - 50px);
-  padding: 0 24px;
+  padding: 0 16px;
   position: relative;
   color: #ffffff;
 }
@@ -36,7 +36,7 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 1.1;
 
   composes: gradientColor;

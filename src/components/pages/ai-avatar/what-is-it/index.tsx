@@ -106,9 +106,9 @@ export default function AiAvatarWhatIsItPage({
 
         <SectionGray
           id="first_section"
-          title={formatMessage({ id: "ai_avatar.section2.title" })}
+          title={formatMessage({ id: "ai_avatar.how_to_create.title" })}
         >
-          <p>{formatMessage({ id: "ai_avatar.section2.text" })}</p>
+          <p>{formatMessage({ id: "ai_avatar.how_to_create.text" })}</p>
 
           <ProductSlider>
             {guidesList.map((item) => {
