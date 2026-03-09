@@ -12,6 +12,13 @@
   width: 100%;
   background-color: var(--foreground);
   font-size: 18px;
+  color: #ffffff;
+}
+
+.texts {
+  p + p {
+    margin-top: 12px;
+  }
 }
 
 .itemsList {
@@ -62,6 +69,11 @@
   font-size: 18px;
   margin-bottom: 4px;
 }
+.blocksListItemImage {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
 .blocksListItemSubList {
   padding-left: 12px;
 
@@ -85,6 +97,15 @@
   composes: blocksListItemSubList;
   list-style: none;
   padding-left: 0px;
+}
+
+
+.hr {
+  height: 1px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #444444;
+  /* background-color: var(--border-dark); */
 }
 
 @media (min-width: 840px) {

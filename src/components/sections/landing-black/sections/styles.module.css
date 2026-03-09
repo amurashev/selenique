@@ -85,6 +85,42 @@
   z-index: 1;
 }
 
+
+
+.section3 {
+  padding: 24px 16px;
+  width: 100%;
+  /* display: grid; */
+  background-color: #222;
+  color: #dddddd;
+}
+
+.section3Inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.s3Title {
+  font-size: 24px;
+  text-transform: uppercase;
+
+  composes: gradientColor;
+}
+
+
+.s3TitleIsCentered {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+
+  composes: gradientColor;
+}
+
+.s3Content {
+  margin-top: 16px;
+}
+
+
 @media (min-width: 840px) {
   .section1 {
     padding: 68px 24px;

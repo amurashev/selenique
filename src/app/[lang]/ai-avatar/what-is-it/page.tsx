@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import AiAvatarPage from "@/components/pages/ai-avatar";
+import AiAvatarWhatIsItPage from "@/components/pages/ai-avatar/what-is-it";
 import Layout from "@/components/layout";
 
-import { i18n, Locale } from "../../../../i18n-config";
+import { i18n, Locale } from "../../../../../i18n-config";
 import getDeviceType from "@/utils/device";
 import { PROMTBOOKS } from "@/content/promptbooks";
 import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
-import { aiAvatarPageRoute, homePage } from "@/constants/routes";
+import { aiAvatarWhatIsItPageRoute, homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 
 export async function generateMetadata({
@@ -23,10 +23,10 @@ export async function generateMetadata({
 
   const messages = (await getDictionary(finalLang)) as Record<string, string>;
 
-  const title = messages["ai_avatar.meta.title"];
-  const description = messages["ai_avatar.meta.description"];
-  const keywords = messages['ai_avatar.meta.keywords']
-  const url = aiAvatarPageRoute.getUrl(finalLang);
+  const title = messages["ai_avatar.what_is_it.meta.title"];
+  const description = messages["ai_avatar.what_is_it.meta.description"];
+  const keywords = messages['ai_avatar.what_is_it.meta.keywords']
+  const url = aiAvatarWhatIsItPageRoute.getUrl(finalLang);
 
   return {
     title,
@@ -47,7 +47,6 @@ export default async function AiAvatarPageEntry({
 }: {
   params: Promise<{ lang: Locale }>;
 }) {
-  const deviceType = await getDeviceType();
   const { lang } = await params;
   const finalLang = lang || i18n.defaultLocale;
 
@@ -55,28 +54,14 @@ export default async function AiAvatarPageEntry({
     return notFound();
   }
 
-  const promptPacks = Object.keys(PROMTBOOKS)
-  .filter((item) => {
-    const promptData = PROMTBOOKS[item];
-    return promptData.tags.includes("avatar");
-  })
-  .map((item) => getPromptBookData(item));
-
-  promptPacks.sort(sortByPoints);
-
   const guidesListId = getGuidesList(finalLang);
   const guidesList = guidesListId.map((item) =>
     getGuideData(item.slug, item.locale)
   );
 
-
   return (
     <Layout locale={finalLang}>
-      <AiAvatarPage
-        promptPacks={promptPacks}
-        guidesList={guidesList}
-      />
-      ;
+      <AiAvatarWhatIsItPage guidesList={guidesList} />
     </Layout>
   );
 }

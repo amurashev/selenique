@@ -18,6 +18,8 @@ import {
   promptsModelPageRoute,
   intensiveNeurovideoPageRoute,
   promptBundleListPageRoute,
+  aiAvatarWhatIsItPageRoute,
+  aiAvatarFAQPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/content/promptbooks";
@@ -69,7 +71,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       promptBookListPageRoute.getUrl(locale),
       guidesListPageRoute.getUrl(locale),
       promptBundleListPageRoute.getUrl(locale),
+
       aiAvatarPageRoute.getUrl(locale),
+      aiAvatarWhatIsItPageRoute.getUrl(locale),
+      aiAvatarFAQPageRoute.getUrl(locale),
+
       affiliatePageRoute.getUrl(locale),
       ...PROMPT_CATEGORIES.map((tag) =>
         promptsCategoryPageRoute.getUrl(locale, { params: { slug: tag } })

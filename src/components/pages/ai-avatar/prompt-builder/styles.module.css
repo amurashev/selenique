@@ -1,5 +1,4 @@
 
-
 .prompts {
   margin-top: 8px;
   display: flex;
@@ -9,7 +8,7 @@
 
 .prompt {
   padding: 16px;
-  background-color: #202020;
+  background-color: #404040;
   border-radius: 12px;
   font-family: Courier, monospace;
   white-space: break-spaces;

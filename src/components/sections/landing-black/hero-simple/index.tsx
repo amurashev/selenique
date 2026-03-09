@@ -1,12 +1,8 @@
 "use client";
 
 import { useIntl } from "react-intl";
-import Link from "next/link";
-
-import { guidePageRoute } from "@/constants/routes";
 
 import styles from "./styles.module.css";
-import { COMMISSION } from "@/constants/affiliate";
 
 const Chevron = () => {
   return (
@@ -29,19 +25,17 @@ const Chevron = () => {
   );
 };
 
-export default function Hero() {
+export default function HeroSimple({ title, text }: { title: string; text: string }) {
   const { formatMessage, locale } = useIntl();
 
   return (
     <div className={styles.hero}>
       <div className={styles.h1Box}>
-        <h1 className={styles.h1}>
-          {formatMessage({ id: "ai_avatar.hero.title" }, { commission: COMMISSION })}
-        </h1>
+        <h1 className={styles.h1}>{title}</h1>
         <div className={styles.textBox}>
           <p
             dangerouslySetInnerHTML={{
-              __html: formatMessage({ id: "ai_avatar.hero.text" }),
+              __html: text,
             }}
           />
         </div>

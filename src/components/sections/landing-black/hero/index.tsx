@@ -31,10 +31,12 @@ const Chevron = () => {
 export default function Hero({
   slug,
   title,
+  hasBuyButton = false,
   languages = [],
 }: {
   slug: string;
   title: string;
+  hasBuyButton?: boolean;
   languages?: string[];
 }) {
   const { formatMessage, locale } = useIntl();
@@ -44,6 +46,7 @@ export default function Hero({
       <div className={styles.h1Box}>
         <span className={styles.h1Sub}>Iconista Lab</span>
         <h1 className={styles.h1}>{title}</h1>
+
         {languages.length > 1 && (
           <div className={styles.languages}>
             <div className={styles.languagesTitle}>
@@ -83,6 +86,26 @@ export default function Hero({
                 );
               })}
             </div>
+          </div>
+        )}
+
+        {hasBuyButton && (
+          <div
+            className={styles.link}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+
+              const element = document.getElementById("price");
+              //you can do it by jquery. no matter
+              element?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest",
+              });
+            }}
+          >
+            {formatMessage({ id: "common.buy_now" })}
           </div>
         )}
       </div>

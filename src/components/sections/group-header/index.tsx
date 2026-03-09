@@ -21,7 +21,7 @@ export default function GroupHeader({
 
   return (
     <div className={styles.box}>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
 
       {href && (
         <div className={styles.buttonBox}>

@@ -14,7 +14,12 @@ export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");
 
 export const affiliatePageRoute = route("/affiliate");
+
 export const aiAvatarPageRoute = route("/ai-avatar");
+export const aiAvatarWhatIsItPageRoute = route("/ai-avatar/what-is-it");
+export const aiAvatarFAQPageRoute = route("/ai-avatar/faq");
+export const aiAvatarGeneratorPageRoute = route("/ai-avatar/generator");
+export const aiAvatarGuidesPageRoute = route("/ai-avatar/guides");
 
 export const productPageRoute = route({
   default: "/services/creating-photo-for-e-commerce",

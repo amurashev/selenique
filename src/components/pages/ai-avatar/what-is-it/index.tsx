@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 import styles from "@/components/sections/landing-black/page.module.css";
 import innerStyles from "./page.module.css";
 
-import { homePage } from "@/constants/routes";
+import { aiAvatarPageRoute, homePage } from "@/constants/routes";
 
 import { PromptBook } from "@/components/types";
 
@@ -14,7 +14,6 @@ import GuideItem from "@/components/sections/guide-item";
 import { Guide } from "@/constants/guides";
 import BasePageLayout from "@/components/layout/base-page";
 
-import Hero from "./hero";
 import {
   SectionColor,
   SectionGray,
@@ -28,56 +27,82 @@ import FAQBase from "@/components/sections/faq";
 import ImagesSlider from "@/components/sections/landing-black/images-slider";
 import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
+import HeroSimple from "@/components/sections/landing-black/hero-simple";
+import Example from "./example";
+// import PromptBuilder from "./prompt-builder";
 
-export default function AiAvatarPage({
+export default function AiAvatarWhatIsItPage({
   guidesList,
-  promptPacks,
 }: {
-  promptPacks: PromptBook[];
   guidesList: Guide[];
 }) {
   const { formatMessage, locale } = useIntl();
 
   return (
     <div className={styles.page}>
-      <ShortHeader route={homePage} />
+      <ShortHeader route={aiAvatarPageRoute} />
       <main className={styles.main}>
-        <Hero />
+        <HeroSimple
+          title={formatMessage({ id: "ai_avatar.what_is_it.title" })}
+          text={formatMessage({ id: "ai_avatar.what_is_it.text2" })}
+        />
 
-        <SectionGray
-          id="first_section"
-          title={formatMessage({ id: "ai_avatar.prompts.title" })}
-        >
-          <p>{formatMessage({ id: "ai_avatar.prompts.text" })}</p>
-
-          <ProductSlider>
-            {promptPacks.map((item) => {
-              return (
-                <ProductSliderItem key={item.slug}>
-                  <PromptbookItem item={item} />
-                </ProductSliderItem>
-              );
-            })}
-          </ProductSlider>
+        <SectionGray id="first_section" title="">
+          <div className={styles.texts}>
+            <p>{formatMessage({ id: "ai_avatar.what_is_it.about.text1" })}</p>
+            <p>{formatMessage({ id: "ai_avatar.what_is_it.about.text2" })}</p>
+            <p>{formatMessage({ id: "ai_avatar.what_is_it.about.text3" })}</p>
+          </div>
         </SectionGray>
 
-        <SectionColor title={formatMessage({ id: "ai_avatar.section3.title" })}>
-          <p>{formatMessage({ id: "ai_avatar.section3.text" })}</p>
-          <div className={innerStyles.prompts}>
-            <div>
-              <h4>{formatMessage({ id: "ai_avatar.section3.item1.title" })}</h4>
-              <p className={innerStyles.prompt}>
-                {formatMessage({ id: "ai_avatar.section3.item1.text" })}
-              </p>
-            </div>
-            <div>
-              <h4>{formatMessage({ id: "ai_avatar.section3.item2.title" })}</h4>
-              <p className={innerStyles.prompt}>
-                {formatMessage({ id: "ai_avatar.section3.item2.text" })}
-              </p>
-            </div>
+        <SectionColor
+          title={formatMessage({ id: "ai_avatar.what_is_it.examples.title" })}
+        >
+          <p>{formatMessage({ id: "ai_avatar.what_is_it.examples.text" })}</p>
+
+          <ProductSlider>
+            {[
+              { index: "lilmiquela", followers: "2.3M" },
+              { index: "noonoouri", followers: "476K" },
+              { index: "fit_aitana", followers: "393K" },
+              { index: "imma.gram", followers: "386K" },
+            ].map((item, key) => (
+              <Example
+                key={key}
+                index={item.index}
+                followers={item.followers}
+              />
+            ))}
+          </ProductSlider>
+        </SectionColor>
+
+        <SectionGray
+          title={formatMessage({ id: "ai_avatar.what_is_it.2026.title" })}
+        >
+          <p>{formatMessage({ id: "ai_avatar.what_is_it.2026.text" })}</p>
+        </SectionGray>
+
+        <SectionColor
+          title={formatMessage({ id: "ai_avatar.what_is_it.why.title" })}
+        >
+          <div className={styles.blocksList3El}>
+            {[1, 2, 3, 4, 5, 6].map((item, key) => (
+              <div key={key} className={styles.blocksListItem}>
+                <h4 className={styles.blocksListItemTitle}>
+                  {formatMessage({
+                    id: `ai_avatar.what_is_it.why.item${key + 1}.title`,
+                  })}
+                </h4>
+                <p>
+                  {formatMessage({
+                    id: `ai_avatar.what_is_it.why.item${key + 1}.text`,
+                  })}
+                </p>
+              </div>
+            ))}
           </div>
         </SectionColor>
+
 
         <SectionGray
           id="first_section"
@@ -95,6 +120,7 @@ export default function AiAvatarPage({
             })}
           </ProductSlider>
         </SectionGray>
+
 
         <SectionColor title="">
           <ImagesSlider
@@ -121,6 +147,8 @@ export default function AiAvatarPage({
             }))}
           />
         </SectionGray>
+
+
       </main>
 
       <Footer />

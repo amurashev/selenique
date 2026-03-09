@@ -52,6 +52,24 @@
   justify-content: center;
 }
 
+.link {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 24px;
+  background-color: #0974e2;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  &:hover {
+    background-color: #3a9bff;
+  }
+}
+
 @keyframes _1jyak14m {
   0% {
     /* opacity: .5; */

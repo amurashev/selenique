@@ -39,6 +39,7 @@ export default function VirtualInfluencePage() {
         <Hero
           slug={slug}
           languages={languages}
+          hasBuyButton
           title={formatMessage({ id: "virtual-influence.title" })}
         />
 
@@ -328,6 +329,7 @@ export default function VirtualInfluencePage() {
         </SectionColor>
 
         <SectionGray
+          id="price"
           title={formatMessage({ id: "virtual-influence.section9.title" })}
           isCentered
         >

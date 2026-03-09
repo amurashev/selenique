@@ -417,6 +417,7 @@ export default function AIForBrandsPage() {
         </SectionColor> */}
 
         <SectionGray
+          id="price"
           title={formatMessage({ id: "ai-for-fashion-brands.price.title" })}
           isCentered
         >

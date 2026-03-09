@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100lvh - 50px);
-  padding: 0 12px;
+  padding: 0 24px;
   position: relative;
   color: #ffffff;
 }
@@ -36,14 +36,14 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  font-size: 32px;
+  font-size: 38px;
   line-height: 1.1;
 
   composes: gradientColor;
 }
 .textBox {
   text-align: center;
-  font-size: 18px;
+  font-size: 21px;
   margin-top: 8px;
   color: var(--text-inversive);
 }
