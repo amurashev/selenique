@@ -2,5 +2,6 @@
   "name": "Portrait Creation Toolkit",
   "summary": "",
   "description": "This guide is a structured reference for creating realistic and controllable AI portraits. It organizes appearance into clearly defined parameters with predefined, AI-friendly values, allowing you to build characters with precision instead of trial and error.",
+  "text": "<h3>What’s included in the guide:</h3><ul><li><strong>Age</strong>— 22 clearly defined age ranges</li><li><strong>Ethnicity</strong>— 21 ethnicity options</li><li><strong>Face params</strong>— 48 facial structure and feature parameters</li><li><strong>Skin</strong>— 37 skin tone values</li><li><strong>Eyes</strong>— 20 eye colors</li><li><strong>Hair</strong>— 48 hair texture, length, and color variations</li><li><strong>Expression</strong>— 42 facial expression options</li><li><strong>30 Different prompt examples</strong> with reference photos</li></ul><p>By combining these parameters, you can quickly generate consistent, believable characters while keeping full control over appearance. The guide helps reduce randomness, avoid distorted or inconsistent faces, and maintain a coherent visual style across multiple images.</p>",
   "why": ""
 }
