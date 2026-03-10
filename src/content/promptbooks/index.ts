@@ -536,4 +536,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     images: [1, 6, 7, 8, 9, 10],
   },
+  "portrait-creation-toolkit": {
+    id: 58,
+    gumroadSlug: "portrait-creation-toolkit",
+    number: 60,
+    tags: ["avatar"],
+    mainCategory: "avatar",
+    type: "pack",
+    images: [1, 6, 7, 8, 9, 10, 11],
+  },
 };
