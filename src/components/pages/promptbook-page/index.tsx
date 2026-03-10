@@ -61,7 +61,7 @@ export default function PromptbookPage({
   const backUrl = promptBookListPageRoute.getUrl(locale);
   const showRussiaHints = ["en", "ru"].includes(locale);
 
-  const exclude = ["mythical-character-photo"];
+  const exclude = ["mythical-character-photo", "portrait-creation-toolkit"];
 
   const hasCharacterReference =
     tags.some((item) => {

@@ -6,7 +6,7 @@ export type GuideLocaleItem = {
   boostyId?: string;
   name: string;
   description: string;
-  price: PriceType;
+  price?: PriceType;
   noLanding?: boolean;
   isBestseller?: boolean;
 };
@@ -97,6 +97,19 @@ export const GUIDES: Record<string, GuideItem> = {
         price: {
           en: 14.9,
         },
+      },
+    },
+  },
+
+  "portrait-creation-toolkit": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 59,
+        gumroadSlug: "create-virtual-influencer-guide",
+        name: "Portrait Creation Toolkit",
+        description:
+          "This guide is a structured reference for creating realistic and controllable AI portraits. It organizes appearance into clearly defined parameters with predefined, AI-friendly values, allowing you to build characters with precision instead of trial and error.",
       },
     },
   },
