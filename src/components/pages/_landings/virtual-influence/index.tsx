@@ -328,20 +328,24 @@ export default function VirtualInfluencePage() {
           </div>
         </SectionColor>
 
-        <SectionGray
-          id="price"
-          title={formatMessage({ id: "virtual-influence.section9.title" })}
-          isCentered
-        >
-          <Price
-            boostyLink={boostyLink}
-            purchaseLink={purchaseLink}
-            price={price}
-            oldPrice={oldPrice}
-            discount={20}
-            summary={formatMessage({ id: `virtual-influence.section9.text1` })}
-          />
-        </SectionGray>
+        {price && (
+          <SectionGray
+            id="price"
+            title={formatMessage({ id: "virtual-influence.section9.title" })}
+            isCentered
+          >
+            <Price
+              boostyLink={boostyLink}
+              purchaseLink={purchaseLink}
+              price={price}
+              oldPrice={oldPrice}
+              discount={20}
+              summary={formatMessage({
+                id: `virtual-influence.section9.text1`,
+              })}
+            />
+          </SectionGray>
+        )}
 
         <SectionColor title="">
           <ImagesSlider

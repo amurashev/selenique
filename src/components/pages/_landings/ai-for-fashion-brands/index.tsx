@@ -416,20 +416,22 @@ export default function AIForBrandsPage() {
           </div>
         </SectionColor> */}
 
-        <SectionGray
-          id="price"
-          title={formatMessage({ id: "ai-for-fashion-brands.price.title" })}
-          isCentered
-        >
-          <Price
-            boostyLink={boostyLink}
-            purchaseLink={purchaseLink}
-            price={price}
-            oldPrice={oldPrice}
-            discount={25}
-            // summary={formatMessage({ id: `ai-for-fashion-brands.price.summary` })}
-          />
-        </SectionGray>
+        {price && (
+          <SectionGray
+            id="price"
+            title={formatMessage({ id: "ai-for-fashion-brands.price.title" })}
+            isCentered
+          >
+            <Price
+              boostyLink={boostyLink}
+              purchaseLink={purchaseLink}
+              price={price}
+              oldPrice={oldPrice}
+              discount={25}
+              // summary={formatMessage({ id: `ai-for-fashion-brands.price.summary` })}
+            />
+          </SectionGray>
+        )}
 
         <SectionColor title="">
           <ImagesSlider
