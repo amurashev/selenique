@@ -543,6 +543,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["avatar"],
     mainCategory: "avatar",
     type: "pack",
-    images: [1, 6, 7, 8, 9],
+    images: [1, 3, 6, 7, 8, 9],
   },
 };
