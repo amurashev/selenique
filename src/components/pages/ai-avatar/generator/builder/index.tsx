@@ -58,7 +58,8 @@ Ethnicity: ${selectedEthnicity}
 Face params: distinctive facial structure.
 Skin: ${selectedSkin} skin tone
 Hair: ${selectedHairStyle} ${selectedHairColor} hair
-Expression: ${selectedExpression}
+Eyes: ${selectedEyeColor} eyes
+Expression: ${selectedExpression} expression
 Style: Portrait photo. Professional photography, ultra realistic
 Lighting: soft natural lighting
 Background: plain white background
