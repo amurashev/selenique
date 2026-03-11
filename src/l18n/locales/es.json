@@ -308,6 +308,7 @@
   "prompts.models.chat_gpt.short_description": "Los prompts de imagen para ChatGPT son instrucciones estructuradas diseñadas para ayudar a la IA a generar imágenes claras, detalladas y visualmente consistentes. Los prompts bien escritos traducen ideas en resultados visuales precisos.",
   "prompts.models.chat_gpt.text": "<section><h2>¿Para qué se utilizan los prompts de imagen para ChatGPT?</h2><p>Los prompts de imagen para ChatGPT se utilizan para:</p><ul><li>imágenes e ilustraciones generadas por IA</li><li>conceptos visuales e ideas creativas</li><li>retratos y visuales de personajes</li><li>imágenes de productos y marcas</li><li>escenas artísticas y experimentales</li></ul><p>Ayudan a reducir la ambigüedad y a guiar a la IA hacia resultados visuales intencionales.</p></section><section><h2>Qué puedes crear con los prompts de imagen para ChatGPT</h2><p>Con prompts profesionales de imagen para ChatGPT, puedes:</p><ul><li>generar conceptos de imagen detallados</li><li>crear visuales realistas o estilizados</li><li>diseñar series de imágenes consistentes</li><li>traducir ideas abstractas en imágenes</li><li>adaptar visuales a diferentes estilos y casos de uso</li></ul><p>Los prompts estructurados convierten a ChatGPT en una herramienta de planificación y generación visual.</p></section><section><h2>Por qué los prompts de imagen para ChatGPT listos para usar funcionan mejor</h2><p>La generación de imágenes requiere claridad. Los prompts profesionales de imagen para ChatGPT incluyen:</p><ul><li>descripciones claras del sujeto y la escena</li><li>estilo, atmósfera y composición definidos</li><li>guía de iluminación y perspectiva</li><li>lenguaje conciso y sin ambigüedades</li></ul><p>Esto mejora la precisión visual y la consistencia entre las imágenes generadas.</p></section><section><h2>Para quién son los prompts de imagen para ChatGPT</h2><p>Los prompts de imagen para ChatGPT son ideales para:</p><ul><li>artistas y creadores de IA</li><li>diseñadores e ilustradores</li><li>creadores de contenido</li><li>especialistas en marketing y construcción de marcas</li><li>educadores y estudiantes</li><li>cualquier persona que genere imágenes con IA</li></ul><p>Si quieres más control sobre los visuales generados con IA, los prompts de imagen para ChatGPT son esenciales.</p></section><section><h2>Empieza a usar los prompts de imagen para ChatGPT hoy</h2><p>Los prompts de imagen para ChatGPT no tratan de adivinar. Tratan de claridad, estructura e intención visual.</p><p>Usa los prompts de imagen para ChatGPT para convertir ideas en imágenes con IA limpias, fiables y expresivas.</p></section>",
 
+
   "ai_avatar.meta.title": "Prompts y recursos de avatar con IA para crear avatares realistas",
   "ai_avatar.meta.description": "Crea impresionantes avatares con IA con prompts, plantillas y guías profesionales. Aprende a generar personajes consistentes para redes sociales, branding e influencers virtuales.",
   "ai_avatar.meta.keywords": "prompts de avatar con IA, prompts para generador de avatar con IA, crear avatares con IA, prompts de personajes con IA, prompts de influencer con IA, prompts de avatar virtual, prompts de retrato con IA, prompts de avatar Nano Banana, personaje consistente con IA, paquete de prompts de avatar con IA",
@@ -316,10 +317,10 @@
   "ai_avatar.hero.text": "Descubre prompts probados para avatares con IA, referencias de estilo y guías que te ayudan a producir personajes realistas y coherentes.",
 
   "ai_avatar.prompts.title": "Prompts probados para avatares realistas con IA",
-  "ai_avatar.prompts.text": "Los prompts bien diseñados para avatares con IA definen la apariencia, la ropa, la iluminación y el estilo, permitiéndote crear personajes consistentes y realistas. Al mantener la estructura principal y ajustar solo detalles como la pose o el fondo, puedes generar múltiples avatares con una identidad visual reconocible.",
+  "ai_avatar.prompts.text": "Los prompts bien elaborados para avatares con IA definen la apariencia, la ropa, la iluminación y el estilo, permitiéndote crear personajes consistentes y realistas. Al mantener la estructura principal y ajustar solo detalles como la pose o el fondo, puedes generar múltiples avatares con una identidad visual reconocible.",
 
-  "ai_avatar.section2.title": "Materiales para crear avatares con IA",
-  "ai_avatar.section2.text": "Crear un buen avatar con IA no se trata solo de escribir un prompt. La calidad y la consistencia del personaje a menudo dependen de los materiales que utilices durante el proceso de generación. Estos materiales ayudan a guiar a la IA, controlar la apariencia y mantener una identidad visual en múltiples imágenes.",
+  "ai_avatar.how_to_create.title": "Cómo crear un avatar con IA",
+  "ai_avatar.how_to_create.text": "Crear un buen avatar con IA no se trata solo de escribir un prompt. La calidad y la consistencia del personaje a menudo dependen de los materiales que utilices durante el proceso de generación. Estos materiales ayudan a guiar a la IA, controlar la apariencia y mantener una identidad visual en múltiples imágenes.",
 
   "ai_avatar.section3.title": "Ejemplos de prompts para avatares con IA",
   "ai_avatar.section3.text": "Estructura de ejemplo para crear avatares:",
@@ -330,24 +331,74 @@
   "ai_avatar.section3.item2.title": "Estilo influencer virtual",
   "ai_avatar.section3.item2.text": "Avatar de influencer digital con estilo, atuendo streetwear moderno, iluminación cinematográfica, fotografía editorial de moda, fondo urbano, retrato ultra realista",
 
-  "ai_avatar.faq.title": "Preguntas frecuentes",
+  "ai_avatar.what_is_it.meta.title": "Avatar con IA: significado, ejemplos y cómo funciona",
+  "ai_avatar.what_is_it.meta.description": "Un avatar con IA es un retrato digital creado con inteligencia artificial que representa a una persona de forma realista o estilizada. En lugar de tomar una fotografía tradicional, la IA analiza los rasgos faciales de fotos subidas y genera nuevas imágenes con diferentes estilos, iluminación, ropa y fondos.",
+  "ai_avatar.what_is_it.meta.keywords": "",
+
+  "ai_avatar.what_is_it.title": "¿Qué es un avatar con IA?",
+  "ai_avatar.what_is_it.text1": "Significado, ejemplos y cómo funciona",
+  "ai_avatar.what_is_it.text2": "Imagina a un influencer de redes sociales que nunca tiene un mal día, nunca cancela una sesión, nunca se ve envuelto en un escándalo y publica contenido perfecto las 24 horas del día. Ese es un avatar con IA",
+
+  "ai_avatar.what_is_it.about.text1": "Un avatar con IA es un retrato digital creado mediante inteligencia artificial que representa a una persona de forma realista o estilizada. En lugar de tomar una fotografía tradicional, la IA analiza los rasgos faciales de fotos subidas y genera nuevas imágenes con diferentes estilos, iluminación, ropa y fondos.",
+  "ai_avatar.what_is_it.about.text2": "Los avatares con IA se utilizan comúnmente para perfiles de redes sociales, fotos profesionales, sitios web, perfiles de gaming y marca personal. Con la tecnología moderna de IA, una sola foto puede transformarse en decenas de retratos únicos que parecen sesiones fotográficas profesionales.",
+  "ai_avatar.what_is_it.about.text3": "Por esta razón, los avatares con IA se han convertido en una solución popular para creadores, emprendedores, freelancers y empresas que desean imágenes de perfil de alta calidad sin organizar una sesión de fotos real.",
+
+  "ai_avatar.what_is_it.examples.title": "Ejemplos de avatares con IA",
+  "ai_avatar.what_is_it.examples.text": "Probablemente ya los hayas visto",
+
+  "ai_avatar.what_is_it.examples.lilmiquela": "Colaboró con Prada, Calvin Klein y Samsung; una de las primeras y más famosas influencers virtuales.",
+  "ai_avatar.what_is_it.examples.noonoouri": "Avatar de moda estilo caricatura que ha colaborado con Dior, Versace y otras marcas de lujo, además de firmar como artista musical.",
+  "ai_avatar.what_is_it.examples.fit_aitana": "Influencer hiperrealista de fitness y moda creada con IA en Barcelona, que según se informa gana alrededor de 10–11 mil dólares al mes con acuerdos de marca y suscripciones.",
+  "ai_avatar.what_is_it.examples.imma.gram": "El primer humano virtual de Japón, que colabora con IKEA, Hugo Boss y Porsche.",
+
+  "ai_avatar.what_is_it.2026.title": "2026 es el año del gran salto",
+  "ai_avatar.what_is_it.2026.text": "Los creadores con IA ya no son curiosidades experimentales: son participantes activos en la moda, el estilo de vida, la cultura y la narrativa de marca. Las herramientas para crearlos nunca han sido tan accesibles, el mercado nunca ha tenido tanta demanda y la oportunidad de entrar temprano sigue abierta.",
+
+  "ai_avatar.what_is_it.why.title": "¿Por qué crear un avatar con IA?",
+
+  "ai_avatar.what_is_it.why.item1.title": "Sin límites",
+  "ai_avatar.what_is_it.why.item1.text": "Tu avatar puede estar en cualquier lugar, vestir cualquier cosa y representar cualquier estética, sin logística, costes de viaje ni conflictos de agenda.",
+
+  "ai_avatar.what_is_it.why.item2.title": "Siempre activo",
+  "ai_avatar.what_is_it.why.item2.text": "Publica todos los días, responde a las tendencias en horas y nunca necesita vacaciones ni sufre agotamiento.",
+
+  "ai_avatar.what_is_it.why.item3.title": "Seguro para la marca",
+  "ai_avatar.what_is_it.why.item3.text": "Controlas cada palabra, cada imagen y cada mensaje, con riesgo prácticamente nulo de crisis de relaciones públicas.",
+
+  "ai_avatar.what_is_it.why.item4.title": "Escala infinitamente",
+  "ai_avatar.what_is_it.why.item4.text": "Un avatar puede cubrir múltiples nichos, idiomas y audiencias al mismo tiempo.",
+
+  "ai_avatar.what_is_it.why.item5.title": "Monetiza como un influencer real",
+  "ai_avatar.what_is_it.why.item5.text": "acuerdos con marcas, publicaciones patrocinadas, merchandising y colaboraciones, pero con márgenes que un creador humano difícilmente podría alcanzar.",
+
+  "ai_avatar.what_is_it.why.item6.title": "El algoritmo los favorece",
+  "ai_avatar.what_is_it.why.item6.text": "Instagram y TikTok están impulsando activamente a los creadores virtuales, dando a nuevas cuentas de IA un alcance orgánico que a los humanos les lleva años construir.",
+
+  "ai_avatar.faq.title": "Preguntas frecuentes sobre avatares con IA",
+  "ai_avatar.faq.text": "El FAQ sobre avatares con IA responde a las preguntas más comunes sobre los avatares generados por IA, explicando qué es un avatar con IA, cómo funciona y cómo crear uno.",
+
   "ai_avatar.faq.item1.title": "¿Qué es un avatar con IA?",
   "ai_avatar.faq.item1.text": "Un avatar con IA es un personaje digital generado con herramientas de inteligencia artificial como Nano Banana u otros generadores de imágenes. Estos avatares pueden parecer retratos realistas, personajes estilizados o influencers virtuales y se utilizan a menudo para redes sociales, branding y creación de contenido digital.",
+
   "ai_avatar.faq.item2.title": "¿Cómo se crea un avatar con IA?",
   "ai_avatar.faq.item2.text": "Para crear un avatar con IA normalmente necesitas tres cosas: un prompt claro que describa al personaje, imágenes de referencia opcionales para guiar la apariencia y un generador de imágenes con IA. El prompt define características como el rostro, la ropa, la iluminación y el estilo fotográfico.",
+
   "ai_avatar.faq.item3.title": "¿Qué herramientas pueden generar avatares con IA?",
-  "ai_avatar.faq.item3.text": "Los avatares con IA pueden generarse con herramientas como Midjourney, Nano Banana y otros generadores de imágenes con IA. Estas herramientas permiten a los creadores producir retratos, personajes y personalidades virtuales completas usando prompts de texto e imágenes de referencia.",
+  "ai_avatar.faq.item3.text": "Los avatares con IA pueden generarse con herramientas como Midjourney, Nano Banana y otros generadores de imágenes con IA. Estas herramientas permiten a los creadores producir retratos, personajes y personalidades virtuales completas utilizando prompts de texto e imágenes de referencia.",
+
   "ai_avatar.faq.item4.title": "¿Cómo mantener la consistencia de un avatar con IA?",
   "ai_avatar.faq.item4.text": "La consistencia se logra utilizando la misma descripción del personaje, imágenes de referencia y estructura de prompt. Muchos creadores también elaboran una ficha de personaje que define rasgos faciales, peinado, estilo de ropa e iluminación.",
+
   "ai_avatar.faq.item5.title": "¿Qué son los prompts de avatar con IA?",
   "ai_avatar.faq.item5.text": "Los prompts de avatar con IA son instrucciones de texto que indican a la IA cómo generar un avatar. Un buen prompt incluye detalles sobre la apariencia, la iluminación, el ángulo de cámara, la ropa y el entorno.",
+
   "ai_avatar.faq.item6.title": "¿Se pueden usar avatares con IA en redes sociales?",
   "ai_avatar.faq.item6.text": "Sí. Muchos creadores usan avatares con IA para perfiles en redes sociales, influencers virtuales, visuales de marketing y contenido narrativo. Los avatares consistentes ayudan a crear identidades digitales reconocibles.",
+
   "ai_avatar.faq.item7.title": "¿Qué materiales ayudan a crear mejores avatares con IA?",
   "ai_avatar.faq.item7.text": "Los materiales útiles incluyen fotos de referencia, referencias de estilo, guías de poses, plantillas de prompts y fichas de personaje. Estos elementos ayudan a mantener la consistencia visual en múltiples imágenes.",
 
   "ai_avatar.gallery.title": "Galería",
-
 
   "virtual-influence.title": "Virtual Influence: The 48-Hour Playbook",
   "virtual-influence.section1.title": "CREATE YOUR VIRTUAL INFLUENCER IN 48 HOURS",
