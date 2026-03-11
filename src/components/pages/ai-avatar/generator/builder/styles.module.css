@@ -1,0 +1,63 @@
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textareaBox {
+  padding: 8px 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--foreground);
+  white-space: pre-wrap;
+  line-height: 1.3;
+  font-size: 15px;
+}
+
+.textareaHidden {
+  display: none;
+}
+
+.copyButton {
+  border: none;
+  outline: none;
+  background-color: var(--info-3);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  /* font-size: 15px; */
+  cursor: pointer;
+}
+
+
+@media (min-width: 760px) {
+
+ 
+ 
+}
+  

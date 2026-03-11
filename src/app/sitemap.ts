@@ -20,6 +20,7 @@ import {
   promptBundleListPageRoute,
   aiAvatarWhatIsItPageRoute,
   aiAvatarFAQPageRoute,
+  aiAvatarGeneratorPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/content/promptbooks";
@@ -75,6 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       aiAvatarPageRoute.getUrl(locale),
       aiAvatarWhatIsItPageRoute.getUrl(locale),
       aiAvatarFAQPageRoute.getUrl(locale),
+      aiAvatarGeneratorPageRoute.getUrl(locale),
 
       affiliatePageRoute.getUrl(locale),
       ...PROMPT_CATEGORIES.map((tag) =>

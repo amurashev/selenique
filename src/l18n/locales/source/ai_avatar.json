@@ -66,5 +66,45 @@
   "ai_avatar.faq.item6.text": "Yes. Many creators use AI avatars for social media profiles, virtual influencers, marketing visuals, and storytelling content. Consistent avatars can help build recognizable digital identities.",
   "ai_avatar.faq.item7.title": "What materials help create better AI avatars?",
   "ai_avatar.faq.item7.text": "Useful materials include reference photos, style references, pose guides, prompt templates, and character sheets. These elements help maintain visual consistency across multiple images.",
-  "ai_avatar.gallery.title": "Gallery"
+  "ai_avatar.gallery.title": "Gallery",
+
+  "ai_avatar.generator.title": "AI Avatar Generator",
+  "ai_avatar.generator.text": "An AI Avatar Generator is a tool that helps you create detailed prompts for generating AI avatars with precise control over appearance. Instead of guessing how to describe a face, body, or style, this generator lets you build a complete avatar prompt using structured parameters.",
+
+  "ai_avatar.generator.how.title": "How the AI Avatar Prompt Generator Works",
+  "ai_avatar.generator.how.text1": "The generator uses a step-by-step system where you select or customize each aspect of your AI avatar’s appearance.",
+  "ai_avatar.generator.how.text2": "Once selected, the generator combines all parameters into a single optimized AI avatar prompt.",
+  "ai_avatar.generator.how.text3": "You can use this prompt on any AI tool you use: (Nano banana, Midjourney, Gemini, ChatGPT)",
+
+  "ai_avatar.generator.why.title": "Why Use an AI Avatar Prompt Generator",
+  "ai_avatar.generator.why.text1": "Manually writing AI prompts often leads to inconsistent results. A prompt generator solves this problem.",
+  "ai_avatar.generator.why.text2": "This makes the tool ideal for professional headshots, branding avatars, social media portraits, and creative characters.",
+  "ai_avatar.generator.why.benefits.title": "Why Use an AI Avatar Prompt Generatorr",
+  "ai_avatar.generator.why.benefits.item1": "consistent avatar appearance across generations",
+  "ai_avatar.generator.why.benefits.item2": "precise control over visual details",
+  "ai_avatar.generator.why.benefits.item3": "faster prompt creation",
+  "ai_avatar.generator.why.benefits.item4": "fewer failed generations",
+  "ai_avatar.generator.why.benefits.item5": "suitable for beginners and advanced users",
+  "ai_avatar.generator.builder.cta": "Copy",
+  "ai_avatar.generator.builder.gender.title": "Select gender",
+  "ai_avatar.generator.builder.age.title": "Define age",
+  "ai_avatar.generator.builder.ethnicity.title": "Ethnicity",
+  "ai_avatar.generator.builder.hair_style.title": "Define hair style",
+  "ai_avatar.generator.builder.hair_color.title": "Select hair color",
+  "ai_avatar.generator.builder.skin.title": "Select skin tone",
+  "ai_avatar.generator.builder.expression.title": "Select facial expression",
+  "ai_avatar.generator.builder.eye.title": "Select eye color",
+
+  "ai_avatar.generator.full.title": "Get more advantages using our toolkit",
+  "ai_avatar.generator.full.cta": "Try it",
+
+  "ai_avatar.generator.faq.title": "AI Avatar Generator FAQ",
+  "ai_avatar.generator.faq.item1.title": "What is an AI avatar prompt generator?",
+  "ai_avatar.generator.faq.item1.text": "It is a tool that builds detailed appearance prompts for generating AI avatars.",
+  "ai_avatar.generator.faq.item2.title": "Can I control facial features?",
+  "ai_avatar.generator.faq.item2.text": "Yes. The generator includes parameters for face shape, eyes, skin tone, and more.",
+  "ai_avatar.generator.faq.item3.title": "Is this suitable for beginners?",
+  "ai_avatar.generator.faq.item3.text": "Yes. The structured interface guides users step by step.",
+  "ai_avatar.generator.faq.item4.title": "Can I reuse prompts?",
+  "ai_avatar.generator.faq.item4.text": "Yes. Generated prompts can be saved and reused for consistent results."
 }

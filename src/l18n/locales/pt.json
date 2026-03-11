@@ -382,6 +382,48 @@
   "ai_avatar.faq.item7.text": "Los materiales útiles incluyen fotos de referencia, referencias de estilo, guías de poses, plantillas de prompts y fichas de personaje. Estos elementos ayudan a mantener la consistencia visual en múltiples imágenes.",
 
   "ai_avatar.gallery.title": "Galería",
+
+  "ai_avatar.generator.title": "Gerador de Avatar com IA",
+  "ai_avatar.generator.text": "Um Gerador de Avatar com IA é uma ferramenta que ajuda você a criar prompts detalhados para gerar avatares de IA com controle preciso sobre a aparência. Em vez de adivinhar como descrever um rosto, corpo ou estilo, este gerador permite construir um prompt completo de avatar usando parâmetros estruturados.",
+
+  "ai_avatar.generator.how.title": "Como funciona o Gerador de Prompts para Avatar com IA",
+  "ai_avatar.generator.how.text1": "O gerador usa um sistema passo a passo no qual você seleciona ou personaliza cada aspecto da aparência do seu avatar de IA.",
+  "ai_avatar.generator.how.text2": "Depois de selecionados, o gerador combina todos os parâmetros em um único prompt de avatar de IA otimizado.",
+  "ai_avatar.generator.how.text3": "Você pode usar esse prompt em qualquer ferramenta de IA que utilize: (Nano Banana, Midjourney, Gemini, ChatGPT)",
+
+  "ai_avatar.generator.why.title": "Por que usar um Gerador de Prompts de Avatar com IA",
+  "ai_avatar.generator.why.text1": "Escrever prompts de IA manualmente muitas vezes leva a resultados inconsistentes. Um gerador de prompts resolve esse problema.",
+  "ai_avatar.generator.why.text2": "Isso torna a ferramenta ideal para fotos profissionais, avatares de marca, retratos para redes sociais e personagens criativos.",
+  "ai_avatar.generator.why.benefits.title": "Por que usar um Gerador de Prompts de Avatar com IA",
+  "ai_avatar.generator.why.benefits.item1": "aparência de avatar consistente entre gerações",
+  "ai_avatar.generator.why.benefits.item2": "controle preciso sobre os detalhes visuais",
+  "ai_avatar.generator.why.benefits.item3": "criação de prompts mais rápida",
+  "ai_avatar.generator.why.benefits.item4": "menos gerações com falha",
+  "ai_avatar.generator.why.benefits.item5": "adequado para iniciantes e usuários avançados",
+
+  "ai_avatar.generator.builder.cta": "Copiar",
+  "ai_avatar.generator.builder.gender.title": "Selecionar gênero",
+  "ai_avatar.generator.builder.age.title": "Definir idade",
+  "ai_avatar.generator.builder.ethnicity.title": "Etnia",
+  "ai_avatar.generator.builder.hair_style.title": "Definir estilo de cabelo",
+  "ai_avatar.generator.builder.hair_color.title": "Selecionar cor do cabelo",
+  "ai_avatar.generator.builder.skin.title": "Selecionar tom de pele",
+  "ai_avatar.generator.builder.expression.title": "Selecionar expressão facial",
+  "ai_avatar.generator.builder.eye.title": "Selecionar cor dos olhos",
+
+  "ai_avatar.generator.full.title": "Obtenha mais vantagens usando nosso toolkit",
+  "ai_avatar.generator.full.cta": "Experimentar",
+
+  "ai_avatar.generator.faq.title": "FAQ do Gerador de Avatar com IA",
+  "ai_avatar.generator.faq.item1.title": "O que é um gerador de prompts de avatar com IA?",
+  "ai_avatar.generator.faq.item1.text": "É uma ferramenta que cria prompts detalhados de aparência para gerar avatares com IA.",
+  "ai_avatar.generator.faq.item2.title": "Posso controlar as características faciais?",
+  "ai_avatar.generator.faq.item2.text": "Sim. O gerador inclui parâmetros para formato do rosto, olhos, tom de pele e muito mais.",
+  "ai_avatar.generator.faq.item3.title": "Isso é adequado para iniciantes?",
+  "ai_avatar.generator.faq.item3.text": "Sim. A interface estruturada guia os usuários passo a passo.",
+  "ai_avatar.generator.faq.item4.title": "Posso reutilizar prompts?",
+  "ai_avatar.generator.faq.item4.text": "Sim. Os prompts gerados podem ser salvos e reutilizados para resultados consistentes.",
+  
   
 
   "virtual-influence.title": "Virtual Influence: The 48-Hour Playbook",

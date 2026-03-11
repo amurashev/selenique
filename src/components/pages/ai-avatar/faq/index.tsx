@@ -5,26 +5,8 @@ import { useIntl } from "react-intl";
 import styles from "@/components/sections/landing-black/page.module.css";
 import innerStyles from "./page.module.css";
 
-import { aiAvatarPageRoute, homePage } from "@/constants/routes";
+import { aiAvatarPageRoute } from "@/constants/routes";
 
-import { PromptBook } from "@/components/types";
-
-import PromptbookItem from "@/components/sections/promptbook-item";
-import GuideItem from "@/components/sections/guide-item";
-import { Guide } from "@/constants/guides";
-import BasePageLayout from "@/components/layout/base-page";
-
-import {
-  SectionColor,
-  SectionGray,
-} from "@/components/sections/landing-black/sections";
-
-import ProductSlider, {
-  ProductSliderItem,
-} from "@/components/pages/_lists/promptbook-list/product-slider";
-import GroupHeader from "@/components/sections/group-header";
-import FAQBase from "@/components/sections/faq";
-import ImagesSlider from "@/components/sections/landing-black/images-slider";
 import ShortHeader from "@/components/layout/short-header";
 import Footer from "@/components/layout/footer";
 import HeroSimple from "@/components/sections/landing-black/hero-simple";

@@ -10,7 +10,7 @@ import { PROMTBOOKS } from "@/content/promptbooks";
 import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
-import { aiAvatarPageRoute, homePage } from "@/constants/routes";
+import { aiAvatarPageRoute } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 
 export async function generateMetadata({
@@ -33,7 +33,7 @@ export async function generateMetadata({
     description,
     keywords,
     openGraph: {
-      images: [`https://www.selenique.space/promptbooks/33/1.jpg`],
+      images: [`https://www.selenique.space/promptbooks/33/1.jpg`], // TODO: update
       title,
       description,
       url: `https://www.selenique.space${url}`,

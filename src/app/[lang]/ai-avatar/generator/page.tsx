@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import AiAvatarFAQPage from "@/components/pages/ai-avatar/faq";
+import AiAvatarGeneratorPage from "@/components/pages/ai-avatar/generator";
 import Layout from "@/components/layout";
 
 import { i18n, Locale } from "../../../../../i18n-config";
@@ -10,7 +10,7 @@ import { PROMTBOOKS } from "@/content/promptbooks";
 import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
-import { aiAvatarWhatIsItPageRoute, homePage } from "@/constants/routes";
+import { aiAvatarGeneratorPageRoute, homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 
 export async function generateMetadata({
@@ -23,17 +23,17 @@ export async function generateMetadata({
 
   const messages = (await getDictionary(finalLang)) as Record<string, string>;
 
-  const title = messages["ai_avatar.faq.title"];
-  const description = messages["ai_avatar.faq.text"];
-  const keywords = messages['ai_avatar.faq.meta.keywords']
-  const url = aiAvatarWhatIsItPageRoute.getUrl(finalLang);
+  const title = messages["ai_avatar.generator.title"];
+  const description = messages["ai_avatar.generator.text"];
+  const keywords = messages['ai_avatar.generator.meta.keywords'] || ''
+  const url = aiAvatarGeneratorPageRoute.getUrl(finalLang);
 
   return {
     title,
     description,
     keywords,
     openGraph: {
-      images: [`https://www.selenique.space/promptbooks/33/1.jpg`],
+      images: [`https://www.selenique.space/promptbooks/33/1.jpg`], // TODO: update
       title,
       description,
       url: `https://www.selenique.space${url}`,
@@ -42,7 +42,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function AiAvatarPageEntry({
+export default async function AiAvatarGeneratorPageEntry({
   params,
 }: {
   params: Promise<{ lang: Locale }>;
@@ -54,9 +54,11 @@ export default async function AiAvatarPageEntry({
     return notFound();
   }
 
+  const promptPack = getPromptBookData('portrait-creation-toolkit')
+
   return (
     <Layout locale={finalLang}>
-      <AiAvatarFAQPage />
+      <AiAvatarGeneratorPage promptPack={promptPack} />
     </Layout>
   );
 }

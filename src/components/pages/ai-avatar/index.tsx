@@ -5,7 +5,12 @@ import { useIntl } from "react-intl";
 // import styles from "@/components/sections/landing-black/page.module.css";
 import styles from "./page.module.css";
 
-import { aiAvatarFAQPageRoute, aiAvatarWhatIsItPageRoute, homePage } from "@/constants/routes";
+import {
+  aiAvatarFAQPageRoute,
+  aiAvatarGeneratorPageRoute,
+  aiAvatarWhatIsItPageRoute,
+  homePage,
+} from "@/constants/routes";
 
 import { PromptBook } from "@/components/types";
 
@@ -76,6 +81,21 @@ export default function AiAvatarPage({
 
         <div className={styles.chapter}>
           <div className={styles.chapterRow1}>
+            <h2>{formatMessage({ id: "ai_avatar.generator.title" })}</h2>
+            <p>{formatMessage({ id: "ai_avatar.generator.text" })}</p>
+          </div>
+          <Link
+            href={aiAvatarGeneratorPageRoute.getUrl(locale)}
+            className={styles.chapterRow2}
+          >
+            <ChevronRight size={36} />
+          </Link>
+        </div>
+
+        <hr className={styles.hr} />
+
+        <div className={styles.chapter}>
+          <div className={styles.chapterRow1}>
             <h2>{formatMessage({ id: "ai_avatar.faq.title" })}</h2>
             <p>{formatMessage({ id: "ai_avatar.faq.text" })}</p>
           </div>
@@ -86,7 +106,6 @@ export default function AiAvatarPage({
             <ChevronRight size={36} />
           </Link>
         </div>
-
 
         <hr className={styles.hr} />
 

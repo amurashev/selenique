@@ -386,6 +386,49 @@
   "ai_avatar.faq.item7.text": "Полезные материалы включают референс-фото, стилевые референсы, гайды по позам, шаблоны промптов и character sheets. Эти элементы помогают сохранять визуальную консистентность на разных изображениях.",
 
   "ai_avatar.gallery.title": "Галерея",
+
+  "ai_avatar.generator.title": "Генератор AI-аватаров",
+  "ai_avatar.generator.text": "Генератор AI-аватаров — это инструмент, который помогает создавать подробные промпты для генерации AI-аватаров с точным контролем внешности. Вместо того чтобы угадывать, как описать лицо, тело или стиль, этот генератор позволяет собрать полноценный промпт для аватара с помощью структурированных параметров.",
+
+  "ai_avatar.generator.how.title": "Как работает генератор промптов для AI-аватаров",
+  "ai_avatar.generator.how.text1": "Генератор использует пошаговую систему, в которой вы выбираете или настраиваете каждый аспект внешности вашего AI-аватара.",
+  "ai_avatar.generator.how.text2": "После выбора всех параметров генератор объединяет их в один оптимизированный промпт для AI-аватара.",
+  "ai_avatar.generator.how.text3": "Вы можете использовать этот промпт в любом AI-инструменте: (Nano Banana, Midjourney, Gemini, ChatGPT).",
+
+  "ai_avatar.generator.why.title": "Почему стоит использовать генератор промптов для AI-аватаров",
+  "ai_avatar.generator.why.text1": "Ручное написание AI-промптов часто приводит к нестабильным результатам. Генератор промптов решает эту проблему.",
+  "ai_avatar.generator.why.text2": "Поэтому инструмент идеально подходит для профессиональных портретов, бренд-аватаров, изображений для социальных сетей и креативных персонажей.",
+
+  "ai_avatar.generator.why.benefits.title": "Преимущества генератора промптов для AI-аватаров",
+  "ai_avatar.generator.why.benefits.item1": "консистентная внешность аватара при разных генерациях",
+  "ai_avatar.generator.why.benefits.item2": "точный контроль визуальных деталей",
+  "ai_avatar.generator.why.benefits.item3": "быстрое создание промптов",
+  "ai_avatar.generator.why.benefits.item4": "меньше неудачных генераций",
+  "ai_avatar.generator.why.benefits.item5": "подходит как для новичков, так и для продвинутых пользователей",
+
+  "ai_avatar.generator.builder.cta": "Скопировать",
+  "ai_avatar.generator.builder.gender.title": "Выберите пол",
+  "ai_avatar.generator.builder.age.title": "Укажите возраст",
+  "ai_avatar.generator.builder.ethnicity.title": "Этничность",
+  "ai_avatar.generator.builder.hair_style.title": "Укажите стиль волос",
+  "ai_avatar.generator.builder.hair_color.title": "Выберите цвет волос",
+  "ai_avatar.generator.builder.skin.title": "Выберите тон кожи",
+  "ai_avatar.generator.builder.expression.title": "Выберите выражение лица",
+  "ai_avatar.generator.builder.eye.title": "Выберите цвет глаз",
+
+  "ai_avatar.generator.full.title": "Получите больше возможностей с нашим набором инструментов",
+  "ai_avatar.generator.full.cta": "Попробовать",
+
+  "ai_avatar.generator.faq.title": "FAQ по генератору AI-аватаров",
+  "ai_avatar.generator.faq.item1.title": "Что такое генератор промптов для AI-аватаров?",
+  "ai_avatar.generator.faq.item1.text": "Это инструмент, который создаёт подробные промпты для внешности при генерации AI-аватаров.",
+  "ai_avatar.generator.faq.item2.title": "Можно ли контролировать черты лица?",
+  "ai_avatar.generator.faq.item2.text": "Да. Генератор включает параметры формы лица, глаз, тона кожи и других деталей.",
+  "ai_avatar.generator.faq.item3.title": "Подходит ли это для новичков?",
+  "ai_avatar.generator.faq.item3.text": "Да. Структурированный интерфейс пошагово направляет пользователя.",
+  "ai_avatar.generator.faq.item4.title": "Можно ли повторно использовать промпты?",
+  "ai_avatar.generator.faq.item4.text": "Да. Сгенерированные промпты можно сохранять и использовать повторно для стабильных результатов.",
+  
   
   
   "virtual-influence.title": "Пошаговый гайд по созданию ИИ инфлюенсера",

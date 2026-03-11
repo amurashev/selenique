@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #555555;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.itemIsActive {
+  composes: item;
+
+  background-color: var(--info-3);
+}
+
+/* @media (min-width: 760px) {
+  .item {
+    font-size: 15px;
+    padding: 4px 8px;
+  }
+} */
