@@ -98,7 +98,7 @@ Camera: 85mm portrait lens`;
             setSelectedExpression,
           ],
         ].map((item) => (
-          <div className={styles.item}>
+          <div className={styles.item} key={item[0] as string}>
             <h3>
               {formatMessage({
                 id: `ai_avatar.generator.builder.${item[0]}.title`,
