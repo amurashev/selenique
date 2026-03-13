@@ -545,4 +545,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     images: [1, 3, 6, 7, 8, 9],
   },
+  "cozy-aesthetic": {
+    id: 60,
+    gumroadSlug: "cozy-aesthetic",
+    number: 50,
+    tags: ["lifestyle"],
+    mainCategory: 'lifestyle',
+    type: "pack",
+    images: [1, 3, 4, 6, 7],
+  },
 };
+
+

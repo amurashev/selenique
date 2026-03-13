@@ -69,6 +69,7 @@ export default function PromptbookPage({
         "business",
         "headshot",
         "fashion",
+        'lifestyle',
         "fantasy",
         "red_carpet",
         "studio",
