@@ -554,6 +554,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     images: [1, 3, 4, 6, 7],
   },
+  "advertising-brand-campaign": {
+    id: 61,
+    gumroadSlug: "advertising-brand-campaign",
+    number: 50,
+    tags: ["lifestyle"],
+    mainCategory: 'lifestyle',
+    type: "pack",
+    images: [1, 3, 4, 6, 7],
+  },
 };
 
 
