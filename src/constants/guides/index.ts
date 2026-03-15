@@ -115,13 +115,13 @@ export const GUIDES: Record<string, GuideItem> = {
     },
   },
 
-  "nano-banana-pro-beginners-free": {
+  "nano-banana-pro-beginners": {
     locales: {
       en: {
         noLanding: true,
         isFree: true,
         id: 62,
-        gumroadSlug: "nano-banana-pro-beginners-free",
+        gumroadSlug: "nano-banana-pro-beginners",
         name: "AI Images with Nano Banana Pro",
         description:
           "The guide teaches total beginners how to create AI images using Nano Banana Pro — Google's AI image tool that turns your words into pictures.",
