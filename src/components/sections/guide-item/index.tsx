@@ -11,13 +11,23 @@ import StarIcon from "@/components/ui/icons/star";
 import styles from "./styles.module.css";
 import { Guide } from "@/constants/guides";
 import { BestsellerBox } from "@/components/ui/bestseller";
+import { FreeBox } from "@/components/ui/free";
 
 const GuideItem: React.FC<{
   item: Guide;
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { slug, lang, name, isBestseller, vertImage, gumroadLink, noLanding } = item;
+  const {
+    slug,
+    lang,
+    name,
+    isBestseller,
+    isFree,
+    vertImage,
+    gumroadLink,
+    noLanding,
+  } = item;
 
   const url = noLanding
     ? gumroadLink
@@ -39,9 +49,9 @@ const GuideItem: React.FC<{
       <div className={styles.box}>
         <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>
-      {isBestseller && (
-        <BestsellerBox />
-      )}
+      {isBestseller && <BestsellerBox />}
+
+      {isFree && <FreeBox />}
 
       {/* {Boolean(reviewsRating) && (
         <div className={styles.ratingBox}>

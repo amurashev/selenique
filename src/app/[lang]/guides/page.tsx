@@ -8,6 +8,7 @@ import { i18n, Locale } from "../../../../i18n-config";
 import { guidesListPageRoute } from "@/constants/routes";
 import { getGuidesList, getGuideData } from "@/constants/guides/utils";
 import { getDictionary } from "@/l18n/dictionaries";
+import { sortGuidesByPoints } from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,
@@ -53,6 +54,8 @@ export default async function PromptbookPageEntry({
   const guidesList = guidesListId.map((item) =>
     getGuideData(item.slug, item.locale)
   );
+
+  guidesList.sort(sortGuidesByPoints);
 
   return (
     <Layout locale={finalLang}>

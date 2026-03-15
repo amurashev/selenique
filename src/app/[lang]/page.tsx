@@ -9,7 +9,11 @@ import getDeviceType from "@/utils/device";
 import { PromptBook } from "@/components/types";
 import { PROMTBOOKS } from "@/content/promptbooks";
 import PHOTOS from "../../../source/portfolio.json";
-import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
+import {
+  getPromptBookData,
+  sortByPoints,
+  sortGuidesByPoints,
+} from "@/content/promptbooks/utils";
 
 import shuffle from "@/utils/arrays";
 import { getGuideData, getGuidesList } from "@/constants/guides/utils";
@@ -83,6 +87,8 @@ export default async function HomeEntry({
   const guidesList = guidesListId.map((item) =>
     getGuideData(item.slug, item.locale)
   );
+
+  guidesList.sort(sortGuidesByPoints);
 
   const randomPhotos = PHOTOS.filter((item) => {
     const sourceFile = item.SourceFile.slice(8);

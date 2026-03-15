@@ -4,6 +4,7 @@ import { PROMTBOOKS } from "@/content/promptbooks";
 import PROMPTS_RATING from "@/content/promptbooks/reviews";
 import PROMPTS_SALES from "@/content/promptbooks/sales";
 import PROMPTS_POINTS from "@/content/promptbooks/points";
+import { Guide } from "@/constants/guides";
 
 export const getPromptBookId = (slug: string): number | undefined => {
   const baseItem = PROMTBOOKS[slug]
@@ -68,6 +69,19 @@ export const sortByPoints = (a: PromptBook, b: PromptBook) => {
 
   if (b.reviewsCount > a.reviewsCount) pointsB += 10
   if (b.reviewsCount < a.reviewsCount) pointsA += 10
+
+  return pointsB - pointsA
+}
+
+export const sortGuidesByPoints = (a: Guide, b: Guide) => {
+  let pointsA = 0
+  let pointsB = 0
+
+  if (Boolean(b.isBestseller) > Boolean(a.isBestseller)) pointsB += 1000
+  if (Boolean(b.isBestseller) < Boolean(a.isBestseller)) pointsA += 1000
+
+  if (Boolean(b.isFree) > Boolean(a.isFree)) pointsB += 500
+  if (Boolean(b.isFree) < Boolean(a.isFree)) pointsA += 500
 
   return pointsB - pointsA
 }

@@ -8,6 +8,7 @@ export type GuideLocaleItem = {
   description: string;
   price?: PriceType;
   noLanding?: boolean;
+  isFree?: boolean;
   isBestseller?: boolean;
 };
 
@@ -110,6 +111,20 @@ export const GUIDES: Record<string, GuideItem> = {
         name: "Portrait Creation Toolkit",
         description:
           "This guide is a structured reference for creating realistic and controllable AI portraits. It organizes appearance into clearly defined parameters with predefined, AI-friendly values, allowing you to build characters with precision instead of trial and error.",
+      },
+    },
+  },
+
+  "nano-banana-pro-beginners-free": {
+    locales: {
+      en: {
+        noLanding: true,
+        isFree: true,
+        id: 62,
+        gumroadSlug: "nano-banana-pro-beginners-free",
+        name: "AI Images with Nano Banana Pro",
+        description:
+          "The guide teaches total beginners how to create AI images using Nano Banana Pro — Google's AI image tool that turns your words into pictures.",
       },
     },
   },
