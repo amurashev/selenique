@@ -128,4 +128,17 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     },
   },
+
+  "nano-banana-for-business": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 63,
+        gumroadSlug: "nano-banana-for-business",
+        name: "Nano Banana Pro for Your Business",
+        description:
+          "This guide is for small business owners who need good pictures for their work, but don’t want to spend a lot of money on designers or photo shoots. It shows you, step by step, how to use Nano Banana Pro — Google’s AI image tool — to make professional‑looking images just by typing what you want in plain English.​​",
+      },
+    },
+  },
 };
