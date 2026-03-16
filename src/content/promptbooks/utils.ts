@@ -33,7 +33,7 @@ export const getPromptBookData = (slug: string): PromptBook => {
   const reviewsRatingFixed = rating.rating.toFixed(1)
   const reviewsCount = rating.count
 
-  const item = {
+  const item: PromptBook = {
     ...baseItem,
     slug,
     name: localData['name'],
@@ -41,6 +41,7 @@ export const getPromptBookData = (slug: string): PromptBook => {
     text: localData['text'],
     summary: localData['summary'],
     why: localData['why'],
+    testPrompt: localData['prompt'],
     vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
     purchaseLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`,
     boostyLink: baseItem.boostyId ? `https://boosty.to/selenique/posts/${baseItem.boostyId}` : '',

@@ -20,6 +20,7 @@
   "common.see_more": "Смотреть больше",
   "common.read_more": "Читать далее",
   "common.best_sellers": "Бестселлеры",
+  "common.bought_recently": "{number} человек купили это за последнее время",
   "locale": "Русский",
   "header.menu.services": "Услуги",
   "header.menu.portfolio": "Портфолио",
@@ -115,13 +116,16 @@
 
   "prompt_books.title_short": "Пакеты ИИ-промптов",
   "prompt_books.text": "На этой странице представлены готовые к использованию пакеты ИИ-промптов, которые помогут вам быстрее создавать реалистичные изображения, визуалы и контент с постоянным качеством. Эти промпты тщательно структурированы и протестированы, чтобы экономить время, улучшать результаты и оптимизировать ваш творческий процесс — независимо от того, работаете ли вы с изображениями для стока, соцсетей или цифровых продуктов.",
-  "prompt_books.see_all": "Смотреть все пакеты промптов",
+  "prompt_books.see_all": "Смотреть все коллекции",
   "prompt_books.number": "Количество промптов",
   
   "prompt_books.prompts_count.text": "универсальных AI-промптов, совместимых с <strong>Gemini, Nano Banana Pro, Nano Banana, Flux, ChatGPT Image, Seedream, MidJourney</strong>",
   "prompt_books.character_reference.text": "Работает безупречно с инструментами <strong>Character Reference</strong> для стабильных и реалистичных результатов",
   "prompt_books.instant_download.text": "<strong>Мгновенная цифровая загрузка</strong> — доступ сразу после покупки",
   "prompt_books.what_you_get": "Что вы получите",
+
+  "prompt_books.test_prompt.title": "Пример промпта",
+  "prompt_books.test_prompt.text": "Эта примерный промпт дает вам представление о качестве и структуре, используемых во всем пакете. Если вам понравится результат, полный пакет включает в себя {number} дополнительных промптов, разработанных для того, чтобы помочь вам получать мощные и стабильные результаты ИИ",
   
   "prompt_books.prompts": "Промпты",
   "prompt_books.file_type": "Тип файла",

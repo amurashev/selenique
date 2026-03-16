@@ -18,13 +18,13 @@ export default function Instruction({
 
   return (
     <div className={styles.box}>
-      <h3 className={styles.header}>
+      <h2 className={styles.header}>
         {formatMessage({
           id: hasCharacterReference
             ? "prompt_books.instruction.title1"
             : "prompt_books.instruction.title2",
         })}
-      </h3>
+      </h2>
       <p>
         {formatMessage({
           id: hasCharacterReference

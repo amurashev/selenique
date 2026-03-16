@@ -63,6 +63,7 @@ export type PromptBook = PromptBookRaw & {
   description: string;
   why?: string
   text: string;
+  testPrompt?: string
 
   // rating: { rating: number, count: number }
   sales: number

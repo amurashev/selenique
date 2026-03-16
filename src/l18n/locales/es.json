@@ -20,6 +20,7 @@
   "common.see_more": "Ver más",
   "common.read_more": "Leer más",
   "common.best_sellers": "Los más vendidos",
+  "common.bought_recently": "{number} personas compraron esto recientemente",
   "locale": "Español",
   "header.menu.services": "Servicios",
   "header.menu.portfolio": "Portafolio",
@@ -119,6 +120,9 @@
   "prompt_books.instant_download.text": "<strong>Descarga digital instantánea</strong> — Acceso inmediato después de la compra",
   "prompt_books.what_you_get": "Qué obtienes",
 
+  "prompt_books.test_prompt.title": "Prompt de ejemplo",
+  "prompt_books.test_prompt.text": "Este prompt de ejemplo te muestra la calidad y la estructura utilizadas en todo el pack. Si te gusta el resultado, el pack completo incluye {number} prompts adicionales diseñados para ayudarte a generar resultados de IA potentes y consistentes.",
+  
   "prompt_books.number": "Número de prompts",
   "prompt_books.prompts": "Prompts",
   "prompt_books.file_type": "Tipo de archivo",

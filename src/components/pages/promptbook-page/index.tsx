@@ -31,6 +31,7 @@ import Footer from "@/components/layout/footer";
 import { COMMISSION } from "@/constants/affiliate";
 import Affiliate from "./affiliate";
 import Instruction from "./instruction";
+import TestPrompt from "./test-prompt";
 
 export default function PromptbookPage({
   data,
@@ -54,6 +55,7 @@ export default function PromptbookPage({
     summary,
     tags,
     why,
+    testPrompt,
     images,
     isDisabled,
   } = data;
@@ -69,7 +71,7 @@ export default function PromptbookPage({
         "business",
         "headshot",
         "fashion",
-        'lifestyle',
+        "lifestyle",
         "fantasy",
         "red_carpet",
         "studio",
@@ -87,7 +89,7 @@ export default function PromptbookPage({
     });
   }, []);
 
-  // console.warn("PromptbookPage", data);
+  console.warn("PromptbookPage", data);
 
   return (
     <div className={styles.page}>
@@ -104,30 +106,26 @@ export default function PromptbookPage({
         <div className={styles.content}>
           <Header data={data} />
 
-          {finalTopText && (
-            <div className={styles.section}>
-              <TextTag text={finalTopText} />
-            </div>
-          )}
-
-          <div className={styles.hr} />
+          {finalTopText && <TextTag text={finalTopText} />}
 
           <div className={styles.line}>
             <div className={styles.textBox}>
-              <Advantages
-                data={data}
-                hasCharacterReference={hasCharacterReference}
-              />
-
-              <div className={styles.hr} />
+              <div className={styles.section}>
+                <Advantages
+                  data={data}
+                  hasCharacterReference={hasCharacterReference}
+                />
+              </div>
 
               {bundleContent && bundleContent.length > 0 && (
-                <div className={styles.bundleBox}>
+                <div className={styles.section}>
                   <Bundle bundleContent={bundleContent} />
                 </div>
               )}
 
-              <Instruction hasCharacterReference={hasCharacterReference} />
+              <div className={styles.section}>
+                <Instruction hasCharacterReference={hasCharacterReference} />
+              </div>
 
               {/* TODO: Temp workaround for old texts */}
               {text && (
@@ -136,34 +134,36 @@ export default function PromptbookPage({
                 </div>
               )}
 
+              {testPrompt && (
+                <div className={styles.section}>
+                  <TestPrompt data={data} />
+                </div>
+              )}
+
               <div className={styles.section}>
                 <Affiliate />
               </div>
 
               {purchaseLink && (
-                <>
-                  <div className={styles.getPromptBox}>
-                    <Link
-                      className={isRedirect ? styles.linkDisabled : styles.link}
-                      href={purchaseLink}
-                      onClick={() => setIsRedirect(true)}
-                    >
-                      {isRedirect ? <span className={styles.loader} /> : null}
-                      {formatMessage({ id: "prompt_books.get_prompt_pack" })}
-                    </Link>
+                <div className={`${styles.section} ${styles.onlyMobile}`}>
+                  <Link
+                    className={isRedirect ? styles.linkDisabled : styles.link}
+                    href={purchaseLink}
+                    onClick={() => setIsRedirect(true)}
+                  >
+                    {isRedirect ? <span className={styles.loader} /> : null}
+                    {formatMessage({ id: "prompt_books.get_prompt_pack" })}
+                  </Link>
 
-                    {showRussiaHints && (
-                      <div className={styles.hint}>
-                        {formatMessage({
-                          id: "prompt_books.payment_russia_hint",
-                        })}
-                      </div>
-                    )}
-                  </div>
-                </>
+                  {showRussiaHints && (
+                    <div className={styles.hint}>
+                      {formatMessage({
+                        id: "prompt_books.payment_russia_hint",
+                      })}
+                    </div>
+                  )}
+                </div>
               )}
-
-              {/* <div className={styles.hr} /> */}
 
               {/* <div className={styles.section}>
                 <Who data={data as PromptBook} />
@@ -193,14 +193,14 @@ export default function PromptbookPage({
           </div>
         </div>
 
-        {/* <div className={styles.hr} /> */}
-
         <div className={styles.content}>
-          {related.length !== 0 && <Related related={related} />}
-          <Link className={styles.seeAllButton} href={backUrl}>
-            {formatMessage({ id: "prompt_books.see_all" })}
-          </Link>
-          <div className={styles.reviewBox}>
+          {related.length !== 0 && (
+            <div className={styles.section}>
+              <Related related={related} url={backUrl} />
+            </div>
+          )}
+
+          <div className={styles.section}>
             <Reviews />
           </div>
         </div>

@@ -1,3 +1,8 @@
+.box {
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
 .titleBox {
   display: flex;
   align-items: start;
@@ -46,6 +51,9 @@
   font-weight: 700;
   color: var(--orange);
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   /* margin-bottom: 8px; */
 }
 

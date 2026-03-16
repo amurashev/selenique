@@ -12,23 +12,28 @@ export default function GroupHeader({
   title,
   href,
   label,
+  isWhite = false,
 }: {
   title: string;
   href?: string;
   label?: string;
+  isWhite?: boolean;
 }) {
   const { formatMessage, locale } = useIntl();
 
   return (
     <div className={styles.box}>
-      <h2>{title}</h2>
+      <h2 className={isWhite ? styles.titleWhite : styles.title}>{title}</h2>
 
       {href && (
         <div className={styles.buttonBox}>
-          <Link className={styles.seeAll} href={href}>
+          <Link
+            className={isWhite ? styles.seeAllWhite : styles.seeAll}
+            href={href}
+          >
             {label || formatMessage({ id: "common.see_all" })}
           </Link>
-          <ChevronRight size={24} />
+          <ChevronRight size={24} color={isWhite ? "#777777" : "#ffffff"} />
         </div>
       )}
     </div>

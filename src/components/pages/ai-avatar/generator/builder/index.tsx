@@ -15,6 +15,7 @@ import {
   HAIR_COLOR_LIST,
   EYE_COLOR_LIST,
 } from "../../../../../../source/params";
+import { copyText } from "@/utils/copy";
 
 export default function Builder() {
   const { formatMessage, locale } = useIntl();
@@ -37,20 +38,6 @@ export default function Builder() {
   const [selectedExpression, setSelectedExpression] = useState<string>(
     EXPRESSION_LIST[0]
   );
-
-  const copyText = () => {
-    const copyTextEl = document.getElementById("prompt");
-
-    if (copyTextEl) {
-      /* eslint-disable @typescript-eslint/no-explicit-any */
-      // Select the text field
-      (copyTextEl as any).select();
-      (copyTextEl as any).setSelectionRange(0, 99999); // For mobile devices
-      // Copy the text inside the text field
-      navigator.clipboard.writeText((copyTextEl as any).value);
-      /* eslint-enable @typescript-eslint/no-explicit-any */
-    }
-  };
 
   const value = `Gender: ${selectedGender}
 Age: ${selectedAge}
@@ -119,8 +106,11 @@ Camera: 85mm portrait lens`;
 
       <div className={styles.textareaBox}>
         <p className={styles.textarea}>{value}</p>
-        <textarea id="prompt" value={value} className={styles.textareaHidden} />
-        <button onClick={copyText} className={styles.copyButton}>
+        <textarea id="prompt" defaultValue={value} className={styles.textareaHidden} />
+        <button
+          onClick={() => copyText("prompt")}
+          className={styles.copyButton}
+        >
           {formatMessage({ id: "ai_avatar.generator.builder.cta" })}
         </button>
       </div>

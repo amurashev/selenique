@@ -3,13 +3,14 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
+}
 
-  h2 {
-    flex-grow: 1;
-  }
-  h3 {
-    flex-grow: 1;
-  }
+.title {
+  flex-grow: 1;
+}
+
+.titleWhite {
+  composes: title;
 }
 
 .seeAll {
@@ -27,9 +28,14 @@
   } */
 
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-inversive);
   flex-shrink: 0;
+}
+
+.seeAllWhite {
+  composes: seeAll;
+  color: var(--text);
 }
 
 .buttonBox {

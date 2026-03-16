@@ -11,6 +11,7 @@ import { PromptBook } from "@/components/types";
 import PromptbookItem from "@/components/sections/promptbook-item";
 
 import styles from "./styles.module.css";
+import GroupHeader from "@/components/sections/group-header";
 
 export const settings = {
   dots: false,
@@ -49,21 +50,28 @@ export const settings = {
 
 export default function Related({
   related,
+  url,
 }: {
   related: PromptBook[];
+  url: string;
 }) {
   const { formatMessage, locale } = useIntl();
 
   return (
     <div className={styles.related}>
-      <h2>{formatMessage({ id: "prompt_books.you_may_like" })}</h2>
+      <GroupHeader
+        title={formatMessage({ id: "prompt_books.you_may_like" })}
+        label={formatMessage({ id: "prompt_books.see_all" })}
+        href={url}
+        isWhite
+      />
       <Slider {...settings} className={styles.slider}>
         {/* <div className={styles.list}> */}
-          {related.map((item) => (
-            <div key={item.id} className={styles.item}>
-              <PromptbookItem key={item.id} item={item} />
-            </div>
-          ))}
+        {related.map((item) => (
+          <div key={item.id} className={styles.item}>
+            <PromptbookItem key={item.id} item={item} />
+          </div>
+        ))}
         {/* </div> */}
       </Slider>
     </div>

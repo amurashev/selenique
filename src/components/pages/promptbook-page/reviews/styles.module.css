@@ -1,11 +1,27 @@
 .box {
   /* padding: 16px 16px; */
-  margin-top: 8px;
 }
 
 /* .title {
   font-size: 22px;
 } */
+
+.ratingBox {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  gap: 8px;
+
+  strong {
+    color: var(--header);
+    /* font-weight: 700; */
+    font-size: 18px;
+  }
+
+  span {
+    color: var(--text);
+  }
+}
 
 .list {
   display: flex;
