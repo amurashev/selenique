@@ -238,36 +238,36 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1, 3, 4, 5, 6, 7, 8, 9, 21, 22, 23, 24, 25],
   },
 
-  "8-red-carpet-couple-ai-photo-prompts": {
-    id: 22,
-    gumroadSlug: "8-red-carpet-couple-ai-photo-prompts",
-    number: 8,
-    tags: ["red_carpet", "men", "women"],
-    mainCategory: "red_carpet",
-    type: "pack",
-    images: [1, 2, 3, 4, 5],
-  },
+  // "8-red-carpet-couple-ai-photo-prompts": {
+  //   id: 22,
+  //   gumroadSlug: "8-red-carpet-couple-ai-photo-prompts",
+  //   number: 8,
+  //   tags: ["red_carpet", "men", "women"],
+  //   mainCategory: "red_carpet",
+  //   type: "pack",
+  //   images: [1, 2, 3, 4, 5],
+  // },
 
-  "8-red-carpet-men-photo-prompts-ai": {
-    id: 20,
-    gumroadSlug: "8-red-carpet-men-photo-prompts",
-    number: 8,
-    links: {},
-    tags: ["red_carpet", "men"],
-    mainCategory: "red_carpet",
-    type: "pack",
-    images: [1, 2, 3, 4, 5],
-  },
+  // "8-red-carpet-men-photo-prompts-ai": {
+  //   id: 20,
+  //   gumroadSlug: "8-red-carpet-men-photo-prompts",
+  //   number: 8,
+  //   links: {},
+  //   tags: ["red_carpet", "men"],
+  //   mainCategory: "red_carpet",
+  //   type: "pack",
+  //   images: [1, 2, 3, 4, 5],
+  // },
 
-  "8-red-carpet-women-photo-prompts": {
-    id: 21,
-    gumroadSlug: "8-red-carpet-women-ai-photo-prompts",
-    number: 8,
-    tags: ["red_carpet", "women"],
-    mainCategory: "red_carpet",
-    type: "pack",
-    images: [1, 2, 3, 4, 5],
-  },
+  // "8-red-carpet-women-photo-prompts": {
+  //   id: 21,
+  //   gumroadSlug: "8-red-carpet-women-ai-photo-prompts",
+  //   number: 8,
+  //   tags: ["red_carpet", "women"],
+  //   mainCategory: "red_carpet",
+  //   type: "pack",
+  //   images: [1, 2, 3, 4, 5],
+  // },
 
   "35-cosmetic-product-photo-prompts": {
     id: 23,
@@ -349,16 +349,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "bundle",
     images: [0, 1, 2, 3, 4, 5, 6],
   },
-  "red-carpet-prompts-bundle": {
-    id: 32,
-    gumroadSlug: "red-carpet-prompts-bundle",
-    number: 24,
-    pack: [22, 21, 20],
-    links: {},
-    tags: ["red_carpet"],
-    type: "bundle",
-    images: [0, 1, 2, 3],
-  },
+
   "120-product-podiums-photo-prompts": {
     id: 34,
     gumroadSlug: "120-product-podiums-photo-prompts",
@@ -543,7 +534,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "cozy-aesthetic",
     number: 50,
     tags: ["lifestyle"],
-    mainCategory: 'lifestyle',
+    mainCategory: "lifestyle",
     type: "pack",
     images: [1, 3, 4, 6, 7],
   },
@@ -552,10 +543,17 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "advertising-brand-campaign",
     number: 50,
     tags: ["lifestyle"],
-    mainCategory: 'lifestyle',
+    mainCategory: "lifestyle",
     type: "pack",
     images: [1, 3, 4, 6, 7],
   },
+  "red-carpet": {
+    id: 32,
+    gumroadSlug: "red-carpet-prompts",
+    number: 24,
+    tags: ["fashion"],
+    mainCategory: "fashion",
+    type: "pack",
+    images: [1, 2, 3, 4, 5, 6, 7],
+  },
 };
-
-

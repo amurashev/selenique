@@ -7,7 +7,6 @@ export const PROMPT_CATEGORIES: PromptCategories[] = [
   "lifestyle",
   "fantasy",
   "food",
-  "red_carpet",
   "beauty",
   "jewelry",
   "headshot",

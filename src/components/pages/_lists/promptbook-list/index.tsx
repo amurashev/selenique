@@ -30,7 +30,6 @@ const CATEGORIES: PromptCategories[] = [
   "studio",
   "design",
   // 'christmas', // TODO?
-  "red_carpet",
 ];
 
 export default function PromptbookListPage({

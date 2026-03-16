@@ -65,6 +65,9 @@ export const sortByPoints = (a: PromptBook, b: PromptBook) => {
   if (b.point > a.point) pointsB += 500
   if (b.point < a.point) pointsA += 500
 
+  if (b.sales > a.sales) pointsB += 200
+  if (b.sales < a.sales) pointsA += 200
+
   if (b.reviewsRating > a.reviewsRating) pointsB += 100
   if (b.reviewsRating < a.reviewsRating) pointsA += 100
 

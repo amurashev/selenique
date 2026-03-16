@@ -4,7 +4,6 @@ export type PriceType = Record<string, number>;
 
 export type PromptCategories = | "fashion"
   | "business"
-  | "red_carpet"
   | "cosmetic"
   | "fantasy"
   | "men"
