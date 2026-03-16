@@ -68,9 +68,9 @@ export default async function HomeEntry({
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug);
-    const { mainCategory, type, isBestseller } = packData;
+    const { mainCategory, type, sales } = packData;
 
-    if (mainCategory && type === "pack" && isBestseller) {
+    if (mainCategory && type === "pack" && sales > 1) {
       bestSellers.push(packData);
     }
 

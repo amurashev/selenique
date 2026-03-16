@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  flex-shrink: 0;
 }
 
 
@@ -39,6 +40,13 @@
   strong {
     color: var(--header);
   }
+}
+
+.bought {
+  font-weight: 700;
+  color: var(--orange);
+  font-size: 15px;
+  /* margin-bottom: 8px; */
 }
 
 .divider {

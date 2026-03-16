@@ -20,6 +20,7 @@
   "common.see_more": "See more",
   "common.read_more": "Read more",
   "common.best_sellers": "Best Sellers",
+  "common.bought_recently": "{number} people bought this recently",
   "locale": "English",
   "header.menu.services": "Services",
   "header.menu.portfolio": "Portfolio",

@@ -18,7 +18,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "50-ai-fashion-editorial-prompts-vol2",
     boostyId: "40f7cb76-5db0-419a-b3f5-55a640de03f9",
     number: 50,
-    isBestseller: true,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
     },
@@ -65,7 +64,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
     },
-    isBestseller: true,
     tags: ["beauty"],
     mainCategory: "beauty",
     type: "pack",
@@ -87,7 +85,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "24-ai-maternity-photoshoot-prompts",
     boostyId: "4f29f408-09e8-4e27-b308-84fcee7c2de2",
     number: 24,
-    isBestseller: true,
     tags: ["fashion", "women", "maternity"],
     mainCategory: "fashion", // TODO?
     type: "pack",
@@ -225,7 +222,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "22-business-man-headshot-prompts",
     boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
     number: 22,
-    isBestseller: true,
     tags: ["business", "men", "headshot"],
     mainCategory: "business",
     type: "pack",
@@ -278,7 +274,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "35-cosmetic-product-photo-prompts",
     boostyId: "19a1dd70-bd6b-4624-a662-706574bf40a5",
     number: 35,
-    isBestseller: true,
     tags: ["cosmetic", "product"],
     mainCategory: "product",
     type: "pack",
@@ -309,7 +304,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "realistic-ai-influencer-prompts",
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
     number: 200,
-    isBestseller: true,
     tags: ["lifestyle", "women", "avatar"],
     mainCategory: "avatar",
     type: "pack",
@@ -459,7 +453,6 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "viral-image-prompts": {
     id: 49,
-    isBestseller: true,
     gumroadSlug: "viral-image-prompts",
     number: 45,
     tags: ["fantasy", "design"],

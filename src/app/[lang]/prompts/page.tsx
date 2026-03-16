@@ -51,10 +51,10 @@ export default async function PromptbookPageEntry({
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug);
-    const { mainCategory, type, isBestseller } = packData;
+    const { mainCategory, type, sales } = packData;
 
     if (mainCategory && type === "pack") {
-      if (isBestseller || packData.reviewsCount) {
+      if (sales > 1 || packData.reviewsCount) {
         bestSellers.push(packData);
       }
 

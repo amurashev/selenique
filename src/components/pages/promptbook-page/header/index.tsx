@@ -21,14 +21,18 @@ export default function Header({ data }: { data: PromptBook }) {
     reviewsCount,
     reviewsRating,
     reviewsRatingFixed,
+    sales,
   } = data;
+
+  const hasSales = sales > 1;
+  const hasRating = Boolean(reviewsRating);
 
   return (
     <div className={styles.box}>
-      {(Boolean(reviewsRating) || isBestseller) && (
+      {(hasRating || isBestseller || hasSales) && (
         <div className={styles.ratingBox}>
           {isBestseller && <Bestseller size="big" />}
-          {Boolean(reviewsRating) && (
+          {hasRating && (
             <>
               <div className={styles.startBox}>
                 <StarIcon
@@ -50,8 +54,15 @@ export default function Header({ data }: { data: PromptBook }) {
                   )
                 </span>
               </div>
-              {/* <span className={styles.divider}>|</span> */}
             </>
+          )}
+          {hasSales && (
+            <div className={styles.bought}>
+              {formatMessage(
+                { id: "common.bought_recently" },
+                { number: sales }
+              )}
+            </div>
           )}
           {/* {Boolean(sales) && (
             <span><strong>{sales}</strong> {formatMessage({ id: 'common.sales' })}</span>
@@ -59,6 +70,7 @@ export default function Header({ data }: { data: PromptBook }) {
           &nbsp;
         </div>
       )}
+
       <div className={styles.titleBox}>
         <h1 className={styles.title}>{name}</h1>
       </div>
