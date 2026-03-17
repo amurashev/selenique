@@ -30,7 +30,7 @@ export async function generateMetadata({
     // keywords,
     openGraph: {
       images: [
-        `https://www.selenique.space/images/og_guides.jpg`,
+        `https://www.selenique.space/images/og/guides.jpg`,
       ],
       title: title,
       description,

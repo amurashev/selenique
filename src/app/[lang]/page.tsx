@@ -39,8 +39,7 @@ export async function generateMetadata({
     description,
     // keywords,
     openGraph: {
-      // TODO: Add image
-      images: [`https://www.selenique.space/promptbooks/promptbooks.jpg`],
+      images: [`https://www.selenique.space/images/og/index.jpg`],
       title: title,
       description,
       url: `https://www.selenique.space${url}`,

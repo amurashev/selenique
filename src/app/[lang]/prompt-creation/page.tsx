@@ -16,17 +16,15 @@ export async function generateMetadata({
 
   // const messages = await getDictionary(lang) as Record<string, string>
 
-  const title = "Prompt Creation"
-  const description = ""
+  const title = "Prompt Creation";
+  const description = "";
 
   return {
     title,
     description,
     // keywords,
     openGraph: {
-      images: [
-        `https://www.selenique.space/promptbooks/promptbooks.jpg`,
-      ],
+      images: [],
       title: title,
       description,
       // url: `https://www.selenique.space${url}`,
@@ -40,8 +38,8 @@ export default async function PromptCreationPageEntry({
 }: {
   params: Promise<{ lang: Locale }>;
 }) {
-  const { lang } = await params
-  const finalLang = lang || i18n.defaultLocale
+  const { lang } = await params;
+  const finalLang = lang || i18n.defaultLocale;
 
   return (
     <Layout locale={finalLang}>
