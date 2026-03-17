@@ -140,4 +140,17 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     },
   },
+
+  "create-children-book-nano-banana": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 64,
+        gumroadSlug: "create-children-book-nano-banana",
+        name: "Make Your Own Children’s Book with Nano Banana Pro",
+        description:
+          "It is a beginner-friendly, step-by-step guide that teaches you how to use Google's AI image tool to create all the illustrations for your book — even if you have never used AI before and have zero design skills.​​",
+      },
+    },
+  },
 };
