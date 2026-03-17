@@ -19,6 +19,7 @@ export type GuideItem = {
 export type Guide = GuideLocaleItem & {
   slug: string;
   lang: string;
+  point: number
   vertImage: string;
   purchaseLink: string;
   boostyLink: string;

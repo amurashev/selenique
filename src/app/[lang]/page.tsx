@@ -12,11 +12,10 @@ import PHOTOS from "../../../source/portfolio.json";
 import {
   getPromptBookData,
   sortByPoints,
-  sortGuidesByPoints,
 } from "@/content/promptbooks/utils";
 
 import shuffle from "@/utils/arrays";
-import { getGuideData, getGuidesList } from "@/constants/guides/utils";
+import { getGuideData, getGuidesList, sortGuidesByPoints } from "@/constants/guides/utils";
 import { homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 

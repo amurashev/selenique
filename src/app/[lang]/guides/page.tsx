@@ -6,9 +6,8 @@ import GuidesListPage from "@/components/pages/_lists/guides-list";
 
 import { i18n, Locale } from "../../../../i18n-config";
 import { guidesListPageRoute } from "@/constants/routes";
-import { getGuidesList, getGuideData } from "@/constants/guides/utils";
+import { getGuidesList, getGuideData, sortGuidesByPoints } from "@/constants/guides/utils";
 import { getDictionary } from "@/l18n/dictionaries";
-import { sortGuidesByPoints } from "@/content/promptbooks/utils";
 
 export async function generateMetadata({
   params,

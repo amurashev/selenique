@@ -77,15 +77,3 @@ export const sortByPoints = (a: PromptBook, b: PromptBook) => {
   return pointsB - pointsA
 }
 
-export const sortGuidesByPoints = (a: Guide, b: Guide) => {
-  let pointsA = 0
-  let pointsB = 0
-
-  if (Boolean(b.isBestseller) > Boolean(a.isBestseller)) pointsB += 1000
-  if (Boolean(b.isBestseller) < Boolean(a.isBestseller)) pointsA += 1000
-
-  if (Boolean(b.isFree) > Boolean(a.isFree)) pointsB += 500
-  if (Boolean(b.isFree) < Boolean(a.isFree)) pointsA += 500
-
-  return pointsB - pointsA
-}
