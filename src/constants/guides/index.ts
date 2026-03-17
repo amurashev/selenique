@@ -37,7 +37,6 @@ export const GUIDES: Record<string, GuideItem> = {
         price: {
           en: 67,
         },
-        isBestseller: true,
       },
       ru: {
         id: 41,
@@ -49,7 +48,6 @@ export const GUIDES: Record<string, GuideItem> = {
         price: {
           ru: 3990,
         },
-        isBestseller: true,
       },
     },
   },
@@ -133,6 +131,7 @@ export const GUIDES: Record<string, GuideItem> = {
     locales: {
       en: {
         noLanding: true,
+        isBestseller: true,
         id: 63,
         gumroadSlug: "nano-banana-for-business",
         name: "Nano Banana Pro for Your Business",
