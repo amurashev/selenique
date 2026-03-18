@@ -30,8 +30,10 @@ export async function generateMetadata({
 
   const promptBook = getPromptBookData(slug);
 
+  const { og } = promptBook;
+
   const title = `${promptBook.name} | Gemini | Nano Banana Pro | ChatGPT Image`;
-  const description = promptBook.summary || promptBook.description
+  const description = promptBook.summary || promptBook.description;
   const keywords = messages["prompt_books.keywords"];
 
   const url = promptBookPageRoute.getUrl(lang, {
@@ -46,7 +48,9 @@ export async function generateMetadata({
     keywords,
     openGraph: {
       images: [
-        `https://www.selenique.space/promptbooks/${promptBook.id}/${promptBook.images[0]}.jpg`,
+        og
+          ? `https://www.selenique.space/promptbooks/${promptBook.id}/og.jpg`
+          : `https://www.selenique.space/promptbooks/${promptBook.id}/${promptBook.images[0]}.jpg`,
       ],
       title: title,
       description,

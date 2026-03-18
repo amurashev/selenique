@@ -68,6 +68,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "beauty",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    og: true,
   },
 
   "50-jewelry-product-photo-ai-prompts": {
@@ -89,6 +90,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion", // TODO?
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7, 8],
+    og: true,
   },
 
   "32-business-man-photo-prompts": {
@@ -130,6 +132,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 6, 7, 8, 9, 10],
+    og: true,
   },
 
   "60-fantasy-photo-prompts-ai-portrait": {
@@ -226,6 +229,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "business",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    og: true,
   },
 
   "40-muslim-women-business-photo-prompts": {
@@ -278,6 +282,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "product",
     type: "pack",
     images: [2, 4, 5, 6, 7, 8, 9, 10, 11],
+    og: true,
   },
 
   "75-cosmetic-product-photo-prompts": {
@@ -309,6 +314,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
+    og: true
   },
 
   "women-fashion-editorial-prompts-bundle": {
@@ -424,12 +430,13 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "cartoon-style-image-prompts": {
     id: 44,
     gumroadSlug: "cartoon-style-image-prompts",
-    number: 30,
+    number: 50,
     tags: ["design"],
     mainCategory: "design",
     type: "pack",
     fileType: "link",
-    images: [1, 7, 8, 9, 10],
+    images: [1, 7, 8, 9, 10, 11, 12],
+    og: true,
   },
   "studio-poses-photo-prompts": {
     id: 48,

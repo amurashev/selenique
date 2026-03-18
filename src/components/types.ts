@@ -53,6 +53,7 @@ export type PromptBookRaw = DigitalItem & {
   type?: "bundle" | "pack"
   tags: PromptCategories[];
   mainCategory?: PromptCategories
+  og?: boolean
 };
 
 export type PromptBook = PromptBookRaw & {
