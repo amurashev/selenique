@@ -154,4 +154,18 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     },
   },
+
+  "ai-toolkit-for-sellers": {
+    locales: {
+      en: {
+        noLanding: true,
+        isFree: true,
+        id: 65,
+        gumroadSlug: "ai-toolkit-for-sellers",
+        name: "AI Toolkit for Digital & Creative Product Sellers",
+        description:
+          "A simple, step‑by‑step guide that shows you how to use AI to plan, package and promote your products without overwhelm.",
+      },
+    },
+  },
 };
