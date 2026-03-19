@@ -4,7 +4,7 @@ const PROMPTS_POINTS: Record<string, number> = {
   "35-cosmetic-product-photo-prompts": 100,
   "24-ai-maternity-photoshoot-prompts": 100,
   "50-ideal-skin-midjourney-prompts-vol-1": 90,
-  "cartoon-style-image-prompts": 90,
+  "cartoon-style-image-prompts": 110,
   "cinematic-fantasy-photo": 50,
   // "portrait-creation-toolkit": 20,
   // "mythical-character-photo": 10,
