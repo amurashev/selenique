@@ -573,4 +573,14 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9],
   },
+
+  "men-fashion-editorial-prompts": {
+    id: 67,
+    gumroadSlug: "men-fashion-editorial-prompts",
+    number: 100,
+    mainCategory: "fashion",
+    tags: ["fashion", "men"],
+    type: "pack",
+    images: [1, 3, 4, 5, 6, 7, 8],
+  },
 };
