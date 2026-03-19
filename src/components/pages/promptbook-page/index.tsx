@@ -61,6 +61,7 @@ export default function PromptbookPage({
     testPrompt,
     images,
     isDisabled,
+    isGrowing,
   } = data;
   const finalTopText = description || summary;
   const backUrl = promptBookListPageRoute.getUrl(locale);

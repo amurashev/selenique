@@ -54,6 +54,7 @@ export type PromptBookRaw = DigitalItem & {
   tags: PromptCategories[];
   mainCategory?: PromptCategories
   og?: boolean
+  isGrowing?: boolean
 };
 
 export type PromptBook = PromptBookRaw & {

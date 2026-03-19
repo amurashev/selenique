@@ -119,6 +119,7 @@
   "prompt_books.see_all": "Смотреть все коллекции",
   "prompt_books.number": "Количество промптов",
   
+  "prompt_books.growing.text": "Коллекция <strong>постоянно растёт</strong> и <strong>обновляется</strong> новыми промтами.",
   "prompt_books.prompts_count.text": "универсальных AI-промптов, совместимых с <strong>Gemini, Nano Banana Pro, Nano Banana, Flux, ChatGPT Image, Seedream, MidJourney</strong>",
   "prompt_books.character_reference.text": "Работает безупречно с инструментами <strong>Character Reference</strong> для стабильных и реалистичных результатов",
   "prompt_books.instant_download.text": "<strong>Мгновенная цифровая загрузка</strong> — доступ сразу после покупки",

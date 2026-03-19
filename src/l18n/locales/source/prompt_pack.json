@@ -11,6 +11,7 @@
   "prompt_books.test_prompt.text": "This sample prompt gives you a preview of the quality and structure used across the entire pack. If you like what it produces, the full pack includes {number} more prompts designed to help you generate powerful and consistent AI results.",
   "prompt_books.number": "Number of prompts",
   "prompt_books.prompts": "Prompts",
+  "prompt_books.growing.text": "The collection is <strong>constantly growing</strong> and <strong>being updated</strong> with new prompts.",
   "prompt_books.prompts_count.text": "universal AI prompts Compatible with <strong>Gemini, Nano Banana Pro, Nano Banana, Flux, ChatGPT Image, Seedream, MidJourney</strong>",
   "prompt_books.instant_download.title": "Instant digital download",
   "prompt_books.instant_download.text": "<strong>Instant digital download</strong> — Access immediately after purchase",
