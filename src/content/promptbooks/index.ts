@@ -317,25 +317,25 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     og: true
   },
 
-  "women-fashion-editorial-prompts-bundle": {
-    id: 29,
-    gumroadSlug: "women-fashion-editorial-prompts-bundle",
-    number: 150,
-    pack: [1, 5, 27],
-    tags: ["fashion", "women"],
-    type: "bundle",
-    images: [0, 1, 2, 3],
-  },
+  // "women-fashion-editorial-prompts-bundle": {
+  //   id: 29,
+  //   gumroadSlug: "women-fashion-editorial-prompts-bundle",
+  //   number: 150,
+  //   pack: [1, 5, 27],
+  //   tags: ["fashion", "women"],
+  //   type: "bundle",
+  //   images: [0, 1, 2, 3],
+  // },
 
-  "250-fashion-editorial-prompts-bundle": {
-    id: 45,
-    gumroadSlug: "250-fashion-editorial-prompts-bundle",
-    number: 250,
-    pack: [1, 5, 27, 3, 42],
-    tags: ["fashion", "women", "men"],
-    type: "bundle",
-    images: [0, 1, 2, 3, 4, 5],
-  },
+  // "250-fashion-editorial-prompts-bundle": {
+  //   id: 45,
+  //   gumroadSlug: "250-fashion-editorial-prompts-bundle",
+  //   number: 250,
+  //   pack: [1, 5, 27, 3, 42],
+  //   tags: ["fashion", "women", "men"],
+  //   type: "bundle",
+  //   images: [0, 1, 2, 3, 4, 5],
+  // },
   "business-men-prompts-bundle": {
     id: 30,
     gumroadSlug: "business-men-prompts-bundle",
@@ -562,5 +562,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     type: "pack",
     images: [1, 2, 3, 4, 5, 6, 7],
+  },
+
+  "women-fashion-editorial-prompts": {
+    id: 66,
+    gumroadSlug: "women-fashion-editorial-prompts",
+    number: 150,
+    mainCategory: "fashion",
+    tags: ["fashion", "women"],
+    type: "pack",
+    images: [1, 3, 4, 5, 6, 7, 8, 9],
   },
 };
