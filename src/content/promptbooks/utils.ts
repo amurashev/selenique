@@ -1,4 +1,3 @@
-
 import { PromptBook } from "@/components/types";
 import { PROMTBOOKS } from "@/content/promptbooks";
 import PROMPTS_RATING from "@/content/promptbooks/reviews";
@@ -7,44 +6,51 @@ import PROMPTS_POINTS from "@/content/promptbooks/points";
 import { Guide } from "@/constants/guides";
 
 export const getPromptBookId = (slug: string): number | undefined => {
-  const baseItem = PROMTBOOKS[slug]
+  const baseItem = PROMTBOOKS[slug];
 
   if (baseItem) {
-    return baseItem.id
+    return baseItem.id;
   }
-}
+};
 
 export const getPromptBooksList = () => {
-  return Object.keys(PROMTBOOKS).map((slug) => slug)
-}
+  return Object.keys(PROMTBOOKS).map((slug) => slug);
+};
 
 export const getPromptBookData = (slug: string): PromptBook => {
-  const baseItem = PROMTBOOKS[slug]
+  const baseItem = PROMTBOOKS[slug];
 
-  const id = getPromptBookId(slug) || 0
+  const id = getPromptBookId(slug) || 0;
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const localData = require(`./../../../source/promptbooks/${id}.json`);
 
-  const rating = PROMPTS_RATING[slug] || { rating: 0, count: 0}
-  const sales = PROMPTS_SALES[slug] || 0
-  const point = PROMPTS_POINTS[slug] || 0
+  const rating = PROMPTS_RATING[slug] || { rating: 0, count: 0 };
+  const sales = PROMPTS_SALES[slug] || 0;
+  const point = PROMPTS_POINTS[slug] || 0;
 
-  const reviewsRating = rating.rating
-  const reviewsRatingFixed = rating.rating.toFixed(1)
-  const reviewsCount = rating.count
+  const reviewsRating = rating.rating;
+  const reviewsRatingFixed = rating.rating.toFixed(1);
+  const reviewsCount = rating.count;
+
+  const numberString = (baseItem.number || 50)?.toString();
+  const name = localData["name"].replaceAll("{number}", numberString);
+  const description = localData["description"].replaceAll("{number}", numberString);
+  const summary = localData["summary"].replaceAll("{number}", numberString);
 
   const item: PromptBook = {
     ...baseItem,
     slug,
-    name: localData['name'],
-    description: localData['description'],
-    text: localData['text'],
-    summary: localData['summary'],
-    why: localData['why'],
-    testPrompt: localData['prompt'],
+    name,
+    description,
+    summary,
+    text: localData["text"],
+    why: localData["why"],
+    testPrompt: localData["prompt"],
     vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
     purchaseLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`,
-    boostyLink: baseItem.boostyId ? `https://boosty.to/selenique/posts/${baseItem.boostyId}` : '',
+    boostyLink: baseItem.boostyId
+      ? `https://boosty.to/selenique/posts/${baseItem.boostyId}`
+      : "",
     reviewsRating,
     reviewsRatingFixed,
     reviewsCount,
@@ -52,28 +58,27 @@ export const getPromptBookData = (slug: string): PromptBook => {
     point,
   };
 
-  return item
-}
+  return item;
+};
 
 export const sortByPoints = (a: PromptBook, b: PromptBook) => {
-  let pointsA = 0
-  let pointsB = 0
+  let pointsA = 0;
+  let pointsB = 0;
 
   // if (Boolean(b.isBestseller) > Boolean(a.isBestseller)) pointsB += 1000
   // if (Boolean(b.isBestseller) < Boolean(a.isBestseller)) pointsA += 1000
 
-  if (b.point > a.point) pointsB += 500
-  if (b.point < a.point) pointsA += 500
+  if (b.point > a.point) pointsB += 500;
+  if (b.point < a.point) pointsA += 500;
 
-  if (b.sales > a.sales) pointsB += 200
-  if (b.sales < a.sales) pointsA += 200
+  if (b.sales > a.sales) pointsB += 200;
+  if (b.sales < a.sales) pointsA += 200;
 
-  if (b.reviewsRating > a.reviewsRating) pointsB += 100
-  if (b.reviewsRating < a.reviewsRating) pointsA += 100
+  if (b.reviewsRating > a.reviewsRating) pointsB += 100;
+  if (b.reviewsRating < a.reviewsRating) pointsA += 100;
 
-  if (b.reviewsCount > a.reviewsCount) pointsB += 10
-  if (b.reviewsCount < a.reviewsCount) pointsA += 10
+  if (b.reviewsCount > a.reviewsCount) pointsB += 10;
+  if (b.reviewsCount < a.reviewsCount) pointsA += 10;
 
-  return pointsB - pointsA
-}
-
+  return pointsB - pointsA;
+};

@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   const promptBook = getPromptBookData(slug);
 
-  const { og } = promptBook;
+  const { og, number } = promptBook;
 
   const title = `${promptBook.name} | Gemini | Nano Banana Pro | ChatGPT Image`;
   const description = promptBook.summary || promptBook.description;
@@ -92,16 +92,41 @@ export default async function PromptbookPageEntry({
   if (promptBook.tags.length && promptBook.tags[0]) {
     // TODO: improve related search
     related = Object.keys(PROMTBOOKS)
-      .filter(
-        (itemSlug) =>
-          PROMTBOOKS[itemSlug].type === promptBook.type &&
-          slug !== itemSlug &&
-          PROMTBOOKS[itemSlug].mainCategory === promptBook.mainCategory
-      )
+      .filter((itemSlug) => {
+        const { type, mainCategory, tags } = PROMTBOOKS[itemSlug];
+        const isNotSameItem = slug !== itemSlug;
+        const isSameType = type === promptBook.type;
+        const isSameCategory = mainCategory === promptBook.mainCategory;
+
+        let mark = 0;
+
+        tags.forEach((tag) => {
+          if (promptBook.tags.includes(tag)) mark++;
+        });
+
+        return isSameType && isNotSameItem && (isSameCategory || mark > 0);
+      })
       .map((itemSlug) => getPromptBookData(itemSlug));
 
     related.sort(sortByPoints);
   }
+
+  const bestSellers: PromptBook[] = [];
+
+  Object.keys(PROMTBOOKS).forEach((itemSlug) => {
+    const packData = getPromptBookData(itemSlug);
+    const { mainCategory, type, sales } = packData;
+    const isNotSameItem = slug !== itemSlug;
+    const isSameType = type === promptBook.type;
+
+    if (mainCategory && isSameType && isNotSameItem) {
+      if (sales > 1 || packData.reviewsCount) {
+        bestSellers.push(packData);
+      }
+    }
+  });
+
+  bestSellers.sort(sortByPoints);
 
   /**
    * Bundle
@@ -128,6 +153,7 @@ export default async function PromptbookPageEntry({
         data={promptBook}
         related={related}
         bundleContent={bundleContent}
+        bestSellers={bestSellers}
       />
     </Layout>
   );

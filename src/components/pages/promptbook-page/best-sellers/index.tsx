@@ -48,11 +48,11 @@ export const settings = {
   ],
 } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-export default function Related({
-  related,
+export default function BestSellers({
+  items,
   url,
 }: {
-  related: PromptBook[];
+  items: PromptBook[];
   url: string;
 }) {
   const { formatMessage, locale } = useIntl();
@@ -60,19 +60,17 @@ export default function Related({
   return (
     <div className={styles.related}>
       <GroupHeader
-        title={formatMessage({ id: "prompt_books.you_may_like" })}
-        // label={formatMessage({ id: "prompt_books.see_all" })}
-        href={url}
+        title={formatMessage({ id: "home.prompt_books.popular.title" })}
+        // label={formatMessage({ id: "co.see_all" })}
+        // href={url}
         isWhite
       />
       <Slider {...settings} className={styles.slider}>
-        {/* <div className={styles.list}> */}
-        {related.map((item) => (
+        {items.map((item) => (
           <div key={item.id} className={styles.item}>
             <PromptbookItem key={item.id} item={item} />
           </div>
         ))}
-        {/* </div> */}
       </Slider>
     </div>
   );

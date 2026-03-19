@@ -32,15 +32,18 @@ import { COMMISSION } from "@/constants/affiliate";
 import Affiliate from "./affiliate";
 import Instruction from "./instruction";
 import TestPrompt from "./test-prompt";
+import BestSellers from "./best-sellers";
 
 export default function PromptbookPage({
   data,
   related = [],
   bundleContent,
+  bestSellers,
 }: {
   data: PromptBook;
   related?: PromptBook[];
   bundleContent?: PromptBook[];
+  bestSellers: PromptBook[];
 }) {
   const [isRedirect, setIsRedirect] = useState(false);
   const { formatMessage, locale } = useIntl();
@@ -198,6 +201,10 @@ export default function PromptbookPage({
               <Related related={related} url={backUrl} />
             </div>
           )}
+
+          <div className={styles.section}>
+            <BestSellers items={bestSellers} url={backUrl} />
+          </div>
 
           <div className={styles.section}>
             <Reviews />
