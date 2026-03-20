@@ -168,4 +168,17 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     },
   },
+  "create-ai-content": {
+    locales: {
+      en: {
+        noLanding: true,
+        isFree: true,
+        id: 68,
+        gumroadSlug: "create-ai-content",
+        name: "AI Visual Starter Kit: 20+ Prompts to Create Scroll‑Stopping Content in One Evening",
+        description:
+          "Create beautiful AI visuals for your content — even if you’re not a designer. Copy‑paste friendly prompts, clear formulas, and simple workflows to turn your ideas into images you can post this week.",
+      },
+    },
+  },
 };
