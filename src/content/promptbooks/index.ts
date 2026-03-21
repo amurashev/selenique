@@ -167,15 +167,16 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   },
 
-  "15-ai-women-headshot-prompts-professional": {
+  "women-headshot-prompts-professional": {
     id: 15,
     gumroadSlug: "15-ai-women-headshot-prompts",
     boostyId: "7fe0af5d-fcba-4346-8e65-39963eb91e60",
-    number: 15,
+    number: 30,
+    isGrowing: true,
     tags: ["business", "women", "headshot"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8, 20, 21],
+    images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   },
   "ai-photo-prompts-30-woman-work-lifestyle": {
     id: 14,
