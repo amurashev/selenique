@@ -169,7 +169,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "women-headshot-prompts-professional": {
     id: 15,
-    gumroadSlug: "15-ai-women-headshot-prompts",
+    gumroadSlug: "ai-women-headshot-prompts",
     boostyId: "7fe0af5d-fcba-4346-8e65-39963eb91e60",
     number: 30,
     isGrowing: true,
