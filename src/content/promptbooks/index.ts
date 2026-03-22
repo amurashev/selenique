@@ -226,11 +226,11 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     id: 18,
     gumroadSlug: "business-man-headshot-prompts",
     boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
-    number: 22,
+    number: 30,
     tags: ["business", "men", "headshot"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    images: [1, 2, 3, 4, 5, 6, 7],
     og: true,
     isGrowing: true,
   },
@@ -318,7 +318,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 2, 3, 4, 5, 6, 8],
-    og: true
+    og: true,
   },
 
   // "women-fashion-editorial-prompts-bundle": {
