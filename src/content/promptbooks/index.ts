@@ -224,7 +224,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "22-business-man-headshot-prompts-ai": {
     id: 18,
-    gumroadSlug: "22-business-man-headshot-prompts",
+    gumroadSlug: "business-man-headshot-prompts",
     boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
     number: 22,
     tags: ["business", "men", "headshot"],
@@ -232,6 +232,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     og: true,
+    isGrowing: true,
   },
 
   "40-muslim-women-business-photo-prompts": {
