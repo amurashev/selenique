@@ -321,6 +321,19 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     og: true,
   },
 
+  "ai-avatar-free-prompts": {
+    id: 69,
+    gumroadSlug: "ai-avatar-free-prompts",
+    number: 10,
+    isGrowing: true,
+    tags: ["lifestyle", "women", "avatar"],
+    mainCategory: "avatar",
+    type: "pack",
+    fileType: "link",
+    images: [1,1],
+    isFree: true,
+  },
+
   // "women-fashion-editorial-prompts-bundle": {
   //   id: 29,
   //   gumroadSlug: "women-fashion-editorial-prompts-bundle",

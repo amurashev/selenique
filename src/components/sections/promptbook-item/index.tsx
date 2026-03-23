@@ -8,6 +8,7 @@ import { PromptBook } from "@/components/types";
 import { promptBookPageRoute } from "@/constants/routes";
 import StarIcon from "@/components/ui/icons/star";
 import { BestsellerBox } from "@/components/ui/bestseller";
+import { FreeBox } from "@/components/ui/free";
 
 import styles from "./styles.module.css";
 
@@ -21,6 +22,7 @@ const PromptbookItem: React.FC<{
     name,
     vertImage,
     isBestseller,
+    isFree,
     reviewsRating,
     reviewsRatingFixed,
   } = item;
@@ -37,6 +39,7 @@ const PromptbookItem: React.FC<{
         <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>
       {isBestseller && <BestsellerBox />}
+      {isFree && <FreeBox />}
 
       {Boolean(reviewsRating) && (
         <div className={styles.ratingBox}>
