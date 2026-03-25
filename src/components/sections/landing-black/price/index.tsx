@@ -23,7 +23,7 @@ export default function Price({
   price: PriceType;
   oldPrice: PriceType;
   summary?: string;
-  discount: number
+  discount: number;
   // onBuyClick: () => void
 }) {
   const { formatMessage, locale } = useIntl();
@@ -53,9 +53,12 @@ export default function Price({
             <PriceWithUnit value={oldPrice} />
           </div>
         </div>
-        <div className={styles.discountInfo}>
-          {formatMessage({ id: "common.discount" }, { discount })}
-        </div>
+        {discount && (
+          <div className={styles.discountInfo}>
+            {formatMessage({ id: "common.discount" }, { discount })}
+          </div>
+        )}
+
         {/* <div className={styles.discountInfo}>
           {discount}% off • Sale ends in {daysLeft} days
         </div> */}
@@ -93,11 +96,7 @@ export default function Price({
         </div>
       )}
 
-      {summary && (
-        <p className={styles.summary}>
-          {summary}
-        </p>
-      )}
+      {summary && <p className={styles.summary}>{summary}</p>}
     </div>
   );
 }

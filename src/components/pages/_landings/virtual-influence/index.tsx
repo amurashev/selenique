@@ -21,6 +21,7 @@ import { getGuideData } from "@/constants/guides/utils";
 import CheckMark from "@/components/ui/icons/check-mark";
 
 import styles from "@/components/sections/landing-black/page.module.css";
+import { PriceType } from "@/components/types";
 
 export default function VirtualInfluencePage() {
   const { formatMessage, locale } = useIntl();
@@ -29,8 +30,7 @@ export default function VirtualInfluencePage() {
   const data = GUIDES[slug];
   const languages = Object.keys(data.locales);
 
-  const { price, purchaseLink, boostyLink } = getGuideData(slug, locale);
-  const oldPrice = { en: 79, ru: 4990 };
+  const { price, oldPrice, purchaseLink, boostyLink } = getGuideData(slug, locale);
 
   return (
     <div className={styles.page}>
@@ -338,8 +338,8 @@ export default function VirtualInfluencePage() {
               boostyLink={boostyLink}
               purchaseLink={purchaseLink}
               price={price}
-              oldPrice={oldPrice}
-              discount={20}
+              oldPrice={oldPrice as PriceType}
+              discount={40}
               summary={formatMessage({
                 id: `virtual-influence.section9.text1`,
               })}

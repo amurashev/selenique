@@ -7,6 +7,7 @@ export type GuideLocaleItem = {
   name: string;
   description: string;
   price?: PriceType;
+  oldPrice?: PriceType;
   noLanding?: boolean;
   isFree?: boolean;
   isBestseller?: boolean;
@@ -36,7 +37,10 @@ export const GUIDES: Record<string, GuideItem> = {
         description:
           "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
         price: {
-          en: 67,
+          en: 29,
+        },
+        oldPrice: {
+          en: 49,
         },
       },
       ru: {
@@ -48,6 +52,9 @@ export const GUIDES: Record<string, GuideItem> = {
           "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
         price: {
           ru: 3990,
+        },
+        oldPrice: {
+          en: 5990,
         },
       },
     },
