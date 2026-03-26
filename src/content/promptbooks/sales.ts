@@ -8,6 +8,7 @@ const PROMPTS_SALES: Record<string, number> = {
   "50-high-fashion-editorial-prompts-vol-2": 5,
   "50-ideal-skin-midjourney-prompts-vol-1": 5,
   "35-cosmetic-product-photo-prompts": 7,
+  "cosmetic-product-photo-prompts": 2,
   "32-business-man-photo-prompts": 3,
   "50-jewelry-product-photo-ai-prompts": 2,
   "cartoon-style-image-prompts": 4,
@@ -26,7 +27,6 @@ const PROMPTS_SALES: Record<string, number> = {
   "8-advertising-photo-prompts-vol-1": 2,
 
   "ai-photo-prompts-30-woman-work-lifestyle": 0,
-  "75-cosmetic-product-photo-prompts": 0,
   "120-product-podiums-photo-prompts": 0,
   "120-white-frame-interior-mockup-prompts": 0,
 
