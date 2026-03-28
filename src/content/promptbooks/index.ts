@@ -312,7 +312,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     id: 28,
     gumroadSlug: "realistic-ai-influencer-prompts",
     boostyId: "e0b0dbee-8d7e-47f1-bc7b-8299b85ca2f5",
-    number: 200,
+    number: 300,
     isGrowing: true,
     tags: ["lifestyle", "women", "avatar"],
     mainCategory: "avatar",
