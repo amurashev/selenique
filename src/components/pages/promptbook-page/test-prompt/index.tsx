@@ -5,6 +5,7 @@ import { useIntl } from "react-intl";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { useMetrica } from "next-yandex-metrica";
 
 import styles from "./styles.module.css";
 import { PromptBook } from "@/components/types";
@@ -14,8 +15,9 @@ import { affiliatePageRoute } from "@/constants/routes";
 import { copyText } from "@/utils/copy";
 
 export default function TestPrompt({ data }: { data: PromptBook }) {
-  const { id, testPrompt, number } = data;
+  const { id, slug, testPrompt, number } = data;
   const { formatMessage, locale } = useIntl();
+  const { reachGoal } = useMetrica();
 
   return (
     <div className={styles.box} id="prompt">
@@ -44,7 +46,13 @@ export default function TestPrompt({ data }: { data: PromptBook }) {
             className={styles.textareaHidden}
           />
           <button
-            onClick={() => copyText("prompt_text")}
+            onClick={() => {
+              copyText("prompt_text");
+              reachGoal("promptPage_copyPrompt", {
+                id,
+                slug,
+              });
+            }}
             className={styles.copyButton}
           >
             {formatMessage({ id: "ai_avatar.generator.builder.cta" })}
