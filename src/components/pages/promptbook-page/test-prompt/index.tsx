@@ -18,7 +18,7 @@ export default function TestPrompt({ data }: { data: PromptBook }) {
   const { formatMessage, locale } = useIntl();
 
   return (
-    <div className={styles.box}>
+    <div className={styles.box} id="prompt">
       <h2 className={styles.title}>
         {formatMessage({ id: "prompt_books.test_prompt.title" })}
       </h2>
@@ -39,12 +39,12 @@ export default function TestPrompt({ data }: { data: PromptBook }) {
         <div className={styles.textareaBox}>
           <p className={styles.textarea}>{testPrompt}</p>
           <textarea
-            id="prompt"
+            id="prompt_text"
             defaultValue={testPrompt}
             className={styles.textareaHidden}
           />
           <button
-            onClick={() => copyText("prompt")}
+            onClick={() => copyText("prompt_text")}
             className={styles.copyButton}
           >
             {formatMessage({ id: "ai_avatar.generator.builder.cta" })}
