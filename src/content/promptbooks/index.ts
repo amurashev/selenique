@@ -291,12 +291,12 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "cosmetic-product-photo-prompts": {
     id: 25,
     gumroadSlug: "cosmetic-product-photo-prompts",
-    number: 110,
+    number: 150,
     isGrowing: true,
     tags: ["cosmetic", "product"],
     mainCategory: "product",
     type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
   },
   "8-advertising-photo-prompts-vol-1": {
     id: 26,
