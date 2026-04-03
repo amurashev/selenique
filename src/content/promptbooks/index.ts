@@ -125,7 +125,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "30-business-woman-photo-prompts-ai": {
     id: 10,
-    gumroadSlug: "30-ai-business-woman-photo-prompts",
+    gumroadSlug: "business-woman-photo-prompts",
     boostyId: "796a8676-c1e8-4ee7-9c6f-0f4ad6c29a48",
     number: 30,
     tags: ["business", "women"],
