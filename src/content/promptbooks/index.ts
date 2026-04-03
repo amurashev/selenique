@@ -127,11 +127,12 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     id: 10,
     gumroadSlug: "business-woman-photo-prompts",
     boostyId: "796a8676-c1e8-4ee7-9c6f-0f4ad6c29a48",
-    number: 30,
+    number: 60,
+    isGrowing: true,
     tags: ["business", "women"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 3, 4, 6, 7, 8, 9, 10],
+    images: [2, 5, 6, 7, 8, 9, 10, 11, 12],
     og: true,
   },
 
@@ -331,7 +332,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "avatar",
     type: "pack",
     fileType: "link",
-    images: [1,1],
+    images: [1, 1],
     isFree: true,
   },
 

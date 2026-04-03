@@ -13,6 +13,8 @@ const PROMPTS_POINTS: Record<string, number> = {
   // "portrait-creation-toolkit": 20,
   // "mythical-character-photo": 10,
 
+  "women-headshot-prompts-professional": -10,
+
   "50-high-fashion-editorial-prompts-vol-1": -100,
   "50-high-fashion-editorial-prompts-vol-2": -100,
   "50-high-fashion-editorial-prompts-vol-3": -100,
