@@ -101,7 +101,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "men"],
     mainCategory: "business",
     type: "pack",
-    images: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    images: [1, 9, 10, 11, 12, 13, 15, 16],
   },
 
   "30-christmas-woman-photo-prompts": {
