@@ -224,18 +224,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   },
 
-  // "22-business-man-headshot-prompts-ai": {
-  //   id: 18,
-  //   gumroadSlug: "business-man-headshot-prompts",
-  //   boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
-  //   number: 30,
-  //   tags: ["business", "men", "headshot"],
-  //   mainCategory: "business",
-  //   type: "pack",
-  //   images: [1, 2, 3, 4, 5, 6, 7],
-  //   og: true,
-  //   isGrowing: true,
-  // },
+  "22-business-man-headshot-prompts-ai": {
+    id: 18,
+    gumroadSlug: "business-man-headshots-prompts",
+    boostyId: "b8a6673e-ff54-4121-99ec-99bd57c92031",
+    number: 30,
+    tags: ["business", "men", "headshot"],
+    mainCategory: "business",
+    type: "pack",
+    images: [1, 2, 3, 4, 5, 6, 7],
+    og: true,
+    isGrowing: true,
+  },
 
   "40-muslim-women-business-photo-prompts": {
     id: 19,
