@@ -1,7 +1,7 @@
 const PROMPTS_POINTS: Record<string, number> = {
   "cartoon-style-image-prompts": 110,
   "realistic-ai-influencer-prompts": 100,
-  "22-business-man-headshot-prompts-ai": 100,
+  "business-man-photo-prompts": 100,
   "35-cosmetic-product-photo-prompts": 100,
   "24-ai-maternity-photoshoot-prompts": 100,
   "50-ideal-skin-midjourney-prompts-vol-1": 90,
@@ -14,6 +14,7 @@ const PROMPTS_POINTS: Record<string, number> = {
   // "mythical-character-photo": 10,
 
   "women-headshot-prompts-professional": -10,
+  "22-business-man-headshot-prompts-ai": -10,
 
   "50-high-fashion-editorial-prompts-vol-1": -100,
   "50-high-fashion-editorial-prompts-vol-2": -100,
