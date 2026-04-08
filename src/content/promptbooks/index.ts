@@ -93,7 +93,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     og: true,
   },
 
-  "business-man-photo-prompts": {
+  "32-business-man-photo-prompts": {
     id: 24,
     gumroadSlug: "business-man-photo-prompts",
     number: 60,
