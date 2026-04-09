@@ -12,6 +12,7 @@ import { PromptBook } from "@/components/types";
 import PromptbookItem from "@/components/sections/promptbook-item";
 import { REVIEWS } from "@/constants/reviews";
 import Slider from "react-slick";
+import PROMPTS_RATING from "@/content/promptbooks/reviews";
 
 export const settings = {
   dots: false,
@@ -88,13 +89,36 @@ export default function Reviews() {
   const { formatMessage, locale } = useIntl();
   const count = Object.keys(REVIEWS).length;
 
+  const rating = 5.0;
+  const ratingFixed = rating.toFixed(1);
+  const reviewsCount = Object.keys(PROMPTS_RATING).reduce((prev, next) => {
+    const item = PROMPTS_RATING[next]
+
+    return prev + item.count
+  }, 0)
+
   return (
     <div className={styles.box}>
-      <h2 className={styles.title}>
+      {/* <h2 className={styles.title}>
         {formatMessage({ id: "prompt_books.reviews" })}
-      </h2>
+      </h2> */}
       <div className={styles.ratingBox}>
-        <StarIcon /><strong>5 out of 5</strong><span>(14 reviews)</span>
+        <strong className={styles.ratingFixed}>{ratingFixed}</strong>
+        <div className={styles.ratingBoxSecond}>
+          <div className={styles.ratingBoxSecondTitle}>
+            {formatMessage({ id: "prompt_books.reviews" })}
+          </div>
+          <div className={styles.ratingBoxSecondStars}>
+            <div className={styles.stars}>
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </div>
+            <span className={styles.ratingCount}>({reviewsCount} reviews)</span>
+          </div>
+        </div>
       </div>
       <Slider {...settings} className={styles.list}>
         {Object.keys(REVIEWS).map((id) => {
@@ -102,14 +126,6 @@ export default function Reviews() {
           return (
             <div key={id} className={styles.item}>
               <div className={styles.itemInner}>
-                <div className={styles.stars}>
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
-                </div>
-                <div className={styles.text}>{text}</div>
                 <div className={styles.userBox}>
                   <img
                     className={styles.image}
@@ -120,6 +136,15 @@ export default function Reviews() {
                     <div className={styles.date}>{date}</div>
                   </div>
                 </div>
+                <div className={styles.stars}>
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                </div>
+                <div className={styles.text}>{text}</div>
+
               </div>
             </div>
           );

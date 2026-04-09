@@ -92,8 +92,6 @@ export default function PromptbookPage({
     });
   }, []);
 
-  console.warn("PromptbookPage", data);
-
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -197,6 +195,9 @@ export default function PromptbookPage({
         </div>
 
         <div className={styles.content}>
+          <div className={styles.section}>
+            <Reviews />
+          </div>
           {related.length !== 0 && (
             <div className={styles.section}>
               <Related related={related} url={backUrl} />
@@ -207,9 +208,6 @@ export default function PromptbookPage({
             <BestSellers items={bestSellers} url={backUrl} />
           </div>
 
-          <div className={styles.section}>
-            <Reviews />
-          </div>
         </div>
 
         {purchaseLink && (

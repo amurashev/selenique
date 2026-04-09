@@ -6,27 +6,34 @@ export const REVIEWS: Record<string, {
   text: string
 }> = {
   "1": {
+    author: "Lisa Kass",
+    authorId: "6",
+    date: "09 Apr, 2026",
+    mark: 5,
+    text: "I have hundreds of gumroad prompt packs. this has to be the best layout i’ve come across. highly recommend"
+  },
+  "2": {
     author: "Goldyn",
     authorId: "1",
     date: "22 Dec, 2025",
     mark: 5,
     text: "Nice quality. Very easy to apply and paste"
   },
-  "2": {
+  "3": {
     author: "Bikki",
     authorId: "2",
     date: "26 Nov, 2025",
     mark: 5,
     text: "Always the best artist to work with!"
   },
-  "3": {
+  "4": {
     author: "LaShondra",
     authorId: "3",
     date: "29 Oct, 2025",
     mark: 5,
     text: "Great images. The prompts worked great. I would recommend this."
   },
-  "4": {
+  "6": {
     author: "nedwards832",
     authorId: "4",
     date: "14 Dec, 2025",
@@ -40,11 +47,4 @@ export const REVIEWS: Record<string, {
     mark: 5,
     text: "Amazing AI image prompts with great results"
   },
-  "6": {
-    author: "Lisa Kass",
-    authorId: "6",
-    date: "09 Apr, 2026",
-    mark: 5,
-    text: "I have hundreds of gumroad prompt packs. this has to be the best layout i’ve come across. highly recommend"
-  }
 }
