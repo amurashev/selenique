@@ -42,7 +42,7 @@ const PromptbookItem: React.FC<{
       <div className={styles.box}>
         <img src={vertImage} title={name} alt={name} className={styles.image} />
       </div>
-      {isBestseller && <BestsellerBox />}
+      {isBestseller && !isFree && <BestsellerBox />}
       {isFree && <FreeBox />}
 
       {Boolean(reviewsRating) && (
