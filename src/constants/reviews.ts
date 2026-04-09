@@ -39,5 +39,12 @@ export const REVIEWS: Record<string, {
     date: "17 Nov, 2025",
     mark: 5,
     text: "Amazing AI image prompts with great results"
+  },
+  "6": {
+    author: "Lisa Kass",
+    authorId: "6",
+    date: "09 Apr, 2026",
+    mark: 5,
+    text: "I have hundreds of gumroad prompt packs. this has to be the best layout i’ve come across. highly recommend"
   }
 }

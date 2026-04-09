@@ -15,8 +15,9 @@ const PROMPTS_SALES: Record<string, number> = {
 
   "realistic-ai-influencer-prompts": 2,
 
-  "50-men-fashion-editorial-prompts-vol-1": 1,
-  "50-men-fashion-editorial-prompts-vol-2": 0,
+  "50-old-money-ai-photo-prompts-vol1": 2,
+
+  "50-men-fashion-editorial-prompts-vol-1": 2,
   "8-red-carpet-men-photo-prompts-ai": 1,
   "8-red-carpet-women-photo-prompts": 3,
   "32-monochromatic-studio-portrait-prompt-pack": 0,
@@ -37,8 +38,6 @@ const PROMPTS_SALES: Record<string, number> = {
   "60-fantasy-photo-prompts-ai-portrait": 1,
   "25-wizard-school-photo-prompts-ai": 0,
 
-  "50-old-money-ai-photo-prompts-vol1": 0,
-  "50-old-money-ai-photo-prompts-vol2": 0,
   "30-christmas-woman-photo-prompts": 3,
   "40-christmas-kids-photo-prompts-ai": 3,
 }
