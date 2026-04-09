@@ -14,10 +14,11 @@ const PROMPTS_SALES: Record<string, number> = {
   "cartoon-style-image-prompts": 4,
 
   "realistic-ai-influencer-prompts": 2,
+  "men-fashion-editorial-prompts": 2,
 
   "50-old-money-ai-photo-prompts-vol1": 2,
 
-  "50-men-fashion-editorial-prompts-vol-1": 2,
+  "50-men-fashion-editorial-prompts-vol-1": 1,
   "8-red-carpet-men-photo-prompts-ai": 1,
   "8-red-carpet-women-photo-prompts": 3,
   "32-monochromatic-studio-portrait-prompt-pack": 0,
