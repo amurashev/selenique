@@ -611,4 +611,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1, 3, 4, 5, 6, 7, 8],
     og: true,
   },
+
+  "growing-prompt-library": {
+    id: 70,
+    gumroadSlug: "growing-prompt-library",
+    number: 300,
+    isGrowing: true,
+    mainCategory: 'lifestyle',
+    tags: ["lifestyle"],
+    type: "pack",
+    images: [],
+    og: true,
+    isDirectLink: true,
+    isFree: true,
+  },
 };

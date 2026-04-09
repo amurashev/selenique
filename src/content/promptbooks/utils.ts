@@ -47,6 +47,7 @@ export const getPromptBookData = (slug: string): PromptBook => {
     why: localData["why"],
     testPrompt: localData["prompt"],
     vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
+    gumroadLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}`,
     purchaseLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`,
     boostyLink: baseItem.boostyId
       ? `https://boosty.to/selenique/posts/${baseItem.boostyId}`

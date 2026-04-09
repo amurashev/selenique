@@ -25,13 +25,17 @@ const PromptbookItem: React.FC<{
     isFree,
     reviewsRating,
     reviewsRatingFixed,
+    isDirectLink,
+    gumroadLink,
   } = item;
 
-  const url = promptBookPageRoute.getUrl(locale, {
-    params: {
-      slug,
-    },
-  });
+  const url = isDirectLink
+    ? gumroadLink
+    : promptBookPageRoute.getUrl(locale, {
+        params: {
+          slug,
+        },
+      });
 
   return (
     <Link key={slug} href={url} className={styles.card}>

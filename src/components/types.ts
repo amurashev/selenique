@@ -56,6 +56,7 @@ export type PromptBookRaw = DigitalItem & {
   og?: boolean
   isGrowing?: boolean
   isFree?: boolean
+  isDirectLink?: boolean
 };
 
 export type PromptBook = PromptBookRaw & {
@@ -74,6 +75,7 @@ export type PromptBook = PromptBookRaw & {
   reviewsCount: number
   point: number
   vertImage: string
+  gumroadLink: string
   purchaseLink: string
   boostyLink: string
 };

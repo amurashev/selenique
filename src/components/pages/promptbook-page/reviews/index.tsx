@@ -94,7 +94,7 @@ export default function Reviews() {
         {formatMessage({ id: "prompt_books.reviews" })}
       </h2>
       <div className={styles.ratingBox}>
-        <StarIcon /><strong>5 out of 5</strong><span>(13 reviews)</span>
+        <StarIcon /><strong>5 out of 5</strong><span>(14 reviews)</span>
       </div>
       <Slider {...settings} className={styles.list}>
         {Object.keys(REVIEWS).map((id) => {
