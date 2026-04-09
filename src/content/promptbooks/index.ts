@@ -206,23 +206,24 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-old-money-ai-photo-prompts-vol1": {
     id: 16,
-    gumroadSlug: "50-old-money-ai-photo-prompts-vol1",
-    number: 50,
+    gumroadSlug: "old-money-ai-photo-prompts",
+    number: 100,
+    isGrowing: true,
     tags: ["fashion", "women", "lifestyle"],
     mainCategory: "lifestyle",
     type: "pack",
     images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   },
 
-  "50-old-money-ai-photo-prompts-vol2": {
-    id: 17,
-    gumroadSlug: "50-old-money-ai-photo-prompts-vol2",
-    number: 50,
-    tags: ["fashion", "women", "lifestyle"],
-    mainCategory: "lifestyle",
-    type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-  },
+  // "50-old-money-ai-photo-prompts-vol2": {
+  //   id: 17,
+  //   gumroadSlug: "50-old-money-ai-photo-prompts-vol2",
+  //   number: 50,
+  //   tags: ["fashion", "women", "lifestyle"],
+  //   mainCategory: "lifestyle",
+  //   type: "pack",
+  //   images: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  // },
 
   "22-business-man-headshot-prompts-ai": {
     id: 18,
