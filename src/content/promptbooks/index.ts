@@ -336,6 +336,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     images: [1, 1],
     isFree: true,
+    isBestseller: true,
     isDirectLink: true,
   },
 
@@ -624,6 +625,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [],
     og: true,
     isDirectLink: true,
+    isBestseller: true,
     isFree: true,
   },
 };
