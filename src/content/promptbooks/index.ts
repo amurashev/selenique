@@ -336,6 +336,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     images: [1, 1],
     isFree: true,
+    isDirectLink: true,
   },
 
   // "women-fashion-editorial-prompts-bundle": {
