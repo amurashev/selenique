@@ -121,6 +121,7 @@
   "prompt_books.character_reference.text": "Funciona perfectamente con herramientas de <strong>Character Reference</strong> para resultados consistentes y realistas",
   "prompt_books.instant_download.text": "<strong>Descarga digital instantánea</strong> — Acceso inmediato después de la compra",
   "prompt_books.what_you_get": "Qué obtienes",
+  "prompt_books.image_content": "Exemplos de resultados rápidos",
 
   "prompt_books.test_prompt.title": "Prompt de ejemplo",
   "prompt_books.test_prompt.text": "Este prompt de ejemplo te ofrece una vista previa de la calidad y la estructura utilizadas en todo el pack. Si te gusta lo que produce, el pack completo incluye {number} prompts adicionales diseñados para ayudarte a generar resultados de IA potentes y consistentes.",

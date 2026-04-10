@@ -1,0 +1,20 @@
+.box {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.slider {
+  /* margin: 0 -6px; */
+  margin-left: -6px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  width: calc(100% + 22px);
+}
+
+.item {
+  padding: 0 6px;
+}
+
+.image {
+  width: 100%;
+}

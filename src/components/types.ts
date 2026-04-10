@@ -45,6 +45,7 @@ export type DigitalItem = {
     cm?: string;
   };
   images: number[];
+  examples?: number[];
 };
 
 export type PromptBookRaw = DigitalItem & {

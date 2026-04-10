@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { settings } from "../settings";
+import { mainSettings } from "../settings";
 
 import styles from "./styles.module.css";
 
@@ -19,7 +19,7 @@ export default function ImagesBox({
 }) {
   const imageKey = "promptbooks"
   return (
-    <Slider {...settings} className="singlePageCase">
+    <Slider {...mainSettings} className="singlePageCase">
       {images.map((item) => (
         <div key={item} className={styles.item}>
           <img

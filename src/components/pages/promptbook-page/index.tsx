@@ -33,6 +33,7 @@ import Affiliate from "./affiliate";
 import Instruction from "./instruction";
 import TestPrompt from "./test-prompt";
 import BestSellers from "./best-sellers";
+import ImageContent from "./image-content";
 
 export default function PromptbookPage({
   data,
@@ -60,6 +61,7 @@ export default function PromptbookPage({
     why,
     testPrompt,
     images,
+    examples,
     isDisabled,
     isGrowing,
   } = data;
@@ -103,11 +105,14 @@ export default function PromptbookPage({
         <div className={styles.imagesBox}>
           <ImagesBox id={id} images={images} />
         </div>
-
         <div className={styles.content}>
-          <Header data={data} />
+          <Header data={data} /> 
 
           {finalTopText && <TextTag text={finalTopText} />}
+
+          {examples && examples?.length > 0 && (
+            <ImageContent data={data} />
+          )}
 
           <div className={styles.line}>
             <div className={styles.textBox}>
@@ -207,7 +212,6 @@ export default function PromptbookPage({
           <div className={styles.section}>
             <BestSellers items={bestSellers} url={backUrl} />
           </div>
-
         </div>
 
         {purchaseLink && (
