@@ -25,7 +25,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     tags: ["fashion", "women"],
     type: "pack",
-    images: [1, 2, 3, 4, 5, ],
+    images: [1, 2, 3, 4, 5],
     examples: [6, 7, 8, 9, 10, 11, 12],
   },
   "50-high-fashion-editorial-prompts-vol-3": {
@@ -35,7 +35,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     tags: ["fashion", "women"],
     type: "pack",
-    images: [1, 3, 4, 6, ],
+    images: [1, 3, 4, 6],
     examples: [7, 8, 9, 10, 11, 12, 13],
   },
 
@@ -57,7 +57,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "men"],
     mainCategory: "fashion",
     type: "pack",
-    images: [1, 3, 4, 6, ],
+    images: [1, 3, 4, 6],
     examples: [7, 8, 9, 10, 11, 12, 13],
   },
 
@@ -84,7 +84,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["jewelry", "product"],
     mainCategory: "product",
     type: "pack",
-    images: [1, 2, 3, 4, 5, ],
+    images: [1, 2, 3, 4, 5],
     examples: [6, 7, 8, 9, 10],
   },
 
@@ -109,8 +109,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "men"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 9, 10, 11, 12, 13, 15, 16],
-    examples: [],
+    images: [1],
+    examples: [9, 10, 11, 12, 13, 15, 16],
   },
 
   "30-christmas-woman-photo-prompts": {
@@ -120,7 +120,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["christmas", "women"],
     mainCategory: "christmas",
     type: "pack",
-    images: [1, 2, ],
+    images: [1, 2],
     examples: [3, 4, 5, 6, 7, 8],
   },
 
@@ -131,7 +131,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["christmas", "kids"],
     mainCategory: "christmas",
     type: "pack",
-    images: [1, 2, ],
+    images: [1, 2],
     examples: [3, 4, 5, 6, 7, 8, 9, 10],
   },
 
@@ -144,7 +144,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "women"],
     mainCategory: "business",
     type: "pack",
-    images: [2, ],
+    images: [2],
     examples: [5, 6, 7, 8, 9, 10, 11, 12, 13],
     og: true,
   },
@@ -157,7 +157,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fantasy"],
     mainCategory: "fantasy",
     type: "pack",
-    images: [2, 3, 4, 5, 6, 7, 8, ],
+    images: [2, 3, 4, 5, 6, 7, 8],
     examples: [9, 10, 11, 12, 13],
   },
 
@@ -180,8 +180,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fantasy"],
     mainCategory: "fantasy",
     type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8,],
-    examples: [ 9, 10, 11],
+    images: [1, 3, 4, 5, 6, 7, 8],
+    examples: [9, 10, 11],
   },
 
   "women-headshot-prompts-professional": {
@@ -193,7 +193,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "women", "headshot"],
     mainCategory: "business",
     type: "pack",
-    images: [2, 3, 4, 5, 6, 7, 8, ],
+    images: [2, 3, 4, 5, 6, 7, 8],
     examples: [9, 10, 11, 12],
   },
   "ai-photo-prompts-30-woman-work-lifestyle": {
@@ -206,7 +206,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "women", "lifestyle"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 3, 4, ],
+    images: [1, 3, 4],
     examples: [17, 18, 19, 20, 21, 22],
   },
 
@@ -219,7 +219,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     type: "pack",
     fileType: "link",
     images: [1, 3, 6, 7, 8],
-    examples: [4, 5, ],
+    examples: [4, 5],
   },
 
   "50-old-money-ai-photo-prompts-vol1": {
@@ -230,7 +230,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "women", "lifestyle"],
     mainCategory: "lifestyle",
     type: "pack",
-    images: [1, 4, 5, 6, 7, ],
+    images: [1, 4, 5, 6, 7],
     examples: [10, 11],
   },
 
@@ -252,7 +252,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "men", "headshot"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 2, ],
+    images: [1, 2],
     examples: [3, 4, 5, 6, 7],
     og: true,
     isGrowing: true,
@@ -265,7 +265,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["business", "women"],
     mainCategory: "business",
     type: "pack",
-    images: [1, 3, 4, 5, 6, 7, 8, 9, ],
+    images: [1, 3, 4, 5, 6, 7, 8, 9],
     examples: [21, 22, 23, 24, 25],
   },
 
@@ -321,7 +321,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["cosmetic", "product"],
     mainCategory: "product",
     type: "pack",
-    images: [2, 3, 4, 5, 6, 7, ],
+    images: [2, 3, 4, 5, 6, 7],
     examples: [8, 9, 10, 11, 12, 13, 14, 15],
   },
   "8-advertising-photo-prompts-vol-1": {
@@ -331,7 +331,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fantasy"],
     mainCategory: "fantasy",
     type: "pack",
-    images: [1, 2, 3, 4, ],
+    images: [1, 2, 3, 4],
     examples: [5],
   },
 
@@ -413,7 +413,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "product",
     type: "pack",
     fileType: "link",
-    images: [1, 3, 4, 5, ],
+    images: [1, 3, 4, 5],
     examples: [6, 7, 8],
   },
 
@@ -440,7 +440,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "product",
     type: "pack",
     fileType: "link",
-    images: [1, 3, 4, 5, ],
+    images: [1, 3, 4, 5],
     examples: [6, 7, 8],
   },
 
@@ -463,7 +463,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     type: "pack",
     fileType: "link",
-    images: [1, 3, ],
+    images: [1, 3],
     examples: [4, 5],
   },
   "25-creative-portraits-photo-prompts": {
@@ -474,7 +474,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     type: "pack",
     fileType: "link",
-    images: [1, 3, ],
+    images: [1, 3],
     examples: [4, 5, 6],
     price: {
       ru: 1000,
@@ -502,7 +502,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "studio",
     type: "pack",
     fileType: "link",
-    images: [1, 3, 4, 6, ],
+    images: [1, 3, 4, 6],
     examples: [7, 8, 9, 10, 11, 12, 13],
   },
 
@@ -515,7 +515,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fantasy",
     type: "pack",
     fileType: "link",
-    images: [1, 3, ],
+    images: [1, 3],
     examples: [7, 8, 9, 10, 11, 12],
   },
   "ai-avatar-selfie-prompts": {
@@ -526,7 +526,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "avatar",
     type: "pack",
     fileType: "link",
-    images: [1, 3, 5, ],
+    images: [1, 3, 5],
     examples: [6, 7, 8],
   },
   "food-prompts-dark-moody-macro": {
@@ -537,7 +537,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "food",
     type: "pack",
     fileType: "link",
-    images: [1, 2, 3, 5, ],
+    images: [1, 2, 3, 5],
     examples: [6, 7, 8],
   },
   "food-prompts-bright-airy-minimalist": {
@@ -548,7 +548,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "food",
     type: "pack",
     fileType: "link",
-    images: [1, 2, 3, 5, ],
+    images: [1, 2, 3, 5],
     examples: [6, 7, 8],
   },
   "icon-styles-pack": {
@@ -560,7 +560,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "design",
     type: "pack",
     fileType: "link",
-    images: [1, ],
+    images: [1],
     examples: [6, 7, 8, 9, 10, 11, 12],
   },
   "expressive-shots-photo": {
@@ -571,7 +571,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "fashion",
     type: "pack",
     fileType: "link",
-    images: [1, 3, 4, 5, 6, ],
+    images: [1, 3, 4, 5, 6],
     examples: [7],
   },
   "wedding-photoshoot": {
@@ -591,7 +591,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fantasy", "avatar"],
     mainCategory: "fantasy",
     type: "pack",
-    images: [1, ],
+    images: [1],
     examples: [6, 7, 8, 9, 10],
   },
   "portrait-creation-toolkit": {
@@ -601,8 +601,8 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["avatar"],
     mainCategory: "avatar",
     type: "pack",
-    images: [1, 3,],
-    examples: [ 6, 7, 8, 9],
+    images: [1, 3],
+    examples: [6, 7, 8, 9],
   },
   "cozy-aesthetic": {
     id: 60,
@@ -611,7 +611,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["lifestyle"],
     mainCategory: "lifestyle",
     type: "pack",
-    images: [1, 3, 4, 6, ],
+    images: [1, 3, 4, 6],
     examples: [7],
   },
   "advertising-brand-campaign": {
@@ -621,7 +621,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["lifestyle"],
     mainCategory: "lifestyle",
     type: "pack",
-    images: [1, 3, 4, 6, ],
+    images: [1, 3, 4, 6],
     examples: [7],
   },
   "red-carpet": {
@@ -631,7 +631,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion"],
     mainCategory: "fashion",
     type: "pack",
-    images: [1, 2, 3, 4, ],
+    images: [1, 2, 3, 4],
     examples: [5, 6, 7],
   },
 

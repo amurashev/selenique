@@ -45,7 +45,7 @@ export const contentSettings = {
   lazyLoad: true,
   speed: 300,
   centerMode: false,
-  slidesToShow: 3.3,
+  slidesToShow: 2.3,
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow color="#333333" colorDisabled="#cccccc" />,
   prevArrow: <SamplePrevArrow color="#333333" colorDisabled="#cccccc" />,
@@ -54,7 +54,7 @@ export const contentSettings = {
       arrows: true,
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3.3,
+        slidesToShow: 2.3,
         slidesToScroll: 1,
       },
     },
@@ -70,7 +70,7 @@ export const contentSettings = {
       arrows: false,
       breakpoint: 480,
       settings: {
-        slidesToShow: 1.66,
+        slidesToShow: 1.25,
         slidesToScroll: 1,
       },
     },
