@@ -459,7 +459,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "design",
     type: "pack",
     fileType: "link",
-    images: [1, 7, 8, 9, 10, 11, 12],
+    images: [1, 7, 8, 9, 10, 11, 12, 13],
     og: true,
   },
   "studio-poses-photo-prompts": {

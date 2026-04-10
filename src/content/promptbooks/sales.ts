@@ -13,7 +13,7 @@ const PROMPTS_SALES: Record<string, number> = {
   "50-jewelry-product-photo-ai-prompts": 2,
   "cartoon-style-image-prompts": 4,
 
-  "realistic-ai-influencer-prompts": 2,
+  "realistic-ai-influencer-prompts": 3,
   "men-fashion-editorial-prompts": 2,
 
   "50-old-money-ai-photo-prompts-vol1": 2,
