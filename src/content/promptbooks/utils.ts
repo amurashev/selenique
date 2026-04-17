@@ -17,11 +17,11 @@ export const getPromptBooksList = () => {
   return Object.keys(PROMTBOOKS).map((slug) => slug);
 };
 
+/* eslint-disable @typescript-eslint/no-require-imports */
 export const getPromptBookData = (slug: string, locale: string): PromptBook => {
   const baseItem = PROMTBOOKS[slug];
 
   const id = getPromptBookId(slug) || 0;
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
   let localData;
 
   try {
