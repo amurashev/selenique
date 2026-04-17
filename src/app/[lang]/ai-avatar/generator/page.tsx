@@ -54,7 +54,7 @@ export default async function AiAvatarGeneratorPageEntry({
     return notFound();
   }
 
-  const promptPack = getPromptBookData('portrait-creation-toolkit')
+  const promptPack = getPromptBookData('portrait-creation-toolkit', finalLang)
 
   return (
     <Layout locale={finalLang}>

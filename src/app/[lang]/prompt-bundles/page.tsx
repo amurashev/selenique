@@ -50,7 +50,7 @@ export default async function PromptBundlesPageEntry({
       const promptData = PROMTBOOKS[item];
       return promptData.type === "bundle";
     })
-    .map((item) => getPromptBookData(item));
+    .map((item) => getPromptBookData(item, finalLang));
 
   return (
     <Layout locale={finalLang}>

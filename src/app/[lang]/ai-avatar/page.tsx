@@ -60,7 +60,7 @@ export default async function AiAvatarPageEntry({
     const promptData = PROMTBOOKS[item];
     return promptData.tags.includes("avatar");
   })
-  .map((item) => getPromptBookData(item));
+  .map((item) => getPromptBookData(item, finalLang));
 
   promptPacks.sort(sortByPoints);
 

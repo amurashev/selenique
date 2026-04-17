@@ -75,7 +75,7 @@ export default async function PromptsCategoryPageEntry({
       const promptData = PROMTBOOKS[item];
       return promptData.tags.includes(slug) && promptData.type === "pack";
     })
-    .map((item) => getPromptBookData(item));
+    .map((item) => getPromptBookData(item, finalLang));
 
   promptsWithTag.sort(sortByPoints);
 

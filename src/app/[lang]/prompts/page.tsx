@@ -50,7 +50,7 @@ export default async function PromptbookPageEntry({
   const promptsByCategories: Record<string, PromptBook[]> = {};
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
-    const packData = getPromptBookData(slug);
+    const packData = getPromptBookData(slug, finalLang);
     const { mainCategory, type, sales } = packData;
 
     if (mainCategory && type === "pack") {

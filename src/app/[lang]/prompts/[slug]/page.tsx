@@ -25,10 +25,11 @@ export async function generateMetadata({
   params: Promise<{ slug: string; lang: Locale }>;
 }): Promise<Metadata> {
   const { slug, lang } = await params;
+  const finalLang = lang || i18n.defaultLocale;
 
   const messages = (await getDictionary(lang)) as Record<string, string>;
 
-  const promptBook = getPromptBookData(slug);
+  const promptBook = getPromptBookData(slug, finalLang);
 
   const { og, number } = promptBook;
 
@@ -78,7 +79,7 @@ export default async function PromptbookPageEntry({
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
 
-  const promptBook = getPromptBookData(slug);
+  const promptBook = getPromptBookData(slug, finalLang);
 
   if (!promptBook) {
     return redirect(promptBookListPageRoute.getUrl(finalLang));
@@ -106,7 +107,7 @@ export default async function PromptbookPageEntry({
 
         return isSameType && isNotSameItem && (isSameCategory || mark > 0);
       })
-      .map((itemSlug) => getPromptBookData(itemSlug));
+      .map((itemSlug) => getPromptBookData(itemSlug, finalLang));
 
     related.sort(sortByPoints);
   }
@@ -114,7 +115,7 @@ export default async function PromptbookPageEntry({
   const bestSellers: PromptBook[] = [];
 
   Object.keys(PROMTBOOKS).forEach((itemSlug) => {
-    const packData = getPromptBookData(itemSlug);
+    const packData = getPromptBookData(itemSlug, finalLang);
     const { mainCategory, type, sales } = packData;
     const isNotSameItem = slug !== itemSlug;
     const isSameType = type === promptBook.type;
@@ -143,7 +144,7 @@ export default async function PromptbookPageEntry({
     });
 
     bundleContent = tempSlugArray.map((itemSlug) =>
-      getPromptBookData(itemSlug)
+      getPromptBookData(itemSlug, finalLang)
     );
   }
 

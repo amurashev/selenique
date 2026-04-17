@@ -65,7 +65,7 @@ export default async function HomeEntry({
   const bundles: PromptBook[] = [];
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
-    const packData = getPromptBookData(slug);
+    const packData = getPromptBookData(slug, finalLang);
     const { mainCategory, type, sales } = packData;
 
     if (mainCategory && type === "pack" && sales > 1) {

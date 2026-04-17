@@ -17,12 +17,22 @@ export const getPromptBooksList = () => {
   return Object.keys(PROMTBOOKS).map((slug) => slug);
 };
 
-export const getPromptBookData = (slug: string): PromptBook => {
+export const getPromptBookData = (slug: string, locale: string): PromptBook => {
   const baseItem = PROMTBOOKS[slug];
 
   const id = getPromptBookId(slug) || 0;
   // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const localData = require(`./../../../source/promptbooks/${id}.json`);
+  let localData;
+
+  try {
+    localData = require(`./../../../source/promptbooks/${id}.json`);
+  } catch {
+    try {
+      localData = require(`./../../../source/promptbooks/${id}/${locale}.json`);
+    } catch {
+      localData = require(`./../../../source/promptbooks/${id}/en.json`);
+    }
+  }
 
   const rating = PROMPTS_RATING[slug] || { rating: 0, count: 0 };
   const sales = PROMPTS_SALES[slug] || 0;
@@ -34,7 +44,10 @@ export const getPromptBookData = (slug: string): PromptBook => {
 
   const numberString = (baseItem.number || 50)?.toString();
   const name = localData["name"].replaceAll("{number}", numberString);
-  const description = localData["description"].replaceAll("{number}", numberString);
+  const description = localData["description"].replaceAll(
+    "{number}",
+    numberString
+  );
   const summary = localData["summary"].replaceAll("{number}", numberString);
 
   const item: PromptBook = {

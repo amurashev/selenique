@@ -70,7 +70,7 @@ export default async function PromptsModelPageEntry({
   }
 
   const promptBooks = getPromptBooksList()
-    .map((item) => getPromptBookData(item))
+    .map((item) => getPromptBookData(item, finalLang))
     .filter((item) => item.type === "pack");
 
   promptBooks.sort(sortByPoints);
