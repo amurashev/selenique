@@ -29,6 +29,7 @@
   max-width: 780px;
   margin: 0 auto;
   padding-bottom: 16px;
+  position: relative;
 }
 
 .content {

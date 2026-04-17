@@ -34,6 +34,7 @@ import Instruction from "./instruction";
 import TestPrompt from "./test-prompt";
 import BestSellers from "./best-sellers";
 import ImageContent from "./image-content";
+import ShortHeader from "@/components/layout/short-header";
 
 export default function PromptbookPage({
   data,
@@ -55,6 +56,7 @@ export default function PromptbookPage({
     slug,
     purchaseLink,
     text,
+    name,
     description,
     summary,
     tags,
@@ -96,6 +98,7 @@ export default function PromptbookPage({
 
   return (
     <div className={styles.page}>
+      <ShortHeader route={undefined} title={name} color="white" />
       <main className={styles.main}>
         <div className={styles.backBox}>
           <Link href={backUrl} className={styles.backBoxLink}>
@@ -106,13 +109,11 @@ export default function PromptbookPage({
           <ImagesBox id={id} images={images} />
         </div>
         <div className={styles.content}>
-          <Header data={data} /> 
+          <Header data={data} />
 
           {finalTopText && <TextTag text={finalTopText} />}
 
-          {examples && examples?.length > 0 && (
-            <ImageContent data={data} />
-          )}
+          {examples && examples?.length > 0 && <ImageContent data={data} />}
 
           <div className={styles.line}>
             <div className={styles.textBox}>

@@ -82,9 +82,9 @@ export default function ShortHeader({
 
   return (
     <div
-      className={`${styles.box} ${color === "white" ? styles.boxWhite : ""}`}
+      className={`${styles.box}`}
     >
-      <div className={styles.backBox}>
+      <div className={`${styles.backBox} ${color === "white" ? styles.boxWhite : ""}`}>
         {!route && <div className={styles.nullLink}>&nbsp;</div>}
 
         {route && (

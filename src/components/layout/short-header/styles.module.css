@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.boxWhite {
+  background-color: #fff;
+}
+
 .backBox {
   height: 50px;
   display: flex;
