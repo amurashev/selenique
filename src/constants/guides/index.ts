@@ -125,7 +125,7 @@ export const GUIDES: Record<string, GuideItem> = {
     locales: {
       en: {
         noLanding: true,
-        isFree: true,
+        // isFree: true,
         id: 62,
         gumroadSlug: "nano-banana-pro-beginners",
         name: "AI Images with Nano Banana Pro",
@@ -166,7 +166,7 @@ export const GUIDES: Record<string, GuideItem> = {
     locales: {
       en: {
         noLanding: true,
-        isFree: true,
+        // isFree: true,
         id: 65,
         gumroadSlug: "ai-toolkit-for-sellers",
         name: "AI Toolkit for Digital & Creative Product Sellers",
@@ -179,7 +179,7 @@ export const GUIDES: Record<string, GuideItem> = {
     locales: {
       en: {
         noLanding: true,
-        isFree: true,
+        // isFree: true,
         id: 68,
         gumroadSlug: "create-ai-content",
         name: "AI Visual Starter Kit: 20+ Prompts to Create Scroll‑Stopping Content in One Evening",
