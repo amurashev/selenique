@@ -484,7 +484,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "cartoon-style-image-prompts": {
     id: 44,
     gumroadSlug: "cartoon-style-image-prompts",
-    number: 60,
+    number: 70,
     isGrowing: true,
     tags: ["design"],
     mainCategory: "design",
