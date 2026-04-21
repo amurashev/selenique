@@ -25,7 +25,7 @@ export async function generateMetadata({
 
   const title = messages["ai_avatar.what_is_it.meta.title"];
   const description = messages["ai_avatar.what_is_it.meta.description"];
-  const keywords = messages['ai_avatar.what_is_it.meta.keywords']
+  const keywords = messages["ai_avatar.what_is_it.meta.keywords"];
   const url = aiAvatarWhatIsItPageRoute.getUrl(finalLang);
 
   return {
@@ -54,7 +54,15 @@ export default async function AiAvatarPageEntry({
     return notFound();
   }
 
-  const guidesListId = getGuidesList(finalLang);
+  const guidesListId = getGuidesList(finalLang).filter((item) =>
+    [
+      "virtual-influence-guide",
+      "ai-for-fashion-brands",
+      "create-virtual-influencer",
+      "virtual-influence-instagram-playbook",
+      "portrait-creation-toolkit",
+    ].includes(item.slug)
+  );
   const guidesList = guidesListId.map((item) =>
     getGuideData(item.slug, item.locale)
   );
