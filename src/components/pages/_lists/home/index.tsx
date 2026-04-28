@@ -29,10 +29,13 @@ import ProductSlider, {
 } from "@/components/pages/_lists/promptbook-list/product-slider";
 import GroupHeader from "@/components/sections/group-header";
 import { COMMISSION } from "@/constants/affiliate";
+import PosterItem from "@/components/sections/poster-item";
+import { Poster } from "@/content/posters";
 
 export default function HomePage({
   deviceType,
   bestSellers,
+  posters,
   photos,
   guidesList,
   bundles,
@@ -40,6 +43,7 @@ export default function HomePage({
   deviceType: "mobile" | "desktop";
   bestSellers: PromptBook[];
   guidesList: Guide[];
+  posters: Poster[]
   bundles: PromptBook[];
   photos: {
     alt: string;
@@ -103,6 +107,27 @@ export default function HomePage({
             return (
               <ProductSliderItem key={item.slug}>
                 <PromptbookItem item={item} />
+              </ProductSliderItem>
+            );
+          })}
+        </ProductSlider>
+      </div>
+
+      <hr className={styles.hr} />
+
+      <div className={styles.section}>
+        <GroupHeader
+          title={formatMessage({ id: "home.posters.popular.title" })}
+          // href={promptBookListPageRoute.getUrl(locale)}
+        />
+
+        <p>{formatMessage({ id: "home.posters.popular.text" })}</p>
+
+        <ProductSlider>
+          {posters.map((item) => {
+            return (
+              <ProductSliderItem key={item.id}>
+                <PosterItem item={item} />
               </ProductSliderItem>
             );
           })}

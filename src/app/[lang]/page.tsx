@@ -18,6 +18,8 @@ import shuffle from "@/utils/arrays";
 import { getGuideData, getGuidesList, sortGuidesByPoints } from "@/constants/guides/utils";
 import { homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
+import { Poster } from "@/content/posters";
+import { getPostersList } from "@/content/posters/utils";
 
 export async function generateMetadata({
   params,
@@ -63,6 +65,7 @@ export default async function HomeEntry({
 
   const bestSellers: PromptBook[] = [];
   const bundles: PromptBook[] = [];
+  const posters: Poster[] = getPostersList(finalLang)
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug, finalLang);
@@ -120,6 +123,7 @@ export default async function HomeEntry({
         photos={photos}
         guidesList={guidesList}
         bundles={bundles}
+        posters={posters}
       />
       ;
     </Layout>
