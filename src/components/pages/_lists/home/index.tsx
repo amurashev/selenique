@@ -186,7 +186,7 @@ export default function HomePage({
 
       <hr className={styles.hr} />
 
-      <div className={styles.section}>
+      {/* <div className={styles.section}>
         <GroupHeader
           title={formatMessage({ id: "home.prompt_bundles.popular.title" })}
           href={promptBundleListPageRoute.getUrl(locale)}
@@ -203,7 +203,7 @@ export default function HomePage({
         </ProductSlider>
       </div>
 
-      <hr className={styles.hr} />
+      <hr className={styles.hr} /> */}
 
       <div className={styles.section}>
         <GroupHeader
