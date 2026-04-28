@@ -55,7 +55,7 @@ export default function Menu({
               "header.menu.portfolio",
             ],
           ].map((item) => (
-            <li className={styles.menuItem}>
+            <li className={styles.menuItem} key={item[0]}>
               <Link href={item[0]} className={styles.menuLink}>
                 {formatMessage({ id: item[1] })}
               </Link>
