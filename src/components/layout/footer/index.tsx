@@ -79,71 +79,26 @@ export default function Footer() {
                   {formatMessage({ id: "footer.navigation" })}
                 </span>
 
-                <li className={styles.menuItem}>
-                  <Link
-                    href={promptBookListPageRoute.getUrl(locale)}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "footer.prompts" })}
-                  </Link>
-                </li>
-
-                <li className={styles.menuItem}>
-                  <Link
-                    href={promptBundleListPageRoute.getUrl(locale)}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "footer.prompt_bundles" })}
-                  </Link>
-                </li>
-
-                <li className={styles.menuItem}>
-                  <Link
-                    href={guidesListPageRoute.getUrl(locale)}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "footer.guides" })}
-                  </Link>
-                </li>
-
-                <li className={styles.menuItem}>
-                  <Link
-                    href={postersListPageRoute.getUrl(locale)}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "posters.title_short" })}
-                  </Link>
-                </li>
-
-
-                <li className={styles.menuItem}>
-                  <Link
-                    href={aiAvatarPageRoute.getUrl(locale)}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "footer.ai_avatar" })}
-                  </Link>
-                </li>
-
-                <li className={styles.menuItem}>
-                  <Link
-                    href={affiliatePageRoute.getUrl(locale)}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "header.menu.affiliate" })}
-                  </Link>
-                </li>
-
-                <li className={styles.menuItem}>
-                  <Link
-                    href={productPortfolioPageRoute.getUrl(locale, {
-                      params: { type: "all" },
-                    })}
-                    className={styles.menuLink}
-                  >
-                    {formatMessage({ id: "header.menu.portfolio" })}
-                  </Link>
-                </li>
+                {[
+                  [promptBookListPageRoute.getUrl(locale), "footer.prompts"],
+                  // [promptBundleListPageRoute.getUrl(locale), "footer.prompt_bundles"],
+                  [guidesListPageRoute.getUrl(locale), "footer.guides"],
+                  [postersListPageRoute.getUrl(locale), "posters.title_short"],
+                  [aiAvatarPageRoute.getUrl(locale), "footer.ai_avatar"],
+                  [affiliatePageRoute.getUrl(locale), "header.menu.affiliate"],
+                  [productPortfolioPageRoute.getUrl(locale, {
+                    params: { type: "all" },
+                  }), "header.menu.portfolio"],
+                ].map((item) => (
+                  <li className={styles.menuItem}>
+                    <Link
+                      href={item[0]}
+                      className={styles.menuLink}
+                    >
+                      {formatMessage({ id: item[1] })}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
