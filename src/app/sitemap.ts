@@ -16,6 +16,7 @@ import {
   aiAvatarPageRoute,
   promptsCategoryPageRoute,
   promptsModelPageRoute,
+  postersListPageRoute,
   intensiveNeurovideoPageRoute,
   promptBundleListPageRoute,
   aiAvatarWhatIsItPageRoute,
@@ -72,6 +73,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       promptBookListPageRoute.getUrl(locale),
       guidesListPageRoute.getUrl(locale),
       promptBundleListPageRoute.getUrl(locale),
+      postersListPageRoute.getUrl(locale),
 
       aiAvatarPageRoute.getUrl(locale),
       aiAvatarWhatIsItPageRoute.getUrl(locale),
