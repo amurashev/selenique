@@ -13,6 +13,7 @@ import {
   affiliatePageRoute,
   homePage,
   aiAvatarPageRoute,
+  postersListPageRoute,
 } from "@/constants/routes";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
 import {
@@ -65,6 +66,15 @@ export default function Menu({
               className={styles.menuLink}
             >
               {formatMessage({ id: "footer.guides" })}
+            </Link>
+          </li>
+
+          <li className={styles.menuItem}>
+            <Link
+              href={postersListPageRoute.getUrl(locale)}
+              className={styles.menuLink}
+            >
+              {formatMessage({ id: "posters.title_short" })}
             </Link>
           </li>
 

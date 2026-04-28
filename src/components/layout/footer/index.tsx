@@ -21,6 +21,7 @@ import {
   affiliatePageRoute,
   homePage,
   aiAvatarPageRoute,
+  postersListPageRoute,
 } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
@@ -104,6 +105,16 @@ export default function Footer() {
                     {formatMessage({ id: "footer.guides" })}
                   </Link>
                 </li>
+
+                <li className={styles.menuItem}>
+                  <Link
+                    href={postersListPageRoute.getUrl(locale)}
+                    className={styles.menuLink}
+                  >
+                    {formatMessage({ id: "posters.title_short" })}
+                  </Link>
+                </li>
+
 
                 <li className={styles.menuItem}>
                   <Link
