@@ -49,7 +49,8 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     numberString
   );
   const summary = localData["summary"].replaceAll("{number}", numberString);
-  const text = localData["text"].replaceAll("{number}", numberString);
+  const text = localData["text"] || "";
+  const fixedText = text.replaceAll("{number}", numberString);
 
   const item: PromptBook = {
     ...baseItem,
@@ -57,7 +58,7 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     name,
     description,
     summary,
-    text,
+    text: fixedText,
     why: localData["why"],
     testPrompt: localData["prompt"],
     vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
