@@ -31,6 +31,8 @@ import GroupHeader from "@/components/sections/group-header";
 import { COMMISSION } from "@/constants/affiliate";
 import PosterItem from "@/components/sections/poster-item";
 import { Poster } from "@/content/posters";
+import { ImagesPack } from "@/content/images-packs";
+import ImagePackItem from "@/components/sections/image-pack-item";
 
 export default function HomePage({
   deviceType,
@@ -38,6 +40,7 @@ export default function HomePage({
   posters,
   photos,
   guidesList,
+  imagesPacks,
   bundles,
 }: {
   deviceType: "mobile" | "desktop";
@@ -45,6 +48,7 @@ export default function HomePage({
   guidesList: Guide[];
   posters: Poster[]
   bundles: PromptBook[];
+  imagesPacks: ImagesPack[];
   photos: {
     alt: string;
     category: string;
@@ -114,6 +118,28 @@ export default function HomePage({
       </div>
 
       <hr className={styles.hr} />
+
+      <div className={styles.section}>
+        <GroupHeader
+          title={formatMessage({ id: "home.stock_photos_packs.popular.title" })}
+          // href={postersListPageRoute.getUrl(locale)}
+        />
+
+        <p>{formatMessage({ id: "home.stock_photos_packs.popular.text" })}</p>
+
+        <ProductSlider>
+          {imagesPacks.map((item) => {
+            return (
+              <ProductSliderItem key={item.id}>
+                <ImagePackItem item={item} />
+              </ProductSliderItem>
+            );
+          })}
+        </ProductSlider>
+      </div>
+
+      <hr className={styles.hr} />
+
 
       <div className={styles.section}>
         <GroupHeader
