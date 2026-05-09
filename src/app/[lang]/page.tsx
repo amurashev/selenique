@@ -22,6 +22,8 @@ import { Poster } from "@/content/posters";
 import { getPostersList } from "@/content/posters/utils";
 import { ImagesPack } from "@/content/images-packs";
 import { getImagePacksList } from "@/content/images-packs/utils";
+import { getClipartBundlesList } from "@/content/clipart-bundle/utils";
+import { ClipartBundle } from "@/content/clipart-bundle";
 
 export async function generateMetadata({
   params,
@@ -69,6 +71,7 @@ export default async function HomeEntry({
   const bundles: PromptBook[] = [];
   const posters: Poster[] = getPostersList(finalLang)
   const imagesPacks: ImagesPack[] = getImagePacksList(finalLang)
+  const clipartBundles: ClipartBundle[] = getClipartBundlesList(finalLang)
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug, finalLang);
@@ -128,6 +131,7 @@ export default async function HomeEntry({
         bundles={bundles}
         posters={posters}
         imagesPacks={imagesPacks}
+        clipartBundles={clipartBundles}
       />
       ;
     </Layout>

@@ -33,6 +33,8 @@ import PosterItem from "@/components/sections/poster-item";
 import { Poster } from "@/content/posters";
 import { ImagesPack } from "@/content/images-packs";
 import ImagePackItem from "@/components/sections/image-pack-item";
+import { ClipartBundle } from "@/content/clipart-bundle";
+import ClipartBundleItem from "@/components/sections/clipart-bundle";
 
 export default function HomePage({
   deviceType,
@@ -41,14 +43,16 @@ export default function HomePage({
   photos,
   guidesList,
   imagesPacks,
+  clipartBundles,
   bundles,
 }: {
   deviceType: "mobile" | "desktop";
   bestSellers: PromptBook[];
   guidesList: Guide[];
-  posters: Poster[]
+  posters: Poster[];
   bundles: PromptBook[];
   imagesPacks: ImagesPack[];
+  clipartBundles: ClipartBundle[];
   photos: {
     alt: string;
     category: string;
@@ -140,6 +144,26 @@ export default function HomePage({
 
       <hr className={styles.hr} />
 
+      <div className={styles.section}>
+        <GroupHeader
+          title={formatMessage({ id: "home.clipart_bundles.popular.title" })}
+          // href={postersListPageRoute.getUrl(locale)}
+        />
+
+        <p>{formatMessage({ id: "home.clipart_bundles.popular.text" })}</p>
+
+        <ProductSlider>
+          {clipartBundles.map((item) => {
+            return (
+              <ProductSliderItem key={item.id}>
+                <ClipartBundleItem item={item} />
+              </ProductSliderItem>
+            );
+          })}
+        </ProductSlider>
+      </div>
+
+      <hr className={styles.hr} />
 
       <div className={styles.section}>
         <GroupHeader
@@ -174,7 +198,10 @@ export default function HomePage({
           dangerouslySetInnerHTML={{
             __html: formatMessage(
               { id: "home.affiliate.text" },
-              { commission: COMMISSION, strong: (el) => `<strong>${el}</strong>` }
+              {
+                commission: COMMISSION,
+                strong: (el) => `<strong>${el}</strong>`,
+              }
             ),
           }}
         />
@@ -232,16 +259,12 @@ export default function HomePage({
       <hr className={styles.hr} /> */}
 
       <div className={styles.section}>
-        <GroupHeader
-          title={formatMessage({ id: "home.coffee.title" })}
-        />
+        <GroupHeader title={formatMessage({ id: "home.coffee.title" })} />
 
         <p
           className={styles.affiliateBoxText}
           dangerouslySetInnerHTML={{
-            __html: formatMessage(
-              { id: "home.coffee.text" }
-            ),
+            __html: formatMessage({ id: "home.coffee.text" }),
           }}
         />
 
@@ -254,7 +277,6 @@ export default function HomePage({
           </Link>
         </div>
       </div>
-
 
       {/* <div className={styles.section}>
         <GroupHeader
