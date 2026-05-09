@@ -10,7 +10,7 @@ export const promptBookPageRoute = route("/prompts/[slug]");
 export const promptsCategoryPageRoute = route("/prompts/category/[slug]");
 export const promptsModelPageRoute = route("/prompts/model/[slug]");
 export const postersListPageRoute = route("/posters");
-
+export const clipartBundlesListPageRoute = route("/clipart");
 export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");
 

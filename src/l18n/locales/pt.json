@@ -36,14 +36,7 @@
   "footer.guides": "Guias",
   "footer.prompt_categories": "Categorias de Prompts",
   "footer.prompt_models": "Prompts por modelos",
-  "guides.title": "Guias de IA e Recursos Criativos para Criadores Digitais",
-  "guides.title_short": "Materiais",
-  "guides.text": "Guias práticos de IA e recursos criativos para designers, criadores e profissionais digitais. Aprenda mais rápido, trabalhe de forma mais inteligente e obtenha resultados consistentes com ferramentas de IA.",
-  "guides.see_all": "Ver todos os Materiais",
-  "posters.title": "Coleção de pôsteres – arte de parede elegante e impressões modernas para qualquer ambiente",
-  "posters.title_short": "Pôsteres",
-  "posters.text": "Explore nossa coleção de pôsteres — uma ampla variedade de designs para todos os estilos e humores. De clássicos atemporais às tendências modernas, encontre a arte que traz personalidade e inspiração ao seu espaço.",
-  "posters.see_all": "Ver todos os pôsteres",
+
   "home.prompt_bundles.popular.title": "Pacotes de Prompts ",
   "home.prompt_books.popular.title": "Pacotes de Prompts Populares",
   "home.prompt_books.popular.text": "Nossos pacotes de prompts mais populares apresentam prompts de IA testados para criar visuais realistas e conteúdo de alta qualidade. Confiados por criadores para resultados consistentes e fluxos de trabalho eficientes.",
@@ -74,6 +67,22 @@
   "home.coffee.title": "Invítanos un café",
   "home.coffee.text": "Si has encontrado valor en nuestros recursos y productos digitales y quieres apoyar nuestro trabajo, considera darnos las gracias con un café. Cada café que nos invitas impulsa nuestra creatividad y nos ayuda a seguir ofreciendo recursos de diseño valiosos e innovadores. ¡Tu apoyo significa muchísimo para nosotros!",
   "home.coffee.cta": "Apóyanos",
+
+  "guides.title": "Guias de IA e Recursos Criativos para Criadores Digitais",
+  "guides.title_short": "Materiais",
+  "guides.text": "Guias práticos de IA e recursos criativos para designers, criadores e profissionais digitais. Aprenda mais rápido, trabalhe de forma mais inteligente e obtenha resultados consistentes com ferramentas de IA.",
+  "guides.see_all": "Ver todos os Materiais",
+
+  "posters.title": "Coleção de pôsteres – arte de parede elegante e impressões modernas para qualquer ambiente",
+  "posters.title_short": "Pôsteres",
+  "posters.text": "Explore nossa coleção de pôsteres — uma ampla variedade de designs para todos os estilos e humores. De clássicos atemporais às tendências modernas, encontre a arte que traz personalidade e inspiração ao seu espaço.",
+  "posters.see_all": "Ver todos os pôsteres",
+
+  "clipart.title": "Pacotes de Clipart Populares para Planners e Imprimíveis",
+  "clipart.title_short": "Pacotes de Clipart",
+  "clipart.text": "Descubra pacotes de clipart populares para planners, adesivos, imprimíveis e produtos digitais, com gráficos prontos para usar que economizam tempo e mantêm a identidade da sua marca.",
+  "clipart.page_text": "<section class=intro><h2>Pacotes de clipart para planners, adesivos e produtos digitais</h2><p>Nossos pacotes de clipart foram criados para criadores, vendedores do Etsy e pequenas marcas que precisam de gráficos de alta qualidade sem passar horas no design. Use-os em planners digitais, adesivos, diários, convites, posts em redes sociais e muito mais.</section><section class=benefits><h2>Por que escolher estes pacotes de clipart?</h2><ul><li><strong>Gráficos prontos para usar</strong> – baixe, adicione ao seu design e publique mais rápido.<li><strong>Perfeitos para uso comercial</strong> – ideais para lojas do Etsy, imprimíveis e projetos de clientes (verifique a licença).<li><strong>Coleções temáticas consistentes</strong> – conjuntos combinados que ajudam a manter um estilo visual coeso.<li><strong>Arquivos em alta resolução</strong> – gráficos nítidos para produtos impressos e digitais.<li><strong>Formatos versáteis</strong> – ótimos para planners, adesivos, cartões, pôsteres e uso em tela.</ul></section><section class=uses><h2>Como usar estes pacotes de clipart</h2><p>Você pode usar esses conjuntos de clipart em uma ampla variedade de projetos criativos e comerciais. Combine elementos de diferentes pacotes para criar suas próprias coleções exclusivas.<ul><li>Planners digitais, cadernos e diários.<li>Adesivos imprimíveis, etiquetas e tags.<li>Arte de parede, cartões e convites.<li>Gráficos para redes sociais, banners e capas.<li>Elementos de branding para pequenas empresas e projetos pessoais.</ul></section><section class=grid><h2>Explore os pacotes de clipart mais populares</h2><p>Navegue pelos nossos pacotes de clipart temáticos mais populares. Clique em qualquer conjunto para ver todos os elementos incluídos, formatos e detalhes de licença.</section><section class=license><h2>Licença e uso comercial</h2><p>Cada pacote de clipart acompanha uma licença clara para que você possa usar os gráficos com confiança em seus projetos comerciais e pessoais. Leia os termos da licença na página de cada produto antes de usar os arquivos em produtos finalizados, POD ou trabalhos para clientes.</section><section class=cta><h2>Comece a criar com clipart pronto para usar</h2><p>Escolha seus pacotes de clipart favoritos, baixe os arquivos e comece a criar em minutos. Seja você um vendedor de produtos digitais, dono de loja no Etsy ou criador para clientes, esses gráficos vão ajudá-lo a lançar novos designs mais rápido e manter um estilo visual consistente.</section>",
+  "clipart.see_all": "Ver todos os pacotes de Clipart",
 
   "affiliate.hero.title": "Gana un {commission}% en cada venta",
   "affiliate.hero.subtitle": "Programa de Afiliados",

@@ -6,22 +6,14 @@ import { useIntl } from "react-intl";
 import styles from "./styles.module.css";
 import {
   getPromptCategoryShortLabel,
-  getPromptModelShortLabel,
   getPromptModelTag,
   PROMPT_CATEGORIES,
   PROMPT_MODELS,
 } from "@/content/promptbooks/categories";
 import {
-  promptBookListPageRoute,
-  guidesListPageRoute,
-  promptBundleListPageRoute,
-  productPortfolioPageRoute,
   promptsCategoryPageRoute,
   promptsModelPageRoute,
-  affiliatePageRoute,
   homePage,
-  aiAvatarPageRoute,
-  postersListPageRoute,
 } from "@/constants/routes";
 import { RUFlag, UKFlag } from "@/components/ui/flags";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
@@ -30,6 +22,7 @@ import {
   InstagramIcon,
   ThreadsIcon,
 } from "@/components/ui/icons/socials";
+import { getMainPagesList } from "@/constants/pages";
 
 export default function Footer() {
   const { formatMessage, locale } = useIntl();
@@ -79,17 +72,7 @@ export default function Footer() {
                   {formatMessage({ id: "footer.navigation" })}
                 </span>
 
-                {[
-                  [promptBookListPageRoute.getUrl(locale), "footer.prompts"],
-                  // [promptBundleListPageRoute.getUrl(locale), "footer.prompt_bundles"],
-                  [guidesListPageRoute.getUrl(locale), "footer.guides"],
-                  [postersListPageRoute.getUrl(locale), "posters.title_short"],
-                  [aiAvatarPageRoute.getUrl(locale), "footer.ai_avatar"],
-                  [affiliatePageRoute.getUrl(locale), "header.menu.affiliate"],
-                  [productPortfolioPageRoute.getUrl(locale, {
-                    params: { type: "all" },
-                  }), "header.menu.portfolio"],
-                ].map((item) => (
+                {getMainPagesList(locale).map((item) => (
                   <li className={styles.menuItem} key={item[0]}>
                     <Link
                       href={item[0]}

@@ -1,19 +1,11 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { useIntl } from "react-intl";
-import { usePathname, redirect } from "next/navigation";
 import Link from "next/link";
 
 import {
-  promptBookListPageRoute,
-  guidesListPageRoute,
-  promptBundleListPageRoute,
-  productPortfolioPageRoute,
-  affiliatePageRoute,
   homePage,
-  aiAvatarPageRoute,
-  postersListPageRoute,
 } from "@/constants/routes";
 import { EMAIL, INSTAGRAM_NAME, THREADS_NAME } from "@/constants/contacts";
 import {
@@ -23,6 +15,7 @@ import {
 } from "@/components/ui/icons/socials";
 
 import styles from "./styles.module.css";
+import { getMainPagesList } from "@/constants/pages";
 
 export default function Menu({
   ref,
@@ -42,19 +35,7 @@ export default function Menu({
         </Link>
         <hr className={styles.hr} />
         <ul className={styles.menuList}>
-          {[
-            [promptBookListPageRoute.getUrl(locale), "footer.prompts"],
-            [guidesListPageRoute.getUrl(locale), "footer.guides"],
-            [postersListPageRoute.getUrl(locale), "posters.title_short"],
-            [aiAvatarPageRoute.getUrl(locale), "footer.ai_avatar"],
-            [affiliatePageRoute.getUrl(locale), "header.menu.affiliate"],
-            [
-              productPortfolioPageRoute.getUrl(locale, {
-                params: { type: "all" },
-              }),
-              "header.menu.portfolio",
-            ],
-          ].map((item) => (
+          {getMainPagesList(locale).map((item) => (
             <li className={styles.menuItem} key={item[0]}>
               <Link href={item[0]} className={styles.menuLink}>
                 {formatMessage({ id: item[1] })}

@@ -6,6 +6,7 @@ const files = [
   "home.json",
   "guides.json",
   "posters.json",
+  "clipart.json",
   "portfolio.json",
   "prompt_categories.json",
   "prompt_models.json",

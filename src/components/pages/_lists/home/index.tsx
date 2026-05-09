@@ -12,6 +12,7 @@ import "react-photo-album/rows.css";
 import {
   promptBookListPageRoute,
   postersListPageRoute,
+  clipartBundlesListPageRoute,
   guidesListPageRoute,
   affiliatePageRoute,
 } from "@/constants/routes";
@@ -147,7 +148,7 @@ export default function HomePage({
       <div className={styles.section}>
         <GroupHeader
           title={formatMessage({ id: "home.clipart_bundles.popular.title" })}
-          // href={postersListPageRoute.getUrl(locale)}
+          href={clipartBundlesListPageRoute.getUrl(locale)}
         />
 
         <p>{formatMessage({ id: "home.clipart_bundles.popular.text" })}</p>
