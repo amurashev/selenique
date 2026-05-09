@@ -64,9 +64,6 @@ export default function Header({ data }: { data: PromptBook }) {
               )}
             </div>
           )}
-          {/* {Boolean(sales) && (
-            <span><strong>{sales}</strong> {formatMessage({ id: 'common.sales' })}</span>
-          )} */}
           &nbsp;
         </div>
       )}
@@ -75,8 +72,6 @@ export default function Header({ data }: { data: PromptBook }) {
         <h1 className={styles.title}>{name}</h1>
       </div>
 
-      {/* <span className={styles.divider}>|</span>
-        <span><strong>1</strong> review</span> */}
       <div className={styles.categoriesBox}>
         <Categories data={data} />
       </div>

@@ -41,27 +41,27 @@ export default function HomePage({
   deviceType,
   bestSellers,
   posters,
-  photos,
+  // photos,
   guidesList,
   imagesPacks,
   clipartBundles,
-  bundles,
+  // bundles,
 }: {
   deviceType: "mobile" | "desktop";
   bestSellers: PromptBook[];
   guidesList: Guide[];
   posters: Poster[];
-  bundles: PromptBook[];
+  // bundles: PromptBook[];
   imagesPacks: ImagesPack[];
   clipartBundles: ClipartBundle[];
-  photos: {
-    alt: string;
-    category: string;
-    height: number;
-    src: string;
-    title: string;
-    width: number;
-  }[];
+  // photos: {
+  //   alt: string;
+  //   category: string;
+  //   height: number;
+  //   src: string;
+  //   title: string;
+  //   width: number;
+  // }[];
 }) {
   const { formatMessage, locale } = useIntl();
 

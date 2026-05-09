@@ -9,7 +9,6 @@ import {
 } from "@/constants/routes";
 
 export const getMainPagesList = (locale: string) => {
-
   return [
     [promptBookListPageRoute.getUrl(locale), "footer.prompts"],
     [guidesListPageRoute.getUrl(locale), "footer.guides"],

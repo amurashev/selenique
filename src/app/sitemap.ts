@@ -23,13 +23,18 @@ import {
   aiAvatarFAQPageRoute,
   aiAvatarGeneratorPageRoute,
   clipartBundlesListPageRoute,
+  clipartBundleItemPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/content/promptbooks";
-import { PROMPT_CATEGORIES, PROMPT_MODELS } from "@/content/promptbooks/categories";
+import {
+  PROMPT_CATEGORIES,
+  PROMPT_MODELS,
+} from "@/content/promptbooks/categories";
 
 import { i18n, Locale } from "../../i18n-config";
 import { getGuidesList } from "@/constants/guides/utils";
+import { getClipartBundlesList } from "@/content/clipart-bundle/utils";
 
 const DOMAIN = "https://www.selenique.space";
 
@@ -114,6 +119,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       // Guides
       ...getGuidesList(locale).map((item) =>
         guidePageRoute.getUrl(locale, { params: { slug: item.slug } })
+      ),
+
+      // Clipart Bundles
+      ...getClipartBundlesList(locale).map((item) =>
+        clipartBundleItemPageRoute.getUrl(locale, { params: { slug: item } })
       ),
     ].forEach((item) => {
       pages.push({

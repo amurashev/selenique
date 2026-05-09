@@ -9,20 +9,24 @@ import getDeviceType from "@/utils/device";
 import { PromptBook } from "@/components/types";
 import { PROMTBOOKS } from "@/content/promptbooks";
 import PHOTOS from "../../../source/portfolio.json";
-import {
-  getPromptBookData,
-  sortByPoints,
-} from "@/content/promptbooks/utils";
+import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
 import shuffle from "@/utils/arrays";
-import { getGuideData, getGuidesList, sortGuidesByPoints } from "@/constants/guides/utils";
+import {
+  getGuideData,
+  getGuidesList,
+  sortGuidesByPoints,
+} from "@/constants/guides/utils";
 import { homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 import { Poster } from "@/content/posters";
 import { getPostersList } from "@/content/posters/utils";
 import { ImagesPack } from "@/content/images-packs";
 import { getImagePacksList } from "@/content/images-packs/utils";
-import { getClipartBundlesList } from "@/content/clipart-bundle/utils";
+import {
+  getClipartBundleData,
+  getClipartBundlesList,
+} from "@/content/clipart-bundle/utils";
 import { ClipartBundle } from "@/content/clipart-bundle";
 
 export async function generateMetadata({
@@ -68,10 +72,9 @@ export default async function HomeEntry({
   }
 
   const bestSellers: PromptBook[] = [];
-  const bundles: PromptBook[] = [];
-  const posters: Poster[] = getPostersList(finalLang)
-  const imagesPacks: ImagesPack[] = getImagePacksList(finalLang)
-  const clipartBundles: ClipartBundle[] = getClipartBundlesList(finalLang)
+  // const bundles: PromptBook[] = [];
+  const posters: Poster[] = getPostersList(finalLang);
+  const imagesPacks: ImagesPack[] = getImagePacksList(finalLang);
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug, finalLang);
@@ -81,13 +84,13 @@ export default async function HomeEntry({
       bestSellers.push(packData);
     }
 
-    if (type === "bundle") {
-      bundles.push(packData);
-    }
+    // if (type === "bundle") {
+    //   bundles.push(packData);
+    // }
   });
 
   bestSellers.sort(sortByPoints);
-  bundles.sort(sortByPoints);
+  // bundles.sort(sortByPoints);
 
   const guidesListId = getGuidesList(finalLang);
 
@@ -97,43 +100,47 @@ export default async function HomeEntry({
 
   guidesList.sort(sortGuidesByPoints);
 
-  const randomPhotos = PHOTOS.filter((item) => {
-    const sourceFile = item.SourceFile.slice(8);
-    const category = sourceFile.split("/")[3];
-    return category === "top";
-  });
+  // const randomPhotos = PHOTOS.filter((item) => {
+  //   const sourceFile = item.SourceFile.slice(8);
+  //   const category = sourceFile.split("/")[3];
+  //   return category === "top";
+  // });
 
-  shuffle(randomPhotos);
+  // shuffle(randomPhotos);
 
-  const photos = randomPhotos
-    .map((item) => {
-      const sourceFile = item.SourceFile.slice(8);
-      const category = sourceFile.split("/")[3];
-      const fileName = sourceFile.split("/")[4];
-      return {
-        src: sourceFile,
-        category,
-        width: item.ImageWidth,
-        height: item.ImageHeight,
-        alt: fileName,
-        title: fileName,
-      };
-    })
-    .slice(0, 8);
+  // const photos = randomPhotos
+  //   .map((item) => {
+  //     const sourceFile = item.SourceFile.slice(8);
+  //     const category = sourceFile.split("/")[3];
+  //     const fileName = sourceFile.split("/")[4];
+  //     return {
+  //       src: sourceFile,
+  //       category,
+  //       width: item.ImageWidth,
+  //       height: item.ImageHeight,
+  //       alt: fileName,
+  //       title: fileName,
+  //     };
+  //   })
+  //   .slice(0, 8);
+
+  const clipartBundlesId = getClipartBundlesList(finalLang);
+  const clipartBundles: ClipartBundle[] = clipartBundlesId.map((item) =>
+    getClipartBundleData(item, finalLang)
+  );
 
   return (
     <Layout locale={finalLang}>
       <HomePage
         deviceType={deviceType}
         bestSellers={bestSellers}
-        photos={photos}
+        // photos={photos}
         guidesList={guidesList}
-        bundles={bundles}
+        // bundles={bundles}
         posters={posters}
         imagesPacks={imagesPacks}
         clipartBundles={clipartBundles}
       />
-      ;
     </Layout>
   );
 }

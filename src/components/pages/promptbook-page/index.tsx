@@ -55,6 +55,7 @@ export default function PromptbookPage({
     id,
     slug,
     purchaseLink,
+    boostyLink,
     text,
     name,
     description,
@@ -187,9 +188,9 @@ export default function PromptbookPage({
             <div className={styles.rightSide}>
               {!isDisabled ? (
                 <RightSide
-                  data={data}
                   backUrl={backUrl}
                   purchaseLink={purchaseLink}
+                  boostyLink={boostyLink}
                 />
               ) : (
                 <div className={styles.rightSideBox}>

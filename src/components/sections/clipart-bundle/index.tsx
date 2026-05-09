@@ -9,21 +9,25 @@ import Link from "next/link";
 
 import styles from "./styles.module.css";
 import { ClipartBundle } from "@/content/clipart-bundle";
+import { clipartBundleItemPageRoute } from "@/constants/routes";
 
 const ClipartBundleItem: React.FC<{
   item: ClipartBundle;
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { id, etsyID, title } = item;
-  const url = `https://www.etsy.com/listing/${etsyID}`;
-  const vertImage = `/images/clipart-bundles/${id}/thumb.jpg`;
+  const { id, slug,  thumbImage, title } = item;
+  const url = clipartBundleItemPageRoute.getUrl(locale, {
+    params: {
+      slug
+    }
+  })
 
   return (
     <Link key={id} href={url} className={styles.card} rel="nofollow">
       <div className={styles.box}>
         <img
-          src={vertImage}
+          src={thumbImage}
           title={title}
           alt={title}
           className={styles.image}

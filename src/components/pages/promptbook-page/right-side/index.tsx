@@ -16,16 +16,15 @@ const discount = 30;
 const DISCOUNT_END_DAY = "2025-12-16";
 
 export default function RightSide({
-  data,
   backUrl,
   purchaseLink,
+  boostyLink,
 }: {
-  data: PromptBook;
   backUrl: string;
   purchaseLink: string;
+  boostyLink: string
 }) {
   const { formatMessage, locale } = useIntl();
-  const { links, boostyId, type } = data;
 
   // const discountedPrice = {
   //   ru: price.ru + Math.ceil((price.ru * discount) / 50),
@@ -68,10 +67,10 @@ export default function RightSide({
             </Link>
           )}
 
-          {boostyId && showRussiaHints && (
+          {boostyLink && showRussiaHints && (
             <Link
               className={styles.link}
-              href={`https://boosty.to/selenique/posts/${boostyId}`}
+              href={boostyLink}
               target="_blank"
             >
               {formatMessage({ id: "common.buy_now_russia" })}
