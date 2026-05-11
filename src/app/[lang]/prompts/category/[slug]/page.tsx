@@ -12,6 +12,7 @@ import { PROMPT_CATEGORIES } from "@/content/promptbooks/categories";
 import {
   promptsCategoryPageRoute,
   promptBookListPageRoute,
+  promptBookPageRoute,
 } from "@/constants/routes";
 
 import { getDictionary } from "@/l18n/dictionaries";
@@ -65,6 +66,16 @@ export default async function PromptsCategoryPageEntry({
 }) {
   const { slug, lang } = await params;
   const finalLang = lang || i18n.defaultLocale;
+
+  if (slug === ("red_carpet" as PromptCategories)) {
+    return redirect(
+      promptBookPageRoute.getUrl(finalLang, {
+        params: {
+          slug: "red-carpet",
+        },
+      })
+    );
+  }
 
   if (!PROMPT_CATEGORIES.includes(slug)) {
     return redirect(promptBookListPageRoute.getUrl(lang));
