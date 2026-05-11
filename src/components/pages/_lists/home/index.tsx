@@ -80,6 +80,27 @@ export default function HomePage({
 
       <hr className={styles.hr} />
 
+      <div className={styles.section}>
+        <GroupHeader
+          title={formatMessage({ id: "home.prompt_books.popular.title" })}
+          href={promptBookListPageRoute.getUrl(locale)}
+        />
+
+        <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
+
+        <ProductSlider>
+          {bestSellers.map((item) => {
+            return (
+              <ProductSliderItem key={item.slug}>
+                <PromptbookItem item={item} />
+              </ProductSliderItem>
+            );
+          })}
+        </ProductSlider>
+      </div>
+
+      <hr className={styles.hr} />
+
       {guidesList.length > 0 && (
         <>
           <div className={styles.section}>
@@ -102,27 +123,6 @@ export default function HomePage({
           <hr className={styles.hr} />
         </>
       )}
-
-      <div className={styles.section}>
-        <GroupHeader
-          title={formatMessage({ id: "home.prompt_books.popular.title" })}
-          href={promptBookListPageRoute.getUrl(locale)}
-        />
-
-        <p>{formatMessage({ id: "home.prompt_books.popular.text" })}</p>
-
-        <ProductSlider>
-          {bestSellers.map((item) => {
-            return (
-              <ProductSliderItem key={item.slug}>
-                <PromptbookItem item={item} />
-              </ProductSliderItem>
-            );
-          })}
-        </ProductSlider>
-      </div>
-
-      <hr className={styles.hr} />
 
       <div className={styles.section}>
         <GroupHeader
