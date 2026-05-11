@@ -1,6 +1,6 @@
 const PROMPTS_SALES: Record<string, number> = {
   "22-business-man-headshot-prompts-ai": 11,
-  "30-business-woman-photo-prompts-ai": 9,
+  "30-business-woman-photo-prompts-ai": 10,
   "red-carpet": 11,
   // "8-red-carpet-couple-ai-photo-prompts": 7,
   "15-ai-women-headshot-prompts-professional": 6,
