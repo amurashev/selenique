@@ -99,9 +99,9 @@ const LayerIcon = () => {
       <g
         id="production"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="layer" fill="#000000" fill-rule="nonzero">
           <path
