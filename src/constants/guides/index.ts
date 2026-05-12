@@ -188,4 +188,18 @@ export const GUIDES: Record<string, GuideItem> = {
       },
     },
   },
+
+  "ai-photoshoot-guide": {
+    locales: {
+      en: {
+        noLanding: true,
+        // isFree: true,
+        id: 71,
+        gumroadSlug: "ai-photoshoot-guide",
+        name: "Your AI Photoshoot. How to Get Stunning Photos of Yourself Using AI",
+        description:
+          "A step‑by‑step beginner‑friendly guide (in English) that helps complete non‑tech users create their own “AI photoshoot” without hiring a photographer.",
+      },
+    },
+  },
 };
