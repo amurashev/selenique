@@ -193,7 +193,7 @@ export const GUIDES: Record<string, GuideItem> = {
     locales: {
       en: {
         noLanding: true,
-        isBestseller: true,
+        // isBestseller: true,
         isFree: true,
         id: 71,
         gumroadSlug: "ai-photoshoot-guide",
