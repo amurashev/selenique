@@ -194,7 +194,7 @@ export const GUIDES: Record<string, GuideItem> = {
       en: {
         noLanding: true,
         isBestseller: true,
-        // isFree: true,
+        isFree: true,
         id: 71,
         gumroadSlug: "ai-photoshoot-guide",
         name: "Your AI Photoshoot. How to Get Stunning Photos of Yourself Using AI",
