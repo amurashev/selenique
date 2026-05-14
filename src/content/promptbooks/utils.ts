@@ -54,7 +54,7 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
 
   const gumroadLink =  `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}`
   const gumroadBasketLink = `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`
-  const purchaseLink = baseItem.hasVariations ? gumroadLink : gumroadBasketLink
+  const purchaseLink = gumroadLink //baseItem.hasVariations ? gumroadLink : gumroadBasketLink
 
   const item: PromptBook = {
     ...baseItem,
