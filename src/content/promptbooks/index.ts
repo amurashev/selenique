@@ -1,43 +1,43 @@
 import { PromptBookRaw } from "@/components/types";
 
 export const PROMTBOOKS: Record<string, PromptBookRaw> = {
-  "50-high-fashion-editorial-prompts-vol-1": {
-    id: 1,
-    gumroadSlug: "50-ai-fashion-editorial-prompts-vol1",
-    number: 50,
-    links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
-    },
-    mainCategory: "fashion",
-    tags: ["fashion", "women"],
-    images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    examples: [],
-  },
+  // "50-high-fashion-editorial-prompts-vol-1": {
+  //   id: 1,
+  //   gumroadSlug: "50-ai-fashion-editorial-prompts-vol1",
+  //   number: 50,
+  //   links: {
+  //     cm: "https://creativemarket.com/AlenaMurasheva/291838555-50-High-Fashion-Editorial-Prompts-V1",
+  //   },
+  //   mainCategory: "fashion",
+  //   tags: ["fashion", "women"],
+  //   images: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  //   examples: [],
+  // },
 
-  "50-high-fashion-editorial-prompts-vol-2": {
-    id: 5,
-    gumroadSlug: "50-ai-fashion-editorial-prompts-vol2",
-    boostyId: "40f7cb76-5db0-419a-b3f5-55a640de03f9",
-    number: 50,
-    links: {
-      cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
-    },
-    mainCategory: "fashion",
-    tags: ["fashion", "women"],
-    type: "pack",
-    images: [1, 2, 3, 4, 5],
-    examples: [6, 7, 8, 9, 10, 11, 12],
-  },
-  "50-high-fashion-editorial-prompts-vol-3": {
-    id: 27,
-    gumroadSlug: "50-ai-fashion-editorial-prompts-vol3",
-    number: 50,
-    mainCategory: "fashion",
-    tags: ["fashion", "women"],
-    type: "pack",
-    images: [1, 3, 4, 6],
-    examples: [7, 8, 9, 10, 11, 12, 13],
-  },
+  // "50-high-fashion-editorial-prompts-vol-2": {
+  //   id: 5,
+  //   gumroadSlug: "50-ai-fashion-editorial-prompts-vol2",
+  //   boostyId: "40f7cb76-5db0-419a-b3f5-55a640de03f9",
+  //   number: 50,
+  //   links: {
+  //     cm: "https://creativemarket.com/AlenaMurasheva/291894652-50-High-Fashion-Editorial-Prompts-V2",
+  //   },
+  //   mainCategory: "fashion",
+  //   tags: ["fashion", "women"],
+  //   type: "pack",
+  //   images: [1, 2, 3, 4, 5],
+  //   examples: [6, 7, 8, 9, 10, 11, 12],
+  // },
+  // "50-high-fashion-editorial-prompts-vol-3": {
+  //   id: 27,
+  //   gumroadSlug: "50-ai-fashion-editorial-prompts-vol3",
+  //   number: 50,
+  //   mainCategory: "fashion",
+  //   tags: ["fashion", "women"],
+  //   type: "pack",
+  //   images: [1, 3, 4, 6],
+  //   examples: [7, 8, 9, 10, 11, 12, 13],
+  // },
 
   "50-men-fashion-editorial-prompts-vol-1": {
     id: 3,
