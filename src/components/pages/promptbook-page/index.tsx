@@ -67,6 +67,7 @@ export default function PromptbookPage({
     examples,
     isDisabled,
     isGrowing,
+    hasVariations,
   } = data;
   const finalTopText = description || summary;
   const backUrl = promptBookListPageRoute.getUrl(locale);
@@ -142,7 +143,7 @@ export default function PromptbookPage({
                 </div>
               )}
 
-              {testPrompt && (
+              {testPrompt && !hasVariations && (
                 <div className={styles.section}>
                   <TestPrompt data={data} />
                 </div>

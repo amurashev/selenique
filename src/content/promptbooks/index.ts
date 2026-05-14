@@ -106,6 +106,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     gumroadSlug: "business-man-photo-prompts",
     number: 60,
     isGrowing: true,
+    hasVariations: true,
     tags: ["business", "men"],
     mainCategory: "business",
     type: "pack",
