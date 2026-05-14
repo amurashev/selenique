@@ -639,7 +639,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
   "women-fashion-editorial-prompts": {
     id: 66,
     gumroadSlug: "women-fashion-editorial-prompts",
-    number: 200,
+    number: 300,
     isGrowing: true,
     mainCategory: "fashion",
     tags: ["fashion", "women"],
