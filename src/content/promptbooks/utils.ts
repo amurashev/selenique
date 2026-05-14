@@ -52,6 +52,10 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
   const text = localData["text"] || "";
   const fixedText = text.replaceAll("{number}", numberString);
 
+  const gumroadLink =  `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}`
+  const gumroadBasketLink = `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`
+  const purchaseLink = baseItem.hasVariations ? gumroadLink : gumroadBasketLink
+
   const item: PromptBook = {
     ...baseItem,
     slug,
@@ -62,8 +66,8 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     why: localData["why"],
     testPrompt: localData["prompt"],
     vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
-    gumroadLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}`,
-    purchaseLink: `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`,
+    gumroadLink,
+    purchaseLink,
     boostyLink: baseItem.boostyId
       ? `https://boosty.to/selenique/posts/${baseItem.boostyId}`
       : "",
