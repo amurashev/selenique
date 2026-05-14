@@ -69,6 +69,22 @@ export default async function PromptbookPageEntry({
   const { slug, lang } = await params;
   const finalLang = lang || i18n.defaultLocale;
 
+  if (
+    [
+      "50-high-fashion-editorial-prompts-vol-1",
+      "50-high-fashion-editorial-prompts-vol-2",
+      "50-high-fashion-editorial-prompts-vol-3",
+    ].includes(slug)
+  ) {
+    return redirect(
+      promptBookPageRoute.getUrl(finalLang, {
+        params: {
+          slug: "women-fashion-editorial-prompts",
+        },
+      })
+    );
+  }
+
   if (!slug) {
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
