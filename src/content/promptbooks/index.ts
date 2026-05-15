@@ -92,7 +92,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     id: 7,
     gumroadSlug: "24-ai-maternity-photoshoot-prompts",
     boostyId: "4f29f408-09e8-4e27-b308-84fcee7c2de2",
-    number: 24,
+    number: 35,
     tags: ["fashion", "women", "maternity"],
     mainCategory: "fashion", // TODO?
     type: "pack",
