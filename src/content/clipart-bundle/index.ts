@@ -47,5 +47,12 @@ export const CLIPART_BUNDLES: Record<string, ClipartBundleRaw> = {
     images: [1, 2, 3, 4, 5],
     title: "Mystical Celestial Clipart Bundle, Black Gold Witchy PNG Stickersr",
   },
+  "90s-vibe-clipart-png-retro-y2k-icons": {
+    id: 5,
+    etsyID: 4481927315,
+    count: 63,
+    images: [1, 2, 3, 4, 5,6],
+    title: "90s Vibe Clipart PNG, Retro Y2K Icons, Pixel Heart Graphics",
+  },
 }
 

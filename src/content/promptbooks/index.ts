@@ -96,6 +96,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     tags: ["fashion", "women", "maternity"],
     mainCategory: "fashion", // TODO?
     type: "pack",
+    isGrowing: true,
     images: [1, 2, 3],
     examples: [4, 5, 6, 7, 8],
     og: true,
