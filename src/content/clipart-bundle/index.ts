@@ -75,6 +75,13 @@ export const CLIPART_BUNDLES: Record<string, ClipartBundleRaw> = {
     images: [1, 2, 3, 4, 5, 6],
     title: "Watercolor Nail Salon Clipart | Manicure, Nail Polish, Beauty Graphics",
   },
+  "90s-pixel-sticker-clipart-bundle-retro": {
+    id: 9,
+    etsyID: 4481929724,
+    count: 50,
+    images: [1, 2, 3, 4, 5, 6],
+    title: "90s Pixel Sticker Clipart Bundle, Retro Gaming PNGs, Y2K Style Icons",
+  },
 }
 
 
