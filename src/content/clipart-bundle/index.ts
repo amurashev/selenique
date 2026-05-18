@@ -54,12 +54,21 @@ export const CLIPART_BUNDLES: Record<string, ClipartBundleRaw> = {
     images: [1, 2, 3, 4, 5,6],
     title: "90s Vibe Clipart PNG, Retro Y2K Icons, Pixel Heart Graphics",
   },
-  "gold-geometric-frames-clipart-art-deco": {
+  "gold-geometric-frames-clipart-art-decor": {
     id: 6,
     etsyID: 4477666591,
     count: 80,
     images: [1, 2, 3, 4, 5, 6, 7],
     title: "Gold Geometric Frames Clipart | Art Deco Borders, Luxury Wedding Graphics",
   },
+  "bbq-clipart-bundle-grill-burgers-corn": {
+    id: 7,
+    etsyID: 4480194375,
+    count: 50,
+    images: [1, 2, 3, 4, 5],
+    title: "BBQ Clipart Bundle | Grill, Burgers, Corn, Chicken Wings Illustrations",
+  },
 }
+
+
 
