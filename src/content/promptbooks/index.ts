@@ -63,17 +63,17 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
 
   "50-ideal-skin-midjourney-prompts-vol-1": {
     id: 4,
-    gumroadSlug: "50-ideal-skin-midjourney-prompts-beauty",
+    gumroadSlug: "ideal-skin-midjourney-prompts-beauty",
     boostyId: "6801a414-dcef-46b9-9af5-4700e229ac12",
-    number: 50,
+    number: 85,
     links: {
       cm: "https://creativemarket.com/AlenaMurasheva/291851819-50-Ideal-Skin-Midjourney-Prompts-V.1",
     },
     tags: ["beauty"],
     mainCategory: "beauty",
     type: "pack",
-    images: [1, 2, 3],
-    examples: [4, 5, 6, 7, 8],
+    images: [1, 2],
+    examples: [5, 6, 7, 8, 9, 10],
     og: true,
   },
 
