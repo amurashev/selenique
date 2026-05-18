@@ -82,6 +82,13 @@ export const CLIPART_BUNDLES: Record<string, ClipartBundleRaw> = {
     images: [1, 2, 3, 4, 5, 6],
     title: "90s Pixel Sticker Clipart Bundle, Retro Gaming PNGs, Y2K Style Icons",
   },
+  "lass-of-2026-graduation-clipart-black": {
+    id: 10,
+    etsyID: 4478167508,
+    count: 65,
+    images: [1, 2, 3, 4, 5, 6, 7],
+    title: "Class of 2026 Graduation Clipart | Black Gold PNG Bundle",
+  },
 }
 
 
