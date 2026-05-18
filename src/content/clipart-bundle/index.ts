@@ -68,6 +68,13 @@ export const CLIPART_BUNDLES: Record<string, ClipartBundleRaw> = {
     images: [1, 2, 3, 4, 5],
     title: "BBQ Clipart Bundle | Grill, Burgers, Corn, Chicken Wings Illustrations",
   },
+  "watercolor-nail-salon-clipart-manicure": {
+    id: 8,
+    etsyID: 4474507593,
+    count: 55,
+    images: [1, 2, 3, 4, 5, 6],
+    title: "Watercolor Nail Salon Clipart | Manicure, Nail Polish, Beauty Graphics",
+  },
 }
 
 
