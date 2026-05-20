@@ -492,7 +492,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     mainCategory: "design",
     type: "pack",
     fileType: "link",
-    images: [1],
+    images: [1, 0],
     examples: [2, 3, 4, 5, 6, 7, 8],
     og: true,
   },
