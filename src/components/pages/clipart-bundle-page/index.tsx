@@ -49,6 +49,7 @@ export default function ClipartBundlePage({
   const {
     title,
     thumbImage,
+    mainImage,
     description,
     imagesContent,
     boostyLink,
@@ -79,7 +80,7 @@ export default function ClipartBundlePage({
           <div className={styles.imagesBoxItem}>
             <img
               className={styles.imagesBoxImage}
-              src={thumbImage}
+              src={mainImage}
               alt={title}
             />
           </div>

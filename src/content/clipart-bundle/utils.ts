@@ -50,6 +50,7 @@ export const getClipartBundleData = (
     // ? `https://boosty.to/selenique/posts/${baseItem.boostyId}`
     // : "",
     thumbImage: `/images/clipart-bundles/${id}/thumb.jpg`,
+    mainImage: `/images/clipart-bundles/${id}/main.webp`,
     imagesContent,
     title,
     description,

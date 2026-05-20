@@ -13,6 +13,7 @@ export type ClipartBundle = ClipartBundleRaw & {
   etsyLink: string
   boostyLink: string
   thumbImage: string
+  mainImage: string
   description: string
   keywords: string
   imagesContent: string[] 
