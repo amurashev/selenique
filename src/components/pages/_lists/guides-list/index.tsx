@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 import { homePage } from "@/constants/routes";
 import GuideItem from "@/components/sections/guide-item";
 import BasePageLayout from "@/components/layout/base-page";
-import { Guide } from "@/constants/guides";
+import { Guide } from "@/content/guides";
 
 export default function GuidesListPage({
   guidesList,

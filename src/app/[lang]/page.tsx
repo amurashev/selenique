@@ -16,7 +16,7 @@ import {
   getGuideData,
   getGuidesList,
   sortGuidesByPoints,
-} from "@/constants/guides/utils";
+} from "@/content/guides/utils";
 import { homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 import { Poster } from "@/content/posters";

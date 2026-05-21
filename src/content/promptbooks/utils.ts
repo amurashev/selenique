@@ -3,7 +3,7 @@ import { PROMTBOOKS } from "@/content/promptbooks";
 import PROMPTS_RATING from "@/content/promptbooks/reviews";
 import PROMPTS_SALES from "@/content/promptbooks/sales";
 import PROMPTS_POINTS from "@/content/promptbooks/points";
-import { Guide } from "@/constants/guides";
+import { Guide } from "@/content/guides";
 
 export const getPromptBookId = (slug: string): number | undefined => {
   const baseItem = PROMTBOOKS[slug];

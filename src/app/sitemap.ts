@@ -33,7 +33,7 @@ import {
 } from "@/content/promptbooks/categories";
 
 import { i18n, Locale } from "../../i18n-config";
-import { getGuidesList } from "@/constants/guides/utils";
+import { getGuidesList } from "@/content/guides/utils";
 import { getClipartBundlesList } from "@/content/clipart-bundle/utils";
 
 const DOMAIN = "https://www.selenique.space";

@@ -9,7 +9,7 @@ import { guidePageRoute } from "@/constants/routes";
 import StarIcon from "@/components/ui/icons/star";
 
 import styles from "./styles.module.css";
-import { Guide } from "@/constants/guides";
+import { Guide } from "@/content/guides";
 import { BestsellerBox } from "@/components/ui/bestseller";
 import { FreeBox } from "@/components/ui/free";
 import { Poster } from "@/content/posters";

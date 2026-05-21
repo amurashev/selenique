@@ -9,7 +9,7 @@ import getDeviceType from "@/utils/device";
 import { PROMTBOOKS } from "@/content/promptbooks";
 import { getPromptBookData, sortByPoints } from "@/content/promptbooks/utils";
 
-import { getGuideData, getGuidesList } from "@/constants/guides/utils";
+import { getGuideData, getGuidesList } from "@/content/guides/utils";
 import { aiAvatarGeneratorPageRoute, homePage } from "@/constants/routes";
 import { getDictionary } from "@/l18n/dictionaries";
 

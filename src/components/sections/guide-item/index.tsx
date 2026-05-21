@@ -9,7 +9,7 @@ import { guidePageRoute } from "@/constants/routes";
 import StarIcon from "@/components/ui/icons/star";
 
 import styles from "./styles.module.css";
-import { Guide } from "@/constants/guides";
+import { Guide } from "@/content/guides";
 import { BestsellerBox } from "@/components/ui/bestseller";
 import { FreeBox } from "@/components/ui/free";
 
@@ -25,6 +25,7 @@ const GuideItem: React.FC<{
     isBestseller,
     isFree,
     vertImage,
+    thumbImage,
     gumroadLink,
     noLanding,
   } = item;
@@ -47,7 +48,7 @@ const GuideItem: React.FC<{
         />
       )}
       <div className={styles.box}>
-        <img src={vertImage} title={name} alt={name} className={styles.image} />
+        <img src={thumbImage} title={name} alt={name} className={styles.image} />
       </div>
       {isBestseller && <BestsellerBox />}
 

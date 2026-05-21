@@ -16,7 +16,7 @@ import { PromptBook } from "@/components/types";
 
 import PromptbookItem from "@/components/sections/promptbook-item";
 import GuideItem from "@/components/sections/guide-item";
-import { Guide } from "@/constants/guides";
+import { Guide } from "@/content/guides";
 import BasePageLayout from "@/components/layout/base-page";
 
 import ProductSlider, {

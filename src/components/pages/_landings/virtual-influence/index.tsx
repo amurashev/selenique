@@ -6,7 +6,7 @@ import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
 import FAQBase from "@/components/sections/faq";
 
-import { GUIDES } from "@/constants/guides";
+import { GUIDES } from "@/content/guides";
 import { guidesListPageRoute } from "@/constants/routes";
 
 import Hero from "@/components/sections/landing-black/hero";
@@ -17,7 +17,7 @@ import {
 
 import Price from "../../../sections/landing-black/price";
 import ImagesSlider from "@/components/sections/landing-black/images-slider";
-import { getGuideData } from "@/constants/guides/utils";
+import { getGuideData } from "@/content/guides/utils";
 import CheckMark from "@/components/ui/icons/check-mark";
 
 import styles from "@/components/sections/landing-black/page.module.css";

@@ -7,7 +7,7 @@ import VirtualInfluencePage from "@/components/pages/_landings/virtual-influence
 import AIFashionGuidePage from "@/components/pages/_landings/ai-for-fashion-brands";
 import { i18n, Locale } from "../../../../../i18n-config";
 
-import { GUIDES } from "@/constants/guides";
+import { GUIDES } from "@/content/guides";
 
 export async function generateMetadata({
   params,

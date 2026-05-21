@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 import Footer from "@/components/layout/footer";
 import ShortHeader from "@/components/layout/short-header";
 
-import { GUIDES } from "@/constants/guides";
+import { GUIDES } from "@/content/guides";
 import { guidesListPageRoute, homePage } from "@/constants/routes";
 
 import {

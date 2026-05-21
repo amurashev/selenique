@@ -1,0 +1,207 @@
+import { PriceType } from "@/components/types";
+
+export type GuideLocaleItem = {
+  id: number;
+  gumroadSlug: string;
+  boostyId?: string;
+  name: string;
+  description: string;
+  price?: PriceType;
+  oldPrice?: PriceType;
+  noLanding?: boolean;
+  isFree?: boolean;
+  isBestseller?: boolean;
+};
+
+export type GuideItem = {
+  locales: Record<string, GuideLocaleItem>;
+};
+
+export type Guide = GuideLocaleItem & {
+  slug: string;
+  lang: string;
+  point: number
+  vertImage: string;
+  thumbImage: string;
+  purchaseLink: string;
+  boostyLink: string;
+  gumroadLink: string;
+};
+
+export const GUIDES: Record<string, GuideItem> = {
+  "virtual-influence-guide": {
+    locales: {
+      en: {
+        id: 1,
+        gumroadSlug: "virtual-influence-guide",
+        name: "Iconista lab: Virtual Influence: The 48-Hour Playbook",
+        description:
+          "Build an AI influencer from scratch and grow your Instagram presence—no camera, no tech skills, no followers required.",
+        price: {
+          en: 29,
+        },
+        oldPrice: {
+          en: 49,
+        },
+      },
+      ru: {
+        id: 2,
+        gumroadSlug: "virtual-influence-guide-ru",
+        boostyId: "7a892ee4-c67c-4eba-80f2-2f43c64fcd58",
+        name: "Iconista Lab: Пошаговый гайд по созданию ИИ инфлюенсера",
+        description:
+          "Построй ИИ-инфлюенсера с нуля и развивай аккаунт в Instagram — без камеры, без технических навыков, без подписчиков для старта.",
+        price: {
+          ru: 3990,
+        },
+        oldPrice: {
+          en: 5990,
+        },
+      },
+    },
+  },
+  "ai-for-fashion-brands": {
+    locales: {
+      ru: {
+        id: 3,
+        gumroadSlug: "ai-for-fashion-brands-guide-ru",
+        boostyId: "1435ceb3-6d80-48f7-82b1-2643bad96a14",
+        name: "Практический мини-курс: AI-съёмка для fashion-брендов",
+        description:
+          "Если вы работаете в fashion, вы знаете:съёмки - это дорого, долго и зависимо от десятков факторов. Этот курс - о том, как перевести большую часть продакшна на AI и выстроить управляемую систему съёмок внутри бренда.",
+        price: {
+          ru: 5990,
+        },
+      },
+    },
+  },
+  "create-virtual-influencer": {
+    locales: {
+      en: {
+        noLanding: true,
+        isBestseller: true,
+        id: 4,
+        gumroadSlug: "create-virtual-influencer-guide",
+        boostyId: "",
+        name: "Create your own Virtual Influencer (step-by-step guide)",
+        description:
+          "This comprehensive guide provides a complete roadmap to building a professional AI virtual influencer, allowing you to create a high-income digital presence without ever showing your face on camera. It covers everything from technical tool setup to advanced video and monetization strategies.",
+        price: {
+          en: 14.9,
+        },
+      },
+    },
+  },
+  "virtual-influence-instagram-playbook": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 5,
+        gumroadSlug: "virtual-influence-instagram-playbook",
+        boostyId: "",
+        name: "Virtual Influencer’s Handbook: Strategy, Growth, And Profit",
+        description:
+          "This guide is a comprehensive, step-by-step system designed to help you build, grow, and monetize a professional virtual influencer brand on Instagram without ever needing to appear on camera. It transforms a complex creative process into a highly efficient business model.",
+        price: {
+          en: 14.9,
+        },
+      },
+    },
+  },
+
+  "portrait-creation-toolkit": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 6,
+        gumroadSlug: "create-virtual-influencer-guide",
+        name: "Portrait Creation Toolkit",
+        description:
+          "This guide is a structured reference for creating realistic and controllable AI portraits. It organizes appearance into clearly defined parameters with predefined, AI-friendly values, allowing you to build characters with precision instead of trial and error.",
+      },
+    },
+  },
+
+  "nano-banana-pro-beginners": {
+    locales: {
+      en: {
+        noLanding: true,
+        // isFree: true,
+        id: 7,
+        gumroadSlug: "nano-banana-pro-beginners",
+        name: "AI Images with Nano Banana Pro",
+        description:
+          "The guide teaches total beginners how to create AI images using Nano Banana Pro — Google's AI image tool that turns your words into pictures.",
+      },
+    },
+  },
+
+  "nano-banana-for-business": {
+    locales: {
+      en: {
+        noLanding: true,
+        isBestseller: true,
+        id: 8,
+        gumroadSlug: "nano-banana-for-business",
+        name: "Nano Banana Pro for Your Business",
+        description:
+          "This guide is for small business owners who need good pictures for their work, but don’t want to spend a lot of money on designers or photo shoots. It shows you, step by step, how to use Nano Banana Pro — Google’s AI image tool — to make professional‑looking images just by typing what you want in plain English.​​",
+      },
+    },
+  },
+
+  "create-children-book-nano-banana": {
+    locales: {
+      en: {
+        noLanding: true,
+        id: 9,
+        gumroadSlug: "create-children-book-nano-banana",
+        name: "Make Your Own Children’s Book with Nano Banana Pro",
+        description:
+          "It is a beginner-friendly, step-by-step guide that teaches you how to use Google's AI image tool to create all the illustrations for your book — even if you have never used AI before and have zero design skills.​​",
+      },
+    },
+  },
+
+  "ai-toolkit-for-sellers": {
+    locales: {
+      en: {
+        noLanding: true,
+        // isFree: true,
+        id: 10,
+        gumroadSlug: "ai-toolkit-for-sellers",
+        name: "AI Toolkit for Digital & Creative Product Sellers",
+        description:
+          "A simple, step‑by‑step guide that shows you how to use AI to plan, package and promote your products without overwhelm.",
+      },
+    },
+  },
+  "create-ai-content": {
+    locales: {
+      en: {
+        noLanding: true,
+        // isFree: true,
+        id: 11,
+        gumroadSlug: "create-ai-content",
+        name: "AI Visual Starter Kit: 20+ Prompts to Create Scroll‑Stopping Content in One Evening",
+        description:
+          "Create beautiful AI visuals for your content — even if you’re not a designer. Copy‑paste friendly prompts, clear formulas, and simple workflows to turn your ideas into images you can post this week.",
+      },
+    },
+  },
+
+  "ai-photoshoot-guide": {
+    locales: {
+      en: {
+        noLanding: true,
+        // isBestseller: true,
+        isFree: true,
+        id: 12,
+        gumroadSlug: "ai-photoshoot-guide",
+        name: "Your AI Photoshoot. How to Get Stunning Photos of Yourself Using AI",
+        description:
+          "A step‑by‑step beginner‑friendly guide (in English) that helps complete non‑tech users create their own “AI photoshoot” without hiring a photographer.",
+      },
+    },
+  },
+};
