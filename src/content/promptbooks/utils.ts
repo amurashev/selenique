@@ -63,9 +63,6 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     (item) => `/images/promptbooks/${baseItem.id}/${item}.jpg`
   );
 
-
-  
-
   const item: PromptBook = {
     ...baseItem,
     slug,

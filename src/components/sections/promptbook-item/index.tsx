@@ -3,6 +3,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 import Link from "next/link";
+import Image from "next/image";
 
 import { PromptBook } from "@/components/types";
 import { promptBookPageRoute } from "@/constants/routes";
@@ -40,7 +41,15 @@ const PromptbookItem: React.FC<{
   return (
     <Link key={slug} href={url} className={styles.card}>
       <div className={styles.box}>
-        <img src={vertImage} title={name} alt={name} className={styles.image} />
+        <Image
+          width={260}
+          height={292}
+          loading="lazy"
+          src={vertImage}
+          title={name}
+          alt={name}
+          className={styles.image}
+        />
       </div>
       {isBestseller && !isFree && <BestsellerBox />}
       {isFree && <FreeBox />}
@@ -48,7 +57,7 @@ const PromptbookItem: React.FC<{
       {Boolean(reviewsRating) && (
         <div className={styles.ratingBox}>
           <div className={styles.startBox}>
-            <StarIcon style={{ top: '-1px', position: "relative"}} size={13} />
+            <StarIcon style={{ top: "-1px", position: "relative" }} size={13} />
             <span>
               <strong>{reviewsRatingFixed}</strong>
             </span>
