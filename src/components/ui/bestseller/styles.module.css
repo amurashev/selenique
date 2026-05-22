@@ -3,17 +3,17 @@
   top: 10px;
   left: 10px;
   z-index: 10;
-  box-shadow: 1px 1px 8px hsl(0deg 0% 20% / 80%);
 }
 
 .medium {
   color: #fff;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   padding: 3px 6px;
   border-radius: 4px;
 
   background-color: var(--orange);
+  box-shadow: 1px 1px 8px hsl(0deg 0% 20% / 80%);
 }
 
 .big {

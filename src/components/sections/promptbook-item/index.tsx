@@ -48,7 +48,7 @@ const PromptbookItem: React.FC<{
       {Boolean(reviewsRating) && (
         <div className={styles.ratingBox}>
           <div className={styles.startBox}>
-            <StarIcon size={11} />
+            <StarIcon style={{ top: '-1px', position: "relative"}} size={13} />
             <span>
               <strong>{reviewsRatingFixed}</strong>
             </span>
