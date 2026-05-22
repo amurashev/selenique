@@ -11,20 +11,17 @@ import { mainSettings } from "../settings";
 import styles from "./styles.module.css";
 
 export default function ImagesBox({
-  id,
   images,
 }: {
-  id: number;
-  images: number[];
+  images: string[];
 }) {
-  const imageKey = "promptbooks"
   return (
     <Slider {...mainSettings} className="singlePageCase">
       {images.map((item) => (
         <div key={item} className={styles.item}>
           <img
             className={styles.image}
-            src={`/${imageKey}/${id}/${item}.jpg`}
+            src={item}
             alt="Prompt book image"
           />
         </div>

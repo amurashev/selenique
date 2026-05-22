@@ -3,7 +3,6 @@ import { PROMTBOOKS } from "@/content/promptbooks";
 import PROMPTS_RATING from "@/content/promptbooks/reviews";
 import PROMPTS_SALES from "@/content/promptbooks/sales";
 import PROMPTS_POINTS from "@/content/promptbooks/points";
-import { Guide } from "@/content/guides";
 
 export const getPromptBookId = (slug: string): number | undefined => {
   const baseItem = PROMTBOOKS[slug];
@@ -52,9 +51,20 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
   const text = localData["text"] || "";
   const fixedText = text.replaceAll("{number}", numberString);
 
-  const gumroadLink =  `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}`
-  const gumroadBasketLink = `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`
-  const purchaseLink = gumroadLink //baseItem.hasVariations ? gumroadLink : gumroadBasketLink
+  const gumroadLink = `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}`;
+  const gumroadBasketLink = `https://seleniquestudio.gumroad.com/l/${baseItem.gumroadSlug}?wanted=true`;
+  const purchaseLink = gumroadLink; //baseItem.hasVariations ? gumroadLink : gumroadBasketLink
+
+  const heroImages = baseItem.images.map(
+    (item) => `/images/promptbooks/${baseItem.id}/${item}.jpg`
+  );
+
+  const exampleImages = (baseItem.examples || []).map(
+    (item) => `/images/promptbooks/${baseItem.id}/${item}.jpg`
+  );
+
+
+  
 
   const item: PromptBook = {
     ...baseItem,
@@ -62,10 +72,12 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     name,
     description,
     summary,
+    heroImages,
+    exampleImages,
     text: fixedText,
     why: localData["why"],
     testPrompt: localData["prompt"],
-    vertImage: `/promptbooks/${baseItem.id}/vert.jpg`,
+    vertImage: `/images/promptbooks/${baseItem.id}/vert.jpg`,
     gumroadLink,
     purchaseLink,
     boostyLink: baseItem.boostyId

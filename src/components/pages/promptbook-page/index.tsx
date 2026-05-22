@@ -64,6 +64,7 @@ export default function PromptbookPage({
     why,
     testPrompt,
     images,
+    heroImages,
     examples,
     isDisabled,
     isGrowing,
@@ -108,7 +109,7 @@ export default function PromptbookPage({
           </Link>
         </div> */}
         <div className={styles.imagesBox}>
-          <ImagesBox id={id} images={images} />
+          <ImagesBox images={heroImages} />
         </div>
         <div className={styles.content}>
           <Header data={data} />

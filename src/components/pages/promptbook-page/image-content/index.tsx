@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,9 +17,7 @@ export default function ImageContent({ data }: { data: PromptBook }) {
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
   const [imageToShow, setImageToShow] = useState<number>();
 
-  const { id, examples = [] } = data;
-
-  const imageKey = "promptbooks";
+  const { exampleImages = [] } = data;
 
   const showImage = (image: number) => {
     //set imageToShow to be the one that's been clicked on
@@ -35,13 +34,13 @@ export default function ImageContent({ data }: { data: PromptBook }) {
     <div className={styles.box}>
       <h3>{formatMessage({ id: "prompt_books.image_content" })}:</h3>
       <Slider {...contentSettings} className={styles.slider}>
-        {examples.map((item) => (
+        {exampleImages.map((item, key) => (
           <div key={item} className={styles.item}>
             <img
               className={styles.image}
-              src={`/${imageKey}/${id}/${item}.jpg`}
+              src={item}
               alt="Prompt book content"
-              onClick={() => showImage(item)}
+              onClick={() => showImage(key)}
             />
           </div>
         ))}
@@ -52,7 +51,9 @@ export default function ImageContent({ data }: { data: PromptBook }) {
           <img
             className={styles.lightboxImage}
             onClick={hideLightBox}
-            src={`/${imageKey}/${id}/${imageToShow}.jpg`}
+            src={
+              exampleImages[imageToShow as keyof typeof exampleImages] as string
+            }
           ></img>
         </div>
       ) : null}
