@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 
 import styles from "./styles.module.css";
+import item1 from "./item1.module.css";
+import item2 from "./item2.module.css";
 
 const Arrow = () => {
   return (
@@ -22,26 +24,19 @@ const Arrow = () => {
   );
 };
 
-export const FAQItem: React.FC<{
+export const FAQItem1: React.FC<{
   title: string;
   text: string;
   imageSrc?: string;
   isRight?: boolean;
-  color?: "white" | "black";
-}> = ({ title, text = "", color = "white" }) => {
+}> = ({ title, text = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const itemClass = color === "white" ? styles.item : styles.itemBlack
-  const headerClass = color === "white" ? styles.header : styles.headerBlack
-  const bodyClass = color === "white" ? styles.body : styles.bodyBlack
   return (
-    <div className={itemClass}>
-      <button
-        className={headerClass}
-        onClick={() => setIsOpen(!isOpen)}
-      >
+    <div className={item1.item}>
+      <button className={item1.header} onClick={() => setIsOpen(!isOpen)}>
         <span>{title}</span>
-        <span className={`${styles.icon} ${isOpen ? styles.open : ""}`}>
+        <span className={`${item1.icon} ${isOpen ? item1.open : ""}`}>
           <Arrow />
         </span>
       </button>
@@ -49,7 +44,33 @@ export const FAQItem: React.FC<{
         dangerouslySetInnerHTML={{
           __html: text,
         }}
-        className={isOpen ? bodyClass : styles.bodyHidden}
+        className={isOpen ? item1.body : item1.bodyHidden}
+      />
+    </div>
+  );
+};
+
+export const FAQItem2: React.FC<{
+  title: string;
+  text: string;
+  imageSrc?: string;
+  isRight?: boolean;
+}> = ({ title, text = "" }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className={item2.item}>
+      <button className={item2.header} onClick={() => setIsOpen(!isOpen)}>
+        <span>{title}</span>
+        <span className={`${item2.icon} ${isOpen ? item2.open : ""}`}>
+          <Arrow />
+        </span>
+      </button>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: text,
+        }}
+        className={isOpen ? item2.body : item2.bodyHidden}
       />
     </div>
   );
@@ -57,13 +78,21 @@ export const FAQItem: React.FC<{
 
 export const FAQBase: React.FC<{
   items: { title: string; text: string }[];
-  color?: "white" | "black";
-}> = ({ items, color = "white" }) => {
+  type?: "1" | "2";
+}> = ({ items, type = "1" }) => {
   return (
     <div className={styles.list}>
-      {items.map((item) => (
-        <FAQItem key={item.title} title={item.title} text={item.text} color={color} />
-      ))}
+      {items.map((item) => {
+        if (type === "2") {
+          return (
+            <FAQItem2 key={item.title} title={item.title} text={item.text} />
+          );
+        }
+
+        return (
+          <FAQItem1 key={item.title} title={item.title} text={item.text} />
+        );
+      })}
     </div>
   );
 };
