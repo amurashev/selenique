@@ -4,8 +4,8 @@ const PROMPTS_SALES: Record<string, number> = {
   "red-carpet": 11,
   // "8-red-carpet-couple-ai-photo-prompts": 7,
   "15-ai-women-headshot-prompts-professional": 6,
-  "24-ai-maternity-photoshoot-prompts": 8,
-  "women-fashion-editorial-prompts": 10,
+  "24-ai-maternity-photoshoot-prompts": 10,
+  "women-fashion-editorial-prompts": 11,
   "50-ideal-skin-midjourney-prompts-vol-1": 5,
   "35-cosmetic-product-photo-prompts": 7,
   "cosmetic-product-photo-prompts": 2,
@@ -14,9 +14,10 @@ const PROMPTS_SALES: Record<string, number> = {
   "cartoon-style-image-prompts": 4,
 
   "realistic-ai-influencer-prompts": 3,
-  "men-fashion-editorial-prompts": 2,
+  "men-fashion-editorial-prompts": 3,
 
-  "50-old-money-ai-photo-prompts-vol1": 2,
+  "50-old-money-ai-photo-prompts-vol1": 3,
+  "wedding-photoshoot": 2,
 
   "50-men-fashion-editorial-prompts-vol-1": 1,
   "8-red-carpet-men-photo-prompts-ai": 1,
