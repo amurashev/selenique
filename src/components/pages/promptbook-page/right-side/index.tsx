@@ -11,6 +11,7 @@ import { PromptBook } from "@/components/types";
 
 import Link from "next/link";
 import { affiliatePageRoute } from "@/constants/routes";
+import { COMMISSION } from "@/constants/affiliate";
 
 const discount = 30;
 const DISCOUNT_END_DAY = "2025-12-16";
@@ -85,9 +86,16 @@ export default function RightSide({
         )}
 
         <div className={styles.linksSmall}>
-          <Link className={styles.seeAllButton} href={backUrl}>
+          {/* <Link className={styles.seeAllButton} href={backUrl}>
             {formatMessage({ id: "prompt_books.see_all" })}
-          </Link>
+          </Link> */}
+
+          <div className={styles.affiliateBoxText}>
+        {formatMessage(
+          { id: "affiliate.texts.item1" },
+          { commission: COMMISSION, strong: (el) => <strong>{el}</strong> }
+        )}
+      </div>
 
           <Link
             href={affiliatePageRoute.getUrl(locale)}

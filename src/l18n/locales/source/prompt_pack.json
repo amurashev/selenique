@@ -30,7 +30,7 @@
   "prompt_books.who.professional_branding": "🌟 Personal Branding Enthusiasts",
 
   
-  "prompt_books.link_to_notion": "<strong>Link to Notion Document</strong>. Each page includes the full text prompt and its visual reference",
+  "prompt_books.link_to_notion": "<strong>Link to Notion Document</strong>. Each page includes the full text prompt and its visual reference. Copy & paste ready format",
   "prompt_books.filter_by_category": "Filter by category",
   "prompt_books.best_for": "Best for",
   "prompt_books.reviews": "Shop Rating",
@@ -45,5 +45,19 @@
   "prompt_books.instruction.item1": "Just upload your photo",
   "prompt_books.instruction.item2": "Paste the prompt",
   "prompt_books.instruction.item3": "Receive photos in minutes",
-  "prompt_books.instruction.item4": "Get your images in minutes"
+  "prompt_books.instruction.item4": "Get your images in minutes",
+
+
+  "prompt_books.faq.item1.title": "What are these prompts for?",
+  "prompt_books.faq.item1.text": "These prompts are designed to help you generate consistent, high‑quality images faster, without having to write every prompt from scratch.",
+  "prompt_books.faq.item2.title": "Which AI tools can I use them with?",
+  "prompt_books.faq.item2.text": "You can use them with most popular image generators (for example Gemini, Nano Banana, ChatGPT, etc.), adjusting syntax if needed.",
+  "prompt_books.faq.item3.title": "Do I need to change the prompts?",
+  "prompt_books.faq.item3.text": "You can use them as they are or customize details like color, angle, background, or format to match your project and brand.",
+  "prompt_books.faq.item4.title": "Will I get the exact same images as in the preview?",
+  "prompt_books.faq.item4.text": "No. Results depend on the AI model, its settings, and your edits, but the prompts are structured to keep the style and overall look similar.",
+  "prompt_books.faq.item5.title": "Can I use the generated images commercially?",
+  "prompt_books.faq.item5.text": "You can usually use the images for personal and commercial projects, but please always check the license and terms of the AI tool you use.",
+  "prompt_books.faq.item6.title": "How do I get access to the prompts?",
+  "prompt_books.faq.item6.text": "After purchase you receive a Notion template with all prompts organized and ready to copy and paste."
 }

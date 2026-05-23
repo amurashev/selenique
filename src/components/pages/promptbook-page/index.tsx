@@ -35,6 +35,7 @@ import TestPrompt from "./test-prompt";
 import BestSellers from "./best-sellers";
 import ImageContent from "./image-content";
 import ShortHeader from "@/components/layout/short-header";
+import FAQBase from "@/components/sections/faq";
 
 export default function PromptbookPage({
   data,
@@ -144,15 +145,15 @@ export default function PromptbookPage({
                 </div>
               )}
 
-              {testPrompt && !hasVariations && (
+              {/* {testPrompt && !hasVariations && (
                 <div className={styles.section}>
                   <TestPrompt data={data} />
                 </div>
-              )}
+              )} */}
 
-              <div className={styles.section}>
+              {/* <div className={styles.section}>
                 <Affiliate />
-              </div>
+              </div>  */}
 
               {purchaseLink && (
                 <div className={`${styles.section} ${styles.onlyMobile}`}>
@@ -204,6 +205,19 @@ export default function PromptbookPage({
         </div>
 
         <div className={styles.content}>
+          <div className={styles.section}>
+            <FAQBase
+              color="black"
+              items={[1, 2, 3, 4, 5, 6].map((key) => ({
+                title: formatMessage({
+                  id: `prompt_books.faq.item${key}.title`,
+                }),
+                text: formatMessage({
+                  id: `prompt_books.faq.item${key}.text`,
+                }),
+              }))}
+            />
+          </div>
           <div className={styles.section}>
             <Reviews />
           </div>

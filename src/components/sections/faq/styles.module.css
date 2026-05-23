@@ -3,8 +3,17 @@
 }
 
 .item {
-  border-bottom: 1px solid #414141;
+  border-bottom: 1px solid #434343;
   width: 100%;
+}
+
+.itemBlack {
+  composes: item;
+  border-bottom: 1px solid var(--border-light);
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .header {
@@ -19,11 +28,17 @@
   font-weight: 600;
   cursor: pointer;
   text-align: left;
+  color: #ffffff;
 }
+
+.headerBlack {
+  composes: header;
+  color: var(--header);
+}
+
 
 .header span {
   display: inline-block;
-  color: #ffffff;
 }
 
 .icon {
@@ -38,8 +53,13 @@
 .body {
   padding: 0 0 16px 0;
   line-height: 1.5;
-  font-size: 18px;
+  /* font-size: 18px; */
   color: var(--text-inversive);
+}
+
+.bodyBlack {
+  composes: body;
+  color: var(--text);
 }
 
 .bodyHidden {

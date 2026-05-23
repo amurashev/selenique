@@ -27,11 +27,19 @@ export const FAQItem: React.FC<{
   text: string;
   imageSrc?: string;
   isRight?: boolean;
-}> = ({ title, text = "" }) => {
+  color?: "white" | "black";
+}> = ({ title, text = "", color = "white" }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const itemClass = color === "white" ? styles.item : styles.itemBlack
+  const headerClass = color === "white" ? styles.header : styles.headerBlack
+  const bodyClass = color === "white" ? styles.body : styles.bodyBlack
   return (
-    <div className={styles.item}>
-      <button className={styles.header} onClick={() => setIsOpen(!isOpen)}>
+    <div className={itemClass}>
+      <button
+        className={headerClass}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <span>{title}</span>
         <span className={`${styles.icon} ${isOpen ? styles.open : ""}`}>
           <Arrow />
@@ -41,7 +49,7 @@ export const FAQItem: React.FC<{
         dangerouslySetInnerHTML={{
           __html: text,
         }}
-        className={isOpen ? styles.body : styles.bodyHidden}
+        className={isOpen ? bodyClass : styles.bodyHidden}
       />
     </div>
   );
@@ -49,11 +57,12 @@ export const FAQItem: React.FC<{
 
 export const FAQBase: React.FC<{
   items: { title: string; text: string }[];
-}> = ({ items }) => {
+  color?: "white" | "black";
+}> = ({ items, color = "white" }) => {
   return (
     <div className={styles.list}>
       {items.map((item) => (
-        <FAQItem key={item.title} title={item.title} text={item.text} />
+        <FAQItem key={item.title} title={item.title} text={item.text} color={color} />
       ))}
     </div>
   );
