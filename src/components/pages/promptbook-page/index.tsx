@@ -206,10 +206,10 @@ export default function PromptbookPage({
 
         <div className={styles.content}>
           <div className={styles.section}>
-          <h2>FAQ</h2>
+            <h2>FAQ</h2>
             <FAQBase
               type="2"
-              items={[1, 2, 3, 4, 5, 6].map((key) => ({
+              items={[1, 2, 3, 4, 5, 6, 7, 8, 9].map((key) => ({
                 title: formatMessage({
                   id: `prompt_books.faq.item${key}.title`,
                 }),

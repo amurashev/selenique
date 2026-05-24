@@ -59,5 +59,11 @@
   "prompt_books.faq.item5.title": "Can I use the generated images commercially?",
   "prompt_books.faq.item5.text": "You can usually use the images for personal and commercial projects, but please always check the license and terms of the AI tool you use.",
   "prompt_books.faq.item6.title": "How do I get access to the prompts?",
-  "prompt_books.faq.item6.text": "After purchase you receive a Notion template with all prompts organized and ready to copy and paste."
+  "prompt_books.faq.item6.text": "After purchase you receive a Notion template with all prompts organized and ready to copy and paste.",
+  "prompt_books.faq.item7.title": "What is a Notion template and why is it convenient?",
+  "prompt_books.faq.item7.text": "A Notion template is an interactive online document that opens directly in your browser — no app installation needed. All prompts are organized, easy to read, and ready to copy with one click. Since it's an online document, we can instantly fix any errors and add new prompts — so you always get the most up-to-date version without re-downloading anything.",
+  "prompt_books.faq.item8.title": "Do I need a paid Notion account to use the template?",
+  "prompt_books.faq.item8.text": "No account needed. Simply open the link from your purchase in any browser and start using the prompts right away — no sign-up or installation required.",
+  "prompt_books.faq.item9.title": "What if I need a PDF version?",
+  "prompt_books.faq.item9.text": "No problem! If you prefer a PDF file with copy-paste support, just send us a message after purchase — we'll prepare it for you free of charge."
 }
