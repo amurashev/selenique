@@ -29,7 +29,15 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     try {
       localData = require(`./../../../source/promptbooks/${id}/${locale}.json`);
     } catch {
-      localData = require(`./../../../source/promptbooks/${id}/en.json`);
+      try {
+        localData = require(`./../../../source/promptbooks/${id}/en.json`);
+      } catch {
+        localData = {
+          name: "",
+          description: "",
+          summary: "",
+        }
+      }
     }
   }
 

@@ -1,4 +1,5 @@
 const PROMPTS_POINTS: Record<string, number> = {
+  "custom-prompt-pack": 999,
   "cartoon-style-image-prompts": 110,
   "realistic-ai-influencer-prompts": 100,
   "32-business-man-photo-prompts": 100,

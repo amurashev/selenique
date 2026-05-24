@@ -695,4 +695,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     isBestseller: true,
     isFree: true,
   },
+
+  "custom-prompt-pack": {
+    id: 71,
+    gumroadSlug: "custom-prompt-pack",
+    number: 0,
+    tags: ["lifestyle"],
+    type: "pack",
+    fileType: "link",
+    images: [],
+    isDirectLink: true,
+  },
 };
