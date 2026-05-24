@@ -20,7 +20,7 @@
   "common.see_more": "Смотреть больше",
   "common.read_more": "Читать далее",
   "common.best_sellers": "Бестселлеры",
-  "common.bought_recently": "{number} человек купили это за последнее время",
+  "common.bought_recently": "{number, plural, =0 {no reseñas} one {# человек купили это за последнее время} few {# человека купили это за последнее время} other {# человек купили это за последнее время}}",
   "locale": "Русский",
   "header.menu.services": "Услуги",
   "header.menu.portfolio": "Портфолио",
