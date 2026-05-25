@@ -7,8 +7,13 @@ const PROMPTS_RATING: Record<string, { rating: number, count: number }> = {
   "8-red-carpet-couple-ai-photo-prompts": { rating: 5, count: 1 },
   "growing-prompt-library": { rating: 5, count: 4 },
   "ai-avatar-free-prompts": { rating: 5, count: 4 },
-  "women-fashion-editorial-prompts": { rating: 5, count: 1 },
+  "women-fashion-editorial-prompts": { rating: 5, count: 2 },
+  "men-fashion-editorial-prompts": { rating: 5, count: 1 },
+  "24-ai-maternity-photoshoot-prompts": { rating: 5, count: 1 },
+  "wedding-photoshoot": { rating: 5, count: 1 },
+  "50-old-money-ai-photo-prompts-vol1": { rating: 5, count: 1 },
 }
 
 
 export default PROMPTS_RATING
+
