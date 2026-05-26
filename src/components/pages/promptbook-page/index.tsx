@@ -62,18 +62,12 @@ export default function PromptbookPage({
     description,
     summary,
     tags,
-    why,
-    testPrompt,
-    images,
     heroImages,
     examples,
     isDisabled,
-    isGrowing,
-    hasVariations,
   } = data;
   const finalTopText = description || summary;
   const backUrl = promptBookListPageRoute.getUrl(locale);
-  const showRussiaHints = ["en", "ru"].includes(locale);
 
   const exclude = ["mythical-character-photo", "portrait-creation-toolkit"];
 
@@ -157,50 +151,30 @@ export default function PromptbookPage({
 
               {purchaseLink && (
                 <div className={`${styles.section} ${styles.onlyMobile}`}>
-                  <Link
-                    className={isRedirect ? styles.linkDisabled : styles.link}
-                    href={purchaseLink}
-                    onClick={() => setIsRedirect(true)}
-                  >
-                    {isRedirect ? <span className={styles.loader} /> : null}
-                    {formatMessage({ id: "prompt_books.get_prompt_pack" })}
-                  </Link>
+                  <RightSide
+                    purchaseLink={purchaseLink}
+                    boostyLink={boostyLink}
+                  />
+                </div>
+              )}
+            </div>
 
-                  {showRussiaHints && (
-                    <div className={styles.hint}>
-                      {formatMessage({
-                        id: "prompt_books.payment_russia_hint",
-                      })}
+            {/* <div className={styles.rightSide}>
+              <div className={styles.rightSideBox}>
+                {!isDisabled ? (
+                  <RightSide
+                    purchaseLink={purchaseLink}
+                    boostyLink={boostyLink}
+                  />
+                ) : (
+                  <div className={styles.rightSideBox}>
+                    <div className={styles.naMessage}>
+                      Not available for now
                     </div>
-                  )}
-                </div>
-              )}
-
-              {/* <div className={styles.section}>
-                <Who data={data as PromptBook} />
-              </div> */}
-
-              {/* {why && (
-                <div className={styles.section}>
-                  <h3>Why You Need This</h3>
-                  <TextTag text={why} />
-                </div>
-              )} */}
-            </div>
-
-            <div className={styles.rightSide}>
-              {!isDisabled ? (
-                <RightSide
-                  backUrl={backUrl}
-                  purchaseLink={purchaseLink}
-                  boostyLink={boostyLink}
-                />
-              ) : (
-                <div className={styles.rightSideBox}>
-                  <div className={styles.naMessage}>Not available for now</div>
-                </div>
-              )}
-            </div>
+                  </div>
+                )}
+              </div>
+            </div> */}
           </div>
         </div>
 
@@ -235,10 +209,11 @@ export default function PromptbookPage({
 
         {purchaseLink && (
           <div className={styles.mobileButton}>
+            <div className={styles.mobileButtonTitle}>{name}</div>
             <Link
               className={isRedirect ? styles.linkDisabled : styles.link}
               href={purchaseLink}
-              target="_blank"
+              // target="_blank"
               onClick={() => {
                 setIsRedirect(true);
                 reachGoal("promptPage_buyClick", {

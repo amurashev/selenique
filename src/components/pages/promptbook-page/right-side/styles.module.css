@@ -1,11 +1,4 @@
 
-.rightSideBox {
-  display: none;
-  background-color: #ffffff;
-  padding: 16px 16px;
-  /* margin-bottom: 24px; */
-}
-
 .priceSection {
   display: flex;
   align-items: center;
@@ -72,7 +65,7 @@
   text-align: center;
   border-radius: 8px;
   padding: 12px 16px;
-  display: none;
+  /* display: none; */
 
   &:hover {
     border-color: #3a9bff;
@@ -101,16 +94,3 @@
 }
 
 
-@media (min-width: 760px) { 
-  .seeAllButton {
-    display: block;
-  }
-
-  .rightSideBox {
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-    border: 1px solid var(--border-light);
-    display: flex;
-    flex-direction: column;
-  }
-}
