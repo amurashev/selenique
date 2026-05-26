@@ -25,11 +25,11 @@ export default function CustomPack({ pack }: { pack: PromptBook }) {
 
         <div>
           <p>
-            Don't see a prompt pack that fits your niche? We create custom AI
+            Don&apos;t see a prompt pack that fits your niche? We create custom AI
             prompt packs tailored to your style, topic, and platform.
           </p>
           <p>
-            Just send us a message — tell us what you need, and we'll put
+            Just send us a message — tell us what you need, and we&apos;ll put
             together a pack made specifically for you.
           </p>
         </div>
