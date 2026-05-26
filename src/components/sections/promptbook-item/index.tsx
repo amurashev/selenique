@@ -19,6 +19,7 @@ const PromptbookItem: React.FC<{
   const { formatMessage, locale } = useIntl();
 
   const {
+    id,
     slug,
     name,
     vertImage,

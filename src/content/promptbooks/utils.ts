@@ -82,7 +82,7 @@ export const getPromptBookData = (slug: string, locale: string): PromptBook => {
     text: fixedText,
     why: localData["why"],
     testPrompt: localData["prompt"],
-    vertImage: `/images/promptbooks/${baseItem.id}/vert.jpg`,
+    vertImage: `/images/promptbooks/${baseItem.id}/vert.webp`,
     gumroadLink,
     purchaseLink,
     boostyLink: baseItem.boostyId

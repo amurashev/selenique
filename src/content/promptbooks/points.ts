@@ -13,25 +13,12 @@ const PROMPTS_POINTS: Record<string, number> = {
   "ai-avatar-free-prompts": 75,
   "cinematic-fantasy-photo": 50,
   "wedding-photoshoot": 50,
+  "luxury-lifestyle-photo-prompts": 50,
   // "portrait-creation-toolkit": 20,
   // "mythical-character-photo": 10,
 
   "women-headshot-prompts-professional": -10,
   // "22-business-man-headshot-prompts-ai": -10,
-
-  "50-high-fashion-editorial-prompts-vol-1": -100,
-  "50-high-fashion-editorial-prompts-vol-2": -100,
-  "50-high-fashion-editorial-prompts-vol-3": -100,
-
-  "50-men-fashion-editorial-prompts-vol-1": -100,
-  "50-men-fashion-editorial-prompts-vol-2": -100,
-  
-  /* Bundles */
-  // "250-fashion-editorial-prompts-bundle": 100,
-  "business-women-prompts-bundle": 40,
-  "business-men-prompts-bundle": 30,
-  // "red-carpet-prompts-bundle": 20,
-  // "women-fashion-editorial-prompts-bundle": 10,
 }
 
 

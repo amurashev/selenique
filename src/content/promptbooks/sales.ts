@@ -19,7 +19,6 @@ const PROMPTS_SALES: Record<string, number> = {
   "50-old-money-ai-photo-prompts-vol1": 3,
   "wedding-photoshoot": 2,
 
-  "50-men-fashion-editorial-prompts-vol-1": 1,
   "8-red-carpet-men-photo-prompts-ai": 1,
   "8-red-carpet-women-photo-prompts": 3,
   "32-monochromatic-studio-portrait-prompt-pack": 0,

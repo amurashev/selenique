@@ -85,6 +85,24 @@ export default async function PromptbookPageEntry({
     );
   }
 
+  if (
+    [
+      "50-men-fashion-editorial-prompts-vol-1",
+      "50-men-fashion-editorial-prompts-vol-2",
+    ].includes(slug)
+  ) {
+    return redirect(
+      promptBookPageRoute.getUrl(finalLang, {
+        params: {
+          slug: "men-fashion-editorial-prompts",
+        },
+      })
+    );
+  }
+
+
+  
+
   if (!slug) {
     return redirect(promptBookListPageRoute.getUrl(finalLang));
   }
