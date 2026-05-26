@@ -36,14 +36,17 @@ import BestSellers from "./best-sellers";
 import ImageContent from "./image-content";
 import ShortHeader from "@/components/layout/short-header";
 import FAQBase from "@/components/sections/faq";
+import CustomPack from "./custom-pack";
 
 export default function PromptbookPage({
   data,
+  customPack,
   related = [],
   bundleContent,
   bestSellers,
 }: {
   data: PromptBook;
+  customPack: PromptBook;
   related?: PromptBook[];
   bundleContent?: PromptBook[];
   bestSellers: PromptBook[];
@@ -128,9 +131,9 @@ export default function PromptbookPage({
                 </div>
               )}
 
-              <div className={styles.section}>
+              {/* <div className={styles.section}>
                 <Instruction hasCharacterReference={hasCharacterReference} />
-              </div>
+              </div> */}
 
               {/* TODO: Temp workaround for old texts */}
               {text && (
@@ -176,9 +179,7 @@ export default function PromptbookPage({
               </div>
             </div> */}
           </div>
-        </div>
-
-        <div className={styles.content}>
+          
           <div className={styles.section}>
             <h2>FAQ</h2>
             <FAQBase
@@ -192,6 +193,9 @@ export default function PromptbookPage({
                 }),
               }))}
             />
+          </div>
+          <div className={styles.section}>
+            <CustomPack pack={customPack} />
           </div>
           <div className={styles.section}>
             <Reviews />

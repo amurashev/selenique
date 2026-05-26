@@ -182,10 +182,13 @@ export default async function PromptbookPageEntry({
     );
   }
 
+  const customPack = getPromptBookData('custom-prompt-pack', finalLang);
+
   return (
     <Layout locale={finalLang}>
       <PromptbookPage
         data={promptBook}
+        customPack={customPack}
         related={related}
         bundleContent={bundleContent}
         bestSellers={bestSellers}
