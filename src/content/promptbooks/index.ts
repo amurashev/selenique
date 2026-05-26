@@ -706,4 +706,18 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [],
     isDirectLink: true,
   },
+
+  "luxury-lifestyle-photo-prompts": {
+    id: 72,
+    gumroadSlug: "luxury-lifestyle-photo-prompts",
+    number: 120,
+    isGrowing: true,
+    mainCategory: "lifestyle",
+    tags: ["lifestyle"],
+    type: "pack",
+    fileType: "link",
+    images: [1],
+    examples: [7, 8, 9, 10, 11, 12, 13, 14],
+  },
+
 };
