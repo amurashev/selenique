@@ -11,6 +11,8 @@
   transition: background-color 0.2s ease;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .buttonPrimary:hover:not(:disabled) {
