@@ -92,10 +92,10 @@ export default function Reviews() {
   const rating = 5.0;
   const ratingFixed = rating.toFixed(1);
   const reviewsCount = Object.keys(PROMPTS_RATING).reduce((prev, next) => {
-    const item = PROMPTS_RATING[next]
+    const item = PROMPTS_RATING[next];
 
-    return prev + item.count
-  }, 0)
+    return prev + item.count;
+  }, 0);
 
   return (
     <div className={styles.box}>
@@ -116,7 +116,11 @@ export default function Reviews() {
               <StarIcon />
               <StarIcon />
             </div>
-            <span className={styles.ratingCount}>({reviewsCount} reviews)</span>
+            <span className={styles.ratingCount}>
+              (
+              {formatMessage({ id: "common.review" }, { number: reviewsCount })}
+              )
+            </span>
           </div>
         </div>
       </div>
@@ -144,7 +148,6 @@ export default function Reviews() {
                   <StarIcon />
                 </div>
                 <div className={styles.text}>{text}</div>
-
               </div>
             </div>
           );
