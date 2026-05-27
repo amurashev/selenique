@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { useIntl } from "react-intl";
-import Link from "next/link";
 import { useMetrica } from "next-yandex-metrica";
 
 import "slick-carousel/slick/slick.css";
@@ -36,6 +35,7 @@ import BestSellers from "./best-sellers";
 import ImageContent from "./image-content";
 import ShortHeader from "@/components/layout/short-header";
 import FAQBase from "@/components/sections/faq";
+import { ButtonLink } from "@/components/ui/button";
 import CustomPack from "./custom-pack";
 
 export default function PromptbookPage({
@@ -214,10 +214,9 @@ export default function PromptbookPage({
         {purchaseLink && (
           <div className={styles.mobileButton}>
             <div className={styles.mobileButtonTitle}>{name}</div>
-            <Link
-              className={isRedirect ? styles.linkDisabled : styles.link}
+            <ButtonLink
               href={purchaseLink}
-              // target="_blank"
+              loading={isRedirect}
               onClick={() => {
                 setIsRedirect(true);
                 reachGoal("promptPage_buyClick", {
@@ -225,9 +224,8 @@ export default function PromptbookPage({
                 });
               }}
             >
-              {isRedirect ? <span className={styles.loader} /> : null}
               {formatMessage({ id: "prompt_books.get_prompt_pack" })}
-            </Link>
+            </ButtonLink>
           </div>
         )}
       </main>

@@ -47,6 +47,11 @@
   "prompt_books.instruction.item3": "Receive photos in minutes",
   "prompt_books.instruction.item4": "Get your images in minutes",
 
+  "prompt_books.custom_pack.title": "Custom AI Prompt Packs for Your Niche",
+  "prompt_books.custom_pack.text1": "Don't see a prompt pack that fits your niche? We create custom AI prompt packs tailored to your style, topic, and platform.",
+  "prompt_books.custom_pack.text2": "Just send us a message — tell us what you need, and we'll put together a pack made specifically for you.",
+  "prompt_books.custom_pack.cta": "Request a custom pack",
+
 
   "prompt_books.faq.item1.title": "What are these prompts for?",
   "prompt_books.faq.item1.text": "These prompts are designed to help you generate consistent, high‑quality images faster, without having to write every prompt from scratch.",

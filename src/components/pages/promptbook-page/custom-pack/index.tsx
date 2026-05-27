@@ -7,10 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./styles.module.css";
 
-import { ChevronRight } from "@/components/sections/arrows";
 import { PromptBook } from "@/components/types";
 import PromptbookItem from "@/components/sections/promptbook-item";
-import Link from "next/link";
+import { ButtonLink } from "@/components/ui/button";
 
 export default function CustomPack({ pack }: { pack: PromptBook }) {
   const { formatMessage, locale } = useIntl();
@@ -21,22 +20,16 @@ export default function CustomPack({ pack }: { pack: PromptBook }) {
         <PromptbookItem item={pack} />
       </div>
       <div className={styles.text}>
-        <h2>Custom AI Prompt Packs for Your Niche</h2>
+        <h2>{formatMessage({ id: "prompt_books.custom_pack.title" })}</h2>
 
         <div>
-          <p>
-            Don&apos;t see a prompt pack that fits your niche? We create custom AI
-            prompt packs tailored to your style, topic, and platform.
-          </p>
-          <p>
-            Just send us a message — tell us what you need, and we&apos;ll put
-            together a pack made specifically for you.
-          </p>
+          <p>{formatMessage({ id: "prompt_books.custom_pack.text1" })}</p>
+          <p>{formatMessage({ id: "prompt_books.custom_pack.text2" })}</p>
         </div>
 
-        <Link className={styles.link} href={pack.purchaseLink}>
-        Request a custom pack
-        </Link>
+        <ButtonLink href={pack.purchaseLink} variation="secondary">
+          {formatMessage({ id: "prompt_books.custom_pack.cta" })}
+        </ButtonLink>
       </div>
     </div>
   );

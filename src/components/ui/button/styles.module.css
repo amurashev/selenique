@@ -1,4 +1,4 @@
-.button {
+.buttonPrimary {
   background-color: var(--primary);
   color: white;
   padding: 10px 24px;
@@ -6,21 +6,38 @@
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
-  height: 48px;
+  height: 42px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   display: flex;
   align-items: center;
 }
 
-.button:hover:not(:disabled) {
+.buttonPrimary:hover:not(:disabled) {
   background-color: var(--primary-hover);
 }
+
+.buttonSecondary {
+  background-color: white;
+  color: var(--primary);
+  padding: 10px 24px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 42px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
 
 .disabled {
   background-color: var(--primary);
   opacity: 0.5;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* Спиннер */

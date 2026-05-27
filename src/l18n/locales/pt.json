@@ -171,6 +171,11 @@
   "prompt_books.instruction.item3": "Recibe tus fotos en minutos",
   "prompt_books.instruction.item4": "Obtén tus imágenes en minutos",
 
+  "prompt_books.custom_pack.title": "Packs de prompts de IA personalizados para o seu nicho",
+  "prompt_books.custom_pack.text1": "Não encontrou um pack que se encaixe no seu nicho? Criamos packs de prompts de IA sob medida, adaptados ao seu estilo, tema e plataforma.",
+  "prompt_books.custom_pack.text2": "É só nos mandar uma mensagem — conte o que você precisa e montaremos um pack feito especialmente para você.",
+  "prompt_books.custom_pack.cta": "Solicitar um pack personalizado",
+
   "prompt_books.faq.item1.title": "Para que servem esses prompts?",
   "prompt_books.faq.item1.text": "Esses prompts foram criados para ajudar você a gerar imagens consistentes e de alta qualidade mais rápido, sem precisar escrever cada prompt do zero.",
   "prompt_books.faq.item2.title": "Com quais ferramentas de IA posso usá-los?",
