@@ -101,7 +101,7 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     fileType: "link",
     isGrowing: true,
     images: [1],
-    examples: [5, 6, 7, 8, 9, 10, 11],
+    examples: [9, 8, 7, 5, 6, 10, 11],
     og: true,
   },
 
