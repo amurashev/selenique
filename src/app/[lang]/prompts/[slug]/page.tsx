@@ -100,8 +100,20 @@ export default async function PromptbookPageEntry({
     );
   }
 
-
-  
+  if (
+    [
+      "ai-photo-prompts-30-woman-work-lifestyle",
+      "women-headshot-prompts-professional",
+    ].includes(slug)
+  ) {
+    return redirect(
+      promptBookPageRoute.getUrl(finalLang, {
+        params: {
+          slug: "30-business-woman-photo-prompts-ai",
+        },
+      })
+    );
+  }
 
   if (!slug) {
     return redirect(promptBookListPageRoute.getUrl(finalLang));
