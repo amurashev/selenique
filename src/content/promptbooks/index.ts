@@ -719,4 +719,17 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1],
     examples: [7, 8, 9, 10, 11, 12, 13, 14],
   },
+
+  "world-landmarks-prompt-pack": {
+    id: 73,
+    gumroadSlug: "world-landmarks-prompt-pack",
+    number: 70,
+    isGrowing: true,
+    mainCategory: "lifestyle",
+    tags: ["lifestyle"],
+    type: "pack",
+    fileType: "link",
+    images: [1],
+    examples: [7, 8, 9, 10, 11, 12, 13, 14],
+  },
 };
