@@ -14,7 +14,7 @@ import { contentSettings } from "../settings";
 export default function ImageContent({ data }: { data: ClipartBundle }) {
   const { formatMessage, locale } = useIntl();
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
-  const [imageToShow, setImageToShow] = useState<number>();
+  const [imageToShow, setImageToShow] = useState<number | undefined>(undefined);
 
   const { title, imagesContent = [] } = data;
 
@@ -45,7 +45,7 @@ export default function ImageContent({ data }: { data: ClipartBundle }) {
         ))}
       </Slider>
 
-      {lightboxDisplay && imageToShow ? (
+      {lightboxDisplay && imageToShow !== undefined ? (
         <div className={styles.lightbox} onClick={hideLightBox}>
           <img
             className={styles.lightboxImage}
