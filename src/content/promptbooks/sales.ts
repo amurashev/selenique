@@ -4,7 +4,7 @@ const PROMPTS_SALES: Record<string, number> = {
   "red-carpet": 11,
   // "8-red-carpet-couple-ai-photo-prompts": 7,
   "15-ai-women-headshot-prompts-professional": 6,
-  "24-ai-maternity-photoshoot-prompts": 10,
+  "24-ai-maternity-photoshoot-prompts": 11,
   "women-fashion-editorial-prompts": 11,
   "50-ideal-skin-midjourney-prompts-vol-1": 5,
   "35-cosmetic-product-photo-prompts": 7,
