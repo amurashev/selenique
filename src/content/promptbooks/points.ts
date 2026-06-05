@@ -3,9 +3,9 @@ const PROMPTS_POINTS: Record<string, number> = {
 
   "32-business-man-photo-prompts": 9,
   "30-business-woman-photo-prompts-ai": 9,
-  "35-cosmetic-product-photo-prompts": 9,
   "24-ai-maternity-photoshoot-prompts": 9,
 
+  "35-cosmetic-product-photo-prompts": 8,
   "realistic-ai-influencer-prompts": 8,
   "women-fashion-editorial-prompts": 8,
   "men-fashion-editorial-prompts": 8,
