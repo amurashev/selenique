@@ -732,4 +732,15 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1],
     examples: [7, 8, 9, 10, 11, 12, 13, 14],
   },
+  "interior-design-prompts": {
+    id: 74,
+    gumroadSlug: "interior-design-prompts",
+    number: 120,
+    mainCategory: "product",
+    tags: ["product"],
+    type: "pack",
+    fileType: "link",
+    images: [1],
+    examples: [3, 4, 5],
+  },
 };
