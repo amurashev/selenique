@@ -743,4 +743,16 @@ export const PROMTBOOKS: Record<string, PromptBookRaw> = {
     images: [1],
     examples: [3, 4, 5],
   },
+  "backdrop-prompts": {
+    id: 75,
+    gumroadSlug: "backdrop-prompts",
+    number: 50,
+    mainCategory: "design",
+    tags: ["design"],
+    type: "pack",
+    fileType: "link",
+    isGrowing: true,
+    images: [1],
+    examples: [3, 4],
+  },
 };
