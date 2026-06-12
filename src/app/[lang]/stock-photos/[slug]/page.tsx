@@ -83,7 +83,7 @@ export default async function PromptbookPageEntry({
   /**
    * Related
    */
-  let related: PromptBook[] = [];
+  // let related: PromptBook[] = [];
 
   // if (promptBook.tags.length && promptBook.tags[0]) {
   //   // TODO: improve related search
