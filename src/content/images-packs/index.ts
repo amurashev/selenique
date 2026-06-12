@@ -92,6 +92,6 @@ export const IMAGES_PACKS: Record<string, ImagesPackRaw> = {
     size: [4416, 5888],
     ar: "3:4",
     orientation: "v",
-    images: [7, 8, 9, 10, 11],
+    images: [5, 6, 7, 8],
   },
 };
