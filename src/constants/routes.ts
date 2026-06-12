@@ -14,6 +14,8 @@ export const clipartBundlesListPageRoute = route("/clipart");
 export const clipartBundleItemPageRoute = route("/clipart/[slug]");
 export const guidesListPageRoute = route("/guides");
 export const guidePageRoute = route("/guides/[slug]");
+export const stockPhotosListPageRoute = route("/stock-photos");
+export const stockPhotosPageRoute = route("/stock-photos/[slug]");
 
 export const affiliatePageRoute = route("/affiliate");
 

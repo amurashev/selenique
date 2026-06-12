@@ -1,4 +1,4 @@
-.buttonPrimary {
+.button {
   background-color: var(--primary);
   color: white;
   padding: 10px 24px;
@@ -15,11 +15,32 @@
   justify-content: center;
 }
 
+.buttonPrimary {
+  composes: button;
+  background-color: var(--primary);
+}
+
+.buttonEtsy {
+  composes: button;
+  background-color: #f1641f;
+}
+
+.buttonCM {
+  composes: button;
+  background-color: #088178;
+}
+
+.buttonGumroad {
+  composes: button;
+  background-color: #ff91e7;
+}
+
 .buttonPrimary:hover:not(:disabled) {
   background-color: var(--primary-hover);
 }
 
 .buttonSecondary {
+  composes: button;
   background-color: white;
   color: var(--primary);
   padding: 10px 24px;
@@ -36,7 +57,7 @@
 
 
 .disabled {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;

@@ -15,15 +15,13 @@ const ImagePackItem: React.FC<{
 }> = ({ item }) => {
   const { formatMessage, locale } = useIntl();
 
-  const { id, etsyID, title } = item;
-  const url = `https://www.etsy.com/listing/${etsyID}`;
-  const vertImage = `/images/images-packs/${id}/vert.jpg`;
+  const { id, pageUrl, title, thumbImage } = item;
 
   return (
-    <Link key={id} href={url} className={styles.card} rel="nofollow">
+    <Link key={id} href={pageUrl} className={styles.card} rel="nofollow">
       <div className={styles.box}>
         <img
-          src={vertImage}
+          src={thumbImage}
           title={title}
           alt={title}
           className={styles.image}

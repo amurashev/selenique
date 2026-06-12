@@ -22,7 +22,7 @@ import { getDictionary } from "@/l18n/dictionaries";
 import { Poster } from "@/content/posters";
 import { getPostersList } from "@/content/posters/utils";
 import { ImagesPack } from "@/content/images-packs";
-import { getImagePacksList } from "@/content/images-packs/utils";
+import { getImagePackData, getImagePacksList } from "@/content/images-packs/utils";
 import {
   getClipartBundleData,
   getClipartBundlesList,
@@ -74,7 +74,6 @@ export default async function HomeEntry({
   const bestSellers: PromptBook[] = [];
   // const bundles: PromptBook[] = [];
   const posters: Poster[] = getPostersList(finalLang);
-  const imagesPacks: ImagesPack[] = getImagePacksList(finalLang);
 
   Object.keys(PROMTBOOKS).forEach((slug) => {
     const packData = getPromptBookData(slug, finalLang);
@@ -127,6 +126,11 @@ export default async function HomeEntry({
   const clipartBundlesId = getClipartBundlesList(finalLang);
   const clipartBundles: ClipartBundle[] = clipartBundlesId.map((item) =>
     getClipartBundleData(item, finalLang)
+  );
+
+  const imagesPacksId = getImagePacksList(finalLang);
+  const imagesPacks: ImagesPack[] = imagesPacksId.map((item) =>
+    getImagePackData(item, finalLang)
   );
 
   return (

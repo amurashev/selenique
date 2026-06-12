@@ -24,6 +24,7 @@ import {
   aiAvatarGeneratorPageRoute,
   clipartBundlesListPageRoute,
   clipartBundleItemPageRoute,
+  stockPhotosPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/content/promptbooks";
@@ -35,6 +36,7 @@ import {
 import { i18n, Locale } from "../../i18n-config";
 import { getGuidesList } from "@/content/guides/utils";
 import { getClipartBundlesList } from "@/content/clipart-bundle/utils";
+import { getImagePacksList } from "@/content/images-packs/utils";
 
 const DOMAIN = "https://www.selenique.space";
 
@@ -115,6 +117,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         .map((slug) =>
           promptBookPageRoute.getUrl(locale, { params: { slug } })
         ),
+
+      // Image Packs
+      ...getImagePacksList(locale).map((item) =>
+        stockPhotosPageRoute.getUrl(locale, { params: { slug: item } })
+      ),
 
       // Guides
       ...getGuidesList(locale).map((item) =>

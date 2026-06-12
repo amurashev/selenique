@@ -4,11 +4,21 @@ import Link, { LinkProps } from "next/link";
 
 import styles from "./styles.module.css";
 
+type Variation = "primary" | "secondary" | "etsy" | "gumroad" | "cm"
+
 type ButtonLinkProps = LinkProps & {
   loading?: boolean;
   children: React.ReactNode;
-  variation?: "primary" | "secondary";
+  variation?: Variation
 };
+
+const CLASSES: Record<Variation, string> = {
+  primary: styles.buttonPrimary,
+  secondary: styles.buttonSecondary,
+  etsy: styles.buttonEtsy,
+  gumroad: styles.buttonGumroad,
+  cm: styles.buttonCM,
+}
 
 export const ButtonLink: React.FC<ButtonLinkProps> = ({
   variation = "primary",
@@ -16,10 +26,9 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
   loading,
   ...props
 }) => {
-  const buttonClass = variation === 'primary' ? styles.buttonPrimary : styles.buttonSecondary
   return (
     <Link
-      className={`${buttonClass} ${loading ? styles.disabled : ""}`}
+      className={`${CLASSES[variation]} ${loading ? styles.disabled : ""}`}
       {...props}
     >
       {loading ? <span className={styles.spinner} /> : null}
@@ -30,9 +39,11 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   loading?: boolean;
+  variation?: Variation
 };
 
 const Button: React.FC<ButtonProps> = ({
+  variation = "primary",
   children,
   loading,
   disabled,
@@ -40,7 +51,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`${styles.buttonPrimary} ${disabled || loading ? styles.disabled : ""}`}
+      className={`${CLASSES[variation]} ${disabled || loading ? styles.disabled : ""}`}
       disabled={disabled || loading}
       {...props}
     >
