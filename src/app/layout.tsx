@@ -22,6 +22,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isDev = process.env.NODE_ENV === "development";
+
   return (
     <html>
       <head>
@@ -61,17 +63,21 @@ export default function RootLayout({
             <Link href="/es">ES</Link>
           </li>
         </ul> */}
-        <YandexMetricaProvider
-          tagID={104019685}
-          initParameters={{
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-          }}
-          router="app"
-        >
-          {children}
-        </YandexMetricaProvider>
+        {isDev ? (
+          children
+        ) : (
+          <YandexMetricaProvider
+            tagID={104019685}
+            initParameters={{
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+            }}
+            router="app"
+          >
+            {children}
+          </YandexMetricaProvider>
+        )}
       </body>
     </html>
   );
