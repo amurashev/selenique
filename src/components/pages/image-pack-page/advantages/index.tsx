@@ -167,7 +167,7 @@ export default function Advantages({ data }: { data: ImagesPack }) {
         <ListItem
           icon={<SizeIcon />}
           title={formatMessage({ id: "common.dimensions" })}
-          text={`${size[0]}x${size[1]}`}
+          text={`${size[0]} x ${size[1]} px`}
         />
         <ListItem
           icon={<OrientationIcon />}

@@ -58,7 +58,13 @@ export default function ImagePackPage({
       />
       <main className={styles.main}>
         <div className={styles.imagesBox}>
-          <ImagesBox images={[mainImage]} />
+          {/* <ImagesBox images={[mainImage]} /> */}
+
+          {imagesContent && imagesContent?.length > 0 && (
+            <div className={styles.secti1on}>
+              <ImageContent images={[mainImage, ...imagesContent]} />
+            </div>
+          )}
         </div>
 
         <div className={styles.line}>
@@ -74,11 +80,6 @@ export default function ImagePackPage({
         </div>
 
         <div className={styles.content}>
-          {imagesContent && imagesContent?.length > 0 && (
-            <div className={styles.section}>
-              <ImageContent images={imagesContent} />
-            </div>
-          )}
           {/* <div className={styles.line}>
             <div className={styles.textBox}>
               <div className={styles.section}>
@@ -110,20 +111,20 @@ export default function ImagePackPage({
             </div>
           </div> */}
 
-          {/* <div className={styles.section}>
+          <div className={styles.section}>
             <h2>FAQ</h2>
             <FAQBase
               type="2"
-              items={[1, 2, 3, 4, 5, 6, 7, 8, 9].map((key) => ({
+              items={[1, 2, 3, 4, 5, 6].map((key) => ({
                 title: formatMessage({
-                  id: `prompt_books.faq.item${key}.title`,
+                  id: `image_packs.faq.item${key}.title`,
                 }),
                 text: formatMessage({
-                  id: `prompt_books.faq.item${key}.text`,
+                  id: `image_packs.faq.item${key}.text`,
                 }),
               }))}
             />
-          </div> */}
+          </div>
           <div className={styles.section}>
             <Reviews />
           </div>
