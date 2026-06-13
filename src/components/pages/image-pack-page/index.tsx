@@ -11,9 +11,7 @@ import styles from "./page.module.css";
 import { PromptBook, PromptCategories } from "@/components/types";
 
 import {
-  affiliatePageRoute,
   homePage,
-  promptBookListPageRoute,
 } from "@/constants/routes";
 
 import ImagesBox from "./images-box";
@@ -32,8 +30,8 @@ import BestSellers from "./best-sellers";
 import ImageContent from "./image-content";
 import ShortHeader from "@/components/layout/short-header";
 import FAQBase from "@/components/sections/faq";
-import { ButtonLink } from "@/components/ui/button";
 import { ImagesPack } from "@/content/images-packs";
+import MobileButtons from "./mobile-buttons";
 
 export default function ImagePackPage({
   data,
@@ -44,7 +42,6 @@ export default function ImagePackPage({
   // related?: PromptBook[];
   bestSellers: ImagesPack[];
 }) {
-  const [isRedirect, setIsRedirect] = useState(false);
   const { formatMessage, locale } = useIntl();
   const { reachGoal } = useMetrica();
 
@@ -141,40 +138,12 @@ export default function ImagePackPage({
           </div> */}
         </div>
 
-        <div className={styles.mobileButton}>
-          {/* <div className={styles.mobileButtonTitle}>{title}</div> */}
-
-          {etsyLink && (
-            <ButtonLink
-              href={etsyLink}
-              variation="etsy"
-              loading={isRedirect}
-              onClick={() => setIsRedirect(true)}
-            >
-              {formatMessage({ id: 'common.get.etsy'})}
-            </ButtonLink>
-          )}
-          {gumroadLink && (
-            <ButtonLink
-              href={gumroadLink}
-              variation="gumroad"
-              loading={isRedirect}
-              onClick={() => setIsRedirect(true)}
-            >
-              {formatMessage({ id: 'common.get.gumroad'})}
-            </ButtonLink>
-          )}
-          {cmLink && (
-            <ButtonLink
-              href={cmLink}
-              variation="cm"
-              loading={isRedirect}
-              onClick={() => setIsRedirect(true)}
-            >
-              {formatMessage({ id: 'common.get.cm'})}
-            </ButtonLink>
-          )}
-        </div>
+        <MobileButtons
+          etsyLink={etsyLink}
+          gumroadLink={gumroadLink}
+          cmLink={cmLink}
+        />
+       
       </main>
       <Footer />
     </div>
