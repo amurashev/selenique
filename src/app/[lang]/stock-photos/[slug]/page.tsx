@@ -5,14 +5,13 @@ import Layout from "@/components/layout";
 import ImagePackPage from "@/components/pages/image-pack-page";
 
 import {
-  promptBookListPageRoute,
   promptBookPageRoute,
+  stockPhotosListPageRoute,
 } from "@/constants/routes";
 
 import { i18n, Locale } from "../../../../../i18n-config";
 import { getDictionary } from "@/l18n/dictionaries";
 
-import { PromptBook } from "@/components/types";
 import { getImagePackData, getImagePackId } from "@/content/images-packs/utils";
 import { ImagesPack } from "@/content/images-packs";
 
@@ -65,19 +64,19 @@ export default async function PromptbookPageEntry({
   const finalLang = lang || i18n.defaultLocale;
 
   if (!slug) {
-    return redirect(promptBookListPageRoute.getUrl(finalLang));
+    return redirect(stockPhotosListPageRoute.getUrl(finalLang));
   }
 
   const id = getImagePackId(slug);
 
   if (!id) {
-    return redirect(promptBookListPageRoute.getUrl(finalLang));
+    return redirect(stockPhotosListPageRoute.getUrl(finalLang));
   }
 
   const data = getImagePackData(slug, finalLang);
 
   if (!data) {
-    return redirect(promptBookListPageRoute.getUrl(finalLang));
+    return redirect(stockPhotosListPageRoute.getUrl(finalLang));
   }
 
   /**

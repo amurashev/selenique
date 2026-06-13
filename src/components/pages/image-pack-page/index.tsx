@@ -12,6 +12,7 @@ import { PromptBook, PromptCategories } from "@/components/types";
 
 import {
   homePage,
+  stockPhotosListPageRoute,
 } from "@/constants/routes";
 
 import ImagesBox from "./images-box";
@@ -52,7 +53,7 @@ export default function ImagePackPage({
   return (
     <div className={styles.page}>
       <ShortHeader
-        route={homePage}
+        route={stockPhotosListPageRoute}
         title={title}
         color="white"
       />

@@ -15,6 +15,7 @@ import {
   clipartBundlesListPageRoute,
   guidesListPageRoute,
   affiliatePageRoute,
+  stockPhotosListPageRoute,
 } from "@/constants/routes";
 
 import { PromptBook } from "@/components/types";
@@ -127,7 +128,7 @@ export default function HomePage({
       <div className={styles.section}>
         <GroupHeader
           title={formatMessage({ id: "home.stock_photos_packs.popular.title" })}
-          // href={postersListPageRoute.getUrl(locale)}
+          href={stockPhotosListPageRoute.getUrl(locale)}
         />
 
         <p>{formatMessage({ id: "home.stock_photos_packs.popular.text" })}</p>

@@ -25,6 +25,7 @@ import {
   clipartBundlesListPageRoute,
   clipartBundleItemPageRoute,
   stockPhotosPageRoute,
+  stockPhotosListPageRoute,
 } from "@/constants/routes";
 import { PORTFOLIO_TYPES } from "@/constants/portfolio";
 import { PROMTBOOKS } from "@/content/promptbooks";
@@ -83,6 +84,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       promptBundleListPageRoute.getUrl(locale),
       postersListPageRoute.getUrl(locale),
       clipartBundlesListPageRoute.getUrl(locale),
+      stockPhotosListPageRoute.getUrl(locale),
 
       aiAvatarPageRoute.getUrl(locale),
       aiAvatarWhatIsItPageRoute.getUrl(locale),
