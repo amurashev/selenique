@@ -179,7 +179,21 @@ export default function PromptbookPage({
               </div>
             </div> */}
           </div>
-          
+
+          {related.length !== 0 && (
+            <div className={styles.section}>
+              <Related related={related} url={backUrl} />
+            </div>
+          )}
+
+          <div className={styles.section}>
+            <Reviews />
+          </div>
+
+          <div className={styles.section}>
+            <BestSellers items={bestSellers} url={backUrl} />
+          </div>
+
           <div className={styles.section}>
             <h2>FAQ</h2>
             <FAQBase
@@ -194,20 +208,9 @@ export default function PromptbookPage({
               }))}
             />
           </div>
-          <div className={styles.section}>
-            <CustomPack pack={customPack} />
-          </div>
-          <div className={styles.section}>
-            <Reviews />
-          </div>
-          {related.length !== 0 && (
-            <div className={styles.section}>
-              <Related related={related} url={backUrl} />
-            </div>
-          )}
 
           <div className={styles.section}>
-            <BestSellers items={bestSellers} url={backUrl} />
+            <CustomPack pack={customPack} />
           </div>
         </div>
 
