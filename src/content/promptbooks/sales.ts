@@ -9,17 +9,17 @@ const PROMPTS_SALES: Record<string, number> = {
   "50-ideal-skin-midjourney-prompts-vol-1": 6,
   "35-cosmetic-product-photo-prompts": 7,
   "cosmetic-product-photo-prompts": 2,
-  "32-business-man-photo-prompts": 3,
+  "32-business-man-photo-prompts": 6,
   "50-jewelry-product-photo-ai-prompts": 2,
-  "cartoon-style-image-prompts": 4,
+  "cartoon-style-image-prompts": 5,
 
-  "realistic-ai-influencer-prompts": 3,
+  "realistic-ai-influencer-prompts": 4,
   "men-fashion-editorial-prompts": 3,
 
   "50-old-money-ai-photo-prompts-vol1": 4,
   "wedding-photoshoot": 2,
 
-  "luxury-lifestyle-photo-prompts": 1,
+  "luxury-lifestyle-photo-prompts": 2,
 
   "8-red-carpet-men-photo-prompts-ai": 1,
   "8-red-carpet-women-photo-prompts": 3,
