@@ -165,7 +165,7 @@ export default function HomePage({
         </ProductSlider>
       </div>
 
-      <hr className={styles.hr} />
+      {/* <hr className={styles.hr} />
 
       <div className={styles.section}>
         <GroupHeader
@@ -184,7 +184,7 @@ export default function HomePage({
             );
           })}
         </ProductSlider>
-      </div>
+      </div> */}
 
       <hr className={styles.hr} />
 

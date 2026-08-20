@@ -15,7 +15,7 @@ export const getMainPagesList = (locale: string) => {
     [stockPhotosListPageRoute.getUrl(locale), "image_packs.title_short"],
     [guidesListPageRoute.getUrl(locale), "footer.guides"],
     [clipartBundlesListPageRoute.getUrl(locale), "clipart.title_short"],
-    [postersListPageRoute.getUrl(locale), "posters.title_short"],
+    // [postersListPageRoute.getUrl(locale), "posters.title_short"],
     [aiAvatarPageRoute.getUrl(locale), "footer.ai_avatar"],
     [affiliatePageRoute.getUrl(locale), "header.menu.affiliate"],
     [productPortfolioPageRoute.getUrl(locale, {
